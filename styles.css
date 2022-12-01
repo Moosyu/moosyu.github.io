@@ -1,0 +1,22 @@
+marquee {
+    background-color: blue;
+}
+body {
+    background-image: url("assets/wall.jpg");
+}
+.mainbox {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+nav {
+    text-align: center;
+    border-style: solid;
+    border-color: darkblue;
+    font-size: large;
+}
+footer {
+    background-color: blue;
+    text-align: center;
+}
+
