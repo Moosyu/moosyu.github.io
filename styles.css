@@ -20,3 +20,13 @@ footer {
     text-align: center;
 }
 
+table, th, td {
+    background-color: darkblue;
+    color: white;
+    padding: 1em;
+    border: 1px solid blue;
+    border-collapse: collapse;  
+    margin-left: auto;
+    margin-right: auto;
+  
+  }
