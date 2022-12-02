@@ -1,43 +1,48 @@
 let metersAway = Math.floor(Math.random() * 300);
 const data = {
-  header: {
-    image: "",
     subtitle: [
-      `"hitler is cringe lmao" - joseph stalin, 1942`,
-      `<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">join discord server here</a>`,
-      `reload for another message`,
-      `<h2>big text</h2>`,
-      `Joe is ${Math.random() > 0.5 ? "attractive" : "ugly"}`,
-      `Oi its 'm8', innit?`,
-      `you lose daughter banging privileges`,
-      `i like kids - joe`,
-      `joe`,
-      `my life be like😔`,
-      `i'll move to america then i'll sue you - chris pratt`,
-      `your acting a bit sussy jonathan`,
-      `Lets get hypixel youtube rank guys! 1/30000`,
-      `is that a jojo reference?`,
-      `THIS SITE GETS AN EASY F TIER FROM ME`,
-      `thanks i ${Math.random() > 0.5 ? "htae" : "hate"} it`,
-      () => {
-        let interval = setInterval(() => {
-          const quote = document.getElementById("headerSubtitle");
-          if (metersAway > 0) {
-            quote.innerHTML = `I am within ${metersAway} meters and rapidly approaching`;
-            metersAway--;
-          } else if (metersAway <= 0) {
-            quote.innerHTML = "Knock knock, I'm at your door.";
-            clearInterval(interval);
-          }
-        }, 100);
-      },
-      `<img src="https://cdn.discordapp.com/emojis/775767117089865758.gif?v=1"  draggable="false">`,
-      `<img src="https://cdn.discordapp.com/emojis/837301591198924810.png?v=1" draggable="false">`,
-      `<img src="https://cdn.discordapp.com/emojis/784933350569279498.png?v=1" draggable="false">`,
+      `"再来亿遍`,
+      `《招惹了妒忌的狗》`,
+      `欢迎来到《大唐新说唱》`,
+      `再来亿遍`,
+      `先收藏在MC 補檔了就收藏在動物園`,
+      `湾湾也看动物园?`,
+      `回复 @就这我怎么输阿 :湾湾人也爱玩抽象`,
+      `很好，有种溜冰，但是冰里面带点勾氏的感觉`,
+      `非常坏评论，恨来自洛阳缑氏`,
+      `大肠刺身是吧`,
+      `确实`,
+      `10w粉 up亲自跳鲲舞[歪嘴]`,
+      `再穿个女装吧要不`,
+      `up准备好学汤姆老师的舞蹈课了吗`,
+      `我是北极科考站的每到夏季极昼要睡觉的时候我都会打开up的视频这样马上就能眼前一黑比眼罩都好使`,
+      `极你太美（北极）`,
+      `广西北极科考站`,
+      `回复 @一袋盐水www :初您退，极反对`,
+      `蒸梅酥芝19¥`,
+      `树枝要两块钱的屑（恼）`,
+      `香汤艾西鱿是什么`,
+      `回复 @怪物咲孩 :2.5块（指正）`,
+      `[微笑][微笑]纯路人真的觉得没必要这么黑蔡徐鲲蔡徐鲲是优质偶像非常宠粉三观也超正在跑男这种真人秀综艺里面真的非常能够体现出蔡徐鲲优秀的人格特点和为人处事方式玩游戏时也不屑于使用非常手段获得游戏胜利而是通过自己已知的条件、聪明有逻辑的大胆分析，很让人佩服!人也很有礼貌,工作也认真,看到他我就可以燃起学习的热情,重拾起生活的希望,这不就是偶像的意义吗。小黑们一直黑他不就是因为羡慕他过得比自己舒服吗，拜托，他的美好生活是自己辛苦工作，无数个日夜练习唱跳才出来的，小黑子们继续黑吧，你们明天起床还是会面对一样的挣扎的生活但作为ikun的我还是会继续粉他不仅因为他给我带来的正能量帮我走出阴霾一天下一个蛋还能给我补充营养`,
+      `帮转，煤老板还得加强`,
+      `捕捉~`,
+      `捉`,
+      `我的真实想法`,
+      `开头:与我的世界有关的音乐`,
+      `中间:？只因你太美`,
+      `结尾:[热词系列_三连]三连`,
+      `只因啥呢，这不是只因你太美`,
+      `哪听出来是只因你太美了假IKUN被抓到了吧`,
+      `谁会去数那村民的114.514次死亡呢?`,
+      `怎么哪都有homo(悲)`,
+      `怎么次数还有这么臭的小数的啊（恼）`,
+      `别再黑鲲鲲了，他很宠粉的，我过生日他给我下了一个蛋`,
+      `我应该把它放在我的世界收藏夹还是爱坤收藏夹呢`,
+      `两个都放`,
+      `好建议`,
+      `路人：我不放`,
+      `<img src="assets/duck.png"  draggable="false">`,
+      `<img src="assets/flushed.png"  draggable="false">`,
+      `<img src="assets/frog.gif"  draggable="false">`,
     ],
-  },
-  credits: [
-    {
-    },
-  ],
-};
+  };
