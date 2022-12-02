@@ -41,8 +41,9 @@ const data = {
       `两个都放`,
       `好建议`,
       `路人：我不放`,
-      `<img src="assets/duck.png"  draggable="false">`,
-      `<img src="assets/flushed.png"  draggable="false">`,
-      `<img src="assets/frog.gif"  draggable="false">`,
+      `<img src="../assets/duck.png"  draggable="false">`,
+      `<img src="../assets/flushed.png"  draggable="false">`,
+      `<img src="../assets/doge.jpg"  draggable="false">`,
+      `<img src="../assets/frog.gif"  draggable="false">`,
     ],
   };
