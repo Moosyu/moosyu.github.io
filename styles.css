@@ -19,7 +19,6 @@ footer {
     background-color: blue;
     text-align: center;
 }
-
 table, th, td {
     background-color: darkblue;
     color: white;
@@ -30,4 +29,13 @@ table, th, td {
     margin-right: auto;
     margin-bottom:3px 
   }
+ul {
+    list-style: none;
+    text-align: center;
+    color: white;
+    background-color: darkblue;
+}
+li {
+    margin: 50px;
+}
   
