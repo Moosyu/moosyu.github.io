@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+    <head>
+        <title>about me</title>
+        <link rel = "stylesheet" href = "guides.css">
+    </head>
+    <body>
+        <nav>
+            <a style= "color:cyan" href = "../../index.html">home</a>
+            <a style= "color:cyan" > | </a>
+            <a style= "color:cyan" href = "../about.html">about</a>
+            <a style= "color:cyan"> | </a>
+            <a style= "color:cyan" href = "../guides.html">guides</a>
+            <a style= "color:cyan"> | </a>
+            <a style= "color:cyan" href = "../contact.html">contact</a>
+        </nav>
+          <p style="text-align: center; color: white;">(this tutorial assumes you're using windows)</p>
+        <ul>
+            <img style="width: 20%;" src="https://runelite.net/img/runelite_logo_transparent.png">
+        <li>
+            <p>prerequisite: a flash drive with 1gb of space or more and 
+            wherever you are going to plug it in doesnt block runescapes servers 
+            </p>
+        </li>
+          <li>
+            <p>step 1: go to <a href="https://adoptium.net/temurin/releases/?version=11">temurin latest releases page </a>
+            and download the openjdk windows version in the zip format. then unzip and place it in your folder. 
+            i renamed it to java but you can name it whatever you prefer</p>
+        </li>
+        <img style="width: 20%;" src="../../assets/runelite_site.png">
+          <li>
+            <p>step 2: go to <a href="https://github.com/runelite/launcher/releases">the runelite github releases page </a>and 
+            download the jar version</p>
+        </li>
+          <li>
+            <p>step 3: make a bat file (the name doesnt matter) and in it place this script: <code>
+            D:\Java\bin\java.exe "-Duser.home=client-home -Djava.io.tmpdir=client-tmp" -jar D:\client-runelite\RuneLite.jar --nojvm
+            </code> replace the begining <code>D:\Java\bin\java.exe</code> with your flash drives java.exe location and replace this part near the end 
+            <code>D:\client-runelite\RuneLite.jar</code> with your flash drives runelite.jar location. 
+            the quotation marks around <code> "-Duser.home=client-home -Djava.io.tmpdir=client-tmp"</code> are for if you are running it with
+            powershell. if you are using command prompt they aren't necessary</p>
+        </li>
+        <li>
+            <p>then run your new bat file to boot runelite off your flash drive</p>
+        </li>
+        </ul>
+        
+        </body>
+</html>

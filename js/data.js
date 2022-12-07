@@ -1,6 +1,5 @@
-let metersAway = Math.floor(Math.random() * 300);
 const data = {
-    subtitle: [
+    china: [
       `"再来亿遍`,
       `《招惹了妒忌的狗》`,
       `欢迎来到《大唐新说唱》`,

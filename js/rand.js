@@ -1,5 +1,5 @@
-(function newFact() {
-  var text = data.subtitle;
+(function newChina() {
+  var text = data.china;
   var colours = [
     "darkblue",
     "orange",

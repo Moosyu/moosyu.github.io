@@ -1,0 +1,23 @@
+html {
+    background-color: #2b2a33;
+}
+nav {
+    text-align: center;
+    border-style: solid;
+    border-color: white;
+    font-size: large;
+}
+ul {
+    list-style: none;
+    text-align: center;
+    color: white;
+}
+li {
+    margin: 50px;
+}
+a:visited {
+    color: cyan;
+}  
+a:link {
+    color: cyan;
+  }  

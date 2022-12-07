@@ -9,6 +9,11 @@ body {
 	justify-content: space-evenly;
 	align-items: center;
 }
+.center {
+    text-align: center;
+	align-items: center;
+    justify-content: center;
+}
 nav {
     text-align: center;
     border-style: solid;
@@ -32,10 +37,14 @@ table, th, td {
 ul {
     list-style: none;
     text-align: center;
-    color: white;
     background-color: darkblue;
 }
 li {
-    margin: 50px;
+    margin: 35px;
 }
-  
+.spin {
+    transition: 1s;
+}
+.spin:hover {
+    transform: rotate(360deg);
+}
