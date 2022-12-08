@@ -49,10 +49,10 @@ li {
     transform: rotate(360deg);
 }
 a:visited {
-    color: cyan;
+    color: darkblue;
 }  
 a:link {
-    color: cyan;
+    color: darkblue;
   }  
 .updog {
     text-align: center;
