@@ -48,3 +48,19 @@ li {
 .spin:hover {
     transform: rotate(360deg);
 }
+a:visited {
+    color: cyan;
+}  
+a:link {
+    color: cyan;
+  }  
+.updog {
+    text-align: center;
+    border: 5px solid blue;
+    margin-top: 40px;
+
+}
+/* whats updog */
+.updog img {
+    margin: 0 auto;
+}
