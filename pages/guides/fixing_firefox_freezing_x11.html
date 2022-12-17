@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+    <head>
+        <title>fixing firefox freezing when highlighting text</title>
+        <link rel = "stylesheet" href = "guides.css">
+    </head>
+    <body>
+        <nav>
+            <a style= "color:cyan" href = "../../index.html">home</a>
+            <a style= "color:cyan" > | </a>
+            <a style= "color:cyan" href = "../about.html">about</a>
+            <a style= "color:cyan"> | </a>
+            <a style= "color:cyan" href = "../guides.html">guides</a>
+            <a style= "color:cyan"> | </a>
+            <a style= "color:cyan" href = "../contact.html">contact</a>
+            <a style = "color:cyan"> | </a>
+            <a style = "color:cyan" href = "../misc.html">misc</a>    
+        </nav>
+        <ul>
+            <img style="width: 20%;" src="https://venam.nixers.net/blog/assets/X11.png">
+        <li>
+            <p>
+                recently i noticed an issue with my firefox freezing when highlighting text (though i thought it was when i was copying it). luckily its and
+                easy fix if you're using arch linux or an arch based distro
+            </p>
+        </li>
+        <li>
+            <p>
+                open your terminal and enter this command to install a patched version of the libx11 package <code>paru -S libx11-firefox-fix</code> (replace paru with your aur helper)
+                then just reload your x11 session which you can achieve generally by just logging out
+            </p>
+        </li>
+        <li>
+            <p>
+                this issue is being tracked <a href="https://gitlab.freedesktop.org/xorg/lib/libx11/-/issues/168" >here</a> and i recommended checking up on the thread
+            </p>
+        </li>
+        <h1 style="text-align: center; color: red;">WARNING</h1>
+        <h1 style="text-align: center; color: red;">------------------------------------------</h1>
+        <p>once this bug has been fixed you will need to replace the libx11-firefox-fix package with the normal libx11 package to stay up to date by reinstalling it with <code>
+            paru -S libx11</code> (replace paru with your aur helper)
+        </p>
+        <h1 style="text-align: center; color: red;">------------------------------------------</h1>
+        <h1 style="text-align: center;"><a href="https://github.com/Moosyu/moosyu.github.io/issues">report issues of this guide on my github issues page</a></h1>
+        </body>
+</html>
