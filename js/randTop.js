@@ -1,6 +1,6 @@
 (function newHeader() {
     var images = [
-      "../assets/blender_drip.gif",
+      "../assets/reviews.gif",
       "../assets/miscellaneous.gif",
       "../assets/software.gif",
       "../assets/updog.gif",

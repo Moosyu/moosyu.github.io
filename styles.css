@@ -64,3 +64,14 @@ a:link {
 .updog img {
     margin: 0 auto;
 }
+.softwarelist {
+    list-style: none;
+    text-align: center;
+}
+.listsf {
+    margin: auto;
+    display: flex;
+    background-color: blue;
+    width: 60%;
+    color: white;
+}
