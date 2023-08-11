@@ -43,6 +43,25 @@ const data = {
       `<img src="../assets/duck.png"  draggable="false">`,
       `<img src="../assets/flushed.png"  draggable="false">`,
       `<img src="../assets/doge.jpg"  draggable="false">`,
-      `<img src="../assets/frog.gif"  draggable="false">`,
+      `<img src="../assets/frog.gif"  draggable="false">`
+    ],
+    reviews: [
+      `noah macneil youve done it again`,
+      `shits fucked up`,
+      `premuim topping 11.99 dollar domino's pizza comes with stuffed crust`,
+      `al hilal winning the arab club champions cup with this one`,
+      `i cant feel my skin being peeled off`,
+      `young man, kill yourself!`,
+      `i call abraham lincoln big abe because hes my boy`,
+      `ni hao`,
+      `its the slenderman`,
+      `two jews walk into a bar`,
+      `im not angry im just disappointed`,
+      `muscle mommy`,
+      `youre an artist mr white`,
+      `you gotta stop lusting for men`,
+      `i want her to step on me like that 🗿🗿`,
+      `jeez why am i so smart? i cant believe it!`,
+      `pussy shoes two`
     ],
   };
