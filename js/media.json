@@ -1,17 +1,311 @@
 [
-    {
+	{
+		"type": "Manga",
+		"name": "Beastars",
+		"score": "7/10",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1159380147460395068/0068-018.png?ex=6530cfe7&is=651e5ae7&hm=4f96f4c1808dce7e9340cfc8f4884f76439b1914fd904a33a4a66723da61b44f&=&width=935&height=671",
+		"description": "zootopia"
+	},
+	{
+		"type": "Manga",
+		"name": "Masturbation Master Kurosawa",
+		"score": "4/10",
+		"image": "",
+		"description": "i saw it got a 8.4 on mal and i was like wow this gonna be good and then i saw it was called Masturbation Master Kurosawa and that was kinda a red flag and then i saw the art which was a much redder flag"
+	},
+	{
+		"type": "Manga",
+		"name": "A Silent Voice",
+		"score": "8/10",
+		"image": "",
+		"description": "yeah im pretty smart, i predicted the grandmas death"
+	},
+	{
 		"type": "Manhwa",
-		"name": "I Reincarnated As The Crazed Heir",
+		"name": "Who Made Me a Princess?",
 		"score": "5/10",
 		"image": "",
-		"description": "the author is just making it up as he goes"
+		"description": "why is this 5th place for manhwas on mal? who did this?"
+	},
+	{
+		"type": "Manhwa",
+		"name": "Crimson Karma",
+		"score": "6/10",
+		"image": "",
+		"description": "didn't expect to a story without the romance tag to be 80% romance but jokes on me i guess"
+	},
+	{
+		"type": "Manhwa",
+		"name": "Reverse Villain ",
+		"score": "4/10",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1158883785174175804/image.png",
+		"description": "does the author even know what a kindergarten is"
+	},
+	{
+		"type": "Manga",
+		"name": "The Descent of the Demonic Master",
+		"score": "6/10",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1158666371526316112/image.png",
+		"description": "me when im in a being homophobic compition and my opponenet is the descent of the demonic master comment section"
+	},
+	{
+		"type": "Manga",
+		"name": "The Ancient Magus' Bride",
+		"score": "7/10",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1158268345309745263/0001-047.png",
+		"description": "i still dont know if hes a pedo or just stupid"
+	},
+	{
+		"type": "Manhwa",
+		"name": "Wild West Murim",
+		"score": "7/10",
+		"image": "",
+		"description": "im devastated by jojos betrayal"
+	},
+	{
+		"type": "Manhwa",
+		"name": "I became an evolving space monster",
+		"score": "6/10",
+		"image": "",
+		"description": "rip cat"
+	},
+	{
+		"type": "Manhua",
+		"name": "Evolution Begins With a Big Tree",
+		"score": "5/10",
+		"image": "",
+		"description": "just because its not bad for a manhua doesnt mean its good"
+	},
+	{
+		"type": "Manhwa",
+		"name": "My Life as a Loser",
+		"score": "4/10",
+		"image": "",
+		"description": "no idea why is this is highly rated but its shit"
+	},
+	{
+		"type": "Manhwa",
+		"name": "Han Dae Sung Returned From Hell ",
+		"score": "4/10",
+		"image": "",
+		"description": "how is a person able to make something so unoriginal"
+	},
+	{
+		"type": "Manga",
+		"name": "I've Been Killing Slimes for 300 Years and Maxed Out My Level",
+		"score": "4/10",
+		"image": "",
+		"description": "theres really nothing that good about this"
+	},
+	{
+		"type": "Manga",
+		"name": "Zom 100 - Bucket List of the Dead",
+		"score": "5/10",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1157243826239443014/0002-010.jpg",
+		"description": "a little too many zombie tits for my liking but still"
+	},
+	{
+		"type": "Manga",
+		"name": "Welcome to Demon School! Iruma-kun",
+		"score": "5/10",
+		"image": "",
+		"description": "i hate the all the characters so much"
+	},
+	{
+		"type": "Comic",
+		"name": "Steve Lichman",
+		"score": "7/10",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1157482049737867314/image.png",
+		"description": "hes just one of the boys"
+	},
+	{
+		"type": "Webtoon",
+		"name": "Love Advice From The Great Duke Of Hell",
+		"score": "7/10",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1157464050754666506/image.png",
+		"description": "me when jokes are actually funny"
+	},
+	{
+		"type": "Manhwa",
+		"name": "Hero Killer",
+		"score": "6/10",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1157055321345380372/image.png",
+		"description": "wtf payday"
+	},
+	{
+		"type": "Manga",
+		"name": "Kaiju No. 8",
+		"score": "6/10",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1157075073585389629/0032-012.png",
+		"description": "how is anyone alive in japan in this world"
+	},
+	{
+		"type": "Manga",
+		"name": "Fire Punch",
+		"score": "4/10",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1156905465859547206/0013-021.png",
+		"description": "this just feels like the authors' kink or smthing"
+	},
+	{
+		"type": "Manhwa",
+		"name": "Her Summon",
+		"score": "5/10",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1156888928104755210/image.png",
+		"description": "imagine you accidently summon a reddit mod, shits fucked up"
+	},
+	{
+		"type": "Manga",
+		"name": "Ajin - Demi Human",
+		"score": "7/10",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1156839502694846464/0021-027.png",
+		"description": "why is the art insane"
+	},
+	{
+		"type": "Manga",
+		"name": "All You Need Is Kill",
+		"score": "7/10",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1156809849045254204/0016-021.png",
+		"description": "i swear ive watched a movie about this"
+	},
+	{
+		"type": "Manga",
+		"name": "Delicious in Dungeon",
+		"score": "6/10",
+		"image": "",
+		"description": "this guy is really calm about his sister being consumed"
+	},
+	{
+		"type": "Manga",
+		"name": "Sun-ken Rock",
+		"score": "5/10",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1156796352961974292/0003-014.png",
+		"description": "this author is incapable of drawing more than two body types"
+	},
+	{
+		"type": "Manga",
+		"name": "Yotsubato",
+		"score": "6/10",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1156784675579236372/0009-014.png",
+		"description": "jumbo dont deserve this disrespect"
+	},
+	{
+		"type": "Manga",
+		"name": "Barakamon",
+		"score": "4/10",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1156764293379936286/image.png",
+		"description": "on chapter one he said his heart has gone hard and i already knew this wasnt a good choice"
+	},
+	{
+		"type": "Manhwa",
+		"name": "The Divine Surgeon",
+		"score": "6/10",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1156519652697047110/image.png",
+		"description": "like who would pick anything but heaven"
+	},
+	{
+		"type": "Manga",
+		"name": "Dead Mount Death Play",
+		"score": "3/10",
+		"image": "",
+		"description": "so much fan service and they brought tne annoying bitch back to life just so they could show more of it"
+	},
+	{
+		"type": "Manga",
+		"name": "Isekai Omotenashi Gohan",
+		"score": "4/10",
+		"image": "",
+		"description": "something about this art is fucked up"
+	},
+	{
+		"type": "Manga",
+		"name": "Campfire Cooking in Another World with my Absurd Skill",
+		"score": "7/10",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1155794808401580072/image.png",
+		"description": "why is this guy so scared when he has an invincible barrier around him"
+	},
+	{
+		"type": "Manga",
+		"name": "Restaurant to Another World ",
+		"score": "6/10",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1155734519043850260/image.png",
+		"description": "authors trying to make female characters not extremely annoying and say WAHHHH instead of asking for things (impossible)"
+	},
+	{
+		"type": "Manga",
+		"name": "Otherworldly Izakaya Nobu",
+		"score": "6/10",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1155332956706062456/0003-016.jpg",
+		"description": "these guys should be broke"
+	},
+	{
+		"type": "Manga",
+		"name": "Frieren - Beyond Journey's End ",
+		"score": "8/10",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1155311070383181834/0092-001.jpg",
+		"description": "damn the first chapters are rough"
+	},
+	{
+		"type": "Manhwa",
+		"name": "Dungeon Reset",
+		"score": "5/10",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1154650486025228348/image.png?width=574&height=754",
+		"description": "minecraft"
+	},
+	{
+		"type": "Manga",
+		"name": "To Your Eternity",
+		"score": "8/10",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1154636420380631050/0131-024.jpg?width=529&height=754",
+		"description": "buff gugu a real one also should have ended after chapter 116"
+	},
+	{
+		"type": "Manga",
+		"name": "Blame!",
+		"score": "6/10",
+		"image": "",
+		"description": "i sure do love not knowing what is going for 1/3 of the manga"
+	},
+	{
+		"type": "Manga",
+		"name": "Yokohama Kaidashi Kikou ",
+		"score": "6/10",
+		"image": "",
+		"description": "i guess this is great for any lesbian robot fans out there"
+	},
+	{
+		"type": "Manga",
+		"name": "Mushoku Tensei ",
+		"score": "2/10",
+		"image": "",
+		"description": "what the fuck, do the authors want me to like a pedo?"
+	},
+	{
+		"type": "Manhwa",
+		"name": "Villain To Kill",
+		"score": "6/10",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1153920186844446752/image.png?width=311&height=657",
+		"description": "asura comment sections really know how to make me want to hang myself"
+	},
+	{
+		"type": "Manhwa",
+		"name": "Auto Hunting With My Clones ",
+		"score": "6/10",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1153565514505932820/image.png?width=610&height=657",
+		"description": "he doesnt look like a guy whos been training 72 hours a day"
 	},
     {
 		"type": "Manhwa",
-		"name": "I Reincarnated As The Crazed Heir",
-		"score": "5/10",
-		"image": "",
-		"description": "the author is just making it up as he goes"
+		"name": "Return of the Bloodthirsty Police",
+		"score": "6/10",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1153227456392740864/image.png?width=180&height=656",
+		"description": "colourblind american cop"
+	},
+    {
+		"type": "Manga",
+		"name": "Cacoon",
+		"score": "6/10",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1153198147678519326/cc2cba03-1029-4658-964c-be1ff74220fe.png?width=939&height=657",
+		"description": "i cant tell if the author is pro or anti japanese"
 	},
     {
 		"type": "Manga",
@@ -25,7 +319,7 @@
 		"name": "Haikyu!!",
 		"score": "7/10",
 		"image": "",
-		"description": "i wonder if the artist new it was about vollyball"
+		"description": "i wonder if the artist knew it was about vollyball"
 	},
     {
 		"type": "Manga",
