@@ -4,6 +4,11 @@ marquee {
 body {
     background-image: url("assets/wall.jpg");
 }
+.tableimg { 
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+}
 .mainbox {
 	display: flex;
 	justify-content: space-evenly;
@@ -32,12 +37,13 @@ table, th, td {
     border-collapse: collapse;  
     margin-left: auto;
     margin-right: auto;
-    margin-bottom:3px 
+    margin-bottom:3px;
+    overflow-wrap: break-word;
+
   }
 ul {
     list-style: none;
     text-align: center;
-    background-color: darkblue;
 }
 li {
     margin: 35px;
