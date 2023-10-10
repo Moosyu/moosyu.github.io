@@ -1,6 +1,34 @@
 [
 	{
 		"type": "Manga",
+		"name": "Tokyo Ghoul",
+		"score": "7/10",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1159948668481306706/0063-017.jpg",
+		"description": "he spent 60 years complaining about eating human meat and did it anyway"
+	},
+	{
+		"type": "Manhua",
+		"name": "Your Talent is Mine",
+		"score": "5/10",
+		"image": "",
+		"description": "my favourite part is when the asura scans comment section becomes a group of a pedos"
+	},
+	{
+		"type": "Manga",
+		"name": "Reincarnated as a Sword",
+		"score": "5/10",
+		"image": "",
+		"description": "i got nothing to say about this one"
+	},
+	{
+		"type": "Manga",
+		"name": "Mission: Yozakura Family",
+		"score": "6/10",
+		"image": "https://media.discordapp.net/attachments/1144500164627812416/1160134182794698873/image.png",
+		"description": "does the author even know what spies are? they just blow shit up."
+	},
+	{
+		"type": "Manga",
 		"name": "Beastars",
 		"score": "7/10",
 		"image": "https://media.discordapp.net/attachments/765056835044245527/1159380147460395068/0068-018.png?ex=6530cfe7&is=651e5ae7&hm=4f96f4c1808dce7e9340cfc8f4884f76439b1914fd904a33a4a66723da61b44f&=&width=935&height=671",
@@ -1261,7 +1289,7 @@
 	},
     {
 		"type": "Manhwa",
-		"name": "Mr Zombie",
+		"name": "Hanlim Gym",
 		"score": "6/10",
 		"image": "",
 		"description": "violence against teenagers is the only thing i live for"
@@ -1492,10 +1520,10 @@
 	},
     {
 		"type": "Manga",
-		"name": "The Summer Hikaru",
+		"name": "The Summer Hikaru Died",
 		"score": "7/10",
 		"image": "https://media.discordapp.net/attachments/765056835044245527/1125233891641413672/image.png?width=907&height=662",
-		"description": "Diedhomosexuals"
+		"description": "homosexuals"
 	},
     {
 		"type": "Manhwa",
