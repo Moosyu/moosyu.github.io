@@ -1,6 +1,41 @@
 [
 	{
 		"type": "Manga",
+		"name": "The Promised Neverland",
+		"score": "7/10",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1162896853952626758/0095-018.jpg",
+		"description": "how did they make a 9/10 and fumble it so badly after they escaped the farm"
+	},
+	{
+		"type": "Manga",
+		"name": "I'm Sakamoto, You Know?",
+		"score": "6/10",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1162295352569897060/Untitled.png",
+		"description": "there is no world in which sakamoto is not gay"
+	},
+	{
+		"type": "Manga",
+		"name": "Candy & Cigarettes",
+		"score": "5/10",
+		"image": "",
+		"description": "and 11 year old girl and an old man is perhaps the worst team you create"
+	},
+	{
+		"type": "Manga",
+		"name": "Hirayasumi",
+		"score": "8/10",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1162228984730370048/0002-028.jpg",
+		"description": "the art is so good it feels like a crime i binged it"
+	},
+	{
+		"type": "Manga",
+		"name": "Gokusen",
+		"score": "4/10",
+		"image": "",
+		"description": "the worst art"
+	},
+	{
+		"type": "Manga",
 		"name": "Tokyo Ghoul",
 		"score": "7/10",
 		"image": "https://media.discordapp.net/attachments/765056835044245527/1159948668481306706/0063-017.jpg",
@@ -31,7 +66,7 @@
 		"type": "Manga",
 		"name": "Beastars",
 		"score": "7/10",
-		"image": "https://media.discordapp.net/attachments/765056835044245527/1159380147460395068/0068-018.png?ex=6530cfe7&is=651e5ae7&hm=4f96f4c1808dce7e9340cfc8f4884f76439b1914fd904a33a4a66723da61b44f&=&width=935&height=671",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1159380147460395068/0068-018.png",
 		"description": "zootopia"
 	},
 	{
@@ -962,7 +997,7 @@
 		"type": "Manhwa",
 		"name": "Komi Can't Communicate",
 		"score": "5/10",
-		"image": "",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1161890320498307082/image.png",
 		"description": "this is like seeing food, biting into it and finding out its fucking hollow"
 	},
     {
@@ -1151,7 +1186,7 @@
 		"type": "Manga",
 		"name": "Chainsaw Man",
 		"score": "8/10",
-		"image": "https://media.discordapp.net/attachments/765056835044245527/1159655160797216798/0065-008.png?ex=6531d007&is=651f5b07&hm=e763de786b409bf97bba3ee06853c668afb24626f37d47caa4cce4cd20627953&=&width=720&height=540",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1159655160797216798/0065-008.png",
 		"description": "still dont know what the astronauts mean"
 	},
     {
