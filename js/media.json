@@ -1,9 +1,58 @@
 [
 	{
 		"type": "Manga",
+		"name": "I Obtained a Mythic Item",
+		"score": "5/10",
+		"image": "",
+		"description": "he really did in fact obtain a mythic item"
+	},
+	{
+		"type": "Manga",
+		"name": "Dead Dead Demons Dededede Destruction",
+		"score": "6/10",
+		"image": "",
+		"description": "cool premise i guess but it kind of feels like it got wasted"
+	},
+	{
+		"type": "Manga",
+		"name": "Re:Monster",
+		"score": "3/10",
+		"image": "",
+		"description": "goblin harem"
+	},
+	{
+		"type": "Manga",
+		"name": "RELIFE",
+		"score": "5/10",
+		"image": "",
+		"description": "the premise is just so creepy"
+	},
+	{
+		"type": "Manga",
+		"name": "Welcome to Japan, Elf-san",
+		"score": "5/10",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1166275378046832660/image.png",
+		"description": "i almost thought something was going on and then i saw the default isekai world and snapped"
+	},
+	{
+		"type": "Manhwa",
+		"name": "Ending Maker",
+		"score": "5/10",
+		"image": "",
+		"description": "runescape"
+	},
+	{
+		"type": "Manhwa",
+		"name": "The Knight King Who Returned with a God",
+		"score": "7/10",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1150661721023848548/image.png",
+		"description": "you see its basic op mc plot but this time hes racist and deeply religious"
+	},
+	{
+		"type": "Manga",
 		"name": "Dorohedoro",
 		"score": "9/10",
-		"image": "https://media.discordapp.net/attachments/765056835044245527/1165037569747202168/263471l.png",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1165055702562263060/0007-035.png",
 		"description": "why are japanese men in the early 2000s the only ones capable of writing original ideas"
 	},
 	{
