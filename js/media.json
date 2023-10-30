@@ -1,9 +1,23 @@
 [
 	{
 		"type": "Manga",
-		"name": "I Obtained a Mythic Item",
+		"name": "Dungeon Nursery",
+		"score": "5/10",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1168387243749167164/image.png",
+		"description": "seems like a risky move for god to let people going to hell summon little girls but what do i know"
+	},
+	{
+		"type": "Manga",
+		"name": "Me and my gangster neighbour",
 		"score": "5/10",
 		"image": "",
+		"description": "me when im in a writing a strangely pedophelic story competition and my opponent is the japanese"
+	},
+	{
+		"type": "Manhwa",
+		"name": "I Obtained a Mythic Item",
+		"score": "5/10",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1166984271756542002/image.png",
 		"description": "he really did in fact obtain a mythic item"
 	},
 	{
@@ -21,7 +35,7 @@
 		"description": "goblin harem"
 	},
 	{
-		"type": "Manga",
+		"type": "Manga?",
 		"name": "RELIFE",
 		"score": "5/10",
 		"image": "",
@@ -1129,9 +1143,9 @@
     {
 		"type": "Manhwa",
 		"name": "Lookism",
-		"score": "5/10",
-		"image": "",
-		"description": "fuck this guy hes just a loser"
+		"score": "7/10",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1168033727184654418/latest.png",
+		"description": "olly and james were the best combo also did the author forget that they are high school students or something because they dont attend that place"
 	},
     {
 		"type": "Manhwa",
