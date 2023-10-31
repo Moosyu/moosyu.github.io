@@ -1,6 +1,27 @@
 [
 	{
 		"type": "Manga",
+		"name": "Goodbye, Eri",
+		"score": "8/10",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1168781977692946442/0001-198.png",
+		"description": "the twist is wild i think unless i didnt understand the ending in which case thats a pretty wild twist. read it, its like 200 pages."
+	},
+	{
+		"type": "Manga",
+		"name": "I Want to Eat Your Pancrea",
+		"score": "9/10",
+		"image": "",
+		"description": "i really expected some boring highschool romance and instead i was put into a state of despair"
+	},
+	{
+		"type": "Manga",
+		"name": "Usagi Drop",
+		"score": "2/10",
+		"image": "",
+		"description": "ewww what the fuck why would you make the ending like this"
+	},
+	{
+		"type": "Manga",
 		"name": "Telework Yotabanashi",
 		"score": "5/10",
 		"image": "",
