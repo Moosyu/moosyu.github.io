@@ -1,6 +1,55 @@
 [
 	{
 		"type": "Manga",
+		"name": "Telework Yotabanashi",
+		"score": "5/10",
+		"image": "",
+		"description": "to be honest i feel like if it was more than 20 chapters i would have gotten bored"
+	},
+	{
+		"type": "Manga",
+		"name": "Among Us",
+		"score": "10/10 (5/10)",
+		"image": "",
+		"description": "peak fiction"
+	},
+	{
+		"type": "Manga",
+		"name": "Smoking Behind the Supermarket with You",
+		"score": "7/10",
+		"image": "",
+		"description": "i dont usually like romance manga but you know i liked this one. also i only started reading it because the text on the volume one cover is the same color as the thumbnail for some shitty halloween roblox game i used to play."
+	},
+	{
+		"type": "Manga",
+		"name": "Spice & Wolf",
+		"score": "5/10",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1168749651281842266/image.png",
+		"description": "furry"
+	},
+	{
+		"type": "Manga",
+		"name": "Retired Heros",
+		"score": "5/10",
+		"image": "",
+		"description": "a bit of an abrupt time skip but ok"
+	},
+	{
+		"type": "Manga",
+		"name": "Yakuza Fiancé",
+		"score": "6/10",
+		"image": "",
+		"description": "i really felt something at the start kind of like bastard where shes trapped and cant escape but they really fumbled, or maybe this what they were going for, but i dont know why you would make a decent story instead of a great one"
+	},
+	{
+		"type": "Manga",
+		"name": "Goblin Is Very Strong",
+		"score": "4/10",
+		"image": "",
+		"description": "too much lesbian too little story"
+	},
+	{
+		"type": "Manga",
 		"name": "Dungeon Nursery",
 		"score": "5/10",
 		"image": "https://media.discordapp.net/attachments/765056835044245527/1168387243749167164/image.png",
@@ -200,7 +249,7 @@
 		"name": "The Descent of the Demonic Master",
 		"score": "6/10",
 		"image": "https://media.discordapp.net/attachments/765056835044245527/1158666371526316112/image.png",
-		"description": "me when im in a being homophobic compition and my opponenet is the descent of the demonic master comment section"
+		"description": "me when im in a being homophobic compition and my opponent is the descent of the demonic master comment section"
 	},
 	{
 		"type": "Manga",
@@ -1304,14 +1353,14 @@
     {
 		"type": "Manga",
 		"name": "Attack on Titan",
-		"score": "4/10",
-		"image": "",
+		"score": "7/10",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1168698669621592144/0007-031.png",
 		"description": "why did it end like eren is the good guy when hes basically hitler"
 	},
     {
 		"type": "Anime",
 		"name": "Attack on Titan",
-		"score": "4/10",
+		"score": "5/10",
 		"image": "",
 		"description": "it upsets me greatly that people think this is good"
 	},
