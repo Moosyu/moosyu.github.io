@@ -1,6 +1,83 @@
 [
 	{
 		"type": "Manga",
+		"name": "GTO",
+		"score": "3/10",
+		"image": "",
+		"description": "incredibly overrated, art isnt that good messages are kinda shit and why does it only call him a pervert when he is in fact a pedophile"
+	},
+	{
+		"type": "Manga",
+		"name": "Sweetness and Lightning",
+		"score": "6/10",
+		"image": "",
+		"description": "i just like looking at food also another weird age gap thing bruh"
+	},
+	{
+		"type": "Manga",
+		"name": "Sen to Man",
+		"score": "4/10",
+		"image": "",
+		"description": "theres no way im the correct demographic for this but i dont like the kid and just find it boring in general"
+	},
+	{
+		"type": "Manga",
+		"name": "Dreamin' Sun",
+		"score": "4/10",
+		"image": "",
+		"description": "god the japanese want to date high schoolers so badly. weird age jap and also hes kind of like a father figure which is even more strange."
+	},
+	{
+		"type": "Manga",
+		"name": "The Dangers in My Heart",
+		"score": "3/10",
+		"image": "",
+		"description": "actual trash with the only value being its art"
+	},
+	{
+		"type": "Manga",
+		"name": "A Man and His Cat",
+		"score": "6/10",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1169466667919740948/image.png",
+		"description": "thats why yo mama dead"
+	},
+	{
+		"type": "Manga",
+		"name": "He Does Not Have Any Friends",
+		"score": "5/10",
+		"image": "",
+		"description": "ive realised i dont really have anything good left to read"
+	},
+	{
+		"type": "Manga",
+		"name": "Skip and Loafer",
+		"score": "6/10",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1169146132073558046/0012-026.png",
+		"description": "nothing ever happens but at least the art is nice"
+	},
+	{
+		"type": "Manga",
+		"name": "I Had That Same Dream Again",
+		"score": "6/10",
+		"image": "",
+		"description": "after reading i want to eat your pancreas this is really disappointing"
+	},
+	{
+		"type": "Manga",
+		"name": "Mr. Villain's Day Off",
+		"score": "6/10",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1168850216603103292/0013-005.png",
+		"description": "panda"
+	},
+	{
+		"type": "Manga",
+		"name": "I Lost My Adventurer's License, but It's Fine Because I Have an Adorable Daughter Now",
+		"score": "6/10",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1168805839361015818/image.png",
+		"description": "pretty wholesome"
+	},
+	{
+		"type": "Manga",
 		"name": "Goodbye, Eri",
 		"score": "8/10",
 		"image": "https://media.discordapp.net/attachments/765056835044245527/1168781977692946442/0001-198.png",
