@@ -1,6 +1,41 @@
 [
 	{
 		"type": "Manga",
+		"name": "Moon You",
+		"score": "7/10",
+		"image": "",
+		"description": "im gonna move to the moon, it seems better there"
+	},
+	{
+		"type": "Manga",
+		"name": "Inuyashiki",
+		"score": "7/10",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1170461127818366986/image0.jpg",
+		"description": "this is why we need trump back"
+	},
+	{
+		"type": "Manga",
+		"name": "Kaguya-sama: Love Is War",
+		"score": "5/10",
+		"image": "",
+		"description": "i saw the anime and found it bad and yet i still read this. what did i expect?"
+	},
+	{
+		"type": "Manhwa",
+		"name": "God Of Highschool",
+		"score": "6/10",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1169855413320163448/image.png",
+		"description": "the most insanes fights, the rest isnt good but luckily the fights are 90%"
+	},
+	{
+		"type": "Manga",
+		"name": "Horimiya",
+		"score": "5/10",
+		"image": "",
+		"description": "ok they really didnt need more than 50 chapters as nothing ever happens and somehow they still didnt manage to add a conclusion for the side characters "
+	},
+	{
+		"type": "Manga",
 		"name": "GTO",
 		"score": "3/10",
 		"image": "",
