@@ -1,5 +1,12 @@
 [
 	{
+		"type": "Movie",
+		"name": "Spirited Away",
+		"score": "8/10",
+		"image": "",
+		"description": "similar experience to getting lost in a supermarket"
+	},
+	{
 		"type": "Manga",
 		"name": "Moon You",
 		"score": "7/10",
@@ -17,8 +24,8 @@
 		"type": "Manga",
 		"name": "Kaguya-sama: Love Is War",
 		"score": "5/10",
-		"image": "",
-		"description": "i saw the anime and found it bad and yet i still read this. what did i expect?"
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1171030974444879912/image.png",
+		"description": "its funny once every 40 chapters and its so drawn out. like after the first 100 chapters it felt like such a slog and after 200 there wasnt many funny things either."
 	},
 	{
 		"type": "Manhwa",
@@ -149,9 +156,9 @@
 	{
 		"type": "Manga",
 		"name": "Smoking Behind the Supermarket with You",
-		"score": "7/10",
+		"score": "8/10",
 		"image": "",
-		"description": "i dont usually like romance manga but you know i liked this one. also i only started reading it because the text on the volume one cover is the same color as the thumbnail for some shitty halloween roblox game i used to play."
+		"description": "chill as hell. also i only started reading it because the text on the volume one cover is the same color as the thumbnail for some shitty halloween roblox game i used to play."
 	},
 	{
 		"type": "Manga",
@@ -1923,13 +1930,6 @@
 		"score": "9/10",
 		"image": "",
 		"description": "cerified hood classic"
-	},
-	{
-		"type": "Novella",
-		"name": "Animal Farm",
-		"score": "8/10",
-		"image": "",
-		"description": "most metal shit my english teacher ever made me read"
 	},
 	{
 		"type": "Anime",

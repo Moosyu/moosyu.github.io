@@ -43,9 +43,7 @@ const data = {
       `<img src="../assets/duck.png"  draggable="false">`,
       `<img src="../assets/flushed.png"  draggable="false">`,
       `<img src="../assets/doge.jpg"  draggable="false">`,
-      `<img src="../assets/frog.gif"  draggable="false">`
-    ],
-    reviews: [
+      `<img src="../assets/frog.gif"  draggable="false">`,
       `noah macneil youve done it again`,
       `shits fucked up`,
       `premuim topping 11.99 dollar domino's pizza comes with stuffed crust`,
@@ -61,6 +59,12 @@ const data = {
       `youre an artist mr white`,
       `you gotta stop lusting for men`,
       `i want her to step on me like that 🗿🗿`,
+      `imagine carrying a baby for nine months just to name it josh`,
+      `It's too late. Give up.`,
+      `Marvel fans when their parents wedding video doesn't have a post credit scene teasing their divorce`,
+      `far too liberal`,
+      `The purple crayon didn't taste like grape...`,
+      `It's right behind me isn't it`,
       `jeez why am i so smart? i cant believe it!`,
       `pussy shoes two`
     ],

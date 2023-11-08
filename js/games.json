@@ -1,4 +1,9 @@
 [
+	{
+		"name": "World Box",
+		"score": "7/10",
+		"description": "why do they hate the dwarves so much"
+	},
     {
 		"name": "Inscryption",
 		"score": "9/10",
@@ -7,7 +12,7 @@
     {
 		"name": "Fallout: New Vegas",
 		"score": "8/10",
-		"description": "the visual upgrade mods a pretty good"
+		"description": "the visual upgrade mods are pretty good"
 	},
     {
 		"name": "Mother 3",
@@ -17,7 +22,7 @@
     {
 		"name": "Superhot",
 		"score": "8/10",
-		"description": "playing this broke my back"
+		"description": "playing this in vr broke my back"
 	},
     {
 		"name": "Gris",
