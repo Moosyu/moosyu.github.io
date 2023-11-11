@@ -1,5 +1,19 @@
 [
 	{
+		"type": "Manga",
+		"name": "Teppuu",
+		"score": "7/10",
+		"image": "",
+		"description": "she really talked about training hard after training for a few months compared with the other guys training their whole lives"
+	},
+	{
+		"type": "Manga",
+		"name": "Like a Butterfly",
+		"score": "4/10",
+		"image": "",
+		"description": "i was trying to read Navillera: Like a Butterfly but i accidentally ended up reading this thinking the summary was just really off. im actually stupid."
+	},
+	{
 		"type": "Movie",
 		"name": "Spirited Away",
 		"score": "8/10",
@@ -1458,9 +1472,9 @@
     {
 		"type": "Anime",
 		"name": "Jujutsu Kaisen",
-		"score": "6/10",
-		"image": "",
-		"description": "its roleplaying as being good"
+		"score": "8/10",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1172447333670199386/vlcsnap-2023-11-10-21h06m22s524.png",
+		"description": "some guy named kenzo is getting paid 5 yen per 19 hour shift for animating this shit"
 	},
     {
 		"type": "Manga",

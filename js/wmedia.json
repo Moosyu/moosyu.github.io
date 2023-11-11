@@ -1,6 +1,96 @@
 [
     {
         "type": "TV Show",
+        "name": "Rick and Morty",
+        "score": "7/10",
+        "description": "morty ive been sending unsolicited messages to underaged girls"
+    },
+    {
+        "type": "Movie",
+        "name": "Puss in Boots: The Last Wish",
+        "score": "8/10",
+        "description": "why is this so much better then the original"
+    },
+    {
+        "type": "Movie",
+        "name": "Puss in Boots",
+        "score": "6/10",
+        "description": "wow its the guy from shrek"
+    },
+    {
+        "type": "Movie",
+        "name": "How to Train Your Dragon",
+        "score": "8/10",
+        "description": "as a child i binge watched every episode of little lizard and tiny turtle's how to train your dragon minecraft series"
+    },
+    {
+        "type": "Movie",
+        "name": "Cars 3",
+        "score": "4/10",
+        "description": "why do they keep making cars films about things unrelated to cars like why is he going through a midlife crisis"
+    },
+    {
+        "type": "Movie",
+        "name": "Cars 2",
+        "score": "4/10",
+        "description": "who was like we gotta make this one a spie film thats what people want to watch in a film about cars"
+    },
+    {
+        "type": "Movie",
+        "name": "Ralph Breaks the Internet",
+        "score": "4/10",
+        "description": "ralph will get cyberbullied and kill himself"
+    },
+    {
+        "type": "Movie",
+        "name": "Cars",
+        "score": "6/10",
+        "description": "i would like to know how car sex works"
+    },
+    {
+        "type": "Movie",
+        "name": "Turbo",
+        "score": "6/10",
+        "description": "why when this snail drinks fuel he gets fast but when i drink it i die"
+    },
+    {
+        "type": "Movie",
+        "name": "Wreck it Ralph",
+        "score": "6/10",
+        "description": "ralph could trip and instantly kill the little girl"
+    },
+    {
+        "type": "TV Show",
+        "name": "House MD",
+        "score": "4/10",
+        "description": "every episode is the same episode"
+    },
+    {
+        "type": "TV Show",
+        "name": "Umbrella Academy",
+        "score": "8/10",
+        "description": "these damn rebellious teenagers always time travelling without permission"
+    },
+    {
+        "type": "TV Show",
+        "name": "Smiling Friends",
+        "score": "9/10",
+        "description": "mr frog is justin roiland"
+    },
+    {
+        "type": "Book",
+        "name": "All Tomorrows",
+        "score": "8/10",
+        "description": "the qu were just environmental activists"
+    },
+    {
+        "type": "TV Show",
+        "name": "Modern Family",
+        "score": "8/10",
+        "description": "the godfather parody went pretty hard"
+    },
+    {
+        "type": "TV Show",
         "name": "Gravity Falls",
         "score": "9/10",
         "description": "most normal day in oregon"
