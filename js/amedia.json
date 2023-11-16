@@ -1,6 +1,41 @@
 [
 	{
 		"type": "Manga",
+		"name": "Your Name.",
+		"score": "6/10",
+		"image": "",
+		"description": "feels far too short and way too long at the same time somehow"
+	},
+	{
+		"type": "Manga",
+		"name": "Kuzumi-kun, Can't You Read the Room?",
+		"score": "4/10",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1173883048157265970/0009-022.png",
+		"description": "i dont know how many more popular girl falls for loser nerd mangas i can take"
+	},
+	{
+		"type": "Manga",
+		"name": "You and I Are Polar Opposites",
+		"score": "5/10",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1173560793355255829/0003-032.png",
+		"description": "the art is ok and the story is ok"
+	},
+	{
+		"type": "Manga",
+		"name": "Insomniacs After School",
+		"score": "7/10",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1173418489432780970/0101-012.png",
+		"description": "same plot as some shitty movie i watched I swear to god except this time there isn't the nicest boyfriend on earth being betrayed for some guy she found on the street also the art crazy"
+	},
+	{
+		"type": "Manga",
+		"name": "The Coppersmith's Bride",
+		"score": "4/10",
+		"image": "",
+		"description": "i dont really know how to explain it but i feel like somehow im missing pages that dont exist"
+	},
+	{
+		"type": "Manga",
 		"name": "Teppuu",
 		"score": "7/10",
 		"image": "",

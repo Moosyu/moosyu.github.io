@@ -1,6 +1,18 @@
 [
     {
         "type": "TV Show",
+        "name": "The Flash",
+        "score": "2/10",
+        "description": "why is the flash so stupid you have super speed just run at people and instakill them"
+    },
+    {
+        "type": "Movie",
+        "name": "No Country for Old Men",
+        "score": "9/10",
+        "description": "i feel like they should have caught him sooner considering he looks like the most sketchy person ever"
+    },
+    {
+        "type": "TV Show",
         "name": "Rick and Morty",
         "score": "7/10",
         "description": "morty ive been sending unsolicited messages to underaged girls"
@@ -531,7 +543,7 @@
         "type": "TV Show",
         "name": "Invincible",
         "score": "8/10",
-        "description": "i love when the show makes me like characters only to instantly kill them"
+        "description": "i hate the black girl so fucking much just break up like how can she be pissed that he didnt tell her his secret identity even his closest friend doesnt know"
     },
     {
         "type": "Movie",
