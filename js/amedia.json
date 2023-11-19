@@ -1,6 +1,34 @@
 [
 	{
 		"type": "Manga",
+		"name": "Demon Slayer",
+		"score": "6/10",
+		"image": "",
+		"description": "the anime really gave this a glow up"
+	},
+	{
+		"type": "Anime",
+		"name": "Frieren - Beyond Journey's End",
+		"score": "9/10",
+		"image": "",
+		"description": "i hope the artistis hands arent burnt from drawing this fire"
+	},
+	{
+		"type": "Anime",
+		"name": "A Returner's Magic Should Be Special",
+		"score": "5/10",
+		"image": "",
+		"description": "a really average anime, just read the manhwa but even that is only ok"
+	},
+	{
+		"type": "Anime",
+		"name": "Cyberpunk: Edgerunners",
+		"score": "10/10",
+		"image": "",
+		"description": "how is it possible to fit this much into ten episodes"
+	},
+	{
+		"type": "Manga",
 		"name": "Your Name.",
 		"score": "6/10",
 		"image": "",
@@ -23,7 +51,7 @@
 	{
 		"type": "Manga",
 		"name": "Insomniacs After School",
-		"score": "7/10",
+		"score": "8/10",
 		"image": "https://media.discordapp.net/attachments/765056835044245527/1173418489432780970/0101-012.png",
 		"description": "same plot as some shitty movie i watched I swear to god except this time there isn't the nicest boyfriend on earth being betrayed for some guy she found on the street also the art crazy"
 	},
@@ -394,7 +422,7 @@
 	{
 		"type": "Manga",
 		"name": "Beastars",
-		"score": "7/10",
+		"score": "8/10",
 		"image": "https://media.discordapp.net/attachments/765056835044245527/1159380147460395068/0068-018.png",
 		"description": "zootopia"
 	},
@@ -1023,7 +1051,7 @@
 	},
     {
 		"type": "Manga",
-		"name": "JoJo's Bizarre Adventure Part 7",
+		"name": "JoJo's Bizarre Adventure Part 7: Steel Ball Run",
 		"score": "8/10",
 		"image": "https://media.discordapp.net/attachments/765056835044245527/1144481014723379271/image.png",
 		"description": "cross country grave robbing roadtrip"
@@ -1164,9 +1192,9 @@
     {
 		"type": "Manhwa",
 		"name": "Masters of Lightning Knives",
-		"score": "6/10",
+		"score": "5/10",
 		"image": "https://media.discordapp.net/attachments/765056835044245527/1141635285214568468/image.png?width=637&height=657",
-		"description": "jesus the author knows how to drag things out"
+		"description": "series feels like a constant state of edging"
 	},
     {
 		"type": "Manga",
@@ -1213,9 +1241,9 @@
     {
 		"type": "Manga",
 		"name": "Vagabond",
-		"score": "8/10",
+		"score": "9/10",
 		"image": "https://media.discordapp.net/attachments/765056835044245527/1140886948970516520/0044-017.png?width=430&height=656",
-		"description": "he gets his ass beat"
+		"description": "it feels so real and he has actually growth as a person"
 	},
     {
 		"type": "Manga",
@@ -1227,7 +1255,7 @@
     {
 		"type": "Manga",
 		"name": "Goodnight PunPun",
-		"score": "8/10",
+		"score": "9/10",
 		"image": "https://media.discordapp.net/attachments/765056835044245527/1140558899943059486/0017-014.png?width=916&height=657",
 		"description": "SHE RAPED PUNPUN WHAT THE FUCK"
 	},
@@ -1360,7 +1388,7 @@
     {
 		"type": "Manhwa",
 		"name": "The Return of the Crazy Demon",
-		"score": "7/10",
+		"score": "8/10",
 		"image": "https://media.discordapp.net/attachments/765056835044245527/1138386827917676624/image.png?width=353&height=656",
 		"description": "extreme trolling"
 	},
@@ -1383,7 +1411,7 @@
 		"name": "Lookism",
 		"score": "7/10",
 		"image": "https://media.discordapp.net/attachments/765056835044245527/1168033727184654418/latest.png",
-		"description": "olly and james were the best combo also did the author forget that they are high school students or something because they dont attend that place"
+		"description": "olly and james were the best combo also did the author forget that they are high school students or something because they dont attend that place. i would have given it 8/10 but the first 50 or so chapters had such awful art."
 	},
     {
 		"type": "Manhwa",
@@ -1493,14 +1521,14 @@
     {
 		"type": "Anime",
 		"name": "Mob Psycho 100",
-		"score": "8/10",
+		"score": "9/10",
 		"image": "",
 		"description": "i have no doubt that the animators were high making this"
 	},
     {
 		"type": "Anime",
 		"name": "Made in Abyss",
-		"score": "8/10",
+		"score": "9/10",
 		"image": "",
 		"description": "first anime i watched, shit goes harder then diamonds. set my expectations way too high."
 	},
@@ -1751,10 +1779,10 @@
 	},
     {
 		"type": "Manhwa",
-		"name": "Regarding Death",
-		"score": "6/10",
+		"name": "About Death",
+		"score": "8/10",
 		"image": "https://media.discordapp.net/attachments/765056835044245527/1132591349489733753/image.png?width=667&height=547",
-		"description": "it was entertaining"
+		"description": "how did they make me releate to every character every chapter and why am i still remembering this now"
 	},
     {
 		"type": "Manhwa",
@@ -1766,7 +1794,7 @@
     {
 		"type": "Manhwa",
 		"name": "The Horizon",
-		"score": "9/10",
+		"score": "10/10",
 		"image": "https://media.discordapp.net/attachments/765056835044245527/1132508062947745802/image.png?width=922&height=662",
 		"description": "this guy only makes bangers"
 	},
@@ -1815,7 +1843,7 @@
     {
 		"type": "Manhwa",
 		"name": "Reaper of the Drifting Moon",
-		"score": "7/10",
+		"score": "8/10",
 		"image": "https://media.discordapp.net/attachments/765056835044245527/1130780082118598666/image.png?width=502&height=247",
 		"description": "he is a new race"
 	},
@@ -1935,8 +1963,8 @@
 		"type": "Manhwa",
 		"name": "Hellper",
 		"score": "8/10",
-		"image": "",
-		"description": "i like this guy"
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1175743540211482674/image.png",
+		"description": "the author really thought hell and then wrote one of the most well made comics ever with great art, fights and characters"
 	},
     {
 		"type": "Manhwa",
@@ -1978,7 +2006,7 @@
 		"name": "Sweet Home",
 		"score": "9/10",
 		"image": "",
-		"description": "cerified hood classic"
+		"description": "me when something meant to be suspenseful is actually suspenseful!!"
 	},
 	{
 		"type": "Anime",
@@ -1990,9 +2018,9 @@
 	{
 		"type": "Anime",
 		"name": "Demon Slayer",
-		"score": "7/10",
+		"score": "8/10",
 		"image": "",
-		"description": "not too bad"
+		"description": "wow the animation is insane also the entertainment district was peak"
 	},
 	{
 		"type": "Manhwa",

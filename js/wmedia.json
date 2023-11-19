@@ -1,6 +1,12 @@
 [
     {
         "type": "TV Show",
+        "name": "Phineas and Ferb",
+        "score": "8/10",
+        "description": "and the summer keeps going on and on it seems like its been going on for like four years"
+    },
+    {
+        "type": "TV Show",
         "name": "The Flash",
         "score": "2/10",
         "description": "why is the flash so stupid you have super speed just run at people and instakill them"
