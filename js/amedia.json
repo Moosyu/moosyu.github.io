@@ -1,6 +1,55 @@
 [
 	{
 		"type": "Manga",
+		"name": "Wotakoi - Love Is Hard for Otaku",
+		"score": "5/10",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1176285821767262310/image.png",
+		"description": "isnt the problem with their relationships just that they have different interests not because her interest is writing gay porn"
+	},
+	{
+		"type": "Anime",
+		"name": "Migi to Dali",
+		"score": "7/10",
+		"image": "",
+		"description": "the steve jobs bit was the funniest joke ive heard in anime, it was out of nowhere"
+	},
+	{
+		"type": "Anime",
+		"name": "Tokyo Ghoul",
+		"score": "6/10",
+		"image": "",
+		"description": "this is more edgy then the manga without any of the proper character development stopping it from being completely edgy like the manga did"
+	},
+	{
+		"type": "Movie",
+		"name": "Blue Giant",
+		"score": "9/10",
+		"image": "",
+		"description": "its like the manga but i dont have to put jazz on in the background. has some wonky looking cgi but also has some wild mob psycho like art so it evens out."
+	},
+	{
+		"type": "Manhwa",
+		"name": "Maybe Meant to Be",
+		"score": "6/10",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1176055689563619358/image.png",
+		"description": "if i was gay it would be this guy or chris pratt im just saying"
+	},
+	{
+		"type": "Manga",
+		"name": "Aharen-san is unfathomable",
+		"score": "3/10",
+		"image": "",
+		"description": "makes me feel like a pedo"
+	},
+	{
+		"type": "Manga",
+		"name": "Shikimori's Not Just a Cutie",
+		"score": "3/10",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1174539717237284924/image.png",
+		"description": "its barely a manga"
+	},
+	{
+		"type": "Manga",
 		"name": "Demon Slayer",
 		"score": "6/10",
 		"image": "",
@@ -9,7 +58,7 @@
 	{
 		"type": "Anime",
 		"name": "Frieren - Beyond Journey's End",
-		"score": "9/10",
+		"score": "10/10",
 		"image": "",
 		"description": "i hope the artistis hands arent burnt from drawing this fire"
 	},
@@ -394,9 +443,9 @@
 	{
 		"type": "Manga",
 		"name": "Tokyo Ghoul",
-		"score": "7/10",
+		"score": "8/10",
 		"image": "https://media.discordapp.net/attachments/765056835044245527/1159948668481306706/0063-017.jpg",
-		"description": "he spent 60 years complaining about eating human meat and did it anyway"
+		"description": "its always so close to being extremely edgy"
 	},
 	{
 		"type": "Manhua",
@@ -530,13 +579,6 @@
 		"score": "5/10",
 		"image": "",
 		"description": "i hate the all the characters so much"
-	},
-	{
-		"type": "Comic",
-		"name": "Steve Lichman",
-		"score": "7/10",
-		"image": "https://media.discordapp.net/attachments/765056835044245527/1157482049737867314/image.png",
-		"description": "hes just one of the boys"
 	},
 	{
 		"type": "Webtoon",
@@ -1241,9 +1283,9 @@
     {
 		"type": "Manga",
 		"name": "Vagabond",
-		"score": "9/10",
-		"image": "https://media.discordapp.net/attachments/765056835044245527/1140886948970516520/0044-017.png?width=430&height=656",
-		"description": "it feels so real and he has actually growth as a person"
+		"score": "10/10",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1176326288236089364/0256-015.png",
+		"description": "it feels so real and he has actually growth as a person and the art is incredible"
 	},
     {
 		"type": "Manga",

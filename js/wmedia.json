@@ -1,5 +1,19 @@
 [
     {
+		"type": "Movie",
+		"name": "Argo",
+		"score": "6/10",
+		"image": "",
+		"description": "we had to watch this and everyone was looking at the one middle eastern kid the entire time"
+	},
+    {
+		"type": "Comic",
+		"name": "Steve Lichman",
+		"score": "7/10",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1157482049737867314/image.png",
+		"description": "hes just one of the boys"
+	},
+    {
         "type": "TV Show",
         "name": "Phineas and Ferb",
         "score": "8/10",
