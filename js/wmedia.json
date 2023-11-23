@@ -1,6 +1,13 @@
 [
     {
 		"type": "Movie",
+		"name": "The Hunger Games",
+		"score": "7/10",
+		"image": "",
+		"description": "cato is the least threatening villain ive ever seen"
+	},
+    {
+		"type": "Movie",
 		"name": "Argo",
 		"score": "6/10",
 		"image": "",

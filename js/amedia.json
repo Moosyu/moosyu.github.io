@@ -1,5 +1,33 @@
 [
 	{
+		"type": "Anime",
+		"name": "Dorohedoro",
+		"score": "8/10",
+		"image": "",
+		"description": "good but the art and just general it isnt as good as the manga but ebisu in the shark costume was definitly better then the manga. still it is worth a watch if you are unwilling to read the manga."
+	},
+	{
+		"type": "Manga",
+		"name": "How to Grill Our Love",
+		"score": "5/10",
+		"image": "",
+		"description": "the romance isnt particularly interesting but the food does look very good, tragically by about chapter 30 i am completely bored by both the romance and the food"
+	},
+	{
+		"type": "Manga",
+		"name": "Tomo-chan Is a Girl!",
+		"score": "5/10",
+		"image": "",
+		"description": "very average and also drawn out but like its a romance manga why should i expect something good"
+	},
+	{
+		"type": "Manga",
+		"name": "Gon",
+		"score": "6/10",
+		"image": "",
+		"description": "the artwork is great but like thats it, its kind of like watching national geographic i guess"
+	},
+	{
 		"type": "Manga",
 		"name": "Wotakoi - Love Is Hard for Otaku",
 		"score": "5/10",
@@ -60,7 +88,7 @@
 		"name": "Frieren - Beyond Journey's End",
 		"score": "10/10",
 		"image": "",
-		"description": "i hope the artistis hands arent burnt from drawing this fire"
+		"description": "i hope the artists hands arent burnt from drawing this fire"
 	},
 	{
 		"type": "Anime",
@@ -380,9 +408,9 @@
 	{
 		"type": "Manga",
 		"name": "Dorohedoro",
-		"score": "9/10",
+		"score": "10/10",
 		"image": "https://media.discordapp.net/attachments/765056835044245527/1165055702562263060/0007-035.png",
-		"description": "why are japanese men in the early 2000s the only ones capable of writing original ideas"
+		"description": "everything feels so new, the worldbuilding is great, the art is perfect for the story and the entire cast is great. its world building is great to a point where it actually feels like you are looking into a living world not just a chunk of land that just appeared so you can spectate."
 	},
 	{
 		"type": "Manga",
@@ -1220,9 +1248,9 @@
     {
 		"type": "Manhwa",
 		"name": "Dandadan",
-		"score": "7/10",
-		"image": "",
-		"description": "written by a 5 year old, incredible"
+		"score": "8/10",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1177067535863140382/image.png",
+		"description": "a story about a guy getting his balls stolen has no reason to be so entertaining while also having some of the best art right now"
 	},
     {
 		"type": "Manga",
