@@ -1,5 +1,26 @@
 [
     {
+		"type": "Short Film",
+		"name": "Opal",
+		"score": "9/10",
+		"image": "",
+		"description": "great songs, great art and it somehow still finds time to tell a good story?!"
+	},
+    {
+		"type": "Music Video",
+		"name": "it's benny worm",
+		"score": "8/10",
+		"image": "",
+		"description": "god i love benny worm and the ps2 type graphics in this"
+	},
+    {
+		"type": "Music Video",
+		"name": "New Normal - Jack Stauber",
+		"score": "8/10",
+		"image": "",
+		"description": "everything in this is so trippy and the song also happens to go hard"
+	},
+    {
 		"type": "Movie",
 		"name": "The Hunger Games",
 		"score": "7/10",

@@ -1,5 +1,19 @@
 [
 	{
+		"type": "Manga",
+		"name": "Wanitokagegisu",
+		"score": "8/10",
+		"image": "",
+		"description": "suddenly got the urge to study hard to keep my life on track"
+	},
+	{
+		"type": "Manga",
+		"name": "Loving Yamada at Lv999",
+		"score": "5/10",
+		"image": "",
+		"description": "almost had my interest and then i remembered hwo profoundly alone i am so i went to the park and went on the swings then went on a day long nostalgia trip, this surely cannot be a good way to handle my problems"
+	},
+	{
 		"type": "Anime",
 		"name": "Dorohedoro",
 		"score": "8/10",
@@ -611,7 +625,7 @@
 	{
 		"type": "Webtoon",
 		"name": "Love Advice From The Great Duke Of Hell",
-		"score": "7/10",
+		"score": "9/10",
 		"image": "https://media.discordapp.net/attachments/765056835044245527/1157464050754666506/image.png",
 		"description": "me when jokes are actually funny"
 	},
@@ -1249,7 +1263,7 @@
 		"type": "Manhwa",
 		"name": "Dandadan",
 		"score": "8/10",
-		"image": "https://media.discordapp.net/attachments/765056835044245527/1177067535863140382/image.png",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1177525580535697468/0083-009.png",
 		"description": "a story about a guy getting his balls stolen has no reason to be so entertaining while also having some of the best art right now"
 	},
     {
