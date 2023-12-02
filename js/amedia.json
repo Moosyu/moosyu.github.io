@@ -1,4 +1,32 @@
 [
+	   {
+		"type": "Anime",
+		"name": "Hinamatsuri",
+		"score": "8/10",
+		"image": "",
+		"description": "funny with incredible animation, if only there was more"
+	},
+	{
+		"type": "Manga",
+		"name": "Attack on Titan - No Regrets",
+		"score": "7/10",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1178948617864757298/0007-018.png",
+		"description": "decent, the art is noticeably worse but it did build suspense well knowing levi's friends might not survive"
+	},
+	{
+		"type": "Manhwa",
+		"name": "My Chubby Princess",
+		"score": "2/10",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1179845012310204526/image.png",
+		"description": "there is nothing here"
+	},
+	{
+		"type": "Manga",
+		"name": "Berserk",
+		"score": "10/10",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1179853135129350164/0177-012.png",
+		"description": "i dont know how to explain this but the swings feel so real in berserk, like i can feel them and can tell when guts gets stronger just by how impactful his swings are and i hear an audible boom anytime he swings dragon slayer also the eclipse was actually peak like it got built up so well by people talking about it so you knew it was bad and then it happened and holy shit."
+	},
 	{
 		"type": "Manga",
 		"name": "Wanitokagegisu",
@@ -849,7 +877,7 @@
     {
 		"type": "Manga",
 		"name": "Hinamatsuri",
-		"score": "7/10",
+		"score": "8/10",
 		"image": "https://media.discordapp.net/attachments/765056835044245527/1152361364183060530/0009-040.jpg?width=962&height=684",
 		"description": "they said rock and roll was evil and nobody believed them. look whos lauging now."
 	},
@@ -1338,7 +1366,7 @@
 	},
     {
 		"type": "Manga",
-		"name": "Goodnight PunPun",
+		"name": "Goodnight Punpun",
 		"score": "9/10",
 		"image": "https://media.discordapp.net/attachments/765056835044245527/1140558899943059486/0017-014.png?width=916&height=657",
 		"description": "SHE RAPED PUNPUN WHAT THE FUCK"
@@ -1592,7 +1620,7 @@
 		"type": "Manga",
 		"name": "One Punch Man",
 		"score": "9/10",
-		"image": "https://media.discordapp.net/attachments/765056835044245527/1153924621167509584/0166-021.png?width=899&height=656",
+		"image": "https://media.discordapp.net/attachments/765056835044245527/1178955063822139412/0151-031.png",
 		"description": "holy shit he destroyed a moon"
 	},
     {

@@ -1,44 +1,45 @@
 [
+        {
+        "type": "TV Show",
+        "name": "Stranger Things",
+        "score": "8/10",
+        "description": "season 1 and 4 for some of my favourite seasons of any show and easy 9s and maybe even 10s, the rest werent bad but werent at the same level"
+    },
+    {
+        "type": "TV Show",
+        "name": "The Boys",
+        "score": "9/10",
+        "description": "such a breath of fresh air compared to the normal superhero shit"
+    },
+    {
+        "type": "Short Film",
+        "name": "Ethereal Snake's Mickey Mouse Series",
+        "score": "8/10",
+        "description": "it had no reason to actually be well made"
+    },
+
     {
 		"type": "Short Film",
 		"name": "Opal",
 		"score": "9/10",
-		"image": "",
 		"description": "great songs, great art and it somehow still finds time to tell a good story?!"
-	},
-    {
-		"type": "Music Video",
-		"name": "it's benny worm",
-		"score": "8/10",
-		"image": "",
-		"description": "god i love benny worm and the ps2 type graphics in this"
-	},
-    {
-		"type": "Music Video",
-		"name": "New Normal - Jack Stauber",
-		"score": "8/10",
-		"image": "",
-		"description": "everything in this is so trippy and the song also happens to go hard"
 	},
     {
 		"type": "Movie",
 		"name": "The Hunger Games",
 		"score": "7/10",
-		"image": "",
 		"description": "cato is the least threatening villain ive ever seen"
 	},
     {
 		"type": "Movie",
 		"name": "Argo",
 		"score": "6/10",
-		"image": "",
 		"description": "we had to watch this and everyone was looking at the one middle eastern kid the entire time"
 	},
     {
 		"type": "Comic",
 		"name": "Steve Lichman",
 		"score": "7/10",
-		"image": "https://media.discordapp.net/attachments/765056835044245527/1157482049737867314/image.png",
 		"description": "hes just one of the boys"
 	},
     {
