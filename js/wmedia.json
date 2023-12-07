@@ -1,5 +1,17 @@
 [
-        {
+    {
+        "type": "Movie",
+        "name": "Oppenheimer",
+        "score": "8/10",
+        "description": "i can hear the music"
+    },
+    {
+        "type": "Movie",
+        "name": "Next Goal Wins",
+        "score": "4/10",
+        "description": "the only thing keeping me watching was that i couldnt leave the theatre during the movie"
+    },
+    {
         "type": "TV Show",
         "name": "Stranger Things",
         "score": "8/10",

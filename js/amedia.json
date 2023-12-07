@@ -1,5 +1,26 @@
 [
-	   {
+	{
+		"type": "Manga",
+		"name": "Death Note",
+		"score": "8/10",
+		"image": "https://i.imgur.com/dnfRG0u.png",
+		"description": "this is like playing multiple separate games of 5d chess except you cant see the board, all the chess pieces are just grey rectangles, you cant see what your opponent is doing and just have to guess and if you move wrong once you die but also sometimes some random girl snaps either your board or your opponents board in half and destroys all your pieces"
+	},
+	{
+		"type": "Manga",
+		"name": "The Strongest Earthbound Spirit and the Guy With No Spiritual Sense",
+		"score": "5/10",
+		"image": "https://i.imgur.com/Ek413eF.png",
+		"description": "i dont know why they felt the need to make the art actaully good but it was the only reason i kept reading"
+	},
+	{
+		"type": "Manga",
+		"name": "The Useless Idol and Her Only Fan in the World",
+		"score": "4/10",
+		"image": "",
+		"description": "undeniable proof that r/manga people just have shit taste"
+	},
+	{
 		"type": "Anime",
 		"name": "Hinamatsuri",
 		"score": "8/10",
@@ -276,7 +297,7 @@
 		"type": "Manga",
 		"name": "A Man and His Cat",
 		"score": "6/10",
-		"image": "https://i.imgur.com/w4OZ8nx.png",
+		"image": "https://i.imgur.com/cuKj18n.png",
 		"description": "thats why yo mama dead"
 	},
 	{
