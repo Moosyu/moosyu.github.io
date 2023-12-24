@@ -1,6 +1,48 @@
 [
 	{
 		"type": "Manga",
+		"name": "Vinland Saga",
+		"score": "9/10",
+		"image": "https://i.imgur.com/mP6BBKc.jpg",
+		"description": "the art is stunning the characters are interesting, especially askeladd and thorfinn who both are horrible people who have done horrible things but you cant help but enjoy their presences. thorkell is also really entertaining to watch and is basically a dorohedoro character. my only gripes with this series are that it feels so grounded in reality that when a silly manga moment or something outlandish happens it really takes me out of it and that the whole idea of having no enemies just seems too idealistic in such a realistic world."
+	},
+	{
+		"type": "Manhwa",
+		"name": "Something About Us",
+		"score": "5/10",
+		"image": "",
+		"description": "i usually read shit romance to relax me and to burn time. i love to complain about romance manhwa and manga being shit but if they get too good i justy dont read them. this did most things well but tragically i hated almost everyone and it was a bit miserable at times so it definitely didnt relax me. its a pretty good read if you like romance as a genre but if youre like me its kind of a slog to get through."
+	},
+	{
+		"type": "Manga",
+		"name": "20th Century Boys",
+		"score": "9/10",
+		"image": "https://i.imgur.com/rOjfTHS.png",
+		"description": "great start and its really cool when you understand every part of it. the art and panelling are great and urasawa makes everything cinematic. i like almost all of the cast especially otcho and his journey. the story kind of drags but i was still interested the whole time. the ending was a massive fumble in my opinion even if you include 21st century boys as the same manga, prior to the ending i considered 20th century boys to be a high 9 maybe even a 10 but if you dont include 21st century boys i would say it becomes an 8. even including 21st century boys its still only a low 9 as i found the final reveal dissatisfying and i still had questions left."
+	},
+	{
+		"type": "Manga",
+		"name": "Arakawa Under the Bridge",
+		"score": "5/10",
+		"image": "https://i.imgur.com/G1LFv1f.png",
+		"description": "it was pretty funny sometimes but every chapter is like 8 pages with one joke per and there are more than 400. i breezed through the first 100 but it got really repetitive, similar issues that i felt with komi cant communicate."
+	},
+	{
+		"type": "Manhwa",
+		"name": "A Business Proposal",
+		"score": "5/10",
+		"image": "https://i.imgur.com/ux0CAA3.png",
+		"description": "its another predictable romance manhwa. the art is fine, the story is nothing special but its not that bad just not my cup of tea and the characters are fine as well but it entertained me enough to finish it also my brother saw me reading this and now i think he thinks of me as less of a man. its easy to skim as well and i think i got about the same experience with a quarter of the reading. i think her brother is also a closet homosexual because like he didnt know it was a girl, he was just into a guy."
+	},
+	{
+		"type": "Manga",
+		"name": "One Piece",
+		"score": "9/10",
+		"image": "https://i.imgur.com/lmVZ92z.png",
+		"description": "even though i dont think one piece is a masterpiece it has some of the best worldbuilding ive ever seen, especially with small details that make the world feel real and is the only manga that made me feel like they are going on a grand adventure (maybe because it has so many chapters idk). past characters come back, locations have histories prior to the arrival of the straw hats and the straw hats dont need to be somewhere for something to happen. at the start i didnt like how everything was exaggerated, from personalities to body proportions to facial expressions but over time maybe i got stockholm syndrome idk but i started enjoying the goofy atmosphere one piece has."
+	},
+	{
+		"type": "Manga",
 		"name": "The Climber",
 		"score": "10/10",
 		"image": "https://i.imgur.com/aPTV0QA.png",
