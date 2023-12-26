@@ -36,7 +36,7 @@ fetch(jsonName).then(function(response){
 		outpuer =`<table id="tableRow1"> 
 			<tr>
 				<td>[${result.type}]<br>(${result.name})<br>${result.score}</td>
-				<td> <a href="${result.image}" target="_blank"> <img class="tableimg" src="${result.image}"> </a> </td>
+				<td> <a href="${result.image}" target="_blank"> <img loading="lazy" class="tableimg" src="${result.image}"> </a> </td>
 				<td>"${result.description}"</td>
 			</tr>
 		</table>`

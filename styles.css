@@ -5,7 +5,7 @@ body {
     background-image: url("assets/wall.jpg");
 }
 .tableimg { 
-    max-width: 500px;
+    max-width: 1000px;
     width: 100%;
     height: auto;
 }

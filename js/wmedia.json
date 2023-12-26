@@ -1,5 +1,23 @@
 [
     {
+        "type": "TV Show",
+        "name": "The Suspect",
+        "score": "4/10",
+        "description": "i dont know how they pulled it off but i hated every character so any tension that was there was offset by the fact that i couldnt care less about anyone and the fact that the main character completely brought it on himself"
+    },
+    {
+        "type": "TV Show",
+        "name": "The Office (US)",
+        "score": "9/10",
+        "description": "one of my favourite comedy shows of all time. every character and character dynamic is hilarious. admittedly it did decrease in quality after michael left but it was still funny and entertaining so its not like it turned into garbage like some people seem to say."
+    },
+    {
+        "type": "TV Show",
+        "name": "The Eric Andre Show",
+        "score": "9/10",
+        "description": "a sitcom written by 3 lsd addicted apes and it almost doesnt ever miss. every joke is consistently funny or you feel so much second hand discomfort for the people on the show that you cant help but letting out an uncomfortable laugh."
+    },
+    {
         "type": "Movie",
         "name": "Oppenheimer",
         "score": "8/10",

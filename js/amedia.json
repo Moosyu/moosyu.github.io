@@ -1,6 +1,13 @@
 [
 	{
 		"type": "Manga",
+		"name": "The Girl From the Other Side",
+		"score": "8/10",
+		"image": "https://i.imgur.com/02Jcrxl.png",
+		"description": "great art style with a old fashioned picture book kind of vibe that makes every page interesting to look at. an interesting world and the curse is a cool idea. i liked all of the cast. my only issues with it is that it felt as if it ended a bit sooner then i would have liked. i think it needed more time to flesh out its ideas and so the ending would make more sense because reading the ending was really confusing (or i might just be stupid) but even with confusing buts once i fully understood it i think it was a decent conclusion."
+	},
+	{
+		"type": "Manga",
 		"name": "Vinland Saga",
 		"score": "9/10",
 		"image": "https://i.imgur.com/mP6BBKc.jpg",
@@ -632,7 +639,7 @@
 	{
 		"type": "Manga",
 		"name": "Beastars",
-		"score": "8/10",
+		"score": "9/10",
 		"image": "https://i.imgur.com/bq4zNlS.png",
 		"description": "zootopia"
 	},
