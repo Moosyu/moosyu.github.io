@@ -6,6 +6,7 @@ body {
 }
 .tableimg { 
     max-width: 1000px;
+    min-width: 200px;
     width: 100%;
     height: auto;
 }
@@ -39,6 +40,7 @@ table, th, td {
     margin-right: auto;
     margin-bottom:3px;
     overflow-wrap: break-word;
+    font-size: 4mm;
 
   }
 ul {
