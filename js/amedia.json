@@ -1,6 +1,13 @@
 [
 	{
 		"type": "Manga",
+		"name": "Helck",
+		"score": "8/10",
+		"image": "https://i.imgur.com/BUuNzUd.png",
+		"description": "an entertaining twist on the average fantasy world"
+	},
+	{
+		"type": "Manga",
 		"name": "The Girl From the Other Side",
 		"score": "8/10",
 		"image": "https://i.imgur.com/02Jcrxl.png",
@@ -1262,9 +1269,9 @@
     {
 		"type": "Manga",
 		"name": "JoJo's Bizarre Adventure Part 7: Steel Ball Run",
-		"score": "8/10",
-		"image": "https://i.imgur.com/B7Jnrp0.png",
-		"description": "cross country grave robbing roadtrip"
+		"score": "9/10",
+		"image": "https://i.imgur.com/yMNu3DV.png",
+		"description": "cross country grave robbing roadtrip with a consistently interesting story and a feel that is completely different to the other parts (probably because its a reboot but still). johnny and gyros friendship seems real making them my favourite duo in any manga. spin is 10000 times better than ripple because it actually makes sense and doesnt put me to sleep and every character, even minor villains have interesting backstories."
 	},
     {
 		"type": "Manhwa",
@@ -1693,26 +1700,47 @@
 		"image": "",
 		"description": "imagine comedy except its not funny"
 	},
-    {
-		"type": "Anime",
-		"name": "JoJo's Bizarre Adventure: Stardust Crusaders",
-		"score": "7/10",
-		"image": "",
-		"description": "my google drive account got deleted for pirating this"
-	},
-    {
-		"type": "Anime",
-		"name": "JoJo's Bizarre Adventure: Golden Wind",
-		"score": "7/10",
-		"image": "",
-		"description": "hes obviously just suicidal"
-	},
-    {
-		"type": "Anime",
-		"name": "JoJo's Bizarre Adventure: Diamond is Unbreakable",
+	{
+		"type": "Manga",
+		"name": "JoJo's Bizarre Adventure Part 6: Stone Ocean",
 		"score": "8/10",
 		"image": "",
-		"description": "lsd without the lsd"
+		"description": "the first time jojo actually had a character arc because jolyne was actually a different person at the end. pucci wasnt as good as kira but he was better then part 5s villain and he actually though he was the good guy which is a shift from the rest of the jojo villains so far and was an interesting viewpoint and to be honest the heaven plan isnt that bad of a plan."
+	},
+    {
+		"type": "Anime",
+		"name": "JoJo's Bizarre Adventure Part 3: Stardust Crusaders",
+		"score": "7/10",
+		"image": "",
+		"description": "my google drive account got deleted for pirating this, the battles were cool, way better then part 2 and 1 because they have stands now but it barely had a plot."
+	},
+    {
+		"type": "Anime",
+		"name": "JoJo's Bizarre Adventure Part 5: Golden Wind",
+		"score": "8/10",
+		"image": "",
+		"description": "my favourite group dynamic so far and the setting felt new and unique to the part because italy is just cool. the plot was technically better then part 4 with non of those random lose threads but diavolo was such a boring character and got carried so hard by doppio."
+	},
+    {
+		"type": "Anime",
+		"name": "JoJo's Bizarre Adventure Part 4: Diamond is Unbreakable",
+		"score": "8/10",
+		"image": "",
+		"description": "my favourite jojo's bizarre adventure anime with one of my favourite villains of all time. kira is such an interesting character and this setting was such a breath of fresh air compared to the previous massive world wide trips. kira being so interesting almost makes me forget the random plot points they just forgot to expand on."
+	},
+	{
+		"type": "Anime",
+		"name": "JoJo's Bizarre Adventure Part 2: Battle Tendency",
+		"score": "6/10",
+		"image": "",
+		"description": "a step above part 1 because the main character isnt a piece of cardboard but thats about the only thing i found better in this part and it still has ripple"
+	},
+	{
+		"type": "Anime",
+		"name": "JoJo's Bizarre Adventure Part 1: Phantom Blood",
+		"score": "5/10",
+		"image": "",
+		"description": "it was just kind of boring, it had the same jojo vibe but was lacking in every aspect"
 	},
     {
 		"type": "Manga",
