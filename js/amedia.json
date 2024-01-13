@@ -1,6 +1,27 @@
 [
 	{
 		"type": "Manga",
+		"name": "Blue Period",
+		"score": "9/10",
+		"image": "https://i.imgur.com/Ha05TXd.jpg",
+		"description": "great story with interesting character development espcially because his development is a lot more abstract then other stories, also how is the most hot girl actually and a man."
+	},
+	{
+		"type": "Manga",
+		"name": "JoJo's Bizarre Adventure Part 8: Jojolion",
+		"score": "8/10",
+		"image": "https://i.imgur.com/hPxlk7y.jpg",
+		"description": "not on the same level as the previous part but jojolion still has intriguing story and an interesting mystery even if the villain isnt very good espcially when you compare him to valentine. on a side note no matter how much ariki tries to pretend the jojos are straight they are clearly all raging homosexuals jousuke got a boner when he looked behind yasuho and saw joushu im telling you."
+	},
+	{
+		"type": "Manga",
+		"name": "Grappler Baki",
+		"score": "7/10",
+		"image": "",
+		"description": "baki is not a good story in almost any way, not art, characters or story but it makes up for that with pure entertainment value. baki is some of the most insane, bizzare and entertaining shit that anyones ever made. my eyes stayed stuck to this shit stained page the entire time."
+	},
+	{
+		"type": "Manga",
 		"name": "Helck",
 		"score": "8/10",
 		"image": "https://i.imgur.com/BUuNzUd.png",

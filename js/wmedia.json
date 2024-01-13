@@ -1,6 +1,18 @@
 [
     {
         "type": "TV Show",
+        "name": "The Mentalist",
+        "score": "9/10",
+        "description": "one of those detective shows where the main guy is the smart detective solves crimes easily that other detectives find hard. usually not a good show idea because 1000000 of the same show already exist but this time its sometimes funny and his solves seem clever instead of just bullshit. my only issue is that red johns capture sequence sucks so bad, like you cant build someone up to be extremely smart by showing him being extremely smart and then just make him a dumbass come on."
+    },
+    {
+        "type": "TV Show",
+        "name": "Ted",
+        "score": "4/10",
+        "description": "bear swears and does mature things. thats all the jokes (i dropped it before i finished a season though so it might have got better). i didnt find it funny or even very entertaining but my dad found it halarious so maybe if you have bad taste too you might like it idk."
+    },
+    {
+        "type": "TV Show",
         "name": "The Suspect",
         "score": "4/10",
         "description": "i dont know how they pulled it off but i hated every character so any tension that was there was offset by the fact that i couldnt care less about anyone and the fact that the main character completely brought it on himself"
@@ -238,7 +250,7 @@
         "type": "TV Show",
         "name": "Adventure Time",
         "score": "10/10",
-        "description": "actual peak fiction for 10 seasons"
+        "description": "actual peak fiction for 10 seasons with some of my favourite world building, good characters and an extremely well done and satisfying conclusion. better than one piece."
     },
     {
         "type": "Movie",
