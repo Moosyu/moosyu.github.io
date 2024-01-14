@@ -1,6 +1,24 @@
 [
     {
         "type": "TV Show",
+        "name": "Adventure Time: Fionna & Cake",
+        "score": "9/10",
+        "description": "i was kinda sceptical because to be honest i dont think anybody was asking for this and i generally didnt like the fionna and cake episodes because they felt like filler but this most certainly was not filler. the art was great and i get to have yet another look at the world of adventure time, there was yet again not a single miss in the entire season and while i dont think it ever reached the peak the distant lands did in together again thats kind of a hard target. also i got to see prismo again (my beloved)"
+    },
+    {
+        "type": "TV Show",
+        "name": "Adventure Time: Distant Lands",
+        "score": "9/10",
+        "description": "adventure time comes back again to tell more interesting stories and further flesh out one of my favourite worlds with even been animation then the original. not a single episode was a miss even though wizard city really should have been episode 3 and together again should have been episode 4. assuming together again was the intended conclusion adventure time sticks the landing for the second time with an ever better ending then the actual show and i cried like a little baby."
+    },
+    {
+        "type": "TV Show",
+        "name": "Avatar: The Last Airbender",
+        "score": "9/10",
+        "description": "great art even though it started in 2005, great story with characters that actually change and develop over time and an interesting world."
+    },
+    {
+        "type": "TV Show",
         "name": "The Mentalist",
         "score": "9/10",
         "description": "one of those detective shows where the main guy is the smart detective solves crimes easily that other detectives find hard. usually not a good show idea because 1000000 of the same show already exist but this time its sometimes funny and his solves seem clever instead of just bullshit. my only issue is that red johns capture sequence sucks so bad, like you cant build someone up to be extremely smart by showing him being extremely smart and then just make him a dumbass come on."
@@ -387,7 +405,7 @@
     {
         "type": "TV Show",
         "name": "Breaking Bad",
-        "score": "9/10",
+        "score": "10/10",
         "description": "skinny pete is such a silly little guy"
     },
     {
