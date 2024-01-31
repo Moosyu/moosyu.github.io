@@ -46,6 +46,8 @@ table, th, td {
 ul {
     list-style: none;
     text-align: center;
+    background-color: blue;
+
 }
 li {
     margin: 35px;

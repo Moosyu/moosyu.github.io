@@ -1,5 +1,83 @@
 [
     {
+        "type": "Album",
+        "name": "Bottomless Pit",
+        "score": "9/10",
+        "description": "this album puts me in a trance state and then 3 hours later i wake up with everything i wanted to do completed. i dont know what happens and i dont think it matters. favourite song is bottomless pit"
+    },
+    {
+        "type": "Mixtape",
+        "name": "Exmilitary",
+        "score": "9/10",
+        "description": "blew me away the first time i heard it because i had never heard this insane shit before and to be honest i didnt like it, but then a week later i had the nagging urge to listen to it again and by the time the charles manson monologue was over death grips was my favourite band. i dont know what happend, maybe i just went insane but my life has been better since going insane so its fine. im pretty sure listening to this i would be unable to die, you could even call it having a grip on death (dum dum ching). favourite song is beware "
+    },
+    {
+        "type": "Album",
+        "name": "My Beautiful Dark Twisted Fantasy",
+        "score": "10/10",
+        "description": "kanyes best album in my opinion (my opinion is always right) which gives a great insight into kanye as a person while listening to some of the greatest shit hes ever made. favourite song is runaway"
+    },
+    {
+        "type": "Single",
+        "name": "Life on Mars",
+        "score": "10/10",
+        "description": "my favourite song of all time, the writing is clever and davids singing is great as always. the greatest failure of my life is and always will be being born too late to see this performed live."
+    },
+    {
+        "type": "Album",
+        "name": "Money Store",
+        "score": "10/10",
+        "description": "some of the most metal shit ever made that always gets negative responses anytime i play it in the range of someone else (they are clearly just stupid with bad tastes in music)"
+    },
+    {
+        "type": "Album",
+        "name": "Igor",
+        "score": "10/10",
+        "description": "one of my favourite albums of all time and even after listening to this people in the comments are talking like tyler is completely straight and is just pulling an elaborate prank. favourite song is i think"
+    },
+    {
+        "type": "Movie",
+        "name": "Pulp Fiction",
+        "score": "9/10",
+        "description": "great acting, extremely entertaining, looks better then most stuff made recently and it was made in the 1990s and suddently know everywhere i look i am seeing pulp fiction references, i cant escape. only problem is the fades dont hold up, really takes me out of it."
+    },
+    {
+        "type": "Movie",
+        "name": "Terminator",
+        "score": "7/10",
+        "description": "entertaining, not the deepest experience but its silly and fun"
+    },
+    {
+        "type": "Movie",
+        "name": "The Matrix",
+        "score": "8/10",
+        "description": "technical marvel that influenced film forever. still stands on its own as an entertaining 2 hours."
+    },
+    {
+        "type": "Movie",
+        "name": "Silence of the Lambs",
+        "score": "7/10",
+        "description": "definitly overrated but i can see how this would be considered very good back in 16BC"
+    },
+    {
+        "type": "Movie",
+        "name": "Inside",
+        "score": "9/10",
+        "description": "comedy special that feels like the peak of bo's career. it hit harder in quarintine but is still entertaining and a good insight into the general feelings during the quarantine."
+    },
+    {
+        "type": "TV Show",
+        "name": "RWBY",
+        "score": "3/10",
+        "description": "ugly artstyle (in my opinion), plotlines that lead nowhere, awful massive amounts of boring exposition and things still feel unexplained. this show feels like if a weeb with an anime girl pfp got to make a show but only cared about the fights and just made me cringe constantly."
+    },
+    {
+        "type": "TV Show",
+        "name": "Planet Earth",
+        "score": "9/10",
+        "description": "if aliens invade we should show them this because this shit is beautiful and makes earth look like its not a shithole"
+    },
+    {
         "type": "TV Show",
         "name": "BoJack Horseman",
         "score": "10/10",

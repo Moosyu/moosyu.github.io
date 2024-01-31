@@ -1,6 +1,13 @@
 [
 	{
 		"type": "Manga",
+		"name": "Homunculus",
+		"score": "8/10",
+		"image": "https://i.imgur.com/qmwiPuB.png",
+		"description": "wow this is pretty coo- AUUGGUIFAA AAAAHHHH IAISODADOJOJOGF BNBMVMFIADKADKDFLLGF AAAAAAAAAAAAAAAAAAAAAA AHFHHHHHHHHajffhjf :( cool story but sometimes gets so disgusting i have to take a multiple day break from reading it"
+	},
+	{
+		"type": "Manga",
 		"name": "Blue Period",
 		"score": "8/10",
 		"image": "https://i.imgur.com/zKpiO3Q.jpg",
