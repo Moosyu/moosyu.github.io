@@ -1,6 +1,13 @@
 [
 	{
 		"type": "Manga",
+		"name": "Hunter x Hunter",
+		"score": "8/10",
+		"image": "https://i.imgur.com/uzEbvQ5.png",
+		"description": "its fun and has pretty dark themes considering it is a shonen. kind of repetitive in some arcs though."
+	},
+	{
+		"type": "Manga",
 		"name": "Homunculus",
 		"score": "8/10",
 		"image": "https://i.imgur.com/qmwiPuB.png",
@@ -79,7 +86,7 @@
 	{
 		"type": "Manga",
 		"name": "One Piece",
-		"score": "9/10",
+		"score": "8/10",
 		"image": "https://i.imgur.com/lmVZ92z.png",
 		"description": "even though i dont think one piece is a masterpiece it has some of the best worldbuilding ive ever seen, especially with small details that make the world feel real and is the only manga that made me feel like they are going on a grand adventure (maybe because it has so many chapters idk). past characters come back, locations have histories prior to the arrival of the straw hats and the straw hats dont need to be somewhere for something to happen. at the start i didnt like how everything was exaggerated, from personalities to body proportions to facial expressions but over time maybe i got stockholm syndrome idk but i started enjoying the goofy atmosphere one piece has."
 	},
@@ -1654,7 +1661,7 @@
     {
 		"type": "Manhwa",
 		"name": "Lookism",
-		"score": "7/10",
+		"score": "8/10",
 		"image": "https://i.imgur.com/KS0v6Vu.png",
 		"description": "olly and james were the best combo also did the author forget that they are high school students or something because they dont attend that place. i would have given it 8/10 but the first 50 or so chapters had such awful art."
 	},

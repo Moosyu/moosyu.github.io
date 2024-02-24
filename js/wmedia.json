@@ -1,9 +1,87 @@
 [
     {
+        "type": "Movie",
+        "name": "The Martian",
+        "score": "9/10",
+        "description": "yeah i cried when space oddity started playing, fuck you"
+    },
+    {
+        "type": "Album",
+        "name": "Late Registration",
+        "score": "10/10",
+        "description": "kanyes second best album in my opnion. every song on here is a banger. favourite song is roses"
+    },
+    {
+        "type": "Movie",
+        "name": "Pirates of the Caribbean",
+        "score": "8/10",
+        "description": "the only pirates of caribbean film that hasnt merged together with the others in my head"
+    },
+    {
+        "type": "Album",
+        "name": "Madvillainy",
+        "score": "9/10",
+        "description": "peak mf doom. i dont know how its possible for this to be so slept on. favourite song is america's most blunted"
+    },
+    {
+        "type": "Movie",
+        "name": "28 Days Later",
+        "score": "8/10",
+        "description": "one of my favourite zombie movies of all time, but did they spent all their money to film empty scenes of britain because how is the camera quality so bad"
+    },
+    {
+        "type": "Album",
+        "name": "Marshall Mathers LP",
+        "score": "9/10",
+        "description": "the best thing eminem has ever made and probably will ever make because i guess he forgot how to make music. favourite song is stan"
+    },
+    {
+        "type": "Movie",
+        "name": "Back To The Future",
+        "score": "8/10",
+        "description": "would have liked it more if marty mcfly didnt almost have incestous sex with his mother"
+    },
+    {
+        "type": "Album",
+        "name": "Call Me If You Get Lost Estate Sale",
+        "score": "9/10",
+        "description": "its like call me if you get lost with even more bangers. favourite song is sorry not sorry"
+    },
+    {
+        "type": "Movie",
+        "name": "Madame Web",
+        "score": "3/10",
+        "description": "so is this a spider man movie or not"
+    },
+    {
+        "type": "Album",
+        "name": "Flower Boy",
+        "score": "9/10",
+        "description": "easily one of my favourite tyler albums and felt like a big jump compared with his previous albums before this. favourite song is 911/mr. lonely"
+    },
+    {
+        "type": "Movie",
+        "name": "Dual",
+        "score": "4/10",
+        "description": "my favourite part of the movie was realising the title was a play on words. i feel so smart."
+    },
+    {
+        "type": "Album",
+        "name": "No Love Deep Web",
+        "score": "9/10",
+        "description": "the kinda shit you turn on and then sprint 4km after not running in like a year, get home, feel your heart almost exploding and then collapse. favourite song no love"
+    },
+    {
+        "type": "Movie",
+        "name": "Terminator 2",
+        "score": "7/10",
+        "description": "classic but not timeless, there is some really trash looking early 90s cgi and it does feel a little drawn out but kept my attention enough to finish it"
+    },
+    {
         "type": "Album",
         "name": "Bottomless Pit",
         "score": "9/10",
-        "description": "this album puts me in a trance state and then 3 hours later i wake up with everything i wanted to do completed. i dont know what happens and i dont think it matters. favourite song is bottomless pit"
+        "description": "every death grips album is less of music more of an experience. like doing heroin that you know is laced because you were the one who laced it."
     },
     {
         "type": "Mixtape",
