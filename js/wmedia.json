@@ -1,5 +1,11 @@
 [
     {
+        "type": "Book",
+        "name": "Strange Case of Dr. Jekyll and Mr. Hyde",
+        "score": "8/10",
+        "description": "really interesting short story that my english teacher spoiled :despair:"
+    },
+    {
         "type": "Movie",
         "name": "The Martian",
         "score": "9/10",
