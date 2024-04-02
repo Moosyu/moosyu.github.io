@@ -1,6 +1,27 @@
 [
 	{
 		"type": "Manga",
+		"name": "Alya Sometimes Hides Her Feelings in Russian",
+		"score": "4/10",
+		"image": "",
+		"description": "can we stop giving people making boring romance manga money please"
+	},
+	{
+		"type": "Manga",
+		"name": "Goblin Slayer",
+		"score": "4/10",
+		"image": "",
+		"description": "goblin slayer wants to be berserk so bad"
+	},
+	{
+		"type": "Manga",
+		"name": "Slam Dunk",
+		"score": "8/10",
+		"image": "https://i.imgur.com/a9PlcSQ.png",
+		"description": "got my heart pumping so much it probably decreased my life expectancy by like 3 years"
+	},
+	{
+		"type": "Manga",
 		"name": "Hunter x Hunter",
 		"score": "8/10",
 		"image": "https://i.imgur.com/uzEbvQ5.png",
