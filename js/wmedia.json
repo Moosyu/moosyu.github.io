@@ -1,5 +1,11 @@
 [
     {
+        "type": "Album",
+        "name": "The Rise and Fall of Ziggy Stardust and the Spiders from Mars",
+        "score": "10/10",
+        "description": "probably the peak of david bowies career. i started with it on in the background and by the end i loved it so much i listened to it two more times. not a single miss. favourite song is Starman"
+    },
+    {
         "type": "Book",
         "name": "Strange Case of Dr. Jekyll and Mr. Hyde",
         "score": "8/10",
