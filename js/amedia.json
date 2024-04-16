@@ -1,6 +1,76 @@
 [
 	{
 		"type": "Manga",
+		"name": "Monster",
+		"score": "9/10",
+		"image": "https://i.imgur.com/G3F6yRG.jpeg",
+		"description": "johan puts tenma through a series of very elaborate prant"
+	},
+	{
+		"type": "Manhua",
+		"name": "Demon X Angel, Can't Get Along!",
+		"score": "5/10",
+		"image": "https://i.imgur.com/7rjtgkK.png",
+		"description": "good for a manhua, mid for a comic"
+	},
+	{
+		"type": "Manhwa",
+		"name": "Surviving Romance",
+		"score": "6/10",
+		"image": "https://i.imgur.com/lyrzq2s.png",
+		"description": "good concept executed decently"
+	},
+	{
+		"type": "Manhwa",
+		"name": "The Reason Why Raeliana Ended Up at the Duke's Mansion",
+		"score": "3/10",
+		"image": "",
+		"description": "i guess being original is hard"
+	},
+	{
+		"type": "Manhwa",
+		"name": "Father, I Don't Want This Marriage!",
+		"score": "3/10",
+		"image": "",
+		"description": "bad art and bad story in a genre that i dont like"
+	},
+	{
+		"type": "Manhwa",
+		"name": "Of All Things, I Became a Crow",
+		"score": "5/10",
+		"image": "https://i.imgur.com/D4XzkPr.png",
+		"description": "pretty decent. i really liked the start but the interest of wore off as it just became another romance manhwa."
+	},
+	{
+		"type": "Manhwa",
+		"name": "Villain with a Crush",
+		"score": "5/10",
+		"image": "",
+		"description": "misunderstandings"
+	},
+	{
+		"type": "Manga",
+		"name": "The Tsuntsuntsuntsuntsuntsuntsuntsuntsuntsuntsundere Girl Getting Less and Less Tsun Day by Day",
+		"score": "3/10",
+		"image": "",
+		"description": "not even a manga, feels like a single chapter and i read it in 5 minutes"
+	},
+	{
+		"type": "Manga",
+		"name": "Please Go Home, Miss Akutsu!",
+		"score": "3/10",
+		"image": "https://i.imgur.com/2eBInLZ.png",
+		"description": "continues the trend of romance mangas either being trash and dragged out or bangers that has actually progress by 40 chapters (its the former)"
+	},
+	{
+		"type": "Manga",
+		"name": "Medaka Kuroiwa Is Impervious to My Charms",
+		"score": "3/10",
+		"image": "",
+		"description": "my eyes started glazing over out of bordem because this is so repetitive"
+	},
+	{
+		"type": "Manga",
 		"name": "Chillin' in Another World with Level 2 Super Cheat Powers",
 		"score": "4/10",
 		"image": "https://i.imgur.com/Hx7ykGJ.png",
