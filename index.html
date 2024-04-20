@@ -1,47 +1,75 @@
 <!DOCTYPE html>
-<html lang = "en-US">
-    <head>
-        <title>my super cool website</title>
-        <link rel = "stylesheet" href = "styles.css">    
-    </head>
-    <header>        
-        <marquee scrollamount = "20">
-            <img style="width: 800px; height: 150px;" src = "assets/title.gif">
-        </marquee>
-    </header>
-    <body>
-        
-        <nav>
-            <a style = "color:white; " href = "/">home</a>
-            <a> | </a>
-            <a href = "pages/about.html">about</a>
-            <a> | </a>
-            <a href = "pages/guides.html">guides</a>
-            <a> | </a>
-            <a href = "pages/contact.html">contact</a>
-            <a> | </a>
-            <a href = "pages/misc.html">misc</a>    
-        </nav>
-        <div class = "mainbox">        
-            <img src = "assets/bloons.gif">
-            <p style="color: white; background-color:blue;" >
-                hello this is my really cool and modern website please bookmark this page because it is really cool and important
-                i highly recommend sending your government provided financial aid directly into my bank account
+<html lang="en-US">
+<script>
+    fetch('https://api.github.com/repos/Moosyu/moosyu.github.io/commits?per_page=1')
+        .then(res => res.json())
+        .then(res => {
+            document.getElementById('commitLatest').innerText = res[0].commit.message
+        })
+</script>
+
+<head>
+    <title>my super cool website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<header>
+    <marquee scrollamount="20">
+        <img style="width: 800px; height: 150px;" src="assets/title.gif">
+    </marquee>
+</header>
+
+<body>
+    <nav>
+        <a style="color:white; " href="/">home</a>
+        <a> | </a>
+        <a href="pages/about.html">about</a>
+        <a> | </a>
+        <a href="pages/guides.html">guides</a>
+        <a> | </a>
+        <a href="pages/contact.html">contact</a>
+        <a> | </a>
+        <a href="pages/misc.html">misc</a>
+    </nav>
+
+    <div class="mainbox">
+        <img src="assets/bloons.gif">
+        <p style="color: white; background-color:blue; font-size: large; text-align: center;">
+            #1 autist. somehow my site does a bad impression of sites made 15 years ago.
+            <br>
+            makes your pc feel like it was made in the early 2000s though.
+        </p>
+        <!-- code pulled straight from here bc i hate javascript phobic https://stackoverflow.com/questions/67986923/how-to-display-the-name-of-the-latest-commit-on-github-to-my-website -->
+        <img src="assets/bloons.gif">
+    </div>
+
+    <!-- basically style stolen from this site: antisoftware.club really out of place but it looked so cool i just had to ¯\_(ツ)_/¯ -->
+    <div style=" display: flex; text-align: center; align-items: center; justify-content: center;">
+        <div style="border: 6px double #fc2b50; color: #fc2b50; background-color: #150320; padding: .5rem">
+            <p style="color: #150320; background-color: #fc2b50; font-size: x-large; font-weight: bold">
+                latest commit:
             </p>
-            <img src = "assets/bloons.gif">
-
+            <p id="commitLatest">
+                <br>
+                fetching!! (or its broken idk)
+            </p>
         </div>
-        </body>
-        <footer>
-            <div class = "mainbox">    
-            <a href = "https://www.roblox.com/"> <img src = "assets/despacito.gif"> </a>
-            <img src = "assets/eat_pant.png">
-            <a href = "https://www.ebay.com/sch/United-States-/261/m.html?_ssn=usps"> <img src="assets/usps_ebay.gif"> </a> 
-            <img class="spin" src = "assets/thanks.gif">
-            <a href = "/assets/trollface.webp"> <img src = "assets/penis.jpeg"> </a>
-            <a href = "https://pizzza.neocities.org/"> <img src = "assets/pizzza.gif"> </a>
-            <a href = "https://www.youtube.com/watch?v=hiRacdl02w4"> <img src = "assets/idiot.gif"> </a>
 
-            </div>
-        </footer>
+    </div>
+
+</body>
+
+<footer>
+    <div class="mainbox">
+        <a href="https://www.roblox.com/"> <img src="assets/despacito.gif"> </a>
+        <img src="assets/eat_pant.png">
+        <a href="https://www.ebay.com/sch/United-States-/261/m.html?_ssn=usps"> <img src="assets/usps_ebay.gif"> </a>
+        <img class="spin" src="assets/thanks.gif">
+        <a href="/assets/trollface.webp"> <img src="assets/penis.jpeg"> </a>
+        <a href="https://pizzza.neocities.org/"> <img src="assets/pizzza.gif"> </a>
+        <a href="https://www.youtube.com/watch?v=hiRacdl02w4"> <img src="assets/idiot.gif"> </a>
+
+    </div>
+</footer>
+
 </html>
