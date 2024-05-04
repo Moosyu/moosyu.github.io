@@ -1,5 +1,11 @@
 [
     {
+        "type": "Movie",
+        "name": "Girl with the Dragon Tattoo",
+        "score": "3/10",
+        "description": "the plotlines were really hard to follow and the forced blowjob scene was made worse by me watching it with my dad"
+    },
+    {
         "type": "Album",
         "name": "The Rise and Fall of Ziggy Stardust and the Spiders from Mars",
         "score": "10/10",
