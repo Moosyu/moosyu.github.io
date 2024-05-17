@@ -1,5 +1,75 @@
 [
 	{
+        "type": "Manga",
+        "name": "The Great Mage of the Hero's Party Reincarnates",
+        "score": "6/10",
+		"image": "",
+        "description": "pretty fun time and im a big fan of the magic just being maths trope"
+    },
+	{
+        "type": "Manga",
+        "name": "Easygoing Territory Defense by the Optimistic Lord: Production Magic Turns a Nameless Village into the Strongest Fortified City",
+        "score": "3/10",
+		"image": "",
+        "description": "god i just cant take it anymore. its just another lifeless trash manga."
+    },
+	{
+        "type": "Manhua",
+        "name": "Blades of the Guardians",
+        "score": "8/10",
+		"image": "https://i.imgur.com/R4mGv9k.jpeg",
+        "description": "jsut really fun, found myself forced to read the next chapter because it was just so entertaining and everything felt pretty new to me (maybe i just havent read enough manhua). only issue is updates are really slow and translations are even slower so i had to do it myself and im stupid so im not very good at it."
+    },
+	{
+        "type": "Manhua",
+        "name": "Feng Shen Ji",
+        "score": "8/10",
+		"image": "https://i.imgur.com/NUQQk4e.png",
+        "description": "the first manhua ive read thats actually good amongst manga standards. differs from the normal shounen and the artwork is straight up beautiful."
+    },
+	{
+        "type": "Manga",
+        "name": "Outbride: Beauty and the Beasts",
+        "score": "3/10",
+		"image": "",
+        "description": "its basically just porn idk"
+    },
+	{
+        "type": "Manga",
+        "name": "The Child Loved By God",
+        "score": "3/10",
+		"image": "",
+        "description": "entire story is just a kid being lucky. you should not have been able to write a single chapter based on this let alone the almost 30 out right now."
+    },
+	{
+        "type": "Manga",
+        "name": "Kotoshi no Mitsuishi-san wa Dokoka Okashii",
+        "score": "3/10",
+		"image": "",
+        "description": "romance manga writers have only had one idea ever please for the love of god stop writing popular girl falls in love with nerd. just another shitty wish fulfilment manga for losers."
+    },
+	{
+        "type": "Manga",
+        "name": "Noble Reincarnation: Born Blessed, So I'll Obtain Ultimate Power",
+        "score": "3/10",
+		"image": "",
+        "description": "just unbelievably boring. nothing interesting ever happens."
+    },
+	{
+        "type": "Manga",
+        "name": "The Unholy Paladin",
+        "score": "2/10",
+		"image": "",
+        "description": "just another generic power fantasy harem shoenen manga. if you enjoy this you probably havent read anything with value before or just dont go outside."
+    },
+	{
+        "type": "Manga",
+        "name": "Higehiro: After Being Rejected, I Shaved and Took in a High School Runaway",
+        "score": "2/10",
+		"image": "",
+        "description": "just read the title. what the fuck. i saw a review of this on mal and they said Whore => trash? this guy is stupid. he might have missed the memo but a highschooler and an almost 30 year old is not just weird but also illegal in most places. maybe its just a japan vs western culture difference but this is why i never want to go to japan."
+    },
+	{
 		"type": "Manga",
 		"name": "Your Lie In April",
 		"score": "9/10",

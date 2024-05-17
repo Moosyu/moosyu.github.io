@@ -1,5 +1,17 @@
 [
     {
+        "type": "Album",
+        "name": "To Pimp a Butterfly",
+        "score": "10/10",
+        "description": "if kendrick was born earlier maybe this whole slavery thing could have been avoided"
+    },
+    {
+        "type": "Movie",
+        "name": "Amelie",
+        "score": "8/10",
+        "description": "very french"
+    },
+    {
         "type": "Movie",
         "name": "Girl with the Dragon Tattoo",
         "score": "3/10",
