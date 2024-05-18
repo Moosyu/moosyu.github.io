@@ -104,3 +104,45 @@ a:link {
     width: 60%;
     color: white;
 }
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+    background: #d6ecf3;
+}
+    
+::-webkit-scrollbar-track {
+    background: -webkit-linear-gradient(top, #ffadad 12.5%,#ffd6a5 25%,#fdffb6 37.5%,#caffbf 50%,#9bf6ff 62.5%,#a0c4ff 75%,#bdb2ff 87.5%, #ffc6ff 95%);
+    border: 1px ridge #8f38ff;
+}
+::-webkit-scrollbar-thumb {
+    background: #ADD8E6;
+    border: 1px ridge #8f38ff;
+    border-radius: 0px;
+}
+
+.testss {
+    opacity: 0;
+}
+
+.testss:hover {
+    opacity: 1;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    justify-content: center;
+  }
+  .cell {
+    margin-bottom: 5px;
+    margin-left: 2.5px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:normal;
+    text-align: center;
+    flex: 0 0 15%;
+    background-color: blue;
+  }

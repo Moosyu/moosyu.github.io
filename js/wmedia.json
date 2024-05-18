@@ -1,5 +1,17 @@
 [
     {
+        "type": "TV Show",
+        "name": "Nathan for You",
+        "score": "9/10",
+        "description": "it was cool that people could draw their own meanings from a business thats just there to make money was the funniest thing ive ever heard"
+    },
+    {
+        "type": "TV Show",
+        "name": "How to with John Wilson",
+        "score": "9/10",
+        "description": "made new york seem like the alien planet that it is"
+    },
+    {
         "type": "Album",
         "name": "To Pimp a Butterfly",
         "score": "10/10",

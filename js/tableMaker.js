@@ -15,21 +15,21 @@ fetch(jsonName).then(function (response) {
 	var temp = document.querySelector("#output");
 	for (var result of results) {
 		if (document.URL.includes("game_ratings")) {
-			outputer = `<table id="tableRow1"> 
+			outputer = `<table> 
 		<tr>
 			<td>(${result.name})<br>${result.score}</td>
 			<td>"${result.description}"</td>
 		</tr>
 		</table>`
 		} else if (document.URL.includes("wbook_ratings")) {
-			outputer = `<table id="tableRow1"> 
+			outputer = `<table> 
 		<tr>
 			<td>[${result.type}]<br>(${result.name})<br>${result.score}</td>
 			<td>"${result.description}"</td>
 		</tr>
 		</table>`
 		} else {
-			outputer = `<table id="tableRow1"> 
+			outputer = `<table> 
 			<tr>
 				<td>[${result.type}]<br>(${result.name})<br>${result.score}</td>
 				<td> <a href="${result.image}" target="_blank"> <img loading="lazy" class="tableimg" src="${result.image}"> </a> </td> <!-- the href ="${result.image} redirects to this page if it has no image. idk how to fix this and i dont really want to right now ill do it later i swear. -->

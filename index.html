@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-US">
+<head>
+    <title>my super cool website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<!-- code pulled straight from here bc i hate javascript phobic https://stackoverflow.com/questions/67986923/how-to-display-the-name-of-the-latest-commit-on-github-to-my-website -->
 <script>
     fetch('https://api.github.com/repos/Moosyu/moosyu.github.io/commits?per_page=1')
         .then(res => res.json())
@@ -8,16 +13,9 @@
         })
 </script>
 
-<head>
-    <title>my super cool website</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-
-<header>
-    <marquee scrollamount="20">
-        <img style="width: 800px; height: 150px;" src="assets/title.gif">
-    </marquee>
-</header>
+<marquee scrollamount="20">
+    <img style="width: 800px; height: 150px;" src="assets/title.gif">
+</marquee>
 
 <body>
     <nav>
@@ -31,16 +29,19 @@
         <a> | </a>
         <a href="pages/misc.html">misc</a>
     </nav>
-
+    <div class="testss">
+        <img src="assets/secret_duck.gif" style="position:absolute; top: 300px; left: 200px; width: 15%;">
+    </div>
     <div class="mainbox">
-        <img src="assets/bloons.gif">
-        <p style="color: white; background-color:blue; font-size: large; text-align: center;">
+        <img src="assets/bloons.gif"/>
+        <p style="color: white; background-color:blue; text-align: center;">
+            <a style="color: red; text-decoration: none; font-size: x-large;" href="https://users3.smartgb.com/g/g.php?a=s&i=g36-36167-e7"> sign my guestbook!!</a>
+            <br>
             #1 autist. somehow my site does a bad impression of sites made 15 years ago.
             <br>
             makes your pc feel like it was made in the early 2000s though.
         </p>
-        <!-- code pulled straight from here bc i hate javascript phobic https://stackoverflow.com/questions/67986923/how-to-display-the-name-of-the-latest-commit-on-github-to-my-website -->
-        <img src="assets/bloons.gif">
+        <img src="assets/bloons.gif" alt="silly colourful balloons">
     </div>
 
     <!-- basically style stolen from this site: antisoftware.club really out of place but it looked so cool i just had to ¯\_(ツ)_/¯ -->
@@ -54,20 +55,20 @@
                 fetching!! (or its broken idk)
             </p>
         </div>
-
     </div>
-
+    <a style="display: flex; justify-content: space-evenly; padding-block: 5px;" href="https://www.cutercounter.com/" target="_blank">
+        <img src="https://www.cutercounter.com/hits.php?id=hvvxpodan&nd=9&style=31" border="2" alt="counter">
+    </a>
 </body>
-
 <footer>
     <div class="mainbox">
-        <a href="https://www.roblox.com/"> <img src="assets/despacito.gif"> </a>
-        <img src="assets/eat_pant.png">
-        <a href="https://www.ebay.com/sch/United-States-/261/m.html?_ssn=usps"> <img src="assets/usps_ebay.gif"> </a>
-        <img class="spin" src="assets/thanks.gif">
-        <a href="/assets/trollface.webp"> <img src="assets/penis.jpeg"> </a>
-        <a href="https://pizzza.neocities.org/"> <img src="assets/pizzza.gif"> </a>
-        <a href="https://www.youtube.com/watch?v=hiRacdl02w4"> <img src="assets/idiot.gif"> </a>
+        <a href="https://www.roblox.com/"> <img src="assets/despacito.gif" alt="despacito now!"></a>
+        <img src="assets/eat_pant.png" alt="eat pant">
+        <a href="https://www.ebay.com/sch/United-States-/261/m.html?_ssn=usps"> <img src="assets/usps_ebay.gif" alt="now on ebay"> </a>
+        <img class="spin" src="assets/thanks.gif" alt="thanks for visiting">
+        <a href="/assets/trollface.webp"> <img src="assets/penis.jpeg" alt="penis..."> </a>
+        <a href="https://pizzza.neocities.org/"> <img src="assets/pizzza.gif" alt="pizza"> </a>
+        <a href="https://www.youtube.com/watch?v=hiRacdl02w4"> <img src="assets/idiot.gif" alt="you are an idiot"> </a>
 
     </div>
 </footer>
