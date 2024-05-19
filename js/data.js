@@ -66,6 +66,13 @@ const data = {
       `The purple crayon didn't taste like grape...`,
       `It's right behind me isn't it`,
       `jeez why am i so smart? i cant believe it!`,
+      `after all, im your biggest fan`,
+      `now wait a full minute... 59... 58`,
+      `about to attempt minecraft waterbucket irl`,
+      `told a white kid tyler the creator was trash and he called nIGOR`,
+      `taylor swift can now buy kanye west and have $700m left`,
+      `eminem be like: you couldn't impress me if you were jeffrey epstein drinkin a pepsi wit alvis presley eminem fan: holy fucking shit... *punches drywall*`,
+      `i used to want to kill myself but then logic made suicide corny af`,
       `pussy shoes two`
     ],
   };
