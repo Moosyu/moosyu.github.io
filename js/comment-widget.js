@@ -138,6 +138,10 @@ else {c_submitButton = document.createElement('button')}
 
 // Add invisible page input to document
 let v_pagePath = window.location.pathname;
+if (v_pagePath == ("/index.html")) {
+    v_pagePath = "/"
+}
+console.log(v_pagePath)
 if (s_includeUrlParameters) {v_pagePath += window.location.search}
 if (s_fixRarebitIndexPage && v_pagePath == '/') {v_pagePath = '/?pg=1'}
 const c_pageInput = document.createElement('input');
