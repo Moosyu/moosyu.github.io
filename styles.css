@@ -135,7 +135,8 @@ a:link {
     justify-content: flex-start;
     justify-content: center;
   }
-  .cell {
+
+.cell {
     margin-bottom: 5px;
     margin-left: 2.5px;
     border: 1px solid black;
@@ -145,4 +146,54 @@ a:link {
     text-align: center;
     flex: 0 0 15%;
     background-color: blue;
+}
+
+.tab button.active {
+    background-color: blue;
+}
+
+.tab {
+    padding: 5px;
+}
+
+.tab button {
+    background-color: inherit;
+    border-style: solid;
+    border-width: 1px;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;    
+}
+
+.topnav {
+    position: relative;
+    overflow: hidden;
+    background-color: blue;
+}
+  
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-style: ridge;
+    border-color: white;
+    border-width: 5px
+}
+
+.topnav a:hover {
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #82A0D8, 0 0 30px #40BCED, 0 0 40px #00D5E6, 0 0 50px #39E9C3, 0 0 60px #9EF694, 0 0 70px #bdb2ff;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #EDB7ED, 0 0 40px #FFB4DA, 0 0 50px #FFB7BB, 0 0 60px #FFC696, 0 0 70px #FFDD78, 0 0 80px #F9F871;
+    }
   }
+  
