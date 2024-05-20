@@ -25,12 +25,15 @@ body {
     justify-content: center;
 }
 
-nav a, a:hover, a:visited, a:active{
+a, a:hover, a:visited, a:active{
     text-align: center;
-    font-size: xx-large;
     color: inherit;
     text-decoration: none;
     color: white;
+}
+
+nav {
+    font-size: xx-large;
 }
 
 footer {
@@ -158,38 +161,6 @@ li {
     padding: 14px 16px;    
 }
 
-.topnav {
-    position: relative;
-    overflow: hidden;
-    background-color: blue;
-}
-  
-.topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    border-style: ridge;
-    border-color: white;
-    border-width: 5px
-}
-
-.topnav a:hover {
-    animation: glow 1s ease-in-out infinite alternate;
-}
-
-@keyframes glow {
-    from {
-      text-shadow: 0 0 10px #fff, 0 0 20px #82A0D8, 0 0 30px #40BCED, 0 0 40px #00D5E6, 0 0 50px #39E9C3, 0 0 60px #9EF694, 0 0 70px #bdb2ff;
-    }
-    
-    to {
-      text-shadow: 0 0 20px #fff, 0 0 30px #EDB7ED, 0 0 40px #FFB4DA, 0 0 50px #FFB7BB, 0 0 60px #FFC696, 0 0 70px #FFDD78, 0 0 80px #F9F871;
-    }
-}
-
 .album_animation_thingyF {
     width: 25vh;
     height: 25vh;
@@ -271,7 +242,7 @@ li {
     padding: 10px;
 }
 .one {
-    grid-column: 1 / 3;
+    grid-column: 1 / 2;
     grid-row: 1;
     background-image: url("/assets/qq164.gif");
     border: 2px dotted rgb(233 171 88);
@@ -335,5 +306,30 @@ li {
     background-image: url("/assets/qq164.gif");
     border: 2px dotted rgb(233 171 88);
     border-radius: 5px;
+}
 
+.thesenumbersreallymeannothingbecauseivemovedthemaroundwaytoomuch {
+    grid-column: 2;
+    grid-row: 1;
+    background-image: url("/assets/qq164.gif");
+    border: 2px dotted rgb(233 171 88);
+    border-radius: 5px;
+}
+
+.topnav a:hover {
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #82A0D8, 0 0 30px #40BCED, 0 0 40px #00D5E6, 0 0 50px #39E9C3, 0 0 60px #9EF694, 0 0 70px #bdb2ff;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #EDB7ED, 0 0 40px #FFB4DA, 0 0 50px #FFB7BB, 0 0 60px #FFC696, 0 0 70px #FFDD78, 0 0 80px #F9F871;
+    }
+}
+
+header {
+    background-color: blue;
 }
