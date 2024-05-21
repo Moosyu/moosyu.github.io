@@ -34,7 +34,7 @@ const s_dstStart = ['September', 'Sunday', 29, 2]; // Example shown is the secon
 const s_dstEnd = ['April', 'Sunday', 2, 3]; // Example shown is the first Sunday of November at 2:00 am
 
 // Misc - Other random settings
-const s_commentsPerPage = 5; // The max amount of comments that can be displayed on one page, any number >= 1 (Replies not counted)
+const s_commentsPerPage = 10; // The max amount of comments that can be displayed on one page, any number >= 1 (Replies not counted)
 const s_maxLength = 500; // The max character length of a comment
 const s_maxLengthName = 16; // The max character length of a name
 const s_commentsOpen = true; // Change to false if you'd like to close your comment section site-wide (Turn it off on Google Forms too!)
@@ -47,7 +47,7 @@ const s_fixRarebitIndexPage = false; // If using Rarebit, change to true to make
 const s_wordFilterOn = false; // True for on, false for off
 const s_filterReplacement = '****'; // Change what filtered words are censored with (**** is the default)
 const s_filteredWords = [ // Add words to filter by putting them in quotes and separating with commas (ie. 'heck', 'dang')
-    'nigger', 'faggot' //idk any other slurs that are actually bad
+    'nigger', 'faggot', 'nigga' //idk any other slurs that are actually bad
 ]
 
 // Text - Change what messages/text appear on the form and in the comments section (Mostly self explanatory)
