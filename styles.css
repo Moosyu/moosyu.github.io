@@ -2,14 +2,11 @@
     background-color: blue;
 }
 
-.vt323-regular {
+body {
+    background-image: url("assets/wall.jpg");
     font-family: "VT323", monospace;
     font-weight: 400;
     font-style: normal;
-  }  
-
-body {
-    background-image: url("assets/wall.jpg");
 }
 
 .tableimg {
@@ -60,7 +57,7 @@ td {
     margin-bottom: 3px;
     overflow-wrap: break-word;
     font-size: 4mm;
-
+    font-size: 20px;
 }
 
 ul {

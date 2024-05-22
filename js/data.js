@@ -1,7 +1,6 @@
 const datelel = new Date();
 const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
 
-
 const data = {
     china: [
       `man spends entire life savings on a single valorant skin`,
@@ -16,7 +15,7 @@ const data = {
       `floridian prankster adds aids to all blood`,
       `man slaughters family of 4﹐ defence claims "it was just a prank, calm down liberals"`,
       `minecraft youtuber breaks record of 3 days without being exposed as a pedophile`,
-      `high school chemistry teacher found dead after meth connection found`,
+      `high schools maths teacher turned meth kingpin shot dead`,
       `jake paul challenges old man to fight him`,
       `20 year old man named daniel thinks he can become a youtuber`,
       `senile old man becomes the most powerful man in the world`,

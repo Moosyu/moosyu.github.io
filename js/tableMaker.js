@@ -16,7 +16,7 @@ fetch(jsonName).then(function (response) {
 	for (var result of results) {
 		if (document.URL.includes("game_ratings")) {
 			outputer = `<table> 
-		<tr>
+		<tr">
 			<td>(${result.name})<br>${result.score}</td>
 			<td>"${result.description}"</td>
 		</tr>
