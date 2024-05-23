@@ -47,7 +47,7 @@ const s_fixRarebitIndexPage = false; // If using Rarebit, change to true to make
 const s_wordFilterOn = true; // True for on, false for off
 const s_filterReplacement = '****'; // Change what filtered words are censored with (**** is the default)
 const s_filteredWords = [ // Add words to filter by putting them in quotes and separating with commas (ie. 'heck', 'dang')
-    'nigger', 'faggot', 'nigga' //idk any other slurs that are actually bad
+    'nigger', 'faggot', 'nigga', 'rape' //idk any other slurs that are actually bad
 ]
 
 // Text - Change what messages/text appear on the form and in the comments section (Mostly self explanatory)
