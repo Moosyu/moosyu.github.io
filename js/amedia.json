@@ -1,6 +1,20 @@
 [
 	{
         "type": "Manga",
+        "name": "Call of the Night",
+        "score": "4/10",
+		"image": "https://i.imgur.com/H3w2meM.png",
+        "description": "just make him 18 jesus christ"
+    },
+	{
+        "type": "Manga",
+        "name": "Yankee JK Kuzuhana-chan",
+        "score": "3/10",
+		"image": "",
+        "description": "just a haram manga"
+    },
+	{
+        "type": "Manga",
         "name": "The Great Mage of the Hero's Party Reincarnates",
         "score": "6/10",
 		"image": "",
