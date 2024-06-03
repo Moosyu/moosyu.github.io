@@ -1,6 +1,34 @@
 [
 	{
         "type": "Manga",
+        "name": "Zanuff the Butcher",
+        "score": "4/10",
+		"image": "https://i.imgur.com/D4iicNh.png",
+        "description": "made me feel like the author has a poor grasp on humans and on any of the topics he tried to convay. maybe its because he had such a limited time but it still feels like it doesnt utilise its time correctly."
+    },
+	{
+        "type": "Manga",
+        "name": "Tsumiki Ogami & the Strange Everyday Life.",
+        "score": "5/10",
+		"image": "",
+        "description": "interestingish premise that they did nothing with."
+    },
+	{
+        "type": "Manga",
+        "name": "Call of the Night",
+        "score": "4/10",
+		"image": "https://i.imgur.com/a1Xdk80.png",
+        "description": "just make him 18. i thought this was pretty good but i could only think that when i forgot about him basically being groomed. i dont think this would have the same reception if the roles were reversed."
+    },
+	{
+        "type": "Manga",
+        "name": "Yankee JK Kuzuhana-chan",
+        "score": "2/10",
+		"image": "",
+        "description": "standard haram garbage. you'd probably like this if youre stupid i guess."
+    },
+	{
+        "type": "Manga",
         "name": "The Great Mage of the Hero's Party Reincarnates",
         "score": "6/10",
 		"image": "",

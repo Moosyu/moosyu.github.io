@@ -71,7 +71,6 @@ const s_rightButtonText = '>>';
     Everything else is automatic, you don't have to change anything else. ^^
     However, feel free to edit this code as much as you like! Just please don't remove my credit if possible <3
 */
-
 // Fix the URL parameters setting for Rarebit just in case
 if (s_fixRarebitIndexPage) {s_includeUrlParameters = true}
 
@@ -336,16 +335,27 @@ function displayComments(comments) {
         }
     }
 
+
+
     // Handle pagination if there's more than one page
     if (v_amountOfPages > 1) {
         let pagination = document.createElement('div');
-
         leftButton = document.createElement('button');
         leftButton.innerHTML = s_leftButtonText; leftButton.id = 'c_leftButton'; leftButton.name = 'left';
         leftButton.setAttribute('onclick', `changePage(this.name)`);
         if (v_pageNum == 1) {leftButton.disabled = true} // Can't go before page 1
         leftButton.className = 'c-paginationButton';
         pagination.appendChild(leftButton);
+        //
+        leftButton.innerHTML = s_leftButtonText; leftButton.id = 'c_leftButton'; leftButton.name = 'left';
+        leftButton.setAttribute('onclick', `changePage(this.name)`);
+        if (v_pageNum == 1) {leftButton.disabled = true} // Can't go before page 1
+        leftButton.className = 'c-paginationButton';
+        pagination.appendChild(leftButton);
+        //ill figure out how to autoupdate this later
+        //pageNumCounter = document.createTextNode(`${v_pageNum} / ${v_amountOfPages}`);
+        //pagination.append(pageNumCounter);
+        
 
         rightButton = document.createElement('button');
         rightButton.innerHTML = s_rightButtonText; rightButton.id = 'c_rightButton'; rightButton.name = 'right';
