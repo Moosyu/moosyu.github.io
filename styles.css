@@ -35,11 +35,11 @@ a:active {
     text-align: center;
     color: inherit;
     text-decoration: none;
-    color: white;
 }
 
 nav {
     font-size: xx-large;
+    color: white;
 }
 
 footer {
@@ -86,7 +86,7 @@ li {
     text-align: center;
     border: 5px solid blue;
     margin-top: 40px;
-
+    background-color: blue;
 }
 
 /* whats updog */
@@ -340,9 +340,12 @@ li {
 .thesenumbersreallymeannothingbecauseivemovedthemaroundwaytoomuch {
     grid-column: 2;
     grid-row: 1;
-    background-image: url("/assets/qq164.gif");
-    border: 2px dotted rgb(233 171 88);
-    border-radius: 5px;
+    background-color: #f2e9e4;
+    border: 3px solid #dcbcb4;
+}
+
+.sillycat:hover {
+    cursor: pointer;
 }
 
 .topnav a:hover {
@@ -368,12 +371,6 @@ body {
     max-width: 100%;
     overflow-x: hidden;
 }
-
-#statuscafe {
-    padding: .5em;
-    border: 2px dotted rgb(233 171 88);
-}
-
 #statuscafe-username {
     margin-bottom: .5em;
 }
@@ -388,11 +385,10 @@ body {
     overflow: hidden;
     box-sizing: border-box;
 }
-.marquee img {
-    display: inline-block;
-    padding-left: 100%;
-    animation: marquee 15s linear infinite;
+.marquee h1 {
+    animation: marquee 60s linear infinite;
 }
+
 @keyframes marquee {
     0%   { transform: translate(0, 0); }
     100% { transform: translate(-100%, 0); }

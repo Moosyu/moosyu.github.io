@@ -19,7 +19,7 @@
 </script>
 <header style="background-color: blue;">
     <div style="display: inline-block; display: flex; align-items: center;">
-        <marquee class="bluebacker" scrollamount="20">
+        <marquee scrollamount="20">
             <img style="width: 800px; height: 150px;" src="assets/title.gif">
         </marquee>
         <img style="width: 800px; height: 150px;" src="assets/love.jpg">
@@ -42,23 +42,14 @@
         </div>
         <div class="one">#1 autist. somehow my site does a bad impression of sites made 15 years ago. sure makes your
             computer feel like it was made in the early 2000s though. i know the site doesnt really work on mobile but i
-            dont really care right now. maybe later.</div>
+            dont really care right now. maybe later. if you found this through a fnf website youre looking for <a href="https://moosyar.github.io/">https://moosyar.github.io/</a>.
+            its an archive of my old fnf site. (i cant speak on if it still works though as im not updating it anymore).</div>
         <div style="margin-left: auto; margin-right: auto;" class="two"><img src="assets/bloons.gif" /></div>
         <div class="three">
             <table>
                 <tr>
-                    <th>question</th>
-                    <th>answer</th>
-                </tr>
-                <tr>
                     <td>favourite games?</td>
                     <td>terraria, stardew valley, runescape, frog detective, bloons, gw2 and hollow knight</td>
-                </tr>
-                <tr>
-                    <td>favourite music?</td>
-                    <td>best album of all time was igor follwed by mbdtf, the money store and ziggy stardust dont hate
-                        me just because
-                        im right</td>
                 </tr>
                 <tr>
                     <td>favourite anime?</td>
@@ -70,7 +61,7 @@
                 </tr>
                 <tr>
                     <td>favourite book?</td>
-                    <td>the drawing of the three. so good it reminded me that i could in fact read</td>
+                    <td>the drawing of the three. so good it reminded me that i could in fact read.</td>
                 </tr>
                 <tr>
                     <td>favourite comic?</td>
@@ -78,7 +69,7 @@
                 </tr>
                 <tr>
                     <td>favourite album?</td>
-                    <td>igor. got me into listening to good music.</td>
+                    <td>igor. got me into listening to good music. mbdtf, the money store, tpab and ziggy stardust are also bangers.</td>
                 </tr>
             </table>
         </div>
@@ -140,26 +131,43 @@
             </marquee>
         </div>
         <div class="thesenumbersreallymeannothingbecauseivemovedthemaroundwaytoomuch">
-            <div style="display: flex; align-items:center;">
-                <div id="statuscafe">
-                    <div id="statuscafe-username">
+            <div style="max-width: 600px; white-space: nowrap; unicode-bidi: isolate; margin: 0; padding: 0; line-height: 15px; height: 15px;">
+                <p style="color: #5b1a17;">File: <a style="color: #0000EE; text-decoration: underline;" href="assets/kiss.gif" target="_blank">kiss.gif</a> (251 KB, 220x220)</p>
+            </div>
+            <div style="display: flex; align-items:center; margin: 0;">
+            <img class="sillycat" id="sillycat" style="width: 15%; margin-right: 10px; max-width: 100%;" src="assets/kiss.gif">
+                <div style="float: left;" id="statuscafe">
+                    <div style="background-color: #e6d7cc; color: #416d49; padding-left: 5px;" id="statuscafe-username">
                     </div>
-                    <div id="statuscafe-content">
+                    <div style="color: #5b1a17;" id="statuscafe-content">
                     </div>
                 </div>
                 <script src="https://status.cafe/current-status.js?name=moosyu" defer></script>
-                <img style="width: 15%; margin-left: 10px;" src="assets/kiss.gif">
             </div>
         </div>
     </div>
     <div class="bluebacker" style="display: inline-block; display: table;">
         <p style="white-space: nowrap; padding: 4px; color: red; -webkit-text-stroke: black; font-size: xx-large;">
             breaking news:</p>
-        <div class="marquee" style="display: table-cell; vertical-align: middle;">
-            <h1 id="china"></h1>
-        </div>
+            <div class="marquee" style="display: table-cell; vertical-align: middle; background-color: blue;">
+                <h1 id="china"></h1>
+            </div>
     </div>
     </div>
-</body>
+    <script>
+        var cat = document.getElementById("sillycat");
+        var unzoomed = false;
 
+        cat.addEventListener("click", function() {
+        if (unzoomed) {
+            cat.style.width = "15%";
+            cat.style.height = "15%";
+            unzoomed = false;
+        } else {
+            cat.style.width = "100%";
+            cat.style.height = "100%";
+            unzoomed = true;
+        }})
+    </script>
+</body>
 </html>
