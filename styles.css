@@ -94,11 +94,6 @@ li {
     margin: 0 auto;
 }
 
-.softwarelist {
-    list-style: none;
-    text-align: center;
-}
-
 .listsf {
     margin: auto;
     display: flex;
@@ -124,18 +119,9 @@ li {
     border-radius: 0px;
 }
 
-.testss {
-    opacity: 0;
-}
-
-.testss:hover {
-    opacity: 1;
-}
-
 .grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
     justify-content: center;
 }
 

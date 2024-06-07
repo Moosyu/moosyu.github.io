@@ -1,10 +1,10 @@
 //some may call this code bad but i like to call it special
 if (document.URL.includes("game_ratings")) {
-	jsonName = "../../../js/games.json"
+	jsonName = "https://raw.githubusercontent.com/Moosyu/jsonStorage/main/games.json"
 } else if (document.URL.includes("abook_ratings")) {
-	jsonName = "../../../js/amedia.json"
+	jsonName = "https://raw.githubusercontent.com/Moosyu/jsonStorage/main/amedia.json"
 } else {
-	jsonName = "../../../js/wmedia.json"
+	jsonName = "https://raw.githubusercontent.com/Moosyu/jsonStorage/main/wmedia.json"
 }
 
 

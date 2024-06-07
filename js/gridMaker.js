@@ -1,7 +1,7 @@
 if (document.URL.includes("bookshelf")) {
-	jsonName = "../../../js/bookshelf.json"
+	jsonName = "https://raw.githubusercontent.com/Moosyu/jsonStorage/main/bookshelf.json"
 } else {
-	jsonName = "../../../js/recordroom.json"
+	jsonName = "https://raw.githubusercontent.com/Moosyu/jsonStorage/main/recordroom.json"
 }
 
 fetch(jsonName).then(function (response) {
