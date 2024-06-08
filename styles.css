@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+}
+
 .bluebacker {
     background-color: blue;
 }
@@ -47,9 +51,9 @@ footer {
     text-align: center;
 }
 
-table,
-th,
-td {
+table:not(.man),
+th:not(.man),
+td:not(.man) {
     background-color: darkblue;
     color: white;
     padding: 1em;
@@ -63,7 +67,7 @@ td {
     font-size: 20px;
 }
 
-ul {
+ul:not(.man) {
     list-style: none;
     text-align: center;
     background-color: blue;
@@ -105,17 +109,17 @@ li {
 ::-webkit-scrollbar {
     width: 12px;
     height: 12px;
-    background: #d6ecf3;
+    background: blue;
 }
 
 ::-webkit-scrollbar-track {
-    background: -webkit-linear-gradient(top, #ffadad 12.5%, #ffd6a5 25%, #fdffb6 37.5%, #caffbf 50%, #9bf6ff 62.5%, #a0c4ff 75%, #bdb2ff 87.5%, #ffc6ff 95%);
-    border: 1px ridge #8f38ff;
+    background: #3572EF;
+    border: 1px ridge #3ABEF9;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #ADD8E6;
-    border: 1px ridge #8f38ff;
+    background: blue;
+    border: 1px ridge#3ABEF9;
     border-radius: 0px;
 }
 
@@ -123,6 +127,7 @@ li {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    
 }
 
 .cell {
@@ -329,6 +334,8 @@ li {
     background-color: #f2e9e4;
     border: 3px solid #dcbcb4;
 }
+
+
 
 .sillycat:hover {
     cursor: pointer;

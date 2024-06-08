@@ -20,6 +20,9 @@ const data = {
       `20 year old man named daniel thinks he can become a youtuber`,
       `senile old man becomes the most powerful man in the world`,
       `jk rowling announces dumbledore to be a bottom`,
-      `child bitten by yellow animatronic bear`
+      `child bitten by yellow animatronic bear`,
+      `man arrested for growing a whole says "recent research show it's not so darn harmful"`,
+      `joe biden being controlled by "very evil forces"`,
+      `scientists discover new planet with enough space to fit inside every man in your surrounding area called your mother`,
     ],
   };
