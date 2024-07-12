@@ -41,9 +41,9 @@ fetch(jsonName).then(function (response) {
 		</table>`
 		}
 		output += outputer
-	};
+	}
 	temp.innerHTML = output
-	var result = scores.map(str => parseInt(str, 10)); //the 10 means its doing hexadecimal because what the fuck of course it is
-	document.getElementById("averageScore").innerHTML = "current average score: "+((result.reduce((acc, num) => acc+ num, 0)) / result.length).toFixed(1);
+	var intStr = scores.map(str => parseInt(str, 10)); //the 10 means its doing hexadecimal because what the fuck of course it is
+	document.getElementById("averageScore").innerHTML = "current average score: "+((intStr.reduce((acc, num) => acc+ num, 0)) / intStr.length).toFixed(1);
 });
 
