@@ -1,0 +1,9 @@
+html {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+    background-color: #fbfbfb;
+    height: 100%;
+    overflow: auto;
+}
