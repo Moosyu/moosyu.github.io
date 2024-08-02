@@ -6,11 +6,18 @@
     background-color: blue;
 }
 
+@font-face {
+    font-family: SS Rosehip;
+    src: url(assets/SS\ Rosehip.otf);
+  }
+
 body {
     background-image: url("assets/wall.jpg");
-    font-family: "VT323", monospace;
+    font-family: SS Rosehip;
     font-weight: 400;
     font-style: normal;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .tableimg {
@@ -48,7 +55,7 @@ nav {
 
 footer {
     background-color: blue;
-    text-align: center;
+    bottom: 0;  
 }
 
 table:not(.man),
@@ -59,31 +66,20 @@ td:not(.man) {
     padding: 1em;
     border: 1px solid blue;
     border-collapse: collapse;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 3px;
     overflow-wrap: break-word;
-    font-size: 4mm;
-    font-size: 20px;
+    font-size: 1.2rem;
 }
 
 ul:not(.man) {
     list-style: none;
     text-align: center;
     background-color: blue;
-
+    padding: 0;
 }
+
 
 li {
     margin: 35px;
-}
-
-.spin {
-    transition: 1s;
-}
-
-.spin:hover {
-    transform: rotate(360deg);
 }
 
 .updog {
@@ -93,7 +89,6 @@ li {
     background-color: blue;
 }
 
-/* whats updog */
 .updog img {
     margin: 0 auto;
 }
@@ -252,6 +247,7 @@ li {
     padding: 10px;
 }
 
+
 .one {
     grid-column: 1 / 2;
     grid-row: 1;
@@ -282,11 +278,7 @@ li {
 }
 
 .five {
-    grid-column: 1/5;
-    grid-row: 5;
-    background-image: url("/assets/qq164.gif");
-    border: 2px dotted rgb(233 171 88);
-    border-radius: 5px;
+    background-image: url("/assets/qq164.gif");    
 }
 
 .six {
@@ -359,11 +351,6 @@ header {
     background-color: blue;
 }
 
-html,
-body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
 #statuscafe-username {
     margin-bottom: .5em;
 }
@@ -385,4 +372,23 @@ body {
 @keyframes marquee {
     0%   { transform: translate(0, 0); }
     100% { transform: translate(-100%, 0); }
+}
+
+iframe {
+    border: 0px;
+}
+
+.hidden {
+    display: none;
+}
+  
+#warning-message {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ff0000;
+    padding: 10px;
+    text-align: center;
 }

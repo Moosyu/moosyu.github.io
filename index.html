@@ -2,50 +2,54 @@
 <html lang="en-US">
 
 <head>
+    <meta charset="UTF-8">
     <title>my super cool website</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <script src="js/data.js" defer></script>
     <script src="js/rand.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        fetch('https://api.github.com/repos/Moosyu/moosyu.github.io/commits?per_page=1')
+            .then(res => res.json())
+            .then(res => {
+                document.getElementById('commitLatest').innerText = res[0].commit.message;
+            });
+    </script>
 </head>
 
-<!-- code pulled straight from here bc i hate javascript phobic https://stackoverflow.com/questions/67986923/how-to-display-the-name-of-the-latest-commit-on-github-to-my-website -->
-<script>
-    fetch('https://api.github.com/repos/Moosyu/moosyu.github.io/commits?per_page=1')
-        .then(res => res.json())
-        .then(res => {
-            document.getElementById('commitLatest').innerText = res[0].commit.message
-        })
-</script>
-<header style="background-color: blue;">
-    <div style="display: inline-block; display: flex; align-items: center;">
-        <marquee scrollamount="20">
-            <img style="width: 800px; height: 150px;" src="assets/title.gif">
-        </marquee>
-        <img style="width: 800px; height: 150px;" src="assets/love.jpg">
-    </div>
-    <nav class="topnav" style="display: flex; justify-content: space-around; background-color: blue;">
-        <a href="#">home</a>
-        <a href="pages/guides.html">guides</a>
-        <a href="pages/misc/software.html">software</a>
-        <a href="pages/misc/reviews.html">reviews</a>
-        <a href="pages/misc/bookshelf.html">bookshelf</a>
-        <a href="pages/ramblings.html">ramblings</a>
-        <a href="pages/misc/recordroom.html">record room</a>
-        <a href="pages/misc/manga.html">manga</a>
-    </nav>
-</header>
+<body>
 
-<body class="vt323-regular">
+      
+    <header style="background-color: blue;">
+        <div style="display: inline-block; display: flex; align-items: center;">
+            <marquee scrollamount="20">
+                <img alt="title" style="max-width: 800px; height: 150px;" src="assets/title.gif">
+            </marquee>
+            <img alt="i ate a bag of factory reject seeds until a healthy flower unfurled from my chest... i mistook the sensation for love and died." style="max-width: 800px; height: 150px;" src="assets/love.jpg">
+        </div>
+        <nav class="topnav" style="display: flex; justify-content: space-around; background-color: blue;">
+            <a href="#">home</a>
+            <a href="pages/guides.html">guides</a>
+            <a href="pages/misc/software.html">software</a>
+            <a href="pages/misc/reviews.html">reviews</a>
+            <a href="pages/misc/bookshelf.html">bookshelf</a>
+            <a href="pages/ramblings.html">ramblings</a>
+            <a href="pages/misc/recordroom.html">record room</a>
+            <a href="pages/misc/manga.html">manga</a>
+        </nav>
+    </header>
+    <div id="warning-message" class="hidden">
+        <p id="buttonthingy">your screen is too small!! (sorry). if i you want to go to a probably broken site tap this text.</p>
+    </div>
+
     <div class="wrapper" style="background-image: url('assets/201.jpg');">
-        <div class="one">#1 autist. somehow my site does a bad impression of sites made 15 years ago. sure makes your
-            computer feel like it was made in the early 2000s though. i began my stint into autism as im not a massive
-            fan of how the modern internet sites are just flat white cubes. i like how someone can express there deepest
-            darkest thought out to the world with the power of poorly done html css and even worse js. i know the site doesnt 
-            really work on mobile but i dont really care right now. maybe later. if you found this through a fnf website youre 
-            looking for <a href="https://moosyar.github.io/">https://moosyar.github.io/</a>.its an archive of my old fnf site. 
-            (i cant speak on if it still works though as im not updating it anymore).</div>
-        <div style="margin-left: auto; margin-right: auto;" class="two"><img src="assets/bloons.gif" /></div>
+        <div class="one">
+            #1 autist. somehow my site does a bad impression of sites made 15 years ago. sure makes your computer feel like it was made in the early 2000s though. i began my stint into autism as im not a massive fan of how the modern internet sites are just flat white cubes. i like how someone can express their deepest darkest thought out to the world with the power of poorly done html css and even worse js. i know the site doesn't really work on mobile but i don't really care right now. maybe later. if you found this through a fnf website youre looking for <a href="https://moosyar.github.io/">https://moosyar.github.io/</a>. it's an archive of my old fnf site. (i can't speak on if it still works though as i'm not updating it anymore).
+        </div>
+        <div style="margin-left: auto; margin-right: auto;" class="two">
+            <img src="assets/bloons.gif" alt="bloons">
+        </div>
         <div class="three">
             <table>
                 <tr>
@@ -77,20 +81,17 @@
         <div class="four">
             <p style="text-align: center; margin-left: auto; margin-right: auto;">people who have viewed this site since
                 5/18/24:
+                <br>
                 <a href="https://www.cutercounter.com/" target="_blank">
                     <img style="vertical-align:middle;"
-                        src="https://www.cutercounter.com/hits.php?id=hvvxpodan&nd=9&style=31" border="2" alt="counter">
+                        src="https://www.cutercounter.com/hits.php?id=hvvxpodan&nd=9&style=31"alt="counter">
                 </a>
             </p>
         </div>
-        <div class="five">
-            <div id="c_widget"></div>
-            <script src="js/comment-widget.js"></script>
-        </div>
         <div class="six">
-            <div style=" display: flex; text-align: center; align-items: center; justify-content: center;">
+            <div style="display: flex; text-align: center; align-items: center; justify-content: center;">
                 <div style="color: #fc2b50; background-color: #150320; padding: .5rem">
-                    <p style="color: #150320; background-color: #fc2b50; font-size: x-large; font-weight: bold">
+                    <p style="color: #150320; background-color: #fc2b50; font-size: 2vw; font-weight: bold">
                         latest commit:
                     </p>
                     <a href="https://github.com/Moosyu/moosyu.github.io/commits/">
@@ -102,35 +103,35 @@
                 </div>
             </div>
         </div>
-        <div class="seven"><iframe src="pages/inspirations.html" width="565" height="150" frameborder="0"
-                scrolling="yes" name="frame" id="mainframe"></iframe></div>
+        <div class="seven">
+            <iframe src="pages/inspirations.html" width="565" height="150" scrolling="yes" name="frame" id="mainframe"></iframe>
+        </div>
         <div class="eight">
             <iframe style="display: block; margin: 0 auto;" width="314" height="321" scrolling="no"
-                src="https://gifypet.neocities.org/pet/pet.html?name=noah mac&dob=1716026148&gender=m&element=Earth&pet=https%3A%2F%2Fi.imgur.com%2Fuez8mRN.gif&map=hills.jpg&background=gify.jpg&tablecolor=black&textcolor=black"
-                frameborder="0">
+                src="https://gifypet.neocities.org/pet/pet.html?name=noah%20mac&dob=1716026148&gender=m&element=Earth&pet=https%3A%2F%2Fi.imgur.com%2Fuez8mRN.gif&map=hills.jpg&background=gify.jpg&tablecolor=black&textcolor=black">
             </iframe>
             <p style="text-align: center;">make sure to feed your eigenface!</p>
         </div>
         <div class="nine" style="text-align: center; vertical-align: middle;">
             <p>contact me on my discord: memecompanies or email me at moosyu@tuta.io!</p>
-            <img src="assets/sillybutton.gif">
+            <img src="assets/sillybutton.gif" alt="silly button">
         </div>
         <div class="ten">
-            <marquee onmouseover="this.stop();" onmouseout="this.start();" scrollamount="20" >
+            <marquee onmouseover="this.stop();" onmouseout="this.start();" scrollamount="20">
                 <a href="https://www.roblox.com/"> <img src="assets/despacito.gif" alt="despacito now!"></a>
                 <img src="assets/eat_pant.png" alt="eat pant">
                 <a href="https://www.ebay.com/sch/United-States-/261/m.html?_ssn=usps"> <img src="assets/usps_ebay.gif"
                         alt="now on ebay"> </a>
-                <img class="spin" src="assets/thanks.gif" alt="thanks for visiting">
+                <img src="assets/thanks.gif" alt="thanks for visiting">
                 <a href="/assets/trollface.webp"> <img src="assets/penis.jpeg" alt="penis..."> </a>
                 <a href="https://pizzza.neocities.org/"> <img src="assets/pizzza.gif" alt="pizza"> </a>
                 <a href="https://www.youtube.com/watch?v=hiRacdl02w4"> <img src="assets/idiot.gif"
                         alt="you are an idiot"> </a>
-                <a href="https://scumpsmallbrain.neocities.org"> <img src="assets/scumpshouse.gif"></a>
-                <a href="https://goblin-heart.net/sadgrl/"> <img src="assets/sadgrl_online_learn.gif"></a>
-                <a href="https://rainbowmango.neocities.org/"> <img src="assets/theglittersalamango.gif"></a>
-                <a href="https://caitsith.neocities.org/"> <img src="assets/caitsithbutton6.gif"></a>
-                <a href="https://melonking.net/"> <img src="assets/melonking.gif"></a>
+                <a href="https://scumpsmallbrain.neocities.org"> <img src="assets/scumpshouse.gif" alt="scumps house"></a>
+                <a href="https://goblin-heart.net/sadgrl/"> <img src="assets/sadgrl_online_learn.gif" alt="sadgrl"></a>
+                <a href="https://rainbowmango.neocities.org/"> <img src="assets/theglittersalamango.gif" alt="glitter salamango"></a>
+                <a href="https://caitsith.neocities.org/"> <img src="assets/caitsithbutton6.gif" alt="caitsith button"></a>
+                <a href="https://melonking.net/"> <img src="assets/melonking.gif" alt="melonking"></a>
             </marquee>
         </div>
         <div class="thesenumbersreallymeannothingbecauseivemovedthemaroundwaytoomuch">
@@ -138,7 +139,7 @@
                 <p style="color: #5b1a17;">File: <a style="color: #0000EE; text-decoration: underline;" href="assets/kiss.gif" target="_blank">kiss.gif</a> (251 KB, 220x220)</p>
             </div>
             <div style="display: flex; align-items:center; margin: 0;">
-            <img class="sillycat" id="sillycat" style="width: 15%; margin-right: 10px; max-width: 100%;" src="https://piclog.blue/latest.php?id=545">
+                <img class="sillycat" id="sillycat" style="width: 15%; margin-right: 10px; max-width: 100%;" src="assets/kiss.gif" alt="silly cat">
                 <div style="float: left;" id="statuscafe">
                     <div style="background-color: #e6d7cc; color: #416d49; padding-left: 5px;" id="statuscafe-username"></div>
                     <div style="color: #5b1a17;" id="statuscafe-content">
@@ -149,29 +150,37 @@
             </div>
         </div>
     </div>
-    <div class="bluebacker" style="display: inline-block; display: table;">
-        <p style="white-space: nowrap; padding: 4px; color: red; -webkit-text-stroke: black; font-size: xx-large;">
-            breaking news:</p>
+
+    <div class="five">
+        <div id="c_widget"></div>
+        <script src="js/comment-widget.js"></script>
+    </div>
+
+    <footer>
+        <div class="bluebacker" style="display: inline-block; display: table;">
+            <h1 style="white-space: nowrap; padding: 4px; color: red;">
+                breaking news:</h1>
             <div class="marquee" style="display: table-cell; vertical-align: middle; background-color: blue;">
                 <h1 id="china"></h1>
             </div>
-    
-    </div>
-    </div>
+        </div>
+    </footer>
+
     <script>
         var cat = document.getElementById("sillycat");
         var unzoomed = false;
 
         cat.addEventListener("click", function() {
-        if (unzoomed) {
-            cat.style.width = "15%";
-            cat.style.height = "15%";
-            unzoomed = false;
-        } else {
-            cat.style.width = "100%";
-            cat.style.height = "100%";
-            unzoomed = true;
-        }})
+            if (unzoomed) {
+                cat.style.width = "15%";
+                cat.style.height = "15%";
+                unzoomed = false;
+            } else {
+                cat.style.width = "100%";
+                cat.style.height = "100%";
+                unzoomed = true;
+            }
+        });
     </script>
 </body>
 </html>
