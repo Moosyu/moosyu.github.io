@@ -125,6 +125,7 @@
     display: block; 
     margin-left: auto; 
     margin-right: 0;
+    font-size: calc(0.6vw + 0.6vh);
 }
 #c_replyingText {
     color: white;
@@ -180,7 +181,7 @@
     margin-right: -10px;
     padding: 10px;
     font-family: Verdana;
-    font-size: 14px;
+    font-size: calc(0.6vw + 0.6vh);
     text-align: justify;
     color: white;
     background-color: black;
@@ -191,12 +192,15 @@
 .c-replyButton {
     margin-top: 10px;
     margin-right: 4px;
+    font-size: calc(0.6vw + 0.6vh);
 }
 .c-expandButton {
     margin-top: 10px;
     margin-left: 4px;
+    font-size: calc(0.6vw + 0.6vh);
 }
 .c-paginationButton {
     margin-right: 4px;
     margin-left: 4px;
+    font-size: calc(0.6vw + 0.6vh);
 }

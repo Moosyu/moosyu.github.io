@@ -24,30 +24,3 @@
 
   document.getElementById('china').innerHTML = news.join(' - ').replace(',', '');
 }())
-
-// putting this here because rand is getting loaded anyways  ¯\_(ツ)_/¯ this will probably bite me in the ass at some point
-
-var clicked = false
-
-function checkScreenWidth() {
-  const screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-  
-  if (screenWidth < 1100 && clicked == false) {
-    document.getElementById('warning-message').classList.remove('hidden');
-  } else {
-    document.getElementById('warning-message').classList.add('hidden');
-  }
-}
-
-document.getElementById("buttonthingy").onclick = function() {
-  clicked = true;
-  document.getElementById('warning-message').classList.add('hidden');
-};
-
-document.addEventListener('DOMContentLoaded', function() {
-  checkScreenWidth();
-});
-
-window.addEventListener('resize', function() {
-  checkScreenWidth();
-});
