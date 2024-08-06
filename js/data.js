@@ -24,5 +24,6 @@ const data = {
       `man arrested for growing a whole says "recent research show it's not so darn harmful"`,
       `joe biden being controlled by "very evil forces"`,
       `scientists discover new planet with enough space to fit inside every man in your surrounding area called your mother`,
+      `is this niggerlicous or is this divine intellect?`
     ],
   };

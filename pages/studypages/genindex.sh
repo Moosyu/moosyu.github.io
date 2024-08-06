@@ -1,0 +1,1 @@
+python ./genindex.py --filter "*.html"
