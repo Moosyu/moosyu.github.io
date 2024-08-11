@@ -2,19 +2,20 @@
 <html lang="en-US">
 <head>
     <title>404</title>
-</head>
-<style>
-    body {
-        background-image: url("assets/wall.jpg");
-    }
-
-    .mainbox {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-    }
+    <style>
+        body {
+            background-image: url("assets/wall.jpg");
+        }
     
-</style>
+        .mainbox {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        
+    </style>
+</head>
+
 
 <body>
       
@@ -22,7 +23,11 @@
         <p style="color: white; background-color:blue;">
             you are lost and scared
         </p>
-        <audio autoplay="true" src="assets/667869036697384.mp3">
+
+        <audio autoplay>
+            <source src="assets/667869036697384.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
 
     </div>
     <h1 style="text-align: center;"><a href="/">go home</a></h1>

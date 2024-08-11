@@ -21,10 +21,7 @@ body {
 }
 
 .tableimg {
-    max-width: 1000px;
-    min-width: 200px;
-    width: 100%;
-    height: auto;
+    width: 25vw;
 }
 
 .mainbox {
@@ -369,6 +366,10 @@ li {
     cursor: pointer;
 }
 
+.sortScore:hover {
+    cursor: pointer;
+}
+
 
 .topnav a:hover {
     animation: glow 1s ease-in-out infinite alternate;
@@ -403,13 +404,22 @@ header {
     box-sizing: border-box;
 }
 .marquee h1 {
-    animation: marquee 60s linear infinite;
+    animation: marquee-stupidcssbullshit 60s linear infinite;
 }
 
-@keyframes marquee {
+@keyframes marquee-stupidcssbullshit {
     0%   { transform: translate(0, 0); }
     100% { transform: translate(-100%, 0); }
 }
+
+@keyframes marquee-image {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
 
 iframe {
     border: 0px;
@@ -418,14 +428,24 @@ iframe {
 .hidden {
     display: none;
 }
-  
-#warning-message {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #ff0000;
-    padding: 10px;
-    text-align: center;
+
+div#no-scrolling-iframe {
+    overflow-x:hidden; 
+    overflow-y:hidden; 
+}
+
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.marquee-content {
+    display: inline-block;
+    position: relative;
+    animation: marquee-image 5s linear infinite;
+}
+
+.marquee-content img {
+    width: 100vw; /* Ensure the image width covers the viewport width */
 }
