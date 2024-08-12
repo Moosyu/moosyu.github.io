@@ -10,16 +10,14 @@ function toggleFullscreen(img) {
 let ascOrDesc = 'desc';
 var count = 0;
 function buildTable(results) {
-	ascOrDesc = ascOrDesc === 'asc' ? 'desc' : 'asc'; // this is like in the format condition ? expressionIfTrue : expressionIfFalse;
-	console.log(count)
-
+	ascOrDesc = ascOrDesc === 'asc' ? 'desc' : 'asc'; // this is like in the format: condition ? expressionIfTrue : expressionIfFalse;
 	count += 1;
 	if (count > 1) results.sort((a, b) => ascOrDesc === 'asc' ? a.score - b.score : b.score - a.score);
 
 	const output = results.map(result => `
 		<table>
 			<tr>
-				<td>${jsonName != "https://raw.githubusercontent.com/Moosyu/jsonStorage/main/games.json" ? `[${result.type}]` : ''}<br>(${result.name})<br>${result.score}/100</td>
+				<td>${jsonName != "https://raw.githubusercontent.com/Moosyu/jsonStorage/main/games.json" ? `[${result.type}]` : ''}<br>(${result.name})<br>${result.score}/10</td>
 				${jsonName == "https://raw.githubusercontent.com/Moosyu/jsonStorage/main/amedia.json" ? `<td><img loading="lazy" class="tableimg" src="${result.image}" onclick="toggleFullscreen(this)"></td>` : ''}
 				<td>"${result.description}"</td>
 			</tr>

@@ -370,6 +370,10 @@ li {
     cursor: pointer;
 }
 
+.tableimg:hover {
+    cursor: pointer;
+}
+
 
 .topnav a:hover {
     animation: glow 1s ease-in-out infinite alternate;

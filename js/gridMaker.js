@@ -13,9 +13,9 @@ fetch(jsonName).then(function (response) {
 		if (document.URL.includes("bookshelf")) {
 			outputer = `<div class="cell">
 			<div style="color: white;">
-				<p>${result.name}</p>
+				<p style="font-size: calc(1.3vw + 1.3vh);">${result.name}</p>
 				<a href="${result.site}" target="_blank"> <img loading="lazy" class="tableimg" src="${result.image}"> </a>
-				<p style="padding: 2px;">${result.description}</p>
+				<p style="padding: 2px; font-size: calc(0.7vw + 0.7vh);">${result.description}</p>
 			</div>
 		</div>
 		</div>`	
