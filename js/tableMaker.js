@@ -9,6 +9,14 @@ function toggleFullscreen(img) {
 
 let ascOrDesc = 'desc';
 var count = 0;
+
+function getScoreColor(score) {
+    return score < 5 ? "#d76666" :
+           score < 7 ? "khaki" :
+           score < 10 ? "#85ce73" : "#9f64ce";
+}
+
+
 function buildTable(results) {
 	ascOrDesc = ascOrDesc === 'asc' ? 'desc' : 'asc'; // this is like in the format: condition ? expressionIfTrue : expressionIfFalse;
 	count += 1;
@@ -17,7 +25,7 @@ function buildTable(results) {
 	const output = results.map(result => `
 		<table>
 			<tr>
-				<td>${jsonName != "https://raw.githubusercontent.com/Moosyu/jsonStorage/main/games.json" ? `[${result.type}]` : ''}<br>(${result.name})<br>${result.score}/10</td>
+                <td>${jsonName != "https://raw.githubusercontent.com/Moosyu/jsonStorage/main/games.json" ? `[${result.type}]` : ''}<br>(${result.name})<br><p style="color:${getScoreColor(result.score)};">${result.score}/10</p></td>
 				${jsonName == "https://raw.githubusercontent.com/Moosyu/jsonStorage/main/amedia.json" ? `<td><img loading="lazy" class="tableimg" src="${result.image}" onclick="toggleFullscreen(this)"></td>` : ''}
 				<td>"${result.description}"</td>
 			</tr>
@@ -35,6 +43,6 @@ fetch(jsonName).then(response => response.json())
 
 		document.getElementById("sortScore").addEventListener("click", () => buildTable(results));
 		const averageScore = (results.reduce((acc, { score }) => acc + parseInt(score, 10), 0) / results.length);
-		document.getElementById("averageScore").innerHTML = "current average score: " + averageScore.toFixed(0);
-		document.getElementById("averageScore").title = averageScore.toFixed(2);
+		document.getElementById("averageScore").innerHTML = "current average score: " + averageScore.toFixed(1);
+		document.getElementById("averageScore").title = averageScore.toFixed(3);
 });

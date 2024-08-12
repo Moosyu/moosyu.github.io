@@ -453,3 +453,14 @@ div#no-scrolling-iframe {
 .marquee-content img {
     width: 100vw; /* Ensure the image width covers the viewport width */
 }
+
+.buttonload {
+    border: none;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;  
+    background-color: darkblue;
+    font-family: SS Rosehip;
+    text-align: center;
+}
