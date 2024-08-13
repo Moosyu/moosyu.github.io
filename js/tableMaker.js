@@ -11,9 +11,13 @@ let ascOrDesc = 'desc';
 var count = 0;
 
 function getScoreColor(score) {
-    return score < 5 ? "#d76666" :
-           score < 7 ? "khaki" :
-           score < 10 ? "#85ce73" : "#9f64ce";
+    return 	score < 1 ? "#5e5e5e" :
+	score < 3 ? "#ff4c4c" :
+	score < 5 ? "#ff8888" :
+	score < 7 ? "#f0e68c" :
+	score < 8 ? "#7bc96f" :
+	score < 10 ? "#00cc66" :
+	"#9d63d0";
 }
 
 
