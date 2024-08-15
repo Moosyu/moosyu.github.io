@@ -5,7 +5,6 @@ fetch(url)
     .then(response => response.json())
     .then(data => {
         const track = data.recenttracks.track[0];
-
         const listeningDiv = document.getElementById('listening');
         listeningDiv.innerHTML = `
             <img src="${track.image[track.image.length - 1]['#text']}" alt="${track.name} album cover">
@@ -15,4 +14,4 @@ fetch(url)
             </div>
         `;
     })
-    .catch(error => console.error('Fetching Last.fm data failed:', error));
+    .catch(error => console.error('fetching last.fm failed:', error));
