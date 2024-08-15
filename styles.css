@@ -316,11 +316,30 @@ li {
     background-image: url("/assets/qq164.gif");
     border: 2px dotted rgb(233, 171, 88);
     border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box; 
 }
 
-.ten img {
-    width: 20%;
-    margin: auto;
+#listening {
+    display: flex;
+    align-items: center;
+}
+
+#listening img {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+    padding-right: 10px;
+}
+
+#listening div {
+    display: flex;
+    flex-direction: column;
+}
+
+#listening h3, #listening p {
+    margin: 0;
+    padding: 0;
 }
 
 .thesenumbersreallymeannothingbecauseivemovedthemaroundwaytoomuch {
