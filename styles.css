@@ -470,7 +470,7 @@ div#no-scrolling-iframe {
 }
 
 .marquee-content img {
-    width: 100vw; /* Ensure the image width covers the viewport width */
+    width: 100vw;
 }
 
 .buttonload {
