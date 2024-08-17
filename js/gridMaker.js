@@ -22,7 +22,9 @@ fetch(jsonName).then(function (response) {
 		} else {
 			outputer = `<div class="cell">
 			<div style="color: white;">
-				<p>${result.name}</p>
+				<h2>${result.name}</h2>
+				<h3>By ${result.artist}/10</h3>
+				<h3>${result.score}/10</h3>
 				<div style="perspective: 800px;">
 				<img loading="lazy" class="album_animation_thingyF" src="${result.image} ">
 				<img loading="lazy" class="album_animation_thingyB" src="${result.imageB} ">
