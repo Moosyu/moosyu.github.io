@@ -7,12 +7,17 @@
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        body {
-            max-width: 500px;
-            margin-left: auto;
-            margin-right: auto;
-            border: 2px solid black;
+        html {
+            background-color: #ff4876;
         }
+        .center {
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            margin: 0; 
+            padding: 20px;
+        }
+
 
         ul, #myUL {
             list-style-type: none;
@@ -24,7 +29,8 @@
         }
         
         p {
-            margin: 0;            
+            margin: 0;  
+            font-size: calc(0.8vw + 0.8vh);
         }
 
         hr {
@@ -35,8 +41,19 @@
             font-style: italic;
         }
 
-        li, h2, h1 {
+        li {
             color: white;
+            font-size: calc(0.8vw + 0.8vh);
+        }
+
+        h2 {
+            color: white;
+            font-size: calc(0.9vw + 0.9vh);
+        }
+
+        h1 {
+            color: white;
+            font-size: calc(1vw + 1vh);
         }
 
         a,
@@ -47,277 +64,334 @@
             text-decoration: none;
             color: yellow;
         }
+
+        .courners {
+            padding: 10px; 
+            background-color: #2b2a33; 
+            border-radius: 10px; 
+            border: 2px solid black;
+        }
+
+        .topnav {
+            display: flex; 
+            justify-content: space-around; 
+        }
+
+        .topnav a {
+            font-size: calc(0.9vw + 0.9vh);
+        }
+
+        header {
+            background-color: #2b2a33;
+            border-radius: 3px; 
+            border: 2px solid black;
+        }
+
+        @keyframes rainbow {
+            0% { color: red; }
+            16% { color: orange; }
+            33% { color: yellow; }
+            50% { color: green; }
+            66% { color: blue; }
+            83% { color: indigo; }
+            100% { color: violet; }
+        }
+
+        .rainbow-flash {
+        font-size: 3em;
+        font-weight: bold;
+        text-align: center;
+        animation: rainbow 2s infinite step-end;
+        text-align: center;
+        font-size: calc(1.2vw + 1.2vh);
+        }
         </style>
 </head>
 <body>
-    <div style="padding: 10px; background-color: #2b2a33;">
-        <h1 style="text-align: center;">sitemap</h1>
-        <hr>
-        <h2 style="text-align: center;">pages</h2>
-        <hr>
+    <header>
+        <h1 class="rainbow-flash">sitemap</h1>
+        <h2 style="text-align: center; font-size: calc(0.9vw + 0.9vh);">"consistent visual styles are for losers anyways" - tobuscus</h2>
+        <nav class="topnav">
+            <a href="../index.html">home</a>
+            <a href="misc/reviews.html">reviews</a>
+            <a href="ramblings.html">ramblings</a>
+            <a href="guides.html">guides</a>
+            <a href="studying.html">studying</a>
+            <a href="#">sitemap</a>
+        </nav>
+    </header>
 
-        <p><a href="../index.html">> /</a></p>
-        <p><a href="../404.html">> /404.html</a></p>
-        <ul id="myUL">
-            <li> <span>> /pages/</span>
-                <ul>
-                    <ul id="myUL">
-                        <li> <span>> misc/</span>
-                            <ul>
-                                <li><a href="../pages/misc/manga.html">> manga.html</a></li>
-                                <li><a href="../pages/misc/reviews.html">> reviews.html</a></li>    
+    <div class="center">
+        <div class="courners">
+            <h1 style="text-align: center;">sitemap</h1>
+            <hr>
+            <h2 style="text-align: center;">pages</h2>
+            <hr>
+            <p><a href="../index.html">> /</a></p>
+            <p><a href="../404.html">> /404.html</a></p>
+            <ul id="myUL">
+                <li> <span>> /pages/</span>
+                    <ul>
+                        <ul id="myUL">
+                            <li> <span>> misc/</span>
                                 <ul>
-                                    <li> <span>> reviews/</span>
+                                    <li><a href="../pages/misc/manga.html">> manga.html</a></li>
+                                    <li><a href="../pages/misc/reviews.html">> reviews.html</a></li>    
                                     <ul>
-                                        <li><a href="../pages/misc/reviews/abook_ratings.html">> abook_ratings.html</a></li>
-                                        <li><a href="../pages/misc/reviews/bookshelf.html">> bookshelf.html</a></li>
-                                        <li><a href="../pages/misc/reviews/game_ratings.html">> game_ratings.html</a></li>
-                                        <li><a href="../pages/misc/reviews/recordroom.html">> recordroom.html</a></li>
-                                        <li><a href="../pages/misc/reviews/wbook_ratings.html">> wbook_ratings.html</a></li>
+                                        <li> <span>> reviews/</span>
+                                        <ul>
+                                            <li><a href="../pages/misc/reviews/abook_ratings.html">> abook_ratings.html</a></li>
+                                            <li><a href="../pages/misc/reviews/bookshelf.html">> bookshelf.html</a></li>
+                                            <li><a href="../pages/misc/reviews/game_ratings.html">> game_ratings.html</a></li>
+                                            <li><a href="../pages/misc/reviews/recordroom.html">> recordroom.html</a></li>
+                                            <li><a href="../pages/misc/reviews/wbook_ratings.html">> wbook_ratings.html</a></li>
+                                        </ul>
                                     </ul>
                                 </ul>
-                            </ul>
-                        </li>
+                            </li>
+                        </ul>
+                        <p><a href="inspirations.html">> /inspirations.html</a></p>
+                        <p><a href="ramblings.html">> /ramblings.html</a></p>
+                        <p><a href="sitemap.html">> /sitemap.html</a></p>
+                        <ul id="myUL">
+                            <li> <span>> studypages/</span>
+                                <ul>
+                                    <li><a href="studypages/bounds[math].html">> bounds[math].html</a></li>
+                                    <li><a href="studypages/directindirectvariation[math].html">> directindirectvariation[math].html</a></li>
+                                    <li><a href="studypages/estimation[math].html">> estimation[math].html</a></li>
+                                    <li><a href="studypages/indiceslaws[math].html">> indiceslaws[math].html</a></li>
+                                    <li><a href="studypages/list.html">> list.html</a></li>
+                                    <li><a href="studypages/mrscgren[science].html">> mrscgren[science].html</a></li>
+                                    <li><a href="studypages/numbergroups[math].html">> numbergroups[math].html</a></li>
+                                    <li><a href="studypages/numberlines[math].html">> numberlines[math].html</a></li>
+                                    <li><a href="studypages/numbertypes[math].html">> numbertypes[math].html</a></li>
+                                    <li><a href="studypages/recurrentdecimalstofractions[math].html">> recurrentdecimalstofractions[math].html</a></li>
+                                    <li><a href="studypages/spanishwords[spanish].html">> spanishwords[spanish].html</a></li>
+                                    <li><a href="studypages/testpage.html">> testpage.html</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <p><a href="studying.html">> /studying.html</a></p>
+                        <ul id="myUL">
+                            <li> <span>> guides/</span>
+                                <ul>
+                                    <li><a href="guides/awesomewm_scaling_issue.html">> awesomewm_scaling_issue.html</a></li>
+                                    <li><a href="guides/awesomewm_stardew.html">> awesomewm_stardew.html</a></li>
+                                    <li><a href="guides/bash_webp_jpg.html">> bash_webp_jpg.html</a></li>
+                                    <li><a href="guides/brave_ads_newtab.html">> brave_ads_newtab.html</a></li>
+                                    <li><a href="guides/fixing_firefox_freezing_x11.html">> fixing_firefox_freezing_x11.html</a></li>
+                                    <li><a href="guides/imgur_live_server.html">> imgur_live_server.html</a></li>
+                                    <li><a href="guides/making_xfce_transparent.html">> making_xfce_transparent.html</a></li>
+                                    <li><a href="guides/rounded_with_ibhagwan.html">> rounded_with_ibhagwan.html</a></li>
+                                    <li><a href="guides/runelite_flashdrive.html">> runelite_flashdrive.html</a></li>
+                                </ul>
+                            </li>
+                        </ul>
                     </ul>
-                    <p><a href="inspirations.html">> /inspirations.html</a></p>
-                    <p><a href="ramblings.html">> /ramblings.html</a></p>
-                    <p><a href="sitemap.html">> /sitemap.html</a></p>
-                    <ul id="myUL">
-                        <li> <span>> studypages/</span>
-                            <ul>
-                                <li><a href="studypages/bounds[math].html">> bounds[math].html</a></li>
-                                <li><a href="studypages/directindirectvariation[math].html">> directindirectvariation[math].html</a></li>
-                                <li><a href="studypages/estimation[math].html">> estimation[math].html</a></li>
-                                <li><a href="studypages/indiceslaws[math].html">> indiceslaws[math].html</a></li>
-                                <li><a href="studypages/list.html">> list.html</a></li>
-                                <li><a href="studypages/mrscgren[science].html">> mrscgren[science].html</a></li>
-                                <li><a href="studypages/numbergroups[math].html">> numbergroups[math].html</a></li>
-                                <li><a href="studypages/numberlines[math].html">> numberlines[math].html</a></li>
-                                <li><a href="studypages/numbertypes[math].html">> numbertypes[math].html</a></li>
-                                <li><a href="studypages/recurrentdecimalstofractions[math].html">> recurrentdecimalstofractions[math].html</a></li>
-                                <li><a href="studypages/spanishwords[spanish].html">> spanishwords[spanish].html</a></li>
-                                <li><a href="studypages/testpage.html">> testpage.html</a></li>
-                            </ul>
-                        </li>
+                </li>
+            </ul>
+            <hr>
+            <h2 style="text-align: center;">css</h2>
+            <hr>
+            <p><a href="../styles.css">> /styles.css</a></p>
+            <p><a href="../comment-widget-dark.css">> /comment-widget-dark.css</a></p>
+            <ul id="myUL">
+                <li> <span>> /pages/</span>
+                    <ul>
+                        <ul id="myUL">
+                            <li> <span>> /studypages/</span>
+                                <ul>
+                                    <p><a href="studypages/studybase.css">> studybase.css</a></p>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul id="myUL">
+                            <li> <span>> /guides/</span>
+                                <ul>
+                                    <p><a href="guides/guides.css">> guides.css</a></p>
+                                </ul>
+                            </li>
+                        </ul>
                     </ul>
-                    <p><a href="studying.html">> /studying.html</a></p>
-                    <ul id="myUL">
-                        <li> <span>> guides/</span>
-                            <ul>
-                                <li><a href="guides/awesomewm_scaling_issue.html">> awesomewm_scaling_issue.html</a></li>
-                                <li><a href="guides/awesomewm_stardew.html">> awesomewm_stardew.html</a></li>
-                                <li><a href="guides/bash_webp_jpg.html">> bash_webp_jpg.html</a></li>
-                                <li><a href="guides/brave_ads_newtab.html">> brave_ads_newtab.html</a></li>
-                                <li><a href="guides/fixing_firefox_freezing_x11.html">> fixing_firefox_freezing_x11.html</a></li>
-                                <li><a href="guides/imgur_live_server.html">> imgur_live_server.html</a></li>
-                                <li><a href="guides/making_xfce_transparent.html">> making_xfce_transparent.html</a></li>
-                                <li><a href="guides/rounded_with_ibhagwan.html">> rounded_with_ibhagwan.html</a></li>
-                                <li><a href="guides/runelite_flashdrive.html">> runelite_flashdrive.html</a></li>
-                            </ul>
-                        </li>
+                </li>
+            </ul>
+            <hr>
+            <h2 style="text-align: center;">js</h2>
+            <hr>
+            <ul id="myUL">
+                <li> <span>> /js/</span>
+                    <ul>
+                        <p><a href="../js/comment-widget.js">> comment-widget.js</a></p>
+                        <p><a href="../js/data.js">> data.js</a></p>
+                        <p><a href="../js/gridMaker.js">> gridMaker.js</a></p>
+                        <p><a href="../js/lastFM.js">> lastFM.js</a></p>
+                        <p><a href="../js/rand.js">> rand.js</a></p>
+                        <p><a href="../js/randTop.js">> randTop.js</a></p>
+                        <p><a href="../js/tableMaker.js">> tableMaker.js</a></p>
                     </ul>
-                </ul>
-            </li>
-        </ul>
-        <hr>
-        <h2 style="text-align: center;">css</h2>
-        <hr>
-        <p><a href="../styles.css">> /styles.css</a></p>
-        <p><a href="../comment-widget-dark.css">> /comment-widget-dark.css</a></p>
-        <ul id="myUL">
-            <li> <span>> /pages/</span>
-                <ul>
-                    <ul id="myUL">
-                        <li> <span>> /studypages/</span>
-                            <ul>
-                                <p><a href="studypages/studybase.css">> studybase.css</a></p>
-                            </ul>
-                        </li>
+                </li>
+            </ul>
+            <hr>
+            <h2 style="text-align: center;">misc</h2>
+            <hr>
+            <ul id="myUL">
+                <li> <span>> /pages/</span>
+                    <ul>
+                        <ul id="myUL">
+                            <li> <span>> studypages/</span>
+                                <ul>
+                                    <li><a href="studypages/genindex.py">> genindex.py</a></li>
+                                    <li><a href="studypages/genindex.sh">> genindex.sh</a></li>
+                                </ul>
+                            </li>
+                        </ul>
                     </ul>
-                    <ul id="myUL">
-                        <li> <span>> /guides/</span>
-                            <ul>
-                                <p><a href="guides/guides.css">> guides.css</a></p>
-                            </ul>
-                        </li>
+                </li>
+            </ul>
+            <ul id="myUL">
+                <li> <span>> /assets/</span>
+                    <ul>
+                        <p><a href="../assets/6.gif">6.gif</a></p>
+                        <p><a href="../assets/201.jpg">201.jpg</a></p>
+                        <p><a href="../assets/24817.png">24817.png</a></p>
+                        <p><a href="../assets/4201726415_c85f4837b0_o.jpg">4201726415_c85f4837b0_o.jpg</a></p>
+                        <p><a href="../assets/667869036697384.mp3">667869036697384.mp3</a></p>
+                        <p><a href="../assets/720.png">720.png</a></p>
+                        <p><a href="../assets/730.gif">730.gif</a></p>
+                        <p><a href="../assets/948816870864199720.webp">948816870864199720.webp</a></p>
+                        <p><a href="../assets/about_me.gif">about_me.gif</a></p>
+                        <p><a href="../assets/aughthstudy.gif">aughthstudy.gif</a></p>
+                        <p><a href="../assets/biden.jpg">biden.jpg</a></p>
+                        <p><a href="../assets/biggewtf.png">biggewtf.png</a></p>
+                        <p><a href="../assets/blueder.png">blueder.png</a></p>
+                        <p><a href="../assets/book2.gif">book2.gif</a></p>
+                        <p><a href="../assets/book3.gif">book3.gif</a></p>
+                        <p><a href="../assets/bookshelf.gif">bookshelf.gif</a></p>
+                        <p><a href="../assets/bookshelflight-motion1-w.gif">bookshelflight-motion1-w.gif</a></p>
+                        <p><a href="../assets/Botón_página_Daniel.gif">Botón_página_Daniel.gif</a></p>
+                        <p><a href="../assets/btn-guestbook-ov.jpg">btn-guestbook-ov.jpg</a></p>
+                        <p><a href="../assets/bug.webp">bug.webp</a></p>
+                        <p><a href="../assets/butterfly.webp">butterfly.webp</a></p>
+                        <p><a href="../assets/button.gif">button.gif</a></p>
+                        <p><a href="../assets/button11.gif">button11.gif</a></p>
+                        <p><a href="../assets/buttonincessant.gif">buttonincessant.gif</a></p>
+                        <p><a href="../assets/caitsithbutton6.gif">caitsithbutton6.gif</a></p>
+                        <p><a href="../assets/cancer.jpg">cancer.jpg</a></p>
+                        <p><a href="../assets/catstretch.gif">catstretch.gif</a></p>
+                        <p><a href="../assets/cat_trumpet.gif">cat_trumpet.gif</a></p>
+                        <p><a href="../assets/cat-fluffy.gif">cat-fluffy.gif</a></p>
+                        <p><a href="../assets/cd-spin.gif">cd-spin.gif</a></p>
+                        <p><a href="../assets/chill_pill.gif">chill_pill.gif</a></p>
+                        <p><a href="../assets/christmas_tree.gif">christmas_tree.gif</a></p>
+                        <p><a href="../assets/club.jpg">club.jpg</a></p>
+                        <p><a href="../assets/contact.gif">contact.gif</a></p>
+                        <p><a href="../assets/cool_guides.gif">cool_guides.gif</a></p>
+                        <p><a href="../assets/create_101.gif">create_101.gif</a></p>
+                        <p><a href="../assets/creeper.gif">creeper.gif</a></p>
+                        <p><a href="../assets/despacito.gif">despacito.gif</a></p>
+                        <p><a href="../assets/doge.jpg">doge.jpg</a></p>
+                        <p><a href="../assets/dpi.lv.png">dpi.lv.png</a></p>
+                        <p><a href="../assets/duck.png">duck.png</a></p>
+                        <p><a href="../assets/dvd.gif">dvd.gif</a></p>
+                        <p><a href="../assets/eat_pant.png">eat_pant.png</a></p>
+                        <p><a href="../assets/finalfantasybookshelf.gif">finalfantasybookshelf.gif</a></p>
+                        <p><a href="../assets/firefox_animado2.gif">firefox_animado2.gif</a></p>
+                        <p><a href="../assets/flag_wave.gif">flag_wave.gif</a></p>
+                        <p><a href="../assets/flushed.png">flushed.png</a></p>
+                        <p><a href="../assets/fredrei.jpg">fredrei.jpg</a></p>
+                        <p><a href="../assets/frog.gif">frog.gif</a></p>
+                        <p><a href="../assets/geo-city.gif">geo-city.gif</a></p>
+                        <p><a href="../assets/gifypet.gif">gifypet.gif</a></p>
+                        <p><a href="../assets/GLxjAMnXUAA_6_F.webp">GLxjAMnXUAA_6_F.webp</a></p>
+                        <p><a href="../assets/grossgirl94.gif">grossgirl94.gif</a></p>
+                        <p><a href="../assets/GSycK4fW8AAgtal.jpg">GSycK4fW8AAgtal.jpg</a></p>
+                        <p><a href="../assets/head.webp">head.webp</a></p>
+                        <p><a href="../assets/hylics.gif">hylics.gif</a></p>
+                        <p><a href="../assets/idiot.gif">idiot.gif</a></p>
+                        <p><a href="../assets/IMG_2630.png">IMG_2630.png</a></p>
+                        <p><a href="../assets/IMG_2638.png">IMG_2638.png</a></p>
+                        <p><a href="../assets/kevin.png">kevin.png</a></p>
+                        <p><a href="../assets/kiss.gif">kiss.gif</a></p>
+                        <p><a href="../assets/linux.gif">linux.gif</a></p>
+                        <p><a href="../assets/loam.png">loam.png</a></p>
+                        <p><a href="../assets/love.jpg">love.jpg</a></p>
+                        <p><a href="../assets/manga.gif">manga.gif</a></p>
+                        <p><a href="../assets/melonking.gif">melonking.gif</a></p>
+                        <p><a href="../assets/melonland-badge-2.gif">melonland-badge-2.gif</a></p>
+                        <p><a href="../assets/melps.gif">melps.gif</a></p>
+                        <p><a href="../assets/minion.jpg">minion.jpg</a></p>
+                        <p><a href="../assets/miscellaneous.gif">miscellaneous.gif</a></p>
+                        <p><a href="../assets/momg.gif">momg.gif</a></p>
+                        <p><a href="../assets/music.gif">music.gif</a></p>
+                        <p><a href="../assets/neonaut.png">neonaut.png</a></p>
+                        <p><a href="../assets/night_wall.jpg">night_wall.jpg</a></p>
+                        <p><a href="../assets/noah.jpeg">noah.jpeg</a></p>
+                        <p><a href="../assets/notepad.jpg">notepad.jpg</a></p>
+                        <p><a href="../assets/pattern104.jpg">pattern104.jpg</a></p>
+                        <p><a href="../assets/penis.jpeg">penis.jpeg</a></p>
+                        <p><a href="../assets/piedra-ndego.gif">piedra-ndego.gif</a></p>
+                        <p><a href="../assets/piracy.gif">piracy.gif</a></p>
+                        <p><a href="../assets/pizzza.gif">pizzza.gif</a></p>
+                        <p><a href="../assets/preview_link1.gif">preview_link1.gif</a></p>
+                        <p><a href="../assets/ps2_image.gif">ps2_image.gif</a></p>
+                        <p><a href="../assets/qq164.gif">qq164.gif</a></p>
+                        <p><a href="../assets/ramblings.gif">ramblings.gif</a></p>
+                        <p><a href="../assets/recordroom.gif">recordroom.gif</a></p>
+                        <p><a href="../assets/record_player_md_wht.gif">record_player_md_wht.gif</a></p>
+                        <p><a href="../assets/reviews.gif">reviews.gif</a></p>
+                        <p><a href="../assets/rivblink.gif">rivblink.gif</a></p>
+                        <p><a href="../assets/rounded.png">rounded.png</a></p>
+                        <p><a href="../assets/runelite_site.png">runelite_site.png</a></p>
+                        <p><a href="../assets/sadgrl_online_learn.gif">sadgrl_online_learn.gif</a></p>
+                        <p><a href="../assets/sandy.png">sandy.png</a></p>
+                        <p><a href="../assets/santa.gif">santa.gif</a></p>
+                        <p><a href="../assets/scenequeen.gif">scenequeen.gif</a></p>
+                        <p><a href="../assets/Screenshot 2023-11-11 211026.png">Screenshot 2023-11-11 211026.png</a></p>
+                        <p><a href="../assets/scrub_web.gif">scrub_web.gif</a></p>
+                        <p><a href="../assets/scumpshouse.gif">scumpshouse.gif</a></p>
+                        <p><a href="../assets/secret_duck.gif">secret_duck.gif</a></p>
+                        <p><a href="../assets/sillybutton.gif">sillybutton.gif</a></p>
+                        <p><a href="../assets/sillychart.png">sillychart.png</a></p>
+                        <p><a href="../assets/single_lesson.jpg">single_lesson.jpg</a></p>
+                        <p><a href="../assets/skeleton_trumpet.gif">skeleton_trumpet.gif</a></p>
+                        <p><a href="../assets/smokeypurple.gif">smokeypurple.gif</a></p>
+                        <p><a href="../assets/snow_globe1.gif">snow_globe1.gif</a></p>
+                        <p><a href="../assets/snow_globe2.gif">snow_globe2.gif</a></p>
+                        <p><a href="../assets/snow_globe3.gif">snow_globe3.gif</a></p>
+                        <p><a href="../assets/snow_globe4.gif">snow_globe4.gif</a></p>
+                        <p><a href="../assets/snow_globe5.gif">snow_globe5.gif</a></p>
+                        <p><a href="../assets/snow_wall.gif">snow_wall.gif</a></p>
+                        <p><a href="../assets/software.gif">software.gif</a></p>
+                        <p><a href="../assets/softwares.gif">softwares.gif</a></p>
+                        <p><a href="../assets/sparkle-bg.gif">sparkle-bg.gif</a></p>
+                        <p><a href="../assets/SS Rosehip Bold.otf">SS Rosehip Bold.otf</a></p>
+                        <p><a href="../assets/SS Rosehip BoldItalic.otf">SS Rosehip BoldItalic.otf</a></p>
+                        <p><a href="../assets/SS Rosehip Italic.otf">SS Rosehip Italic.otf</a></p>
+                        <p><a href="../assets/SS Rosehip.otf">SS Rosehip.otf</a></p>
+                        <p><a href="../assets/star.gif">star.gif</a></p>
+                        <p><a href="../assets/stars_wall.jpg">stars_wall.jpg</a></p>
+                        <p><a href="../assets/swirl.gif">swirl.gif</a></p>
+                        <p><a href="../assets/t1Ivg5kVIdON96ZU.mp4">t1Ivg5kVIdON96ZU.mp4</a></p>
+                        <p><a href="../assets/textures.gif">textures.gif</a></p>
+                        <p><a href="../assets/thanks.gif">thanks.gif</a></p>
+                        <p><a href="../assets/theglittersalamango.gif">theglittersalamango.gif</a></p>
+                        <p><a href="../assets/thirtyvirus-5.jpg">thirtyvirus-5.jpg</a></p>
+                        <p><a href="../assets/title.gif">title.gif</a></p>
+                        <p><a href="../assets/trash_paradise.gif">trash_paradise.gif</a></p>
+                        <p><a href="../assets/trollface.webp">trollface.webp</a></p>
+                        <p><a href="../assets/updog.gif">updog.gif</a></p>
+                        <p><a href="../assets/usps_ebay.gif">usps_ebay.gif</a></p>
+                        <p><a href="../assets/video-100-4.5-QKozDYW9Uf8 (1).mp4">video-100-4.5-QKozDYW9Uf8 (1).mp4</a></p>
+                        <p><a href="../assets/video-37-3.9-ZUDSghJfLs4.mp4">video-37-3.9-ZUDSghJfLs4.mp4</a></p>
+                        <p><a href="../assets/wall.jpg">wall.jpg</a></p>
+                        <p><a href="../assets/wastebitch2.gif">wastebitch2.gif</a></p>
+                        <p><a href="../assets/wiby.org.gif">wiby.org.gif</a></p>
+                        <p><a href="../assets/wtf_elevators.jpg">wtf_elevators.jpg</a></p>                    
                     </ul>
-                </ul>
-            </li>
-        </ul>
-        <hr>
-        <h2 style="text-align: center;">js</h2>
-        <hr>
-        <ul id="myUL">
-            <li> <span>> /js/</span>
-                <ul>
-                    <p><a href="../js/comment-widget.js">> comment-widget.js</a></p>
-                    <p><a href="../js/data.js">> data.js</a></p>
-                    <p><a href="../js/gridMaker.js">> gridMaker.js</a></p>
-                    <p><a href="../js/lastfm.js">> lastfm.js</a></p>
-                    <p><a href="../js/rand.js">> rand.js</a></p>
-                    <p><a href="../js/randTop.js">> randTop.js</a></p>
-                    <p><a href="../js/tableMaker.js">> tableMaker.js</a></p>
-                </ul>
-            </li>
-        </ul>
-        <hr>
-        <h2 style="text-align: center;">misc</h2>
-        <hr>
-        <ul id="myUL">
-            <li> <span>> /pages/</span>
-                <ul>
-                    <ul id="myUL">
-                        <li> <span>> studypages/</span>
-                            <ul>
-                                <li><a href="studypages/genindex.py">> genindex.py</a></li>
-                                <li><a href="studypages/genindex.sh">> genindex.sh</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </ul>
-            </li>
-        </ul>
-        <ul id="myUL">
-            <li> <span>> /assets/</span>
-                <ul>
-                    <p><a href="../assets/6.gif">6.gif</a></p>
-                    <p><a href="../assets/201.jpg">201.jpg</a></p>
-                    <p><a href="../assets/24817.png">24817.png</a></p>
-                    <p><a href="../assets/4201726415_c85f4837b0_o.jpg">4201726415_c85f4837b0_o.jpg</a></p>
-                    <p><a href="../assets/667869036697384.mp3">667869036697384.mp3</a></p>
-                    <p><a href="../assets/720.png">720.png</a></p>
-                    <p><a href="../assets/730.gif">730.gif</a></p>
-                    <p><a href="../assets/948816870864199720.webp">948816870864199720.webp</a></p>
-                    <p><a href="../assets/about_me.gif">about_me.gif</a></p>
-                    <p><a href="../assets/aughthstudy.gif">aughthstudy.gif</a></p>
-                    <p><a href="../assets/biden.jpg">biden.jpg</a></p>
-                    <p><a href="../assets/biggewtf.png">biggewtf.png</a></p>
-                    <p><a href="../assets/blueder.png">blueder.png</a></p>
-                    <p><a href="../assets/book2.gif">book2.gif</a></p>
-                    <p><a href="../assets/book3.gif">book3.gif</a></p>
-                    <p><a href="../assets/bookshelf.gif">bookshelf.gif</a></p>
-                    <p><a href="../assets/bookshelflight-motion1-w.gif">bookshelflight-motion1-w.gif</a></p>
-                    <p><a href="../assets/Botón_página_Daniel.gif">Botón_página_Daniel.gif</a></p>
-                    <p><a href="../assets/btn-guestbook-ov.jpg">btn-guestbook-ov.jpg</a></p>
-                    <p><a href="../assets/bug.webp">bug.webp</a></p>
-                    <p><a href="../assets/butterfly.webp">butterfly.webp</a></p>
-                    <p><a href="../assets/button.gif">button.gif</a></p>
-                    <p><a href="../assets/button11.gif">button11.gif</a></p>
-                    <p><a href="../assets/buttonincessant.gif">buttonincessant.gif</a></p>
-                    <p><a href="../assets/caitsithbutton6.gif">caitsithbutton6.gif</a></p>
-                    <p><a href="../assets/cancer.jpg">cancer.jpg</a></p>
-                    <p><a href="../assets/catstretch.gif">catstretch.gif</a></p>
-                    <p><a href="../assets/cat_trumpet.gif">cat_trumpet.gif</a></p>
-                    <p><a href="../assets/cd-spin.gif">cd-spin.gif</a></p>
-                    <p><a href="../assets/chill_pill.gif">chill_pill.gif</a></p>
-                    <p><a href="../assets/christmas_tree.gif">christmas_tree.gif</a></p>
-                    <p><a href="../assets/club.jpg">club.jpg</a></p>
-                    <p><a href="../assets/contact.gif">contact.gif</a></p>
-                    <p><a href="../assets/cool_guides.gif">cool_guides.gif</a></p>
-                    <p><a href="../assets/create_101.gif">create_101.gif</a></p>
-                    <p><a href="../assets/creeper.gif">creeper.gif</a></p>
-                    <p><a href="../assets/despacito.gif">despacito.gif</a></p>
-                    <p><a href="../assets/doge.jpg">doge.jpg</a></p>
-                    <p><a href="../assets/dpi.lv.png">dpi.lv.png</a></p>
-                    <p><a href="../assets/duck.png">duck.png</a></p>
-                    <p><a href="../assets/dvd.gif">dvd.gif</a></p>
-                    <p><a href="../assets/eat_pant.png">eat_pant.png</a></p>
-                    <p><a href="../assets/finalfantasybookshelf.gif">finalfantasybookshelf.gif</a></p>
-                    <p><a href="../assets/firefox_animado2.gif">firefox_animado2.gif</a></p>
-                    <p><a href="../assets/flag_wave.gif">flag_wave.gif</a></p>
-                    <p><a href="../assets/flushed.png">flushed.png</a></p>
-                    <p><a href="../assets/fredrei.jpg">fredrei.jpg</a></p>
-                    <p><a href="../assets/frog.gif">frog.gif</a></p>
-                    <p><a href="../assets/geo-city.gif">geo-city.gif</a></p>
-                    <p><a href="../assets/gifypet.gif">gifypet.gif</a></p>
-                    <p><a href="../assets/GLxjAMnXUAA_6_F.webp">GLxjAMnXUAA_6_F.webp</a></p>
-                    <p><a href="../assets/grossgirl94.gif">grossgirl94.gif</a></p>
-                    <p><a href="../assets/GSycK4fW8AAgtal.jpg">GSycK4fW8AAgtal.jpg</a></p>
-                    <p><a href="../assets/head.webp">head.webp</a></p>
-                    <p><a href="../assets/hylics.gif">hylics.gif</a></p>
-                    <p><a href="../assets/idiot.gif">idiot.gif</a></p>
-                    <p><a href="../assets/IMG_2630.png">IMG_2630.png</a></p>
-                    <p><a href="../assets/IMG_2638.png">IMG_2638.png</a></p>
-                    <p><a href="../assets/kevin.png">kevin.png</a></p>
-                    <p><a href="../assets/kiss.gif">kiss.gif</a></p>
-                    <p><a href="../assets/linux.gif">linux.gif</a></p>
-                    <p><a href="../assets/loam.png">loam.png</a></p>
-                    <p><a href="../assets/love.jpg">love.jpg</a></p>
-                    <p><a href="../assets/manga.gif">manga.gif</a></p>
-                    <p><a href="../assets/melonking.gif">melonking.gif</a></p>
-                    <p><a href="../assets/melonland-badge-2.gif">melonland-badge-2.gif</a></p>
-                    <p><a href="../assets/melps.gif">melps.gif</a></p>
-                    <p><a href="../assets/minion.jpg">minion.jpg</a></p>
-                    <p><a href="../assets/miscellaneous.gif">miscellaneous.gif</a></p>
-                    <p><a href="../assets/momg.gif">momg.gif</a></p>
-                    <p><a href="../assets/music.gif">music.gif</a></p>
-                    <p><a href="../assets/neonaut.png">neonaut.png</a></p>
-                    <p><a href="../assets/night_wall.jpg">night_wall.jpg</a></p>
-                    <p><a href="../assets/noah.jpeg">noah.jpeg</a></p>
-                    <p><a href="../assets/notepad.jpg">notepad.jpg</a></p>
-                    <p><a href="../assets/pattern104.jpg">pattern104.jpg</a></p>
-                    <p><a href="../assets/penis.jpeg">penis.jpeg</a></p>
-                    <p><a href="../assets/piracy.gif">piracy.gif</a></p>
-                    <p><a href="../assets/pizzza.gif">pizzza.gif</a></p>
-                    <p><a href="../assets/preview_link1.gif">preview_link1.gif</a></p>
-                    <p><a href="../assets/ps2_image.gif">ps2_image.gif</a></p>
-                    <p><a href="../assets/qq164.gif">qq164.gif</a></p>
-                    <p><a href="../assets/ramblings.gif">ramblings.gif</a></p>
-                    <p><a href="../assets/recordroom.gif">recordroom.gif</a></p>
-                    <p><a href="../assets/record_player_md_wht.gif">record_player_md_wht.gif</a></p>
-                    <p><a href="../assets/reviews.gif">reviews.gif</a></p>
-                    <p><a href="../assets/rivblink.gif">rivblink.gif</a></p>
-                    <p><a href="../assets/rounded.png">rounded.png</a></p>
-                    <p><a href="../assets/runelite_site.png">runelite_site.png</a></p>
-                    <p><a href="../assets/sadgrl_online_learn.gif">sadgrl_online_learn.gif</a></p>
-                    <p><a href="../assets/sandy.png">sandy.png</a></p>
-                    <p><a href="../assets/santa.gif">santa.gif</a></p>
-                    <p><a href="../assets/scenequeen.gif">scenequeen.gif</a></p>
-                    <p><a href="../assets/Screenshot 2023-11-11 211026.png">Screenshot 2023-11-11 211026.png</a></p>
-                    <p><a href="../assets/scrub_web.gif">scrub_web.gif</a></p>
-                    <p><a href="../assets/scumpshouse.gif">scumpshouse.gif</a></p>
-                    <p><a href="../assets/secret_duck.gif">secret_duck.gif</a></p>
-                    <p><a href="../assets/sillybutton.gif">sillybutton.gif</a></p>
-                    <p><a href="../assets/sillychart.png">sillychart.png</a></p>
-                    <p><a href="../assets/single_lesson.jpg">single_lesson.jpg</a></p>
-                    <p><a href="../assets/skeleton_trumpet.gif">skeleton_trumpet.gif</a></p>
-                    <p><a href="../assets/smokeypurple.gif">smokeypurple.gif</a></p>
-                    <p><a href="../assets/snow_globe1.gif">snow_globe1.gif</a></p>
-                    <p><a href="../assets/snow_globe2.gif">snow_globe2.gif</a></p>
-                    <p><a href="../assets/snow_globe3.gif">snow_globe3.gif</a></p>
-                    <p><a href="../assets/snow_globe4.gif">snow_globe4.gif</a></p>
-                    <p><a href="../assets/snow_globe5.gif">snow_globe5.gif</a></p>
-                    <p><a href="../assets/snow_wall.gif">snow_wall.gif</a></p>
-                    <p><a href="../assets/software.gif">software.gif</a></p>
-                    <p><a href="../assets/softwares.gif">softwares.gif</a></p>
-                    <p><a href="../assets/sparkle-bg.gif">sparkle-bg.gif</a></p>
-                    <p><a href="../assets/SS Rosehip Bold.otf">SS Rosehip Bold.otf</a></p>
-                    <p><a href="../assets/SS Rosehip BoldItalic.otf">SS Rosehip BoldItalic.otf</a></p>
-                    <p><a href="../assets/SS Rosehip Italic.otf">SS Rosehip Italic.otf</a></p>
-                    <p><a href="../assets/SS Rosehip.otf">SS Rosehip.otf</a></p>
-                    <p><a href="../assets/star.gif">star.gif</a></p>
-                    <p><a href="../assets/stars_wall.jpg">stars_wall.jpg</a></p>
-                    <p><a href="../assets/swirl.gif">swirl.gif</a></p>
-                    <p><a href="../assets/t1Ivg5kVIdON96ZU.mp4">t1Ivg5kVIdON96ZU.mp4</a></p>
-                    <p><a href="../assets/textures.gif">textures.gif</a></p>
-                    <p><a href="../assets/thanks.gif">thanks.gif</a></p>
-                    <p><a href="../assets/theglittersalamango.gif">theglittersalamango.gif</a></p>
-                    <p><a href="../assets/thirtyvirus-5.jpg">thirtyvirus-5.jpg</a></p>
-                    <p><a href="../assets/title.gif">title.gif</a></p>
-                    <p><a href="../assets/trash_paradise.gif">trash_paradise.gif</a></p>
-                    <p><a href="../assets/trollface.webp">trollface.webp</a></p>
-                    <p><a href="../assets/updog.gif">updog.gif</a></p>
-                    <p><a href="../assets/usps_ebay.gif">usps_ebay.gif</a></p>
-                    <p><a href="../assets/video-100-4.5-QKozDYW9Uf8 (1).mp4">video-100-4.5-QKozDYW9Uf8 (1).mp4</a></p>
-                    <p><a href="../assets/video-37-3.9-ZUDSghJfLs4.mp4">video-37-3.9-ZUDSghJfLs4.mp4</a></p>
-                    <p><a href="../assets/wall.jpg">wall.jpg</a></p>
-                    <p><a href="../assets/wastebitch2.gif">wastebitch2.gif</a></p>
-                    <p><a href="../assets/wiby.org.gif">wiby.org.gif</a></p>
-                    <p><a href="../assets/wtf_elevators.jpg">wtf_elevators.jpg</a></p>                    
-                </ul>
-            </li>
-        </ul>
-
+                </li>
+            </ul>
+        </div>    
     </div>
+    <img style="margin: 0 auto; display: block;" src="../assets/cat-fluffy.gif">
 </body>
 </html>
