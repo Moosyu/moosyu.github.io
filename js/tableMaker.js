@@ -30,8 +30,8 @@ function buildTable(results) {
 		<table>
 			<tr>
                 <td>${jsonName != "https://raw.githubusercontent.com/Moosyu/jsonStorage/main/games.json" ? `[${result.type}]` : ''}<br>(${result.name})<br><p style="color:${getScoreColor(result.score)};">${result.score}/10</p></td>
-				${jsonName == "https://raw.githubusercontent.com/Moosyu/jsonStorage/main/amedia.json" ? `<td><img loading="lazy" class="tableimg" src="${result.image}" onclick="toggleFullscreen(this)"></td>` : ''}
 				<td>"${result.description}"</td>
+				${jsonName == "https://raw.githubusercontent.com/Moosyu/jsonStorage/main/amedia.json" ? `<td><img loading="lazy" class="tableimg" src="${result.image}" onclick="toggleFullscreen(this)"></td>` : ''}
 			</tr>
 		</table>
 	`).join('');
