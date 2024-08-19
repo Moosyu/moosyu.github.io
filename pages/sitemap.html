@@ -87,28 +87,23 @@
             border: 2px solid black;
         }
 
-        @keyframes rainbow {
-            0% { color: red; }
-            16% { color: orange; }
-            33% { color: yellow; }
-            50% { color: green; }
-            66% { color: blue; }
-            83% { color: indigo; }
-            100% { color: violet; }
-        }
-
         .rainbow-flash {
             font-weight: bold;
             text-align: center;
-            animation: rainbow 2s infinite step-end;
             text-align: center;
             font-size: calc(1.2vw + 1.2vh);
+        }
+
+        .cat {
+            margin: 0 auto; 
+            display: block; 
+            border: 3px solid black;
         }
         </style>
 </head>
 <body>
     <header>
-        <h1 class="rainbow-flash">sitemap</h1>
+        <h1 class="rainbow-flash" id="rainbow-flash">sitemap</h1>
         <h2 style="text-align: center; font-size: calc(0.9vw + 0.9vh);">"consistent visual styles are for losers anyways" - tobuscus</h2>
         <nav class="topnav">
             <a href="../index.html">home</a>
@@ -391,6 +386,17 @@
             </ul>
         </div>    
     </div>
-    <img style="margin: 0 auto; display: block;" src="../assets/cat-fluffy.gif">
+    <img class="cat" src="../assets/cat-fluffy.gif">
 </body>
+<script>
+        //https://css-tricks.com/snippets/javascript/random-hex-color/ i love stealing !! (i have no idea how this works)
+    function changeColor() {
+        document.getElementById("rainbow-flash").style.color = "#" + Math.floor(Math.random() * 16777215).toString(16);
+    }
+
+    //running it before interval starts because i dont like it starting at default white. probably a better way to do this
+    changeColor();
+
+    setInterval(changeColor, 1000);
+</script>
 </html>
