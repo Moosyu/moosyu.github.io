@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>my super cool website</title>
-    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         html {
@@ -97,6 +97,7 @@
         .cat {
             margin: 0 auto; 
             display: block; 
+            border-radius: 5px; 
             border: 3px solid black;
         }
         </style>
@@ -393,10 +394,8 @@
     function changeColor() {
         document.getElementById("rainbow-flash").style.color = "#" + Math.floor(Math.random() * 16777215).toString(16);
     }
-
     //running it before interval starts because i dont like it starting at default white. probably a better way to do this
     changeColor();
-
     setInterval(changeColor, 1000);
 </script>
 </html>
