@@ -5,6 +5,7 @@ fetch(url)
     .then(response => response.json())
     .then(data => {
         const track = data.recenttracks.track[0];
+        //const date = data.recenttracks.track[0].album["#text"];
         const listeningDiv = document.getElementById('listening');
         listeningDiv.innerHTML = `
             <img src="${track.image[track.image.length - 1]['#text']}" alt="${track.name} album cover">

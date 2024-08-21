@@ -25,6 +25,7 @@ const data = {
       `joe biden being controlled by "very evil forces"`,
       `scientists discover new planet with enough space to fit inside every man in your surrounding area called your mother`,
       `is this niggerlicous or is this divine intellect?`,
-      `i see your comments ladies and they make me smile. im lurking and stalking when you least expect it.`
+      `i see your comments ladies and they make me smile. im lurking and stalking when you least expect it.`,
+      `everyone involved in igcse mysteriously dies (wtf)??`
     ],
   };

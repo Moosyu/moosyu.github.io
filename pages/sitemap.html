@@ -98,8 +98,35 @@
             margin: 0 auto; 
             display: block; 
             border-radius: 5px; 
-            border: 3px solid black;
         }
+
+        #overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: opacity 1s;
+        }
+
+        #overlay.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        #overlayImage {
+            max-width: 90%;
+            max-height: 90%;
+        }
+
+        .no-scroll {
+            overflow: hidden;
+        }
+
         </style>
 </head>
 <body>
@@ -222,6 +249,7 @@
                         <p><a href="../js/lastFM.js">> lastFM.js</a></p>
                         <p><a href="../js/rand.js">> rand.js</a></p>
                         <p><a href="../js/randTop.js">> randTop.js</a></p>
+                        <p><a href="../js/sitemap.js">> sitemap.js</a></p>
                         <p><a href="../js/tableMaker.js">> tableMaker.js</a></p>
                     </ul>
                 </li>
@@ -285,6 +313,7 @@
                         <p><a href="../assets/creeper.gif">creeper.gif</a></p>
                         <p><a href="../assets/despacito.gif">despacito.gif</a></p>
                         <p><a href="../assets/doge.jpg">doge.jpg</a></p>
+                        <p><a href="../assets/doorcolor.png">doorcolor.png</a></p>
                         <p><a href="../assets/dpi.lv.png">dpi.lv.png</a></p>
                         <p><a href="../assets/duck.png">duck.png</a></p>
                         <p><a href="../assets/dvd.gif">dvd.gif</a></p>
@@ -317,6 +346,7 @@
                         <p><a href="../assets/minion.jpg">minion.jpg</a></p>
                         <p><a href="../assets/miscellaneous.gif">miscellaneous.gif</a></p>
                         <p><a href="../assets/momg.gif">momg.gif</a></p>
+                        <p><a href="../assets/moyai.mp3">moyai.mp3</a></p>
                         <p><a href="../assets/music.gif">music.gif</a></p>
                         <p><a href="../assets/neonaut.png">neonaut.png</a></p>
                         <p><a href="../assets/night_wall.jpg">night_wall.jpg</a></p>
@@ -387,15 +417,11 @@
             </ul>
         </div>    
     </div>
-    <img class="cat" src="../assets/cat-fluffy.gif">
+    <img class="cat" id="door" src="../assets/doorcolor.png">
+    <div id="overlay" class="hidden">
+        <img id="overlayImage" src="../assets/doorcolor.png">
+    </div>
+    <audio id="moyai" src="../assets/moyai.mp3"></audio>
+    <script src="../js/sitemap.js"></script>
 </body>
-<script>
-        //https://css-tricks.com/snippets/javascript/random-hex-color/ i love stealing !! (i have no idea how this works)
-    function changeColor() {
-        document.getElementById("rainbow-flash").style.color = "#" + Math.floor(Math.random() * 16777215).toString(16);
-    }
-    //running it before interval starts because i dont like it starting at default white. probably a better way to do this
-    changeColor();
-    setInterval(changeColor, 1000);
-</script>
 </html>
