@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<head>
+    <title>temples</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+        body {
+            background-image: url("../../assets/a.png");
+            height: 100%; 
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body id="body">
+    <div id="left" style="width: 20%; height: 100%; float: left; cursor: url('../../assets/pl.png'), auto;">
+    </div>
+    
+    <div id="right" style="width: 20%; height: 100%; float: right; cursor: url('../../assets/pr.png'), auto;">
+    </div>
+    
+    <div id="center" style="width: 60%; margin: 0 auto; height: 100%; overflow: hidden;  cursor: url('../../assets/pf.png'), auto;">
+    </div>
+</div>
+</body>
+<script>
+    const min = 0;
+    const max = 3;
+    let position = min;
+
+    function updatePosition(change) {
+        position += change;
+        if (position > max) {
+            position = min;
+        } else if (position < min) {
+            position = max;
+        }
+        console.log(position);
+        updateBackground();
+    }
+
+    function updateBackground() {
+        let imagePath = '';
+        switch (position) {
+            case 0:
+                imagePath = "../../assets/a.png";
+                break;
+            case 1:
+                imagePath = "../../assets/b.png";
+                break;
+            case 2:
+                imagePath = "../../assets/c.png";
+                break;
+            case 3:
+                imagePath = "../../assets/d.png";
+                break;
+        }
+        document.body.style.backgroundImage = `url('${imagePath}')`;
+    }
+
+    document.getElementById('right').addEventListener('click', () => updatePosition(1));
+    document.getElementById('left').addEventListener('click', () => updatePosition(-1));
+
+    updateBackground();
+</script>
+
+</html>
