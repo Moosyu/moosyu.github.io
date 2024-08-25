@@ -1,84 +1,373 @@
 <!DOCTYPE html>
-<html lang = "en-US">
-    <head>
-        <title>reviews!!</title>
-        <link rel = "stylesheet" href = "../../styles.css">
-    
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reviews</title>
+    <style>
+        body {
+            font-family: Verdana, Arial;
+            background-color: #121212;
+            color: #FFF;
+            margin: 0;
+            padding: 0;
+            width: 70vw;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .header-content img {
+            width: 35%;
+            height: auto;
+        }
+        
+        .navbar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #2e51a2;
+        }
+        
+        .navbar li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 8px 16px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .navbar li {
+            float: left;
+        }
+        
+        .navbar li a:hover {
+            background-color: #121212;
+        }
+        
+        main {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .list {
+            width: 70%;
+        }
+        
+        .list h3 {
+            margin-bottom: 15px;
+            border-color: #414141;
+            border-style: solid;
+            border-width: 0 0 1px;
+            padding: 5px;
+        }
+        
+        .cards {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        
+        .card {
+            background-color: #121212;
+            width: 18%;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .card a {
+            text-decoration: none;
+            color: #abc4ed;
+        }
+        
+        .top-10 {
+            width: 25%;
+            background-color: #181818;
+        }
+        
+        .top-10 h3 {
+            background-color: #333333;
+            margin: 0;
+            padding: 10px;
+        }
+        
+        .top-10 ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .top-10 ul li {
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        
+        .top-10 ul li strong {
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .ranked {
+            display: table;
+            padding: 0 8px 22px;
+            width: 286px;
+        }
+        
+        .rank {
+            color: #a3a3a3;
+            display: table-cell;
+            font-size: 25px;
+            font-weight: bold;
+            vertical-align: top;
+            width: 24px;
+        }
+        
+        .ranking-image {
+            display: table-cell;
+            width: 70px;
+        }
+        
+        .data {
+            display: table-cell;
+            padding-left: 8px;
+            vertical-align: top;
+            word-wrap: break-word
+        }
+        
+        .side {
+            border-style: none;
+            display: inline;
+            font-size: 14px;
+        }
+        
+        .data a {
+            color: #abc4ed;
+            text-decoration: none;
+        }
+        
+        .small {
+            color: #a3a3a3;
+            font-size: 11px;
+        }
+        
+        @media (max-width: 1000px) {
+            main {
+                flex-direction: column;
+                align-items: center;
+            }
+        
+            .list, .top-10 {
+                width: 100%;
+            }
+        
+            .cards {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        
+            .card {
+                width: 45%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
     <header>
-        <marquee class="bluebacker" scrollamount = "20">
-            <img style="width: 800px; height: 150px;" src = "../../assets/reviews.gif">
-        </marquee>
-        <nav class="topnav" style="display: flex; justify-content: space-around; background-color: blue;">
-            <a href="../../index.html">home</a>
-            <a href="#">reviews</a>
-            <a href="../ramblings.html">ramblings</a>
-            <a href="../guides.html">guides</a>
-            <a href="../studying.html">studying</a>
-            <a href="../sitemap.html">sitemap</a>
-          </nav>   
+        <div class="header-content">
+            <img src="../../assets/reviews.gif" alt="Banner">
+        </div>
+        <ul class="navbar">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="../ramblings.html">Ramlings</a></li>
+            <li><a href="../guides.html">Guides</a></li>
+            <li><a href="../studying.html">Studying</a></li>
+            <li><a href="../sitemap.html">Sitemap</a></li>
+          </ul>
     </header>
-    <body style="font-size: 20px;">
-        <div class="mainbox">
-            <div class="updog">
-                <a href="../misc/reviews/abook_ratings.html">
-                    <img style="width: 50%;" src="../../assets/book3.gif"/>
-                    <p style="color: white;" >comics + books ratings</p>
-                </a>
-            </div>    
-        </div>
-            <div class="mainbox">
-                <div class="updog">
-                <a href="misc/../reviews/game_ratings.html">
-                    <img style="width: 60%;" src="../../assets/ps2_image.gif"/>
-                    <p style="color: white;">game media ratings ??<p>
-                </a>
-                </div>      
+
+    <main>
+        <section class="list">
+            <h3>Pages</h3>
+            <div class="cards">
+                <div class="card">
+                    <a href="reviews/abook_ratings.html">
+                        <img style="width: 160px; height: 220px;" src="../../assets/book3.gif" alt="Anime 1">
+                        <p>Comics + Books Ratings</p>    
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="reviews/game_ratings.html">
+                        <img style="width: 160px; height: 220px;" src="../../assets/ps2_image.gif" alt="Anime 2">
+                        <p>Game Media Ratings</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="reviews/wbook_ratings.html">
+                        <img style="width: 160px; height: 220px;" src="../../assets/book2.gif" alt="Anime 3">
+                        <p>TV and Movie Ratings</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="reviews/recordroom.html">
+                        <img style="width: 160px; height: 220px;" src="../../assets/record_player_md_wht.gif" alt="Anime 4">
+                        <p>Musical Media Ratings</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="reviews/bookshelf.html">
+                        <img style="width: 160px; height: 220px;" src="../../assets/bookshelflight-motion1-w.gif" alt="Anime 5">
+                        <p>Bookshelf (of comics)</p>
+                    </a>
+                </div>
             </div>
-            <div class="mainbox">
-                <div class="updog">
-                <a href="../misc/reviews/wbook_ratings.html">
-                    <img style="width: 40%; height: 10%;" src="../../assets/book2.gif"/>
-                    <p style="color: white;">tv and movies ratings</p>
-                </a>
-            </div>    
-        </div>
-        <div class="mainbox">
-            <div class="updog">
-            <a href="../misc/reviews/recordroom.html">
-                <img style="width: 40%; height: 10%;" src="../../assets/record_player_md_wht.gif"/>
-                <p style="color: white;">musical media ratings</p>
-            </a>
-        </div>    
-        </div>
-        <div class="mainbox">
-            <div class="updog">
-                <a href="../misc/reviews/bookshelf.html">
-                    <img style="width: 40%; height: 10%;" src="../../assets/bookshelflight-motion1-w.gif"/>
-                    <p style="color: white;">bookshelf (of comics)</p>
-                </a>
-            </div>    
-        </div>
-        <div class="mainbox" style="padding-top: 2%;">
-            <p style="background-color: #121212; color: white; font-family: Verdana, Arial; font-size: calc(0.6vw + 0.6vh);">this is my reviews (ratings) page !!
-                <br>
-                most i call them "reviews" but they arent really, more like random collections of thought i have after watching something.
-                <br>
-                if youre wondering about the rating distribution discrepancies between comics + books and everything else, its because 
-                <br>
-                since making this site ive been reading more then ive been watching and i also judge things i read more harshly for some reason (idk), 
-                <br>
-                so a lot of the ratings are based on vague memories i have of something from when i was like 7, so they just seem better to 6 year old me ig.
-                <br>
-                as for video games i usually dont buy games below "very positive" on steam so i just end up rarely playing bad games.
-                <br>
-                i also rate things before actually finishing them if i just drop them at like chapter 5 lol so if it rated something
-                <br>
-                like a 4 or below ive probably only read about 20 chapters, but in my mind if it isnt good for 20 chapters it just isnt a good story. 
-                <br>
-                i finish every album i rate though.
-            </p>
-        </div>
-        <img style="display: block; margin-left: auto; margin-right: auto; padding: 5px;" src="../../assets/948816870864199720.webp">
-    </body>
+        </section>
+
+        <aside class="top-10">
+            <h3>My Top 10 Things</h3>
+            <ul>
+                <li class="ranked">
+                    <span class="rank">1</span>
+                    <a class="ranking-image" href="https://myanimelist.net/manga/656/Vagabond">
+                        <img class="ranking-image" height="100" alt="vagabond" src="https://i.imgur.com/e2ta2ZQ.png">
+                    </a>
+                    <div class="data">
+                        <a href="https://myanimelist.net/manga/656/Vagabond">
+                            <h4 class="side">Vagabond</h4>
+                        </a>
+                        <br>
+                        <span class="small">musashi's character arc over this was the most beautiful and inspiring thing ive ever read.</span>
+                    </div>
+                </li>
+                <li class="ranked">
+                    <span class="rank">2</span>
+                    <a class="ranking-image" href="https://www.albumoftheyear.org/album/152796-tyler-the-creator-igor.php">
+                        <img class="ranking-image" height="70" alt="igor" src="https://i.imgur.com/GGSSL5N.png">
+                    </a>
+                    <div class="data">
+                        <a href="https://www.albumoftheyear.org/album/152796-tyler-the-creator-igor.php">
+                            <h4 class="side">Igor</h4>
+                        </a>
+                        <br>
+                        <span class="small">album that got me into listening to music and im still yet to find something that surpases it.</span>
+                    </div>
+                </li>
+                <li class="ranked">
+                    <span class="rank">3</span>
+                    <a class="ranking-image" href="https://store.steampowered.com/app/105600/Terraria/">
+                        <img class="ranking-image" height="120" alt="terraria" src="https://i.imgur.com/5YZ3x96.png">
+                    </a>
+                    <div class="data">
+                        <a href="https://store.steampowered.com/app/105600/Terraria/">
+                            <h4 class="side">Terraria</h4>
+                        </a>
+                        <br>
+                        <span class="small">i used to play this with my friends every school holiday, like 10 hours a day till we finished the playthrough and tbh that was the best time of my life.</span>
+                    </div>
+                </li>
+                <li class="ranked">
+                    <span class="rank">4</span>
+                    <a class="ranking-image" href="https://www.imdb.com/title/tt1305826/">
+                        <img class="ranking-image" height="110" alt="adventure time" src="https://i.imgur.com/DGp3IXy.png">
+                    </a>
+                    <div class="data">
+                        <a href="https://www.imdb.com/title/tt1305826/">
+                            <h4 class="side">Adventure Time</h4>
+                        </a>
+                        <br>
+                        <span class="small">built my character far more than id like to admit</span>
+                    </div>
+                </li>
+                <li class="ranked">
+                    <span class="rank">5</span>
+                    <a class="ranking-image" href="https://www.imdb.com/title/tt0110912/">
+                        <img class="ranking-image" height="110" alt="pulp fiction" src="https://i.imgur.com/v2TNX30.png">
+                    </a>
+                    <div class="data">
+                        <a href="https://www.imdb.com/title/tt0110912/">
+                            <h4 class="side">Pulp Fiction</h4>
+                        </a>
+                        <br>
+                        <span class="small">funniest film ever made. im still finding it funny and im nearing my 10th rewatch.</span>
+                    </div>
+                </li>
+                <li class="ranked">
+                    <span class="rank">6</span>
+                    <a class="ranking-image" href="https://myanimelist.net/manga/1133">
+                        <img class="ranking-image" height="100" alt="pulp fiction" src="https://i.imgur.com/xdhIeRu.png">
+                    </a>
+                    <div class="data">
+                        <a href="https://myanimelist.net/manga/1133">
+                            <h4 class="side">Dorohedoro</h4>
+                        </a>
+                        <br>
+                        <span class="small">dorohedoro oozes creativity and im yet to see anything close to its crazy ass aesthetic anywhere.</span>
+                    </div>
+                </li>
+                <li class="ranked">
+                    <span class="rank">7</span>
+                    <a class="ranking-image" href="https://store.steampowered.com/app/367520/Hollow_Knight/">
+                        <img class="ranking-image" height="70" alt="pulp fiction" src="https://i.imgur.com/yIvR84f.png">
+                    </a>
+                    <div class="data">
+                        <a href="https://store.steampowered.com/app/367520/Hollow_Knight/">
+                            <h4 class="side">Hollow Knight</h4>
+                        </a>
+                        <br>
+                        <span class="small">probably the perfect singleplayer game and the one ive enjoyed most.</span>
+                    </div>
+                </li>
+                <li class="ranked">
+                    <span class="rank">8</span>
+                    <a class="ranking-image" href="https://www.albumoftheyear.org/album/749267-femtanyl-chaser.php">
+                        <img class="ranking-image" height="70" alt="pulp fiction" src="https://i.imgur.com/wNKW1Zn.png">
+                    </a>
+                    <div class="data">
+                        <a href="https://www.albumoftheyear.org/album/749267-femtanyl-chaser.php">
+                            <h4 class="side">Chaser</h4>
+                        </a>
+                        <br>
+                        <span class="small">my most listened album that has energy you just cant find anywhere else. you gotta listen to understand</span>
+                    </div>
+                </li>
+                <li class="ranked">
+                    <span class="rank">9</span>
+                    <a class="ranking-image" href="https://minecraft.net/">
+                        <img class="ranking-image" height="70" alt="pulp fiction" src="https://i.imgur.com/2t9plbN.png">
+                    </a>
+                    <div class="data">
+                        <a href="https://minecraft.net/">
+                            <h4 class="side">Minecraft</h4>
+                        </a>
+                        <br>
+                        <span class="small">first game i ever played and probably my most played one too, ruined my life.</span>
+                    </div>
+                </li>
+                <li class="ranked">
+                    <span class="rank">10</span>
+                    <a class="ranking-image" href="https://myanimelist.net/anime/42310/Cyberpunk__Edgerunners">
+                        <img class="ranking-image" height="100" alt="pulp fiction" src="https://i.imgur.com/2TlIftk.png">
+                    </a>
+                    <div class="data">
+                        <a href="https://myanimelist.net/anime/42310/Cyberpunk__Edgerunners">
+                            <h4 class="side">Cyberpunk: Edgerunners</h4>
+                        </a>
+                        <br>
+                        <span class="small">peak anime start to end and made me realise that anime wasnt all trash (it mostly is though)</span>
+                    </div>
+                </li>
+
+             </ul>
+        </aside>
+    </main>
+</body>
 </html>

@@ -2,11 +2,11 @@
   var text = data.china;
   var news =[];
   var colours = [
-    "orange",
-    "yellow",
-    "cyan",
-    "magenta",
-    "lime"
+    "#f5a97f",
+    "#eed49f",
+    "#7dc4e4",
+    "#c6a0f6",
+    "#a6da95"
   ]; 
   document.getElementById("china").style.color = colours[Math.floor(Math.random() * colours.length)];
   while (news.length < text.length) {
@@ -15,12 +15,6 @@
       news.push(randTemp) //this code will also blow up your pc if you duplicate something in data.js so watch out
     }
   }
-  
-  for (let index = 0; index < news.length; index++) {
-    console.log(news[index])
-    
-  }
-
 
   document.getElementById('china').innerHTML = news.join(' - ').replace(',', '');
 }())

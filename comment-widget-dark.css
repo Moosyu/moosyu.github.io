@@ -62,7 +62,7 @@
     background-attachment: fixed;
     font-family: 'Courier New';
     font-size: 16px;
-    color: white;
+    color: #cad3f5;
 }
 
 #c_widget button, #c_widget input[type=submit] {
@@ -72,16 +72,16 @@
 	text-align: center;
     text-transform: uppercase;
     background-color: black;
-    color: white;
+    color: #cad3f5;
     border: 1px solid white;
 }
 #c_widget button:hover, #c_widget input[type=submit]:hover {
-    color: white;
+    color: #cad3f5;
     border: 1px solid #B766FF;
 }
 #c_widget button:disabled, #c_widget input[type=submit]:disabled {opacity: 60%;}
 #c_widget button:disabled:hover, #c_widget input[type=submit]:disabled:hover {
-    color: white;
+    color: #cad3f5;
     border: 1px solid white;
 }
 
@@ -101,7 +101,7 @@
     font-style: italic;
     font-weight: bold;
     text-align: right;
-    background-color: blue;
+    background-color: #24273a;
 }
 
 .c-inputWrapper {
@@ -128,7 +128,7 @@
     font-size: calc(0.6vw + 0.6vh);
 }
 #c_replyingText {
-    color: white;
+    color: #cad3f5;
     text-align: right;
 }
 
@@ -137,7 +137,7 @@
     margin-bottom: 15px;
     padding: 10px;
     border: 2px solid white;
-    background-color: blue; 
+    background-color: #24273a; 
 }
 .c-reply {
     display: block;
@@ -170,7 +170,7 @@
     text-decoration: none;
     color: #B766FF;
 }
-.c-site:hover {color: white;}
+.c-site:hover {color: #cad3f5;}
 .c-timestamp {
     float: right;
     opacity: 75%;
@@ -183,7 +183,7 @@
     font-family: Verdana;
     font-size: calc(0.6vw + 0.6vh);
     text-align: justify;
-    color: white;
+    color: #cad3f5;
     background-color: black;
 }
 

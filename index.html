@@ -15,25 +15,23 @@
             .then(res => {
                 let sha = res[0].sha
                 document.getElementById('commitLatest').innerText = res[0].commit.message;
-                document.getElementById('shortHash').innerText = sha.substring(0, 7);
+                document.getElementById('shortHash').innerText = "latest commit:" + sha.substring(0, 7);
                 document.getElementById('commitLink').href = "https://github.com/Moosyu/moosyu.github.io/commit/" + sha
             });
     </script>
 </head>
 
 <body>
-
-      
-    <header style="background-color: blue;">
+    <header style="margin-bottom: 10px;">
         <div style="display: inline-block; display: flex; align-items: center;">
             <div class="marquee-container" style="width: 100%;">
                 <div class="marquee-content">
-                  <img src="assets/title.gif" alt="Marquee Image">
+                  <img src="assets/title.gif" alt="moosyus really cool site">
                 </div>
               </div>
-            <img alt="i ate a bag of factory reject seeds until a healthy flower unfurled from my chest... i mistook the sensation for love and died." style="width: 20%;" src="assets/love.jpg">
+            <img alt="i ate a bag of factory reject seeds until a healthy flower unfurled from my chest... i mistook the sensation for love and died." style="width: 20%; border-radius: 0 5px 0 0;" src="assets/love.jpg">
         </div>
-        <nav class="topnav" style="display: flex; justify-content: space-around; background-color: blue;">
+        <nav class="topnav" style="display: flex; justify-content: space-around; background-color: #1e2030;">
             <a href="#">home</a>
             <a href="pages/misc/reviews.html">reviews</a>
             <a href="pages/ramblings.html">ramblings</a>
@@ -43,7 +41,7 @@
         </nav>
     </header>
 
-    <div class="wrapper" style="background-image: url('assets/201.jpg');">
+    <div class="wrapper" style="background-color: #24273a;">
         <div class="one">
             #1 autist. somehow my site does a bad impression of sites made 15 years ago. sure makes your computer feel like it was made in the early 2000s though. i began my stint into autism as im not a massive fan of how the modern internet sites are just flat white cubes. i like how someone can express their deepest darkest thought out to the world with the power of poorly done html css and even worse js. if you found this through a fnf website youre looking for <a href="https://moosyar.github.io/">https://moosyar.github.io/</a>. it's an archive of my old fnf site. (i can't speak on if it still works though as i'm not updating it anymore).
         </div>
@@ -137,6 +135,7 @@
                     <a href="https://riversons.art/"> <img src="assets/rivblink.gif" alt="riverson"></a>
                     <a href="https://nekoweb.org/"> <img src="assets/button11.gif" alt="nekoweb"></a>
                     <a href="https://thinliquid.dev/"> <img src="assets/thnlqd.png" alt="thinliquid"></a>
+                    <a href="https://giikis2.neocities.org/"> <img src="https://giikis2.neocities.org/assets/badges/giikis2.png" width="88" height="31" /> </a>
                 </marquee>
              </div>
         </div>
@@ -156,15 +155,15 @@
             </div>
         </div>
     </div>
-    <div class="five">
+    <div class="five" style="margin-top: 10px;">
         <div style="font-size: calc(0.8vw + 0.8vh);" id="c_widget"></div>
         <script src="js/comment-widget.js"></script>
     </div>
 
-    <footer>
+    <footer">
         <div class="bluebacker" style="display: inline-block; display: table;">
-            <h1 style="white-space: nowrap; padding: 4px; color: red; font-size: calc(0.7vw + 0.7vh)">breaking news:</h1>
-            <div class="marquee" style="display: table-cell; vertical-align: middle; background-color: blue;">
+            <h1 style="white-space: nowrap; padding: 4px; color: #ed8796; font-size: calc(0.7vw + 0.7vh)">breaking news:</h1>
+            <div class="marquee" style="display: table-cell; vertical-align: middle; background-color: #24273a;">
                 <h1 style="font-size: calc(0.7vw + 0.7vh)" id="china"></h1>
             </div>
         </div>

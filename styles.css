@@ -3,7 +3,7 @@
 }
 
 .bluebacker {
-    background-color: blue;
+    background-color: #1e2030;
 }
 
 @font-face {
@@ -12,7 +12,7 @@
   }
 
 body {
-    background-image: url("assets/wall.jpg");
+    background-color: #24273a;
     font-family: SS Rosehip;
     font-weight: 400;
     font-style: normal;
@@ -46,17 +46,17 @@ a:active {
 }
 
 footer {
-    background-color: blue;
+    background-color: #1e2030;
     bottom: 0;  
 }
 
 table:not(.man),
 th:not(.man),
 td:not(.man) {
-    background-color: darkblue;
-    color: white;
+    background-color: #1e2030;
+    color: #cad3f5;
     padding: 1em;
-    border: 1px solid blue;
+    border: 1px solid #1e2030;
     border-collapse: collapse;
     overflow-wrap: break-word;
     font-size: calc(0.7vw + 0.7vh)
@@ -65,7 +65,7 @@ td:not(.man) {
 ul:not(.man) {
     list-style: none;
     text-align: center;
-    background-color: blue;
+    background-color: #1e2030;
     padding: 0;
 }
 
@@ -76,9 +76,9 @@ li {
 
 .updog {
     text-align: center;
-    border: 5px solid blue;
+    border: 5px solid #1e2030;
     margin-top: 40px;
-    background-color: blue;
+    background-color: #1e2030;
 }
 
 .updog img {
@@ -88,25 +88,20 @@ li {
 .listsf {
     margin: auto;
     display: flex;
-    background-color: blue;
+    background-color: #1e2030;
     width: 60%;
-    color: white;
+    color: #cad3f5;
 }
 
 ::-webkit-scrollbar {
     width: 12px;
     height: 12px;
-    background: blue;
+    background: #11111b ;
 }
 
-::-webkit-scrollbar-track {
-    background: #3572EF;
-    border: 1px ridge #3ABEF9;
-}
 
 ::-webkit-scrollbar-thumb {
-    background: blue;
-    border: 1px ridge#3ABEF9;
+    background: #363a4f;
     border-radius: 0px;
 }
 
@@ -126,11 +121,11 @@ li {
     align-items: normal;
     text-align: center;
     flex: 0 0 15%;
-    background-color: blue;
+    background-color: #1e2030;
 }
 
 .tab button.active {
-    background-color: blue;
+    background-color: #1e2030;
 }
 
 .tab {
@@ -228,7 +223,7 @@ li {
 
 .wrapper>div {
     padding: 1em;
-    color: white;
+    color: #cad3f5;
 }
 
 .wrapper {
@@ -241,7 +236,7 @@ li {
 .one {
     grid-column: 1 / 2;
     grid-row: 1;
-    background-image: url("/assets/qq164.gif");
+    background-image: url("assets/201.jpg");
     border: 2px dotted rgb(233, 171, 88);
     border-radius: 5px;
     font-size: 0.9vw;
@@ -251,32 +246,35 @@ li {
     grid-column: 3 / 4;
     grid-row: 1 / 3;
     background-image: url("/assets/bloons.gif");
+    background-color: #181926;
+    border-radius: 4px;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    width: 100%;
-    padding-top: 100%; /* (img-height / img-width * container-width) */
-                /* (853 / 1280 * 100) */
-
+    padding-top: 100%; 
+    border: 2px dotted rgb(233, 171, 88);
+    box-sizing: border-box;
 }
 
 .three {
     grid-column: 1 / 2;
     grid-row: 2 / 4;
-    background-image: url("/assets/qq164.gif");
     border: 2px dotted rgb(233, 171, 88);
+    background-color: #1e2030;
     border-radius: 5px;
 }
 
 .four {
     grid-column: 3;
     grid-row: 3;
-    background-image: url("/assets/qq164.gif");
+    background-image: url("assets/201.jpg");
     border: 2px dotted rgb(233, 171, 88);
     border-radius: 5px;
 }
 
 .five {
-    background-image: url("/assets/qq164.gif");
+    background-image: url("assets/201.jpg");
+    border: 2px dotted rgb(233, 171, 88);
+    border-radius: 5px;
 }
 
 .six {
@@ -297,7 +295,7 @@ li {
 .eight {
     grid-column: 2;
     grid-row: 2 / 3;
-    background-image: url("/assets/qq164.gif");
+    background-image: url("assets/201.jpg");
     border: 2px dotted rgb(233, 171, 88);
     border-radius: 5px;
 }
@@ -305,7 +303,7 @@ li {
 .nine {
     grid-column: 2;
     grid-row: 3;
-    background-image: url("/assets/qq164.gif");
+    background-image: url("assets/201.jpg");
     border: 2px dotted rgb(233, 171, 88);
     border-radius: 5px;
 }
@@ -313,11 +311,15 @@ li {
 .ten {
     grid-column: 2 / 3;
     grid-row: 4;
-    background-image: url("/assets/qq164.gif");
+    background-color: #181926;
     border: 2px dotted rgb(233, 171, 88);
     border-radius: 5px;
     padding: 10px;
     box-sizing: border-box; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
 }
 
 #listening {
@@ -352,11 +354,14 @@ li {
 .topnav {
     display: flex;
     flex-wrap: wrap;
-    background-color: blue;
+    background-color: #1e2030;
+    border-radius: 7px;
+    justify-content: space-around; 
+    background-color: #1e2030;
 }
 
 .topnav a {
-    color: white;
+    color: #cad3f5;
     padding: 14px 20px;
     text-decoration: none;
     text-align: center;
@@ -409,7 +414,10 @@ li {
 }
 
 header {
-    background-color: blue;
+    background-color: #1e2030;
+    border: 2px solid #c6a0f6;
+    border-radius: 7px;
+    margin-bottom: 10px;
 }
 
 #statuscafe-username {
@@ -421,7 +429,7 @@ header {
 }
 
 .marquee {
-    color: white;
+    color: #cad3f5;
     white-space: nowrap;
     overflow: hidden;
     box-sizing: border-box;
@@ -475,11 +483,23 @@ div#no-scrolling-iframe {
 
 .buttonload {
     border: none;
-    color: white;
+    color: #cad3f5;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;  
     background-color: darkblue;
     font-family: SS Rosehip;
     text-align: center;
+}
+
+.tabcontent {
+    color: white; 
+    padding: 5px; 
+    font-size: 20px;
+}
+
+.guideslist {
+    border: 2px solid #c6a0f6;
+    border-radius: 7px;
+    background-color: #1e2030;
 }
