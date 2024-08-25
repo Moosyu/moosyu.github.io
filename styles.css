@@ -231,6 +231,7 @@ li {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, auto);
     gap: 10px;
+    background-color: #24273a;
 }
 
 .one {
@@ -319,7 +320,6 @@ li {
     display: flex; 
     justify-content: center; 
     align-items: center; 
-    text-align: center;
 }
 
 #listening {
@@ -502,4 +502,32 @@ div#no-scrolling-iframe {
     border: 2px solid #c6a0f6;
     border-radius: 7px;
     background-color: #1e2030;
+}
+
+.ramblingsmain {
+    border: 2px dotted rgb(233, 171, 88); 
+    border-radius: 7px;
+    border: 2px solid #c6a0f6; 
+    background-image: url('../assets/24817.png'); 
+    border-radius: 7px;
+}
+
+.studyingmain {
+    border: 2px dotted rgb(233, 171, 88); 
+    border-radius: 7px; 
+    border: 2px solid #c6a0f6;
+}
+
+.desctext {
+    color: #cad3f5; 
+    font-size: calc(0.8vw + 0.8vh);
+}
+
+.averagescore {
+    color: #cad3f5; 
+    font-size: calc(0.8vw + 0.8vh); 
+    padding: 5px; 
+    width: 280px; 
+    background-color: #1e2030; 
+    border-radius: 0 10px 0 0;
 }
