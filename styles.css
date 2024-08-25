@@ -246,14 +246,14 @@ li {
 .two {
     grid-column: 3 / 4;
     grid-row: 1 / 3;
-    background-image: url("/assets/bloons.gif");
-    background-color: #181926;
+    background-image: url("/assets/wall.jpg");
     border-radius: 4px;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
     padding-top: 100%; 
     border: 2px dotted rgb(233, 171, 88);
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .three {
@@ -354,10 +354,8 @@ li {
 .topnav {
     display: flex;
     flex-wrap: wrap;
-    background-color: #1e2030;
     border-radius: 7px;
     justify-content: space-around; 
-    background-color: #1e2030;
 }
 
 .topnav a {
