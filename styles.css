@@ -223,7 +223,6 @@ li {
 
 .wrapper>div {
     padding: 1em;
-    color: #cad3f5;
 }
 
 .wrapper {
@@ -237,10 +236,11 @@ li {
 .one {
     grid-column: 1 / 2;
     grid-row: 1;
-    background-image: url("assets/201.jpg");
+    background-color: blue;
     border: 2px dotted rgb(233, 171, 88);
     border-radius: 5px;
     font-size: 0.9vw;
+    color: white;
 }
 
 .two {
@@ -270,6 +270,7 @@ li {
     background-image: url("assets/201.jpg");
     border: 2px dotted rgb(233, 171, 88);
     border-radius: 5px;
+    color: #cad3f5;
 }
 
 .five {
@@ -299,6 +300,7 @@ li {
     background-image: url("assets/201.jpg");
     border: 2px dotted rgb(233, 171, 88);
     border-radius: 5px;
+    color: #cad3f5;
 }
 
 .nine {
@@ -307,6 +309,7 @@ li {
     background-image: url("assets/201.jpg");
     border: 2px dotted rgb(233, 171, 88);
     border-radius: 5px;
+    color: #cad3f5;
 }
 
 .ten {
@@ -320,6 +323,7 @@ li {
     display: flex; 
     justify-content: center; 
     align-items: center; 
+    color: #cad3f5;
 }
 
 #listening {
