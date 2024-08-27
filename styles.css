@@ -239,7 +239,7 @@ li {
     background-color: blue;
     border: 2px dotted rgb(233, 171, 88);
     border-radius: 5px;
-    font-size: 0.9vw;
+    font-size: calc(0.8vw + 0.8vh);;
     color: white;
 }
 
@@ -306,7 +306,7 @@ li {
 .nine {
     grid-column: 2;
     grid-row: 3;
-    background-image: url("assets/201.jpg");
+    background-image: url("assets/purpskybg.jpg");
     border: 2px dotted rgb(233, 171, 88);
     border-radius: 5px;
     color: #cad3f5;
@@ -360,6 +360,7 @@ li {
     flex-wrap: wrap;
     border-radius: 7px;
     justify-content: space-around; 
+    align-items: center; /* Ensure all items align vertically */
 }
 
 .topnav a {
@@ -369,7 +370,51 @@ li {
     text-align: center;
     flex: 1 1 auto;
     min-width: 50px; 
-    font-size: calc(1vw + 1vh)
+    font-size: calc(1vw + 1vh);
+}
+/* https://www.w3schools.com/howto/howto_css_dropdown.asp */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    color: #cad3f5;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    font-size: calc(0.7vw + 0.7vh);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #2e3440;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 7px;
+    border: 2px solid #c6a0f6;
+}
+
+.dropdown-content a {
+    color: #cad3f5;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #3b4252;
+    border-radius: 7px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    color: #88c0d0;
 }
 
 @media (max-width: 1000px) {
@@ -533,3 +578,5 @@ div#no-scrolling-iframe {
     background-color: #1e2030; 
     border-radius: 0 10px 0 0;
 }
+
+/* https://www.w3schools.com/howto/howto_css_dropdown.asp */
