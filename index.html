@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <title>my super cool website</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="js/data.js" defer></script>
-    <script src="js/rand.js" defer></script>
-    <script src="js/lastFM.js" defer></script>
+    <link rel="stylesheet" href="blue.css">
+    <script src="js/rand.js" async></script>
+    <script src="js/lastFM.js" async></script>
+    <script src="js/colorSwitcher.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script>
         fetch('https://api.github.com/repos/Moosyu/moosyu.github.io/commits?per_page=1')
@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    <header style="margin-bottom: 10px; background-image: url('assets/checkerpattern.png');">
+    <header style="margin-bottom: 10px;" class="headerindex">
         <div style="display: inline-block; display: flex; align-items: center;">
             <div class="marquee-container" style="width: 100%;">
                 <div class="marquee-content">
@@ -151,6 +151,13 @@
              </div>
         </div>
         <div class="thesenumbersreallymeannothingbecauseivemovedthemaroundwaytoomuch">
+            <div style="display: flex;">
+                <p style="padding-bottom: 20px; font-size: calc(1vw + 1vh); color: #5b1a17; padding-right: 10px;">catppuccin theme:</p>
+                <label class="switch">
+                    <input type="checkbox" id="sliderId" onclick="toggleTheme()">
+                    <span class="slider"></span>
+                </label>            
+            </div>
             <div style="max-width: 600px; white-space: nowrap; unicode-bidi: isolate;line-height: 15px; height: 15px; padding-bottom: 10px; font-size: calc(0.8vw + 0.8vh);">
                 <p style="color: #5b1a17;">File: <a style="color: #0000EE; text-decoration: underline;" href="assets/kiss.gif" target="_blank">kiss.gif</a> (251 KB, 220x220)</p>
             </div>
@@ -168,7 +175,7 @@
     </div>
     <div class="five" style="margin-top: 10px;">
         <div style="font-size: calc(0.8vw + 0.8vh);" id="c_widget"></div>
-        <script src="js/comment-widget.js"></script>
+        <script src="js/comment-widget.js" async></script>
     </div>
 
     <footer">
