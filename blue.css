@@ -315,6 +315,10 @@ li {
     border-radius: 5px;
     padding: 10px;
     box-sizing: border-box; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    color: white;
 }
 
 #listening {
@@ -424,7 +428,11 @@ header {
     white-space: nowrap;
     overflow: hidden;
     box-sizing: border-box;
+    display: table-cell; 
+    vertical-align: middle; 
+    background-color: blue;
 }
+
 .marquee h1 {
     animation: marquee-stupidcssbullshit 60s linear infinite;
 }
@@ -534,58 +542,51 @@ div#no-scrolling-iframe {
     background-color: darkblue; 
 }
 
-.switch {
-  font-size: 17px;
-  position: relative;
-  display: inline-block;
-  width: 3.5em;
-  height: 2em;
-}
-
-/* Hide default HTML checkbox */
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-/* The slider */
-.slider {
-  position: absolute;
-  cursor: pointer;
-  inset: 0;
-  background: blue;
-  border-radius: 50px;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  display: flex;
+/* https://getcssscan.com/css-buttons-examples */
+.button-30 {
   align-items: center;
+  appearance: none;
+  background-color: blue;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,darkblue 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: SS Rosehip;
+  height: 48px;
   justify-content: center;
-  height: 2em;
-  width: 2em;
-  inset: 0;
-  background-color: white;
-  border-radius: 50px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
 }
 
-.switch input:checked + .slider {
-  background: #c6a0f6;
+.button-30:focus {
+  box-shadow: darkblue 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, darkblue 0 -3px 0 inset;
 }
 
-.switch input:focus + .slider {
-  box-shadow: 0 0 1px #c6a0f6;
+.button-30:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, darkblue 0 -3px 0 inset;
+  transform: translateY(-2px);
 }
 
-.switch input:checked + .slider:before {
-  transform: translateX(1.6em);
+.button-30:active {
+  box-shadow: darkblue 0 3px 7px inset;
+  transform: translateY(2px);
 }
-
+  
 .dropdown {
     position: relative;
     display: inline-block;
@@ -626,4 +627,155 @@ div#no-scrolling-iframe {
 
 .dropdown:hover .dropbtn {
     color: #88c0d0;
+}
+
+#c_widget {
+    box-sizing: border-box;
+    height: 100%;
+    overflow: auto;
+    padding: 20px;
+    background-attachment: fixed;
+    font-family: 'Courier New';
+    font-size: 16px;
+    color: white;
+}
+
+#c_widget button, #c_widget input[type=submit] {
+    padding: 4px;
+    font-family: 'Courier New';
+    text-decoration: none;
+	text-align: center;
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+#c_widget button:hover, #c_widget input[type=submit]:hover {
+    color: white;
+    border: 1px solid darkblue;
+}
+#c_widget button:disabled, #c_widget input[type=submit]:disabled {opacity: 60%;}
+#c_widget button:disabled:hover, #c_widget input[type=submit]:disabled:hover {
+    color: white;
+    border: 1px solid white;
+}
+
+/* Input section */
+#c_inputDiv {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: black;
+    border: 2px solid white;
+}
+
+#c_widgetTitle {
+    margin: -10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: bold;
+    text-align: right;
+    background-color: #24273a;
+}
+
+.c-inputWrapper {
+    display: block;
+    text-align: right;
+}
+.c-input {
+    padding: 4px;
+    color: black;
+    border: 1px solid blue;
+	outline: none;
+}
+.c-input:focus {border: 1px solid darkblue;}
+
+.c-textInput {
+    width: calc(100% - 10px);
+    max-width: 900px;
+    resize: none;
+}
+#c_submitButton {
+    display: block; 
+    margin-left: auto; 
+    margin-right: 0;
+    font-size: calc(0.6vw + 0.6vh);
+}
+#c_replyingText {
+    color: #cad3f5;
+    text-align: right;
+}
+
+/* Comment section */
+.c-comment {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 2px solid white;
+    background-color: blue; 
+}
+.c-reply {
+    display: block;
+    width: 90%;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: 0;
+    padding: 10px;
+    border: 2px solid white;
+    background-color: blue; 
+}
+.c-reply:last-child {margin-bottom: 0;}
+.c-replyContainer {
+    margin: -10px;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: black;
+}
+
+.c-name {
+    display: inline-block;
+    margin: 0;
+    margin-right: 10px;
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.c-site {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: darkblue;
+}
+.c-site:hover {color: white;}
+.c-timestamp {
+    float: right;
+    opacity: 75%;
+}
+.c-text {
+    margin: 0;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding: 10px;
+    font-family: Verdana;
+    font-size: calc(0.6vw + 0.6vh);
+    text-align: justify;
+    color: white;
+    background-color: black;
+}
+
+/* Pagination */
+#c_pagination {text-align: center;}
+.c-replyButton {
+    margin-top: 10px;
+    margin-right: 4px;
+    font-size: calc(0.6vw + 0.6vh);
+}
+.c-expandButton {
+    margin-top: 10px;
+    margin-left: 4px;
+    font-size: calc(0.6vw + 0.6vh);
+}
+.c-paginationButton {
+    margin-right: 4px;
+    margin-left: 4px;
+    font-size: calc(0.6vw + 0.6vh);
 }
