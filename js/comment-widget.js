@@ -17,7 +17,7 @@
 */
 //https://docs.google.com/forms/d/e/1FAIpQLScfGWAve7dy54tUkVxhd8apXNcAxallNWV4K1yKCUMqJcBadQ/viewform?usp=pp_url&entry.1345813367=Name&entry.1029334929=Website&entry.1058530777=Text&entry.1179760552=Page&entry.802495416=Reply
 // The values in this section are REQUIRED for the widget to work! Keep them in quotes!
-const s_stylePath = '../comment-widget-dark.css';
+const s_stylePath = '';
 const s_formId = '1FAIpQLScfGWAve7dy54tUkVxhd8apXNcAxallNWV4K1yKCUMqJcBadQ';
 const s_nameId = '1345813367';
 const s_websiteId = '1029334929';

@@ -52,11 +52,32 @@
 
     <div class="wrapper">
         <div class="one">
-            #1 autist. somehow my site does a bad impression of sites made 15 years ago. sure makes your computer feel like it was made in the early 2000s though. i began my stint into autism as im not a massive fan of how the modern internet sites are just flat white cubes. i like how someone can express their deepest darkest thought out to the world with the power of poorly done html css and even worse js. if you found this through a fnf website youre looking for <a href="https://moosyar.github.io/">https://moosyar.github.io/</a>. it's an archive of my old fnf site. (i can't speak on if it still works though as i'm not updating it anymore).
+            <p style="padding-bottom: 10px;">
+                #1 autist. somehow my site does a bad impression of sites made 15 years ago. sure makes your computer feel like it was made in the early 2000s though. i began my stint into autism as im not a massive fan of how the modern internet sites are just flat white cubes. i like how someone can express their deepest darkest thought out to the world with the power of poorly done html css and even worse js. if you found this through a fnf website youre looking for <a href="https://moosyar.github.io/">https://moosyar.github.io/</a>. it's an archive of my old fnf site. (i can't speak on if it still works though as i'm not updating it anymore).
+            </p>
+            <hr>
+            <p style="padding-top: 10px;">
+                ive worked on and off on this for like three years, while its not particularly good im happy with the state its in now even though its more like an amalgam of sites i like, but arent we all? all the code is public and youre free to use it though it probably wasnt even mine in the first place.
+            </p>
         </div>
         <div class="two">
             <img src="assets/bloons.gif" alt="internet party" style="width: 100%;">
         </div>
+        <div class="maybetwelve">
+                <p style="text-align: center; font-size: calc(1vw + 1vh);">my current favourite song:</p>
+                <div class="cd-rotate" onclick="play_pause()">
+                    <img class="cd-image" src="https://i.imgur.com/l9XxU0r.png">
+                </div>
+                <audio id="music-player">
+                    <source src="https://files.catbox.moe/7g21h0.mp3">
+                </audio>
+                <div style="text-align: center; font-size: calc(0.8vw + 0.8vh);">Prologue - Kamasi Washington</div>
+                <div id="controls">
+                    <div id="play-pause" onclick="play_pause()">▶</div>
+                </div>
+                <input type="range" id="music-volume" name="mvolume" min="0" max="1" step="0.005" autocomplete="off" onchange="setVolume('music-volume','music-player')">
+        </div>
+
         <div class="three">
             <table>
                 <tr>
@@ -86,8 +107,7 @@
             </table>
         </div>
         <div class="four">
-            <p style="text-align: center; margin-left: auto; margin-right: auto; font-size: calc(0.8vw + 0.8vh);">people who have viewed this site since
-                5/18/24:
+            <p style="text-align: center; margin-left: auto; margin-right: auto; font-size: calc(0.8vw + 0.8vh);">views on this site since 5/18/24:
                 <br>
                 <a href="https://www.cutercounter.com/" target="_blank">
                     <img style="vertical-align:middle; width: 50%;"
@@ -139,25 +159,41 @@
                     <a href="https://nekoweb.org/"> <img src="assets/button11.gif" alt="nekoweb"></a>
                     <a href="https://thinliquid.dev/"> <img src="assets/thnlqd.png" alt="thinliquid"></a>
                     <a href="https://giikis2.neocities.org/"> <img src="https://giikis2.neocities.org/assets/badges/giikis2.png" width="88" height="31" /> </a>
+                    <a href="https://sad.ovh/"> <img src="assets/sadovh.png" alt="sad.ovh"></a>
+                    <a href="https://vegacollective.com/"> <img src="assets/MeatleMania_2.gif" alt="vega collective"></a>
+                    <a href="https://housepen.nekoweb.org/"> <img src="assets/housepen.gif" alt="housepen"></a>
                 </marquee>
              </div>
         </div>
         <div class="thesenumbersreallymeannothingbecauseivemovedthemaroundwaytoomuch">
-            <div style="display: flex; padding-bottom: 20px;"> 
-                <button class="button-30" role="button" onclick="toggleTheme()">switch themes</button>
-            </div>
-            <div style="max-width: 600px; white-space: nowrap; unicode-bidi: isolate;line-height: 15px; height: 15px; padding-bottom: 10px; font-size: calc(0.8vw + 0.8vh);">
-                <p style="color: #5b1a17;">File: <a style="color: #0000EE; text-decoration: underline;" href="assets/kiss.gif" target="_blank">kiss.gif</a> (251 KB, 220x220)</p>
-            </div>
-            <div style="display: flex; align-items:center; margin: 0;">
-                <img class="sillycat" id="sillycat" style="width: 15%; margin-right: 10px; max-width: 100%;" src="assets/kiss.gif" alt="silly cat">
-                <div style="float: left;" id="statuscafe">
-                    <div style="background-color: #e6d7cc; color: #416d49; padding-left: 5px; padding-top: 10px; font-size: calc(0.8vw + 0.8vh);" id="statuscafe-username"></div>
-                    <div style="color: #5b1a17; font-size: calc(0.8vw + 0.8vh);" id="statuscafe-content">
-                        fetching status.cafe or it broke who knows (doesnt work on neocities)
+            <div class="container">
+                <div class="small">
+                    <div class="smallpart2">
+                        <img style="width: 15%; -webkit-transform: scaleX(-1); transform: scaleX(-1);" src="assets/clickbait_arrow.png">
+                        <button class="button-30" role="button" onclick="toggleTheme()">switch themes</button>
+                        <img style="width: 15%;" src="assets/clickbait_arrow.png">
                     </div>
                 </div>
-                <script src="https://status.cafe/current-status.js?name=moosyu" defer></script>
+                </div>
+                <div class="statusbox">
+                    <div style="max-width: 600px; white-space: nowrap; unicode-bidi: isolate;line-height: 15px; height: 15px; padding-bottom: 10px; font-size: calc(0.8vw + 0.8vh);">
+                        <p style="color: #5b1a17;">File: <a style="color: #0000EE; text-decoration: underline;" href="assets/kiss.gif" target="_blank">kiss.gif</a> (251 KB, 220x220)</p>
+                    </div>
+                    <div style="display: flex; align-items:center; margin: 0;">
+                        <img class="sillycat" id="sillycat" style="width: 15%; margin-right: 10px; max-width: 100%;" src="assets/kiss.gif" alt="silly cat">
+                        <div style="float: left;" id="statuscafe">
+                            <div style="background-color: #e6d7cc; color: #416d49; padding-left: 5px; padding-top: 10px; font-size: calc(0.8vw + 0.8vh);" id="statuscafe-username"></div>
+                            <div style="color: #5b1a17; font-size: calc(0.8vw + 0.8vh);" id="statuscafe-content">
+                                fetching status.cafe or it broke who knows (doesnt work on neocities)
+                            </div>
+                        </div>
+                        <script src="https://status.cafe/current-status.js?name=moosyu" defer></script>
+                    </div>        
+                </div>
+                <div class="adbox">
+                    <p>ad:</p>
+                    <iframe width="180" height="180" style="border:none" src="https://dimden.neocities.org/navlink/" name="neolink"></iframe>        
+                </div>
             </div>
         </div>
     </div>
@@ -190,5 +226,6 @@
             }
         });
     </script>
+    <script src="js/musicPlayer.js"></script>
 </body>
 </html>

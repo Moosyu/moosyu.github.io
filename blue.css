@@ -244,7 +244,7 @@ li {
     background-image: url("/assets/qq164.gif");
     border: 2px dotted rgb(233, 171, 88);
     border-radius: 5px;
-    font-size: 0.9vw;
+    font-size: calc(0.8vw + 0.8vh);
 }
 
 .two {
@@ -254,6 +254,81 @@ li {
     background-size: 100% 100%;
     width: 100%;
     padding-top: 100%; 
+}
+
+.maybetwelve {
+    grid-column: 3;
+    grid-row: 2;
+    background-color: #f2e9e4;
+    border: 1px solid #eee;
+    background: #152238;
+    color: white;
+    font-family: sans-serif;
+}
+
+.cd-rotate{
+    margin:auto;
+    padding:5%;
+    box-sizing: border-box;
+    width:inherit;
+    transition: transform .3s;
+}
+
+.cd-rotate > img{
+    animation-name: spin;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    display:block;
+    margin:auto;
+    border-radius: 50%;
+    width:200px;
+    height:200px;
+    box-sizing: border-box;
+    box-shadow: 0 0 0 8px #000001, 0 0 0 12px #1c1b21, 0 0 0 16px #000001; /* Creates outer grooves */
+    background: radial-gradient(circle, #000001 20%, #1c1b21 21%, #000001 22%, #1c1b21 23%, #000001 24%, transparent 25%),
+    radial-gradient(circle, #1c1b21 30%, #000001 31%, #1c1b21 32%, #000001 33%, #1c1b21 34%, transparent 35%);
+    transition:  box-shadow .3s;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+#controls{
+    display:flex;
+    justify-content: space-around;
+    padding:5px;
+    box-sizing: border-box;
+}
+
+#controls > div{
+    font-size:40px;
+    transition:text-shadow .3s, transform .3s;
+}
+
+#controls > div:hover{
+    transform:scale(1.2);
+    text-shadow: 0 0 11px white, 0 0 11px white;
+    cursor: pointer;
+}
+
+#controls > div:active{
+    transform:scale(1.1);
+    text-shadow: 0 0 11px blue, 0 0 11px blue;
+}
+
+input[type=range] {
+    width: 120px;
+    background: transparent;
+    margin: auto;
+    display: block;
+    padding: 5px;
 }
 
 .three {
@@ -374,7 +449,7 @@ li {
         grid-template-rows: auto;
     }
 
-    .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .thesenumbersreallymeannothingbecauseivemovedthemaroundwaytoomuch {
+    .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .thesenumbersreallymeannothingbecauseivemovedthemaroundwaytoomuch, .maybetwelve {
         grid-column: 1 / -1;
         grid-row: auto;
     }
@@ -676,7 +751,7 @@ div#no-scrolling-iframe {
     font-style: italic;
     font-weight: bold;
     text-align: right;
-    background-color: #24273a;
+    background-color: blue;
 }
 
 .c-inputWrapper {
@@ -686,7 +761,6 @@ div#no-scrolling-iframe {
 .c-input {
     padding: 4px;
     color: black;
-    border: 1px solid blue;
 	outline: none;
 }
 .c-input:focus {border: 1px solid darkblue;}
@@ -778,4 +852,44 @@ div#no-scrolling-iframe {
     margin-right: 4px;
     margin-left: 4px;
     font-size: calc(0.6vw + 0.6vh);
+}
+
+.splitter {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.small {
+    flex: 0 0 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-bottom: 5px;
+}
+
+.smallpart2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.statusbox {
+    flex: 0 0 70%;
+    background-color: #f2e9e4;
+    border: 3px solid #dcbcb4;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.adbox {
+    flex: 0 0 20%;
+    text-align: center;
+    font-size: calc(1vw + 1vh);
+    font-family: Tahoma;
+    background-image: url("assets/dimdenbg.png");
+    border: 3px solid #383838;
+    border-radius: 5px;
+    text-shadow: 0 0 20px #ffffff4a, 0 0 20px #00ffab45;
+    color: white;
 }
