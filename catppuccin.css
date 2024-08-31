@@ -252,6 +252,7 @@ li {
     border: 2px dotted rgb(233, 171, 88);
     box-sizing: border-box;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
