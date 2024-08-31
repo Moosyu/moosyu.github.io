@@ -245,6 +245,7 @@ li {
     border: 2px dotted rgb(233, 171, 88);
     border-radius: 5px;
     font-size: calc(0.8vw + 0.8vh);
+
 }
 
 .two {
@@ -256,6 +257,7 @@ li {
     padding-top: 100%; 
     box-sizing: border-box;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -965,4 +967,196 @@ div#no-scrolling-iframe {
 }
 .wavy-text span:nth-child(even) {
     animation-delay: 0.2s;
+}
+
+#moosyu {
+    position: relative;
+    background-image: url("https://moosyu.nekoweb.org/assets/wall.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+}
+#moosyu > div > p {
+    color: white;
+    font-family: Tahoma;
+    filter: drop-shadow(1px 1px 0 black) drop-shadow(-1px 1px 0 black)
+    drop-shadow(0 -1px 0 black) drop-shadow(1px 0 black);
+    margin: 0;
+    padding-left: 5px;
+}
+
+.wavy-title {
+    font-weight: bold;
+    letter-spacing: -0.15em;
+    font-size: 16px; 
+    font-family: Tahoma;
+    filter: drop-shadow(1px 1px 0 black) drop-shadow(-1px 1px 0 black)
+    drop-shadow(0 -1px 0 black) drop-shadow(1px 0 black);
+    padding-left: 5px;
+}
+
+.wavy-title span {
+    display: inline-block;
+    animation: floatUpDown 1s infinite ease-in-out, rainbow 3s linear 9700ms infinite forwards running; 
+}
+
+.wavy-title span:nth-child(odd) {
+    animation-delay: 0.1s;
+}
+.wavy-title span:nth-child(even) {
+    animation-delay: 0.2s;
+}
+
+@keyframes floatUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-2px);
+    }
+}
+
+@keyframes rainbow{
+    0%, 100% {color: rgb(75, 75, 243);}
+    25% {color: #3572EF;}
+    50% {color: #3ABEF9;}
+    75% {color: #A7E6FF;}
+}
+
+#neko-tag {
+    margin: 0 auto !important;
+    width:230px;
+    height:199px;
+    box-sizing: border-box;
+    position: relative;
+    font-size: 13px!important;
+    color: black;
+    font-family: "Tahoma";
+}
+  
+#neko-tag a{
+  color:black;
+  text-decoration: underline;
+}
+  
+#neko-tag .webring-bg {
+  width: 100%;
+  height: 100%;
+}
+  
+#neko-tag .webring-wrapper{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    width:100%;
+    height:inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center!important;
+}
+  
+#neko-tag .placename {
+  width: fit-content;
+  height: fit-content;
+}
+  
+#neko-tag .webring-subtitle {
+  text-align: center !important;
+}
+  
+#neko-tag .webring-flex{
+    display:flex;
+    justify-content: center!important;
+    position: relative;
+}
+  
+#neko-tag .webring-title {
+    text-align: center!important;
+    margin-top: 5px;
+}
+  
+#neko-tag .webring-title img {
+    margin:0;
+    width: 25px;
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    filter: drop-shadow(3px 3px 0px black);
+}
+  
+#neko-tag .box {
+  width: 80px;
+  height: 80px;
+  border: 2px solid black;
+  margin: 5px 0;
+  justify-content: center;
+  align-items: flex-end;
+  display: flex;
+  text-align: center;
+  cursor: pointer;
+}
+  
+#neko-tag .webring-footer {
+     text-align:center;
+}
+
+#neko-tag .webring-next, #neko-tag .webring-prev{
+    display:flex;
+    flex-direction: column;
+    justify-content: center!important;
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+}
+  
+#neko-tag .webring-next img, #neko-tag .webring-prev img {
+  width: 50px;
+}
+  
+#neko-tag .webring-links {
+    font-size:11px!important;
+}
+  
+#neko-tag .arrow-image{
+    width:40px;
+}
+  
+#neko-tag .webring-next {
+  margin-left: 5px;
+  animation: 2s bobright ease-in-out infinite;
+}
+  
+#neko-tag .webring-prev {
+  margin-right: 5px;
+  animation: 2s bobleft ease-in-out infinite;
+}
+  
+.hfwr {
+    background-image: url("https://darkosparko.nekoweb.org/webrings/neko-tag/neko-tag-images/dithered-mat1.png");
+    filter: drop-shadow(3px 3px 0px black);
+}
+
+@keyframes bobleft {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(-5px); /* Move left by 10px */
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes bobright {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(5px); /* Move right by 10px */
+    }
+    100% {
+        transform: translateX(0px);
+    }
 }
