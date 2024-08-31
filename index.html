@@ -5,20 +5,7 @@
     <meta charset="UTF-8">
     <title>my super cool website</title>
     <link rel="stylesheet" href="blue.css">
-    <script src="js/colorSwitcher.js" defer></script>
-    <script src="js/rand.js" defer></script>
-    <script src="js/lastFM.js" async></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script>
-        fetch('https://api.github.com/repos/Moosyu/moosyu.github.io/commits?per_page=1')
-            .then(res => res.json())
-            .then(res => {
-                let sha = res[0].sha
-                document.getElementById('commitLatest').innerText = res[0].commit.message;
-                document.getElementById('shortHash').innerText = "latest commit:" + sha.substring(0, 7);
-                document.getElementById('commitLink').href = "https://github.com/Moosyu/moosyu.github.io/commit/" + sha
-            });
-    </script>
 </head>
 
 <body>
@@ -56,28 +43,41 @@
                 #1 autist. somehow my site does a bad impression of sites made 15 years ago. sure makes your computer feel like it was made in the early 2000s though. i began my stint into autism as im not a massive fan of how the modern internet sites are just flat white cubes. i like how someone can express their deepest darkest thought out to the world with the power of poorly done html css and even worse js. if you found this through a fnf website youre looking for <a href="https://moosyar.github.io/">https://moosyar.github.io/</a>. it's an archive of my old fnf site. (i can't speak on if it still works though as i'm not updating it anymore).
             </p>
             <hr>
+            <p style="padding-top: 10px; padding-bottom: 10px;">
+                ive worked on and off on this for like three years, while its not particularly good im happy with the state its in now even though its more like an amalgam of sites i like, but arent we all? hopefully the longer it lasts the more distinct the style will become. all the code is public and youre free to use it though it probably wasnt even mine in the first place.
+            </p>
+            <hr>
             <p style="padding-top: 10px;">
-                ive worked on and off on this for like three years, while its not particularly good im happy with the state its in now even though its more like an amalgam of sites i like, but arent we all? all the code is public and youre free to use it though it probably wasnt even mine in the first place.
+                <a href="https://github.com/Moosyu/moosyu.github.io">https://github.com/Moosyu/moosyu.github.io</a>
             </p>
         </div>
         <div class="two">
             <img src="assets/bloons.gif" alt="internet party" style="width: 100%;">
         </div>
         <div class="maybetwelve">
-                <p style="text-align: center; font-size: calc(1vw + 1vh);">my current favourite song:</p>
-                <div class="cd-rotate" onclick="play_pause()">
-                    <img class="cd-image" src="https://i.imgur.com/l9XxU0r.png">
+            <p style="text-align: center; font-size: calc(1vw + 1vh);">song i like right now:</p>
+            <div class="cd-rotate">
+                <img class="cd-image" src="https://f4.bcbits.com/img/a0106704052_10.jpg">
+            </div>
+            <div style="text-align: center; font-size: calc(0.8vw + 0.8vh);">Prologue - Kamasi Washington</div>
+            <div id="controls">
+                <div id="play-pause" onclick="playpauseTrack()">▶</div>
+            </div>
+            <div style="text-align: center; display: flex; flex-direction: column; align-items: center;">
+                <div style="display: flex; flex-direction: row; align-items: center; justify-content: center; margin-bottom: 10px; gap: 5px;">
+                        <p class="current-time" style="font-size: calc(0.6vw + 0.6vh);">00:00</p>
+                        <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()" style="padding: 0px;">
+                        <p class="total-duration" style="font-size: calc(0.6vw + 0.6vh);">00:00</p>
                 </div>
-                <audio id="music-player">
-                    <source src="https://files.catbox.moe/7g21h0.mp3">
-                </audio>
-                <div style="text-align: center; font-size: calc(0.8vw + 0.8vh);">Prologue - Kamasi Washington</div>
-                <div id="controls">
-                    <div id="play-pause" onclick="play_pause()">▶</div>
+                <div class="linedup" style="text-align: center; display: flex; flex-direction: column; align-items: center;">
+                    <div style="display: flex; flex-direction: row; align-items: center; justify-content: center; margin-bottom: 10px; gap: 5px;">
+                        <p class="minus-symbol" onclick="minus10()">-</p> 
+                        <input type="range" min="1" max="100" value="20" class="volume_slider" onchange="setVolume()" style="padding: 0px;">
+                        <p class="plus-symbol" onclick="plus10()">+</p>
+                    </div>
                 </div>
-                <input type="range" id="music-volume" name="mvolume" min="0" max="1" step="0.005" autocomplete="off" onchange="setVolume('music-volume','music-player')">
-        </div>
-
+            </div>
+        </div>    
         <div class="three">
             <table>
                 <tr>
@@ -162,6 +162,7 @@
                     <a href="https://sad.ovh/"> <img src="assets/sadovh.png" alt="sad.ovh"></a>
                     <a href="https://vegacollective.com/"> <img src="assets/MeatleMania_2.gif" alt="vega collective"></a>
                     <a href="https://housepen.nekoweb.org/"> <img src="assets/housepen.gif" alt="housepen"></a>
+                    <a href="https://dimden.dev/"><img src="https://dimden.dev/images/88x31.gif" alt="dimden"></a>
                 </marquee>
              </div>
         </div>
@@ -191,9 +192,15 @@
                     </div>        
                 </div>
                 <div class="adbox">
-                    <p>ad:</p>
+                    <div class="wavy-text">
+                        <span>a</span>
+                        <span>d</span>
+                        <span>s</span>
+                        <span>:</span> 
+                    </div>
                     <iframe width="180" height="180" style="border:none" src="https://dimden.neocities.org/navlink/" name="neolink"></iframe>        
                 </div>
+                <img loading="lazy" style="border-radius: 7px;" src="https://i.imgur.com/D4Wznfr.png">
             </div>
         </div>
     </div>
@@ -226,6 +233,19 @@
             }
         });
     </script>
-    <script src="js/musicPlayer.js"></script>
+    <script src="js/colorSwitcher.js" defer></script>
+    <script src="js/rand.js" defer></script>
+    <script src="js/lastFM.js" async></script>
+    <script src="js/musicPlayer.js" async></script>    
+    <script>
+        fetch('https://api.github.com/repos/Moosyu/moosyu.github.io/commits?per_page=1')
+            .then(res => res.json())
+            .then(res => {
+                let sha = res[0].sha
+                document.getElementById('commitLatest').innerText = res[0].commit.message;
+                document.getElementById('shortHash').innerText = "latest commit:" + sha.substring(0, 7);
+                document.getElementById('commitLink').href = "https://github.com/Moosyu/moosyu.github.io/commit/" + sha
+            });
+    </script>
 </body>
 </html>

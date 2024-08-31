@@ -260,10 +260,62 @@ li {
     grid-column: 3;
     grid-row: 2;
     background-color: #f2e9e4;
-    border: 1px solid #eee;
-    background: #152238;
+    border: 1px solid #2f3136;
+    background: #202225;
     color: white;
     font-family: sans-serif;
+}
+
+#play-pause {
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.wavy-text {
+    font-size: 3rem;
+    font-weight: bold;
+    overflow: hidden;
+    background-size: 200% auto;
+    letter-spacing: -0.15em;
+}
+
+.wavy-text span {
+    display: inline-block;
+    animation: wave 2s infinite ease-in-out, rainbow 3s linear 9700ms infinite forwards running; 
+}
+
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-5px); /* Reduced movement for smoother effect */
+    }
+    50% {
+        transform: translateY(5px); /* Adjusted for even smoother wave */
+    }
+    75% {
+        transform: translateY(-5px); /* Same as 25% for smooth transition */
+    }
+}
+
+@keyframes rainbow{
+    0% {color: #6666ff;}
+    25% {color: #0099ff;}
+    50% {color: #00ff00;}
+    75% {color: #ff3399;}
+    100% {color: #6666ff;}
+  }
+
+.wavy-text span:nth-child(odd) {
+    animation-delay: 0.1s;
+}
+.wavy-text span:nth-child(even) {
+    animation-delay: 0.2s;
 }
 
 .cd-rotate{
@@ -285,7 +337,7 @@ li {
     width:200px;
     height:200px;
     box-sizing: border-box;
-    box-shadow: 0 0 0 8px #000001, 0 0 0 12px #1c1b21, 0 0 0 16px #000001; /* Creates outer grooves */
+    box-shadow: 0 0 0 8px #000001, 0 0 0 12px #1c1b21, 0 0 0 16px #000001;
     background: radial-gradient(circle, #000001 20%, #1c1b21 21%, #000001 22%, #1c1b21 23%, #000001 24%, transparent 25%),
     radial-gradient(circle, #1c1b21 30%, #000001 31%, #1c1b21 32%, #000001 33%, #1c1b21 34%, transparent 35%);
     transition:  box-shadow .3s;
@@ -325,11 +377,11 @@ li {
 
 input[type=range] {
     width: 120px;
-    background: transparent;
-    margin: auto;
+    margin: 0;
     display: block;
-    padding: 5px;
+    padding: 0px;
 }
+
 
 .three {
     grid-column: 1 / 2;
@@ -375,7 +427,7 @@ input[type=range] {
     background-image: url("assets/201.jpg");
     border: 2px dotted rgb(233, 171, 88);
     border-radius: 5px;
-    color: #cad3f5;
+    color: white;
 }
 
 .nine {
@@ -409,7 +461,6 @@ input[type=range] {
 #listening img {
     width: 100px;
     height: auto;
-    border-radius: 5px;
     padding-right: 10px;
 }
 
@@ -508,19 +559,6 @@ input[type=range] {
         flex: 1 1 100%;
     }
 }
-
-.sillycat:hover {
-    cursor: pointer;
-}
-
-.sortScore:hover {
-    cursor: pointer;
-}
-
-.tableimg:hover {
-    cursor: pointer;
-}
-
 
 .topnav a:hover {
     animation: glow 1s ease-in-out infinite alternate;
@@ -689,8 +727,8 @@ div#no-scrolling-iframe {
     touch-action: manipulation;
     white-space: nowrap;
     will-change: box-shadow,transform;
-    font-size: 18px;
-  }
+    font-size: calc(0.8vw + 0.8vh);  
+}
   
   .button-30:focus {
     box-shadow: #494d64 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #494d64 0 -3px 0 inset;
@@ -937,4 +975,21 @@ div#no-scrolling-iframe {
     border-radius: 5px;
     text-shadow: 0 0 20px #ffffff4a, 0 0 20px #00ffab45;
     color: white;
+    margin-bottom: 5px;
+}
+
+.plus-symbol {
+    margin: 0; 
+    font-size: calc(1.5vw + 1.5vh);
+}
+
+.minus-symbol {
+    margin: 0; 
+    font-size: calc(2vw + 2vh); 
+    position: relative; 
+    top: -0.4vh;
+}
+
+.plus-symbol:hover, .minus-symbol:hover, .sillycat:hover, .sortScore:hover, .tableimg:hover {
+    cursor: pointer;
 }
