@@ -46,64 +46,16 @@
             </p>
             <hr>
             <div style="padding-top: 10px; text-align: center;">
-                <iframe src="pages/misc/webalt.html" name="alternative webring" id="bucket-webring" style="width: 100%;"></iframe>
+                <iframe src="pages/misc/webalt.html" name="alternative webring" id="bucket-webring" style="width: 100%; height: 200px; "></iframe>
             </div>
         </div>
         <div class="two">
             <img src="assets/bloons.gif" alt="internet party" style="width: 100%;">
-            <div id="neko-tag">
-                <div class="webring-bg">
-                <div class="webring-wrapper">
-                  <div class="webring-title">
-                  <img src="https://darkosparko.nekoweb.org/webrings/neko-tag/neko-tag-images/nekotag-ears.png">
-                  </div>
-              
-                  
-                  <div class="webring-flex">
-                    <div class="webring-prev">
-                      <a href="https://melonsoda.nekoweb.org" target="_parent">
-                        <img class="arrow-image" src="https://darkosparko.nekoweb.org/webrings/neko-tag/neko-tag-images/arrow-0970.png" style="transform: scaleX(-1);">
-                      </a>
-                    </div>
-                   <div class="box" id="trademark">            
-                    <div style="width: 80px; height: 80px;" id="moosyu">
-                    <div style="position: relative; top: 10px; right: 3px;">
-                        <p>
-                            moosyu's
-                        </p>
-                        <div class="wavy-title">
-                            <span>t</span>
-                            <span>i</span>
-                            <span>d</span>
-                            <span>a</span> 
-                            <span>l</span> 
-                        </div>
-                        <p>
-                            retreat
-                        </p>
-                    </div>
-                </div>
-                </div>
-                    <div class="webring-next">
-                      <a href="https://darkosparko.nekoweb.org/" target="_parent">
-                        <img class="arrow-image" src="https://darkosparko.nekoweb.org/webrings/neko-tag/neko-tag-images/arrow-0970.png">
-                      </a>
-                    </div>
-                  </div>
-                  <div class="hfwr">
-                    <div class="webring-subtitle">You are currently at coordinates <span style="font-weight: bold;">H15</span> on the map!</div>
-                    <div class="webring-footer">
-                      <span class="webring-links">
-                        <a href="javascript:void(0)" onclick="tagrandomSite()">Random</a> 
-                        <a href="https://darkosparko.nekoweb.org/webrings/neko-tag/neko-tag-index.html">Make Your Mark!</a> 
-                        <a href="https://garlic.garden/onionring/" target="_parent">What Is This?</a></span>
-                    </div>
-                  </div>
-                </div>
-                </div>
-            <script type="text/javascript" src="https://darkosparko.nekoweb.org/webrings/neko-tag/neko-tag-variables.js"></script>
-        </div>
-        </div>
+            <div id='neko-tag'>
+                <script type="text/javascript" src="https://darkosparko.nekoweb.org/webrings/neko-tag/neko-tag-variables.js"></script>
+                <script type="text/javascript" src="js/nekoRing.js"></script>
+            </div>        
+            </div>
         <div class="maybetwelve">
             <p style="text-align: center; font-size: calc(1vw + 1vh);">currently stuck in my head:</p>
             <div class="cd-rotate">
@@ -196,25 +148,49 @@
                 <div id="listening"></div>
             </div>
              <div style="width: 40%; float:right;">
-                <marquee onmouseover="this.stop();" onmouseout="this.start();" scrollamount="20">
-                    <a href="https://scumpsmallbrain.neocities.org"> <img src="assets/scumpshouse.gif" alt="scumps house"></a>
-                    <a href="https://goblin-heart.net/sadgrl/"> <img src="assets/sadgrl_online_learn.gif" alt="sadgrl"></a>
-                    <a href="https://rainbowmango.neocities.org/"> <img src="assets/theglittersalamango.gif" alt="glitter salamango"></a>
-                    <a href="https://caitsith.neocities.org/"> <img src="assets/caitsithbutton6.gif" alt="caitsith button"></a>
-                    <a href="https://melonking.net/"> <img src="assets/melonking.gif" alt="melonking"></a>
-                    <a href="https://max.nekoweb.org/"> <img src="assets/button.gif" alt="max"></a>
-                    <a href="https://riversons.art/"> <img src="assets/rivblink.gif" alt="riverson"></a>
-                    <a href="https://nekoweb.org/"> <img src="assets/button11.gif" alt="nekoweb"></a>
-                    <a href="https://thinliquid.dev/"> <img src="assets/thnlqd.png" alt="thinliquid"></a>
-                    <a href="https://giikis2.neocities.org/"> <img src="https://giikis2.neocities.org/assets/badges/giikis2.png" width="88" height="31" /> </a>
-                    <a href="https://sad.ovh/"> <img src="assets/sadovh.png" alt="sad.ovh"></a>
-                    <a href="https://vegacollective.com/"> <img src="assets/MeatleMania_2.gif" alt="vega collective"></a>
-                    <a href="https://housepen.nekoweb.org/"> <img src="assets/housepen.gif" alt="housepen"></a>
-                    <a href="https://dimden.dev/"><img src="https://dimden.dev/images/88x31.gif" alt="dimden"></a>
-                    <a href="https://zptr.cc/"><img src="assets/@me.gif" alt="zeroptr"></a>
-                    <a href="https://melankorin.net/"><img src="https://melankorin.net/assets/img/buttons/button-1.gif" alt=""></a>
-                    <a href="https://darkosparko.nekoweb.org/" target="_blank"><img style="width: 88px; height: 31px;" src="https://file.garden/ZmFfhSOgiFXI9ZBU/visuals/buttons/personal%20buttons/day-button.png"></a>
-                </marquee>
+                <div style="display: flex; flex-direction: column;">
+                    <div>                
+                        <marquee onmouseover="this.stop();" onmouseout="this.start();" scrollamount="20">
+                        <a href="https://scumpsmallbrain.neocities.org"> <img src="assets/scumpshouse.gif" alt="scumps house"></a>
+                        <a href="https://goblin-heart.net/sadgrl/"> <img src="assets/sadgrl_online_learn.gif" alt="sadgrl"></a>
+                        <a href="https://rainbowmango.neocities.org/"> <img src="assets/theglittersalamango.gif" alt="glitter salamango"></a>
+                        <a href="https://caitsith.neocities.org/"> <img src="assets/caitsithbutton6.gif" alt="caitsith button"></a>
+                        <a href="https://melonking.net/"> <img src="assets/melonking.gif" alt="melonking"></a>
+                        <a href="https://max.nekoweb.org/"> <img src="assets/button.gif" alt="max"></a>
+                        <a href="https://riversons.art/"> <img src="assets/rivblink.gif" alt="riverson"></a>
+                        <a href="https://nekoweb.org/"> <img src="assets/button11.gif" alt="nekoweb"></a>
+                        <a href="https://thinliquid.dev/"> <img src="assets/thnlqd.png" alt="thinliquid"></a>
+                        <a href="https://giikis2.neocities.org/"> <img src="https://giikis2.neocities.org/assets/badges/giikis2.png" width="88" height="31" /> </a>
+                        <a href="https://sad.ovh/"> <img src="assets/sadovh.png" alt="sad.ovh"></a>
+                        <a href="https://vegacollective.com/"> <img src="assets/MeatleMania_2.gif" alt="vega collective"></a>
+                        <a href="https://housepen.nekoweb.org/"> <img src="assets/housepen.gif" alt="housepen"></a>
+                        <a href="https://dimden.dev/"><img src="https://dimden.dev/images/88x31.gif" alt="dimden"></a>
+                        <a href="https://zptr.cc/"><img src="assets/@me.gif" alt="zeroptr"></a>
+                        <a href="https://melankorin.net/"><img src="https://melankorin.net/assets/img/buttons/button-1.gif" alt=""></a>
+                        <a href="https://darkosparko.nekoweb.org/" target="_blank"><img style="width: 88px; height: 31px;" src="https://file.garden/ZmFfhSOgiFXI9ZBU/visuals/buttons/personal%20buttons/day-button.png"></a>
+                    </marquee>
+                    </div>
+                    <div>
+                        <marquee onmouseover="this.stop();" onmouseout="this.start();" scrollamount="20">
+                            <a href="https://rice.nekoweb.org/" target="_blank"><img src="https://rice.nekoweb.org/kamabokogonpachiro.gif"></a>                            <a href="https://goblin-heart.net/sadgrl/"> <img src="assets/sadgrl_online_learn.gif" alt="sadgrl"></a>
+                            <a href="https://rainbowmango.neocities.org/"> <img src="assets/theglittersalamango.gif" alt="glitter salamango"></a>
+                            <a href="https://caitsith.neocities.org/"> <img src="assets/caitsithbutton6.gif" alt="caitsith button"></a>
+                            <a href="https://melonking.net/"> <img src="assets/melonking.gif" alt="melonking"></a>
+                            <a href="https://max.nekoweb.org/"> <img src="assets/button.gif" alt="max"></a>
+                            <a href="https://riversons.art/"> <img src="assets/rivblink.gif" alt="riverson"></a>
+                            <a href="https://nekoweb.org/"> <img src="assets/button11.gif" alt="nekoweb"></a>
+                            <a href="https://thinliquid.dev/"> <img src="assets/thnlqd.png" alt="thinliquid"></a>
+                            <a href="https://giikis2.neocities.org/"> <img src="https://giikis2.neocities.org/assets/badges/giikis2.png" width="88" height="31" /> </a>
+                            <a href="https://sad.ovh/"> <img src="assets/sadovh.png" alt="sad.ovh"></a>
+                            <a href="https://vegacollective.com/"> <img src="assets/MeatleMania_2.gif" alt="vega collective"></a>
+                            <a href="https://housepen.nekoweb.org/"> <img src="assets/housepen.gif" alt="housepen"></a>
+                            <a href="https://dimden.dev/"><img src="https://dimden.dev/images/88x31.gif" alt="dimden"></a>
+                            <a href="https://zptr.cc/"><img src="assets/@me.gif" alt="zeroptr"></a>
+                            <a href="https://melankorin.net/"><img src="https://melankorin.net/assets/img/buttons/button-1.gif" alt=""></a>
+                            <a href="https://darkosparko.nekoweb.org/" target="_blank"><img style="width: 88px; height: 31px;" src="https://file.garden/ZmFfhSOgiFXI9ZBU/visuals/buttons/personal%20buttons/day-button.png"></a>
+                        </marquee>        
+                    </div>
+                </div>
              </div>
         </div>
         <div class="thesenumbersreallymeannothingbecauseivemovedthemaroundwaytoomuch">

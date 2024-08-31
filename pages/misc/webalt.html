@@ -43,6 +43,8 @@
               flex-wrap: wrap;
               justify-content: space-evenly;
               align-content: center;
+              flex-direction: column;
+              height: 100%;
             }
       
             a {
@@ -64,6 +66,11 @@
               left: 50%;
               transform: translateX(-50%);
               transition: width 0.2s ease-in-out;
+            }
+
+            #nekowebring a:before {
+              background: transparent;
+              transition: none;
             }
       
             a:hover{
@@ -122,16 +129,44 @@
               83% {color: var(--purple);}
               100% {color: var(--red);}
             }
+            #nekowebring {
+            margin: 0 auto;
+            padding: 15px; /* creates some space around the widget */
+          }
 
+          #nekowebring table {
+            background: linear-gradient(#fff2df, #fff2df, #eac3be);
+            border: #c09a99 2px solid;
+            margin: 0 auto; /* centers the widget */
+            padding: 7px;
+            border-radius: 10px;
+            image-rendering: pixelated;
+          }
+
+          #nekowebring .webring-prev {
+            text-align: right;
+          }
+
+          #nekowebring .webring-info {
+            text-align: center;
+          }
+
+          #nekowebring .webring-next {
+            text-align: left;
+          }
+
+          #nekowebring .webring-links {
+            font-size: small;
+          }
           </style>      
     </head>
     <body>
       <div class="rainbow-border">
-        <div style="display: flex; justify-content: center; align-items: center; width: 100%; text-align: center; height: 40vh;">
-          <p style="padding-right: 20px;">
+        <div style="display: flex; justify-content: center; align-items: center; width: 100%; text-align: center; height: 20vh;">
+          <p class="rainbowUnder" style="padding-right: 20px;">
               <a class="navig" href="https://webring.bucketfish.me/redirect.html?to=prev&name=moosyu" target="_parent">&lt;--</a>
           </p>
-          <a href="https://webring.bucketfish.me" id="header">
+          <a class="rainbowUnder" href="https://webring.bucketfish.me" id="header">
               <span style="--n:-10000ms;">b</span>
               <span style="--n:-9900ms;">u</span>
               <span style="--n:-9800ms;">c</span>
@@ -147,10 +182,41 @@
               <span style="--n:-8800ms;">n</span>
               <span style="--n:-8700ms;">g</span>                       
           </a>
-          <p style="padding-left: 20px;">
+          <p class="rainbowUnder" style="padding-left: 20px;">
               <a class="navig" href="https://webring.bucketfish.me/redirect.html?to=next&name=moosyu" target="_parent">--&gt;</a>
           </p>    
         </div>        
+      </div>
+      <div>
+        <div id="nekowebring">
+          <table>
+            <tbody>
+              <tr>
+                <td class="webring-prev">
+                  <a href="https://moosyu.github.io/jsonStorage/nekoRing/redirect.html?to=prev&name=moosyu" target="_parent">
+                    <img src="https://webring.nekoweb.org/images/prev.png" alt="Previous Site">
+                  </a>
+                </td>
+                <td style="text-align: center;" class="webring-info">
+                    <a href="https://webring.nekoweb.org/members" target="_parent">
+                      <img src="https://webring.nekoweb.org/images/nekowebring.png" alt="NekoWebRing Index">
+                    </a>
+                    <br>
+                    <span class="webring-links">
+                      <a href="https://moosyu.github.io/jsonStorage/nekoRing/redirect.html?to=random&name=moosyu" target="_parent">
+                      <img src="https://webring.nekoweb.org/images/cat.png" alt="Random Site">
+                    </a>
+                  </span>
+                </td>
+                <td class="webring-next">
+                  <a href="https://moosyu.github.io/jsonStorage/nekoRing/redirect.html?to=next&name=moosyu" target="_parent">
+                    <img src="https://webring.nekoweb.org/images/next.png" alt="Next Site">
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </body>
 </html>
