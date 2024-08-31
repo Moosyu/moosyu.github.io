@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style>
+            /*this is a combination kind of thing of the original and the zptr.cc editted version*/
+            @font-face {
+                font-family: Terminus;
+                src: url("../../assets/Terminus.ttf");
+            }      
+      
+            :root {
+                --red: #ffcaca;
+                --orange: #ffedc1;
+                --yellow: #feffb8;
+                --green: #c4ffcb;
+                --blue: #add8ff;
+                --purple: #ccafe9;
+      
+                --darkgreen: #3E885B;
+                --darkblue: #7fb4f5;
+            
+      
+                --rainbowright: linear-gradient(to right, var(--red) 0%, var(--orange) 20%, var(--yellow) 40%, var(--green) 60%, var(--blue) 80%,  var(--purple) 100%);
+            }
+      
+            * {
+              font-family: Terminus,sans-serif;
+              color: var(--purple);
+              font-size: calc(3vw + 3vh);
+              text-decoration: none;
+            }
+      
+            html, body {
+              margin: 0;
+              box-sizing: border-box;
+            }
+      
+      
+            body {
+              display: flex;
+              padding: 0.5em;
+              flex-wrap: wrap;
+              justify-content: space-evenly;
+              align-content: center;
+            }
+      
+            a {
+              display: inline-block;
+              color: inherit;
+              position: relative;
+              text-decoration: none;
+              transition: linear 0.2s;
+              color: var(--purple);
+            }
+      
+            a:before {
+              background: var(--rainbowright);
+              content: '';
+              height: 2px;
+              position: absolute;
+              bottom: -1.5px;
+              width: 100%;
+              left: 50%;
+              transform: translateX(-50%);
+              transition: width 0.2s ease-in-out;
+            }
+      
+            a:hover{
+              color: var(--white);
+            }
+      
+            a:hover:before{
+              width: 0;
+            }
+      
+            #left { text-align: left; }
+            #mid { text-align: center; }
+            #right { text-align: right; }
+      
+            #left, #right {
+              flex-grow: 1;
+              flex-basis: 0;
+            }
+      
+            .rainbow-border {
+              border: 3px solid transparent; /* Set border properties */
+              border-image: var(--rainbowright) 1; /* Use gradient for border */
+              animation: rainbow 5s infinite; /* Apply your rainbow animation */
+              padding: 10px;
+              background-color: #24273a; 
+              border-radius: 7px;       
+            }
+
+            #header span{
+              animation-delay: var(--n);
+              animation: wave 1.5s linear var(--n) infinite forwards running, rainbow 3s linear var(--n) infinite forwards running;
+              position: relative;
+            }
+      
+            @media screen and (prefers-reduced-motion: reduce)
+            {
+              #header span {
+                animation: none;
+              }
+            }
+      
+            @keyframes wave{
+              0%    {top: 0px;}
+              25%   {top: -1px;}
+              50%   {top: 0px;}
+              75%  {top: 1px;}
+              100% {top: 0px;}
+            }
+      
+            @keyframes rainbow{
+              0% {color: var(--red);}
+              17% {color: var(--orange);}
+              33% {color: var(--yellow);}
+              50% {color: var(--green);}
+              67% {color: var(--blue);}
+              83% {color: var(--purple);}
+              100% {color: var(--red);}
+            }
+
+          </style>      
+    </head>
+    <body>
+      <div class="rainbow-border">
+        <div style="display: flex; justify-content: center; align-items: center; width: 100%; text-align: center; height: 40vh;">
+          <p style="padding-right: 20px;">
+              <a class="navig" href="https://webring.bucketfish.me/redirect.html?to=prev&name=moosyu">&lt;--</a>
+          </p>
+          <a href="https://webring.bucketfish.me" id="header">
+              <span style="--n:-10000ms;">b</span>
+              <span style="--n:-9900ms;">u</span>
+              <span style="--n:-9800ms;">c</span>
+              <span style="--n:-9700ms;">k</span>
+              <span style="--n:-9600ms;">e</span>
+              <span style="--n:-9500ms;">t</span>
+              <span style="--n:-9400ms;"> </span>
+              <span style="--n:-9300ms;">w</span>
+              <span style="--n:-9200ms;">e</span>
+              <span style="--n:-9100ms;">b</span>
+              <span style="--n:-9000ms;">r</span>
+              <span style="--n:-8900ms;">i</span>
+              <span style="--n:-8800ms;">n</span>
+              <span style="--n:-8700ms;">g</span>                       
+          </a>
+          <p style="padding-left: 20px;">
+              <a class="navig" href="https://webring.bucketfish.me/redirect.html?to=next&name=moosyu">--&gt;</a>
+          </p>    
+        </div>        
+      </div>
+    </body>
+</html>

@@ -9,7 +9,7 @@
 @font-face {
     font-family: SS Rosehip;
     src: url(assets/SS\ Rosehip.otf);
-  }
+}
 
 body {
     background-color: #24273a;
@@ -326,11 +326,15 @@ li {
     transition: transform .3s;
 }
 
+.spin-animation {
+    animation: spin infinite 5s linear;
+}
+
+.reverse-spin-animation {
+    animation: reverse-spin 0.2s linear forwards;
+  }
+
 .cd-rotate > img{
-    animation-name: spin;
-    animation-iteration-count: infinite;
-    animation-duration: 5s;
-    animation-timing-function: linear;
     display:block;
     margin:auto;
     border-radius: 50%;
@@ -351,6 +355,15 @@ li {
         transform: rotate(360deg);
     }
 }
+
+@keyframes reverse-spin {
+    0% {
+      transform: rotate(var(--current-rotation, 0deg));
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
 
 #controls{
     display:flex;
@@ -415,7 +428,7 @@ input[type=range] {
 
 .seven {
     grid-column: 3 / 4;
-    grid-row: 4;
+    grid-row: 3/ 5;
     background-image: url("/assets/smokeypurple.gif");
     border: 2px dotted rgb(233, 171, 88);
     border-radius: 5px;
@@ -961,7 +974,7 @@ div#no-scrolling-iframe {
     flex: 0 0 70%;
     background-color: #f2e9e4;
     border: 3px solid #dcbcb4;
-    padding: 5px;
+    padding: 20px;
     margin-bottom: 5px;
 }
 
