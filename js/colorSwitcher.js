@@ -1,22 +1,30 @@
-function toggleTheme() { 
-    var theme = document.getElementsByTagName('link')[0]; 
-    
-    if (theme.getAttribute('href') == '/catppuccin.css') { 
-        theme.setAttribute('href', '/blue.css');; 
-        localStorage.setItem('theme', '/blue.css');
-    } else { 
-        theme.setAttribute('href', '/catppuccin.css'); 
-        localStorage.setItem('theme', '/catppuccin.css');
-    } 
+// returns the first element that has link <link rel="stylesheet">
+const themeLink = document.querySelector('link[rel="stylesheet"]');
 
+function toggleTheme() {
+    // grabs the href from <link rel="stylesheet">
+    const currentTheme = themeLink.getAttribute('href');
+
+    // fancy if-else. if theme is catppuccin then new theme = blue, if not new theme = catppuccin
+    const newTheme = currentTheme === '/catppuccin.css' ? '/blue.css' : '/catppuccin.css';
+    
+    // updates themelink href to the new theme (this is what actually changes the theme)
+    themeLink.setAttribute('href', newTheme);
+
+    // adds "theme" to localstorage and the value = newtheme
+    localStorage.setItem('theme', newTheme);
 }
 
 function loadTheme() {
-    var savedTheme = localStorage.getItem('theme');
-    var theme = document.getElementsByTagName('link')[0];
+    // grabs "theme" from localstorage
+    const savedTheme = localStorage.getItem('theme');
+
+    // makes sure theme isnt empty then sets the href to what it found in theme
     if (savedTheme) {
-        theme.setAttribute('href', savedTheme); 
+        themeLink.setAttribute('href', savedTheme);
     }
 }
 
+// domcontentload > than window.onload bc window.onload waits till the whole page loads
+// so it can take like a full second for the theme to switch
 document.addEventListener('DOMContentLoaded', loadTheme);
