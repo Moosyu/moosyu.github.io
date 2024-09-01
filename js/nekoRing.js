@@ -65,7 +65,7 @@ tag.insertAdjacentHTML('afterbegin', `
     <div class="box">
       <div style="width: 80px; height: 80px;" id="moosyu">
           <div style="position: relative; top: 10px; right: 3px;">
-              <p>
+              <p style="font-size: 16px;">
                   moosyu's
               </p>
               <div class="wavy-title">
@@ -75,7 +75,7 @@ tag.insertAdjacentHTML('afterbegin', `
                   <span>a</span> 
                   <span>l</span> 
               </div>
-              <p>
+              <p style="font-size: 16px;">
                   retreat
               </p>
           </div>

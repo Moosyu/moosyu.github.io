@@ -13,7 +13,7 @@ const imgElement = document.querySelector('.cd-rotate > img');
 
 function loadTrack() {
     clearInterval(updateTimer);
-    curr_track.src = "https://files.catbox.moe/7g21h0.mp3";
+    curr_track.src = "https://files.catbox.moe/57r3nu.mp3";
     curr_track.load();
     curr_track.loop = true;
     curr_track.volume = baseVolume;
