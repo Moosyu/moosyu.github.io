@@ -6,7 +6,7 @@ function toggleTheme() {
     const currentTheme = themeLink.getAttribute('href');
 
     // fancy if-else. if theme is catppuccin then new theme = blue, if not new theme = catppuccin
-    const newTheme = currentTheme === '/catppuccin.css' ? '/blue.css' : '/catppuccin.css';
+    const newTheme = currentTheme === '/css/catppuccin.css' ? '/css/blue.css' : '/css/catppuccin.css';
     
     // updates themelink href to the new theme (this is what actually changes the theme)
     themeLink.setAttribute('href', newTheme);
