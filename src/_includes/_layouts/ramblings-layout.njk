@@ -1,0 +1,13 @@
+{% extends "base.njk" %}
+
+{% block title %}
+  {{ title | default("moosyus crack emporium") }}
+{% endblock %}
+
+
+{% block content %}
+    <button class="nav-button home-button" onclick="window.location.href='/pages/ramblings/'">home</button>
+    <button class="nav-button ttf-button" onclick="window.location.href='/pages/ramblings/2024/'">2024</button>
+    <button class="nav-button panels-button" onclick="window.location.href='/pages/ramblings/panels/'">panels</button>
+    {{ content | safe }}
+{% endblock %}

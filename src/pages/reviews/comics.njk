@@ -1,0 +1,115 @@
+---
+layout: "layout.njk"
+title: "epic comic reivews"
+header_img: "/public/assets/reviews.gif"
+side_nav_img: "/public/assets/thirtyvirus-5.jpg"
+pagination:
+    data: comics
+    size: 40
+    alias: items
+    addAllPagesToCollections: true
+    permalink: "/pages/reviews/comics/{% if pagination.pageNumber > 0 %}/page{{ pagination.pageNumber }}{% endif %}/"
+---
+<body>
+<table class="review_table">
+    <thead>
+        <tr>
+            <th>type, name, score</th>
+            <th>description</th>
+            <th>image</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for item in items %}
+        <tr>
+            <td style="text-align: center;">
+                [{{ item.type }}]
+                <br>
+                ({{ item.name }})
+                <br>
+                <span style="{% if item.score < 1 %} color: #5e5e5e;
+                      {% elif item.score < 3 %} color: #ff4c4c;
+                      {% elif item.score < 5 %} color: #ff8888;
+                      {% elif item.score < 7 %} color: #f0e68c;
+                      {% elif item.score < 8 %} color: #7bc96f;
+                      {% elif item.score < 10 %} color: #00cc66;
+                      {% else %} color: #9d63d0;
+                      {% endif %}">
+                {{ item.score }}/10
+                </span>
+            </td>
+            <td>{{ item.description }}</td>
+            <td class="image-td">
+                {% if item.image %}
+                <img src="{{ item.image }}" alt="{{ item.name }}" onclick=toggleFullscreen(this)>
+                {% else %}
+                no image
+                {% endif %}
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<div class="pagination-container">
+    <div class="pagination-buttons left">
+        {% if page.url != pagination.href.first %}
+        <a href="{{ pagination.href.first }}">First</a>
+        {% else %}
+        <span>First</span>
+        {% endif %}
+        
+        {% if pagination.href.previous %}
+        <a href="{{ pagination.href.previous }}" id="previous-link">Previous</a>
+        {% else %}
+        <span>Previous</span>
+        {% endif %}
+    </div>
+
+    <select id="pageDropdown" onchange="window.location.href=this.value;">
+        {%- for pageEntry in pagination.pages %}
+        <option value="{{ pagination.hrefs[loop.index0] }}" {% if page.url == pagination.hrefs[loop.index0] %} selected {% endif %}>
+            Page {{ loop.index }}
+        </option>
+        {%- endfor %}
+    </select>
+
+    <div class="pagination-buttons right">
+        {% if pagination.href.next %}
+        <a href="{{ pagination.href.next }}" id="next-link">Next</a>
+        {% else %}
+        <span>Next</span>
+        {% endif %}
+        
+        {% if page.url != pagination.href.last %}
+        <a href="{{ pagination.href.last }}">Last</a>
+        {% else %}
+        <span>Last</span>
+        {% endif %}
+    </div>
+</div>
+<script>
+document.addEventListener('keydown', function (event) {
+  if (event.key === 'ArrowRight') {
+    const nextLink = document.getElementById('next-link');
+    if (nextLink) {
+      window.location.href = nextLink.href;
+    }
+  } else if (event.key === 'ArrowLeft') {
+    const previousLink = document.getElementById('previous-link');
+    if (previousLink) {
+      window.location.href = previousLink.href;
+    }
+  }
+});
+
+  function toggleFullscreen(img) {
+  if (!document.fullscreenElement) {
+    img.requestFullscreen();
+  } else {
+    document.exitFullscreen();
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{% extends "base.njk" %}
+
+{% block title %}
+  {{ title | default("moosyus crack emporium") }}
+{% endblock %}
+
+{% block content %}
+<div class="guides_content">
+  {{ content | safe }}
+</div>
+{% endblock %}
