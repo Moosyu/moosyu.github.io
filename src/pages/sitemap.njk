@@ -1,0 +1,14 @@
+---
+layout: "layout.njk"
+title: "sitemap"
+header_img: "/public/assets/sitemap.gif"
+side_nav_img: "/public/assets/IMG_2630.png"
+---
+
+<ul>
+  {% for page in collections.allPages %}
+    <li style="margin: 10px; font-size: 18px;">
+      <a href="{{ page.url }}">{{ page.url }}</a>
+    </li>
+  {% endfor %}
+</ul>
