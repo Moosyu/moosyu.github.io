@@ -1,5 +1,11 @@
 * {
     font-family: monospace;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+    display: none;
 }
 
 :root {
@@ -33,11 +39,6 @@ html {
 
 .box {
     padding: 10px;
-}
-
-.main-box {
-    padding: 10px;
-    order: 2;
 }
 
 .side-box {
@@ -407,6 +408,8 @@ animation: 2s bobleft ease-in-out infinite;
     margin-top: 10px;
     color: white;
     background-color: var(--base);
+    padding: 10px;
+    order: 2;
 }
 
 @keyframes beating {
@@ -612,6 +615,10 @@ video {
     color: white;
 }
 
+.distinct {
+    color: #e5c890;
+}
+
 @media screen and (min-width: 800px) {
     p {
         font-size: 16px;
@@ -620,7 +627,7 @@ video {
     .main-box {
         order: 0;
         flex: 1;
-        min-width: 300px;
+        min-width: 350px;
     }
 
     .container {
@@ -646,6 +653,7 @@ video {
         display: flex;
         flex-direction: column;
         margin-top: 5px;
+        font-size: 18px;
     }
 
     .rev:hover {

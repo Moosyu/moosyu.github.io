@@ -2,10 +2,10 @@
 layout: "layout.njk"
 title: "epic game reivews"
 header_img: "/public/assets/reviews.gif"
-side_nav_img: "/public/assets/club.jpg"
+side_nav_img: "/public/assets/biggewtf.png"
 pagination:
-    data: games
-    size: 50
+    data: music
+    size: 100
     alias: items
     addAllPagesToCollections: true
 ---
@@ -13,14 +13,17 @@ pagination:
 <table class="review_table">
     <thead>
         <tr>
-            <th>type, name, score</th>
+            <th>artist, name, score</th>
             <th>description</th>
+            <th>cover</th>
         </tr>
     </thead>
     <tbody>
         {% for item in items %}
         <tr>
             <td style="text-align: center;">
+                [{{ item.artist }}]
+                <br>
                 ({{ item.name }})
                 <br>
                 <span style="{% if item.score < 1 %} color: #5e5e5e;
@@ -35,6 +38,18 @@ pagination:
                 </span>
             </td>
             <td>{{ item.description }}</td>
+            <td class="image-td">
+                {% if item.image %}
+                <div class="image-container">
+                    <img class="imageA" src="{{ item.image }}" alt="{{ item.name }}">
+                    {% if item.imageB %}
+                    <img class="imageB" src="{{ item.imageB }}" alt="{{ item.name }}">
+                    {% endif %}
+                </div>
+                {% else %}
+                no image
+                {% endif %}
+            </td>
         </tr>
         {% endfor %}
     </tbody>

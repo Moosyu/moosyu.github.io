@@ -10,10 +10,8 @@ module.exports = function(eleventyConfig) {
     });
     
     eleventyConfig.addCollection("allPages", function (collectionApi) {
-      return collectionApi.getAll().filter(page => {
-        return !page.data.pagination && !page.inputPath.includes('_layouts');
+      return collectionApi.getAll();
       });
-    });
 
     eleventyConfig.addCollection("guides", function(collectionApi) {
       return collectionApi.getFilteredByGlob("src/pages/guides/**/*.md");
