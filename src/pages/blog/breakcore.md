@@ -1,8 +1,12 @@
 ---
 title: "breakcore and my unending hate for sewerslvt/cynthoni"
-layout: layout.njk
-header_img: "/public/assets/pseudoblog.gif"
+layout: "_layouts/blogs-layout.njk"
+header_img: "/assets/pseudoblog.gif"
+tags:
+    - music
 ---
+
+last updated: 12/09/24
 
 first blogpost btw !!
 

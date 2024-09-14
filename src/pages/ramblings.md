@@ -1,8 +1,8 @@
 ---
 layout: "_layouts/ramblings-layout.njk"
 title: "ramblings"
-header_img: "/public/assets/ramblings.gif"
-side_nav_img: "/public/assets/cancer.jpg"
+header_img: "/assets/ramblings.gif"
+side_nav_img: "/assets/cancer.jpg"
 ---
 
 <style>
@@ -13,6 +13,6 @@ side_nav_img: "/public/assets/cancer.jpg"
 
 this is where im gonna write all the random shit i think that isnt really coherent enough to be a journal. click the things above to go to sections
 
-![](/public/assets/fredrei.jpg)
-![](/public/assets/GSycK4fW8AAgtal.jpg)
-![](/public/assets/GLxjAMnXUAA_6_F.webp)
+![](/assets/fredrei.jpg)
+![](/assets/GSycK4fW8AAgtal.jpg)
+![](/assets/GLxjAMnXUAA_6_F.webp)

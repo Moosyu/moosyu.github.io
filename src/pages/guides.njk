@@ -1,16 +1,16 @@
 ---
 layout: "layout.njk"
 title: "awesome guides"
-header_img: "/public/assets/cool_guides.gif"
-side_nav_img: "/public/assets/minion.jpg"
+header_img: "/assets/cool_guides.gif"
+side_nav_img: "/assets/minion.jpg"
 ---
 
 <p style="text-align: center;">
     i dont really make new guides but yk if i have any annoying things
     i cant find an answer to online then i find the answer ill put it down
 </p>
-<ul>
+<ol>
   {% for guide in collections.guides %}
     <li style="margin: 10px;"><a href="{{ guide.url }}">{{ guide.data.title }}</a></li>
   {% endfor %}
-</ul>
+</ol>

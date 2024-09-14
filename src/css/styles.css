@@ -2,6 +2,7 @@
     font-family: monospace;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    overflow-wrap: break-word;
 }
 
 *::-webkit-scrollbar {
@@ -28,8 +29,12 @@ a {
     color: inherit;
 }
 
+ol {
+    font-size: 16px;
+}
+
 html {
-    background: #1ca3ec url("/public/assets/d_wall.jpg"); /* the #1c2025 is there to avoid the flashbang when you load a page. id like to find a better fix to that at some point though */
+    background: #1ca3ec url("/assets/d_wall.jpg"); /* the #1c2025 is there to avoid the flashbang when you load a page. id like to find a better fix to that at some point though */
 }
 
 .container {
@@ -62,6 +67,7 @@ ul {
     padding: 0;
     margin: 0;
     text-align: center;
+    font-size: 18px;
 }
 
 .hoverli {
@@ -194,6 +200,7 @@ ul {
 .reviews-table td {
     border: none;
     padding: 10px;
+    max-width: 33%;
 }
 
 .reviews-table tr {
@@ -201,9 +208,11 @@ ul {
     align-items: center;
 }
 
-table {
+
+table:not(.front-page-table) {
     width: 100%;
     border-collapse: collapse;
+    table-layout: fixed;
 }
 
 .image-cell {
@@ -229,7 +238,7 @@ table {
 
 #moosyu {
     position: relative;
-    background-image: url("/public/assets/wall.jpg");
+    background-image: url("/assets/wall.jpg");
     background-repeat: repeat;
     background-size: cover;
     margin: auto;
@@ -621,7 +630,7 @@ video {
 
 @media screen and (min-width: 800px) {
     p {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .main-box {
@@ -657,28 +666,32 @@ video {
     }
 
     .rev:hover {
-        background-image: url("https://i.imgur.com/DFAl2PM.png");
+        background-image: url("/assets/revBack.png");
         border-radius: inherit;
     }
     
     .ramb:hover {
-        background-image: url("https://i.imgur.com/Tkq5BoS.png");
+        background-image: url("/assets/rambBack.png");
         border-radius: inherit;
     }
     
     .guide:hover {
-        background-image: url("https://i.imgur.com/zz5nds0.png");
+        background-image: url("/assets/guideBack.png");
         border-radius: inherit;
     }
     
     .blog:hover {
-        background-image: url("https://i.imgur.com/6wrBNGK.png");
+        background-image: url("/assets/blogBack.png");
         border-radius: inherit;
     }
     
     .map:hover {
-        background-image: url("https://i.imgur.com/TDS6Qe9.png");
+        background-image: url("/assets/mapBack.png");
         border-radius: inherit;
+    }
+
+    .hom:hover {
+        background-image: url("/assets/homeBack.png");
     }
 
     .tooltip {

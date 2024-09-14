@@ -9,7 +9,7 @@ press windows key+enter to open a terminal. then run the command touch ~/.Xresou
 
 run the command windows key+p and enter the name of your browser of choice though you may be unable to see what you are typing
 
-![dpi.lv screenshot](/public/assets/dpi.lv.png)
+![dpi.lv screenshot](/assets/dpi.lv.png)
 
 after opening a browser enter the url dpi.lv and copy its pixels per inch result. its 166 for me
 

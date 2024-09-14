@@ -1,0 +1,17 @@
+{% extends "base2.njk" %}
+
+{% block title %}
+  {{ title | default("moosyus crack emporium") }}
+{% endblock %}
+
+{% block content %}
+{{ content | safe }} 
+{% endblock %}     
+
+{% block content2 %}
+<p style="margin: 0; padding: 0; text-align: center; padding-top: 10px;">tags:</p>
+<ol style="padding-bottom: 10px;">
+    <li style="margin: 10px;"><a href="/tags/computers">computers</a></li>
+    <li style="margin: 10px;"><a href="/tags/music">music</a></li>
+</ol>
+{% endblock %}

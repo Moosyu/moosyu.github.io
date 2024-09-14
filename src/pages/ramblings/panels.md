@@ -1,8 +1,8 @@
 ---
 layout: "_layouts/ramblings-layout.njk"
 title: "ramblings"
-header_img: "/public/assets/ramblings.gif"
-side_nav_img: "/public/assets/cancer.jpg"
+header_img: "/assets/ramblings.gif"
+side_nav_img: "/assets/cancer.jpg"
 ---
 
 <style>

@@ -9,7 +9,7 @@ prerequisite: a flash drive with 1gb of space or more and wherever you are going
 
 step 1: go to [temurin latest releases page](https://adoptium.net/temurin/releases/?version=11) and download the openjdk windows version in the zip format. then unzip and place it in your folder. i renamed it to java but you can name it whatever you prefer
 
-![screenshot of runelite github releases](/public/assets/runelite_site.png)
+![screenshot of runelite github releases](/assets/runelite_site.png)
 
 step 2: go to the [runelite github releases page](https://github.com/runelite/launcher/releases) and download the jar version
 
