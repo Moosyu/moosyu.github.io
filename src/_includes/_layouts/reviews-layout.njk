@@ -1,10 +1,12 @@
-{% extends "base2.njk" %}
+{% extends "base.njk" %}
 
 {% block title %}
   {{ title | default("moosyus crack emporium") }}
 {% endblock %}
 
 {% block content %}
+<input type="text" id="searchInput" placeholder="Search...">
+<div id="searchResults"></div>
 {{ content | safe }}
 <div class="pagination-container">
     <div class="pagination-buttons left">
@@ -43,6 +45,7 @@
         {% endif %}
     </div>
 </div>
+<script src="/js/fusejs.js"></script>
 <script>
 document.addEventListener('keydown', function (event) {
   if (event.key === 'ArrowRight') {
@@ -69,15 +72,28 @@ document.addEventListener('keydown', function (event) {
     }
 {% endif %}
 
-</script>
-{% endblock %}
+fetch('{{ jsonLocation }}')
+  .then(response => response.json())
+  .then(data => {
+    const options = {
+      keys: ['name', 'score', 'alt', 'artist'],
+      threshold: 0.3, // lower the number the more strict
+    };
+    const fuse = new Fuse(data, options);
+    const searchInput = document.getElementById('searchInput');
+    const searchResults = document.getElementById('searchResults');
 
-{% block content2 %}
-<p style="margin: 0; text-align: center; padding-top: 10px;">my tracking site accounts:</p>
-<ul>
-    <li style="margin: 10px;"><a href="https://myanimelist.net/profile/beam_mopanies">myanimelist</a></li>
-    <li style="margin: 10px;"><a href="https://letterboxd.com/beam_mopanies/">letterboxd</a></li>
-    <li style="margin: 10px;"><a href="https://backloggd.com/u/beam_mopanies/games/">backloggd</a></li>
-</ul>
-<p style="padding-bottom: 10px; margin: 0; text-align: center;">note: mal is the only one im semi active on</p>
+    searchInput.addEventListener('input', () => {
+      const query = searchInput.value.trim();
+      const results = fuse.search(query);
+      searchResults.innerHTML = results.map(result => `
+        <div>
+          <h1>${result.item.name}</h1>
+          <p>score: ${result.item.score}/10</p>
+          <p>${result.item.description}</p>
+        </div>
+      `).join('');
+    });
+  });
+</script>
 {% endblock %}

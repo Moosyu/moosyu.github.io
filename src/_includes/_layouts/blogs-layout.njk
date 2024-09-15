@@ -1,4 +1,4 @@
-{% extends "base2.njk" %}
+{% extends "base.njk" %}
 
 {% block title %}
   {{ title | default("moosyus crack emporium") }}
@@ -8,6 +8,7 @@
 {{ content | safe }} 
 {% endblock %}     
 
+{% set hasContent2 = true %}
 {% block content2 %}
 <p style="margin: 0; padding: 0; text-align: center; padding-top: 10px;">tags:</p>
 <ol style="padding-bottom: 10px;">

@@ -86,6 +86,7 @@
     {
         "type": "Album",
         "name": "The Rise and Fall of Ziggy Stardust and the Spiders from Mars",
+        "alt": "trafozsatsfm",
         "image": "https://i.imgur.com/VLp695Q.png",
         "description": "david bowie is the greatest rock artist of all time its not pink floyd, the beatles or jimi hendrix go fuck yourself. this album somehow had the perfect start and the perfect end and in between had eight more of the greatest songs ever made, the worst song on this album (hang on to yourself) is my 40th most played song of all time. thats just how good this album is. its one of those albums where you feel like you need to relisten right after you finish its so good."
     },
@@ -104,6 +105,7 @@
     {
         "type": "Game",
         "name": "Minecraft",
+        "alt": "mc",
         "image": "https://i.imgur.com/h1sIIxE.png",
         "description": "its insane that a game made by the crunchy man beside this had such an insane impact on the trajectory of my life but thats just how it is i guess. this is the thing that got me into computers causing a chain reaction that will one day leave me completely destitute with no friends or family begging for crack."
     },

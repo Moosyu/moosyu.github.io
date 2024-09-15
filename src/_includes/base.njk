@@ -42,6 +42,13 @@
             {% endif %}    
             </div>
           </div>
+        {% if hasContent2 %}
+        <div class="box box2">
+            <div class="boxes-r">
+            {% block content2 %}{% endblock %}
+            </div>
+        </div>
+        {% endif %}
     </div>
     </div>
 </body>

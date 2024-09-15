@@ -2,12 +2,18 @@ const htmlmin = require("html-minifier-terser");
 const CleanCSS = require("clean-css");
 const { feedPlugin } = require("@11ty/eleventy-plugin-rss");
 
+const fuseOptions = {
+  keys: ['type', 'score', 'name'],
+  threshold: 0.6, // Adjust sensitivity as needed
+};
+
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
     "public/assets": "assets",
     "public/fonts": "fonts",
     "public/favicon.ico": "favicon.ico"
   });
+  eleventyConfig.addPassthroughCopy("src/_data/*");
   eleventyConfig.addPassthroughCopy("src/css/*");
   eleventyConfig.addPassthroughCopy("src/js/*");
   eleventyConfig.setServerOptions({

@@ -1251,6 +1251,7 @@
     {
         "name": "To Pimp a Butterfly",
         "artist": "Kendrick Lamar",
+        "alt": "tpab",
         "score": "10",
         "image": "https://i.imgur.com/yVP4iVw.jpeg",
         "imageB": "https://i.imgur.com/eEHVcB1.png",
@@ -1283,6 +1284,7 @@
     {
         "name": "Ziggy Stardust and the Spider From Mars",
         "artist": "David Bowie",
+        "alt": "trafozsatsfm",
         "score": "10",
         "image": "https://i.imgur.com/CUNB0ig.jpeg",
         "imageB": "https://i.imgur.com/uyOekgk.png",

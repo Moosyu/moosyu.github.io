@@ -1,5 +1,12 @@
 [
       {
+            "type": "Manga",
+            "name": "Azumanga Daioh",
+            "score": 3.1,
+            "image": "",
+            "description": "when the best character is a pedophile thats when you know youve fucked up"
+      },
+      {
             "type": "Comic",
             "name": "East of West",
             "score": 4.4,
@@ -2207,6 +2214,7 @@
       {
             "type": "Manga",
             "name": "Jujutsu Kaisen",
+            "alt": "jjk",
             "score": 7.7,
             "image": "https://i.imgur.com/YCGsi4Q.png",
             "description": "what is going on"
@@ -2508,6 +2516,7 @@
       {
             "type": "Manga",
             "name": "One Punch Man",
+            "alt": "opm",
             "score": 9,
             "image": "https://i.imgur.com/F8xdw1j.png",
             "description": "holy shit he destroyed a moon"
@@ -2515,6 +2524,7 @@
       {
             "type": "Manga",
             "name": "Chainsaw Man",
+            "alt": "csm",
             "score": 8.9,
             "image": "https://i.imgur.com/grlfF33.jpg",
             "description": "still dont know what the astronauts mean"
