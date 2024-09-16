@@ -33,6 +33,8 @@ a:active {
     border: 1px ridge #8f38ff;
     border-radius: 0px;
 }
+
 a {
-    font-size: calc(3vw + 3vh);
+    font-size: 18px;
+    font-family: monospace;
 }

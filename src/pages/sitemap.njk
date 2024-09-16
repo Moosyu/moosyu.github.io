@@ -4,11 +4,47 @@ title: "sitemap"
 header_img: "/assets/sitemap.gif"
 side_nav_img: "/assets/IMG_2630.png"
 ---
+<style>
+.collapsible {
+  cursor: pointer;
+  border: none;
+  text-align: left;
+}
 
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+</style>
+
+<p>every page:</p>
 <ul>
   {% for page in collections.allPages %}
-    <li style="margin: 10px; font-size: 18px;">
+    <li style="margin: 10px; font-size: 18px; text-align: left">
       <a href="{{ page.url }}">{{ page.url }}</a>
     </li>
   {% endfor %}
 </ul>
+
+<p class="collapsible">click this to show my inspirations page(i didnt know where else to put it)</p>
+<div class="content">
+  <iframe src="/pages/inspirations/" name="frame" id="mainframe" style="max-height: 100%; width: 100%; border: 0;" height="500"></iframe>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>

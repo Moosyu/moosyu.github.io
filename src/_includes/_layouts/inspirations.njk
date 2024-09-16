@@ -6,22 +6,8 @@
     <link rel="icon" type="image/x-icon" href="https://moosyu.nekoweb.org/favicon.ico">
     <link rel="stylesheet" href="/css/inspirations.css">
     <title>{{ title }}</title>
-    <style>
-        /* only way i could get this to work idk */
-        a {
-            text-decoration:none;
-        }
-
-        p {
-            color: white;
-            font-size: calc(3vw + 3vh);   
-        }             
-    </style>
 </head>
 <body>
-    <div style="font-family: Terminus;">
-        <p>inspirations, help and websites i like:</p>
-        {% block content %}{{ content | safe }}{% endblock %}
-    </div>
+    {% block content %}{{ content | safe }}{% endblock %}
 </body>
 </html>
