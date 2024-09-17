@@ -113,7 +113,7 @@ const v_formHtml = `
 // Insert main HTML to page
 document.getElementById('c_widget').innerHTML = v_mainHtml;
 const c_form = document.getElementById('c_form');
-if (s_commentsOpen) {c_form.innerHTML = v_formHtml} 
+if (s_commentsOpen) {c_form.innerHTML = v_formHtml}
 else {c_form.innerHTML = s_closedCommentsText}
 
 // Initialize misc things
@@ -145,7 +145,7 @@ if (s_includeUrlParameters) {v_pagePath += window.location.search}
 if (s_fixRarebitIndexPage && v_pagePath == '/') {v_pagePath = '/?pg=1'}
 const c_pageInput = document.createElement('input');
 c_pageInput.value = v_pagePath; c_pageInput.type = 'text'; c_pageInput.style.display = 'none';
-c_pageInput.id = 'entry.' + s_pageId; c_pageInput.name = c_pageInput.id; 
+c_pageInput.id = 'entry.' + s_pageId; c_pageInput.name = c_pageInput.id;
 c_form.appendChild(c_pageInput);
 
 // Add the "Replying to..." text to document
@@ -203,7 +203,7 @@ function getComments() {
         // Need index of page column for checking if comments are for the right page
         const isPage = (col) => col.label == 'Page';
         let pageIdx = json.table.cols.findIndex(isPage);
-        
+
         // Turn that data into usable comment data
         // All of the messy val checks are because Google Sheets can be weird sometimes with comment deletion
         let comments = [];
@@ -215,7 +215,7 @@ function getComments() {
                 else {val1 = json.table.rows[r].c[pageIdx].v}
 
                 // Check if the page name matches before adding to comment array
-                if (val1 == v_pagePath) { 
+                if (val1 == v_pagePath) {
                     let comment = {}
                     for (c = 0; c < json.table.cols.length; c++) {
                         // Check for null values
@@ -236,7 +236,7 @@ function getComments() {
         if (comments.length == 0 || Object.keys(comments[0]).length < 2) { // Once again, Google Sheets can be weird
             c_container.innerHTML = s_noCommentsText;
         } else {displayComments(comments)}
-        
+
         c_submitButton.disabled = false // Now that everything is done, re-enable the submit button
     })
 }
@@ -282,7 +282,7 @@ function displayComments(comments) {
     comments.reverse(); // Newest comments go to top
     for (i = 0; i < comments.length; i++) {
         let comment = createComment(comments[i]);
-        
+
         // Reply button
         let button = document.createElement('button');
         button.innerHTML = s_replyButtonText;
@@ -308,7 +308,7 @@ function displayComments(comments) {
 
         // Check if a container doesn't already exist for this comment, if not, make one
         let container;
-        if (!document.getElementById(parentId + '-replies')) { 
+        if (!document.getElementById(parentId + '-replies')) {
             container = document.createElement('div');
             container.id = parentId + '-replies';
             if (s_collapsedReplies) {container.style.display = 'none'} // Default to hidden if collapsed
@@ -355,7 +355,7 @@ function displayComments(comments) {
         //ill figure out how to autoupdate this later
         //pageNumCounter = document.createTextNode(`${v_pageNum} / ${v_amountOfPages}`);
         //pagination.append(pageNumCounter);
-        
+
 
         rightButton = document.createElement('button');
         rightButton.innerHTML = s_rightButtonText; rightButton.id = 'c_rightButton'; rightButton.name = 'right';
@@ -413,7 +413,7 @@ function createComment(data) {
     text.innerText = filteredText;
     text.className = 'c-text';
     comment.appendChild(text);
-    
+
     return comment;
 }
 
@@ -443,17 +443,17 @@ function isDST(date) {
 }
 // Thank you to https://stackoverflow.com/questions/32192982/get-a-given-weekday-in-a-given-month-with-javascript for the below function
 function nthDayOfMonth(day, n, date, hour) {
-    var count = 0; 
-    var idate = new Date(date);                                                                                                       
-    idate.setDate(1);                                                                                                                 
-    while ((count) < n) {                                                                                                             
+    var count = 0;
+    var idate = new Date(date);
+    idate.setDate(1);
+    while ((count) < n) {
         idate.setDate(idate.getDate() + 1);
         if (idate.getDay() == day) {
-            count++;                                                                                                                      
-        }                                                                                                                               
+            count++;
+        }
     }
-    idate.setHours(hour);                                                                                                                    
-    return idate;       
+    idate.setHours(hour);
+    return idate;
 }
 // Convert weekday and month names into numbers
 function getDayNum(day) {

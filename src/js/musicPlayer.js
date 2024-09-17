@@ -28,9 +28,9 @@ function playpauseTrack() {
         pauseTrack();
         const computedStyle = window.getComputedStyle(imgElement);
         const matrix = computedStyle.transform;
-        /* 
+        /*
         matrix here looks like this: matrix(-0.182574, -0.983192, 0.983192, -0.182574, 0, 0)
-        and is built up like this 
+        and is built up like this
         \ cos(θ)  -sin(θ)  0 \
         \ sin(θ)   cos(θ)  0 \
 
@@ -44,21 +44,21 @@ function playpauseTrack() {
           const b = values[1]; //sin(1)
           angle = Math.round(Math.atan2(b, a) * (180 / Math.PI));
           /* math.atan2(b,a) is getting the arctangent of b / a and returns an angle (in radians). atan2 > atan bc (im pretty sure)
-          atan only outputs two quadrants dont quote me on that tho 
-          then multiplying it by  (180 / Math.PI) to convert the angle from radians to degrees and then it gets rounded to the nearest int 
+          atan only outputs two quadrants dont quote me on that tho
+          then multiplying it by  (180 / Math.PI) to convert the angle from radians to degrees and then it gets rounded to the nearest int
           */
         }
-  
+
         // making the angles positive if they arent
         if (angle < 0) {
           angle = 360 + angle;
         }
-  
+
         imgElement.style.setProperty('--current-rotation', `${angle}deg`);
-  
+
         imgElement.classList.remove('spin-animation');
         imgElement.classList.add('reverse-spin-animation');
-  
+
     }
 }
 

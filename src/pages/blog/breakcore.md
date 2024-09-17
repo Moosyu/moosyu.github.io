@@ -10,7 +10,7 @@ last updated: 12/09/24
 
 first blogpost btw !!
 
-my first time hearing any breakcore was like a lot of people, i got "mr kill myself" recommended to me on youtube and if im being real i thought it was alright. it wasnt aggressively bad like most of sewerslvt's shits but i still found it a little bland. i then forgot about sewerslvt for like 3 years until i started to really get into music. 
+my first time hearing any breakcore was like a lot of people, i got "mr kill myself" recommended to me on youtube and if im being real i thought it was alright. it wasnt aggressively bad like most of sewerslvt's shits but i still found it a little bland. i then forgot about sewerslvt for like 3 years until i started to really get into music.
 
 when i first started like seeking out good albums and listening to new genres my main source was online forums and aoty and i heard quite a bit about the album "[we had good times together, don't forget that](https://www.albumoftheyear.org/album/423966-sewerslvt-we-had-good-times-together-dont-forget-that.php)". and i heard it was the greatest breakcore album so i had my expectations pretty high for it.
 

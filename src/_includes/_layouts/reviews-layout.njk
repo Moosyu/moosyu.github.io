@@ -15,7 +15,7 @@
         {% else %}
         <span>First</span>
         {% endif %}
-        
+
         {% if pagination.href.previous %}
         <a href="{{ pagination.href.previous }}" id="previous-link">Previous</a>
         {% else %}
@@ -37,7 +37,7 @@
         {% else %}
         <span>Next</span>
         {% endif %}
-        
+
         {% if page.url != pagination.href.last %}
         <a href="{{ pagination.href.last }}">Last</a>
         {% else %}

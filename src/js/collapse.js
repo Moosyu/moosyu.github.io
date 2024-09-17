@@ -10,7 +10,7 @@ function collapse() {
       content.style.maxHeight = null;
     } else {
       content.style.maxHeight = content.scrollHeight + "px";
-    } 
+    }
   });
 }
 }

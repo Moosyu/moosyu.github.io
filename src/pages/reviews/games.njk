@@ -11,9 +11,20 @@ pagination:
     addAllPagesToCollections: true
 ---
 
+{% set counter = 0 %}
+{% set scoreTotal = 0 %}
+{% for score in games %} {# dont make games into items !! only shows the average of currrent page youre on !! #}
+    {% set counter = counter + 1 %}
+    {% set scoreTotal = scoreTotal + score.score %}
+{% endfor %}
+
 <table class="review_table">
     <thead>
         <tr>
+        <th>
+            current average score: {{ (scoreTotal / counter).toFixed(2) }}/10
+        </th>
+        </tr>
             <th>name, score</th>
             <th>description</th>
         </tr>

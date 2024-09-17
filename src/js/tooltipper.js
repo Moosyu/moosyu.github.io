@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
       if (!title) return;
       element.setAttribute('data-title', title);
       element.removeAttribute('title');  // removing default title (so you dont see two when hovering)
-      
+
       tooltip.textContent = title;
       tooltip.style.display = 'block';
       tooltip.style.opacity = 0;

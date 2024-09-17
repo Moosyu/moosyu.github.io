@@ -48,7 +48,7 @@ function tagrandomSite() {
   }
 
   //this is the code that displays the widget - EDIT THIS if you want to change the structure
-  
+
 tag.insertAdjacentHTML('afterbegin', `
 <div class="webring-bg">
   <div class="webring-wrapper">
@@ -69,8 +69,8 @@ tag.insertAdjacentHTML('afterbegin', `
               <span>t</span>
               <span>i</span>
               <span>d</span>
-              <span>a</span> 
-              <span>l</span> 
+              <span>a</span>
+              <span>l</span>
             </div>
             <p style="font-size: 16px;">retreat</p>
           </div>

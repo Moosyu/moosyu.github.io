@@ -11,9 +11,20 @@ pagination:
     alias: items
     addAllPagesToCollections: true
 ---
+{% set counter = 0 %}
+{% set scoreTotal = 0 %}
+{% for score in comics %}
+    {% set counter = counter + 1 %}
+    {% set scoreTotal = scoreTotal + score.score %}
+{% endfor %}
 
 <table class="review_table">
     <thead>
+        <tr>
+        <th>
+            current average score: {{ (scoreTotal / counter).toFixed(2) }}/10
+        </th>
+        </tr>
         <tr>
             <th>type, name, score</th>
             <th>description</th>

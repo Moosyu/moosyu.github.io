@@ -11,7 +11,7 @@ content2: "<p>testing.</p>"
     these arent really gonna be real blog posts because im lazing but more like a paragraph of schizo posting.
     <a href="/feed.xml">click this to get the rss feed</a>.
 </p>
-<p style="text-align:center;">posts:</p>
+<p>posts:</p>
 <ol>
   {% for blog in collections.blog | reverse %}
     <li style="margin: 10px;"><a href="{{ blog.url }}">{{ blog.data.title }}</a></li>

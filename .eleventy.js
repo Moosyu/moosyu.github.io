@@ -20,7 +20,7 @@ module.exports = function(eleventyConfig) {
     liveReload: true,
     port: 5501,
   });
-  
+
   eleventyConfig.addCollection("allPages", function (collectionApi) {
     return collectionApi.getAll();
     });
@@ -64,11 +64,11 @@ module.exports = function(eleventyConfig) {
 		metadata: {
 			language: "en",
 			title: "moosyus really awesome blog",
-			subtitle: "scitzo framblings made by someone who failed english 3 times in a row",
+			subtitle: "scitzo ramblings made by someone who failed english 3 times in a row",
 			base: "https://moosyu.nekoweb.org/",
 			author: {
 				name: "moosyu",
-				email: "moosyu@tuta.io", 
+				email: "moosyu@tuta.io",
 			}
 		}
 	});

@@ -91,7 +91,7 @@ ul {
 }
 
 .hoverli:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05);
     transition-duration: 0.2s;
 }
 
@@ -114,7 +114,7 @@ ul {
 
 .wavy-text span {
     display: inline-block;
-    animation: wave 1s infinite ease-in-out, rainbow 3s linear 9700ms infinite forwards running; 
+    animation: wave 1s infinite ease-in-out, rainbow 3s linear 9700ms infinite forwards running;
 }
 
 @keyframes wave {
@@ -227,7 +227,7 @@ table:not(.front-page-table) {
 
 .image-cell img {
     display: block;
-    margin-left:auto; 
+    margin-left:auto;
     margin-right:auto;
 }
 
@@ -259,7 +259,7 @@ table:not(.front-page-table) {
 .wavy-title {
     font-weight: bold;
     letter-spacing: -0.15em;
-    font-size: 22px; 
+    font-size: 22px;
     font-family: Tahoma;
     filter: drop-shadow(1px 1px 0 black) drop-shadow(-1px 1px 0 black)
     drop-shadow(0 -1px 0 black) drop-shadow(1px 0 black);
@@ -268,7 +268,7 @@ table:not(.front-page-table) {
 
 .wavy-title span {
     display: inline-block;
-    animation: floatUpDown 1s infinite ease-in-out, rainbow-nekomap 3s linear 9700ms infinite forwards running; 
+    animation: floatUpDown 1s infinite ease-in-out, rainbow-nekomap 3s linear 9700ms infinite forwards running;
     font-family: Tahoma;
 }
 
@@ -294,7 +294,7 @@ table:not(.front-page-table) {
     height: 100%;
     background-image: url("https://darkosparko.nekoweb.org/webrings/neko-tag/neko-tag-images/dithered-mat1.png");
 }
-    
+
 @keyframes bobleft {
     0% {
         transform: translateX(0px);
@@ -318,11 +318,11 @@ table:not(.front-page-table) {
         transform: translateX(0px);
     }
 }
-    
+
 #neko-tag .webring-next {
     animation: 2s bobright ease-in-out infinite;
     }
-    
+
 #neko-tag .webring-prev {
 animation: 2s bobleft ease-in-out infinite;
 }
@@ -339,7 +339,7 @@ animation: 2s bobleft ease-in-out infinite;
     border-image: var(--rainbowright) 1;
     animation: rainbow 5s infinite;
     padding: 10px;
-    background-color: #24273a; 
+    background-color: #24273a;
     border-radius: 7px;
 }
 
@@ -405,9 +405,9 @@ animation: 2s bobleft ease-in-out infinite;
 }
 
 .lastlisten-box img {
-    display: block; 
-    margin-left: auto; 
-    margin-right: auto; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 130px;
     padding: 4px;
 }
@@ -452,9 +452,9 @@ animation: 2s bobleft ease-in-out infinite;
 
 .review_table img {
     height: auto;
-    display: block; 
-    margin-left: auto; 
-    margin-right: auto; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .review_table th,
@@ -518,8 +518,8 @@ animation: 2s bobleft ease-in-out infinite;
     max-width: 80%;
     height: auto;
     display: block;
-    margin-left:auto; 
-    margin-right:auto;  
+    margin-left:auto;
+    margin-right:auto;
     border-radius: 50%;
     box-sizing: border-box;
     box-shadow: 0 0 0 8px #000001, 0 0 0 12px #1c1b21, 0 0 0 16px #000001;
@@ -528,8 +528,6 @@ animation: 2s bobleft ease-in-out infinite;
     transition:  box-shadow .3s;
     margin-bottom: 10px;
 }
-
-
 
 .spin-animation {
     animation: spin infinite 5s linear;
@@ -680,22 +678,22 @@ video {
         background-image: url("/assets/revBack.png");
         border-radius: inherit;
     }
-    
+
     .ramb:hover {
         background-image: url("/assets/rambBack.png");
         border-radius: inherit;
     }
-    
+
     .guide:hover {
         background-image: url("/assets/guideBack.png");
         border-radius: inherit;
     }
-    
+
     .blog:hover {
         background-image: url("/assets/blogBack.png");
         border-radius: inherit;
     }
-    
+
     .map:hover {
         background-image: url("/assets/mapBack.png");
         border-radius: inherit;
@@ -718,7 +716,7 @@ video {
         z-index: 1000;
       }
 
-      .bloons {
+    .bloons {
         width: 35%;
         display: block;
     }
