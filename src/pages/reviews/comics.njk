@@ -31,34 +31,34 @@ pagination:
             <th>image</th>
         </tr>
     </thead>
-    <tbody>
-        {% for item in items %}
-        <tr>
-            <td style="text-align: center;">
-                [{{ item.type }}]
-                <br>
-                ({{ item.name }})
-                <br>
-                <span style="{% if item.score < 1 %} color: #5e5e5e;
-                      {% elif item.score < 3 %} color: #ff4c4c;
-                      {% elif item.score < 5 %} color: #ff8888;
-                      {% elif item.score < 7 %} color: #f0e68c;
-                      {% elif item.score < 8 %} color: #7bc96f;
-                      {% elif item.score < 10 %} color: #00cc66;
-                      {% else %} color: #9d63d0;
-                      {% endif %}">
-                {{ item.score }}/10
-                </span>
-            </td>
-            <td>{{ item.description }}</td>
-            <td class="image-td">
-                {% if item.image %}
-                <img src="{{ item.image }}" alt="{{ item.name }}" onclick=toggleFullscreen(this)>
-                {% else %}
-                no image
-                {% endif %}
-            </td>
-        </tr>
-        {% endfor %}
-    </tbody>
+<tbody>
+    {% for item in items %}
+    <tr id="{{ loop.index0 }}">
+        <td style="text-align: center;">
+            [{{ item.type }}]
+            <br>
+            ({{ item.name }})
+            <br>
+            <span style="{% if item.score < 1 %} color: #5e5e5e;
+                  {% elif item.score < 3 %} color: #ff4c4c;
+                  {% elif item.score < 5 %} color: #ff8888;
+                  {% elif item.score < 7 %} color: #f0e68c;
+                  {% elif item.score < 8 %} color: #7bc96f;
+                  {% elif item.score < 10 %} color: #00cc66;
+                  {% else %} color: #9d63d0;
+                  {% endif %}">
+            {{ item.score }}/10
+            </span>
+        </td>
+        <td>{{ item.description }}</td>
+        <td class="image-td">
+            {% if item.image %}
+            <img src="{{ item.image }}" alt="{{ item.name }}" onclick="toggleFullscreen(this)">
+            {% else %}
+            no image
+            {% endif %}
+        </td>
+    </tr>
+    {% endfor %}
+</tbody>
 </table>

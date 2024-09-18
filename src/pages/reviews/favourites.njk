@@ -7,7 +7,7 @@ image_fullscreen: true
 jsonLocation: "/_data/favourites.json"
 pagination:
     data: favourites
-    size: 30
+    size: 100
     alias: items
     addAllPagesToCollections: true
 ---
@@ -23,7 +23,7 @@ pagination:
     </thead>
     <tbody>
         {% for item in items %}
-        <tr>
+        <tr id="{{ loop.index0 }}">
             <td style="text-align: center;">
                 [{{ item.type }}]
                 <br>

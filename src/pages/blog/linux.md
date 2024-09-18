@@ -7,8 +7,6 @@ tags:
     - computers
 ---
 
-last updated: 14/09/24
-
 linux is my favourite OS, i like it quite a lot and yet i usually run windows 10 because linux is still tragically incapable of doing various things that i need. mainly i use windows 10 becuase programs i need for school cant be used on linux though. still waiting for the day libre office works well enough with word documents to actually be able to use it. gaming on linux used to also be a restriction but thanks to my beloved valve you can basically play every game worth playing and they generally run just as well or sometimes even better than on windows. i would like it to be easier to pirate things too but i doubt valve is gonna help me with that, my only hope is johncena141 (my goat).
 
 the best feature and main reason people use linux though is control. i like having complete control over my OS and the ability to brick my pc if i choose to. the main OS i use is arch (btw) but if im being real with all the install scripts and tutorials arch isnt even that hard for a beginner to get the hang of now, gentoo is much more of a flex. while i mainly use xfce which isnt particulary great for ricing i have dabled in ricing a few tiling window managers (bspwm, i3, awesome and dwm) and i feel like i can safely say awesome is my favourite. it just feels a lot easier to customise then the other three because unlike bspwm and i3 is programming in a real language my beloved lua and unlike dwm i dont need a degree in astrophysics to make it work. like i wasted almost five hours getting nowhere with dwm, hated it.

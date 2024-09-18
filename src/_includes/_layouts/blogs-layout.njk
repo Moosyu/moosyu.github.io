@@ -5,6 +5,10 @@
 {% endblock %}
 
 {% block content %}
+{% if date %}
+last updated: {{ page.date.toLocaleDateString('en-US', { weekday: 'short', day: 'numeric', month: 'short' }).replace('.', '') }}
+{% endif %}
+
 {{ content | safe }}
 {% endblock %}
 

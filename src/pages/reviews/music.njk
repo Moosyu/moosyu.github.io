@@ -33,7 +33,7 @@ pagination:
     </thead>
     <tbody>
         {% for item in items %}
-        <tr>
+        <tr id="{{ loop.index0 }}">
             <td style="text-align: center;">
                 [{{ item.artist }}]
                 <br>

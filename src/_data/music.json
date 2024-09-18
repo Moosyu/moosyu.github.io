@@ -1,5 +1,47 @@
 [
     {
+        "name": "genre: bradboy",
+        "artist": "B Dizzle",
+        "score": 0.5,
+        "image": "",
+        "description": "not related to this album but like i just saw that video about brad starting youtube again and that man did not look healthy send him back to rehab"
+    },
+    {
+        "name": "Forbidden Frequencies",
+        "artist": "Onision",
+        "score": 0.5,
+        "image": "",
+        "description": "please someone tell onision to stop making music he peaked at the bannana song"
+    },
+    {
+        "name": "アダンの風 (Windswept Adan)",
+        "artist": "青葉市子 [Ichiko Aoba]",
+        "score": 9.3,
+        "image": "https://i.imgur.com/SsDt7uM.png",
+        "description": "majestic, beautiful album. parfum d'etoiles is probably now one of my favourite songs of all time straight up it is beautiful."
+    },
+    {
+        "name": "Ceres & Calypso in the Deep Time",
+        "artist": "Candy Claws",
+        "score": 8.4,
+        "image": "https://i.imgur.com/2hFXTcD.png",
+        "description": "incredibly dense album that makes me feel like i really am in some forest or jungle or whatever the place in the cover is. as a sidenote the cover looks awesome and is the only reason i gave this a chance and thank god i did. best songs on here are fell in love and pangea girls."
+    },
+    {
+        "name": "To See the Next Part of the Dream",
+        "artist": "파란노을 [Parannoul]",
+        "score": 7.1,
+        "image": "",
+        "description": "good but not parannouls best by a long shot, the first few were really good especially white ceiling but the rest kind of fell flat for me"
+    },
+    {
+        "name": "Pink Tape",
+        "artist": "f(x)",
+        "score": 8,
+        "image": "https://i.imgur.com/nwH8S8q.png",
+        "description": "i cannot tell anyone i few this"
+    },
+    {
         "name": "Remain in Light",
         "artist": "Talking Heads",
         "score": 8.7,
@@ -741,7 +783,7 @@
     {
         "name": "MOMMYCORE",
         "artist":"Blushy Buttercup, Princess Bunny, DJ PUPPYBUTT & Starmoon",
-        "score": 5.4,
+        "score": 3.4,
         "image": "",
         "imageB": "",
         "description": "imagine going to heaven and then having to explain to your ancestors why you listened to mommycore"

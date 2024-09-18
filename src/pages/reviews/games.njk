@@ -6,7 +6,7 @@ side_nav_img: "/assets/club.jpg"
 jsonLocation: "/_data/games.json"
 pagination:
     data: games
-    size: 200
+    size: 100
     alias: items
     addAllPagesToCollections: true
 ---
@@ -31,7 +31,7 @@ pagination:
     </thead>
     <tbody>
         {% for item in items %}
-        <tr>
+        <tr id="{{ loop.index0 }}">
             <td style="text-align: center;">
                 ({{ item.name }})
                 <br>

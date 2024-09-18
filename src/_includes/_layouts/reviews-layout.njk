@@ -61,7 +61,6 @@ document.addEventListener('keydown', function (event) {
   }
 });
 
-
 {% if image_fullscreen %}
     function toggleFullscreen(img) {
         if (!document.fullscreenElement) {
@@ -79,21 +78,37 @@ fetch('{{ jsonLocation }}')
       keys: ['name', 'score', 'alt', 'artist'],
       threshold: 0.3, // lower the number the more strict
     };
+
     const fuse = new Fuse(data, options);
     const searchInput = document.getElementById('searchInput');
     const searchResults = document.getElementById('searchResults');
+    const pageName = '{{ jsonLocation }}'.split('/')[2].replace('.json', '');
 
     searchInput.addEventListener('input', () => {
       const query = searchInput.value.trim();
       const results = fuse.search(query);
-      searchResults.innerHTML = results.map(result => `
-        <div>
-          <h1>${result.item.name}</h1>
-          <p>score: ${result.item.score}/10</p>
-          <p>${result.item.description}</p>
-        </div>
-      `).join('');
+      searchResults.innerHTML = results.map(result => {
+        // getting position of the item in the original array
+        const itemIndex = data.indexOf(result.item);
+        // dividing it by 100 then rounding down to fin page number
+        const pageNumber = Math.floor(itemIndex / 100);
+        const itemAnchor = (itemIndex % 100);
+        const pageLink = pageNumber === 0 ? `/pages/reviews/${pageName}/#${itemAnchor}` : `/pages/reviews/${pageName}/${pageNumber}#${itemAnchor}`;
+
+        return `
+          <div>
+            <h1><a href="${pageLink}">${result.item.name}</a></h1>
+            ${pageName == "favourites"
+              ? ""
+              : `<p>score: ${result.item.score}/10</p>`}
+            <p>${result.item.description}</p>
+          </div>
+        `;
+      }).join('');
     });
   });
+  /*i asked some smart people and they said this script is gonna blow up if my json file gets too large, but i asked what they meant and they said
+    like 1mb or larger and since its only 1/10th of that right now im just not gonna worry about it. im sure like 25 year old version of me will be able
+    to solve this issue (technology will probably be so good by then that it wont matter anyways) life hack.*/
 </script>
 {% endblock %}

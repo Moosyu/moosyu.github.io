@@ -1,12 +1,19 @@
 * {
     font-family: monospace;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    overflow-wrap: break-word;
+    scrollbar-gutter: stable; /* makes the layout not shift when there is not a scrollbar. doesnt work on safari but idc just dont use safari ig */
 }
 
-*::-webkit-scrollbar {
-    display: none;
+html {
+    background: #1ca3ec url("/assets/d_wall.jpg"); /* the #1ca3ec is there to avoid the flashbang when you load a page. id like to find a better fix to that at some point though */
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 2.5px;
 }
 
 :root {
@@ -31,10 +38,6 @@ a {
 
 ol {
     font-size: 16px;
-}
-
-html {
-    background: #1ca3ec url("/assets/d_wall.jpg"); /* the #1c2025 is there to avoid the flashbang when you load a page. id like to find a better fix to that at some point though */
 }
 
 .container {

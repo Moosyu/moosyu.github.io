@@ -6,7 +6,7 @@ side_nav_img: "/assets/biden.jpg"
 jsonLocation: "/_data/tv.json"
 pagination:
     data: tv
-    size: 200
+    size: 100
     alias: items
     addAllPagesToCollections: true
 ---
@@ -32,7 +32,7 @@ pagination:
     </thead>
     <tbody>
         {% for item in items %}
-        <tr>
+        <tr id="{{ loop.index0 }}">
             <td style="text-align: center;">
                 ({{ item.name }})
                 <br>
