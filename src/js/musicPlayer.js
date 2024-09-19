@@ -6,11 +6,16 @@ let updateTimer;
 let curr_track = document.createElement('audio');
 const baseVolume = 0.2;
 const imgElement = document.querySelector('.cd-rotate > img');
+const cdImage = document.querySelector('.cd-image');
+const cdTitle = document.querySelector('.cd-title');
+
 
 
 function loadTrack() {
     clearInterval(updateTimer);
-    curr_track.src = "https://files.catbox.moe/ea519i.mp3";
+    curr_track.src = "https://files.catbox.moe/15mgqq.mp3";
+    cdImage.src = "https://i.imgur.com/5s7uKK6.png";
+    cdTitle.textContent = "Sugar - System of a Down";
     curr_track.load();
     curr_track.loop = true;
     curr_track.volume = baseVolume;

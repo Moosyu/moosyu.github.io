@@ -26,7 +26,7 @@ pagination:
         </th>
         </tr>
         <tr>
-            <th>name, score</th>
+            <th>type, name, score</th>
             <th>description</th>
         </tr>
     </thead>
@@ -34,6 +34,8 @@ pagination:
         {% for item in items %}
         <tr id="{{ loop.index0 }}">
             <td style="text-align: center;">
+                [{{ item.type }}]
+                <br>
                 ({{ item.name }})
                 <br>
                 <span style="{% if item.score < 1 %} color: #5e5e5e;

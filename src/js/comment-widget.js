@@ -51,7 +51,7 @@ const s_filteredWords = [ // Add words to filter by putting them in quotes and s
 ]
 
 // Text - Change what messages/text appear on the form and in the comments section (Mostly self explanatory)
-const s_widgetTitle = 'Leave a comment! (Be nice)';
+const s_widgetTitle = 'leave a comment !';
 const s_nameFieldLabel = 'name';
 const s_websiteFieldLabel = 'website (optional)';
 const s_textFieldLabel = '';
@@ -84,13 +84,13 @@ document.getElementsByTagName('head')[0].appendChild(c_cssLink);
 // HTML Form
 const v_mainHtml = `
     <div id="c_inputDiv">
-        <form id="c_form" onsubmit="c_submitButton.disabled = true; v_submitted = true;" method="post" target="c_hiddenIframe" action="https://docs.google.com/forms/d/e/${s_formId}/formResponse"></form>
+        <form autocomplete="off" id="c_form" onsubmit="c_submitButton.disabled = true; v_submitted = true;" method="post" target="c_hiddenIframe" action="https://docs.google.com/forms/d/e/${s_formId}/formResponse"></form>
     </div>
     <div id="c_container">${s_loadingText}</div>
 `;
 const v_formHtml = `
     <h2 id="c_widgetTitle">${s_widgetTitle}</h2>
-    <p">hi o/ this is my really cool guest book! the filtering in these comments is pretty lax but if you type something too insane its gonna get deleted.</p>
+    <p>when i inevitably throw myself off a bridge its on you guys' shoulders</p>
 
     <div id="c_nameWrapper" class="c-inputWrapper">
         <label class="c-label c-nameLabel" for="entry.${s_nameId}">${s_nameFieldLabel}</label>
@@ -140,7 +140,6 @@ let v_pagePath = window.location.pathname;
 if (v_pagePath == ("/index.html")) {
     v_pagePath = "/"
 }
-console.log(v_pagePath)
 if (s_includeUrlParameters) {v_pagePath += window.location.search}
 if (s_fixRarebitIndexPage && v_pagePath == '/') {v_pagePath = '/?pg=1'}
 const c_pageInput = document.createElement('input');
@@ -340,27 +339,30 @@ function displayComments(comments) {
     // Handle pagination if there's more than one page
     if (v_amountOfPages > 1) {
         let pagination = document.createElement('div');
+
+        // Left button
         leftButton = document.createElement('button');
-        leftButton.innerHTML = s_leftButtonText; leftButton.id = 'c_leftButton'; leftButton.name = 'left';
+        leftButton.innerHTML = s_leftButtonText;
+        leftButton.id = 'c_leftButton';
+        leftButton.name = 'left';
         leftButton.setAttribute('onclick', `changePage(this.name)`);
-        if (v_pageNum == 1) {leftButton.disabled = true} // Can't go before page 1
+        if (v_pageNum == 1) { leftButton.disabled = true; } // Disable on first page
         leftButton.className = 'c-paginationButton';
         pagination.appendChild(leftButton);
-        //
-        leftButton.innerHTML = s_leftButtonText; leftButton.id = 'c_leftButton'; leftButton.name = 'left';
-        leftButton.setAttribute('onclick', `changePage(this.name)`);
-        if (v_pageNum == 1) {leftButton.disabled = true} // Can't go before page 1
-        leftButton.className = 'c-paginationButton';
-        pagination.appendChild(leftButton);
-        //ill figure out how to autoupdate this later
-        //pageNumCounter = document.createTextNode(`${v_pageNum} / ${v_amountOfPages}`);
-        //pagination.append(pageNumCounter);
 
+        // Page number display
+        let pageInfo = document.createElement('span');
+        pageInfo.id = 'c_pageInfo';
+        pageInfo.innerHTML = `1/11`;
+        pagination.appendChild(pageInfo);
 
+        // Right button
         rightButton = document.createElement('button');
-        rightButton.innerHTML = s_rightButtonText; rightButton.id = 'c_rightButton'; rightButton.name = 'right';
+        rightButton.innerHTML = s_rightButtonText;
+        rightButton.id = 'c_rightButton';
+        rightButton.name = 'right';
         rightButton.setAttribute('onclick', `changePage(this.name)`);
-        if (v_pageNum == v_amountOfPages) {rightButton.disabled = true} // Can't go after the last page
+        if (v_pageNum == v_amountOfPages) { rightButton.disabled = true; } // Disable on last page
         rightButton.className = 'c-paginationButton';
         pagination.appendChild(rightButton);
 
@@ -515,6 +517,7 @@ function expandReplies(id) {
 function changePage(dir) {
     const leftButton = document.getElementById('c_leftButton');
     const rightButton = document.getElementById('c_rightButton');
+    const pageInfo = document.getElementById('c_pageInfo'); // Get the span for page number
 
     // Find directional number
     let num;
@@ -532,6 +535,8 @@ function changePage(dir) {
     leftButton.disabled = false; rightButton.disabled = false;
     if (targetPage == 1) {leftButton.disabled = true} // Can't go before page 1
     if (targetPage == v_amountOfPages) {rightButton.disabled = true} // Can't go past the last page
+
+    pageInfo.innerHTML = `${targetPage}/${v_amountOfPages}`;
 
     // Hide all comments and then display the correct ones
     v_pageNum = targetPage;

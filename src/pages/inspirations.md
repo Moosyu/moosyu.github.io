@@ -32,3 +32,7 @@ title: inspirations
 [sizeof {its so massive and reaching i feel like an explorer reading searching through it}](https://sizeof.cat/)
 
 [yesterweb {articles to live by}](https://yesterweb.org/)
+
+[devastatia {one of the only blogs i keep up with, im not gonna say that i agree with all of their opinions but at least they have actual opinions to share}](https://devastatia.com/)
+
+[manu {the other blog i like to keep up with, i found him from an interview he did with devastatia in june and while not as off the rails as devastatia hes still a very interesting person and a his site often links other very interesting blogs leading to some sort of never ending rabbit hole}](https://manuelmoreale.com/)

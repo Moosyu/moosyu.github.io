@@ -1,5 +1,150 @@
 [
-            {
+      {
+            "type": "Anime",
+            "name": "Lucky☆Star",
+            "score": 4.1,
+            "description": "very popular in terminally online sections of the internet, i can safely say that its not funny though and as the comedy police my word is law."
+      },
+
+      {
+            "type": "Anime",
+            "name": "Assassination Classroom",
+            "score": 5.4,
+            "description": "i really enjoyed this when i was like 13, on closer inspection this is pretty mid. if youre like a 13 year old boy youll have a fun time with it though."
+      },
+      {
+            "type": "Anime",
+            "name": "A Silent Voice",
+            "score": 8.5,
+            "description": "i really enjoyed this film, the animation was great and it felt just as impactful as the manga"
+      },
+      {
+            "type": "Anime",
+            "name": "Suicide Squad Isekai",
+            "score": 2.1,
+            "description": "the only character they actually animated is harley what the fuck is this"
+      },
+      {
+            "type": "Anime",
+            "name": "Kaiju No. 8",
+            "score": 7.2,
+            "description": "this was a really fun time. my only issues were that the animation felt kind of stilted at some points making the fights look a little wacky every once in a while and the music in this was straight horrendous. this is like high tier slop."
+      },
+      {
+            "type": "Anime",
+            "name": "Chillin' in Another World with Level 2 Super Cheat Powers",
+            "score": 2.8,
+            "description": "the manga sucks and i can still safely say its better than this. this felt so cheap and i hate the voice acting especially the main characters' voice."
+      },
+      {
+            "type": "Movie",
+            "name": "Minions: The Rise of Gru",
+            "score": 3.4,
+            "description": "fuck it sure lets have a yeat song in this one that sounds like a good idea"
+      },
+      {
+            "type": "Movie",
+            "name": "Minions",
+            "score": 3.2,
+            "description": "the tagline for this was 'Uh oh' and like yeah"
+      },
+      {
+            "type": "Movie",
+            "name": "Despicable Me 3",
+            "score": 3.7,
+            "description": "the first bad despicable me movie imo, it really felt like they were running out of ideas here. everything just felt so bizzare and it was pretty clear this was a cash grab because they realised they had an infinite money printer."
+      },
+      {
+            "type": "Movie",
+            "name": "Despicable Me 2",
+            "score": 6.2,
+            "description": "it was fine, i thought the original wrapped things up pretty well though and it this definitly wasnt needed nor was it as good as the original but it wasnt bad either. no vector though which was sad."
+      },
+      {
+            "type": "Movie",
+            "name": "Despicable Me",
+            "score": 7.8,
+            "description": "i actually really liked despicable me and still do, i thought it was a fun, wholesome and sometimes actually funny film and i still do."
+      },
+      {
+            "type": "Movie",
+            "name": "A Quiet Place: Day One",
+            "score": 3.6,
+            "description": "can we please stop making quiet place films or at least get someone who knows how to direct next time. i just left dissapointed because this just felt like a quiet place part 3. i wanted to at least get something new."
+      },
+      {
+            "type": "Movie",
+            "name": "The Boy and the Heron",
+            "score": 3.8,
+            "description": "this movie sucked i have no idea what people are talking about. the story left so much undeveloped and i just ended up bored and confused. maybe im just dumb or maybe miyazaki has finally gone senile. the animation was good though."
+      },
+      {
+            "type": "Movie",
+            "name": "The Lion King (CGI)",
+            "score": 6.5,
+            "description": "it was like the lion king but worse i dont know what to say, the cgi lions actually looked really good in my opinion (even though i didnt like the way their mouths moved) but it still felt worse than how they did it like 20 years earlier. the same goes with everything else, the music felt more toned down and the story was just the lion king idk."
+      },
+      {
+            "type": "Movie",
+            "name": "The Lion King",
+            "score": 7.5,
+            "description": "it was really cool when disney used to make good movies instead of 3d abominations. the animation in this is great and so is the soundtrack, as a 6 year old i wasnt very engaged by the story though but that might be because i was 6."
+      },
+      {
+            "type": "Movie",
+            "name": "Sonic",
+            "score": 4.1,
+            "description": "i actually kind of liked the original sonic design i dont think they should have changed it"
+      },
+      {
+            "type": "Movie",
+            "name": "Harold and the Purple Crayon",
+            "score": 3.9,
+            "description": "this got a 4.4/5 on google what the fuck. i really need to stop watching childrens movies i am not the correct audience for this."
+      },
+      {
+            "type": "Movie",
+            "name": "IF",
+            "score": 6.7,
+            "description": "im sorry john but im only ever going to think of you as jim from the office no matter what you do"
+      },
+      {
+            "type": "Movie",
+            "name": "Inside Out 2",
+            "score": 4.3,
+            "description": "maybe its because im not like 7 but this is nowhere near as good as the first one and if im being real they should have made this like three years ago because the main audience for the original have all been teens for a while"
+      },
+      {
+            "type": "Movie",
+            "name": "Borderlands",
+            "score": 2.6,
+            "description": "sorry to break it to you borderlands but people did not play your game for your sense of humor. this film was painful to sit through, i just felt bad for everyone involved."
+      },
+      {
+            "type": "Movie",
+            "name": "Twilight",
+            "score": 0.4,
+            "description": "likely the worst film ive ever watched. the actors had no fucking clue what they were doing to the point where i watched this entire film and could not tell you the plot because i was so jarred by this acting to focus on it. maybe ill try reading the book for that."
+      },
+      {
+            "type": "Movie",
+            "name": "Twisters",
+            "score": 3.5,
+            "description": "this is such a dad movie, anyways it sucked ass"
+      },
+      {
+            "type": "TV Show",
+            "name": "Cobra Kai",
+            "score": 7.3,
+            "description": "its actually pretty good, i feel like it should have ended like two or three seasons ago though"
+      },
+      {
+            "type": "TV Show",
+            "name": "Saturday Night Live",
+            "score": 2.7,
+            "description": "it has way more shit then good stuff. i wasnt even born when it was meant to be good too so that doesnt help."
+      },
+      {
             "type": "Movie",
             "name": "The Darkest Minds",
             "score": 3.1,
@@ -134,7 +279,7 @@
       {
             "type": "Movie",
             "name": "Silence of the Lambs",
-            "score": 6.8,
+            "score": 6.6,
             "description": "definitly overrated but i can see how this would be considered very good back in 16BC"
       },
       {
@@ -879,7 +1024,7 @@
             "type": "Anime",
             "name": "Attack on Titan",
             "score": 6.4,
-            "description": "it upsets me greatly that people think this is good"
+            "description": "it upsets me greatly that people think this is good. i did really enjoy the first few episodes though."
       },
       {
             "type": "Anime",

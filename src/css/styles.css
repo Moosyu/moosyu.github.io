@@ -424,6 +424,11 @@ animation: 2s bobleft ease-in-out infinite;
     order: 2;
 }
 
+.cd-title {
+    text-align: center;
+    padding: 2px;
+}
+
 @keyframes beating {
     0%, 100% {
         transform: scale(1);
@@ -585,13 +590,11 @@ animation: 2s bobleft ease-in-out infinite;
     color: black;
 }
 
-.guides_content {
-    text-align: center;
-}
-
 .guides_content img {
     max-width: 50vw;
-}
+    display:block;
+    margin-left:auto;
+    margin-right:auto;}
 
 .guides_content a {
     color: #8aadf4;
@@ -638,6 +641,18 @@ video {
     background-color: #1e2030;
     color: white;
     margin-bottom: 10px;
+}
+
+.collapsible {
+    cursor: pointer;
+    border: none;
+    text-align: left;
+}
+
+.inspiration-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
 
 @media screen and (min-width: 800px) {
