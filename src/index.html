@@ -225,6 +225,48 @@ you can find it here: https://github.com/Moosyu/moosyu.github.io (also star pls)
                     ></iframe>
                 </div>
                 <div id="neko-tag">
+                    <div class="webring-bg">
+                        <div class="webring-wrapper">
+                          <div class="webring-flex">
+                            <div class="webring-prev">
+                              <a href="https://moosyu.github.io/jsonStorage/nekoTag/redirect.html?to=prev&name=moosyu" target="_parent">
+                                <img class="arrow-image" src="https://darkosparko.nekoweb.org/webrings/neko-tag/neko-tag-images/arrow-0970.png" style="transform: scaleX(-1);" alt="arrowleft">
+                              </a>
+                            </div>
+                            <div class="box">
+                              <div style="width: 80px; height: 80px;" id="moosyu">
+                                <div style="position: relative; top: 10px; right: 3px;">
+                                  <p style="font-size: 16px;">moosyu's</p>
+                                  <div class="wavy-title">
+                                    <span>t</span>
+                                    <span>i</span>
+                                    <span>d</span>
+                                    <span>a</span>
+                                    <span>l</span>
+                                  </div>
+                                  <p style="font-size: 16px;">retreat</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="webring-next">
+                              <a href="https://moosyu.github.io/jsonStorage/nekoTag/redirect.html?to=next&name=moosyu" target="_parent">
+                                <img class="arrow-image" src="https://darkosparko.nekoweb.org/webrings/neko-tag/neko-tag-images/arrow-0970.png" alt="arrow right">
+                              </a>
+                            </div>
+                          </div>
+                            <div class="webring-subtitle">
+                              You are currently at coordinates <span style="font-weight: bold;">H15</span> on the map!
+                            </div>
+                            <div class="webring-footer">
+                              <span class='webring-links'>
+                                <a href="https://moosyu.github.io/jsonStorage/nekoTag/redirect.html?to=random&name=moosyu">Random</a>
+                                <a href="https://darkosparko.nekoweb.org/webrings/neko-tag/neko-tag-index.html">Make Your Mark!</a>
+                                <br>
+                                <a href='https://garlic.garden/onionring/' target="_parent">What Is This?</a>
+                              </span>
+                            </div>
+                        </div>
+                      </div>
                 </div>
                 <div style="display: flex; flex-direction: column; margin-top: 15px; font-size: 16px;" class="rainbow-border">
                     <p class="rainbowUnder">
@@ -274,10 +316,8 @@ you can find it here: https://github.com/Moosyu/moosyu.github.io (also star pls)
           </div>
         </div>
       </div>
-    <script src="https://darkosparko.nekoweb.org/webrings/neko-tag/neko-tag-variables.js"></script>
     <script src="js/musicPlayer.js"></script>
     <script src="js/lastFM.js"></script>
-    <script src="js/nekoRing.js"></script>
     <script src="js/comment-widget.js"></script>
     <!-- tooltip container (dont delete this) -->
     <div class="tooltip" id="tooltip"></div>
@@ -286,9 +326,10 @@ you can find it here: https://github.com/Moosyu/moosyu.github.io (also star pls)
         fetch('https://api.github.com/repos/Moosyu/moosyu.github.io/commits?per_page=1')
             .then(res => res.json())
             .then(res => {
-                let sha = res[0].sha
+                let sha = res[0].sha;
+                let authorDate = new Date(res[0].commit.author.date);
                 document.getElementById('commitLatest').innerText = res[0].commit.message;
-                document.getElementById('shortHash').innerText = "latest commit:" + sha.substring(0, 7);
+                document.getElementById('shortHash').innerText = "latest commit:" + sha.substring(0, 7) + " on " + authorDate.toLocaleDateString('en-GB', { day: '2-digit', month: '2-digit', year: '2-digit' });
                 document.getElementById('commitLink').href = "https://github.com/Moosyu/moosyu.github.io/commit/" + sha
             });
     </script>

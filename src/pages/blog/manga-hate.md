@@ -23,7 +23,7 @@ my other thing i gotta rant about is scanlation groups which i guess is also jus
 
 now my other gripe with scanlation groups is their comments, like i swear to god some of these guys have a comment on every scene and its just annoying, like could you guys fuck off and let me get invested instead of saying "oooo" with a silly emoji or talking about how much you want to bang the highschooler in the scene, like holy shit chill out the 2d women are not gonna let you hit. i know i could just not read them but sometimes they have actual context or say that they changed a word to make it more accurate (which is kind of a pain in the ass too just keep it as the orignal) so like what am i meant to do??
 
-heres a tierlist of manhwa scanlation groups and the reasonings thats been sitting on my hard drive for like 3 months and i just need to get rid of it, if youre wondering why there is no S tier is because non of the manhwa groups are as good as my goats over at kennel club their TL of the wizard and the red pilgrim was incredible.
+heres a tierlist of manhwa scanlation groups and the reasonings thats been sitting on my hard drive for like 3 months and i just need to get rid of it, if youre wondering why there is no S tier is because none of the manhwa groups are as good as my goats over at kennel club their TL of the wizard and the red pilgrim was incredible.
 
 ![](https://i.imgur.com/axGcMt2.png)
 

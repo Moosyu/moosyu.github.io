@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block content %}
-<input type="text" id="searchInput" placeholder="Search...">
+<input autocomplete="off" type="text" id="searchInput" placeholder="Search...">
 <div id="searchResults"></div>
 {{ content | safe }}
 <div class="pagination-container">

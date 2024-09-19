@@ -4,7 +4,7 @@ layout: "_layouts/blogs-layout.njk"
 header_img: "/assets/pseudoblog.gif"
 date: 2024-09-17
 tags:
-    - computers
+    - tech
 ---
 
 linux is my favourite OS, i like it quite a lot and yet i usually run windows 10 because linux is still tragically incapable of doing various things that i need. mainly i use windows 10 becuase programs i need for school cant be used on linux though. still waiting for the day libre office works well enough with word documents to actually be able to use it. gaming on linux used to also be a restriction but thanks to my beloved valve you can basically play every game worth playing and they generally run just as well or sometimes even better than on windows. i would like it to be easier to pirate things too but i doubt valve is gonna help me with that, my only hope is johncena141 (my goat).
