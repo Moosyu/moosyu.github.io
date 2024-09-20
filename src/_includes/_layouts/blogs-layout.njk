@@ -8,8 +8,54 @@
 {% if date %}
 last updated: {{ page.date.toLocaleDateString('en-US', { weekday: 'short', day: 'numeric', month: 'short' }).replace('.', '') }}
 {% endif %}
+{% for tag in tags %}
+      <a href="/tags/{{ tag }}">#{{ tag }}</a>
+{% endfor %}
 
 {{ content | safe }}
+
+{% set previousPost = collections.blog | getPreviousCollectionItem %}
+{% set nextPost = collections.blog | getNextCollectionItem %}
+
+{% if date %}
+<div class="pagination-container">
+    <div class="pagination-buttons left">
+        {% if page.url != collections.blog[0].url %}
+        <a href="{{ collections.blog[0].url }}">First</a>
+        {% else %}
+        <span>First</span>
+        {% endif %}
+
+        {% if previousPost %}
+        <a href="{{ previousPost.url }}">Previous</a>
+        {% else %}
+        <span>Previous</span>
+        {% endif %}
+    </div>
+
+<select id="pageDropdown" class="pageDropdownBlog" onchange="window.location.href=this.value;">
+    {% for post in collections.blog | reverse %}
+    <option value="{{ post.url }}" {% if page.url == post.url %} selected {% endif %}>
+        {{ post.data.title }}
+    </option>
+    {% endfor %}
+</select>
+
+    <div class="pagination-buttons right">
+        {% if nextPost %}
+        <a href="{{ nextPost.url }}">Next</a>
+        {% else %}
+        <span>Next</span>
+        {% endif %}
+
+        {% if page.url != collections.blog[collections.blog.length - 1].url %}
+        <a href="{{ collections.blog[collections.blog.length - 1].url }}">Last</a>
+        {% else %}
+        <span>Last</span>
+        {% endif %}
+    </div>
+</div>
+{% endif %}
 {% endblock %}
 
 {% set hasContent2 = true %}

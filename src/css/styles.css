@@ -29,7 +29,8 @@ html {
     --green: #c4ffcb;
     --blue: #add8ff;
     --purple: #ccafe9;
-
+    --pagination-container-base: #1a1c29;
+    --pagination-container-border: #89b4fa;
 }
 
 a {
@@ -467,14 +468,14 @@ animation: 2s bobleft ease-in-out infinite;
 
 .review_table th,
 .review_table td {
-    background-color: #1e2030;
+    background-color: var(--pagination-container-base);
     color: white;
     padding: 0.5em;
     border-collapse: collapse;
     overflow-wrap: break-word;
     font-size: calc(0.7vw + 0.7vh);
     width: 33%;
-    border: 2px solid #89b4fa;
+    border: 2px solid var(--pagination-container-border);
 }
 
 .image-td {
@@ -488,9 +489,9 @@ animation: 2s bobleft ease-in-out infinite;
     justify-content: space-between;
     gap: 10px;
     padding: 10px;
-    background-color: #1e2030;
+    background-color: var(--pagination-container-base);
     border-radius: 5px;
-    border: 2px solid #89b4fa;
+    border: 2px solid var(--pagination-container-border);
 }
 
 .pagination-buttons {
@@ -509,7 +510,7 @@ animation: 2s bobleft ease-in-out infinite;
 #pageDropdown {
     padding: 5px;
     border-radius: 5px;
-    border: 1px solid #89b4fa;
+    border: 1px solid var(--pagination-container-border);;
     background-color: #1e2030;
     color: white;
 }
@@ -636,9 +637,9 @@ video {
     width: 100%;
     padding: 12px 20px;
     display: inline-block;
-    border: 2px solid #89b4fa;
+    border: 2px solid var(--pagination-container-border);
     box-sizing: border-box;
-    background-color: #1e2030;
+    background-color: var(--pagination-container-base);
     color: white;
     margin-bottom: 10px;
 }
@@ -653,6 +654,10 @@ video {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+}
+
+.pageDropdownBlog {
+    display: none;
 }
 
 @media screen and (min-width: 800px) {
@@ -736,6 +741,10 @@ video {
 
     .bloons {
         width: 35%;
+        display: block;
+    }
+
+    .pageDropdownBlog {
         display: block;
     }
 }
