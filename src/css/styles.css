@@ -747,4 +747,14 @@ video {
     .pageDropdownBlog {
         display: block;
     }
+
+    .inspiration-content img {
+        width: 88px;
+        height: 31px;
+        transition: 0.4s;
+    }
+
+    .inspiration-content img:hover {
+        filter: brightness(70%);
+    }
 }

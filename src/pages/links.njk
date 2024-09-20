@@ -1,0 +1,66 @@
+---
+layout: "layout.njk"
+title: "links"
+header_img: "/assets/links.gif"
+side_nav_img: "/assets/IMG_2630.png"
+---
+
+<p>every page:</p>
+<ul>
+  {% for page in collections.allPages %}
+    <li style="margin: 10px; font-size: 18px; text-align: left; word-break: break-word;">
+      <a href="{{ page.url }}">{{ page.url }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
+<p class="collapsible">click this to show my inspirations page</p>
+<div class="inspiration-content">
+  <iframe src="/pages/inspirations/" name="frame" id="mainframe" style="max-height: 100%; width: 100%; border: 0;" height="500"></iframe>
+</div>
+
+<p class="collapsible">click for my button collection</p>
+<div class="inspiration-content">
+  <a href="https://rice.nekoweb.org/"><img src="https://rice.nekoweb.org/kamabokogonpachiro.gif" alt="rice"></a>
+  <a href="https://trademarkhell.net/"><img src="https://trademarkhell.net/tmsspecialhell.png" alt="trademarkization company of 2003"></a>
+  <a href="https://nuthead.neocities.org/"> <img src="/assets/nuthead.gif" alt="nuthead"></a>
+  <a href="https://mxeggsalad.nekoweb.org/"> <img src="/assets/mxeggsalad.nekoweb.org.gif" alt="mxeggsalad"></a>
+  <a href="https://confetticake.neocities.org/"><img src="https://confetticake.neocities.org/images/misc/button.gif" alt="confetticake"></a>
+  <a href="https://sad.ovh/"> <img src="/assets/sadovh.png" alt="sad.ovh"></a>
+  <a href="https://vegacollective.com/"> <img src="/assets/MeatleMania_2.gif" alt="vega collective"></a>
+  <a href="https://housepen.nekoweb.org/"> <img src="/assets/housepen.gif" alt="housepen"></a>
+  <a href="https://dimden.dev/"><img src="https://dimden.dev/images/88x31.gif" alt="dimden"></a>
+  <a href="https://zptr.cc/"><img src="/assets/@me.gif" alt="zeroptr"></a>
+  <a href="https://melankorin.net/"><img src="https://melankorin.net/assets/img/buttons/button-1.gif" alt="melan korin"></a>
+  <a href="https://obama.nekoweb.org/"> <img src="https://obama.nekoweb.org/obbutton.png" alt="barack"> </a>
+  <a href="https://scumpsmallbrain.neocities.org"> <img src="/assets/scumpshouse.gif" alt="scumps house"></a>
+  <a href="https://goblin-heart.net/sadgrl/"> <img src="/assets/sadgrl_online_learn.gif" alt="sadgrl"></a>
+  <a href="https://rainbowmango.neocities.org/"> <img src="/assets/theglittersalamango.gif" alt="glitter salamango"></a>
+  <a href="https://caitsith.neocities.org/"> <img src="/assets/caitsithbutton6.gif" alt="caitsith button"></a>
+  <a href="https://melonking.net/"> <img src="/assets/melonking.gif" alt="melonking"></a>
+  <a href="https://max.nekoweb.org/"> <img src="/assets/button.gif" alt="max"></a>
+  <a href="https://riversons.art/"> <img src="/assets/rivblink.gif" alt="riverson"></a>
+  <a href="https://nekoweb.org/"> <img src="/assets/button11.gif" alt="nekoweb"></a>
+  <a href="https://thinliquid.dev/"> <img src="/assets/thnlqd.png" alt="thinliquid"></a>
+  <a href="https://giikis2.neocities.org/"> <img src="https://giikis2.neocities.org/assets/badges/giikis2.png" width="88" height="31" alt="giiki"></a>
+  <a href="https://darkosparko.nekoweb.org/"><img style="width: 88px; height: 31px;" src="https://file.garden/ZmFfhSOgiFXI9ZBU/visuals/buttons/personal%20buttons/day-button.png"></a>
+  <a href="https://dogspit.nekoweb.org/"><img src="https://i.imgur.com/0pnWFCL.png" alt="dogspit"></a>
+  <a href="https://devastatia.com/"><img src="/assets/devastatia-88x31.png" alt="devastatia"></a>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
