@@ -1,0 +1,17 @@
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: deploy2nekoweb
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      # your build step here
+      - name: deploy2nekoweb
+        uses: deploy2nekoweb/deploy2nekoweb@v4
+        with:
+          nekoweb-api-key: ${{ secrets.NEKOWEB_API_KEY }}
+          nekoweb-cookie: ${{ secrets.NEKOWEB_COOKIE }}
+          nekoweb-folder: '/moosyu'
+          directory: './_site'
