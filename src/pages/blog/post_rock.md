@@ -1,0 +1,16 @@
+---
+title: "post rock is all overated trash"
+layout: "_layouts/blogs-layout.njk"
+header_img: "/assets/pseudoblog.gif"
+date: 2024-07-21
+tags:
+    - music
+---
+
+the title of this blog post is a lie, i actually really like some post rock albums, *ants from up here*, *deathconsciousness* and .... thats about it. it feels strange to call a genre of music "pretentious" because like how can a genre be pretentious, but thats the only way i can describe these almost silent twenty minute songs. im gonna be talking about *soundtracks for the blind* and *lift your skinny fists like antennas to heaven*, then compare them to the two i actually liked (*deathconsciousness* and *ants from up here* for the dementia patients out there).
+
+*soundtracks for the blind* is a boring two hour thirty slog recommended only by people who havent actually listened to it. this entire album felt like the ramblings of some crackhead on the sidewalk and people still suck it off like its the greatest thing they've ever heard. maybe im just too dumb to get it but apart from *helpless child* this is just boring dogshit. now lets compare that to a good album, ants from up here. now i actually dont have any idea what this album is about and im too busy eating ass and sucking toes to find up but what i can tell you is this album is fire. ever single song on this is playlist worthy and im sorry but if an album doesnt sound good i cant see how you can give it a high score.
+
+i actually like *lift your skinny fists like antennas to heaven* more than *soundtracks for the blind* by a decent bit, but thats entirely because *storm* actually sounds good and i like some of *sleep*. i do have a question though, why is every song 20 minutes long? smashing four songs together into a twenty minute one just seems pointless at best and a pain in the ass if you want to add a specific part to a playlist at worst. this album also suffers from ramblings with little to no intrumental over it. this album is not grand, devastating and beautiful fantano, you must have gone senile. if you want something that is actually grand, devastating and beautiful you can look no further than the sponsor of todays video, deathconsciousness! this album feels like its holding you against the ground with like 300kg weights the entire way through, their 6-10 minute long songs complement that and make feel like a constant stream of crushing sound.
+
+its kind of like the hit anime *evangelion*. everyone glazes that shit like crazy but then you ask them why they start sweating and visibly shaking, faced with the concept of needing to come up with an original opinion for the first time in their entire life. nobody actually likes you evangelion, its a show for babies where they try to shove symbolism even the creators dont understand in my face and try to force me to watch thirty other movies to explain why shinji freaks the fuck out in a chair for an episode. if i have to read an interview or read the genius page of your album to make it an interesting album its just  not good in the first place. an album should be a standalone product complemented by its meaning. i dont want to read the description of a banana to figure out why it should be in a museum. i want to look at the mona lisa and then find out da vinci wrote in reverse of whatever.
