@@ -1,0 +1,167 @@
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #cdd6f4;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #181825;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+/* https://prismjs.com/tokens.html */
+
+.token.keyword {
+	color: #bb9af7;
+}
+
+.token.builtin {
+	color: #f7768e;
+}
+
+.token.class-name {
+	color: #ff9e64;
+}
+
+.token.function {
+	color: #7aa2f7;
+}
+
+.token.boolean,
+.token.number {
+	color: #ff9e64;
+}
+
+.token.string,
+.token.char {
+	color: #9ece6a;
+}
+
+.token.symbol {
+	color: #bb9af7;
+}
+
+.token.regex {
+	color: #b4f9f8;
+}
+
+.token.url {
+	color: #9ece6a;
+}
+
+.token.operator {
+	color: #89ddff;
+}
+
+.token.variable {
+	color: #c0caf5;
+}
+
+.token.constant {
+	color: #ff9e64;
+}
+
+.token.property {
+	color: #7aa2f7;
+}
+
+.token.punctuation {
+	color: #a9b1d6;
+}
+
+.token.important {
+	color: #bb9af7;
+}
+
+.token.comment {
+	color: #565f89;
+}
+
+.token.tag {
+	color: #7aa2f7;
+}
+
+.token.attr-name {
+	color: #e0af68;
+}
+
+.token.attr-value {
+	color: #9ece6a;
+}
+
+.token.namespace {
+	color: #bb9af7;
+}
+
+.token.prolog,
+.token.doctype {
+	color: #bb9af7;
+}
+
+.token.cdata {
+	color: #73daca;
+}
+
+.token.entity {
+	color: #f7768e;
+}
+
+.token.atrule {
+	color: #bb9af7;
+}
+
+.token.selector {
+	color: #7aa2f7;
+}
+
+/* Diff */
+
+.token.deleted {
+	color: #f7768e;
+}
+
+.token.inserted {
+	color: #9ece6a;
+}
+
+
+/* Other */
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+

@@ -13,6 +13,7 @@
   "dependencies": {
     "@11ty/eleventy": "3.0.0-alpha.20",
     "@11ty/eleventy-plugin-rss": "^2.0.2",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "clean-css": "^5.3.3",
     "html-minifier-terser": "^7.2.0"
   }

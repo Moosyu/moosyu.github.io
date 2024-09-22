@@ -12,7 +12,7 @@ there are still points where it makes sense to me to use normal grammar, separat
 
 -Makes it clear a new sentence is starting, making it quicker and easy to read
 
-im sorry but if you cant tell if a sentence is starting from a full stop maybe youre just dumb. i dont know why my language must be this was to cater to stupid people who cant read. 
+im sorry but if you cant tell if a sentence is starting from a full stop maybe youre just dumb. i dont know why my language must be this was to cater to stupid people who cant read.
 
 thanks for coming to my ted talk, heres how i build my sentences:
 

@@ -1,11 +1,7 @@
 const htmlmin = require("html-minifier-terser");
 const CleanCSS = require("clean-css");
 const { feedPlugin } = require("@11ty/eleventy-plugin-rss");
-
-const fuseOptions = {
-  keys: ['type', 'score', 'name'],
-  threshold: 0.6, // Adjust sensitivity as needed
-};
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
@@ -45,6 +41,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("cssmin", function (code) {
     return new CleanCSS({}).minify(code).styles;
   });
+
+	eleventyConfig.addPlugin(syntaxHighlight);
 
 	eleventyConfig.addPlugin(feedPlugin, {
 		type: "rss",
