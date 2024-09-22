@@ -1,6 +1,6 @@
 ---
 title: "making a nekoweb elements.css file"
-layout: _layouts/guides-layout.njk
+date: 2024-08-31
 ---
 
 ![nekoweb screenshot](https://i.imgur.com/6Nu9YGf.png)

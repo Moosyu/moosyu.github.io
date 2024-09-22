@@ -1,6 +1,6 @@
 ---
 title: "making only the xfce panel transparent"
-layout: _layouts/guides-layout.njk
+date: 2023-01-04
 ---
 
 ![screenshot of the panel](https://i.imgur.com/Xfztj7c.png)

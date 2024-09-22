@@ -1,0 +1,258 @@
+---
+title: "pseudo blog"
+header_img: "/assets/title.gif"
+side_nav_img: "https://piclog.blue/latest.php?id=545"
+---
+
+{% extends "base.njk" %}
+
+{% set status = true %}
+{% block content %}
+      <hr>
+      <p style="font-size: 20px;">
+          <span style="color: #cba6f7;">#1 autist.</span> i seen a lot of these talking about how they <span style="color: #ef9f76;"> "made their site to escape social media"</span> or some shit but those same people still end
+          up using instagram anyway right after. i just like how someone can express their deepest darkest thought out to the world with the power of poorly done
+          html, css and ducktaped together js. if you found this through a fnf website youre looking for <span style="color: #a6d189; font-weight: bold;" >moosyar.github.io</span>,
+          it's an archive of my old fnf site. (idk if it works but im not updating it anymore).
+      </p>
+      <hr>
+      <p style="font-size: 20px;">
+          ive worked on and off on this for like three years, originally it was me trying to copy
+          <a href="https://displayman.neocities.org/" style="color: rgb(33, 33, 249); font-size: 21px;"><em>daniels virtual place</em></a>
+          but now its more like an imbred distant relative.
+          at this point its more like an <span class="beating">amalgam</span> of sites i like, but arent we all? hopefully the longer it lasts the more <span class="distinct">distinct</span> the style will become.
+          all the code is public and youre free to use it though it probably wasnt even mine in the first place.
+      </p>
+      <p style="font-size: 20px;">
+          to travel around my webpage use the navigiation bar on the right or click <a href="pages/sitemap/" style="color: #89b4fa; text-decoration: none;">links</a> to view every page !!
+      </p>
+      <hr>
+      <div style="gap: 20px; align-items: center; display: flex;">
+          <table class="front-page-table">
+              <tr>
+                  <td>favourite games?</td>
+                  <td>terraria, stardew valley, runescape, frog detective, bloons, gw2 and hollow knight</td>
+              </tr>
+              <tr>
+                  <td>favourite anime?</td>
+                  <td>cyberpunk edgerunners!! pretty easily the best anime ever made likely because it wasnt made by the japanese</td>
+              </tr>
+              <tr>
+                  <td>favourite show?</td>
+                  <td>greatest show ever made was adventure time im not nostalgic im just spitting facts. breaking bad also fire.</td>
+              </tr>
+              <tr>
+                  <td>favourite book?</td>
+                  <td>the drawing of the three. so good it reminded me that i could in fact read.</td>
+              </tr>
+              <tr>
+                  <td>favourite comic?</td>
+                  <td>vagabond!! some other bangers are dorohedoro, berserk and the climber.</td>
+              </tr>
+              <tr>
+                  <td>favourite album?</td>
+                  <td>igor. got me into listening to good music. mbdtf, the money store, tpab, chaser and ziggy stardust are also bangers.</td>
+              </tr>
+              <tr>
+                  <td>favourite movies?</td>
+                  <td>pulp fiction and intersellar are peak film and you gotta watch them both right now.</td>
+              </tr>
+          </table>
+          <img src="/assets/bloons.gif" alt="internet party" class="bloons">
+      </div>
+      <a title="click this to go to the github commit !!" class="tooltip-target" id="commitLink" href="#" target="_blank" style="text-decoration: none;">
+          <div style="display: flex; text-align: center; align-items: center; justify-content: center;">
+              <div style="color: #fc2b50; background-color: #150320; padding: .5rem; width: 100%; box-sizing: border-box; border: 6px double #fc2b50;">
+                  <p id="shortHash" style="color: #150320; background-color: #fc2b50; font-size: calc(1.3vw + 1.3vh); font-weight: bold">
+                  </p>
+                  <p id="commitLatest">
+                      <br>
+                      fetching!! (or its broken idk)
+                  </p>
+              </div>
+          </div>
+      </a>
+    <div id="c_widget"> </div>
+{% endblock %}
+
+{% set hasContent2 = true %}
+{% block content2 %}
+      <div class="adbox empty-box">
+          <div class="wavy-text">
+              <span>a</span>
+              <span>d</span>
+              <span>s</span>
+              <span>:</span>
+          </div>
+          <iframe width="180" height="180" style="border:none" src="https://dimden.neocities.org/navlink/" name="neolink" title="navlink ads"></iframe>
+      </div>
+      <div class="lastlisten-box empty-box">
+          <h2 style="color: rgba(114,135,253,1);">last listened to:</h2>
+          <div id="listening"></div>
+      </div>
+      <div class="empty-box">
+          <p style="color: white; text-align: center; margin: 0;">views on this site since 18/5/24:
+              <br>
+              <a href="https://www.cutercounter.com/" target="_blank">
+                  <img style="vertical-align:middle; width: 90%;"
+                      src="https://www.cutercounter.com/hits.php?id=hvvxpodan&nd=9&style=31" alt="counter">
+              </a>
+          </p>
+      </div>
+      <div style="text-align: center; vertical-align: middle;" class="empty-box">
+          <p style="margin: 0;">contact me on discord at memecompanies</p>
+          <img style="width:50%;" src="/assets/swirlCatppuccin.gif" alt="silly button">
+      </div>
+      <div style="padding-top: 10px; text-align: center;" class="empty-box">
+          <p style="font-size: 20px; font-weight: 1000;">webrings:</p>
+          <div>
+              <div id="nekowebring">
+                <table style="width: auto;">
+                  <tbody>
+                    <tr>
+                      <td class="webring-prev">
+                        <a href="https://moosyu.github.io/jsonStorage/nekoRing/redirect.html?to=prev&name=moosyu" target="_parent">
+                          <img src="/assets/prev-mauve.png" alt="Previous Site">
+                        </a>
+                      </td>
+                      <td style="text-align: center;" class="webring-info">
+                          <a href="https://webring.nekoweb.org/members" target="_parent">
+                            <img src="/assets/nekowebring-mauve-title.png" alt="NekoWebRing Index">
+                          </a>
+                          <br>
+                          <span class="webring-links">
+                            <a href="https://moosyu.github.io/jsonStorage/nekoRing/redirect.html?to=random&name=moosyu" target="_parent">
+                            <img src="/assets/cat-mauve-nod.gif" alt="Random Site">
+                          </a>
+                        </span>
+                      </td>
+                      <td class="webring-next">
+                        <a href="https://moosyu.github.io/jsonStorage/nekoRing/redirect.html?to=next&name=moosyu" target="_parent">
+                          <img src="/assets/prev-mauve.png" style="-webkit-transform: scaleX(-1); transform: scaleX(-1);" alt="Next Site">
+                        </a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div style="padding-top: 5px; color: #ff7598; font-family: ms gothic; background-color: #fff9ce; border: orange 1px solid; padding-bottom: 5px;" class="center">
+              <a href="https://eggring.neocities.org/"><img src="https://eggring.neocities.org/img/egg.gif" alt="eggring logo"></a>
+              <br>
+              <a href="https://eggring.neocities.org/">The Eggring</a>
+              <div style="padding-top: 2px;">
+                  <a href="https://moosyu.github.io/jsonStorage/eggRing/redirect.html?to=prev&name=moostyswixsite">prev</a> |
+                  <a href="https://moosyu.github.io/jsonStorage/eggRing/redirect.html?to=random&name=moostyswixsite">random</a> |
+                  <a href="https://moosyu.github.io/jsonStorage/eggRing/redirect.html?to=next&name=moostyswixsite">next</a>
+              </div>
+          </div>
+          <div style="width: 135px; display:block; margin: 0 auto; padding-top: 15px;">
+              <iframe style="border: none; width: 100%" src="https://neocities.jeith.com/wii-webring.html?site=https://moosyu.nekoweb.org&variant=standard" title="wiiring iframe">
+              </iframe>
+          </div>
+          <div id="neko-tag">
+              <div class="webring-bg">
+                  <div class="webring-wrapper">
+                    <div class="webring-flex">
+                      <div class="webring-prev">
+                        <a href="https://moosyu.github.io/jsonStorage/nekoTag/redirect.html?to=prev&name=moosyu" target="_parent">
+                          <img class="arrow-image" src="https://darkosparko.nekoweb.org/webrings/neko-tag/neko-tag-images/arrow-0970.png" style="transform: scaleX(-1);" alt="arrowleft">
+                        </a>
+                      </div>
+                      <div class="box">
+                        <div style="width: 80px; height: 80px;" id="moosyu">
+                          <div style="position: relative; top: 10px; right: 3px;">
+                            <p style="font-size: 16px;">moosyu's</p>
+                            <div class="wavy-title">
+                              <span>t</span>
+                              <span>i</span>
+                              <span>d</span>
+                              <span>a</span>
+                              <span>l</span>
+                            </div>
+                            <p style="font-size: 16px;">retreat</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="webring-next">
+                        <a href="https://moosyu.github.io/jsonStorage/nekoTag/redirect.html?to=next&name=moosyu" target="_parent">
+                          <img class="arrow-image" src="https://darkosparko.nekoweb.org/webrings/neko-tag/neko-tag-images/arrow-0970.png" alt="arrow right">
+                        </a>
+                      </div>
+                    </div>
+                      You are currently at coordinates <span style="font-weight: bold;">H15</span> on the map!
+                        <span class='webring-links'>
+                          <a href="https://moosyu.github.io/jsonStorage/nekoTag/redirect.html?to=random&name=moosyu">Random</a>
+                          <a href="https://darkosparko.nekoweb.org/webrings/neko-tag/neko-tag-index.html">Make Your Mark!</a>
+                          <br>
+                          <a href='https://garlic.garden/onionring/' target="_parent">What Is This?</a>
+                        </span>
+                  </div>
+                </div>
+          </div>
+          <div style="display: flex; flex-direction: column; margin-top: 15px; font-size: 16px;" class="rainbow-border">
+              <p class="rainbowUnder">
+                  <a href="https://webring.bucketfish.me/redirect.html?to=prev&name=moosyu">←</a>
+              </p>
+              <a class="rainbowUnder" href="https://webring.bucketfish.me" id="header">
+                  <span style="--n:-10000ms;">b</span>
+                  <span style="--n:-9900ms;">u</span>
+                  <span style="--n:-9800ms;">c</span>
+                  <span style="--n:-9700ms;">k</span>
+                  <span style="--n:-9600ms;">e</span>
+                  <span style="--n:-9500ms;">t</span>
+                  <span style="--n:-9400ms;"> </span>
+                  <br>
+                  <span style="--n:-9300ms;">w</span>
+                  <span style="--n:-9200ms;">e</span>
+                  <span style="--n:-9100ms;">b</span>
+                  <span style="--n:-9000ms;">r</span>
+                  <span style="--n:-8900ms;">i</span>
+                  <span style="--n:-8800ms;">n</span>
+                  <span style="--n:-8700ms;">g</span>
+              </a>
+              <p class="rainbowUnder">
+                  <a class="navig" href="https://webring.bucketfish.me/redirect.html?to=next&name=moosyu">→</a>
+              </p>
+          </div>
+      </div>
+      <div class="adbox empty-box" style="font-size: 18.5px;">
+          <p style="text-align: center; margin: 0;">currently stuck in my head:</p>
+          <div class="cd-rotate">
+              <img class="cd-image" loading="eager" alt="picture of cd">
+          </div>
+          <div class="cd-title"></div>
+          <div id="controls">
+              <div id="play-pause" onclick="playpauseTrack()">▶</div>
+          </div>
+          <div style="text-align: center; display: flex; flex-direction: column; align-items: center;">
+              <div class="linedup" style="text-align: center; display: flex; flex-direction: column; align-items: center;">
+                  <div style="display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 5px;">
+                      <p class="minus-symbol" onclick="minus10()">-</p>
+                      <input type="range" min="1" max="100" value="20" class="volume_slider" onchange="setVolume()" style="padding: 0px;">
+                      <p class="plus-symbol" onclick="plus10()">+</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    </div>
+<script src="js/musicPlayer.js"></script>
+<script src="js/lastFM.js"></script>
+<script src="js/comment-widget.js"></script>
+<!-- tooltip container (dont delete this) -->
+<div class="tooltip" id="tooltip"></div>
+<script src="js/tooltipper.js"></script>
+<script src="https://status.cafe/current-status.js?name=moosyu"></script>
+<script>
+  fetch('https://api.github.com/repos/Moosyu/moosyu.github.io/commits?per_page=1')
+      .then(res => res.json())
+      .then(res => {
+          let sha = res[0].sha;
+          let authorDate = new Date(res[0].commit.author.date);
+          document.getElementById('commitLatest').innerText = res[0].commit.message;
+          document.getElementById('shortHash').innerText = "latest commit:" + sha.substring(0, 7) + " on " + authorDate.toLocaleDateString('en-GB', { day: '2-digit', month: '2-digit', year: '2-digit' });
+          document.getElementById('commitLink').href = "https://github.com/Moosyu/moosyu.github.io/commit/" + sha
+      });
+</script>
+{% endblock %}

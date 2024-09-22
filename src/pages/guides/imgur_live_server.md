@@ -1,6 +1,6 @@
 ---
 title: "making imgur images load on live server"
-layout: _layouts/guides-layout.njk
+date: 2024-05-19
 ---
 
 imgur refuses to finish setting up their servers correctly so heres how you fix images from imgur not loading when you use liveserver

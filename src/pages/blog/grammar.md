@@ -1,7 +1,5 @@
 ---
 title: "and then i said grammar? i hardly know her!"
-layout: "_layouts/blogs-layout.njk"
-header_img: "/assets/pseudoblog.gif"
 date: 2024-09-21
 ---
 

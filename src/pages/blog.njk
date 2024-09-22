@@ -3,8 +3,6 @@ layout: "_layouts/blogs-layout.njk"
 title: "pseudo blog"
 header_img: "/assets/pseudoblog.gif"
 side_nav_img: "/assets/IMG_2638.png"
-content2: "<p>testing.</p>"
-
 ---
 
 <p>
@@ -14,6 +12,6 @@ content2: "<p>testing.</p>"
 <p>posts:</p>
 <ol>
   {% for blog in collections.blog | reverse %}
-    <li style="margin: 10px;"><a href="{{ blog.url }}">{{ blog.data.title }}</a></li>
+    <li style="margin: 10px;"><a href="{{ blog.url }}">{{ blog.data.title }}</a> <span style="color: #c6a0f6">{{ blog.date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }).replace('.', '') }}</span></li>
   {% endfor %}
 </ol>

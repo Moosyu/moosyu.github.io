@@ -1,0 +1,4 @@
+{
+    "layout": "_layouts/guides-layout.njk",
+    "tags": "guides"
+}

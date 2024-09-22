@@ -1,7 +1,5 @@
 ---
 title: "junji itou wouldnt know scary if it ____"
-layout: "_layouts/blogs-layout.njk"
-header_img: "/assets/pseudoblog.gif"
 date: 2024-09-21
 tags:
     - manga

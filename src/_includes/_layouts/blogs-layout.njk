@@ -6,10 +6,12 @@
 
 {% block content %}
 {% if date %}
-last updated: {{ page.date.toLocaleDateString('en-US', { weekday: 'short', day: 'numeric', month: 'short' }).replace('.', '') }}
+last updated: {{ page.date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }).replace('.', '') }}
 {% endif %}
 {% for tag in tags %}
-      <a href="/tags/{{ tag }}">#{{ tag }}</a>
+{% if tag != "blog" %}
+  <a href="/tags/{{ tag }}">#{{ tag }}</a>
+{% endif %}
 {% endfor %}
 
 {{ content | safe }}
@@ -33,13 +35,13 @@ last updated: {{ page.date.toLocaleDateString('en-US', { weekday: 'short', day: 
         {% endif %}
     </div>
 
-<select id="pageDropdown" class="pageDropdownBlog" onchange="window.location.href=this.value;">
-    {% for post in collections.blog | reverse %}
-    <option value="{{ post.url }}" {% if page.url == post.url %} selected {% endif %}>
-        {{ post.data.title }}
-    </option>
-    {% endfor %}
-</select>
+    <select id="pageDropdown" class="pageDropdownBlog" onchange="window.location.href=this.value;">
+        {% for post in collections.blog | reverse %}
+        <option value="{{ post.url }}" {% if page.url == post.url %} selected {% endif %}>
+            {{ post.data.title }}
+        </option>
+        {% endfor %}
+    </select>
 
     <div class="pagination-buttons right">
         {% if nextPost %}
@@ -60,10 +62,13 @@ last updated: {{ page.date.toLocaleDateString('en-US', { weekday: 'short', day: 
 
 {% set hasContent2 = true %}
 {% block content2 %}
-<p style="margin: 0; padding: 0; text-align: center; padding-top: 10px;">tags:</p>
-<ol style="padding-bottom: 10px;">
-    <li style="margin: 10px;"><a href="/tags/tech">tech</a></li>
-    <li style="margin: 10px;"><a href="/tags/music">music</a></li>
-    <li style="margin: 10px;"><a href="/tags/manga">manga</a></li>
-</ol>
+<div class="empty-box">
+    <p style="margin: 0; padding: 0; padding-top: 10px; padding-left: 10px;">tags:</p>
+    <ul style="padding-bottom: 10px; font-size: 18px;">
+        <li><a href="/tags/music">music</a></li>
+        <li><a href="/tags/manga">manga</a></li>
+        <li><a href="/tags/tech">tech</a></li>
+        <li><a href="/tags/web">web</a></li>
+    </ul>
+</div>
 {% endblock %}

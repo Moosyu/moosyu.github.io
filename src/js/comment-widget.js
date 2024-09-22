@@ -353,7 +353,7 @@ function displayComments(comments) {
         // Page number display
         let pageInfo = document.createElement('span');
         pageInfo.id = 'c_pageInfo';
-        pageInfo.innerHTML = `1/11`;
+        pageInfo.innerHTML = `1/${v_amountOfPages}`;
         pagination.appendChild(pageInfo);
 
         // Right button

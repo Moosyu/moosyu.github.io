@@ -27,9 +27,10 @@
     </div>
         <div class="side-box">
           <div class="box box1">
-            <nav class="boxes-r">
+            <div class="empty-box">
+            <nav>
                 <p class="title-rain">navbar:</p>
-                <ul>
+                <ul class="navbar-list">
                     <li class="hoverli"><a class="hom" href="/">home</a></li>
                     <li class="hoverli"><a class="rev" href="/pages/reviews/">reviews</a></li>
                     <li class="hoverli"><a class="ramb" href="/pages/ramblings/">ramblings</a></li>
@@ -38,19 +39,26 @@
                     <li class="hoverli"><a class="map" href="/pages/links/">links</a></li>
                 </ul>
             </nav>
-            <div class="statuscafe-box boxes-r">
             {% if side_nav_img %}
             <img src="{{ side_nav_img }}" style="display: block; margin-left: auto; margin-right: auto; max-width: 170px; padding-top: 15px; padding-bottom: 15px;" alt="silly little image">
             {% else %}
             <img src="/assets/noah.jpeg" style="display: block; margin-left: auto; margin-right: auto; max-width: 170px; padding-top: 15px; padding-bottom: 15px;" alt="silly little image">
             {% endif %}
+            {% if status %}
+            <div style="display: flex; align-items:center; padding: 10px; margin: 0; font-size: 14px;">
+              <div id="statuscafe">
+                  <div id="statuscafe-username"></div>
+                  <div id="statuscafe-content">
+                      fetching status.cafe or it broke who knows (doesnt work on neocities)
+                  </div>
+              </div>
+            </div>
+            {% endif %}
             </div>
           </div>
         {% if hasContent2 %}
-        <div class="box box2">
-            <div class="boxes-r">
+        <div class="box2">
             {% block content2 %}{% endblock %}
-            </div>
         </div>
         {% endif %}
     </div>

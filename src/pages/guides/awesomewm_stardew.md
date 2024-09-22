@@ -1,6 +1,6 @@
 ---
 title: "stardew valley doesnt show up on awesomewm but its running"
-layout: _layouts/guides-layout.njk
+date: 2022-12-07
 ---
 
 sometimes if you change stardew valleys settings on awesomewm (and probably other tiling window managers) stardew valley just disappears and on the next launch it plays sound but never pops up

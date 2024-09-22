@@ -23,14 +23,6 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addCollection("allPages", function (collectionApi) {
     return collectionApi.getAll();
-    });
-
-  eleventyConfig.addCollection("guides", function(collectionApi) {
-    return collectionApi.getFilteredByGlob("src/pages/guides/**/*.md");
-  });
-
-  eleventyConfig.addCollection("blog", function(collectionApi) {
-    return collectionApi.getFilteredByGlob("src/pages/blog/**/*.md");
   });
 
   eleventyConfig.addTransform("htmlmin", function (content) {

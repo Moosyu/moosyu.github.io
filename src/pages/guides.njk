@@ -10,7 +10,7 @@ side_nav_img: "/assets/minion.jpg"
     i cant find an answer to online then i find the answer ill put it down
 </p>
 <ol>
-  {% for guide in collections.guides %}
-    <li style="margin: 10px;"><a href="{{ guide.url }}">{{ guide.data.title }}</a></li>
+  {% for guide in collections.guides | reverse %}
+    <li style="margin: 10px;"><a href="{{ guide.url }}">{{ guide.data.title }}</a> <span style="color: #c6a0f6">{{ guide.date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }).replace('.', '') }}</span></li>
   {% endfor %}
 </ol>

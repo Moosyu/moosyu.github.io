@@ -1,6 +1,6 @@
 ---
 title: "everything is tiny after installing awesomewm"
-layout: _layouts/guides-layout.njk
+date: 2022-12-07
 ---
 
 ![picture of it](https://i.redd.it/p8k2wq7ntxv91.png)

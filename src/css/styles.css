@@ -47,7 +47,8 @@ ol {
 }
 
 .box {
-    padding: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
 }
 
 .side-box {
@@ -60,17 +61,22 @@ ol {
 
 .box2 {
     order: 3;
+    padding-left: 10px;
 }
 
 .bloons {
     display: none;
 }
 
-ul {
+.navbar-list {
     list-style-type: none;
     padding: 0;
     margin: 0;
     text-align: center;
+    font-size: 18px;
+}
+
+ul {
     font-size: 18px;
 }
 
@@ -104,7 +110,6 @@ ul {
     text-align: center;
     font-size: calc(1vw + 1vh);
     font-family: Tahoma;
-    margin-bottom: 15px;
 }
 
 .wavy-text {
@@ -390,15 +395,12 @@ animation: 2s bobleft ease-in-out infinite;
     left: 50%;
     transform: translateX(-50%);
     transition: width 0.2s ease-in-out;
-    }
-
-.boxes-r {
-    background-color: var(--base);
-    color: white;
 }
 
-.statuscafe-box {
+.empty-box {
+    background-color: var(--base);
     color: white;
+    margin-bottom: 15px;
 }
 
 .lastlisten-box {

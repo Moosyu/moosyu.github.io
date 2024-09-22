@@ -1,7 +1,5 @@
 ---
 title: "breakcore and my unending hate for sewerslvt/cynthoni"
-layout: "_layouts/blogs-layout.njk"
-header_img: "/assets/pseudoblog.gif"
 date: 2024-07-17
 tags:
     - music

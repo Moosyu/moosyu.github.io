@@ -1,6 +1,6 @@
 ---
 title: "disabling brave ads on new tab"
-layout: _layouts/guides-layout.njk
+date: 2023-11-11
 ---
 
 turn this off

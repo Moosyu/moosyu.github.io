@@ -1,6 +1,6 @@
 ---
 title: "running runelite off a usb flash drive"
-layout: _layouts/guides-layout.njk
+date: 2022-12-07
 ---
 
 (this guide assumes you're using windows)

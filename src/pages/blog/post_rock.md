@@ -1,8 +1,6 @@
 ---
 title: "post rock is all overated trash"
-layout: "_layouts/blogs-layout.njk"
-header_img: "/assets/pseudoblog.gif"
-date: 2024-07-21
+date: 2024-09-21
 tags:
     - music
 ---
