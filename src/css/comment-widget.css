@@ -46,7 +46,7 @@
         .c-text - The actual text body of the comment/reply (a <p> element)
         .c-replyButton - All reply <button>s
         .c-expandButton - The <button>s to reveal/hide replies (These only show if s_collapsedReplies is set to true in the JS)
-        
+
         #c_pagination - The <div> wrapper for the pagination at the bottom (Only shows if there's more than one page)
         .c-paginationButton - Both left and right directional <button>s
         #c_leftButton - The left <button>
@@ -57,8 +57,6 @@
 #c_widget {
     box-sizing: border-box;
     height: 100%;
-    overflow: auto;
-    padding: 20px;
     background-attachment: fixed;
     font-family: 'Courier New';
     font-size: 16px;

@@ -10,9 +10,9 @@ tags:
     {{ prismCss | cssmin | safe }}
 </style>
 
-im was gonna try to no make this too dev bloggy because every blog seems to be a devblog already but i just really wanted to talk about my one true love, eleventy/11ty.
+im was gonna try to no make this too dev bloggy because every blog seems to be a dev blog already but i just really wanted to talk about my one true love, eleventy/11ty.
 
-disclaimer: ive only used html and now 11ty so like for all i know react, next, astro, hugo etc might just be better than 11ty in every way but im just gonna talk about 11ty like its the best because its definitly better than html
+disclaimer: ive only used html and now 11ty so like for all i know react, next, astro, hugo etc might just be better than 11ty in every way but im just gonna talk about 11ty like its the best because its definitely better than html
 
 you know how when you make an html page and you have to write one of these out for the 600th time:
 ```html
@@ -38,7 +38,7 @@ layout: "layout.njk"
 ---
 ```
 
-and thats all you need to have a blank page like this ready to put content on (i mean youre just gonna get a blank page but you can stilise the template obv):
+and thats all you need to have a blank page like this ready to put content on (i mean youre just gonna get a blank page but you can stylise the template obv):
 
 ![screenshot of base without content](https://i.imgur.com/BkJyLQY.png)
 
