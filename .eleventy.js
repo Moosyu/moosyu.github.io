@@ -2,6 +2,8 @@ const htmlmin = require("html-minifier-terser");
 const CleanCSS = require("clean-css");
 const { feedPlugin } = require("@11ty/eleventy-plugin-rss");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const markdownItKatex = require("@vscode/markdown-it-katex").default;
+const markdownIt = require("markdown-it");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
@@ -20,7 +22,6 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addCollection("allPages", function (collectionApi) {
     return collectionApi.getAll();
   });
-
   eleventyConfig.addTransform("htmlmin", function (content) {
     if ((this.page.outputPath || "").endsWith(".html")) {
       let minified = htmlmin.minify(content, {
@@ -32,19 +33,20 @@ module.exports = function(eleventyConfig) {
       });
       return minified;
     }
-
     // if not an html output, return content as-is
     return content;
   });
-
   // had to add a filter bc im dumb or something and couldnt figure out how to deal with files being passed through
   eleventyConfig.addFilter("cssmin", function (code) {
     return new CleanCSS({}).minify(code).styles;
   });
-
 	eleventyConfig.addPlugin(syntaxHighlight);
-
-	eleventyConfig.addPlugin(feedPlugin, {
+  const md = markdownIt({
+    html: true,
+    linkify: true,
+  }).use(markdownItKatex);
+  eleventyConfig.setLibrary("md", md);
+  eleventyConfig.addPlugin(feedPlugin, {
 		type: "rss",
 		outputPath: "/feed.xml",
 		collection: {

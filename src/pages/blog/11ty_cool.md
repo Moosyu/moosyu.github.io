@@ -5,6 +5,9 @@ tags:
     - web
 ---
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.min.css"/>
+
 {% set prismCss %} {% include "../../css/prismTheme.css" %} {% endset %}
 <style>
     {{ prismCss | cssmin | safe }}
@@ -56,9 +59,8 @@ pagination:
     alias: items
     addAllPagesToCollections: true
 ---
-
+{% raw %}
 <tbody>
-    {% raw %}
     {% for item in items %}
     <tr id="{{ loop.index0 }}">
         <td style="text-align: center;">
@@ -87,12 +89,22 @@ pagination:
         </td>
     </tr>
     {% endfor %}
-    {% endraw %}
 </tbody>
+{% endraw %}
 ```
 
 this is the something that when i was using html completely had me stumped and just the making of the table generator took hours but 11ty let me do it in straight minutes (though it was probably easier as i had already made something like it in js).
 
 11ty also has a bunch of really cool plugins to speed up your operations. the ones im using right now are [RSS](https://www.11ty.dev/docs/plugins/rss/) which automatically generates my RSS feed and [11ty syntax highlighting](https://www.11ty.dev/docs/plugins/syntaxhighlight/) which you could probably take a guess at what it does. im also using the npm packages [clean-css](https://www.npmjs.com/package/clean-css) and [html-minifier-terser](https://www.npmjs.com/package/html-minifier-terser). at some point i want to figure out [11ty image](https://www.11ty.dev/docs/plugins/image/) which generates many images of various sizes to speed up page loads, which will do a lot more for my loading speeds than saving 20kb with my minifiers. it also caches so i wont end up with 6 hour long build times. [fetch](https://www.11ty.dev/docs/plugins/fetch/) also looks pretty cool but i dont really have a use for it right now as status.cafe doesnt seem to be rate limiting my constant reloads just yet.
 
-the last thing i want to say before i end this suck off is that 11ty has really nice [markdown support](https://www.11ty.dev/docs/languages/markdown/), i write every blog post, guide and rambling in markdown, its a massive time saver and works perfectly. aside from markdown it seems to have [support for everything](https://www.11ty.dev/docs/languages/) on earth and if it doesnt have what you want you can make a custom template language. its insane. if you have any interest in website building i reckon you should at least give 11ty a shot, its really cool and pretty easy to get the hang of with the help of its [great docs](https://www.11ty.dev/docs/)
+the last thing i want to say before i end this suck off is that 11ty has really nice [markdown support](https://www.11ty.dev/docs/languages/markdown/), i write every blog post, guide and rambling in markdown, its a massive time saver and works perfectly. aside from markdown it seems to have [support for everything](https://www.11ty.dev/docs/languages/) on earth and if it doesnt have what you want you can make a custom template language. its insane. if you have any interest in website building i reckon you should at least give 11ty a shot, its really cool and pretty easy to get the hang of with the help of its [great docs](https://www.11ty.dev/docs/).
+
+<p style="text-align:center;">(( ( update 23/09/24 ) ))</p>
+
+uhh a day after writing this ive decided to add [@vscode/markdown-it-katex](https://www.npmjs.com/package/@vscode/markdown-it-katex) so i can write cool maths equations like this (without any client side js):
+
+$\mathrm{e} = \sum_{n=0}^{\infty} \dfrac{1}{n!}$
+
+its faster than mathjax (apparently, the jsperf link they gave to show that is dead) so ill just take their word for it, im using the vscode fork because it seems to be the only one getting updated and the original has a security vulnerability.
+
+[i wrote a tutorial](/pages/guides/) on how to add it in my guides page. im also considering markdown-it-anchor, markdown-it-footnote and markdown-it-emoji so ill just end up with a fully kitted out 11ty markdown setup.

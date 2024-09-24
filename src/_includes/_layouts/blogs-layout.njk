@@ -6,7 +6,7 @@
 
 {% block content %}
 {% if date %}
-last updated: {{ page.date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }).replace('.', '') }}
+date created: {{ page.date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }).replace('.', '') }}
 {% endif %}
 {% for tag in tags %}
 {% if tag != "blog" %}
@@ -66,9 +66,9 @@ last updated: {{ page.date.toLocaleDateString('en-US', { month: 'short', day: 'n
     <p style="margin: 0; padding: 0; padding-top: 10px; padding-left: 10px;">tags:</p>
     <ul style="padding-bottom: 10px; font-size: 18px;">
         <li><a href="/tags/music">music</a></li>
+        <li><a href="/tags/web">web</a></li>
         <li><a href="/tags/manga">manga</a></li>
         <li><a href="/tags/tech">tech</a></li>
-        <li><a href="/tags/web">web</a></li>
     </ul>
 </div>
 {% endblock %}

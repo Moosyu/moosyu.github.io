@@ -11,7 +11,7 @@ mods i use on every playthrough, other mods may be added on top, the 🌟 means 
 
 
 ## hypixel skyblock:
-last updated 22/9/24
+last updated 22/09/24
 
 * [skytils](https://github.com/Skytils/SkytilsMod/releases/) 🌟
 
@@ -34,7 +34,7 @@ last updated 22/9/24
 * [optifine](https://optifine.net/adloadx?f=OptiFine_1.8.9_HD_U_L5.jar) 🌟
 
 ## terraria:
-last updated 22/9/24
+last updated 23/09/24
 
 ### ui
 
@@ -68,13 +68,17 @@ last updated 22/9/24
 
 ### content
 
-* [fargos souls mod](https://mirror.sgkoi.dev/Mods/Details/FargowiltasSouls) + [fargos souls mod dlc](https://mirror.sgkoi.dev/Mods/Details/FargowiltasSoulsDLC) <-- only add the dlc if also using calamity
+* [fargos souls mod](https://mirror.sgkoi.dev/Mods/Details/FargowiltasSouls)
 
-* [calamity](https://mirror.sgkoi.dev/Mods/Details/CalamityMod) + [calamity music](https://mirror.sgkoi.dev/Mods/Details/CalamityModMusic) <-- might take out if there isnt enough ram or there is another content mod
+  * [fargos souls mod dlc](https://mirror.sgkoi.dev/Mods/Details/FargowiltasSoulsDLC) <-- only add the dlc if also using calamity
+
+* [calamity](https://mirror.sgkoi.dev/Mods/Details/CalamityMod)
+
+  * [calamity music](https://mirror.sgkoi.dev/Mods/Details/CalamityModMusic) <-- might take out if there isnt enough ram or there is another content mod
 
 ## stardew valley
 
-last updated 22/9/24
+last updated 22/09/24
 
 ### ui
 
