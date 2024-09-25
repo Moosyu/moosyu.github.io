@@ -1,5 +1,191 @@
 [
     {
+        "name": "pastpresentfuture",
+        "artist": "Kittydog",
+        "score": 7.2,
+        "image": "",
+        "description": "the only good furry autotuney album if you get me. death at your expense was really good. it is good that this album is short though as it probably couldnt have kept me engaged for more than like 30 minutes."
+    },
+    {
+        "name": "CHIROPTERA MATIERE PREMIERE",
+        "artist": "Thomas Bangalter",
+        "score": 2,
+        "image": "",
+        "description": "this felt like one of those one hour of silence interrupted by falling pipes videos"
+    },
+    {
+        "name": "The College Dropout",
+        "artist": "Kanye West",
+        "score": 9.2,
+        "image": "https://i.imgur.com/foThdCp.png",
+        "imageB": "https://i.imgur.com/LXng9Uq.png",
+        "description": "better than graduation straight up, every song on here is good and even the skits arent bad. it is kind of sad to click on the people featuring on some of the songs and see their music careers went nowhere though."
+    },
+    {
+        "name": "Graduation",
+        "artist": "Kanye West",
+        "score": 8.6,
+        "image": "https://i.imgur.com/Gof7zHw.png",
+        "imageB": "https://i.imgur.com/vWUgPmH.png",
+        "description": "the first kanye i ever heard was graduation after he went all nazi and shit and i wasnt disappointed. strong, barry bonds and drunk and hot girls kind of sucked though i dont know, the other songs made up for it easily though. i need bittersweet poetry on spotify."
+    },
+    {
+        "name": "Watch the Throne",
+        "artist": "JAY-Z & Kanye West",
+        "score": 3.1,
+        "image": "",
+        "description": "this album sucks ass, the best song on this is otis and even then that song isnt very good"
+    },
+    {
+        "name": "The Life of Pablo",
+        "artist": "Kanye West",
+        "score": 9.3,
+        "image": "https://i.imgur.com/HcceyVr.png",
+        "imageB": "https://i.imgur.com/2730HZm.png",
+        "description": "I FEEL LIKE PABLO WHEN IM WORKING ON MY SHOES I FEEL LIKE PABLO WHEN I SEE ME ON THE NEWS I FEEL LIKE PABLO WHEN IM WORKING ON MY HOUSE TELL EM THE PARTIES IN HERE WE DONT NEED TO GO OUT!! NO MORE PARTIES IN LA IS THE BEST KANYE SONG OF ALL TIME !!!"
+    },
+    {
+        "name": "ye",
+        "artist": "Kanye West",
+        "score": 8.7,
+        "image": "https://i.imgur.com/a8MSGFx.png",
+        "imageB": "https://i.imgur.com/hUtgPPE.png",
+        "description": "last good album this man made. every song on here slaps and ghost town is one of the best hes ever made straight up. cover also goes hard."
+    },
+    {
+        "name": "Vultures 2",
+        "artist": "Kanye West",
+        "score": 1.4,
+        "image": "",
+        "description": "yowch, thats gonna leave a mark. this album was so boring it took me four weeks to finish a 49 minute long album. the best songs on here were time moving slow, promotion and 530 and one of them is an old song he released with no changes and the other two i just have to pretend i cant hear the lyrics. reach for the popcorn, oops thats my cock was the best part of the album though."
+    },
+    {
+        "name": "Vultures",
+        "artist": "Kanye West",
+        "score": 4.3,
+        "image": "",
+        "description": "nazi stuff aside this album just sucked, it had so many misses. i did like stars, burn and back to me though so thats something but i miss when kanye could make music."
+    },
+    {
+        "name": "Intro Bonito",
+        "artist": "Kero Kero Bonito",
+        "score": 4.9,
+        "image": "",
+        "description": "sorry kkb this album was kind of bad, there werent many aggressively bad songs (except for cat vs dog) but the only memorable ones were intro bonito and sick beat."
+    },
+    {
+        "name": "Melt My Eyez See Your Future (The Extended Edition)",
+        "artist": "Denzel Curry",
+        "score": 9.3,
+        "image": "https://i.imgur.com/TOYWsoF.png",
+        "description": "holy shit have sexual intercourse with me denzel curry i love you so much. the extra tracks are all so jazzy and sometimes actually better than the original versions which i already loved (especially melt session #1 cold blooded version, one of the best songs of all time i swear)."
+    },
+    {
+        "name": "143",
+        "artist": "Katy Perry",
+        "score": 3,
+        "image": "",
+        "description": "oml jid please stop featuring in dogshit youre hurting me"
+    },
+    {
+        "name": "児童カルテ",
+        "artist": "神聖かまってちゃん [Shinsei Kamattechan]",
+        "score": 4.3,
+        "image": "",
+        "description": "boring j-pop with a side of a song about a girl killing herself that makes people pretend this album sounds good"
+    },
+    {
+        "name": "Are You Experienced",
+        "artist": "Jimi Hendrix",
+        "score": 7.6,
+        "image": "",
+        "description": "i really like this album and manic depression is my favourite jimi hendrix song but holy shit i hate how they made some instruments just play out the left ear in the 60s, my ear is fucked or something so its like physically painful to hear this album without mono. -1 point."
+    },
+    {
+        "name": "3 + 5",
+        "artist": "Melt-Banana",
+        "score": 6.8,
+        "image": "",
+        "description": "it was certainly noisy though somehow still got a little boring and repetitive even at 24 minutes long."
+    },
+    {
+        "name": "BLAME IT ON BABY",
+        "artist": "Da Baby",
+        "score": 5.5,
+        "image": "",
+        "description": "this album is like a rollercoaster but like a roller coaster that launches you to your death halfway through. the first seven songs were really good and then they hit me with back to back to back to back to back to back to back dogshit."
+    },
+    {
+        "name": "Baby On Baby",
+        "artist": "Da Baby",
+        "score": 3.4,
+        "image": "",
+        "description": "goin baby goes hard its really good i swear !! the rest of it sucks ass though so like -4 points."
+    },
+    {
+        "name": "Future Nostalgia",
+        "artist": "Dua Lipa",
+        "score": 7.9,
+        "image": "",
+        "description": "if this didnt have the last two tracks it would have been the best dance pop album since michael jackson. tragic that da baby peaked in someone elses album though."
+    },
+    {
+        "name": "Radical Optimism (Extended Versions)",
+        "artist": "Dua Lipa",
+        "score": 5,
+        "image": "",
+        "description": "i havent listened to the original yet but i heard this was better so i listened to this instead and holy shit this was forgettable, this is such a boring pop album in which dua lipa does nothing interesting or new. i just want another future nostalgia level project please god"
+    },
+    {
+        "name": "Nothing Was The Same",
+        "artist": "Drake",
+        "score": 7.8,
+        "image": "",
+        "description": "best album drakes ever made, a few misses for me but it had so much great shit, especially tuscan leather (incredible opener) and pound cake / paris morton music 2 (incredible closer)"
+    },
+    {
+        "name": "The Dangers In My Heart (Original TV Anime Soundtrack)",
+        "artist": "牛尾憲輔 [Kensuke Ushio]",
+        "score": 2,
+        "image": "",
+        "description": "trash soundtrack for a trash show. mr kensuke has never made a good soundtrack in his entire life and is the worst part of every show hes in. worst part of silent voice, vorst part of csm and worst part of devilman. stop hiring this man please."
+    },
+    {
+        "name": "The Glow, Pt. 2",
+        "artist": "The Microphones",
+        "score": 6.2,
+        "image": "",
+        "description": "never caught my attention in its entire one hour, it was just more like background noise or something. i dont know why people love this so much, maybe ill need to relisten at some point."
+    },
+    {
+        "name": "A Promise",
+        "artist": "Xiu Xiu",
+        "score": 7.2,
+        "image": "",
+        "description": "album was good sometimes and boring other times but apistat commander was so good holy shit, might be a top 50."
+    },
+    {
+        "name": "100$",
+        "artist": "Løvesick",
+        "score": 4,
+        "image": "",
+        "description": "i cant wait to tell my friend the song he likes sucks. im going to wait to meet him face to face again to break this to him."
+    },
+    {
+        "name": "All Born Screaming",
+        "artist": "St. Vincent",
+        "score": 7,
+        "image": "",
+        "description": "my first time listening to st vincent and it was kind of underwhelming, it was good dont get me wrong but it just didnt stick with me like it did for a lot of other people."
+    },
+    {
+        "name": "Let's Get Retarded",
+        "artist": "The Black Eyed Peas",
+        "score": 7,
+        "image": "",
+        "description": "whoever removed this from spotify go fuck yourself this goes hard and lets get started is infinitely less funny. i dont even think this is ableist, they arent targetting anyone they are just silly little goobers and eeryone freaked the fuck out."
+    },
+    {
         "name": "A Moon Shaped Pool",
         "artist": "Radiohead",
         "score": 7.7,
@@ -202,7 +388,7 @@
     {
         "name": "VOLCANIC BIRD ENEMY AND THE VOICED CONCERN",
         "artist": "Lil Ugly Mane",
-        "score": 8.9,
+        "score": 9.6,
         "image": "https://i.imgur.com/6aisysl.png",
         "imageB": "https://i.imgur.com/pXWAzyV.jpeg",
         "description": "depressing, soothing album that tricked me into thinking it was just gonna be some wacky hiphop album. this is the last thing i expected someone called lil ugly mane to release and the album cover is surely in the competiton for top 10 all time."
@@ -1479,7 +1665,7 @@
         "score": 10,
         "image": "https://i.imgur.com/wQc2HIF.jpeg",
         "imageB": "https://i.imgur.com/1LLx4P0.png",
-        "description": "best nicki minaj verse ever on monster, best rick ross verse on devil in a new dress and runaway is probably my favourite song ever. listen to it if you havent yet. the album art is also iconic and recognisable so its pretty cool to have."
+        "description": "best nicki minaj verse ever on monster, best rick ross verse on devil in a new dress and runaway is one of my favourite songs ever. listen to it if you havent yet. the album art is also iconic and recognisable so its pretty cool to have."
     },
     {
         "name": "Ziggy Stardust and the Spider From Mars",

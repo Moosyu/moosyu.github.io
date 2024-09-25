@@ -1,11 +1,16 @@
 [
       {
             "type": "Anime",
+            "name": "The Dangers In My Heart",
+            "score": 2.6,
+            "description": "the generic loser dates popular girl romance anime with an increase in needless edginess and a simultaneously forgettable but also annoying soundtrack."
+      },
+      {
+            "type": "Anime",
             "name": "Lucky☆Star",
             "score": 4.1,
             "description": "very popular in terminally online sections of the internet, i can safely say that its not funny though and as the comedy police my word is law."
       },
-
       {
             "type": "Anime",
             "name": "Assassination Classroom",
