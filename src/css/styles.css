@@ -1,19 +1,9 @@
 * {
     font-family: monospace;
-    scrollbar-gutter: stable; /* makes the layout not shift when there is not a scrollbar. doesnt work on safari but idc just dont use safari ig */
 }
 
 html {
     background: #1ca3ec url("/assets/d_wall.jpg"); /* the #1ca3ec is there to avoid the flashbang when you load a page. id like to find a better fix to that at some point though */
-}
-
-::-webkit-scrollbar {
-    width: 12px;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 2.5px;
 }
 
 :root {
@@ -47,7 +37,6 @@ ol {
 }
 
 .box {
-    padding-left: 10px;
     padding-top: 5px;
 }
 
@@ -61,7 +50,6 @@ ol {
 
 .box2 {
     order: 3;
-    padding-left: 10px;
 }
 
 .bloons {
@@ -113,7 +101,7 @@ ul {
 }
 
 .wavy-text {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 1000;
     overflow: hidden;
     background-size: 200% auto;
@@ -400,7 +388,6 @@ animation: 2s bobleft ease-in-out infinite;
 .empty-box {
     background-color: var(--base);
     color: white;
-    margin-bottom: 15px;
 }
 
 .lastlisten-box {
@@ -419,8 +406,6 @@ animation: 2s bobleft ease-in-out infinite;
 }
 
 .main-box {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
-    margin-top: 10px;
     color: white;
     background-color: var(--base);
     padding: 10px;
@@ -671,6 +656,8 @@ video {
         order: 0;
         flex: 1;
         min-width: 350px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+        margin-top: 10px;
     }
 
     .container {
@@ -685,6 +672,10 @@ video {
     .box1, .box2 {
         order: 0;
         max-width: 200px; /* making sure the navbar stays as a column. */
+    }
+
+    .box, .box2 {
+        padding-left: 10px;
     }
 
     body {
@@ -758,5 +749,22 @@ video {
 
     .inspiration-content img:hover {
         filter: brightness(70%);
+    }
+
+    * {
+        scrollbar-gutter: stable; /* makes the layout not shift when there is not a scrollbar. doesnt work on safari but idc just dont use safari ig */
+    }
+
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 2.5px;
+    }
+
+    .empty-box {
+    margin-bottom: 15px;
     }
 }
