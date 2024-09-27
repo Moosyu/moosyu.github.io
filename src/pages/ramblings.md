@@ -15,4 +15,4 @@ this is where im gonna write all the random shit i think that isnt really cohere
 
 ![](/assets/fredrei.jpg)
 ![](/assets/GSycK4fW8AAgtal.jpg)
-![](/assets/GLxjAMnXUAA_6_F.webp)
+![](/assets/GLxjAMnXUAA_6_F.avif)

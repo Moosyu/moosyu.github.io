@@ -3,7 +3,7 @@
 }
 
 html {
-    background: #1ca3ec url("/assets/d_wall.jpg"); /* the #1ca3ec is there to avoid the flashbang when you load a page. id like to find a better fix to that at some point though */
+    background: #1ca3ec url("/assets/wall.jpg"); /* the #1ca3ec is there to avoid the flashbang when you load a page. id like to find a better fix to that at some point though */
 }
 
 :root {
@@ -691,7 +691,7 @@ video {
     }
 
     .rev:hover {
-        background-image: url("/assets/revBack.png");
+        background-image: url("/assets/revBack.avif");
         border-radius: inherit;
     }
 
@@ -701,12 +701,12 @@ video {
     }
 
     .guide:hover {
-        background-image: url("/assets/guideBack.png");
+        background-image: url("/assets/guideBack.avif");
         border-radius: inherit;
     }
 
     .blog:hover {
-        background-image: url("/assets/blogBack.png");
+        background-image: url("/assets/blogBack.avif");
         border-radius: inherit;
     }
 
@@ -716,7 +716,7 @@ video {
     }
 
     .hom:hover {
-        background-image: url("/assets/homeBack.png");
+        background-image: url("/assets/homeBack.avif");
     }
 
     .tooltip {
