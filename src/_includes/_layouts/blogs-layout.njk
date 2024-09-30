@@ -14,6 +14,8 @@ date created: {{ page.date.toLocaleDateString('en-US', { month: 'short', day: 'n
 {% endif %}
 {% endfor %}
 
+<h1>{{ title }}</h1>
+
 {{ content | safe }}
 
 {% set previousPost = collections.blog | getPreviousCollectionItem %}
@@ -22,12 +24,6 @@ date created: {{ page.date.toLocaleDateString('en-US', { month: 'short', day: 'n
 {% if date %}
 <div class="pagination-container">
     <div class="pagination-buttons left">
-        {% if page.url != collections.blog[0].url %}
-        <a href="{{ collections.blog[0].url }}">First</a>
-        {% else %}
-        <span>First</span>
-        {% endif %}
-
         {% if previousPost %}
         <a href="{{ previousPost.url }}">Previous</a>
         {% else %}
@@ -48,12 +44,6 @@ date created: {{ page.date.toLocaleDateString('en-US', { month: 'short', day: 'n
         <a href="{{ nextPost.url }}">Next</a>
         {% else %}
         <span>Next</span>
-        {% endif %}
-
-        {% if page.url != collections.blog[collections.blog.length - 1].url %}
-        <a href="{{ collections.blog[collections.blog.length - 1].url }}">Last</a>
-        {% else %}
-        <span>Last</span>
         {% endif %}
     </div>
 </div>

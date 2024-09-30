@@ -1,5 +1,5 @@
 {
     "layout": "_layouts/blogs-layout.njk",
     "tags": "blog",
-    "header_img": "/assets/pseudoblog.gif"
+    "header_img": "/assets/pseudoblog.avif"
 }

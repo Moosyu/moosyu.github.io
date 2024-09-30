@@ -3,19 +3,22 @@ let playpause_btn = document.querySelector("#play-pause");
 let volume_slider = document.querySelector(".volume_slider");
 let isPlaying = false;
 let updateTimer;
-let curr_track = document.createElement('audio');
+let curr_track = document.createElement("audio");
 const baseVolume = 0.2;
-const imgElement = document.querySelector('.cd-rotate > img');
-const cdImage = document.querySelector('.cd-image');
-const cdTitle = document.querySelector('.cd-title');
-
+const imgElement = document.querySelector(".cd-rotate > img");
+const cdImage = document.querySelector(".cd-image");
+const cdTitle = document.querySelector(".cd-title");
+const cdLink = document.querySelector(".cd-link");
+//https://www.youtube.com/watch?v=Fwv2gnCFDOc
 
 
 function loadTrack() {
     clearInterval(updateTimer);
-    curr_track.src = "https://files.catbox.moe/15mgqq.mp3";
-    cdImage.src = "https://i.imgur.com/5s7uKK6.png";
-    cdTitle.textContent = "Sugar - System of a Down";
+    curr_track.src = "https://files.catbox.moe/jp7wj4.mp3";
+    cdImage.src = "https://files.catbox.moe/5bt3xm.avif";
+    cdTitle.textContent = "Luv(sic.) pt3 - Nujabes & Shing02";
+    cdLink.setAttribute("href", "https://www.youtube.com/watch?v=Fwv2gnCFDOc");
+    cd
     curr_track.load();
     curr_track.loop = true;
     curr_track.volume = baseVolume;

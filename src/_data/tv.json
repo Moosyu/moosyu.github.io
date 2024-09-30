@@ -1,5 +1,11 @@
 [
       {
+            "type": "Movie",
+            "name": "The Dictator",
+            "score": 3.2,
+            "description": "the aids joke was pretty funny the rest was perhaps too silly and just felt like an hour long youtube short"
+      },
+      {
             "type": "Anime",
             "name": "The Dangers In My Heart",
             "score": 2.6,

@@ -10,12 +10,6 @@
 {{ content | safe }}
 <div class="pagination-container">
     <div class="pagination-buttons left">
-        {% if page.url != pagination.href.first %}
-        <a href="{{ pagination.href.first }}">First</a>
-        {% else %}
-        <span>First</span>
-        {% endif %}
-
         {% if pagination.href.previous %}
         <a href="{{ pagination.href.previous }}" id="previous-link">Previous</a>
         {% else %}
@@ -36,12 +30,6 @@
         <a href="{{ pagination.href.next }}" id="next-link">Next</a>
         {% else %}
         <span>Next</span>
-        {% endif %}
-
-        {% if page.url != pagination.href.last %}
-        <a href="{{ pagination.href.last }}">Last</a>
-        {% else %}
-        <span>Last</span>
         {% endif %}
     </div>
 </div>
