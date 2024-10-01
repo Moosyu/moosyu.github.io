@@ -2659,9 +2659,10 @@
       {
             "type": "Manhwa",
             "name": "The Tutorial is Too Tough",
-            "score": 6.4,
+            "alt": "The Tutorial Is Too Hard!",
+            "score": 4.9,
             "image": "",
-            "description": "everyone died at the start"
+            "description": "everyone died at the start <--- edit i dropped this one, why did they keep showing every fucking floor just skip like 20 please"
       },
       {
             "type": "Manhwa",

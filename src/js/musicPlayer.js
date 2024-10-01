@@ -18,7 +18,6 @@ function loadTrack() {
     cdImage.src = "https://files.catbox.moe/5bt3xm.avif";
     cdTitle.textContent = "Luv(sic.) pt3 - Nujabes & Shing02";
     cdLink.setAttribute("href", "https://www.youtube.com/watch?v=Fwv2gnCFDOc");
-    cd
     curr_track.load();
     curr_track.loop = true;
     curr_track.volume = baseVolume;
