@@ -29,10 +29,10 @@ title: inspirations
 
 [annas archive {they still trying to burn down the library of alexandria 2000 years later}](https://annas-archive.org/)
 
-[sizeof {its so massive and reaching i feel like an explorer reading searching through it}](https://sizeof.cat/)
-
 [devastatia {one of the only blogs i keep up with, im not gonna say that i agree with all of their opinions but at least they have actual opinions to share}](https://devastatia.com/)
 
 [manu {the other blog i like to keep up with, i found him from an interview he did with devastatia in june and while not as off the rails as devastatia hes still a very interesting person and a his site often links other very interesting blogs leading to some sort of never ending rabbit hole}](https://manuelmoreale.com/)
 
 [onzecki {sent me a really well thought out and detailed email about making my site not run like shit which helped my situation quite a lot}](https://onz.ee/)
+
+[superpredator {mind bending images beyond human comprehension. thats all i can say, you have to see it for yourself.}](https://superpredator.zone/)
