@@ -17,7 +17,7 @@ title: inspirations
 
 [incessantpain {this is probably my favourite site, its so dense and charming, i hope that my site will eventually end up this packed with just stuff}](https://incessantpain.neocities.org/)
 
-[scump's house {i stole the factory reject flower thing from this guy i think. their site's really nice to look at and their homepage has always been a massive inspiration.}]("https://swirl.neocities.org/")
+[scump's house {i stole the factory reject flower thing from this guy i think. their site's really nice to look at and their homepage has always been a massive inspiration.}](https://swirl.neocities.org/)
 
 [melps {an incredibly visually unique and insanly interesting site thats sadly slowly falling to pieces}](https://melps.neocities.org/)
 

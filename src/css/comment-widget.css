@@ -126,8 +126,8 @@
     resize: none;
 }
 #c_submitButton {
-    display: block; 
-    margin-left: auto; 
+    display: block;
+    margin-left: auto;
     margin-right: 0;
 }
 #c_replyingText {
@@ -150,7 +150,7 @@
     margin-right: 0;
     padding: 10px;
     border: 2px solid white;
-    background-color: #459ee6; 
+    background-color: #459ee6;
 }
 .c-reply:last-child {margin-bottom: 0;}
 .c-replyContainer {
