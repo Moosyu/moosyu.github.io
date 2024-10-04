@@ -27,8 +27,8 @@ project root/
 
 inside the build.yml file copy and paste this:
 
-```yml
 {% raw %}
+```yml
 name: Deploy to Lexiqqq
 
 on:
@@ -65,8 +65,8 @@ jobs:
       - name: Copy _site to Lexiqqq with SCP
         run: |
           scp -i ~/.ssh/private.key -o UserKnownHostsFile=~/.ssh/known_hosts -o StrictHostKeyChecking=no -r _site/* YOURLEXIQQQUSERNAME@lexiqqq.com:/home/YOURLEXIQQQUSERNAME/public_html/
-{% endraw %}
 ```
+{% endraw %}
 
 # 3. configuring the workflow
 
@@ -85,6 +85,8 @@ in the new repository secret menu for for the name write LEXIQQQ_PRIVATE_KEY. fo
 ```bash
 ssh-keygen -t ed25519 -C "your_email@example.com"
 ```
+
+(keep the quotations in your command, also the email doesnt need to be your lexiqqq email just use your actual one.)
 
 press enter when you are prompted with the file name and a passphrase leaving them blank. you can still follow this tutorial (probably i havent tested it) if you add a passphrase but it might get more complicated and you'll probably have to modify the workflow, same with a file name. 
 
@@ -175,15 +177,17 @@ this is giving authorized_keys read and write permissions and giving the ssh dir
 
 # 7. (optional) verifying your ssh access
 
+exit out of the ssh and run:
+
 ```bash
-ssh -i ~/.ssh/id_ed25519 w@lexiqqq.com
+ssh -i ~/.ssh/id_ed25519 YOUR_LEXIQQQ_USERNAME@lexiqqq.com
 ```
 
 it should ssh you into your lexiqqq account without a password prompt appearing.
 
 # 8. adding your private key to github secrets
 
-this is the last step !! run:
+this is the last step !! run this command (if you get the no such file or dictionary thats because you are still in the ssh, exit ssh first):
 
 ```bash
 cat ~/.ssh/id_ed25519
