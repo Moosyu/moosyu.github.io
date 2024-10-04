@@ -64,7 +64,7 @@ jobs:
 
 4. now here it gets a little complicated, go into your github repo, go to settings, click the secrets and variables dropdown on the right and click actions. in the actions page you're going to want to click "New repository secret".
 
-![https://i.imgur.com/3JxV4Eq.png]
+![](https://i.imgur.com/3JxV4Eq.png)
 
 5. in the new repository secret menu for for the name write LEXIQQQ_PRIVATE_KEY. for the secret you're going to want to open a terminal window, run this command (but replace your_email@example.com with your actual email, this is a comment that is associating the key with your email so you can identify it):
 

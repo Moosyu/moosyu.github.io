@@ -1,5 +1,12 @@
 [
       {
+            "type": "Manhwa",
+            "name": "Kubera",
+            "score": 3.5,
+            "image": "",
+            "description": "imagine tower of god if the art was even more shit and the story was even more boring"
+      },
+      {
             "type": "Manga",
             "name": "MAD",
             "score": 7.6,
