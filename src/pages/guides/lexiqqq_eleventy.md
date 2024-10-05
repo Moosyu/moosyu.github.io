@@ -8,7 +8,7 @@ date: 2024-10-03
     {{ prismCss | cssmin | safe }}
 </style>
 
-this probably isnt efficient or good but it works, dm me on discord if you want to scream at me or make an issue on github if you want to make it good. anyways if you want to use this workflow that builds your 11ty project and puts the files from _site into lexiqqq just follow these very simple steps
+we asked a security guy and he said this script is "alright", using sftp would be better but i go for 50% on every test so its fine for me.
 
 # 1. folder setup:
 
@@ -67,6 +67,8 @@ jobs:
           scp -i ~/.ssh/private.key -o UserKnownHostsFile=~/.ssh/known_hosts -o StrictHostKeyChecking=no -r _site/* YOURLEXIQQQUSERNAME@lexiqqq.com:/home/YOURLEXIQQQUSERNAME/public_html/
 ```
 {% endraw %}
+
+note: if your output directory is something other than the default _site, then edit the "_site/*" section on the last line to your output directory's name.
 
 # 3. configuring the workflow
 
