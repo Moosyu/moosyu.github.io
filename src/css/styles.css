@@ -654,7 +654,7 @@ video {
     max-width: 100%;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
     p {
         font-size: 18px;
     }
@@ -686,8 +686,8 @@ video {
     }
 
     body {
-        margin-left: 200px;
-        margin-right: 200px;
+        margin-left: 70px;
+        margin-right: 70px;
     }
 
     nav {

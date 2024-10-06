@@ -30,7 +30,7 @@ pagination:
             <td>{{ item.description }}</td>
             <td class="image-td">
                 {% if item.image %}
-                <img src="{{ item.image }}" alt="{{ item.name }}" onclick=toggleFullscreen(this)>
+                <img src="{{ item.image }}" alt="{{ item.name }}" onclick="toggleFullscreen(this)" loading="lazy">
                 {% else %}
                 no image
                 {% endif %}

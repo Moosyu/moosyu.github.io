@@ -27,3 +27,7 @@ thanks for coming to my ted talk, heres how i build my sentences:
 it would also be nice if exclamation marks and question marks could be at the start of sentences to set the tone right away like in spanish but not upside down and just finish with a full stop because its quicker than a question or exclamation mark. in fact if we could take a few more spanish words that would be nice too, writing y instead of because would be awesome. if we could take o instead of or that would be nice too.
 
 ![cat dancing](https://i.imgur.com/nosikQO.gif)
+
+<p style="text-align:center;">(( ( update 23/09/24 ) ))</p>
+
+i actually changed my mind apostrophes, i feel like they should be an optional addon to make your writing more fancy, like it just makes me feel far more sophisticated or something.

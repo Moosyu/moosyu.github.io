@@ -1,4 +1,5 @@
 {
     "cSpell.language": "en-GB",
-    "editor.cursorSmoothCaretAnimation": "on"
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.wordWrap": "on"
 }
