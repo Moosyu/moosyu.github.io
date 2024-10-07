@@ -30,6 +30,17 @@ jobs:
       - name: Build the site with Eleventy
         run: npx @11ty/eleventy
 
+      - name: Setup SSH key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.LEXIQQQ_PRIVATE_KEY }}" > ~/.ssh/private.key
+          chmod 600 ~/.ssh/private.key
+          ssh-keyscan lexiqqq.com >> ~/.ssh/known_hosts
+
+      - name: Copy _site to Lexiqqq with SCP
+        run: |
+          scp -i ~/.ssh/private.key -o UserKnownHostsFile=~/.ssh/known_hosts -o StrictHostKeyChecking=no -r _site/* w@lexiqqq.com:/home/w/public_html/
+
       - name: upload static site content
         uses: actions/upload-pages-artifact@v2
         with:
@@ -42,7 +53,6 @@ jobs:
       name: github-pages
       url: https://moosyu.github.io/
     steps:
-      
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
@@ -61,18 +71,3 @@ jobs:
           nekoweb-cookie: ${{ secrets.NEKOWEB_COOKIE }}
           nekoweb-folder: 'moosyu'
           directory: './_site'
-
-  deploy_lexiqqq:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Setup SSH key
-        run: |
-          mkdir -p ~/.ssh
-          echo "${{ secrets.LEXIQQQ_PRIVATE_KEY }}" > ~/.ssh/private.key
-          chmod 600 ~/.ssh/private.key
-          ssh-keyscan lexiqqq.com >> ~/.ssh/known_hosts
-
-      - name: Copy _site to Lexiqqq with SCP
-        run: |
-          scp -i ~/.ssh/private.key -o UserKnownHostsFile=~/.ssh/known_hosts -o StrictHostKeyChecking=no -r _site/* w@lexiqqq.com:/home/w/public_html/
