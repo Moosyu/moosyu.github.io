@@ -1,13 +1,11 @@
-name: Build Eleventy
+name: Build and Deploy Eleventy
+
 on:
-  # Runs on pushes targeting the default branch
   push:
     branches: ["master"]
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+# Set permissions for GitHub Pages deployment
 permissions:
   contents: read
   pages: write
@@ -18,7 +16,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
 
       - name: Use Node.js >= 14.x
         uses: actions/setup-node@v3
@@ -28,22 +27,51 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: run eleventy
+      - name: Build the site with Eleventy
         run: npx @11ty/eleventy
 
-      - name: upload static site content
+  deploy_github_pages:
+    runs-on: ubuntu-latest
+    needs: build
+    environment:
+      name: github-pages
+      url: https://moosyu.github.io/
+    steps:
+      - name: Upload static site content
         uses: actions/upload-pages-artifact@v2
         with:
           path: ./_site
 
- # Deployment job
-  deploy:
-    environment:
-      name: github-pages
-      url: https://moosyu.github.io/
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
+
+  deploy_nekoweb:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Deploy to NekoWeb
+        uses: deploy2nekoweb/deploy2nekoweb@v4
+        with:
+          nekoweb-api-key: ${{ secrets.NEKOWEB_API_KEY }}
+          nekoweb-cookie: ${{ secrets.NEKOWEB_COOKIE }}
+          nekoweb-folder: 'moosyu'
+          directory: '_site'
+
+  deploy_lexiqqq:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Setup SSH key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.LEXIQQQ_PRIVATE_KEY }}" > ~/.ssh/private.key
+          chmod 600 ~/.ssh/private.key
+          ssh-keyscan lexiqqq.com >> ~/.ssh/known_hosts
+
+      - name: Copy _site to Lexiqqq with SCP
+        run: |
+          scp -i ~/.ssh/private.key -o UserKnownHostsFile=~/.ssh/known_hosts -o StrictHostKeyChecking=no -r _site/* w@lexiqqq.com:/home/w/public_html/

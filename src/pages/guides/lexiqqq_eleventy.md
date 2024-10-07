@@ -68,7 +68,11 @@ jobs:
 ```
 {% endraw %}
 
-note: if your output directory is something other than the default _site, then edit the "_site/*" section on the last line to your output directory's name.
+notes: 
+
+if your output directory is something other than the default _site, then edit the "_site/*" section on the last line to your output directory's name.
+
+if the branch you want to push to is not called the default "main", eg its master make sure to edit line 5.
 
 # 3. configuring the workflow
 
@@ -157,7 +161,7 @@ mkdir -p ~/.ssh
 then run
 
 ```bash
-echo "YOUR_SSH_KEY" >> ~/.ssh/authorized_keys
+echo "YOUR_SSH_KEY" > ~/.ssh/authorized_keys
 ```
 
 (copy and paste the ssh key that you just copied to your clipboard into the YOUR_SSH_KEY spot)
