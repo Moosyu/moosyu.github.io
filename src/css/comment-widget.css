@@ -58,36 +58,29 @@
     box-sizing: border-box;
     height: 100%;
     background-attachment: fixed;
-    font-family: 'Courier New';
     font-size: 16px;
     color: white;
 }
 
-#c_widget h2 {
-    color: black;
-}
-
 #c_widget button, #c_widget input[type=submit] {
     padding: 4px;
-    font-family: 'Courier New';
     text-decoration: none;
 	text-align: center;
     text-transform: uppercase;
-    background-color: #222529;
+    background-color: rgb(40, 43, 47);
     color: white;
-    border: 1px solid white;
+    border: none;
+    border-radius: 4px;
 }
 
 #c_widget button:hover, #c_widget input[type=submit]:hover {
     color: white;
-    border: 1px solid white;
 
 }
 
 #c_widget button:disabled, #c_widget input[type=submit]:disabled {opacity: 60%;}
 #c_widget button:disabled:hover, #c_widget input[type=submit]:disabled:hover {
     color: white;
-    border: 1px solid white;
 }
 
 /* Input section */
@@ -95,7 +88,7 @@
     margin-bottom: 15px;
     padding: 10px;
     background-color: #222529;
-    border: 2px solid white;
+    border-radius: 4px;
 }
 
 #c_widgetTitle {
@@ -105,31 +98,34 @@
     text-transform: uppercase;
     font-style: italic;
     font-weight: bold;
-    text-align: right;
-    background-color: #2454e8;
+    color: white;
 }
 
 .c-inputWrapper {
     display: block;
-    text-align: right;
 }
 .c-input {
     padding: 4px;
-    color: #222529;
-    border: 1px solid black;
+    color: white;
 	outline: none;
+    border: none;
+    border-bottom: 2px solid #404549;
+    background-color: #222529;
 }
 
 .c-textInput {
     width: calc(100% - 10px);
-    max-width: 900px;
     resize: none;
+    height: 16px;
 }
+
 #c_submitButton {
     display: block;
     margin-left: auto;
     margin-right: 0;
+    font-size: 15px;
 }
+
 #c_replyingText {
     color: white;
     text-align: right;
@@ -139,19 +135,21 @@
 .c-comment {
     margin-bottom: 15px;
     padding: 10px;
-    border: 2px solid white;
-    background-color: #2454e8;
+    background-color: #222529;
+    border-radius: 4px;
 }
+
 .c-reply {
     display: block;
-    width: 90%;
+    width: 100%;
     margin-bottom: 10px;
-    margin-left: auto;
     margin-right: 0;
     padding: 10px;
-    border: 2px solid white;
-    background-color: #459ee6;
+    background-color: #1c2025;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
+
 .c-reply:last-child {margin-bottom: 0;}
 .c-replyContainer {
     margin: -10px;
@@ -168,18 +166,23 @@
     text-transform: uppercase;
     font-weight: bold;
 }
+
 .c-site {
     text-transform: uppercase;
     text-decoration: none;
-    color: black;
-}
-.c-site:hover {color: white;}
-.c-timestamp {
-    float: right;
-    opacity: 75%;
-    color: black;
+    margin-right: 10px;
     font-weight: 750;
+    opacity: 85%;
+    font-size: 14px;
 }
+
+.c-site:hover {color: rgb(204, 88, 88);}
+.c-timestamp {
+    opacity: 85%;
+    font-weight: 750;
+    font-size: 14px;
+}
+
 .c-text {
     margin: 0;
     margin-left: -10px;
@@ -189,7 +192,6 @@
     font-size: 14px;
     text-align: justify;
     color: white;
-    background-color: #1c2025;
 }
 
 /* Pagination */
@@ -197,10 +199,12 @@
 .c-replyButton {
     margin-top: 10px;
     margin-right: 4px;
+    font-size: 15px;
 }
 .c-expandButton {
     margin-top: 10px;
     margin-left: 4px;
+    font-size: 15px;
 }
 .c-paginationButton {
     margin-right: 4px;

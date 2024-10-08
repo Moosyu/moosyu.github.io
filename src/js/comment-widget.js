@@ -51,7 +51,7 @@ const s_filteredWords = [ // Add words to filter by putting them in quotes and s
 ]
 
 // Text - Change what messages/text appear on the form and in the comments section (Mostly self explanatory)
-const s_widgetTitle = 'leave a comment !';
+const s_widgetTitle = 'leave a comment!';
 const s_nameFieldLabel = 'name';
 const s_websiteFieldLabel = 'website (optional)';
 const s_textFieldLabel = '';
@@ -62,7 +62,8 @@ const s_closedCommentsText = 'comments are closed temporarily!';
 const s_websiteText = 'website'; // The links to websites left by users on their comments
 const s_replyButtonText = 'reply'; // The button for replying to someone
 const s_replyingText = 'replying to'; // The text that displays while the user is typing a reply
-const s_expandRepliesText = 'show Replies';
+const s_expandRepliesText = 'show replies';
+const s_hideRepliesText = 'hide replies';
 const s_leftButtonText = '<<';
 const s_rightButtonText = '>>';
 
@@ -93,18 +94,15 @@ const v_formHtml = `
     <p>when i inevitably throw myself off a bridge its on you guys' shoulders</p>
 
     <div id="c_nameWrapper" class="c-inputWrapper">
-        <label class="c-label c-nameLabel" for="entry.${s_nameId}">${s_nameFieldLabel}</label>
-        <input class="c-input c-nameInput" name="entry.${s_nameId}" id="entry.${s_nameId}" type="text" maxlength="${s_maxLengthName}" required>
+        <input class="c-input c-nameInput" name="entry.${s_nameId}" id="entry.${s_nameId}" type="text" maxlength="${s_maxLengthName}" placeholder="name" required>
     </div>
 
     <div id="c_websiteWrapper" class="c-inputWrapper">
-        <label class="c-label c-websiteLabel" for="entry.${s_websiteId}">${s_websiteFieldLabel}</label>
-        <input class="c-input c-websiteInput" name="entry.${s_websiteId}" id="entry.${s_websiteId}" type="url" pattern="https://.*">
+        <input class="c-input c-websiteInput" name="entry.${s_websiteId}" id="entry.${s_websiteId}" placeholder="website (optional)" type="url" pattern="https://.*">
     </div>
 
     <div id="c_textWrapper" class="c-inputWrapper">
-        <label class="c-label c-textLabel" for="entry.${s_textId}">${s_textFieldLabel}</label>
-        <textarea class="c-input c-textInput" name="entry.${s_textId}" id="entry.${s_textId}" rows="4" cols="50" maxlength="${s_maxLength}" required></textarea>
+        <textarea class="c-input c-textInput" name="entry.${s_textId}" id="entry.${s_textId}" maxlength="${s_maxLength}" placeholder="enter a message (please be nice)" required></textarea>
     </div>
 
     <input id="c_submitButton" name="c_submitButton" type="submit" value="${s_submitButtonLabel}" disabled>
@@ -393,12 +391,6 @@ function createComment(data) {
     name.className = 'c-name';
     comment.appendChild(name);
 
-    // Timestamp
-    let time = document.createElement('span');
-    time.innerText = timestamp;
-    time.className = 'c-timestamp';
-    comment.appendChild(time);
-
     // Website URL, if one was provided
     if (data.Website) {
         let site = document.createElement('a');
@@ -407,6 +399,12 @@ function createComment(data) {
         site.className = 'c-site';
         comment.appendChild(site);
     }
+
+    // Timestamp
+    let time = document.createElement('span');
+    time.innerText = timestamp;
+    time.className = 'c-timestamp';
+    comment.appendChild(time);
 
     // Text content
     let text = document.createElement('p');
@@ -510,9 +508,21 @@ function openReply(id) {
 // Handle expanding replies (should only be accessible with collapsed replies enabled)
 function expandReplies(id) {
     const targetDiv = document.getElementById(`${id}-replies`);
-    if (targetDiv.style.display == 'none') {targetDiv.style.display = 'block'}
-    else {targetDiv.style.display = 'none'}
+    const parentDiv = document.getElementById(id);
+    const button = parentDiv.querySelector('.c-expandButton');
+    const numReplies = targetDiv.children.length;
+
+    // Toggle visibility of the replies
+    if (targetDiv.style.display == 'none') {
+        targetDiv.style.display = 'block';
+        button.innerHTML = s_hideRepliesText + ` (${numReplies})`;
+    } else {
+        targetDiv.style.display = 'none';
+        button.innerHTML = s_expandRepliesText + ` (${numReplies})`;
+    }
 }
+
+
 
 function changePage(dir) {
     const leftButton = document.getElementById('c_leftButton');
@@ -547,5 +557,12 @@ function changePage(dir) {
         if (i >= v_commentMin && i < v_commentMax) {a_commentDivs[i].style.display = 'block'}
     }
 }
+
+document.querySelectorAll('.c-textInput').forEach(textarea => {
+    textarea.addEventListener("input", function() {
+        this.style.height = '0px';
+        this.style.height = this.scrollHeight - 7 + 'px';
+    });
+});
 
 getComments(); // Run once on page load
