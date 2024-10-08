@@ -194,12 +194,6 @@ ul {
     border-collapse: collapse;
 }
 
-.reviews-table td {
-    border: none;
-    padding: 10px;
-    max-width: 33%;
-}
-
 .reviews-table tr {
     display: flex;
     align-items: center;
@@ -460,9 +454,9 @@ animation: 2s bobleft ease-in-out infinite;
     padding: 0.5em;
     border-collapse: collapse;
     overflow-wrap: break-word;
-    font-size: calc(0.7vw + 0.7vh);
     width: 33%;
     border: 2px solid var(--pagination-container-border);
+    font-size: calc(0.9vw + 0.9vh);
 }
 
 .image-td {
