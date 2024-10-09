@@ -223,7 +223,7 @@ table:not(.front-page-table) {
 }
 
 .arrow-image {
-    width: 20%;
+    width: 30%;
     image-rendering: pixelated;
 }
 
@@ -281,9 +281,9 @@ table:not(.front-page-table) {
 
 
 #neko-tag .webring-bg {
-    width: 100%;
     height: 100%;
     background-image: url("https://darkosparko.nekoweb.org/webrings/neko-tag/neko-tag-images/dithered-mat1.png");
+    margin: 0 auto;
 }
 
 @keyframes bobleft {
@@ -326,12 +326,17 @@ animation: 2s bobleft ease-in-out infinite;
 }
 
 .rainbow-border {
-    border: 3px solid transparent;
+    border: 4px solid transparent;
     border-image: var(--rainbowright) 1;
     animation: rainbow 5s infinite;
     padding: 10px;
     background-color: #24273a;
-    border-radius: 7px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    margin: 15px auto;
+    border-radius: 4px;
 }
 
 #header span{
@@ -381,7 +386,9 @@ animation: 2s bobleft ease-in-out infinite;
 
 .empty-box {
     background-color: var(--base);
+    margin-bottom: 15px;
     color: white;
+    border-radius: 4px;
 }
 
 .lastlisten-box {
@@ -400,8 +407,6 @@ animation: 2s bobleft ease-in-out infinite;
 }
 
 .main-box {
-    color: white;
-    background-color: var(--base);
     padding: 10px;
     order: 2;
 }
@@ -766,6 +771,6 @@ video {
     }
 
     .empty-box {
-    margin-bottom: 15px;
+        border-radius: 0px;
     }
 }
