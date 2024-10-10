@@ -9,22 +9,22 @@ const imgElement = document.querySelector(".cd-rotate > img");
 const cdImage = document.querySelector(".cd-image");
 const cdTitle = document.querySelector(".cd-title");
 const cdLink = document.querySelector(".cd-link");
+let trackLoaded = false;
 //https://www.youtube.com/watch?v=Fwv2gnCFDOc
 
+cdImage.src = "https://files.catbox.moe/ogztvb.avif";
+cdTitle.textContent = "As if Waltz - Geordie Greep";
+cdLink.setAttribute("href", "https://www.youtube.com/watch?v=b8lgOVbxj7E");
 
 function loadTrack() {
     clearInterval(updateTimer);
-    curr_track.src = "https://files.catbox.moe/jp7wj4.mp3";
-    cdImage.src = "https://files.catbox.moe/5bt3xm.avif";
-    cdTitle.textContent = "Luv(sic.) pt3 - Nujabes & Shing02";
-    cdLink.setAttribute("href", "https://www.youtube.com/watch?v=Fwv2gnCFDOc");
+    curr_track.src = "https://files.catbox.moe/xvu7mg.mp3";
     curr_track.load();
     curr_track.loop = true;
     curr_track.volume = baseVolume;
     volume_slider.value = baseVolume * 100;
+    trackLoaded = true;  // Set the track as loaded
 }
-
-loadTrack();
 
 function playpauseTrack() {
     if (!isPlaying) {
@@ -70,6 +70,9 @@ function playpauseTrack() {
 }
 
 function playTrack() {
+    if (!trackLoaded) {
+        loadTrack();
+    }
     curr_track.play();
     isPlaying = true;
     playpause_btn.innerHTML = '||';

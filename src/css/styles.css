@@ -653,6 +653,15 @@ video {
     max-width: 100%;
 }
 
+.view-counter {
+    vertical-align:middle;
+    width: 30%;
+}
+
+.button-home {
+    width: 15%;
+}
+
 @media screen and (min-width: 900px) {
     p {
         font-size: 18px;
@@ -694,6 +703,19 @@ video {
         flex-direction: column;
         margin-top: 5px;
         font-size: 18px;
+    }
+
+    /* preloading all images the moment the page is opened so it doesnt have delay on the image loading up when you hover */
+
+    .rev::before, .ramb::before, .guide::before, .blog::before, .map::before, .hom::before {
+        content: '';
+        background-image: url("/assets/revBack.avif"), url("/assets/rambBack.png"), 
+                          url("/assets/guideBack.avif"), url("/assets/blogBack.avif"),
+                          url("/assets/mapBack.png"), url("/assets/homeBack.avif");
+        position: absolute;
+        width: 0;
+        height: 0;
+        overflow: hidden;
     }
 
     .rev:hover {
@@ -773,4 +795,12 @@ video {
     .empty-box {
         border-radius: 0px;
     }
+
+    .view-counter {
+        width: 80%;
+    }
+    
+    .button-home {
+        width: 45%;
+    }    
 }
