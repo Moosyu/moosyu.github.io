@@ -34,7 +34,14 @@ a:active {
     border-radius: 0px;
 }
 
+body {
+    font-family: monospace;
+}
+
 a {
     font-size: 18px;
-    font-family: monospace;
+}
+
+h2 {
+    color: white;
 }

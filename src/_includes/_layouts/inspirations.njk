@@ -8,6 +8,8 @@
     <title>{{ title }}</title>
 </head>
 <body>
-    {% block content %}{{ content | safe }}{% endblock %}
+    <base target="_blank">
+        {% block content %}{{ content | safe }}{% endblock %}
+    </base>
 </body>
 </html>

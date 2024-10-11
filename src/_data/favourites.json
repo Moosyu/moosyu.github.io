@@ -1,5 +1,11 @@
 [
     {
+        "type": "Album",
+        "name": "The New Sound",
+        "image": "https://i.imgur.com/fm3k4Dw.png",
+        "description": "i feel like this album just gets better the more times i listen to it. it starts as some jazzy and over the top fun but the more you hear it the more you realise its actually kind of depressing, and i like my albums like they are stories because i guess i have an inner theatre kid in me even though i was never a theatre kid. i like this album far more than anything ive heard in 2024 and it might just be a top 5 of all time in my books."
+    },
+    {
         "type": "Compilation Album",
         "name": "Luv(sic) Hexalogy",
         "image": "https://i.imgur.com/wd7xm3H.png",
