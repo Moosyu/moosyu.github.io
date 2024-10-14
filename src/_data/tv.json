@@ -1,6 +1,12 @@
 [
       {
             "type": "Movie",
+            "name": "The Legend of Tarzan",
+            "score": 3.7,
+            "description": "nobody wants live action remakes why does this keep happening bruh"
+      },
+      {
+            "type": "Movie",
             "name": "The Dictator",
             "score": 3.2,
             "description": "the aids joke was pretty funny the rest was perhaps too silly and just felt like an hour long youtube short"
