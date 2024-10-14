@@ -31,3 +31,7 @@ it would also be nice if exclamation marks and question marks could be at the st
 <p style="text-align:center;">(( ( update 23/09/24 ) ))</p>
 
 i actually changed my mind apostrophes, i feel like they should be an optional addon to make your writing more fancy, like it just makes me feel far more sophisticated or something.
+
+<p style="text-align:center;">(( ( update 14/10/24 ) ))</p>
+
+changed my mind on another thing, i think perhaps capital letters on names might also be good especially when names are also a real word.
