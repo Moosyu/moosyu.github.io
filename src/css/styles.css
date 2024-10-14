@@ -207,8 +207,14 @@ table:not(.front-page-table) {
 }
 
 .image-cell {
-    width: 10%;
-    vertical-align: top;
+    display: flex;
+    align-items: center; /* Vertical alignment */
+    justify-content: center; /* Horizontal alignment */
+}
+
+.image-cell img {
+    width: 64px;
+    height: 50px;
 }
 
 .text-cell {
@@ -216,11 +222,6 @@ table:not(.front-page-table) {
     vertical-align: top;
 }
 
-.image-cell img {
-    display: block;
-    margin-left:auto;
-    margin-right:auto;
-}
 
 .arrow-image {
     width: 30%;
@@ -656,7 +657,6 @@ video {
     margin-left:auto;
     margin-right:auto;
     max-width: 100%;
-    min-height: 108px;
 }
 
 .view-counter {
@@ -808,5 +808,9 @@ video {
     
     .button-home {
         width: 45%;
+    }
+
+    .header-img {
+        min-height: 108px;
     }
 }

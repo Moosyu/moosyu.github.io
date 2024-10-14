@@ -8,6 +8,8 @@ date: 2024-10-03
     {{ prismCss | cssmin | safe }}
 </style>
 
+### note: this still works but i got banned from lexiqqq (for something else) so i wont be able to troubleshoot if you need help
+
 we asked a security guy and he said this script is "alright", using sftp would be better but i go for 50% on every test so its fine for me.
 
 # 1. folder setup:

@@ -7,7 +7,7 @@ tags:
 
 if youre someone who cares about trigger warnings dont read this, in fact if you are then please leave my site thanks.
 
-i just saw a crazy ass comment thread that i feel the uncontrollable need to share because its not every day i get to read something this fucking stupid. the people involved in this are Hahahahaisofke (who im gonna call Haha) and yurisrarity (how im gonna call yuri), Yuri makes music and is trans, idk anything about Hahahahaisofke aside from the fact that they used to be tight with Yuri. [if you want to read the whole thread instead of listen to some guy commentate over it click here.](https://www.albumoftheyear.org/user/hahahahaisofke/album/1074420-/)
+i just saw a crazy ass comment thread that i feel the uncontrollable need to share because its not every day i get to read something this fucking stupid. the people involved in this are Hahahahaisofke (who im gonna call Haha) and yurisrarity (how im gonna call yuri), Yuri makes music and is trans, idk anything about Hahahahaisofke aside from the fact that they used to be tight with Yuri. [if you want to read the whole thread instead of listen to some guy commentate over it click here (Yuri's account was deleted so this a saved version of the page).](/pages/misc/comment_thread_save/)
 
 ![](https://i.imgur.com/FgyFSzB.png)
 
@@ -15,7 +15,7 @@ the reply thread starts with Yuri rambling schizophrenically to themselves, or p
 
 ![](https://i.imgur.com/NvlIk0o.png)
 
-Yuri calls him salty and Haha drops a bunch of info, btw addy is Yuri's (ex) girlfriend who was barely 15 when Yuri was bordering 18 and im fairly sure their relationship started when addy was 14 due to some of the messages later. some people wouldnt find this age gap that bad, but i think those people are fucking stupid and ive never seen a situation when a 15 year old was nearly mature enough to be in a relationship with someone that old. ofc age gaps matter less and less the older you get but at that age three years can be massive. btw the 15 year old making rape jokes and saying slurs doesnt really matter to me, like its kind of corny to still be trying to be an edgelord at that age but yeah i dont really care or think its nearly as bad as the other things.
+Yuri calls him salty and Haha drops a bunch of info, btw Addy is Yuri's (ex) girlfriend who was barely 15 when Yuri was bordering 18 and im fairly sure their relationship started when Addy was 14 due to some of the messages later. some people wouldnt find this age gap that bad, but i think those people are fucking stupid and ive never seen a situation when a 15 year old was nearly mature enough to be in a relationship with someone that old. ofc age gaps matter less and less the older you get but at that age three years can be massive. btw the 15 year old making rape jokes and saying slurs doesnt really matter to me, like its kind of corny to still be trying to be an edgelord at that age but yeah i dont really care or think its nearly as bad as the other things.
 
 ![](https://i.imgur.com/PM8ZNCt.png)
 
@@ -39,7 +39,7 @@ firstly i should mention by now that Yuri types like they are illiterate for som
 
 ![](https://i.imgur.com/StBukkH.png)
 
-next up Haha goes off the rails and starts trying to focus in on the n word and rape jokes which is clearly not the most important thing going on but alright, he does make a good point though as in Yuri's message to ghost minus they said "i ignored people after they said the nword and didnt block them to not start an issue" which is immediately proven wrong. then we get to know why Yuri blocked Haha in the first place, which was predictably for a reason that makes Yuri look even worse, Haha was blocked because he told Yuri to stop stealing their moms meds. insane. then Yuri fucks themselves over even more by hammering in that they have not in fact blocked addy in order to not "start beef" with this 15 year old.
+next up Haha goes off the rails and starts trying to focus in on the n word and rape jokes which is clearly not the most important thing going on but alright, he does make a good point though as in Yuri's message to ghost minus they said "i ignored people after they said the nword and didnt block them to not start an issue" which is immediately proven wrong. then we get to know why Yuri blocked Haha in the first place, which was predictably for a reason that makes Yuri look even worse, Haha was blocked because he told Yuri to stop stealing their moms meds. insane. then Yuri fucks themselves over even more by hammering in that they have not in fact blocked Addy in order to not "start beef" with this 15 year old.
 
 ![](https://i.imgur.com/wcd35sA.png)
 
@@ -99,3 +99,7 @@ all the replies from the previous update are now hidden, idk if this is somethin
 ![](https://i.imgur.com/a6OUOiJ.png)
 
 not really related to anything just interesting and it tracks.
+
+<p style="text-align:center;">(( ( update 15/10/24 ) ))</p>
+
+ok Yuri's account is gone now. idk if they deleted it themselves or got deleted by the mods though. good riddance either way. i also found some doc that Yuri made about it, i dont know how i didnt read this soon ig im brain damage but you can click [here](https://img1.wsimg.com/blobby/go/2cfdb51d-24df-44f5-8fe8-5a0cfa0cbe75/downloads/87b7cd02-80e8-4862-85d3-c472ce4b4e0b/Document.pdf?ver=1728347863397) to read it.

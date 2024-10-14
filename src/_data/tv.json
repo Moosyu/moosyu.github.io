@@ -1,5 +1,11 @@
 [
       {
+            "type": "TV Show",
+            "name": "Outer Banks",
+            "score": 3.1,
+            "description": "not my thing and why is it so yellow?? i dont know where the hype is coming from because to me it just feels like a very generic teen drama with very beautiful people solving some random ass mystery."
+      },
+      {
             "type": "Movie",
             "name": "The Legend of Tarzan",
             "score": 3.7,
