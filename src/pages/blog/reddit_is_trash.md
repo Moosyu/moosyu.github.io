@@ -14,3 +14,9 @@ its so fucked that one of if not the best source of information on the internet 
 but nooo, fuck you we have to change it. now my only options are the original 1960s ass reddit or the new one that requires me to go to 6000 different pages to get something done, and odds are once ive finished the 90 mile hike to get there im gonna get an error anyway.
 
 i know people like to meat ride old reddit talking about its "information density" but in my humble opinion if i can barely read the text because its laid out so poorly i dont care how dense the information is. the newest reddit is so much worse though, i feel like i have to click through 600 pages with these slow ass "smooth" loading screens just to get to the page i want. which as i already mentioned NEVER FUCKING WORKS. please for the love of god fix your shitty site reddit or im going to blow my brains out in front of the reddit hq.
+
+<p style="text-align:center;">(( ( update 14/10/24 ) ))</p>
+
+![](https://i.imgur.com/maYD2po.png)
+
+your site is worth billions how the fuck are you this inept to just let it break.

@@ -87,4 +87,15 @@ Yuri also confirmed the very sketchy 3 year age gap bit which like really how do
 
 following that though Yuri also made a claim against Haha which yeah it's completely fucked to harass someones family no matter what they do imho.
 
-in conclusion i think my opinion of yuri has slightly grown and my opinion of Haha has massively shrunk though i still think Yuri's mad weird and perhaps malicious for how that relationship went down and the idea of someone stealing the medicine their mother needs to survive just because they are a druggy is honestly horrible and unforgivable, which is something they never even seemed to mention in their messages to me.
+in conclusion i think my opinion of Yuri has slightly grown and my opinion of Haha has massively shrunk though i still think Yuri's mad weird and perhaps malicious for how that relationship went down and the idea of someone stealing the medicine their mother needs to survive just because they are a druggy is honestly horrible and unforgivable, which is something they never even seemed to mention in their messages to me.
+
+<p style="text-align:center;">(( ( update 14/10/24 ) ))</p>
+
+
+![](https://i.imgur.com/N63bjO4.png)
+
+all the replies from the previous update are now hidden, idk if this is something they did themselves or moderation doing it but thats just how it be, i saved most the replies as screenshots here though so it doesnt really matter though. their about tab also says "waiting for acc deletion, thank you for the support while i was here." now, idk if they just added it though or if its been there forever.
+
+![](https://i.imgur.com/a6OUOiJ.png)
+
+not really related to anything just interesting and it tracks.
