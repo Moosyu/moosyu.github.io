@@ -90,16 +90,28 @@ const v_formHtml = `
     <h2 id="c_widgetTitle">${s_widgetTitle}</h2>
     <p>when i inevitably throw myself off a bridge its on you guys' shoulders</p>
 
-    <div id="c_nameWrapper" class="c-inputWrapper">
-        <input class="c-input c-nameInput" name="entry.${s_nameId}" id="entry.${s_nameId}" type="text" maxlength="${s_maxLengthName}" placeholder="name" required>
+    <div class="non-message">
+        <div id="c_nameWrapper" class="c-inputWrapper">
+            <input class="c-input c-nameInput" name="entry.${s_nameId}" id="entry.${s_nameId}" type="text" maxlength="${s_maxLengthName}" placeholder="name (required)" required>
+        </div>
+
+        <div id="c_websiteWrapper" class="c-inputWrapper">
+            <input class="c-input c-websiteInput" name="entry.${s_websiteId}" id="entry.${s_websiteId}" placeholder="website (optional)" type="url" pattern="https://.*">
+        </div>
     </div>
 
-    <div id="c_websiteWrapper" class="c-inputWrapper">
-        <input class="c-input c-websiteInput" name="entry.${s_websiteId}" id="entry.${s_websiteId}" placeholder="website (optional)" type="url" pattern="https://.*">
+    <div class="emoji-panel">
+        <img class="emoji-listed" src="/assets/emojis/jerma.webp" alt="jerma" onclick="addEmoji('emoji1')">
+        <img class="emoji-listed" src="/assets/emojis/annoyed.webp" alt="annoyed" onclick="addEmoji('emoji2')">
+        <img class="emoji-listed" src="/assets/emojis/talk.webp" alt="talk" onclick="addEmoji('emoji3')">
+        <img class="emoji-listed" src="/assets/emojis/pissed.webp" alt="pissed" onclick="addEmoji('emoji4')">
+        <img class="emoji-listed" src="/assets/emojis/nervous.webp" alt="nervous" onclick="addEmoji('emoji5')">
     </div>
 
     <div id="c_textWrapper" class="c-inputWrapper">
-        <textarea class="c-input c-textInput" name="entry.${s_textId}" id="entry.${s_textId}" maxlength="${s_maxLength}" placeholder="enter a message (please be nice)" required></textarea>
+        <textarea class="c-input c-textInput" name="entry.${s_textId}" id="entry.${s_textId}" maxlength="${s_maxLength}" placeholder="enter a message (please be nice)" required>
+        </textarea>
+        <span class="emoji" onclick="emojiWindow()">😊</span>
     </div>
 
     <input id="c_submitButton" name="c_submitButton" type="submit" value="${s_submitButtonLabel}" disabled>
@@ -407,11 +419,35 @@ function createComment(data) {
     let text = document.createElement('p');
     let filteredText = data.Text;
     if (s_wordFilterOn) {filteredText = filteredText.replace(v_filteredWords, s_filterReplacement)}
-    text.innerText = filteredText;
+    // Replace custom emoji placeholders with images
+    filteredText = filteredText.replace(/:(jerma|annoyed|talk|pissed|nervous):/g, function(match, p1) {
+        const emojiMap = {
+            'jerma': 'jerma',
+            'annoyed': 'annoyed',
+            'talk': 'talk',
+            'pissed': 'pissed',
+            'nervous': 'nervous'
+        };
+
+        const emojiName = emojiMap[p1];
+        if (emojiName) {
+            return `<img src="/assets/emojis/${emojiName}.webp" class="c-emoji" alt="${emojiName}">`;
+        } else {
+            return match;
+        }
+    });
+
+    text.innerHTML = sanitizeInput(filteredText);
     text.className = 'c-text';
     comment.appendChild(text);
 
     return comment;
+}
+
+function sanitizeInput(input) {
+    const allowedTags = input.replace(/<(?!img\b)[^>]*>/gi, "");
+    const trustedImagesOnly = allowedTags.replace(/<img\b[^>]*src=["'](?!\/assets\/emojis\/)[^"']*["'][^>]*>/gi, "");
+    return trustedImagesOnly;
 }
 
 // Makes the Google Sheet timestamp usable
@@ -501,6 +537,41 @@ function openReply(id) {
     }
     link.click(); // Jump to the space to type
 }
+
+function emojiWindow() {
+    const targetDiv = document.querySelector('.non-message');
+    const emojiDiv = document.querySelector('.emoji-panel');
+
+    if (targetDiv.style.display == 'none') {
+        targetDiv.style.display = 'block';
+        emojiDiv.style.display = 'none';
+    } else {
+        targetDiv.style.display = 'none';
+        emojiDiv.style.display = 'flex';
+    }
+}
+
+// stolen from https://adilene.net/ it was too much to stomach
+function addEmoji(emoji){
+    const emojiMap = {
+        'emoji1': 'jerma',
+        'emoji2': 'annoyed',
+        'emoji3': 'talk',
+        'emoji4': 'pissed',
+        'emoji5': 'nervous',
+    };
+
+    const customEmoji = emojiMap[emoji] || emoji;
+
+    const textarea = document.getElementById('entry.' + s_textId);
+    const cursorPos = textarea.selectionStart;
+    const textBefore = textarea.value.substring(0, cursorPos);
+    const textAfter = textarea.value.substring(cursorPos, textarea.value.length);
+
+    textarea.value = textBefore + ` :${customEmoji}: ` + textAfter;
+    textarea.focus();
+}
+
 
 // Handle expanding replies (should only be accessible with collapsed replies enabled)
 function expandReplies(id) {
