@@ -17,7 +17,7 @@
 */
 //https://docs.google.com/forms/d/e/1FAIpQLScfGWAve7dy54tUkVxhd8apXNcAxallNWV4K1yKCUMqJcBadQ/viewform?usp=pp_url&entry.1345813367=Name&entry.1029334929=Website&entry.1058530777=Text&entry.1179760552=Page&entry.802495416=Reply
 // The values in this section are REQUIRED for the widget to work! Keep them in quotes!
-const s_stylePath = '/css/comment-widget.css';
+const s_stylePath = '/css/comment-widget-min.css';
 const s_formId = '1FAIpQLScfGWAve7dy54tUkVxhd8apXNcAxallNWV4K1yKCUMqJcBadQ';
 const s_nameId = '1345813367';
 const s_websiteId = '1029334929';
@@ -144,10 +144,11 @@ if (s_commentsOpen) {c_submitButton = document.getElementById('c_submitButton')}
 else {c_submitButton = document.createElement('button')}
 
 // Add invisible page input to document
-let v_pagePath = window.location.pathname;
-if (v_pagePath == ("/index.html")) {
-    v_pagePath = "/"
+let v_pagePath = window.location.pathname.replace(/\/+$/, ''); // Remove trailing slashes
+if (v_pagePath === "" || v_pagePath === "/index.html") {
+    v_pagePath = "/";
 }
+
 if (s_includeUrlParameters) {v_pagePath += window.location.search}
 if (s_fixRarebitIndexPage && v_pagePath == '/') {v_pagePath = '/?pg=1'}
 const c_pageInput = document.createElement('input');
