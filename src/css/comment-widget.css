@@ -226,8 +226,6 @@
 .emoji-panel {
     display: none;
     width: calc(100% - 45px);
-    background-color: rgb(40, 43, 47);
-    border: #1a1c29 2px solid;
     border-radius: 4px;
     box-sizing: border-box;
     padding: 4px;
@@ -250,5 +248,5 @@
 .c-emoji {
     width: 16px;
     height: 16px;
-    vertical-align: middle
+    vertical-align: middle;
 }

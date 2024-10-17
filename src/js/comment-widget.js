@@ -58,6 +58,7 @@ const s_noCommentsText = 'no comments yet!';
 const s_closedCommentsText = 'comments are closed temporarily!';
 const s_websiteText = 'website'; // The links to websites left by users on their comments
 const s_replyButtonText = 'reply'; // The button for replying to someone
+const s_mentionButton = '@mention';
 const s_replyingText = 'replying to'; // The text that displays while the user is typing a reply
 const s_expandRepliesText = 'show replies';
 const s_hideRepliesText = 'hide replies';
@@ -101,7 +102,7 @@ const v_formHtml = `
     </div>
 
     <div class="emoji-panel">
-        <img class="emoji-listed" src="/assets/emojis/jerma.webp" alt="jerma" onclick="addEmoji('emoji1')">
+        <img class="emoji-listed" src="/assets/emojis/smile.webp" alt="smile" onclick="addEmoji('emoji1')">
         <img class="emoji-listed" src="/assets/emojis/annoyed.webp" alt="annoyed" onclick="addEmoji('emoji2')">
         <img class="emoji-listed" src="/assets/emojis/talk.webp" alt="talk" onclick="addEmoji('emoji3')">
         <img class="emoji-listed" src="/assets/emojis/pissed.webp" alt="pissed" onclick="addEmoji('emoji4')">
@@ -311,19 +312,36 @@ function displayComments(comments) {
         let reply = createComment(replies[i]);
         const parentId = replies[i].Reply;
         const parentDiv = document.getElementById(parentId);
+        const textarea = document.getElementById('entry.' + s_textId);
 
-        // Check if a container doesn't already exist for this comment, if not, make one
+        // Check if a container doesn't already exist for this comment, if not, create one
         let container;
         if (!document.getElementById(parentId + '-replies')) {
             container = document.createElement('div');
             container.id = parentId + '-replies';
-            if (s_collapsedReplies) {container.style.display = 'none'} // Default to hidden if collapsed
+            if (s_collapsedReplies) {container.style.display = 'none';} // Default to hidden if collapsed
             container.className = 'c-replyContainer';
             parentDiv.appendChild(container);
-        } else {container = document.getElementById(parentId + '-replies')}
+        } else {
+            container = document.getElementById(parentId + '-replies');
+        }
         reply.className = 'c-reply';
         container.appendChild(reply);
+
+        let mentionButton = document.createElement('button');
+        mentionButton.innerHTML = s_mentionButton;
+        mentionButton.className = 'c-replyButton';
+
+        // Append the button to the reply
+        reply.appendChild(mentionButton);
+        mentionButton.addEventListener('click', function() {
+            const textarea = document.getElementById('entry.' + s_textId);
+            textarea.focus();
+            openReply(this.parentElement.parentElement.parentElement.id); // its so ugly :(
+            textarea.value = "@" + `${this.parentElement.id.split('|--|')[0]} `;
+        });
     }
+    
 
     // Handle adding the buttons to show or hide replies if collapsed replies are enabled
     if (s_collapsedReplies) {
@@ -420,9 +438,9 @@ function createComment(data) {
     let filteredText = data.Text;
     if (s_wordFilterOn) {filteredText = filteredText.replace(v_filteredWords, s_filterReplacement)}
     // Replace custom emoji placeholders with images
-    filteredText = filteredText.replace(/:(jerma|annoyed|talk|pissed|nervous):/g, function(match, p1) {
+    filteredText = filteredText.replace(/:(smile|annoyed|talk|pissed|nervous):/g, function(match, p1) {
         const emojiMap = {
-            'jerma': 'jerma',
+            'smile': 'smile',
             'annoyed': 'annoyed',
             'talk': 'talk',
             'pissed': 'pissed',
@@ -535,26 +553,29 @@ function openReply(id) {
         c_replyInput.value = '';
         c_replyingText.style.display = 'none';
     }
+
     link.click(); // Jump to the space to type
 }
+
 
 function emojiWindow() {
     const targetDiv = document.querySelector('.non-message');
     const emojiDiv = document.querySelector('.emoji-panel');
+    const isHidden = targetDiv.style.display == 'none';
 
-    if (targetDiv.style.display == 'none') {
-        targetDiv.style.display = 'block';
-        emojiDiv.style.display = 'none';
-    } else {
-        targetDiv.style.display = 'none';
-        emojiDiv.style.display = 'flex';
-    }
+    targetDiv.style.display = isHidden ? 'block' : 'none';
+    emojiDiv.style.display = isHidden ? 'none' : 'flex';
 }
+
+document.getElementById('c_submitButton').addEventListener('click', function() {
+    document.querySelector('.non-message').style.display = 'block';
+    document.querySelector('.emoji-panel').style.display = 'none';
+});
 
 // stolen from https://adilene.net/ it was too much to stomach
 function addEmoji(emoji){
     const emojiMap = {
-        'emoji1': 'jerma',
+        'emoji1': 'smile',
         'emoji2': 'annoyed',
         'emoji3': 'talk',
         'emoji4': 'pissed',
@@ -571,7 +592,6 @@ function addEmoji(emoji){
     textarea.value = textBefore + ` :${customEmoji}: ` + textAfter;
     textarea.focus();
 }
-
 
 // Handle expanding replies (should only be accessible with collapsed replies enabled)
 function expandReplies(id) {
