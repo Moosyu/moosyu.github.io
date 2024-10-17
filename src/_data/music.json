@@ -1,5 +1,138 @@
 [
     {
+        "name": "The Machinist - Demo 1",
+        "artist": "The Lampshades",
+        "score": 2.4,
+        "image": "",
+        "description": "ehhh, the vocals are really quiet for some reason (maybe bad recording tools) and the yelling sounded forced"
+    },
+    {
+        "name": "From the Circus to the Sea",
+        "artist": "The Irrepressibles",
+        "score": 7,
+        "image": "",
+        "description": "some of the best tiktok music you can find"
+    },
+    {
+        "name": "Sometimes I Might Be Introvert",
+        "artist": "Little Simz",
+        "score": 9.4,
+        "image": "https://i.imgur.com/8n2Xom0.png",
+        "description": "this ablum sounds massive. idk music terms or anything but this felt like it was towering over me and just keeps growing somehow."
+    },
+    {
+        "name": "GREY Area",
+        "artist": "Little Simz",
+        "score": 8.2,
+        "image": "https://i.imgur.com/3D5PWHQ.png",
+        "description": "a bit of a let down to hear this right after sometimes i might be introvert but its still a great album with some especially great moments like selfish and venom"
+    },
+    {
+        "name": "open til midnight",
+        "artist": "Starmoon & PIKARO",
+        "score": 2.9,
+        "image": "",
+        "description": "pretty classic starmoon, lots of random annoying and often painful sounds that are not needed at all and the actual substance sounds pretty awful too"
+    },
+    {
+        "name": "Pent Up Pup - Live @ The Sex Room @ AC '24",
+        "artist": "Pent Up Pup",
+        "score": 4.5,
+        "image": "",
+        "description": "banished from the sex room"
+    },
+    {
+        "name": "Wild God",
+        "artist": "Nick Cave & The Bad Seeds",
+        "score": 8.2,
+        "image": "https://i.imgur.com/hv2VEVi.png",
+        "description": "guys can we stop making great albums for like a couple days im having trouble keeping up here <--- this was written during augest when imaginal disk, romance, sky hundred, ultra 85, i lay down my life for you and shadow box dropped"
+    },
+    {
+        "name": "Die Lit",
+        "artist": "Playboi Carti",
+        "score": 6.8,
+        "image": "",
+        "description": "i guess i just dont get carti, this is his highest rated project and it still only bordered on being good for me. there were some great moments like choppa wont miss but a lot just felt like bloat to me."
+    },
+    {
+        "name": "Fearless Movement",
+        "artist": "Kamasi Washington",
+        "score": 8,
+        "image": "https://i.imgur.com/uO5KNoX.png",
+        "description": "imagine getting an andre 3000 feature and its completely instrumental but still goes hard. thats just the kind of album this is and prologue is competeting for my favourite song of this year, i wish this was a little shorter though becuase an hour 30 of jazz was a bit much for me."
+    },
+    {
+        "name": "Swimming",
+        "artist": "Mac Miller",
+        "score": 7.7,
+        "image": "",
+        "description": "mmmm, id like to rate this one higher but there are just a lot of songs that i dont really vibe with but also jet fuel and come back to earth are some of my favourite songs in hiphop, if this only had those two it would probably be an 100 (i mean probably not because that would fuck up the flow but still you get what im saying)"
+    },
+    {
+        "name": "Radio Songs",
+        "artist": "Dave Rowntree",
+        "score": 3.6,
+        "image": "",
+        "description": "an almost offensively boring set of songs, i listened to this because it was from a member of blur but this is just sad"
+    },
+    {
+        "name": "Man On The Moon: The End Of Day",
+        "artist": "Kid Cudi",
+        "score": 9.2,
+        "image": "https://i.imgur.com/oksbGc7.png",
+        "description": "i fear that im becoming a kid cudi fan. this album is just so catchy and fun and different from a lot of the hiphop i hear usually"
+    },
+    {
+        "name": "The Black Saint and the Sinner Lady",
+        "artist": "Mingus",
+        "score": 8.3,
+        "image": "",
+        "description": "surely one of my favourite jazz albums of all time, it has a great flow and is just really full. my major problem with this though is the mixing is so fucked like a lot of the 1960s stuff"
+    },
+    {
+        "name": "The Magic Show",
+        "artist": "Rabbit on the Moon",
+        "score": 1.9,
+        "image": "",
+        "description": "i dont know why people who are bad at making music default to ambient but im sorry an ambient album is not as easily as you think it is"
+    },
+    {
+        "name": "A Love Supreme",
+        "artist": "John Coltrane",
+        "score": 4,
+        "image": "",
+        "description": "this album is an overrated piece of shit that forced me to switch to mono because its got that annying ass half in one ear half in the other thing going that gives me a headache. i read a bunch of reviews talking about how cinamatic the album was and i just didnt feel that, it felt empty and bored me to death. the 40 points were mercy points."
+    },
+    {
+        "name": "Violator",
+        "artist": "Depeche Mode",
+        "score": 8.6,
+        "image": "https://i.imgur.com/f8IRNca.png",
+        "description": "i was sceptical at the start of world in my eyes, i was like 30 seconds in and felt like this album was gonna be dogshit but i was throwing it back by the end of it so i guess i know nothing. that was one of the best synthpop albums ive ever heard in my life, behind maybe just imaginal disk and melodrama (and maybe currents too but im still figuring out how i feel about that one). its like the old ass men in depeche mode were seducing me or something. the best song was either personal jesus or policy of truth and it was crazy when i realised ive heard enjoy the silence a bunch of times and just didnt know it was by these guys. blue dress was by far the worst song and kind of brought this album down a lot. that shit was way too long for its own good and so boring."
+    },
+    {
+        "name": "Crazy Hits",
+        "artist": "Crazy Frog",
+        "score": 1,
+        "image": "",
+        "description": "mind bending horrors beyond human comprehension"
+    },
+    {
+        "name": "Bocanada",
+        "artist": "Gustavo Cerati",
+        "score": 8.2,
+        "image": "https://i.imgur.com/oYubAAp.png",
+        "description": "very fun pop?? dance?? rock?? album. my favourite songs were puente, verbo carne and raiz (especially raiz) and the worst song was y si el muno esta en foco by far. i think it had a bit of a weak second half."
+    },
+    {
+        "name": "The Mouse and the Mask",
+        "artist": "DANGERDOOM",
+        "score": 8.4,
+        "image": "https://i.imgur.com/zhu0lS4.png",
+        "description": "a great project that i somehow didnt know existed until today, this album is great but i feel like if anything doom actually brought it down, the beats were great but doom didn't seem to be on his a game. luckily dooms b game is better than most rappers a game. sofa king and old school rules were my favourite songs, espcially sofa king that beat was fire."
+    },
+    {
         "name": "NO TITLE AS OF 13 FEBRUARY 2024 28,340 DEAD",
         "artist": "Godspeed You Black Emperor!",
         "score": 6.5,
@@ -1888,10 +2021,10 @@
     {
         "name": "Sgt. Pepper's Lonely Hearts Club Band",
         "artist": "The Beatles",
-        "score": 9.6,
+        "score": 8.3,
         "image": "https://i.imgur.com/GrZvBMa.jpeg",
         "imageB": "https://i.imgur.com/EMTtOwV.png",
-        "description": "the best beatles album abbey road put me to sleep but this is my shit, from start to end not a single miss the people on aoty are lying to you when they say this isnt as good as abbey road and revolver. the cover is also fire, idk why they cropped ghandi out though."
+        "description": "the best beatles album abbey road put me to sleep but this is my shit, from start to end not a single miss the people on aoty are lying to you when they say this isnt as good as abbey road and revolver. the cover is also fire, idk why they cropped ghandi out though. <--- went from 96 > 83 ive grown to dispise the mixing in this album"
     },
     {
         "name": "To Pimp a Butterfly",

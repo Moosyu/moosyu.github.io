@@ -102,11 +102,11 @@ const v_formHtml = `
     </div>
 
     <div class="emoji-panel">
-        <img class="emoji-listed" src="/assets/emojis/smile.webp" alt="smile" onclick="addEmoji('emoji1')">
-        <img class="emoji-listed" src="/assets/emojis/annoyed.webp" alt="annoyed" onclick="addEmoji('emoji2')">
-        <img class="emoji-listed" src="/assets/emojis/talk.webp" alt="talk" onclick="addEmoji('emoji3')">
-        <img class="emoji-listed" src="/assets/emojis/pissed.webp" alt="pissed" onclick="addEmoji('emoji4')">
-        <img class="emoji-listed" src="/assets/emojis/nervous.webp" alt="nervous" onclick="addEmoji('emoji5')">
+        <img class="emoji-listed" src="/assets/emojis/smile.webp" alt=":smile:" onclick="addEmoji('emoji1')">
+        <img class="emoji-listed" src="/assets/emojis/annoyed.webp" alt=":annoyed:" onclick="addEmoji('emoji2')">
+        <img class="emoji-listed" src="/assets/emojis/talk.webp" alt=":talk:" onclick="addEmoji('emoji3')">
+        <img class="emoji-listed" src="/assets/emojis/pissed.webp" alt=":pissed:" onclick="addEmoji('emoji4')">
+        <img class="emoji-listed" src="/assets/emojis/nervous.webp" alt=":nervous:" onclick="addEmoji('emoji5')">
     </div>
 
     <div id="c_textWrapper" class="c-inputWrapper">
@@ -312,7 +312,6 @@ function displayComments(comments) {
         let reply = createComment(replies[i]);
         const parentId = replies[i].Reply;
         const parentDiv = document.getElementById(parentId);
-        const textarea = document.getElementById('entry.' + s_textId);
 
         // Check if a container doesn't already exist for this comment, if not, create one
         let container;
@@ -337,11 +336,10 @@ function displayComments(comments) {
         mentionButton.addEventListener('click', function() {
             const textarea = document.getElementById('entry.' + s_textId);
             textarea.focus();
-            openReply(this.parentElement.parentElement.parentElement.id); // its so ugly :(
+            openReply(this.closest('.c-comment').id);
             textarea.value = "@" + `${this.parentElement.id.split('|--|')[0]} `;
         });
     }
-    
 
     // Handle adding the buttons to show or hide replies if collapsed replies are enabled
     if (s_collapsedReplies) {
@@ -465,7 +463,8 @@ function createComment(data) {
 function sanitizeInput(input) {
     const allowedTags = input.replace(/<(?!img\b)[^>]*>/gi, "");
     const trustedImagesOnly = allowedTags.replace(/<img\b[^>]*src=["'](?!\/assets\/emojis\/)[^"']*["'][^>]*>/gi, "");
-    return trustedImagesOnly;
+    const highlightMentions = trustedImagesOnly.replace(/^(@\w+)/, '<span class="highlight-mention">$1</span>');
+    return highlightMentions;
 }
 
 // Makes the Google Sheet timestamp usable
