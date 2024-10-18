@@ -107,6 +107,7 @@ const v_formHtml = `
         <img class="emoji-listed" src="/assets/emojis/talk.webp" alt=":talk:" onclick="addEmoji('emoji3')">
         <img class="emoji-listed" src="/assets/emojis/pissed.webp" alt=":pissed:" onclick="addEmoji('emoji4')">
         <img class="emoji-listed" src="/assets/emojis/nervous.webp" alt=":nervous:" onclick="addEmoji('emoji5')">
+        <img class="emoji-listed" src="/assets/emojis/cool.webp" alt=":cool:" onclick="addEmoji('emoji6')">
     </div>
 
     <div id="c_textWrapper" class="c-inputWrapper">
@@ -437,13 +438,14 @@ function createComment(data) {
     let filteredText = data.Text;
     if (s_wordFilterOn) {filteredText = filteredText.replace(v_filteredWords, s_filterReplacement)}
     // Replace custom emoji placeholders with images
-    filteredText = filteredText.replace(/:(smile|annoyed|talk|pissed|nervous):/g, function(match, p1) {
+    filteredText = filteredText.replace(/:(smile|annoyed|talk|pissed|nervous|cool):/g, function(match, p1) {
         const emojiMap = {
-            'smile': 'smile',
-            'annoyed': 'annoyed',
-            'talk': 'talk',
-            'pissed': 'pissed',
-            'nervous': 'nervous'
+            'smile' : 'smile',
+            'annoyed' : 'annoyed',
+            'talk' : 'talk',
+            'pissed' : 'pissed',
+            'nervous' : 'nervous',
+            'cool' : 'cool'
         };
 
         const emojiName = emojiMap[p1];
@@ -575,11 +577,12 @@ document.getElementById('c_submitButton').addEventListener('click', function() {
 // stolen from https://adilene.net/ it was too much to stomach
 function addEmoji(emoji){
     const emojiMap = {
-        'emoji1': 'smile',
-        'emoji2': 'annoyed',
-        'emoji3': 'talk',
-        'emoji4': 'pissed',
-        'emoji5': 'nervous',
+        'emoji1' : 'smile',
+        'emoji2' : 'annoyed',
+        'emoji3' : 'talk',
+        'emoji4' : 'pissed',
+        'emoji5' : 'nervous',
+        'emoji6' : 'cool'
     };
 
     const customEmoji = emojiMap[emoji] || emoji;
