@@ -16,7 +16,6 @@ pagination:
         <tr>
             <th>type, name</th>
             <th>description</th>
-            <th>image</th>
         </tr>
     </thead>
     <tbody>
@@ -26,15 +25,11 @@ pagination:
                 [{{ item.type }}]
                 <br>
                 ({{ item.name }})
+            {% if item.image %}
+                <img src="{{ item.image }}" alt="{{ item.name }}" onclick="toggleFullscreen(this)" loading="lazy">
+            {% endif %}
             </td>
             <td>{{ item.description }}</td>
-            <td class="image-td">
-                {% if item.image %}
-                <img src="{{ item.image }}" alt="{{ item.name }}" onclick="toggleFullscreen(this)" loading="lazy">
-                {% else %}
-                no image
-                {% endif %}
-            </td>
         </tr>
         {% endfor %}
     </tbody>

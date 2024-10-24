@@ -220,7 +220,7 @@
 }
 
 .non-message {
-    height: 50px;
+    height: 52px;
 }
 
 .emoji-panel {
@@ -230,7 +230,7 @@
     box-sizing: border-box;
     padding: 4px;
     color: white;
-    height: 50px;
+    height: 52px;
     align-items: center;
 }
 

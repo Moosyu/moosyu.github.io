@@ -25,7 +25,6 @@ the only other particularly annoying thing i can think of right now is the massi
 * global warming
 * ai stealing your job
 * housing crisis
-* rising house prices
 * whatever the united states president has done
 * racism still being alive
 * women being underpaid in the workplace

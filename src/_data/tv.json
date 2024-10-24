@@ -1,5 +1,11 @@
 [
       {
+            "type": "Movie",
+            "name": "Earth to Echo",
+            "score": 6,
+            "description": "this was the shit when i was like 6. doesnt hold up but i think id be betraying myself to put it any lower"
+      },
+      {
             "type": "TV Show",
             "name": "Outer Banks",
             "score": 3.1,

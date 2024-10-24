@@ -24,9 +24,8 @@ pagination:
             current average score: {{ (scoreTotal / counter).toFixed(2) }}/10
         </th>
         </tr>
-            <th>artist, name, score</th>
+            <th>artist, name, score, cover</th>
             <th>description</th>
-            <th>album cover</th>
         </tr>
     </thead>
     <tbody>
@@ -47,20 +46,16 @@ pagination:
                       {% endif %}">
                 {{ item.score }}/10
                 </span>
-            </td>
-            <td>{{ item.description }}</td>
-            <td class="image-td">
-                {% if item.image %}
+                            {% if item.image %}
                 <div class="image-container">
                     <img class="imageA" src="{{ item.image }}" alt="{{ item.name }}" onclick=toggleFullscreen(this)>
                     {% if item.imageB %}
                     <img class="imageB" src="{{ item.imageB }}" alt="{{ item.name }}" onclick=toggleFullscreen(this)>
                     {% endif %}
                 </div>
-                {% else %}
-                no image
                 {% endif %}
             </td>
+            <td>{{ item.description }}</td>
         </tr>
         {% endfor %}
     </tbody>

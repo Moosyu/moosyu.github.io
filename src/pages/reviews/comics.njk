@@ -24,9 +24,8 @@ pagination:
         </th>
         </tr>
         <tr>
-            <th>type, name, score</th>
+            <th>type, name, score, image</th>
             <th>description</th>
-            <th>image</th>
         </tr>
     </thead>
 <tbody>
@@ -47,15 +46,12 @@ pagination:
                   {% endif %}">
             {{ item.score }}/10
             </span>
+
+        {% if item.image %}
+            <img src="{{ item.image }}" alt="{{ item.name }}" onclick="toggleFullscreen(this)" loading="lazy">
+        {% endif %}
         </td>
         <td>{{ item.description }}</td>
-        <td class="image-td">
-            {% if item.image %}
-            <img src="{{ item.image }}" alt="{{ item.name }}" onclick="toggleFullscreen(this)" loading="lazy">
-            {% else %}
-            no image
-            {% endif %}
-        </td>
     </tr>
     {% endfor %}
 </tbody>

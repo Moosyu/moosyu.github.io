@@ -208,8 +208,8 @@ table:not(.front-page-table) {
 
 .image-cell {
     display: flex;
-    align-items: center; /* Vertical alignment */
-    justify-content: center; /* Horizontal alignment */
+    align-items: center;
+    justify-content: center;
 }
 
 .image-cell img {
@@ -465,14 +465,9 @@ animation: 2s bobleft ease-in-out infinite;
     padding: 0.5em;
     border-collapse: collapse;
     overflow-wrap: break-word;
-    width: 33%;
     border: 2px solid var(--pagination-container-border);
     font-size: calc(0.9vw + 0.9vh);
-}
-
-.image-td {
-    text-align: center;
-    vertical-align: middle;
+    width: 25%;
 }
 
 .pagination-container {

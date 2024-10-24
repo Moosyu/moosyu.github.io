@@ -476,9 +476,12 @@ function convertTimestamp(timestamp) {
     const date = new Date(vals[0], vals[1], vals[2], vals[3], vals[4], vals[5]);
     const timezoneDiff = (s_timezone * 60 + date.getTimezoneOffset()) * -1;
     let offsetDate = new Date(date.getTime() + timezoneDiff * 60 * 1000);
-    if (s_daylightSavings) {offsetDate = isDST(offsetDate)}
-    return [offsetDate.toLocaleString(), offsetDate.toLocaleDateString()];
+    if (s_daylightSavings) { offsetDate = isDST(offsetDate); }
+    const formattedTimestampEU = offsetDate.toLocaleString('en-GB');
+    const formattedDateEU = offsetDate.toLocaleDateString('en-GB');
+    return [formattedTimestampEU, formattedDateEU];
 }
+
 // DST checker
 function isDST(date) {
     const dstStart = [getMonthNum(s_dstStart[0]), getDayNum(s_dstStart[1]), s_dstStart[2], s_dstStart[3]];
