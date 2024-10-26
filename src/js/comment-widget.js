@@ -47,7 +47,7 @@ const s_fixRarebitIndexPage = false; // If using Rarebit, change to true to make
 const s_wordFilterOn = true; // True for on, false for off
 const s_filterReplacement = '****'; // Change what filtered words are censored with (**** is the default)
 const s_filteredWords = [ // Add words to filter by putting them in quotes and separating with commas (ie. 'heck', 'dang')
-    'nigger', 'faggot', 'nigga', 'rape', 'niggers', 'niggas', 'nigur', 'niiger', 'niigr', 'chink', 'niger', 'fag' //idk any other slurs that are actually bad (also i know nigga isnt really a bad word but best believe the white boys in my comments dont mean it in a nice way)
+    'nigger', 'faggot', 'nigga', 'rape', 'niggers', 'niggas', 'nigur', 'niiger', 'niigr', 'chink', 'niger', 'fag', 'n i gg e r' //idk any other slurs that are actually bad (also i know nigga isnt really a bad word but best believe the white boys in my comments dont mean it in a nice way)
 ]
 
 // Text - Change what messages/text appear on the form and in the comments section (Mostly self explanatory)

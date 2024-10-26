@@ -1,10 +1,112 @@
 [
     {
+        "name": "Everything Is a Lot",
+        "artist": "Will Wood & The Tapeworms",
+        "score": 6.4,
+        "description": "music for people who try to pretend that they are unwell in the head. i wont believe youre truly insane in the head until you do something actually off the rails, kick a baby or sit outside a supermarket yelling slurs at strangers and then maybe ill believe you."
+    },
+    {
+        "name": "Flood",
+        "artist": "They Might Be Giants",
+        "score": 8,
+        "image": "https://i.imgur.com/XxSBwg6.png",
+        "description": "one of the og geek rock albums with not a single song thats bad and even has a couple classics just birdhouse in your soul and istanbul (not constantinople). umbrella academy actually got me onto this one (fun fact). your racist friend is a great song name btw."
+    },
+    {
+        "name": "Black Ben Carson",
+        "artist": "JPEGMAFIA",
+        "score": 6.5,
+        "description": "the first jpegmafia album and its... alright? it has some songs like all caps no spaces, drake era, the 27 club and the extremely disturbing i just killed a cop now im horny that show off peggys talents but most of this stuff ranges from average to alright."
+    },
+    {
+        "name": "Orgy of the Damned",
+        "artist": "Slash",
+        "score": 4.3,
+        "description": "blues rock was a mistake and should never have existed and this album is proof"
+    },
+    {
+        "name": "Gris Original Soundtrack",
+        "artist": "Berlinist",
+        "score": 8,
+        "image": "https://i.imgur.com/85nDfYP.png",
+        "description": "absolutely incredible ost that really makes gris. unagi and gris, pt. 1 are some of my most listened to songs of all time on spotify and the rest are some very nice songs to just chill and listen to."
+    },
+    {
+        "name": "Three Cheers for Sweet Revenge",
+        "artist": "My Chemical Romance",
+        "score": 8,
+        "image": "https://i.imgur.com/fBZJycT.png",
+        "description": "my favourite my chemical romance album and one of the last truly great pop punk albums"
+    },
+    {
+        "name": "loveless",
+        "artist": "my bloody valentine",
+        "score": 8.6,
+        "image": "https://i.imgur.com/DuEyp3S.png",
+        "description": "you can practically hear the cover, this is the kind of music you have to listen to with headphones because its just too layered to listen to on a shitty phone speaker or something. i honestly couldnt imagine hearing this in 1991, i would be losing my mind."
+    },
+    {
+        "name": "Trench 10 Inch Triplet EP",
+        "artist": "Twenty Øne Piløts",
+        "score": 6.5,
+        "description": "i dont get why people love this one so much. i thought nico and the niners was good but the other two were just alright."
+    },
+    {
+        "name": "The New Normal!",
+        "artist": "Will Wood",
+        "score": 5.7,
+        "description": "will is the gayest straight man alive. the production was there but it just felt like will wood was screaming at me to look at him showing me how wacky he is and shit and it came off as a little corny, though laplaces angel was pretty good and so was i / me / myself."
+    },
+    {
+        "name": "Ikiru",
+        "artist": "椎名もた [Siinamota]",
+        "score": 4.2,
+        "description": "i used to pretend to like this one because it had young girl a on it which i thought was a banger, but most of this is boring and if im being real im not even if sure if i like young girl a that much anymore. this is like youtube music but not from the actual youtube music app, this is the kind of shit actual video youtube tries to get you to listen to."
+    },
+    {
+        "name": "NO THANK YOU",
+        "artist": "Little Simz",
+        "score": 6.9,
+        "description": "a pretty massive letdown from little simz. the entire last quarter was just straight bad and it felt like i could take or leave most of the stuff on here."
+    },
+    {
+        "name": "UTOPIA",
+        "artist": "Travis Scott",
+        "score": 6.7,
+        "description": "i got this one recommended to me by a friend and i think its worn off me. i originally thought it was maybe a 7.5 but the more times i hear the songs the less interesting they sound. circus maximus, my eyes, looove and modern jam are really good but the rest is kind of weak at least for travis scotts standards. this could have done without a fair few of the songs."
+    },
+    {
+        "name": "...Like Clockwork",
+        "artist": "Queens of the Stone Age",
+        "score": 7,
+        "description": "people love this album, and i think i have an idea of why but its just clearly not for me. rock without any bonus flavours or over the top zesty production has never been a genre i really enjoyed, despite that i think i had a good time with this record. i appear missing is really great and my favourite on this by far."
+    },
+    {
+        "name": "RAMONA",
+        "artist": "Kill Bill: The Rapper",
+        "score": 8.3,
+        "image": "https://i.imgur.com/5KyfkrT.png",
+        "description": "firstly, fire ass cover. like this was literally the only reason i listened. ceres & calypso in the deep time levels of eye catching. this mixtape is such a strange amalgam of styles and the fact that they all actually sound good is quite the accomplishment. my favourite songs are the ones that lean more into a jazzy sound but the more lofi songs dont bore me like i often find they do. some of these songs even give me luv(sic) vibes which was pretty awesome, especially backwoods. good luck chuck was actually pretty disturbing too and a crazy curveball."
+    },
+    {
+        "name": "Patterns in Repeat",
+        "artist": "Laura Marling",
+        "score": 8.1,
+        "image": "https://i.imgur.com/y4Emldl.png",
+        "description": "hmmm, auspicious. this might need a few more listens for me to get it fully and probably some more focus on the lyrics as i definitely felt like i wasnt getting the full picture at some points, though with its relatively short 36 minute length i imagine ill be listening to it again sooner rather than later. even without a deep understanding of the album during my first listen it was still kind of great?? im not really one for chamber music or folk so i dont really know how this weighs up in a comparison but this album certainly had me almost transfixed at some points, only being broken out of the immersion by track five and six which while not bad at all just seem to have a different vibe or something? i dont know i cant explain it. overall some great stuff and i think ill need to listen to some more laura marling in the future."
+    },
+    {
+        "name": "Cartoon Darkness",
+        "artist": "Amyl and The Sniffers",
+        "score": 4.4,
+        "description": "not that much to say about this one as i basically tuned it out after a point. it just kind of bored me and punk as a genre really does nothing for me."
+    },
+    {
         "name": "The Angel, The Demon,",
         "artist": "Cacola",
         "score": 7.7,
         "image": "https://i.imgur.com/ZGauPkF.png",
-        "description": "a very impressive synthpop project, why is the cover undertale fanart though? i think my main problems with this one is that it overstays its welcome by a little bit, i think everything but the demon, lit fuse, [...] and the angel could have been cut out. not to say those songs are bad, in fact i really like all of them (except for redeyes that song really is bad) but [...] and the angel alone are an hour 15 minutes and i generally prefer shorter albums. maybe they could have been put in an extra ep or something. the thing that ruined redeyes for me was its really piercing noise playing over the like whole second half that of ruined the flow for me after a very good start with the demon. despite all my critique i really did have a good time with this one and it's very underrated. go listen to this or at least listen to the angel pt. 1. that was majestic."
+        "description": "a very impressive synthpop project, why is the cover undertale fanart though? i think my main problem with this one is that its just too long. i think everything but the demon, lit fuse, [...] and the angel could have been cut out. not to say those songs are bad, in fact i really like all of them (except for redeyes that song really is bad) but [...] and the angel alone are an hour 15 minutes and i generally prefer shorter albums. maybe they could have been put in an extra ep or something. the thing that ruined redeyes for me was its really piercing noise playing over the like whole second half that of ruined the flow for me after a very good start with the demon. i know i really only said bad things about this album i actually did have a good time with this one and it deserves to be more popular than it is. go listen to this or at least listen to the angel pt. 1, that was majestic."
     },
     {
         "name": "REBIRTH",
@@ -618,7 +720,7 @@
     {
         "name": "To See the Next Part of the Dream",
         "artist": "파란노을 [Parannoul]",
-        "score": 7.1,
+        "score": 6.5,
         "description": "good but not parannoul's best by a long shot, the first few were really good especially white ceiling but the rest kind of fell flat for me"
     },
     {
@@ -755,7 +857,7 @@
         "image": "https://i.imgur.com/4UeIEq9.png",
         "imageB": "https://i.imgur.com/UkLq6SM.png",
         "score": 8.3,
-        "description": "me encanta el jardín de los presentes !!"
+        "description": "me encanta el jardín de los presentes !! (i did year 9 spanish this is the extent of my vocab)"
     },
     {
         "name": "Electric Landlady",
@@ -1088,18 +1190,12 @@
         "description": "you know those videos of two squares and the smaller one is knocking against the wall and the heavier one and its counting how many hits until the heavy one gets knocked away? yeah"
     },
     {
-        "name": "Have a Nice Life",
-        "artist":"Deathconsciousness",
+        "name": "Deathconsciousness",
+        "artist":"Have a Nice Life",
         "score": 9.7,
         "image": "https://i.imgur.com/QuMPnoh.png",
         "imageB": "https://i.imgur.com/6mACuJv.png",
         "description": "i think i might like shoegaze (wtf) ?? ive never been depressed (im somewhat of a mental health massiah) so its not like i relate too heavily to whats being said here, but i can hear the emotion in this and its mad beautiful tbh (and just between me and you, i cried on there is no food). there are also lots of bangers in this album too, like half of this album is going on my regular listening playlist and theres nothing anyone can do to stop me from playing them when i get the aux."
-    },
-    {
-        "name": "50 Cent",
-        "artist":"Get Rich or Die Tryin'",
-        "score": 7.9,
-        "description": "pretty mixed bag but it was incredible more then it was awful. could do with like 20 less minutes too."
     },
     {
         "name": "Hex Dealer",
@@ -1110,8 +1206,8 @@
     {
         "name": "Desert of Doom",
         "artist":"Bruhguy3457",
-        "score": 6.3,
-        "description": "very amateurish sounding (idk how to describe it)"
+        "score": 4.3,
+        "description": "very amateurish sounding (idk how to describe it). by the looks of the album cover it is made by a literal child though so im not gonna get too harsh."
     },
     {
         "name": "Under Pressure",
@@ -1122,7 +1218,7 @@
     {
         "name": "Kurzgesagt, Vol. 8 (Original Motion Picture Soundtrack)",
         "artist":"Epic Mountain",
-        "score": 7.8,
+        "score": 7.1,
         "description": "its good studying music istg"
     },
     {
@@ -1155,12 +1251,6 @@
         "score": 9.6,
         "image": "https://i.imgur.com/dJC5YVB.png",
         "description": "my favourite half of the powers that b. no back cover for this one as im pretty sure it never got a physical release?"
-    },
-    {
-        "name": "How Are We Feeling Today?",
-        "artist":"Kaizo Slumber",
-        "score": 8.2,
-        "description": "was wondering on gross technique how they would keep up this energy then i heard gengar ectasy and have been twitching on the floor ever since"
     },
     {
         "name": "How Are We Feeling Today?",
@@ -1202,14 +1292,14 @@
     {
         "name": "Romance",
         "artist":"Fontaines D.C.",
-        "score": 8.2,
-        "description": "a great album that missed being incredible by having bug, motorcycle boy and sundowner, all of its worst songs in a row"
+        "score": 7.4,
+        "description": "great first half, shit second half. this is only saved by favourite but i was basically asleep by that point so i dont care. starburster was one of my favourite songs of the year though so i cant put it much lower than this."
     },
     {
         "name": "Exmili-Toby",
         "artist":"Tobuscus",
-        "score": 5.5,
-        "description": "kyle rittenhouse (the song) was kind of fire im not even gonna lie"
+        "score": 3.2,
+        "description": "kyle rittenhouse (the song) was kind of fire im not even gonna lie. i have it on my playlist straight up."
     },
     {
         "name": "Hounds of Love",
@@ -1631,7 +1721,7 @@
         "description": "sewerslvt is back to making stinky poo poo music. so god damn boring."
     },
     {
-        "name": "Drowning In The Sewer",
+        "name": "Draining Love Story",
         "artist":"Sewerslvt",
         "score": 6.3,
         "description": "sewerslvt has evolved from being shit to fine !! great stuff !!"
