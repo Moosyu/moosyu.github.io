@@ -108,6 +108,8 @@ const v_formHtml = `
         <img class="emoji-listed" src="/assets/emojis/pissed.webp" alt=":pissed:" onclick="addEmoji('emoji4')">
         <img class="emoji-listed" src="/assets/emojis/nervous.webp" alt=":nervous:" onclick="addEmoji('emoji5')">
         <img class="emoji-listed" src="/assets/emojis/cool.webp" alt=":cool:" onclick="addEmoji('emoji6')">
+        <img class="emoji-listed" src="/assets/emojis/exclaim.webp" alt=":exclaim:" onclick="addEmoji('emoji7')">
+        <img class="emoji-listed" src="/assets/emojis/sad.webp" alt=":sad:" onclick="addEmoji('emoji8')">
     </div>
 
     <div id="c_textWrapper" class="c-inputWrapper">
@@ -438,14 +440,16 @@ function createComment(data) {
     let filteredText = data.Text;
     if (s_wordFilterOn) {filteredText = filteredText.replace(v_filteredWords, s_filterReplacement)}
     // Replace custom emoji placeholders with images
-    filteredText = filteredText.replace(/:(smile|annoyed|talk|pissed|nervous|cool):/g, function(match, p1) {
+    filteredText = filteredText.replace(/:(smile|annoyed|talk|pissed|nervous|cool|exclaim|sad):/g, function(match, p1) {
         const emojiMap = {
             'smile' : 'smile',
             'annoyed' : 'annoyed',
             'talk' : 'talk',
             'pissed' : 'pissed',
             'nervous' : 'nervous',
-            'cool' : 'cool'
+            'cool' : 'cool',
+            'exclaim' : 'exclaim',
+            'sad' : 'sad'
         };
 
         const emojiName = emojiMap[p1];
@@ -585,7 +589,9 @@ function addEmoji(emoji){
         'emoji3' : 'talk',
         'emoji4' : 'pissed',
         'emoji5' : 'nervous',
-        'emoji6' : 'cool'
+        'emoji6' : 'cool',
+        'emoji7' : 'exclaim',
+        'emoji8' : 'sad'
     };
 
     const customEmoji = emojiMap[emoji] || emoji;

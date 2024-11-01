@@ -14,7 +14,9 @@ date created: {{ page.date.toLocaleDateString('en-US', { month: 'short', day: 'n
 {% endif %}
 {% endfor %}
 
+{% if date %}
 <h1>{{ title }}</h1>
+{% endif %}
 
 {{ content | safe }}
 

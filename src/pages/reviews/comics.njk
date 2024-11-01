@@ -19,9 +19,11 @@ pagination:
 <table class="review_table">
     <thead>
         <tr>
-        <th>
-            current average score: {{ (scoreTotal / counter).toFixed(2) }}/10
-        </th>
+            <th>
+                <a href="/pages/graphs/comic_dist/">
+                    current average score: {{ (scoreTotal / counter).toFixed(2) }}/10
+                </a>
+            </th>
         </tr>
         <tr>
             <th>type, name, score, image</th>

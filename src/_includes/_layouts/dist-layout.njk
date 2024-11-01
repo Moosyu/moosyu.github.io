@@ -1,0 +1,72 @@
+{% extends "base.njk" %}
+
+{% block title %}
+  {{ title | default("rating distributions") }}
+{% endblock %}
+
+{% block content %}
+<h1>{{ title }}</h1>
+
+{{ content | safe }}
+
+<select id="chartTypeDropdown" style="margin-bottom: 20px; padding: 5px; background-color: #1e2030; border: 1px solid #89b4fa; border-radius: 5px; color: white;">
+  <option value="bar">bar</option>
+  <option value="line">line</option>
+  <option value="pie">pie</option>
+  <option value="bubble">bubble</option>
+  <option value="polarArea">polar area</option>
+  <option value="radar">radar</option>
+</select>
+
+<canvas id="ratingChart" width="400" height="200"></canvas>
+
+<script src="/js/chart.js"></script>
+<script>
+const ranges = Array.from({ length: 11 }, () => 0); // initalising my empty array with 11 0s
+fetch("{{ jsonLocation }}")
+  .then(response => response.json())
+  .then(data => {
+    data.forEach(item => {
+      const score = Math.floor(item.score); // round down
+      ranges[score]++;
+    });
+    renderChart('bar');
+  })
+.catch(error => console.error('json file is missing!', error));
+
+document.getElementById('chartTypeDropdown').addEventListener('change', (event) => {
+  const selectedType = event.target.value;
+  renderChart(selectedType);
+});
+let chart;
+
+function renderChart(type) {
+  const ctx = document.getElementById('ratingChart').getContext('2d');
+  if (chart) chart.destroy(); // trying to prevent duplicate charts
+  chart = new Chart(ctx, {
+    type: type,
+    data: {
+      labels: Array.from({ length: 11 }, (_, i) => i.toString()),
+      datasets: [{
+        data: ranges,
+        backgroundColor: 'rgba(54, 162, 235, 0.2)',
+        borderColor: 'rgb(54, 162, 235)',
+        borderWidth: 1
+      }]
+    },
+    options: {
+      plugins: {
+        legend: {
+            display: false
+        }
+      },
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+}
+</script>
+{% endblock %}

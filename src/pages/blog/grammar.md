@@ -3,6 +3,7 @@ title: "and then i said grammar? i hardly know her!"
 date: 2024-09-21
 ---
 
+<h1 style="color: red;">uhh i dont think the stuff i bring up in this is good any more so just take it with a grain of salt, still gonna type like an illiterate though</h1>
 
 you might have noticed if youre more literate than the average commenter on my home page but i like to type in all lowercase will little to no punctuation. this is going to be a pretty short post though as the reason is rather obvious, its just straight up easier. things like apostrophes on most words serve little to no purpose and anyone with a grasp above first grade level should still be able to read what i write so whats the point in adding them?
 
@@ -35,3 +36,7 @@ i actually changed my mind apostrophes, i feel like they should be an optional a
 <p style="text-align:center;">(( ( update 14/10/24 ) ))</p>
 
 changed my mind on another thing, i think perhaps capital letters on names might also be good especially when names are also a real word.
+
+<p style="text-align:center;">(( ( update 30/10/24 ) ))</p>
+
+ive realised that capitals simply make me seem more fancy as well so ive decided to disown this article
