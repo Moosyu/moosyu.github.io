@@ -1,10 +1,61 @@
 [
     {
+        "name": "Sound of Silver",
+        "artist": "LCD Soundsystem",
+        "score": 9.9,
+        "image": "https://i.imgur.com/xWc5Co0.png",
+        "imageB": "https://i.imgur.com/GRwJHrx.png",
+        "description": "my favourite lcd soundsystem record, its consistent, fun and every track is near perfect (except for the title track but that still goes hard). the final track was a complete curveball in the best way possible and everything else was just classic lcd soundsystem but at the highest level possible. you can tell just how hard this man laboured over every single song, they're layered but never have too much going on. all my friends is one of my favourite songs of all time btw. very excited to see what mr soundsystem has in store for me next."
+    },
+    {
+        "name": "LCD Soundsystem",
+        "artist": "LCD Soundsystem",
+        "score": 7,
+        "description": "just too many misses for me to love. songs like thrills, yeah and tired fuck the flow up really badly and honestly the entire disk 2 is a step down except for the first few songs. this does not need to be almost two hours though it could have done with half."
+    },
+    {
+        "name": "This Is Happening",
+        "artist": "LCD Soundsystem",
+        "score": 8.3,
+        "image": "https://i.imgur.com/Dabc0YN.png",
+        "description": "for some reason i kept trying to this listen to this record and then getting bored by drunk girls, perhaps im sexist idk, but after i broke my mental barrier i was able to fully enjoy this. i slowly think mr system is becoming one of my favourite artists. of course dance yrself clean was the highlight but thats not to discredit all the other great songs on here, even somebody's calling me, which all the terminally online seem to hate was honestly great. it was very fun and if i was physically capable of dance i would've been throwing it back rn."
+    },
+    {
+        "name": "webcore friends",
+        "artist": "Zhnoi",
+        "score": 5.8,
+        "description": "brain tumor music. i dont think i can see colours anymore after watching that music video either. aside from the loss of 10 years of my future life this is just some pretty generic sounding modern breakcore, or maybe digital hardcore idk but its surely not hardcore sounding enough and if im being honest at this point all the breakcore i hear this days forms some kind of homogeneous glob in my head and asking me to name a single song would be quite a challenge. it bores me to death and every song sounds like bright colours and autism."
+    },
+    {
+        "name": "Everywhere at the End of Time",
+        "artist": "The Caretaker",
+        "score": 1,
+        "description": "just sounds like low quality old music to me and even if it didnt and im too tiktok brained to get through this long ass album. probably some life changing experience, too bad its too boring for me to listen to."
+    },
+    {
+        "name": "ORQUÍDEAS",
+        "artist": "Kali Uchis",
+        "score": 4,
+        "description": "i dont know enough spanish to listen to this. straight up. i know a bit of spanish, i could probably hold a conversation with a second grader but thats about my extent, so when she switches between spanish and english i feel like im having whiplash trying to figure out what shes saying because im not smart enough to understand the spanish sections without a lot of thought. i think ill relisten to this once im more literate and i imagine it will be better."
+    },
+    {
+        "name": "Cross",
+        "artist": "Justice",
+        "score": 6.5,
+        "description": "had some real bangers like DVNO and D.A.N.C.E but most of the time it just blends into the background. stress (the song but also the concept) was also just bad so that didn't help either. yeah im sure this was ahead of its time and groundbreaking but listening to it now i just dont think it holds up."
+    },
+    {
+        "name": "The Wall",
+        "artist": "Pink Floyd",
+        "score": 7.3,
+        "description": "the last pink floyd record in their legendary 70s run and its... underwhelming?? this album isnt bad, i actually like it but its just a bit overhyped. it has too many songs and has spread itself thin creatively which you can definitely notice in the second disk where songs start being really hit or miss. of course another brick in the wall (all parts) and comfortably numb are classics though. this is the donda of the pink floyd discography (i cant go a single minute without a kanye reference sorry)."
+    },
+    {
         "name": "Night Palace",
         "artist": "Mount Eerie",
         "score": 8.1,
         "image": "https://i.imgur.com/nmINauO.png",
-        "description": "this album took me like 5 tries to get into and i think it was worth it, some of this stuff is mystical, like straight up i felt like i went into a trance like state listening to co-owner of trees. might need to relisten with a focus on the lyrics as i have no idea why demolition turned into a podcast at the end but it was cool either way. the range of sounds on this album is quite honestly insane and the fact that they seem to work together is even more crazy. my main complaint was that yeah it just took me a while to get into, thats just because of my inexperience with mr eerie i think but still gonna hold it against him idk. also the album cover looks like dogshit literally every single cover looked better than this sorry phil. very rewarding album and i think ill relisten often in the future and i imagine my rating can only grow. sidenote spotify queued scary monsters and super creeps (the song not the album) after this album and the transition from i need new eyes to scary monsters and super creeps is scarily good."
+        "description": "this album took me like 5 tries to get into and i think it was worth it, some of this stuff is mystical, like straight up i felt like i went into a trance like state listening to co-owner of trees. might need to relisten with a focus on the lyrics as i have no idea why demolition turned into a podcast at the end but it was cool either way. the range of sounds on this album is quite honestly insane and the fact that they seem to work together is even more crazy. my main complaint was that yeah it just took me a while to get into, thats just because of my inexperience with mr eerie i think but still gonna hold it against him idk. also the album cover looks like dogshit literally every single cover looked better than this sorry phil. very rewarding album to listen to and i imagine my rating can only grow. sidenote spotify queued scary monsters and super creeps (the song not the album) after this album and the transition from i need new eyes to scary monsters and super creeps is scarily good."
     },
     {
         "name": "Songs of a Lost World",
@@ -460,9 +511,9 @@
     {
         "name": "Wish You Were Here",
         "artist": "Pink Floyd",
-        "score": 8.2,
+        "score": 9.5,
         "image": "https://i.imgur.com/Djbpjvf.png",
-        "description": "i really liked this album but i think i would have liked it a lot more if there wasnt a 10 hour long build up to every song, also my mum has the vinyl which is pretty cool."
+        "description": "i really liked this album but i think i would have liked it a lot more if there wasnt a 10 hour long build up to every song, also my mum has the vinyl which is pretty cool. <--- edit 82 > 95 grew on me quite a crazy amount, my least favourite song is still welcome to the machine but if im being honest its a banger too, this album is bullet proof and deserves the hype."
     },
     {
         "name": "NONE OF THIS IS REAL",
