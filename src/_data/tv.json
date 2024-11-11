@@ -1,6 +1,18 @@
 [
       {
             "type": "Movie",
+            "name": "The Place Beyond the Pines",
+            "score": 3.8,
+            "description": "really liked the heist sections but the rest of the movie bored me to death"
+      },
+      {
+            "type": "TV Show",
+            "name": "Dexter",
+            "score": 3.7,
+            "description": "i know dexter is meant to have them autistic vibes or whatever but its just too cringy for me to watch this mf talk about how hes empty inside and shit"
+      },
+      {
+            "type": "Movie",
             "name": "Earth to Echo",
             "score": 6,
             "description": "this was the shit when i was like 6. doesnt hold up but i think id be betraying myself to put it any lower"
