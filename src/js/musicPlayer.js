@@ -12,13 +12,13 @@ const cdLink = document.querySelector(".cd-link");
 let trackLoaded = false;
 //https://www.youtube.com/watch?v=Fwv2gnCFDOc
 
-cdImage.src = "https://files.catbox.moe/ogztvb.avif";
-cdTitle.textContent = "As if Waltz - Geordie Greep";
-cdLink.setAttribute("href", "https://www.youtube.com/watch?v=b8lgOVbxj7E");
+cdImage.src = "https://i.imgur.com/twC2FbB.png";
+cdTitle.textContent = "All My Friends - LCD Soundsystem";
+cdLink.setAttribute("href", "https://www.youtube.com/watch?v=aygY5OqMuKE");
 
 function loadTrack() {
     clearInterval(updateTimer);
-    curr_track.src = "https://files.catbox.moe/xvu7mg.mp3";
+    curr_track.src = "https://files.catbox.moe/rmhd9e.mp3";
     curr_track.load();
     curr_track.loop = true;
     curr_track.volume = baseVolume;

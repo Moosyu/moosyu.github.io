@@ -663,6 +663,12 @@ video {
     width: 15%;
 }
 
+#nekocafe-status, #nekocafe-poster {
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+}
+
 @media screen and (min-width: 900px) {
     p {
         font-size: 18px;

@@ -245,9 +245,29 @@ side_nav_img: "https://piclog.blue/latest.php?id=545"
 <script src="js/musicPlayer.js"></script>
 <script src="js/lastFM.js"></script>
 <script src="js/comment-widget-min.js"></script>
-<script src="https://status.cafe/current-status.js?name=moosyu"></script>
 <script>
-  console.log()
+  const username = "moosyu"; // change the username!!!
+  const posts_url = "https://cafe.frizzbees.dev/get_posts/1?name=";
+  const profile_url = "https://social.nekoweb.org/profile/?view=";
+  const post_url = "https://social.nekoweb.org/post/?id=";
+
+  (async () => {
+      try {
+          const request = await fetch(posts_url + username,);
+          let json = await request.json();
+          json = json[0]
+          timestamp = json["timestamp"] * 1000
+          time = new Date(timestamp).toUTCString();
+          div = document.getElementById("nekocafe-status")
+          div.innerHTML =`
+          <a id="nekocafe-poster" href="${profile_url + username}">${json["name"]}</a>
+          <hr>
+          <a id="nekocafe-text" href="${post_url + json["id"]}">${json["post"]}</a>
+          `
+      } catch (error) {
+          console.error(error)
+      }
+
   fetch('https://api.github.com/repos/Moosyu/moosyu.github.io/commits?per_page=1')
       .then(res => res.json())
       .then(res => {
@@ -257,5 +277,7 @@ side_nav_img: "https://piclog.blue/latest.php?id=545"
           document.getElementById('shortHash').innerText = "latest commit:" + sha.substring(0, 7) + " on " + authorDate.toLocaleDateString('en-GB', { day: '2-digit', month: '2-digit', year: '2-digit' });
           document.getElementById('commitLink').href = "https://github.com/Moosyu/moosyu.github.io/commit/" + sha
       });
+})();
+
 </script>
 {% endblock %}
