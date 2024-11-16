@@ -4,4 +4,4 @@ jsonLocation: "/_data/tv.json"
 side_nav_img: "/assets/wtfhappened.avif"
 ---
 
-i know this distribution is fucked idk what to do
+I know this distribution is fucked idk what to do

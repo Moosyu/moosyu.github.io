@@ -1,5 +1,5 @@
 ---
-title: "displaying the latest github commit with js"
+title: "Displaying the latest github commit with js"
 date: 2024-10-28
 ---
 
@@ -8,11 +8,11 @@ date: 2024-10-28
     {{ prismCss | cssmin | safe }}
 </style>
 
-this is how you get one of these:
+This is how you get one of these:
 
-![](https://i.imgur.com/c1kAf6b.png)
+![](https://I.imgur.com/c1kAf6b.png)
 
-if you just need the code, here it is:
+If you just need the code, here it is:
 
 ```html
 <script>
@@ -28,9 +28,9 @@ if you just need the code, here it is:
 </script>
 ```
 
-this code makes the assumption that you have some html elements with the ids "commitLink" (meant to be an ```<a>``` tag), "shortHash" and "commitLatest".
+This code makes the assumption that you have some html elements with the ids "commitLink" (meant to be an ```<a>``` tag), "shortHash" and "commitLatest".
 
-for example mine looks like this:
+For example mine looks like this:
 
 ```html
 <a id="commitLink" href="#" target="_blank" style="text-decoration: none;">
@@ -47,21 +47,21 @@ for example mine looks like this:
 </a>
 ```
 
-(btw my site is up on [github](https://github.com/Moosyu/moosyu.github.io/))
+(Btw my site is up on [Github](https://github.com/Moosyu/moosyu.github.io/)).
 
-now heres a line by line explanation (im illiterate so this might not make sense sorry).
+Now here's a line by line explanation (I'm illiterate so this might not make sense sorry).
 
 ```js
 fetch('https://api.github.com/repos/YOURGITHUBNAME/YOURGITHUBREPO/commits?per_page=1')
 ```
 
-this line grabs your latest commit from github, without the ?per_page=1 it grabs your entire history which is unnecessary for showing just one commit.
+This line grabs your latest commit from Github, without the ?per_page=1 it grabs your entire history which is unnecessary for showing just one commit.
 
 ```js
 .then(res => res.json())
 ```
 
-this is processing the response its grabbing from the github api into usable json.
+This is processing the response its grabbing from the Github api into usable json.
 
 ```js
 .then(res => {
@@ -73,9 +73,9 @@ this is processing the response its grabbing from the github api into usable jso
 });
 ```
 
-this chunk makes more sense if you search https://api.github.com/repos/YOURGITHUBNAME/YOURGITHUBREPO/commits?per_page=1 in your browser (with the name changed ofc).
+This chunk makes more sense if you search https://api.github.com/repos/YOURGITHUBNAME/YOURGITHUBREPO/commits?per_page=1 in your browser (with the name changed ofc).
 
-this is what mine looks like:
+This is what mine looks like:
 
 ```json
 [
@@ -93,7 +93,7 @@ this is what mine looks like:
         "email": "70246651+Moosyu@users.noreply.github.com",
         "date": "2024-10-26T10:16:49Z"
       },
-      "message": "just added some images i forgot to",
+      "message": "just added some images I forgot to",
       "tree": {
         "sha": "8ad2cfff3c35ca5a9f77977dc21e3b1effb0e147",
         "url": "https://api.github.com/repos/Moosyu/moosyu.github.io/git/trees/8ad2cfff3c35ca5a9f77977dc21e3b1effb0e147"
@@ -163,19 +163,19 @@ this is what mine looks like:
 ]
 ```
 
-we do this:
+We then do this:
 
 ```js
 let sha = res[0].sha;
 ```
 
-the response is an array, the array we have only has an index of 0, putting in something like 1 would throw an error, but if you were to have fetched ?per_page=2 instead of ?per_page=1 you would be able to use an index of 1 as your array would now have two objects, and it would give you the data from two commits back (as opposed to your latest commit). the .sha is just grabbing whatever is inside the property "sha".
+The response is an array, the array we have only has an index of 0, putting in something like 1 would throw an error, but if you were to have fetched ?per_page=2 instead of ?per_page=1 you would be able to use an index of 1 as your array would now have two objects and it would give you the data from two commits back (as opposed to your latest commit). the .sha is just grabbing whatever is inside the property "sha".
 
 ```js
 let authorDate = new Date(res[0].commit.author.date);
 ```
 
-same thing as the last one except that the date is nested in commit, and then in author like so:
+Same thing as the last one except that the date is nested in commit, and then in author like so:
 
 ```json
 "commit": {
@@ -186,18 +186,18 @@ same thing as the last one except that the date is nested in commit, and then in
 },
 ```
 
-the next line is basically the same and the line after is converting the date into a format i like and adding it to a shortened sha:
+The next line is basically the same and the line after is converting the date into a format I like and adding it to a shortened sha:
 
 ```js
 document.getElementById('shortHash').innerText = "latest commit:" + sha.substring(0, 7) + " on " + authorDate.toLocaleDateString('en-GB', { day: '2-digit', month: '2-digit', year: '2-digit' });
 ```
 
-the sha.substring is extracting the first 7 characters of sha and toLocaleDateString is formatting the date in the en-gb locale (day/month/year). [heres a comprehensive list of locales so you can find the one you want](https://gist.github.com/mlconnor/1887156). then its using the options of 2-digits for everything so the output looks like 04/02/24 (for the 4th of february 2024).
+The sha.substring is extracting the first 7 characters of sha and toLocaleDateString is formatting the date in the en-gb locale (day/month/year). [Heres a comprehensive list of locales so you can find the one you want](https://gist.github.com/mlconnor/1887156). Then its using the options of 2-digits for everything so the output looks like 04/02/24 (for the 4th of february 2024).
 
 ```js
 document.getElementById('commitLink').href = "https://github.com/YOURGITHUBNAME/YOURGITHUBREPO/commit/" + sha
 ```
 
-the last line is just linking to the commit, the format for commit urls is https://github.com/YOURGITHUBNAME/YOURGITHUBREPO/commit/ with the sha on the end which you already have.
+The last line is just linking to the commit, the format for commit urls is https://github.com/YOURGITHUBNAME/YOURGITHUBREPO/commit/ with the sha on the end which you already have.
 
-thanks for coming to my ted talk.
+Thanks for coming to my ted talk.

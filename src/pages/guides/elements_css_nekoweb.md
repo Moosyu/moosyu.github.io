@@ -1,15 +1,15 @@
 ---
-title: "making a nekoweb elements.css file"
+title: "Making a nekoweb elements.css file"
 date: 2024-08-31
 ---
 
-![nekoweb screenshot](https://i.imgur.com/6Nu9YGf.png)
+![nekoweb screenshot](https://I.imgur.com/6Nu9YGf.png)
 
-it kind of has a wacky format but i found the best way to do it. stealing !!
+It kind of has a wacky format but I found the best way to do it. Stealing !!
 
-go on any nekoweb site, append /elements.css to the end of their domain and figure out how to do stuff. (eg if you want https://moosyu.nekoweb.org you make it https://moosyu.nekoweb.org/elements.css)
+Go on any Nekoweb site, append /elements.css to the end of their domain and figure out how to do stuff. eg if you want https://moosyu.nekoweb.org you make it https://moosyu.nekoweb.org/elements.css.
 
-for example heres what mine looks like
+For example here's what mine looks like:
 
 ```css
 .site-box{
@@ -53,6 +53,6 @@ for example heres what mine looks like
 }
 ```
 
-i was able to create this beautiful piece of art !!
+I was able to create this beautiful piece of art !!
 
-![epic elements.css](https://i.imgur.com/byTmRmZ.png)
+![epic elements.css](https://I.imgur.com/byTmRmZ.png)

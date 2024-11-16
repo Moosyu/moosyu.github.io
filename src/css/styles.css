@@ -637,11 +637,10 @@ video {
     text-align: left;
 }
 
-.inspiration-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-}
+.buttons-links a img {
+    width: 88px;
+    height: 31px;
+  }
 
 .pageDropdownBlog {
     display: none;
