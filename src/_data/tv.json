@@ -1,6 +1,12 @@
 [
       {
             "type": "Movie",
+            "name": "John Wick",
+            "score": 3.4,
+            "description": "zzzz"
+      },
+      {
+            "type": "Movie",
             "name": "The Place Beyond the Pines",
             "score": 3.8,
             "description": "really liked the heist sections but the rest of the movie bored me to death"
