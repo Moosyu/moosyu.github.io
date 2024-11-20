@@ -89,7 +89,7 @@ const v_mainHtml = `
 `;
 const v_formHtml = `
     <h2 id="c_widgetTitle">${s_widgetTitle}</h2>
-    <p>when i inevitably throw myself off a bridge its on you guys' shoulders</p>
+    <p>If you're going to make a shitpost comment please at least try to be funny bc at the moment you guys are mad boring!!</p>
 
     <div class="non-message">
         <div id="c_nameWrapper" class="c-inputWrapper">

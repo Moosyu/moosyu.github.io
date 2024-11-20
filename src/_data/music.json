@@ -1,5 +1,42 @@
 [
     {
+        "name": "Enter the Wu-Tang (36 Chambers)",
+        "artist": "Wu-Tang Clan",
+        "score": 4.5,
+        "description": "Maybe I just don't get 90s hiphop but this stuff is so overrated and boring. Some guy told me to smoke while listening to it but I think if I was high I'd probably fall asleep by song two."
+    },
+    {
+        "name": "Illmatic",
+        "artist": "Nas",
+        "score": 4.8,
+        "description": "Just realised I forgot to rate it but this album put me to sleep Tyler was onto something."
+    },
+    {
+        "name": "Black on Both Sides",
+        "artist": "Mos Def",
+        "score": 8.7,
+        "image": "https://i.imgur.com/RgXZzcW.png",
+        "description": "It's fun and an interesting listen both musically and lyrically. It's clearly a classic for a reason and I feel like it's aged much better than other 'classic' hiphop albums from the 90s like Illmatic or Enter The Wu-Tang."
+    },
+    {
+        "name": "I like the way you slit (join my cult 2)",
+        "artist": "##femcel",
+        "score": 1.2,
+        "description": "Thank god this was only 15 minutes because I think any more and I would have gone insane. The mixing is totally fucked and it felt like my ear drums were being blown out once a second. It must be a purposeful decision but I don't know what purpose giving me a headache serves. Dogshit cover too."
+    },
+    {
+        "name": "Persona",
+        "artist": "half•alive",
+        "score": 7.5,
+        "description": "A really fun album and automatic is an absolute banger."
+    },
+    {
+        "name": "SATURATION",
+        "artist": "BROCKHAMPTON",
+        "score": 7.9,
+        "description": "Great debut album, a few songs like HEAT, TRIP and SWIM brought it down for me and the last song wasn't super satisfying either. I also thought the skits didn't really add anything but apart from that it's full of bangers, my favourites were 2PAC and FACE. Will be sure to listen to 2 and 3."
+    },
+    {
         "name": "The End of Evangelion",
         "artist": "Shiro Sagisu",
         "score": 4.4,
@@ -123,28 +160,28 @@
     {
         "name": "Songs of a Lost World",
         "artist": "The Cure",
-        "score": 8.8,
+        "score": 8.4,
         "image": "https://i.imgur.com/GNZrnue.png",
-        "description": "listened with my dad and him being pissed off that the songs were all like 6 minutes honestly made the experience way better. i was already impressed with 'alone', but when 'and nothing is forever' went on, holy shit i was going crazy. one of the best songs ive heard this year. the only low point on this one for me was warsong and it was barely a low point. we are back team."
+        "description": "Listened with my dad and him being pissed off that the songs were all like 6 minutes honestly made the experience way better. I was already impressed with 'Alone', but when 'And Nothing Is Forever' went on, holy shit I was going crazy. One of the best songs I've heard this year. The only low point on this one for me was Warsong and it was barely a low point. We are back team. Edit: 8.8 -> 8.4 This album has grown off me a little. I still think it's great but it's not hitting as hard."
     },
     {
         "name": "Random Access Memories",
         "artist": "Daft Punk",
         "score": 5.9,
-        "description": "lots of great stuff, giorgio by moroder, giving life back to music, instant crush, touch and get lucky. a nice a very thematically satisfying send off for daft punk, but it just never really clicked for me, ive listened to this about three times now and its still just really hit or miss imo. i think this would be better if i was a bigger daft punk fan."
+        "description": "Lots of great stuff especially Giorgio by Moroder, Giving Life Back to Music, Instant Crush, Touch and Get Lucky. A nice and very thematically satisfying send off for daft punk, but it just never really clicked for me, I've listened to this about three times now and its still just really hit or miss imo. I think this would be better if I was a bigger Daft Punk fan."
     },
     {
         "name": "CHROMAKOPIA",
         "artist": "Tyler the Creator",
-        "score": 9.4,
+        "score": 9.7,
         "image": "https://i.imgur.com/eU75uBp.png",
-        "description": "just finished this shit and WHAT THE FUCK WAS THE SECOND HALF. IM ACTUALLY TWEAKING SO MUCH WHATTTT. like him had me floating and the balloon sent me fucking intersetellar. take your mask off was also straight beautiful. not much more to say but my goat is still alive and im so happy right now."
+        "description": "Just finished this shit and WHAT THE FUCK WAS THE SECOND HALF. IM ACTUALLY TWEAKING SO MUCH WHATTTT. 'Like Him' had me floating and Balloon sent me fucking intersetellar. 'Take Your Mask Off' was also straight beautiful. Not much more to say but my goat is still alive and I'm so happy right now. Edit: 9.4 -> 9.7 This album has grown on me since release and I can't stop listening to it. The songs hit hard and go hard."
     },
     {
         "name": "Eye To the Ear",
         "artist": "Cosmo Sheldrake",
         "score": 7.3,
-        "description": "some of the stuff like 'marvellous clouds', 'i did and i dont and i do', 'by being with you' and 'interdimensional' had me floating but i thought the majority of the center had very little to it and i ended up zoning out a bit. this was certainly interesting though, not sure if ive ever heard something quite like this before and i imagine it requires a certain mood to enjoy fully, so i might give it a relisten."
+        "description": "Some of the stuff like 'Marvellous Clouds', 'I Did And I Don't And I Do', 'By Being With You' and 'Interdimensional' had me floating but I thought the majority of the center had very little to it and I ended up zoning out a bit. This was certainly interesting though, not sure if I've ever heard something quite like this before and I imagine it requires a certain mood to enjoy fully."
     },
     {
         "name": "Voices From the True World VII",
@@ -1809,25 +1846,25 @@
         "score": 9.6,
         "image": "https://i.imgur.com/3mPWxi3.png",
         "imageB": "https://i.imgur.com/uiZRXNb.png",
-        "description": "tyler came back with his most hiphop album in ages just to flex or something idk. hes my goat tho."
+        "description": "Tyler came back with his most hiphop album in ages just to flex or something idk. He's my goat tho and this is probably my most listened to Tyler album to be honest."
     },
     {
         "name": "Inside (The Songs)",
         "artist":"Bo Burnham",
         "score": 8.1,
-        "description": "i guess i have a little theatre kid left in me"
+        "description": "I guess I have a little theatre kid left in me"
     },
     {
         "name": "Donda",
         "artist":"Kanye West",
         "score": 7.5,
-        "description": "this album has grown on me a fair bet. still feel like its too long but it has lots of fire songs and this album was just really memorable for some reason. maybe because everything after it was shit. come to life was also so fucking sad."
+        "description": "I think Kanye must have given me PTSD or something after Vultures because even going back to this project which I thought was a dogshit mess on my first few listens I now think is kind of great. It's still a real mess in terms of quality but I think it's highs are too high for me to disregard. This album has many of Kanye's best imho. I've even grown on some songs like Junya and Jonah which I originally thought killed the flow of the album. I imagine I'll come back to this album again and again after Kanye continues to ruin my life with dogshit."
     },
     {
         "name": "if you're out there i miss you ｡ﾟ･ (>_<) ･ﾟ｡",
         "artist":"Sewerslvt",
         "score": 4.3,
-        "description": "falls over the moment it gets past the start line and doesnt recover."
+        "description": "Falls over the moment it gets past the start line and doesnt recover."
     },
     {
         "name": "Dawn FM",

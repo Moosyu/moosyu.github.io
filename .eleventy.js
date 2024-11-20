@@ -26,7 +26,7 @@ module.exports = function(eleventyConfig) {
     if ((this.page.outputPath || "").endsWith(".html")) {
       if (this.page.inputPath.includes("src/pages/misc/")) {
         return content;
-      }  
+      }
       let minified = htmlmin.minify(content, {
         useShortDoctype: true,
         removeComments: true,

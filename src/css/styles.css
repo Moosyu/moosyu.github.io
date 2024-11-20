@@ -76,6 +76,10 @@ ul {
     width: 150px;
     display: inline-block;
     margin: 5px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    font-size: 14px;
     transition: transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
@@ -83,7 +87,7 @@ ul {
     text-decoration: none;
     color: var(--color);
     display: block;
-    width: 100%;
+    width: 150px;
     height: 100%;
     line-height: 50px;
 }
@@ -91,6 +95,31 @@ ul {
 .hoverli:hover {
     transform: scale(1.05);
     transition-duration: 0.2s;
+}
+
+.hoverli::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    bottom: -50%;
+    left: -50%;
+    background: white;
+    transform: rotateZ(45deg) translate(-5em, 7.5em);
+    opacity: 0.7;
+    transition: none;
+    pointer-events: none;
+}
+
+.hoverli:hover::before,
+.hoverli:focus::before {
+    animation: pixelatedSheen 0.4s linear forwards;
+}
+
+@keyframes pixelatedSheen {
+    100% {
+        transform: rotateZ(45deg) translate(1em, -9em);
+    }
 }
 
 .adbox {
@@ -715,7 +744,7 @@ video {
 
     .rev::before, .ramb::before, .guide::before, .blog::before, .map::before, .hom::before {
         content: '';
-        background-image: url("/assets/revBack.avif"), url("/assets/rambBack.png"), 
+        background-image: url("/assets/revBack.avif"), url("/assets/rambBack.png"),
                           url("/assets/guideBack.avif"), url("/assets/blogBack.avif"),
                           url("/assets/mapBack.png"), url("/assets/homeBack.avif");
         position: absolute;
