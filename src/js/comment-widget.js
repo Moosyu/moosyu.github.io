@@ -415,7 +415,7 @@ function createComment(data) {
 
     // Name of user
     let name = document.createElement('h3');
-    let filteredName = data.Name;
+    let filteredName = sanitizeInput(data.Name);
     if (s_wordFilterOn) {filteredName = filteredName.replace(v_filteredWords, s_filterReplacement)}
     name.innerText = filteredName;
     name.className = 'c-name';
@@ -438,7 +438,7 @@ function createComment(data) {
 
     // Text content
     let text = document.createElement('p');
-    let filteredText = data.Text;
+    let filteredText = sanitizeInput(data.Text);
     if (s_wordFilterOn) {filteredText = filteredText.replace(v_filteredWords, s_filterReplacement)}
     // Replace custom emoji placeholders with images
     filteredText = filteredText.replace(/:(smile|annoyed|talk|pissed|nervous|cool|exclaim|sad):/g, function(match, p1) {
@@ -455,24 +455,27 @@ function createComment(data) {
 
         const emojiName = emojiMap[p1];
         if (emojiName) {
-            return `<img src="/assets/emojis/${emojiName}.webp">`;
+            return `<img src="/assets/emojis/${emojiName}.webp" class="c-emoji" alt="${p1}">`;
         } else {
             return match;
         }
     });
 
-    text.innerHTML = sanitizeInput(filteredText);
+    text.innerHTML = filteredText;
     text.className = 'c-text';
     comment.appendChild(text);
-
     return comment;
 }
 
+// god bless stack overflow i was doing some (more) crazy shit with regex prior. was told this is faster than doing that document.createElement('div') shit and converting it to innertext, idk if thats true but ill trust.
 function sanitizeInput(input) {
-    return input.replace(/<(?!img\b)[^>]*>/gi, "").replace(/<img\b[^>]*?>/gi, (tag) => {
-        const srcMatch = tag.match(/src=["'](\/assets\/emojis\/[^"']*)["']/i);
-        return srcMatch ? `<img src="${srcMatch[1]}" class="c-emoji">` : "";
-    }).replace(/(^|\s)@\[([^\]]+?)\]/g, '$1<span class="highlight-mention">@$2</span>');
+    const escapeHTML = (str) =>
+        str.replace(/[&<>"']/g, (char) => 
+            ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char])
+        );
+
+    const sanitized = escapeHTML(input);
+    return sanitized.replace(/(^|\s)@\[([^\]]+?)\]/g, '$1<span class="highlight-mention">@$2</span>');
 }
 
 // Makes the Google Sheet timestamp usable
