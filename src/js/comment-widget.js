@@ -469,8 +469,17 @@ function createComment(data) {
 
 function sanitizeInput(input) {
     const allowedTags = input.replace(/<(?!img\b)[^>]*>/gi, "");
-    const trustedImagesOnly = allowedTags.replace(/<img\b[^>]*src=["'](?!\/assets\/emojis\/)[^"']*["'][^>]*>/gi, "");
-    const highlightMentions = trustedImagesOnly.replace(/^(@\w+)/, '<span class="highlight-mention">$1</span>');
+    const trustedImagesOnly = allowedTags.replace(
+        /<img\b([^>]*?)>/gi,
+        (attributes) => {
+            const srcMatch = attributes.match(/src=["'](\/assets\/emojis\/[^"']*)["']/i);
+            return srcMatch ? `<img src="${srcMatch[1]}">` : "";
+        }
+    );
+    const highlightMentions = trustedImagesOnly.replace(
+        /(^|\s)(@\w+)/g,
+        '$1<span class="highlight-mention">$2</span>'
+    );
     return highlightMentions;
 }
 

@@ -5,15 +5,15 @@
 a:link {
     color: white;
 }
-  
+
 a:visited {
     color: white;
 }
-  
+
 a:hover {
     color: white;
 }
-  
+
 a:active {
     color: white;
 }
@@ -23,7 +23,7 @@ a:active {
     height: 12px;
     background: #d6ecf3;
 }
-    
+
 ::-webkit-scrollbar-track {
     background: -webkit-linear-gradient(top, #ffadad 12.5%,#ffd6a5 25%,#fdffb6 37.5%,#caffbf 50%,#9bf6ff 62.5%,#a0c4ff 75%,#bdb2ff 87.5%, #ffc6ff 95%);
     border: 1px ridge #8f38ff;
