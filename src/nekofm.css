@@ -1,0 +1,39 @@
+songBox {
+    background-image: url("https://i.imgur.com/8q6vYIW.png");
+    border: none;
+    align-items: center;
+  }
+  
+  siteName {
+    margin: auto;
+    color: black;
+  }
+  
+  trackInfo {
+    font-family: Monospace;
+    width: fit-content;
+    background-color: white;
+    border: 2px black solid;
+    box-shadow: 3px 3px 0 black;
+  }
+  
+  trackCover {
+    height: 150px;
+    float: left;
+  }
+  
+  trackName {
+    color: black
+  }
+  
+  artistName {
+    margin: 5px auto;
+    color: black;
+  }
+  
+  searchButton {
+    color: #fff;
+    background: #303030;
+    padding: 4px;
+    text-decoration: none;
+  }

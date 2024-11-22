@@ -341,7 +341,8 @@ function displayComments(comments) {
             const textarea = document.getElementById('entry.' + s_textId);
             textarea.focus();
             openReply(this.closest('.c-comment').id);
-            textarea.value = "@" + `${this.parentElement.id.split('|--|')[0]} `;
+            
+            textarea.value = "@[" + `${this.parentElement.id.split('|--|')[0]}` + "] ";
         });
     }
 
@@ -454,7 +455,7 @@ function createComment(data) {
 
         const emojiName = emojiMap[p1];
         if (emojiName) {
-            return `<img src="/assets/emojis/${emojiName}.webp" class="c-emoji" alt="${emojiName}">`;
+            return `<img src="/assets/emojis/${emojiName}.webp">`;
         } else {
             return match;
         }
@@ -468,19 +469,10 @@ function createComment(data) {
 }
 
 function sanitizeInput(input) {
-    const allowedTags = input.replace(/<(?!img\b)[^>]*>/gi, "");
-    const trustedImagesOnly = allowedTags.replace(
-        /<img\b([^>]*?)>/gi,
-        (attributes) => {
-            const srcMatch = attributes.match(/src=["'](\/assets\/emojis\/[^"']*)["']/i);
-            return srcMatch ? `<img src="${srcMatch[1]}">` : "";
-        }
-    );
-    const highlightMentions = trustedImagesOnly.replace(
-        /(^|\s)(@\w+)/g,
-        '$1<span class="highlight-mention">$2</span>'
-    );
-    return highlightMentions;
+    return input.replace(/<(?!img\b)[^>]*>/gi, "").replace(/<img\b[^>]*?>/gi, (tag) => {
+        const srcMatch = tag.match(/src=["'](\/assets\/emojis\/[^"']*)["']/i);
+        return srcMatch ? `<img src="${srcMatch[1]}" class="c-emoji">` : "";
+    }).replace(/(^|\s)@\[([^\]]+?)\]/g, '$1<span class="highlight-mention">@$2</span>');
 }
 
 // Makes the Google Sheet timestamp usable
