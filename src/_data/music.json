@@ -1,5 +1,64 @@
 [
     {
+        "name": "GMX",
+        "artist": "Kendrick Lamar",
+        "score": 7,
+        "description": "I'm pretty sure I'm holding Kendrick to a standard too high but I can't help myself. How can I not compare this to his masterpieces and while good, it's just kind of a let down? It felt empty in beats and raps. The title track also sucked ass and made me want to kill myself in a record breaking three minutes. God I hope my goat isn't washed but from where I'm standing this seems like the beginning of the end."
+    },
+    {
+        "name": "Deltron 3030",
+        "artist": "Deltron 3030",
+        "score": 5.6,
+        "description": "I know everyone loves this album but I can't for the love of me figure out why?? It's just kind of boring. All I have to say, not awful or even bad though."
+    },
+    {
+        "name": "Ants From Up There",
+        "artist": "Black Country, New Road",
+        "score": 9.2,
+        "image": "https://i.imgur.com/hRtyMTx.png",
+        "imageB": "https://i.imgur.com/ZzyREjD.png",
+        "description": "Idk what Billie Eilish style is but bars. I can seriously listen to this album over and over and not get tired of it, everything is booming and grand, it's like being hit with a wave of sound but the wave sick as hell and it's awesome and super cool I think I'm losing my mind but this album is sick as hell please listen to this shit I was hooked by the second song it's totally worth your time."
+    },
+    {
+        "name": "Live at Bush Hall",
+        "artist": "Black Country, New Road",
+        "score": 8.7,
+        "image": "https://i.imgur.com/w55GDEV.png",
+        "description": "Probably one of my favourite live albums of all time?? This album was effortlessly fire and is just a 3rd LP in my heart. My favourite song on here was predictably Turbines/Pigs, the building up into explosions of sound is just immaculate and the female singers cooks, she isn't a pig she's being too hard on herself :( . Very excited for these guys next work."
+    },
+    {
+        "name": "For the first time",
+        "artist": "Black Country, New Road",
+        "score": 7.6,
+        "description": "Some of the tracks felt a little lacklustre especially compared to their later works but it was still a very good album, lots of bangers especially 'Science Fair', 'Sunglasses' and 'Opus'. It was a bit weird to hear Mr Road talking about Kanye, I don't know what that was about but I wonder if he too is as disappointed at Vultures as me."
+    },
+    {
+        "name": "The Joshua Tree",
+        "artist": "U2",
+        "score": 5.6,
+        "description": "Was really enjoying the first few songs, kind of let down by the second half though which was nowhere near the level of the first and the last four songs lost this album a full two points from me."
+    },
+    {
+        "name": "Aja",
+        "artist": "Steely Dan",
+        "score": 8,
+        "image": "https://i.imgur.com/QY27ka0.png",
+        "description": "Very good album up until 'I Got the News' which really pulled it up to an eight for me, that song is perhaps too smooth, impossibly so. Was a little disappointed that this wasn't 'The New Sound but less horny' like it was advertised but I got over that pretty quickly and just enjoyed this album for for it's endlessly funky jazz rock."
+    },
+    {
+        "name": "3D Country",
+        "artist": "Geese",
+        "score": 8.8,
+        "image": "https://i.imgur.com/veLS04t.png",
+        "description": "I thought I hated country because it was a bad genre, but it seems I hated country because nobody in the genre was doing it like Geese. This album is so fun and bullshit in the best ways possible. What I saw could make a dead man die is bars, ily Cameron Winter. The title track is my favourite off the album and a perfect song imho."
+    },
+    {
+        "name": "plastic death",
+        "artist": "glass beach",
+        "score": 7.5,
+        "description": "A pretty great album that kind of started collapsing in on itself midway through but then seemed to hold off the collapse just well enough. The whole first half banged but the second was a little hit or miss for me though 'the CIA', 'commatose' and 'abyss angel' really clutched up and held this together. Especially commatose that song bangs so hard. The first half was incredible though with not a single miss."
+    },
+    {
         "name": "Jackman.",
         "artist": "Jack Harlow",
         "score": 5.4,

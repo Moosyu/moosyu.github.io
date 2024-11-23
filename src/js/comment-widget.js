@@ -415,7 +415,7 @@ function createComment(data) {
 
     // Name of user
     let name = document.createElement('h3');
-    let filteredName = sanitizeInput(data.Name);
+    let filteredName = data.Name;
     if (s_wordFilterOn) {filteredName = filteredName.replace(v_filteredWords, s_filterReplacement)}
     name.innerText = filteredName;
     name.className = 'c-name';
@@ -473,9 +473,7 @@ function sanitizeInput(input) {
         str.replace(/[&<>"']/g, (char) => 
             ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char])
         );
-
-    const sanitized = escapeHTML(input);
-    return sanitized.replace(/(^|\s)@\[([^\]]+?)\]/g, '$1<span class="highlight-mention">@$2</span>');
+    return escapeHTML(input).replace(/(^|\s)@\[([^\]]+?)\]/g, '$1<span class="highlight-mention">@$2</span>');
 }
 
 // Makes the Google Sheet timestamp usable
