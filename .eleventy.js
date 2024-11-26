@@ -9,7 +9,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
     "public/assets": "assets",
     "public/fonts": "fonts",
-    "public/favicon.ico": "favicon.ico"
+    "public/favicon.ico": "favicon.ico",
+    "src/nekofm.css" : "nekofm.css"
   });
   eleventyConfig.addPassthroughCopy("src/_data/*");
   eleventyConfig.addPassthroughCopy("src/css/*");
