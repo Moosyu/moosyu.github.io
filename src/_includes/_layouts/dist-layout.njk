@@ -5,8 +5,7 @@
 {% endblock %}
 
 {% block content %}
-<h1>{{ title }}</h1>
-
+<div class="mainBox">
 {{ content | safe }}
 
 <select id="chartTypeDropdown" style="margin-bottom: 20px; padding: 5px; background-color: #1e2030; border: 1px solid #89b4fa; border-radius: 5px; color: white;">
@@ -69,4 +68,5 @@ function renderChart(type) {
   });
 }
 </script>
+</div>
 {% endblock %}

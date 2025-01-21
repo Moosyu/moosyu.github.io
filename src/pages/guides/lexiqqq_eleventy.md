@@ -30,7 +30,7 @@ project root/
 Inside the build.yml file copy and paste this:
 
 {% raw %}
-```yml
+```html
 name: Deploy to Lexiqqq
 
 on:
@@ -70,7 +70,7 @@ jobs:
 ```
 {% endraw %}
 
-Notes: 
+Notes:
 
 If your output directory is something other than the default _site, then edit the "_site/*" section on the last line to your output directory's name.
 

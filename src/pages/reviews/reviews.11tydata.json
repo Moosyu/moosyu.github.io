@@ -1,4 +1,3 @@
 {
-    "layout": "_layouts/reviews-layout.njk",
-    "header_img": "/assets/reviews.avif"
+    "layout": "_layouts/reviews-layout.njk"
 }

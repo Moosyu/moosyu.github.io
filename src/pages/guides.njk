@@ -1,16 +1,16 @@
 ---
 layout: "layout.njk"
-title: "awesome guides"
-header_img: "/assets/cool_guides.avif"
-side_nav_img: "/assets/minion.avif"
+title: "Guides"
 ---
 
-<p>
-    I don't really make new guides but yk if I have any annoying things.
-    I can't find an answer to online then I find the answer I'll put it down.
-</p>
-<ol>
-  {% for guide in collections.guides | reverse %}
-    <li style="margin: 10px;"><a href="{{ guide.url }}">{{ guide.data.title }}</a> <span style="color: #c6a0f6">{{ guide.date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }).replace('.', '') }}</span></li>
-  {% endfor %}
-</ol>
+<div class="mainBox">
+  <p>
+      I don't really make new guides but yk if I have any annoying things.
+      I can't find an answer to online then I find the answer I'll put it down.
+  </p>
+  <ol>
+    {% for guide in collections.guides | reverse %}
+      <li style="margin: 10px;"><a href="{{ guide.url }}">{{ guide.data.title }}</a> <span style="color: #c6a0f6">{{ guide.date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }).replace('.', '') }}</span></li>
+    {% endfor %}
+  </ol>
+</div>

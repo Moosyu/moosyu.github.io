@@ -1,6 +1,5 @@
 ---
 title: "epic comic reviews"
-side_nav_img: "/assets/single_lesson.jpg"
 image_fullscreen: true
 jsonLocation: "/_data/comics.json"
 pagination:
@@ -17,6 +16,10 @@ pagination:
 {% endfor %}
 
 <table class="review_table">
+    <colgroup>
+        <col style="width: 25%;">
+        <col style="width: 70%;">
+    </colgroup>
     <thead>
         <tr>
             <th>
@@ -30,31 +33,31 @@ pagination:
             <th>Comment</th>
         </tr>
     </thead>
-<tbody>
-    {% for item in items %}
-    <tr id="{{ loop.index0 }}">
-        <td style="text-align: center;">
-            [{{ item.type }}]
-            <br>
-            ({{ item.name }})
-            <br>
-            <span style="{% if item.score < 1 %} color: #5e5e5e;
-                  {% elif item.score < 3 %} color: #ff4c4c;
-                  {% elif item.score < 5 %} color: #ff8888;
-                  {% elif item.score < 7 %} color: #f0e68c;
-                  {% elif item.score < 8 %} color: #7bc96f;
-                  {% elif item.score < 10 %} color: #00cc66;
-                  {% else %} color: #9d63d0;
-                  {% endif %}">
-            {{ item.score }}/10
-            </span>
+    <tbody>
+        {% for item in items %}
+        <tr id="{{ loop.index0 }}">
+            <td style="text-align: center;">
+                [{{ item.type }}]
+                <br>
+                ({{ item.name }})
+                <br>
+                <span style="{% if item.score < 1 %} color: #5e5e5e;
+                      {% elif item.score < 3 %} color: #ff4c4c;
+                      {% elif item.score < 5 %} color: #ff8888;
+                      {% elif item.score < 7 %} color: #f0e68c;
+                      {% elif item.score < 8 %} color: #7bc96f;
+                      {% elif item.score < 10 %} color: #00cc66;
+                      {% else %} color: #9d63d0;
+                      {% endif %}">
+                {{ item.score }}/10
+                </span>
 
-        {% if item.image %}
-            <img src="{{ item.image }}" alt="{{ item.name }}" onclick="toggleFullscreen(this)" loading="lazy">
-        {% endif %}
-        </td>
-        <td>{{ item.description }}</td>
-    </tr>
-    {% endfor %}
-</tbody>
+            {% if item.image %}
+                <img src="{{ item.image }}" alt="{{ item.name }}" onclick="toggleFullscreen(this)" loading="lazy">
+            {% endif %}
+            </td>
+            <td>{{ item.description }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
 </table>

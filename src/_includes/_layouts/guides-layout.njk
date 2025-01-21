@@ -5,10 +5,10 @@
 {% endblock %}
 
 {% block content %}
+<div class="mainBox">
 {% if date %}
 Date created: {{ page.date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }).replace('.', '') }}
 {% endif %}
-<div class="guides_content">
   {{ content | safe }}
 </div>
 {% endblock %}

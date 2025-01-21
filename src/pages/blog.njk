@@ -1,15 +1,13 @@
 ---
 layout: "_layouts/blogs-layout.njk"
-title: "pseudo blog"
-header_img: "/assets/pseudoblog.avif"
-side_nav_img: "/assets/IMG_2638.avif"
+title: "Blog"
 ---
 
 <p>
     These arent really gonna be real blog posts because I'm lazy but more like a paragraph of schizo posting.
     <a href="/feed.xml">Click this to get the rss feed.</a>.
 </p>
-<p>posts:</p>
+<p>Posts:</p>
 <ol>
   {% for blog in collections.blog | reverse %}
     <li style="margin: 10px;"><a href="{{ blog.url }}">{{ blog.data.title }}</a> <span style="color: #c6a0f6">{{ blog.date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }).replace('.', '') }}</span></li>

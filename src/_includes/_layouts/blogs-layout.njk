@@ -5,6 +5,7 @@
 {% endblock %}
 
 {% block content %}
+<div class="mainBox">
 {% if date %}
 Date created: {{ page.date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }).replace('.', '') }}
 {% endif %}
@@ -13,10 +14,6 @@ Date created: {{ page.date.toLocaleDateString('en-US', { month: 'short', day: 'n
   <a href="/tags/{{ tag }}">#{{ tag }}</a>
 {% endif %}
 {% endfor %}
-
-{% if date %}
-<h1>{{ title }}</h1>
-{% endif %}
 
 {{ content | safe }}
 
@@ -50,17 +47,5 @@ Date created: {{ page.date.toLocaleDateString('en-US', { month: 'short', day: 'n
     </div>
 </div>
 {% endif %}
-{% endblock %}
-
-{% set hasContent2 = true %}
-{% block content2 %}
-<div class="empty-box">
-    <p style="margin: 0; padding: 0; padding-top: 10px; padding-left: 10px;">Tags:</p>
-    <ul style="padding-bottom: 10px; font-size: 18px;">
-        <li><a href="/tags/music">Music</a></li>
-        <li><a href="/tags/web">Web</a></li>
-        <li><a href="/tags/manga">Manga</a></li>
-        <li><a href="/tags/tech">Tech</a></li>
-    </ul>
 </div>
 {% endblock %}

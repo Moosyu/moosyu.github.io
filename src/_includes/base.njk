@@ -16,45 +16,44 @@
     <title>{{title or "moosyus wix site"}}</title>
 </head>
 <body>
-    <div class="container">
-    <div class="main-box empty-box">
-    {% if header_img %}
-    <img src="{{ header_img }}" class="header-img" alt="title">
-    {% else %}
-    <img src="/assets/title.avif" class="header-img" alt="title">
-    {% endif %}
-    {% block content %}{% endblock %}
+    <div style="background-color: #a50100; color: white; text-align: center;">
+        <p>incomplete! (you might have noticed) it will look nice once inspiration flows. or it may never look nice.</p>
     </div>
-        <div class="side-box">
-          <div class="box box1">
-            <div class="empty-box">
-            <nav>
-                <p class="title-rain">Navbar:</p>
-                <ul class="navbar-list">
-                    <li class="hoverli"><a class="hom" href="/">Home</a></li>
-                    <li class="hoverli"><a class="rev" href="/pages/reviews/">Reviews</a></li>
-                    <li class="hoverli"><a class="ramb" href="/pages/ramblings/">Ramblings</a></li>
-                    <li class="hoverli"><a class="guide" href="/pages/guides/">Guides</a></li>
-                    <li class="hoverli"><a class="blog" href="/pages/blog/">Pseduo Blog</a></li>
-                    <li class="hoverli"><a class="map" href="/pages/links/">Links</a></li>
-                </ul>
-            </nav>
-            {% if side_nav_img %}
-            <img src="{{ side_nav_img }}" style="display: block; margin-left: auto; margin-right: auto; max-width: 170px; padding-top: 15px; padding-bottom: 15px;" alt="silly little image">
-            {% else %}
-            <img src="/assets/noah.avif" style="display: block; margin-left: auto; margin-right: auto; max-width: 170px; padding-top: 15px; padding-bottom: 15px;" alt="silly little image">
-            {% endif %}
-            {% if status %}
-                <div id="nekocafe-status"></div>
-            {% endif %}
+    <div class="hamburger">
+        <svg onclick="document.querySelector('.navbar').classList.toggle('active'); document.querySelector('.hamburger').classList.toggle('rotated');"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+            style="width: 30px; height: 30px; fill: white;">
+            <path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/>
+        </svg>
+    </div>
+    <div class="navbar">
+        <div class="nav-left">
+            <a href="/">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">Reviews</button>
+                <div class="dropdown-content">
+                    <a href="/pages/reviews/comics/">Comics &amp; Books</a>
+                    <a href="/pages/reviews/games/">Games</a>
+                    <a href="/pages/reviews/tv/">TV &amp; Movies</a>
+                    <a href="/pages/reviews/music/">Music</a>
+                    <a href="/pages/reviews/favourites/">Favourites</a>
+                </div>
             </div>
-          </div>
-        {% if hasContent2 %}
-        <div class="box2">
-            {% block content2 %}{% endblock %}
+            <div class="dropdown">
+                <button class="dropbtn">Ramblings</button>
+                <div class="dropdown-content">
+                    <a href="/pages/ramblings/2025">2025</a>
+                    <a href="/pages/ramblings/2024">2024</a>
+                </div>
+            </div>
+            <a href="/pages/guides">Guides</a>
+            <a href="/pages/blog">Blog</a>
+            <a href="/pages/links">Links</a>
         </div>
-        {% endif %}
     </div>
+    <div class="content-main">
+        {% block content %}{% endblock %}
     </div>
 </body>
 </html>

@@ -1,6 +1,6 @@
 const htmlmin = require("html-minifier-terser");
 const CleanCSS = require("clean-css");
-const { feedPlugin } = require("@11ty/eleventy-plugin-rss");
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const markdownItKatex = require("@vscode/markdown-it-katex").default;
 const markdownIt = require("markdown-it");
@@ -50,24 +50,7 @@ module.exports = function(eleventyConfig) {
     linkify: true,
   }).use(markdownItKatex);
   eleventyConfig.setLibrary("md", md);
-  eleventyConfig.addPlugin(feedPlugin, {
-		type: "rss",
-		outputPath: "/feed.xml",
-		collection: {
-			name: "blog",
-			limit: 0, // 0 = no limit
-		},
-		metadata: {
-			language: "en",
-			title: "moosyus really awesome blog",
-			subtitle: "scitzo ramblings made by someone who failed english 3 times in a row",
-			base: "https://moosyu.nekoweb.org/",
-			author: {
-				name: "moosyu",
-				email: "moosyu@tuta.io",
-			}
-		}
-	});
+	eleventyConfig.addPlugin(pluginRss);
 
   return {
     dir: {
