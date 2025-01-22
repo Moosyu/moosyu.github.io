@@ -86,7 +86,7 @@ fetch('{{ jsonLocation }}')
 
         return `
           <div>
-            <h1><a up-target=".content-main" up-history href="${pageLink}">${result.item.name}</a></h1>
+            <h1><a href="${pageLink}">${result.item.name}</a></h1>
             ${pageName == "favourites" ? "" : `<p>score: ${result.item.score}/10</p>`}
             <p>${result.item.description}</p>
           </div>

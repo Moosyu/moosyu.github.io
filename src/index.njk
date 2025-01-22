@@ -10,7 +10,10 @@ title: "moosyus wix site, v3"
     {{ css | cssmin | safe }}
 </style>
 <div class="container-main">
-    <div id="commit-div"></div>
+    <div class="updates-container">
+        <div id="commit-div"></div>
+        <div id="listening"></div>
+    </div>
     <div class="description">
         <p><span style="font-size: 24px;">Hello!</span> Welcome to my super awesome and cool website. This is the terminally online equivalent to a diary so if you enjoy reading about strangers on the internet you'll love it here. If you got here trying to play Friday Night Funkin mods, skill issue.</p>
         <p>I've worked on and off on this for like three years, originally it was me trying to copy <a href="https://displayman.neocities.org/">Daniel's Virtual Place</a> but now it's more like an imbred distant relative. At this point its more like an amalgam of sites I like, but aren't we all? Hopefully the longer it lasts the more distinct the style will become. All the code is <a href="https://github.com/Moosyu/moosyu.github.io">public</a> and you're free to use it though it probably wasn't even mine in the first place.</p>
@@ -22,5 +25,6 @@ title: "moosyus wix site, v3"
         </p>
     </div>
 </div>
+<script src="js/lastFM.js"></script>
 <script src="js/github-commit.js"></script>
 {% endblock %}

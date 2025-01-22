@@ -17,8 +17,11 @@ body {
 
 .content-main {
     color: white;
-    padding: 10px;
     border-radius: 4px;
+}
+
+.container-main {
+    padding: 10px;
 }
 
 .hamburger svg {
@@ -106,10 +109,11 @@ body {
     background-color: #171b1f;
     border-radius: 4px;
     padding: 10px;
+    margin: 10px;
 }
 
 #searchInput {
-    width: 100%;
+    width: 90%;
     padding: 12px 20px;
     background-color: #171b1f;
     box-sizing: border-box;
@@ -119,17 +123,25 @@ body {
     margin: 7px;
 }
 
-.description, #commit-div {
+.description, #commit-div, #listening {
     background-color: #171b1f;
     border-radius: 4px;
     padding: 10px;
 }
 
-#commit-div {
+#commit-div, #listening {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.updates-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-bottom: 10px;
+    gap: 10px;
 }
 
 @keyframes fadeSlideUp {

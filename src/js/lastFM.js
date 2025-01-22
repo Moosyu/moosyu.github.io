@@ -1,30 +1,12 @@
-const USERNAME = "moosyu"; // Put your LastFM username here
-const BASE_URL = `https://lastfm-last-played.biancarosa.com.br/${USERNAME}/latest-song`;
+const url = `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=moosyu&api_key=e3b58abffa64551cc31a214fdf5e1870&format=json&limit=1`;
 
-const getTrack = async () => {
-    const request = await fetch(BASE_URL);
-    const json = await request.json();
-
-    let isPlaying = json.track['@attr']?.nowplaying || false;
-
-    if(!isPlaying) {
-        // Trigger if a song isn't playing
-        return;
-    } else {
-        // Trigger if a song is playing
-    }
-
-    // Values:
-    // COVER IMAGE: json.track.image[1]['#text']
-    // TITLE: json.track.name
-    // ARTIST: json.track.artist['#text']
+fetch(url)
+    .then(response => response.json())
+    .then(data => {
+    const track = data.recenttracks.track[0];
 
     document.getElementById("listening").innerHTML = `
     <div id="trackInfo">
-    <p>Last heard: <a href="${json.track.url}">${json.track.name}</a> by ${json.track.artist['#text']}</p>
-    </div>
-    `
-};
-
-getTrack();
-setInterval(() => { getTrack(); }, 10000);
+    <span>Last heard: <a href="${track.url}">${track.name}</a> by ${track.artist['#text']}</span>
+    </div>`
+}).catch(error => console.error('fetching last.fm failed:', error));
