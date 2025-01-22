@@ -3,26 +3,19 @@
     src: url("/fonts/Yellow_Balloon.ttf");
 }
 
-* {
-    scrollbar-gutter: stable
-}
-
 a {
     color: #e23a45;
 }
 
 body {
-    font-size: 1.1rem;
-    margin: 0 auto;
-    padding: 0 1rem;
-    line-height: 1.6;
-    -webkit-text-size-adjust: 100%;
-    background-color: #1c2025;
     font-family: monospace;
+    background-image: linear-gradient(45deg, #1c2025 25%, #111316 25%, #111316 50%, #1c2025 50%, #1c2025 75%, #111316 75%, #111316 100%);
+    background-size: 84.85px 84.85px;
+    height: 100vh;
+    margin: 0;
 }
 
 .content-main {
-    background-color: #1c2025;
     color: white;
     padding: 10px;
     border-radius: 4px;
@@ -52,7 +45,7 @@ body {
 .nav-left {
     display: flex;
     flex-direction: column;
-    background-color: #272c33;
+    background-color: #171b1f;
     border-radius: 4px;
     padding: 2px;
 }
@@ -72,7 +65,7 @@ body {
     display: flex;
     align-items: center;
     box-sizing: border-box;
-    background-color:#272c33;
+    background-color: #171b1f;
 }
 
 .dropdown {
@@ -104,19 +97,39 @@ body {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-.mainBox img, .mainBox video {
+
+.main-box img, .main-box video {
     max-width: 100%;
+}
+
+.background-div {
+    background-color: #171b1f;
+    border-radius: 4px;
+    padding: 10px;
 }
 
 #searchInput {
     width: 100%;
     padding: 12px 20px;
-    display: inline-block;
-    background-color: initial;
+    background-color: #171b1f;
     box-sizing: border-box;
-    margin: 10px 0 10px 0;
+    color: white;
+    border: 1px #171b1f;
+    border-radius: 5px;
 }
 
+.description, #commit-div {
+    background-color: #171b1f;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+#commit-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 10px;
+}
 
 @keyframes fadeSlideUp {
 from {
@@ -129,10 +142,6 @@ to {
     }
 }
 
-.mainBox img, .mainBox video {
-    max-width: 100%;
-}
-
 .pagination-container {
     display: flex;
     align-items: center;
@@ -140,6 +149,7 @@ to {
     gap: 10px;
     padding: 10px;
     border-radius: 5px;
+    background-color: #171b1f;
 }
 
 .pagination-buttons {
@@ -158,25 +168,192 @@ to {
 #pageDropdown {
     padding: 5px;
     border-radius: 5px;
+    background-color: #171b1f;
+    color: white;
 }
 
-td, th {
-    background-color: #272c33;
-    border-radius: 4px;
+.review_table {
+    border-collapse: separate;
+    border-spacing: 7px;
 }
 
 .review_table td, .review_table th {
-    padding: .5em;
-    border-collapse: collapse;
+    padding: 8px;
     overflow-wrap: break-word;
-    font-size: calc(.9vw + .9vh);
+    font-size: 16px;
     width: 25%;
+    background-color: #171b1f;
+    border-radius: 4px;
 }
 
 .buttons-links img {
     width: 88px;
     height: 31px;
 }
+
+#nekowebring {
+    margin-bottom: 15px;
+}
+
+#nekowebring table {
+    background: linear-gradient(#363a4f, #24273a, #1e2030);
+    border: #181926 2px solid;
+    padding: 7px;
+    border-radius: 10px;
+    image-rendering: pixelated;
+}
+
+#nekowebring .webring-info {
+    text-align: center;
+}
+
+#nekowebring .webring-prev,
+#nekowebring .webring-next {
+    text-align: center;  /* Centers the content horizontally */
+    vertical-align: middle; /* Centers the content vertically within the cell */
+}
+
+#nekowebring .webring-links {
+    font-size: small;
+    text-align: center;
+}
+
+.webring-links {
+    text-align: center;
+}
+
+.reviews-table {
+    width: 100%;
+    background: transparent;
+    border-collapse: collapse;
+}
+
+.reviews-table tr {
+    display: flex;
+    align-items: center;
+}
+
+
+table:not(.front-page-table) {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.image-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-cell img {
+    width: 64px;
+    height: 50px;
+}
+
+.text-cell {
+    width: 90%;
+    vertical-align: top;
+}
+
+
+.arrow-image {
+    width: 30%;
+    image-rendering: pixelated;
+    margin: 0 auto;
+}
+
+#moosyu {
+    position: relative;
+    background-image: url("/assets/wall.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    margin: auto;
+    width: 50%;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+#moosyu > div > p {
+    color: white;
+    font-family: Tahoma;
+    filter: drop-shadow(1px 1px 0 black) drop-shadow(-1px 1px 0 black)
+    drop-shadow(0 -1px 0 black) drop-shadow(1px 0 black);
+    margin: 0;
+    padding-left: 5px;
+}
+
+.wavy-title {
+    font-weight: bold;
+    letter-spacing: -0.15em;
+    font-size: 22px;
+    font-family: Tahoma;
+    filter: drop-shadow(1px 1px 0 black) drop-shadow(-1px 1px 0 black)
+    drop-shadow(0 -1px 0 black) drop-shadow(1px 0 black);
+    padding-left: 5px;
+}
+
+.wavy-title span {
+    display: inline-block;
+    animation: floatUpDown 1s infinite ease-in-out, rainbow-nekomap 3s linear 9700ms infinite forwards running;
+    font-family: Tahoma;
+}
+
+.wavy-title span:nth-child(odd) {
+    animation-delay: 0.1s;
+}
+.wavy-title span:nth-child(even) {
+    animation-delay: 0.2s;
+}
+
+@keyframes floatUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-2px);
+    }
+}
+
+
+#neko-tag .webring-bg {
+    height: 100%;
+    background-image: url("https://darkosparko.nekoweb.org/webrings/neko-tag/neko-tag-images/dithered-mat1.png");
+    width: 180px;
+}
+
+@keyframes bobleft {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(-5px); /* Move left by 10px */
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes bobright {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(5px); /* Move right by 10px */
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+#neko-tag .webring-next {
+    animation: 2s bobright ease-in-out infinite;
+    }
+
+#neko-tag .webring-prev {
+animation: 2s bobleft ease-in-out infinite;
+}
+
 
 @media screen and (min-width: 1200px) {
     .navbar {
@@ -186,10 +363,7 @@ td, th {
 
     .nav-left {
         flex-direction: row;
-    }
-
-    .nav-right {
-        margin-left: auto;
+        margin-left: 10px;
     }
 
     .hamburger {

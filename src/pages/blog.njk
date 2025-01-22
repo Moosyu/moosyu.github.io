@@ -3,13 +3,15 @@ layout: "_layouts/blogs-layout.njk"
 title: "Blog"
 ---
 
-<p>
-    These arent really gonna be real blog posts because I'm lazy but more like a paragraph of schizo posting.
-    <a href="/feed.xml">Click this to get the rss feed.</a>.
-</p>
-<p>Posts:</p>
-<ol>
-  {% for blog in collections.blog | reverse %}
-    <li style="margin: 10px;"><a href="{{ blog.url }}">{{ blog.data.title }}</a> <span style="color: #c6a0f6">{{ blog.date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }).replace('.', '') }}</span></li>
-  {% endfor %}
-</ol>
+<div class="background-div">
+  <p>
+      These arent really gonna be real blog posts because I'm lazy but more like a paragraph of schizo posting.
+      <a href="/feed.xml">Click this to get the rss feed.</a>.
+  </p>
+  <p>Posts:</p>
+  <ol>
+    {% for blog in collections.blog | reverse %}
+      <li style="margin: 10px;"><a href="{{ blog.url }}">{{ blog.data.title }}</a> <span style="color: #c6a0f6">{{ blog.date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }).replace('.', '') }}</span></li>
+    {% endfor %}
+  </ol>
+</div>

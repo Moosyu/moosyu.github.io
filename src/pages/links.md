@@ -3,31 +3,135 @@ layout: "layout.njk"
 title: "Links"
 ---
 
-
-<div class="container-split">
-  <div class="pane-left">
-
+<div class="background-div">
   Some of the pages on here arent linked anywhere else so its like a scavanger hunt or something idk.
 
   # Every page:
 
-  <ul>
     {% for page in collections.allPages %}
-      <li style="margin: 10px; font-size: 18px; text-align: left; word-break: break-word;">
         <a href="{{ page.url }}">{{ page.url }}</a>
-      </li>
     {% endfor %}
-  </ul>
 
+  # Webrings:
+
+  <div id="nekowebring">
+    <table style="width: auto;">
+      <tbody>
+        <tr>
+          <td class="webring-prev">
+            <a href="https://moosyu.github.io/jsonStorage/nekoRing/redirect.html?to=prev&name=moosyu" target="_parent">
+              <img src="/assets/prev-mauve.png" alt="Previous Site">
+            </a>
+          </td>
+          <td style="text-align: center;" class="webring-info">
+              <a href="https://webring.nekoweb.org/members" target="_parent">
+                <img src="/assets/nekowebring-mauve-title.png" alt="NekoWebRing Index">
+              </a>
+              <br>
+              <span class="webring-links">
+                <a href="https://moosyu.github.io/jsonStorage/nekoRing/redirect.html?to=random&name=moosyu" target="_parent">
+                <img src="/assets/cat-mauve-nod.gif" alt="Random Site">
+              </a>
+            </span>
+          </td>
+          <td class="webring-next">
+            <a href="https://moosyu.github.io/jsonStorage/nekoRing/redirect.html?to=next&name=moosyu" target="_parent">
+              <img src="/assets/prev-mauve.png" style="-webkit-transform: scaleX(-1); transform: scaleX(-1);" alt="Next Site">
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
-  <div class="pane-center">
-
-  <iframe width="200" height="200" style="border:none" src="https://rice.nekoweb.org/nekolink.html"></iframe>
-
-  webrings and ads go here
-
+  <div style="padding-top: 5px; color: #ff7598; font-family: ms gothic; background-color: #fff9ce; border: orange 1px solid; padding-bottom: 5px; text-align: center; width: 180px;">
+      <a href="https://eggring.neocities.org/"><img src="https://eggring.neocities.org/img/egg.gif" alt="eggring logo" style="image-rendering: pixelated;"></a>
+      <br>
+      <a href="https://eggring.neocities.org/">The Eggring</a>
+      <div style="padding-top: 2px;">
+          <a href="https://moosyu.github.io/jsonStorage/eggRing/redirect.html?to=prev&name=moostyswixsite">Prev</a> |
+          <a href="https://moosyu.github.io/jsonStorage/eggRing/redirect.html?to=next&name=moostyswixsite">Next</a>
+          <br>
+          <a href="https://moosyu.github.io/jsonStorage/eggRing/redirect.html?to=random&name=moostyswixsite">Random</a>
+      </div>
   </div>
-  <div class="pane-right">
+  <div style="display:block; margin: 15px auto;">
+      <iframe style="border: none; width: 180px; height: 200px;" src="https://neocities.jeith.com/wii-webring.html?site=https://moosyu.nekoweb.org&variant=standard" title="wiiring iframe">
+      </iframe>
+  </div>
+  <div id="neko-tag">
+      <div class="webring-bg">
+          <div class="webring-wrapper">
+            <div>
+              <div class="webring-prev">
+                <a href="https://moosyu.github.io/jsonStorage/nekoTag/redirect.html?to=prev&name=moosyu" target="_parent">
+                  <img class="arrow-image" src="https://darkosparko.nekoweb.org/webrings/neko-tag/neko-tag-images/arrow-0970.png" style="transform: scaleX(-1);" alt="arrowleft">
+                </a>
+              </div>
+              <div class="box">
+                <div style="width: 80px; height: 80px;" id="moosyu">
+                  <div style="position: relative; top: 10px; right: 3px;">
+                    <p style="font-size: 16px;">moosyu's</p>
+                    <div class="wavy-title">
+                      <span>t</span>
+                      <span>i</span>
+                      <span>d</span>
+                      <span>a</span>
+                      <span>l</span>
+                    </div>
+                    <p style="font-size: 16px;">retreat</p>
+                  </div>
+                </div>
+              </div>
+              <div class="webring-next">
+                <a href="https://moosyu.github.io/jsonStorage/nekoTag/redirect.html?to=next&name=moosyu" target="_parent">
+                  <img class="arrow-image" src="https://darkosparko.nekoweb.org/webrings/neko-tag/neko-tag-images/arrow-0970.png" alt="arrow right">
+                </a>
+              </div>
+            </div>
+            <div style="text-align: center; color: black;">
+              You are currently at coordinates <span style="font-weight: bold;">H15</span> on the map!
+            </div>
+              <br>
+                <span class='webring-links'>
+                  <a href="https://moosyu.github.io/jsonStorage/nekoTag/redirect.html?to=random&name=moosyu">Random</a>
+                  <br>
+                  <a href="https://darkosparko.nekoweb.org/webrings/neko-tag/neko-tag-index.html">Make Your Mark!</a>
+                </span>
+          </div>
+        </div>
+  </div>
+  <div class="rainbow-border">
+      <p class="rainbowUnder">
+          <a href="https://webring.bucketfish.me/redirect.html?to=prev&name=moosyu">←</a>
+      </p>
+      <a class="rainbowUnder" href="https://webring.bucketfish.me" id="header">
+          <span style="--n:-10000ms;">b</span>
+          <span style="--n:-9900ms;">u</span>
+          <span style="--n:-9800ms;">c</span>
+          <span style="--n:-9700ms;">k</span>
+          <span style="--n:-9600ms;">e</span>
+          <span style="--n:-9500ms;">t</span>
+          <span style="--n:-9400ms;"> </span>
+          <br>
+          <span style="--n:-9300ms;">w</span>
+          <span style="--n:-9200ms;">e</span>
+          <span style="--n:-9100ms;">b</span>
+          <span style="--n:-9000ms;">r</span>
+          <span style="--n:-8900ms;">i</span>
+          <span style="--n:-8800ms;">n</span>
+          <span style="--n:-8700ms;">g</span>
+      </a>
+      <p class="rainbowUnder">
+          <a class="navig" href="https://webring.bucketfish.me/redirect.html?to=next&name=moosyu">→</a>
+      </p>
+  </div>
+  <div style="width:104px; display: inline-block;">
+    <a href="https://peanits.lol/webrings/musicring/index.php"><img src="https://peanits.lol/webrings/musicring/assets/button.gif"></a>
+    <a href="https://peanits.lol/webrings/musicring/rand.php">Rand</a>
+    <a href="https://peanits.lol/webrings/musicring/prev.php?slug=moosyu">Prev</a>
+    <a href="https://peanits.lol/webrings/musicring/next.php?slug=moosyu">Next</a>
+  </div>
+
 
   # Inspirations, credits and cool sites:
 
@@ -80,14 +184,12 @@ title: "Links"
 
   [superpredator {mind bending images beyond human comprehension. thats all i can say, you have to see it for yourself.}](https://superpredator.zone/)
 
-  </div>
-  <div class="footer-long">
   My button collection:
 
   <div class="buttons-links">
     <a href="https://displayman.neocities.org/"><img src="/assets/Botón_página_Daniel.gif" alt="daniel"></a>
-    <a href="https://incessantpain.neocities.org/"><img src="/assets/buttonincessant.gif" alt="rice"></a>
-    <a href="https://rice.nekoweb.org/"><img src="https://rice.nekoweb.org/kamabokogonpachiro.gif" alt="rice"></a>
+    <a href="https://incessantpain.neocities.org/"><img src="/assets/buttonincessant.gif" alt="pain"></a>
+    <a href="https://rice.place/" target="_blank"><img src="https://rice.nekoweb.org/button/riceplace.png"></a>
     <a href="https://trademarkhell.net/"><img src="https://trademarkhell.net/tmsspecialhell.png" alt="trademarkization company of 2003"></a>
     <a href="https://sad.ovh/"> <img src="/assets/sadovh.png" alt="sad.ovh"></a>
     <a href="https://vegacollective.com/"> <img src="/assets/MeatleMania_2.gif" alt="vega collective"></a>

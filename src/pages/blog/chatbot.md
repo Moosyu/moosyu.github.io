@@ -1,5 +1,5 @@
 ---
-title: "AI still sucks ass and it can write good stories"
+title: "AI still sucks ass and it can't write good stories"
 date: 2025-01-22
 ---
 
