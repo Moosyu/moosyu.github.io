@@ -114,8 +114,9 @@ body {
     background-color: #171b1f;
     box-sizing: border-box;
     color: white;
-    border: 1px #171b1f;
+    border: 1px #20252b;
     border-radius: 5px;
+    margin: 7px;
 }
 
 .description, #commit-div {
@@ -191,72 +192,6 @@ to {
     height: 31px;
 }
 
-#nekowebring {
-    margin-bottom: 15px;
-}
-
-#nekowebring table {
-    background: linear-gradient(#363a4f, #24273a, #1e2030);
-    border: #181926 2px solid;
-    padding: 7px;
-    border-radius: 10px;
-    image-rendering: pixelated;
-}
-
-#nekowebring .webring-info {
-    text-align: center;
-}
-
-#nekowebring .webring-prev,
-#nekowebring .webring-next {
-    text-align: center;  /* Centers the content horizontally */
-    vertical-align: middle; /* Centers the content vertically within the cell */
-}
-
-#nekowebring .webring-links {
-    font-size: small;
-    text-align: center;
-}
-
-.webring-links {
-    text-align: center;
-}
-
-.reviews-table {
-    width: 100%;
-    background: transparent;
-    border-collapse: collapse;
-}
-
-.reviews-table tr {
-    display: flex;
-    align-items: center;
-}
-
-
-table:not(.front-page-table) {
-    width: 100%;
-    border-collapse: collapse;
-    table-layout: fixed;
-}
-
-.image-cell {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.image-cell img {
-    width: 64px;
-    height: 50px;
-}
-
-.text-cell {
-    width: 90%;
-    vertical-align: top;
-}
-
-
 .arrow-image {
     width: 30%;
     image-rendering: pixelated;
@@ -327,7 +262,7 @@ table:not(.front-page-table) {
         transform: translateX(0px);
     }
     50% {
-        transform: translateX(-5px); /* Move left by 10px */
+        transform: translateX(-5px);
     }
     100% {
         transform: translateX(0px);
@@ -339,7 +274,7 @@ table:not(.front-page-table) {
         transform: translateX(0px);
     }
     50% {
-        transform: translateX(5px); /* Move right by 10px */
+        transform: translateX(5px);
     }
     100% {
         transform: translateX(0px);
@@ -354,6 +289,32 @@ table:not(.front-page-table) {
 animation: 2s bobleft ease-in-out infinite;
 }
 
+#nekowebring {
+    margin-bottom: 15px;
+}
+
+#nekowebring table {
+    background: linear-gradient(#363a4f, #24273a, #1e2030);
+    border: #181926 2px solid;
+    padding: 7px;
+    border-radius: 10px;
+    image-rendering: pixelated;
+}
+
+#nekowebring .webring-info {
+    text-align: center;
+}
+
+#nekowebring .webring-prev,
+#nekowebring .webring-next {
+    text-align: center;
+    vertical-align: middle;
+}
+
+#nekowebring .webring-links {
+    font-size: small;
+    text-align: center;
+}
 
 @media screen and (min-width: 1200px) {
     .navbar {
