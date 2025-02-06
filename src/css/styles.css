@@ -13,7 +13,8 @@ a {
 
 body {
     font-family: monospace;
-    background: #171b1f url("/assets/wall.png");
+    background-image: linear-gradient(45deg,#1c2025 25%,#111316 25%,#111316 50%,#1c2025 50%,#1c2025 75%,#111316 75%,#111316 100%);
+    background-size: 84.85px 84.85px;
     height: 110vh;
     margin: 0;
 }
