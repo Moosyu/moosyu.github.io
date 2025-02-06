@@ -1,3 +1,7 @@
+* {
+    transition: 0.4s;
+}
+
 @font-face {
     font-family: Yellow_Balloon;
     src: url("/fonts/Yellow_Balloon.ttf");
@@ -9,15 +13,13 @@ a {
 
 body {
     font-family: monospace;
-    background-image: linear-gradient(45deg, #1c2025 25%, #111316 25%, #111316 50%, #1c2025 50%, #1c2025 75%, #111316 75%, #111316 100%);
-    background-size: 84.85px 84.85px;
-    height: 100vh;
+    background: #171b1f url("/assets/wall.png");
+    height: 110vh;
     margin: 0;
 }
 
 .content-main {
     color: white;
-    border-radius: 4px;
 }
 
 .container-main {
@@ -48,19 +50,25 @@ body {
 .nav-left {
     display: flex;
     flex-direction: column;
-    background-color: #171b1f;
-    border-radius: 4px;
     padding: 2px;
 }
 
 .nav-left a, button {
-    color: white;
+    color: #e23a45;
+    text-decoration: underline;
+}
+
+button:hover {
+    color: #ec8a19;
+}
+
+a:hover {
+    color: #ec8a19;
 }
 
 .navbar a, .dropdown .dropbtn {
     font-size: 24px;
     padding: 14px 16px;
-    text-decoration: none;
     border: none;
     outline: none;
     font-family: inherit;
@@ -68,7 +76,7 @@ body {
     display: flex;
     align-items: center;
     box-sizing: border-box;
-    background-color: #171b1f;
+    background-color: #171b1f85;
 }
 
 .dropdown {
@@ -78,7 +86,7 @@ body {
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-    transition: 0.2s;
+    transition: 0.4s;
 }
 
 .dropdown-content {
@@ -88,11 +96,11 @@ body {
     left: 0;
     min-width: 160px;
     z-index: 1;
+    background-color: #171b1f;
 }
 
 .dropdown-content a {
     padding: 12px 16px;
-    text-decoration: none;
     display: block;
     text-align: left;
 }
@@ -106,8 +114,7 @@ body {
 }
 
 .background-div {
-    background-color: #171b1f;
-    border-radius: 4px;
+    background-color: #171b1f85;
     padding: 10px;
     margin: 10px;
 }
@@ -115,18 +122,17 @@ body {
 #searchInput {
     width: 90%;
     padding: 12px 20px;
-    background-color: #171b1f;
+    background-color: #171b1f85;
     box-sizing: border-box;
     color: white;
     border: 1px #20252b;
-    border-radius: 5px;
     margin: 7px;
 }
 
 .description, #commit-div, #listening {
-    background-color: #171b1f;
-    border-radius: 4px;
+    background-color: #171b1f85;
     padding: 10px;
+
 }
 
 #commit-div, #listening {
@@ -161,8 +167,7 @@ to {
     justify-content: space-between;
     gap: 10px;
     padding: 10px;
-    border-radius: 5px;
-    background-color: #171b1f;
+    background-color: #171b1f85;
 }
 
 .pagination-buttons {
@@ -180,8 +185,7 @@ to {
 
 #pageDropdown {
     padding: 5px;
-    border-radius: 5px;
-    background-color: #171b1f;
+    background-color: #171b1f85;
     color: white;
 }
 
@@ -195,8 +199,7 @@ to {
     overflow-wrap: break-word;
     font-size: 16px;
     width: 25%;
-    background-color: #171b1f;
-    border-radius: 4px;
+    background-color: #171b1f85;
 }
 
 .buttons-links img {
@@ -309,7 +312,6 @@ animation: 2s bobleft ease-in-out infinite;
     background: linear-gradient(#363a4f, #24273a, #1e2030);
     border: #181926 2px solid;
     padding: 7px;
-    border-radius: 10px;
     image-rendering: pixelated;
 }
 
@@ -326,6 +328,24 @@ animation: 2s bobleft ease-in-out infinite;
 #nekowebring .webring-links {
     font-size: small;
     text-align: center;
+}
+
+.favourites-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.favourites-item {
+    text-align: center;
+    width: calc(20% - 16px);
+}
+
+.favourites-item img {
+    width: 100%;
+    height: auto;
 }
 
 @media screen and (min-width: 1200px) {

@@ -58,48 +58,6 @@ title: "Links"
       <iframe style="border: none; width: 180px; height: 200px;" src="https://neocities.jeith.com/wii-webring.html?site=https://moosyu.nekoweb.org&variant=standard" title="wiiring iframe">
       </iframe>
   </div>
-  <div id="neko-tag">
-      <div class="webring-bg">
-          <div class="webring-wrapper">
-            <div>
-              <div class="webring-prev">
-                <a href="https://moosyu.github.io/jsonStorage/nekoTag/redirect.html?to=prev&name=moosyu" target="_parent">
-                  <img class="arrow-image" src="https://darkosparko.nekoweb.org/webrings/neko-tag/neko-tag-images/arrow-0970.png" style="transform: scaleX(-1);" alt="arrowleft">
-                </a>
-              </div>
-              <div class="box">
-                <div style="width: 80px; height: 80px;" id="moosyu">
-                  <div style="position: relative; top: 10px; right: 3px;">
-                    <p style="font-size: 16px;">moosyu's</p>
-                    <div class="wavy-title">
-                      <span>t</span>
-                      <span>i</span>
-                      <span>d</span>
-                      <span>a</span>
-                      <span>l</span>
-                    </div>
-                    <p style="font-size: 16px;">retreat</p>
-                  </div>
-                </div>
-              </div>
-              <div class="webring-next">
-                <a href="https://moosyu.github.io/jsonStorage/nekoTag/redirect.html?to=next&name=moosyu" target="_parent">
-                  <img class="arrow-image" src="https://darkosparko.nekoweb.org/webrings/neko-tag/neko-tag-images/arrow-0970.png" alt="arrow right">
-                </a>
-              </div>
-            </div>
-            <div style="text-align: center; color: black;">
-              You are currently at coordinates <span style="font-weight: bold;">H15</span> on the map!
-            </div>
-              <br>
-                <span class='webring-links'>
-                  <a href="https://moosyu.github.io/jsonStorage/nekoTag/redirect.html?to=random&name=moosyu">Random</a>
-                  <br>
-                  <a href="https://darkosparko.nekoweb.org/webrings/neko-tag/neko-tag-index.html">Make Your Mark!</a>
-                </span>
-          </div>
-        </div>
-  </div>
   <div class="rainbow-border">
       <p class="rainbowUnder">
           <a href="https://webring.bucketfish.me/redirect.html?to=prev&name=moosyu">←</a>
@@ -211,5 +169,7 @@ title: "Links"
     <a href="https://jonathn.peanits.lol/"><img src="/assets/jonathn.gif" alt="my goat jon"></a>
     <a href="https://poyoweb.poyo.study"><img src="https://raw.githubusercontent.com/mrdapoyo/poyoweb-node/refs/heads/main/public/buttons/carl-is-a-cunt.png" alt="poyoweb"></a>
     <a href="https://joo.sh/"><img src="https://files.joo.sh/img/buttons/jooshRice.gif"></a>
+    <img src="/assets/hai.gif" alt="haiweb">
+    <a href="https://eyeorb.net/"><img src="https://eyeorb.net/site_button.gif"></a>
   </div>
 </div>
