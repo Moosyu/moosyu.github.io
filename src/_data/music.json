@@ -1,5 +1,115 @@
 [
     {
+        "name": "Apostrophe (')",
+        "artist": "Frank Zappa",
+        "score": 6.5,
+        "description": "Was honestly a bit scared because I'd heard how bizarre and over the top Frank's music was but despite my 6.5 score I was pretty happily surprised to find this to be an alright jazz rock album. Uncle Remus is clearly the best here but the rest is pretty nice too even if I didn't find the comedy aspects very funny."
+    },
+    {
+        "name": "Connla's Well",
+        "artist": "Maruja",
+        "score": 7.5,
+        "description": "Not quite as good as the wonderful Knocknarea but a really fun EP with the highlight definitely being 'The Invisible Man'. Not much else to say but Maruja are definitely carrying jazz rock on their back right now, hoping we get more like this from the upcoming EP."
+    },
+    {
+        "name": "Times Are Getting Tougher",
+        "artist": "Petal Dress",
+        "score": 0.5,
+        "description": "Not even sure why the creator would feel like wasting their time making an album this obnoxious and dogshit."
+    },
+    {
+        "name": "House in the Woods",
+        "artist": "Low Roar",
+        "score": 4,
+        "description": "Rest in peace Karazija but this album is just boring. By about 4 songs in I was just uninterested and that didn't end up changing for its entire runtime."
+    },
+    {
+        "name": "Jeff Wayne's Musical Version of The War of the Worlds",
+        "artist": "Jeff Wayne",
+        "score": 3,
+        "description": "Sorry Mr Wayne but your musical is really boring. This felt to me like a mix between Ziggy Stardust and Rainbow Goblins but worse in about every aspect. I'm not a huge fan of the narration here and while the album starts out sounding pretty interesting musically it gets repetitive fast and it's long ass runtime doesn't help. I also really didn't like how fucking complicated this story is and how much of it needs to be told in long spoken word sections, I liked Rainbow Goblins because its story was simple, nice and didn't require too much focus to comprehend. For this I felt like it was forcing me to go read the Genius page like an actual book and even then it wasn't a particularly interesting book."
+    },
+    {
+        "name": "Cowards",
+        "artist": "Squid",
+        "score": 6,
+        "description": "Fine but not super memorable unfortunately. I heard this a few days before writing this and aside from the final track 'Well Met (Fingers Through the Fence)' I can't say that I really want to go back to listen to any of the songs by themselves."
+    },
+    {
+        "name": "Trust in the Lifeforce of the Deep Mystery",
+        "artist": "The Comet Is Coming",
+        "score": 7,
+        "description": "Didn't except this to be completely without vocals but fuck it we ball. This album was mystical at times and tracks 2 through 4 are some of my favourite in the jazz fusion subgenre. I feel like I'd enjoy this more as an EP or just a shorter album though even if it's already not super long at only 45 minutes. The latter half just felt weak."
+    },
+    {
+        "name": "Bright Green Field",
+        "artist": "Squid",
+        "score": 7.5,
+        "description": "In anticipation for the new Squid album I decided to give this a listen and I thought it was really great. I can see how some people compare this to BCNR and while I like BCNR's more grandiose approach to their stuff I can appreciate what Squid is doing here. Songs like 'Narrator' or 'Pamphlets' are so unbelieveable fun even if I found them a bit long. 'Pamphlets' also happens to have an awesome music video so that definitely helps it's case and this entire album in general is just a really fun time."
+    },
+    {
+        "name": "Flying Beagle",
+        "artist": "菊池 ひみこ [Himiko Kikuchi]",
+        "score": 6.5,
+        "image": "https://i.imgur.com/jcxp01W.png",
+        "description": "Pretty fine Jazzy album with one of the hardest covers out there, straight up every time I was looking for new jazz stuff this kept catching my eye and eventually I was forced to succumb. Kind of become background music but it was some pretty enjoyable background music."
+    },
+    {
+        "name": "I LAY DOWN MY LIFE FOR YOU (DIRECTOR'S CUT)",
+        "artist": "JPEGMAFIA",
+        "score": 4,
+        "description": "Very disappointing, I rated 'I LAY DOWN MY LIFE FOR YOU' a 9 and I still stand by that but these new tracks are just so weak even if some of them like the ear piercing 'CULT STATUS' have grown on me."
+    },
+    {
+        "name": "The Rainbow Goblins",
+        "artist": "高中正義 [Masayoshi Takanaka]",
+        "score": 7.5,
+        "description": "I actually didn't know how to feel about this album on first listen, or second so now on third listen I've decided this is really good. The wonderful jazzy instrumentals with great guitar work by Takanaka in combination with the childrens storybook-esque story being told by the British narrator man can't help but make me feel warm and happy. God bless this rainbow."
+    },
+    {
+        "name": "Fetch the Bolt Cutters",
+        "artist": "Fiona Apple",
+        "score": 7.5,
+        "description": "Certainly some of the best piano rock out there, this is such good album that can go from fun to devastating at the flick of the wrist and I can understand why critics raved about this project in 2020. I can't lie I've had Shameika and Cosmonauts in my head for days."
+    },
+    {
+        "name": "卵 [Tamago]",
+        "artist": "betcover!!",
+        "score": 6,
+        "description": "Was looking for a good jazz-rock album and this was getting a lot of praise so I decided to check it out and while it had some stand-out moments like 'H' most of this album is really forgettable and at some points there was just too much going on and it felt uncoordinated and overwhelming."
+    },
+    {
+        "name": "Oriior",
+        "artist": "Dvar",
+        "score": 3,
+        "description": "Got sent Fozzih by a friend and liked it quite a lot so I decided to check out the rest of this album and it's just bad. It all kind of felt like a grey mush that I was wading through aside from some standouts. Maybe that's just what darkwave is but if that's the case I guess I don't like darkwave."
+    },
+    {
+        "name": "ÁTTA",
+        "artist": "Sigur Rós",
+        "score": 7.5,
+        "description": "Having never listened to a Sigur Ros album before this I wasn't quite sure what to expect but I was very impressed by this. This album was gorgeous though felt a little long and repetitive at times, someone also told me that these guys speak a made up language which is really funny if true."
+    },
+    {
+        "name": "Chill Out",
+        "artist": "The KLF",
+        "score": 5,
+        "description": "It was nice, I didn't like many of the field recording or spoken words sections but when it's just nice ambience for the background it's at its best."
+    },
+    {
+        "name": "Kind of Blue",
+        "artist": "Miles Davis",
+        "score": 3.5,
+        "description": "Awfully overrated and uninteresting. I had the first song looped for an hour and didn't even notice because that's just how nothing this album sounds. Cover isn't much to look at either."
+    },
+    {
+        "name": "In a Silent Way",
+        "artist": "Miles Davis",
+        "score": 7,
+        "image": "https://i.imgur.com/RqVu3Qp.png",
+        "description": "Listened to this album mainly because this album cover is awesome but the music itself was good. Miles Davis isn't close to one of my favourite artists, I think he's a bit overrated but a nice solid 40 minute jazz fusion album like this is the best way to listen to Miles."
+    },
+    {
         "name": "Philosopher's Propeller",
         "artist": "Susumu Hirasawa",
         "score": 8,

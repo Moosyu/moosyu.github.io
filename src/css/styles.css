@@ -1,20 +1,10 @@
-* {
-    transition: 0.4s;
-}
-
-@font-face {
-    font-family: Yellow_Balloon;
-    src: url("/fonts/Yellow_Balloon.ttf");
-}
-
 a {
     color: #e23a45;
 }
 
 body {
     font-family: monospace;
-    background-image: linear-gradient(45deg,#1c2025 25%,#111316 25%,#111316 50%,#1c2025 50%,#1c2025 75%,#111316 75%,#111316 100%);
-    background-size: 84.85px 84.85px;
+    background: #171b1f url("/assets/wall.png");
     height: 110vh;
     margin: 0;
 }
@@ -28,7 +18,6 @@ body {
 }
 
 .hamburger svg {
-    transition: transform 0.3s ease;
     padding: 10px;
 }
 
@@ -52,6 +41,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 2px;
+    border: dotted white 1px;
 }
 
 .nav-left a, button {
@@ -60,11 +50,11 @@ body {
 }
 
 button:hover {
-    color: #ec8a19;
+    color: #36a3cf;
 }
 
 a:hover {
-    color: #ec8a19;
+    color: #36a3cf;
 }
 
 .navbar a, .dropdown .dropbtn {
@@ -77,17 +67,13 @@ a:hover {
     display: flex;
     align-items: center;
     box-sizing: border-box;
-    background-color: #171b1f85;
+    background-color: #171b1f;
 }
 
 .dropdown {
     position: relative;
     display: flex;
     align-items: center;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn {
-    transition: 0.4s;
 }
 
 .dropdown-content {
@@ -98,6 +84,8 @@ a:hover {
     min-width: 160px;
     z-index: 1;
     background-color: #171b1f;
+    border: dotted white;
+    border-width: 0px 1px 1px 1px;
 }
 
 .dropdown-content a {
@@ -115,25 +103,27 @@ a:hover {
 }
 
 .background-div {
-    background-color: #171b1f85;
+    background-color: #171b1f;
     padding: 10px;
     margin: 10px;
+    border: dotted white 1px;
 }
 
 #searchInput {
     width: 90%;
     padding: 12px 20px;
-    background-color: #171b1f85;
+    background-color: #171b1f;
     box-sizing: border-box;
     color: white;
     border: 1px #20252b;
-    margin: 7px;
+    margin: 10px;
+    border: dotted white 1px;
 }
 
 .description, #commit-div, #listening {
-    background-color: #171b1f85;
+    background-color: #171b1f;
     padding: 10px;
-
+    border: dotted white 1px;
 }
 
 #commit-div, #listening {
@@ -168,7 +158,7 @@ to {
     justify-content: space-between;
     gap: 10px;
     padding: 10px;
-    background-color: #171b1f85;
+    background-color: #171b1f;
 }
 
 .pagination-buttons {
@@ -186,7 +176,7 @@ to {
 
 #pageDropdown {
     padding: 5px;
-    background-color: #171b1f85;
+    background-color: #171b1f;
     color: white;
 }
 
@@ -200,7 +190,8 @@ to {
     overflow-wrap: break-word;
     font-size: 16px;
     width: 25%;
-    background-color: #171b1f85;
+    background-color: #171b1f;
+    border: dotted white 1px;
 }
 
 .buttons-links img {

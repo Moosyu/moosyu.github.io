@@ -93,7 +93,7 @@ title: "Links"
 
   # Inspirations, credits and cool sites:
 
-  ## credits:
+  ## Credits:
 
   [nekoweb {neocities but more viable for hosting an actual site because the restrictions on neocities are kind of crazy}](https://nekoweb.org/)
 
@@ -109,7 +109,7 @@ title: "Links"
 
   [onzecki {sent me a really well thought out and detailed email about making my site not run like shit which helped my situation quite a lot}](https://onz.ee/)
 
-  ## inspirations:
+  ## Inspirations:
 
   [daniels virtual place {my goat and original inspiration for this site}](https://displayman.neocities.org/)
 
@@ -118,7 +118,7 @@ title: "Links"
   [scump's house {i stole the factory reject flower thing from this guy i think. their site's really nice to look at and their homepage has always been a massive inspiration.}](https://scumpsmallbrain.neocities.org/)
 
 
-  ## cool sites
+  ## Cool sites
 
   [aoty {best music tracker by process of elimination because rym is a toxic hellhole and i like aoty's ui more}](https://www.albumoftheyear.org/)
 
@@ -148,7 +148,7 @@ title: "Links"
     <a href="https://displayman.neocities.org/"><img src="/assets/Botón_página_Daniel.gif" alt="daniel"></a>
     <a href="https://incessantpain.neocities.org/"><img src="/assets/buttonincessant.gif" alt="pain"></a>
     <a href="https://rice.place/" target="_blank"><img src="https://rice.nekoweb.org/button/riceplace.png"></a>
-    <a href="https://trademarkhell.net/"><img src="https://trademarkhell.net/tmsspecialhell.png" alt="trademarkization company of 2003"></a>
+    <a href="https://trademarkhell.net/"><img src="https://eyeorb.net/images/tmsspecialhell.png" alt="trademarkization company of 2003"></a>
     <a href="https://sad.ovh/"> <img src="/assets/sadovh.png" alt="sad.ovh"></a>
     <a href="https://vegacollective.com/"> <img src="/assets/MeatleMania_2.gif" alt="vega collective"></a>
     <a href="https://housepen.nekoweb.org/"> <img src="/assets/housepen.avif" alt="housepen"></a>
