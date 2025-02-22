@@ -16,9 +16,6 @@
     <title>{{title or "moosyus wix site"}}</title>
 </head>
 <body>
-    <div style="background-color: #a50100; color: white; text-align: center;">
-        <p style="margin: 0;">⚠︎ Incomplete! (You probably noticed). It will look nice once inspiration flows, or it may never look nice.</p>
-    </div>
     <div class="hamburger">
         <svg onclick="document.querySelector('.navbar').classList.toggle('active'); document.querySelector('.hamburger').classList.toggle('rotated');"
             xmlns="http://www.w3.org/2000/svg"
@@ -27,30 +24,31 @@
             <path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/>
         </svg>
     </div>
-    <div class="navbar">
-        <div class="nav-left">
-            <a href="/">Home</a>
-            <div class="dropdown">
-                <button class="dropbtn">Reviews</button>
-                <div class="dropdown-content">
-                    <a href="/pages/reviews/comics/">Comics &amp; Books</a>
-                    <a href="/pages/reviews/games/">Games</a>
-                    <a href="/pages/reviews/tv/">TV &amp; Movies</a>
-                    <a href="/pages/reviews/music/">Music</a>
-                </div>
+<div class="navbar">
+    <div class="nav-left">
+        <a href="/" class="{% if page.url == '/' %}active-tab{% endif %}">Home</a> 
+        <div class="dropdown">
+            <button class="dropbtn {% if '/pages/reviews/comics' in page.url or '/pages/reviews/games' in page.url or '/pages/reviews/tv' in page.url or '/pages/reviews/music' in page.url %}active-tab{% endif %}">Reviews</button>
+            <div class="dropdown-content">
+                <a href="/pages/reviews/comics/">Comics &amp; Books</a>
+                <a href="/pages/reviews/games/">Games</a>
+                <a href="/pages/reviews/tv/">TV &amp; Movies</a>
+                <a href="/pages/reviews/music/">Music</a>
             </div>
-            <div class="dropdown">
-                <button class="dropbtn">Ramblings</button>
-                <div class="dropdown-content">
-                    <a href="/pages/ramblings/2025">2025</a>
-                    <a href="/pages/ramblings/2024">2024</a>
-                </div>
-            </div>
-            <a href="/pages/guides">Guides</a>
-            <a href="/pages/blog">Blog</a>
-            <a href="/pages/links">Links</a>
         </div>
+        <div class="dropdown">
+            <button class="dropbtn {% if '/pages/ramblings/2025' in page.url or '/pages/ramblings/2024' in page.url %}active-tab{% endif %}">Ramblings</button>
+            <div class="dropdown-content">
+                <a href="/pages/ramblings/2025">2025</a>
+                <a href="/pages/ramblings/2024">2024</a>
+            </div>
+        </div>
+        <a href="/pages/guides" class="{% if '/pages/guides' in page.url %}active-tab{% endif %}">Guides</a>
+        <a href="/pages/blog" class="{% if '/pages/blog' in page.url %}active-tab{% endif %}">Blog</a>
+        <a href="/pages/links" class="{% if '/pages/links' in page.url %}active-tab{% endif %}">Links</a>
     </div>
+</div>
+
     <div class="content-main">
         {% block content %}{% endblock %}
     </div>

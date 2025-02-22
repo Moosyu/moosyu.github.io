@@ -6,7 +6,8 @@ body {
     font-family: monospace;
     background: #171b1f url("/assets/wall.png");
     height: 110vh;
-    margin: 0;
+    margin: 0 auto;
+    max-width: 1400px;
 }
 
 .content-main {
@@ -27,7 +28,15 @@ body {
 
 .navbar {
     display: none;
-    margin: 5px 5px 5px 0;
+    background: linear-gradient(180deg,  
+        #313436e6 0%, 
+        #2e3133e6 30%,
+        #1d242ae6 50%,
+        #0d1013e6 100% 
+    );
+    border: dotted white 1px;
+    margin: 10px 10px 0 10px;
+    border-radius: 4px;
 }
 
 .navbar.active {
@@ -41,7 +50,6 @@ body {
     display: flex;
     flex-direction: column;
     padding: 2px;
-    border: dotted white 1px;
 }
 
 .nav-left a, button {
@@ -49,11 +57,7 @@ body {
     text-decoration: underline;
 }
 
-button:hover {
-    color: #36a3cf;
-}
-
-a:hover {
+button:hover, a:hover {
     color: #36a3cf;
 }
 
@@ -67,7 +71,19 @@ a:hover {
     display: flex;
     align-items: center;
     box-sizing: border-box;
-    background-color: #171b1f;
+}
+
+.dropbtn:hover, .navbar a:hover {
+    background: linear-gradient(180deg,  
+        #2d3032e6 0%,  
+        #1e2123e6 30%,  
+        #12171be6 50%,  
+        #090c0fe6 100%  
+    );
+}
+
+.dropbtn {
+    background: none;
 }
 
 .dropdown {
@@ -83,15 +99,30 @@ a:hover {
     left: 0;
     min-width: 160px;
     z-index: 1;
-    background-color: #171b1f;
+    background-color: #1a2024;
     border: dotted white;
     border-width: 0px 1px 1px 1px;
+    border-radius: 4px;
 }
 
 .dropdown-content a {
     padding: 12px 16px;
     display: block;
     text-align: left;
+}
+
+.favourites-container img:hover, .review_table tbody tr td img:hover {
+    filter: brightness(90%);
+    transform: scale(1.02);
+    transition-duration: .15s;
+    cursor: pointer;
+}
+
+.active-tab {
+    background: linear-gradient(0deg,  
+        #2ca2d1 0%,  
+        #00000000 30%  
+    ) !important; 
 }
 
 .dropdown:hover .dropdown-content {
@@ -103,27 +134,43 @@ a:hover {
 }
 
 .background-div {
-    background-color: #171b1f;
+    background: linear-gradient(180deg,  
+        #212526e6 0%, 
+        #1e2222e6 30%, 
+        #181f22e6 50%, 
+        #0d1013e6 100% 
+    );
     padding: 10px;
     margin: 10px;
     border: dotted white 1px;
+    border-radius: 4px;
 }
 
 #searchInput {
-    width: 90%;
     padding: 12px 20px;
-    background-color: #171b1f;
+    background: linear-gradient(180deg,  
+        #212526e6 0%, 
+        #1e2222e6 30%, 
+        #181f22e6 50%, 
+        #0d1013e6 100% 
+    );
     box-sizing: border-box;
     color: white;
-    border: 1px #20252b;
-    margin: 10px;
+    margin: 10px 10px 0 10px;
     border: dotted white 1px;
+    border-radius: 4px;
 }
 
 .description, #commit-div, #listening {
-    background-color: #171b1f;
+    background: linear-gradient(180deg,  
+        #212526e6 0%, 
+        #1e2222e6 30%, 
+        #181f22e6 50%, 
+        #0d1013e6 100% 
+    );
     padding: 10px;
     border: dotted white 1px;
+    border-radius: 4px;
 }
 
 #commit-div, #listening {
@@ -348,7 +395,6 @@ animation: 2s bobleft ease-in-out infinite;
 
     .nav-left {
         flex-direction: row;
-        margin-left: 10px;
     }
 
     .hamburger {
