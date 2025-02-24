@@ -1,5 +1,93 @@
 [
     {
+        "name": "Ice, Death, Planets, Lungs, Mushrooms and Lava",
+        "artist": "King Gizzard & The Lizard Wizard",
+        "score": 5,
+        "description": "The songs are just too long, maybe I'm just TikTok brained or something but I can't endure these unchanging tracks despite them being good in bitesized chunks. Also AI cover, not that I really GAF but that shit looks awful cmon guys."
+    },
+    {
+        "name": "救済の技法 (Technique of Relief)",
+        "artist": "平沢進 [Susumu Hirasawa]",
+        "score": 4,
+        "description": "Kind of boring sorry. Unsure of why this is his most praised album when '賢者のプロペラ (Philosopher's Propeller)' is better in every aspect to me at least but despite a really great first song this loses steam quickly and then manages to run out by about track 7."
+    },
+    {
+        "name": "They Left Me with the Sound",
+        "artist": "Paris Texas",
+        "score": 7,
+        "description": "Just a really fun EP, they clearly aren't taking themselves seriously and it's just a nice breath of fresh air. It being less than 20 minutes helps too even though I reckon I could listen to 40 minutes of this and still be entertained."
+    },
+    {
+        "name": "My Caution Line",
+        "artist": "Citrobal",
+        "score": 7.5,
+        "description": "The instrumentation was top notch the whole way through and it was out here constantly surprising me, like im pretty sure I heard an accordion somewhere?? Whoever was playing guitar was great too and I was even getting some bossa nova vibes at some point which was fun. Really dislike Orange specifically because of the annoying ass empty sounding drum in the background but that's the only song I straight up don't like. My favourite was Do Re Mi, had me nodding and shit, idk how it only has 76k plays on spotify."
+    },
+    {
+        "name": "In Waves",
+        "artist": "Jamie xx",
+        "score": 3,
+        "description": "This shit lowkey put me to sleep idk what to tell you but I don't think this was meant to be heard as an album more like something you hear and don't really pay attention to."
+    },
+    {
+        "name": "OK Computer",
+        "artist": "Radiohead",
+        "score": 8,
+        "image": "https://i.imgur.com/dA1Eyv4.png",
+        "description": "Somehow last time I rated this I gave this album a 5 and called the mixing awful. I don't know what I was talking about, maybe I was listening to the wrong album but this entire project is lovely. Even 'Fitter Happier' had me hooked and people hate that guy."
+    },
+    {
+        "name": "In Rainbows",
+        "artist": "Radiohead",
+        "score": 10,
+        "image": "https://i.imgur.com/MVcDlta.png",
+        "imageB": "https://i.imgur.com/zzqMktE.png",
+        "description": "Holy shit. The hype is valid. This is one of if not the most beautiful albums I've ever heard in my entire life and I was fully sobbing on a few tracks ('All I Need' especially) then jamming out on the next song. I had to listen to this a few times just to make sure I wasn't insane and this album didn't secretly have a bad song and despite my searching I never seemed to find one. I intend to write a longer review later once I listen to this 100 more times or so but you should really just listen to this for yourself. This is how it feels to receive Radio-head from Thom Yorke himself."
+    },
+    {
+        "name": "Visions of the Emerald Beyond",
+        "artist": "Maruja",
+        "score": 5.5,
+        "description": "Not a bad album just kind of boring and I ended up tuning it out as just background music."
+    },
+    {
+        "name": "Tír na nÓg",
+        "artist": "Maruja",
+        "score": 3,
+        "description": "Very disappointed, very easily their worst project yet. It being improvised is cool and all but it just doesn't feel like it gets anywhere. I also really miss the vocals, hoping their LP will be closer to their previous EP's."
+    },
+    {
+        "name": "Pretty Hate Machine",
+        "artist": "Nine Inch Nails",
+        "score": 7.5,
+        "description": "When I think NIN I certainly don't think synthpop but that's what I got in this album and I really enjoyed it. I listened to this on a recommendation and I was a little worried as I had heard about how heavy a lot of the NIN stuff is but apart from a few moments it seemed my fear was unfounded. Even if it had some weaker moments especially into the second half this was a really great album that might just make me listen to the rest of their stuff."
+    },
+    {
+        "name": "Kid A",
+        "artist": "Radiohead",
+        "score": 7.5,
+        "image": "https://i.imgur.com/pC91NUY.png",
+        "description": "Was feeling in a Radiohead mood so I decided to go through their discography again starting with their coolest looking cover. I don't know what I was smoking on when I first listened to this but I found myself really enjoying it this time. 'The National Anthem' horn section was a real highlight and 'Motion Picture Soundtrack' was a wonderfully bleak final song (if you don't count the bonus track of course). I can't really see where the hype around 'How to Disappear Completely' is coming from but it might just take me a while to get it, who knows."
+    },
+    {
+        "name": "The Won't Be The Last Time",
+        "artist": "acloudyskye",
+        "score": 5,
+        "description": "Just saw this was #2 on AOTY for this year so far and decided to check it out. It was meh, indie rock really isn't my thing but this album wasn't awful, certainly overhyped though. I imagine the score won't stay so high for long as a wider audience checks it out ofc."
+    },
+    {
+        "name": "It's Blitz!",
+        "artist": "Yeah Yeah Yeahs",
+        "score": 7.5,
+        "description": "Just a really good dance-punk album. I really only checked this out because it had 'Heads Will Roll' but to be honest all of the first four songs were incredible and if that quality was kept up for the rest of the album I might've given it a high 9, unfortunately there are som real duds in the second half. Even then it's a really good album still."
+    },
+    {
+        "name": "Birds In The Trap Sing McKnight",
+        "artist": "Travis Scott",
+        "score": 5,
+        "description": "Lots of great stuff on here, stuff like 'the ends', 'goosebumps' and 'pick up the phone' but this album is just so bloated it doesn't even matter how many bangers it has. Really needed more quality control or just quality in general."
+    },
+    {
         "name": "SEYCHELLES",
         "artist": "高中正義 [Masayoshi Takanaka]",
         "score": 4.5,
@@ -1594,7 +1682,7 @@
     {
         "name": "We Buy Diabetic Test Strips + Doves",
         "artist": "Armand Hammer",
-        "score": 8.4,
+        "score": 8,
         "image": "https://i.imgur.com/RHW0qM3.png",
         "imageB": "https://i.imgur.com/Lor4zuB.png",
         "description": "Godspeed You! Black Emperor if they made good music."
@@ -1602,10 +1690,10 @@
     {
         "name": "VOLCANIC BIRD ENEMY AND THE VOICED CONCERN",
         "artist": "Lil Ugly Mane",
-        "score": 10,
+        "score": 9.5,
         "image": "https://i.imgur.com/6aisysl.png",
         "imageB": "https://i.imgur.com/pXWAzyV.jpeg",
-        "description": "8.6 -> 8.8 -> 9.2 -> 9.6 -> 10. This album grew on me like crazy. Tonight I decided to give it another relisten and spent like a fully hour crying. I know it's a little cliche to say but this album feels like how it feels to be in an insane dream, where everything feels normal and you only realise how off everything was when you wake up. Incredible."
+        "description": "8.6 -> 8.8 -> 9.2 -> 9.6 -> 10. This album grew on me like crazy. Tonight I decided to give it another relisten and spent like a fully hour crying. I know it's a little cliche to say but this album feels like how it feels to be in an insane dream, where everything feels normal and you only realise how off everything was when you wake up. Incredible. Edit: 10 -> 9.5, not hitting me the same sadly."
     },
     {
         "name": "Master of Puppets",
@@ -1685,10 +1773,10 @@
     {
         "name": "MTV Unplugged in New York",
         "artist":"Nirvana",
-        "score": 8,
+        "score": 7,
         "image": "https://i.imgur.com/4o9aii6.png",
         "imageB": "https://i.imgur.com/c7LdWrK.jpeg",
-        "description": "My favourite performance from nirvana, very strong album with the best variant of every song they perform except for the man who sold the world and i will die on that hill. kurts range musically is crazy and fun fact apparently someone bought the cardigan he was wearing for $334k ??"
+        "description": "My favourite performance from Nirvana, very strong album with the best variant of every song they perform except for the 'Man Who Sold the World' and I will die on that hill. kurts range musically is crazy and fun fact apparently someone bought the cardigan he was wearing for $334k ?? Edit: 8 -> 7, just wasn't feeling it as much upon a relisten. "
     },
     {
         "name": "Live At Folsom Prison",
@@ -1719,7 +1807,7 @@
     {
         "name": "Slipknot",
         "artist":"Slipknot",
-        "score": 8.5,
+        "score": 8,
         "image": "https://i.imgur.com/moRzGZQ.png",
         "imageB": "https://i.imgur.com/qlJdW0P.png",
         "description": "Insane ass album with an intense but also kind of silly fun energy to it which I can't say I saw coming. My dad didn't enjoy this one though, said he found it 'pathetic' no clue what he means by that though."
@@ -1919,8 +2007,8 @@
     {
         "name": "Desert of Doom",
         "artist":"Bruhguy3457",
-        "score": 4.3,
-        "description": "Very amateurish sounding (idk how to describe it). By the looks of the album cover it's made by a literal child though so I'm not gonna get too harsh."
+        "score": 2.5,
+        "description": "Very amateurish sounding (idk how to describe it). By the looks of the album cover it's made by a literal child though so I'm not gonna get too harsh. Edit: 4.3 -> 2.5, decided to be harsh."
     },
     {
         "name": "Under Pressure",
@@ -1931,14 +2019,14 @@
     {
         "name": "Kurzgesagt, Vol. 8 (Original Motion Picture Soundtrack)",
         "artist":"Epic Mountain",
-        "score": 7,
+        "score": 6,
         "description": "It's good studying music istg."
     },
     {
         "name": "Steroids (Crouching Tiger Hidden Gabber Megamix)",
         "artist":"Death Grips",
-        "score": 8.5,
-        "description": "20 minutes of pure autism holy shit."
+        "score": 7,
+        "description": "20 minutes of pure autism holy shit. Edit: 8.5 -> 7, too autistic for me ig."
     },
     {
         "name": "PRODUCT",
@@ -1961,7 +2049,7 @@
     {
         "name": "Jenny Death",
         "artist":"Death Grips",
-        "score": 9.5,
+        "score": 9,
         "image": "https://i.imgur.com/dJC5YVB.png",
         "description": "My favourite half of 'The Powers That B'. No back cover for this one as I'm pretty sure it never got a physical release?? So tragic."
     },
@@ -2173,13 +2261,13 @@
         "name": "Hellfire",
         "artist":"black midi",
         "score": 7,
-        "description": "Good but it could have been better. I don't really know how you could make ti better without make it just The New Sound but yeah."
+        "description": "Good but it could have been better. I don't really know how you could make it better without make it just The New Sound but yeah."
     },
     {
         "name": "SCRAPYARD III",
         "artist":"Quadeca",
-        "score": 8.6,
-        "description": "Way better then SCRAPYARD imo. This 9 minutes had me levitating, it was a very spiritual experience and easier is crazy."
+        "score": 5.5,
+        "description": "Way better then SCRAPYARD imo. This 9 minutes had me levitating, it was a very spiritual experience and easier is crazy. 8.6 -> 5.5, genuninely do not know what I was thinking, did not care for it in a relisten."
     },
     {
         "name": "Some Rap Songs",
@@ -2234,7 +2322,7 @@
     {
         "name": "SYRE",
         "artist":"Jaden Smith",
-        "score": 6.5,
+        "score": 6,
         "description": "A bit overhated imo. The first 4 songs are straight fire, ninety slaps and most of the other songs are pretty alright. The last one was kind of ass but still listenable. I also don't know why people are criticising jaden for being overly egotistical when thats like 90% of rap music."
     },
     {
@@ -2295,7 +2383,7 @@
     {
         "name": "Clandestino",
         "artist":"Manu Chao",
-        "score": 9,
+        "score": 8.5,
         "image": "https://i.imgur.com/RHIV648.png",
         "imageB": "https://i.imgur.com/WeB3P7w.jpeg",
         "description": "I'm the king of the bongo, baby. My mothers' favourite album making it the soundtrack to my childhood. I like it a lot, every song is insanely catchy and fun. One of the most fun albums I've ever heard and still manages to fit some meaning in. The 7.8 on aoty doesn't do it service !!"
@@ -2339,10 +2427,10 @@
     {
         "name": "CALL ME IF YOU GET LOST",
         "artist":"Tyler the Creator",
-        "score": 9.5,
+        "score": 10,
         "image": "https://i.imgur.com/3mPWxi3.png",
         "imageB": "https://i.imgur.com/uiZRXNb.png",
-        "description": "Tyler came back with his most hiphop album in ages just to flex or something idk. He's my goat tho and this is probably my most listened to Tyler album to be honest, probably my most listened to album just in general aside from maybe CHASER."
+        "description": "Tyler came back with his most hiphop album in ages just to flex or something idk. He's my goat tho and this is probably my most listened to Tyler album to be honest, probably my most listened to album just in general aside from maybe CHASER. Edit: 9.5 -> 10, THAT'S WHY HE'S THE GOAT!! THE GOAT!!"
     },
     {
         "name": "Inside (The Songs)",
@@ -2497,14 +2585,14 @@
     {
         "name": "Ugly is Beautiful",
         "artist":"Oliver Tree",
-        "score": 4,
+        "score": 3.5,
         "description": "Good production (probably because he had like 500 people working on this) but feels soulless (probably because he had like 500 people working on this). The songs are also just like generally not good."
     },
     {
         "name": "Mouth Moods",
         "artist":"Neil Cicierega",
-        "score": 7.5,
-        "description": "Meme album but its bars I'm not even gonna lie. It's charming and creative and I like it quite a lot."
+        "score": 6,
+        "description": "Meme album but its bars I'm not even gonna lie. It's charming and creative and I like it quite a lot. Edit: 7.5 -> 6, just too many duds."
     },
     {
         "name": "SCARING THE HOES: DLC PACK",
@@ -2515,7 +2603,7 @@
     {
         "name": "Yandhi",
         "artist":"Kanye West",
-        "score": 8,
+        "score": 7,
         "description": "Shit was majestic if unfinished what did we do to end up getting the bad ending..."
     },
     {
@@ -2541,7 +2629,7 @@
     {
         "name": "Illinois",
         "artist": "Sufjan Stevens",
-        "score": 8.5,
+        "score": 8,
         "image": "https://i.imgur.com/bV8NO1q.png",
         "imageB": "https://i.imgur.com/18Ms5A5.png",
         "description": "Folk isnt usually a genre I'm into but it is when it's Sufjan making it ig. The first song on here was gorgeous and blew my expectations out of the water, then that happened again 22 more times."
@@ -2565,18 +2653,18 @@
     {
         "name": "Chaser",
         "artist": "Femtanyl",
-        "score": 10,
+        "score": 9.5,
         "image": "https://i.imgur.com/2MBfPbG.jpeg",
         "imageB": "https://i.imgur.com/4cqG6UU.jpeg",
-        "description": "Femtanyl's first album and its fire. I originally gave this an 8.5 but I slowly just kept listening to it over and over and now even though I only have 19 Femtanyl songs in my playlist of 1000 Femtanyl is my top artist."
+        "description": "Femtanyl's first album and its fire. I originally gave this an 8.5 but I slowly just kept listening to it over and over and now even though I only have 19 Femtanyl songs in my playlist of 1000 Femtanyl is my top artist. Edit: 10 -> 9.5, sorry Femtanyl it just kind of grew off me."
     },
     {
         "name": "Sgt. Pepper's Lonely Hearts Club Band",
         "artist": "The Beatles",
-        "score": 8,
+        "score": 7,
         "image": "https://i.imgur.com/GrZvBMa.jpeg",
         "imageB": "https://i.imgur.com/EMTtOwV.png",
-        "description": "The best Beatles album, Abbey Road put me to sleep but this is my shit, from start to end not a single miss the people on aoty are lying to you when they say this isnt as good as Abbey Road and Revolver. The cover is also fire, idk why they cropped Ghandi out though. Edit: Went from 9.6 -> 8 I've grown to despise the mixing in this album."
+        "description": "The best Beatles album, Abbey Road put me to sleep but this is my shit, from start to end not a single miss the people on aoty are lying to you when they say this isnt as good as Abbey Road and Revolver. The cover is also fire, idk why they cropped Ghandi out though. Edit: Went from 9.6 -> 7 I've grown to despise the mixing in this album."
     },
     {
         "name": "To Pimp a Butterfly",
@@ -2598,18 +2686,18 @@
     {
         "name": "The Money Store",
         "artist": "Death Grips",
-        "score": 10,
+        "score": 9.5,
         "image": "https://i.imgur.com/b5KRiVD.jpeg",
         "imageB": "https://i.imgur.com/goIBlG1.png",
-        "description": "This album got me drenched in sweat by the end of it. It's like a gateway drug to more experiemental hiphop aswell as a gateway into crack. Idk if id say you should buy this as the bdsm type cover probably wont leave a good impression on your friends and family."
+        "description": "This album got me drenched in sweat by the end of it. It's like a gateway drug to more experiemental hiphop aswell as a gateway into crack. Idk if id say you should buy this as the bdsm type cover probably wont leave a good impression on your friends and family. Edit: 10 -> 9.5, I found it impossible to forgive Fuck That being on here sorry guys."
     },
     {
         "name": "My Beautiful Dark Twisted Fantasy",
         "artist": "Kanye West",
-        "score": 10,
+        "score": 9.5,
         "image": "https://i.imgur.com/wQc2HIF.jpeg",
         "imageB": "https://i.imgur.com/1LLx4P0.png",
-        "description": "Best Nicki Minaj verse ever on Monster, best Rick Ross verse on Devil in a New Dress and Runaway is one of my favourite songs ever. Listen to it if you haven't yet. The album art is also iconic and recognisable so it's pretty cool to have."
+        "description": "Best Nicki Minaj verse ever on Monster, best Rick Ross verse on Devil in a New Dress and Runaway is one of my favourite songs ever. Listen to it if you haven't yet. The album art is also iconic and recognisable so it's pretty cool to have. Edit: 10 -> 9.5, it just stopped hitting the way it used to I can't explain this one."
     },
     {
         "name": "Ziggy Stardust and the Spider From Mars",
