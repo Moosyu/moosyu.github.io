@@ -9,7 +9,7 @@ I just read [joosh's review on the airpods max](https://joo.sh/journal/apm2024/)
 
 ## Things I like
 
-* Probably the most important thing for headphones is sound quality and its pretty great. I've never actually had any supremely expensive headphones to compare these to but I still think they sound great and that's all that matters. 
+* Probably the most important thing for headphones is sound quality and its pretty great. I've never actually had any supremely expensive headphones to compare these to but I still think they sound great and that's all that matters.
 
 * The bass on here is also great, one time I was just laying on the couch and [There Is No Food](https://open.spotify.com/track/30j2ZsXF9MpdbDrCwYwPNk?si=7dfa06822433462a) started to play and the bass blew my ear drums out, it was awesome.
 
