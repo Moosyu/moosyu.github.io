@@ -10,7 +10,8 @@ module.exports = function(eleventyConfig) {
     "public/assets": "assets",
     "public/fonts": "fonts",
     "public/favicon.ico": "favicon.ico",
-    "src/nekofm.css" : "nekofm.css"
+    "src/nekofm.css" : "nekofm.css",
+    "src/pages/musicring/sitesMusicRing.json" : "sitesMusicRing.json"
   });
   eleventyConfig.addPassthroughCopy("src/_data/*");
   eleventyConfig.addPassthroughCopy("src/css/*");

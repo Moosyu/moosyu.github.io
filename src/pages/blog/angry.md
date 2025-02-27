@@ -1,6 +1,8 @@
 ---
 title: "Hateful"
 date: 2025-02-25
+tags:
+    - meta
 ---
 
 I've unfortunately had the displeasure of reading a few of my old posts recently, and to be honest, I found them a bit jarring. Most of my blog posts were written while I studied for my finals, which might be an explanation for why they seem so angry. Posts like the DNI one (which I still stand behind even if it was pretty poorly written), "Junji Itou wouldn't know scary if it ____" and "your sexual identity doesnt matter (on discord)" just seem unnecessarily angry, and to be honest, the anger behind them doesn't exactly help my points; in fact, it almost certainly hurt them.

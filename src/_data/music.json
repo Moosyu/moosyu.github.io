@@ -1,9 +1,27 @@
 [
     {
+        "name": "The Magic Whip",
+        "artist": "Blur",
+        "score": 6.5,
+        "description": "Weak first half followed up by a second half with quite a few absolute bangers, 'I Broadcast', 'Ghost Ship' and 'Ong Ong' are so much fun I can't see myself rating this lower."
+    },
+    {
+        "name": "Hail To the Thief",
+        "artist": "Radiohead",
+        "score": 6,
+        "description": "Just not a super interesting album. It's not about the political messaging, in fact I couldn't care less if I tried about the politics in this it's that the songs just sounded less interesting. Might be because I've listened to 160 Radiohead songs in two days though, might need to give this one a relisten at some point just in case."
+    },
+    {
+        "name": "The Bends",
+        "artist": "Radiohead",
+        "score": 8.5,
+        "description": "Was a little scared to listen to this because of all the freaky sex jokes made about it but it had an extremely solid first half, on par with OK Computer with a still solid if a bit weaker second. You can certainly tell this was made before Radiohead was fully standing on solid ground and there were still some growing pains but despite that it holds up shockingly well against the test of time and is a massive step in the right direction after Pablo Honey. Edit: 7.5 -> 8.5, I'm sorry but this album fucking bangs."
+    },
+    {
         "name": "Ice, Death, Planets, Lungs, Mushrooms and Lava",
         "artist": "King Gizzard & The Lizard Wizard",
         "score": 5,
-        "description": "The songs are just too long, maybe I'm just TikTok brained or something but I can't endure these unchanging tracks despite them being good in bitesized chunks. Also AI cover, not that I really GAF but that shit looks awful cmon guys."
+        "description": "The songs are just too long, maybe I'm just TikTok brained or something but I can't endure these unchanging tracks despite them being good in bite-sized chunks. Also AI cover, not that I really GAF but that shit looks awful cmon guys."
     },
     {
         "name": "救済の技法 (Technique of Relief)",
@@ -32,9 +50,9 @@
     {
         "name": "OK Computer",
         "artist": "Radiohead",
-        "score": 8,
+        "score": 8.5,
         "image": "https://i.imgur.com/dA1Eyv4.png",
-        "description": "Somehow last time I rated this I gave this album a 5 and called the mixing awful. I don't know what I was talking about, maybe I was listening to the wrong album but this entire project is lovely. Even 'Fitter Happier' had me hooked and people hate that guy."
+        "description": "Somehow last time I rated this I gave this album a 5 and called the mixing awful. I don't know what I was talking about, maybe I was listening to the wrong album but this entire project is lovely. Even 'Fitter Happier' had me hooked and people hate that guy. Edit: 8 -> 8.5, I've relistened to this about five times since I last spoke about it and I can't see myself stopping soon."
     },
     {
         "name": "In Rainbows",
@@ -1494,8 +1512,8 @@
     {
         "name": "A Moon Shaped Pool",
         "artist": "Radiohead",
-        "score": 7,
-        "description": "Had some pretty awesome moments, especially at the start, 'Burn the Witch' is an almost perfect intro song in my opinion but it was just kind of boring at some points too, especially 'Desert Island Disk' that song was garbage. It also felt samey a lot of the time which didnt help its situation."
+        "score": 8,
+        "description": "Had some pretty awesome moments, especially at the start, 'Burn the Witch' is an almost perfect intro song in my opinion but it was just kind of boring at some points too, especially 'Desert Island Disk' that song was garbage. It also felt samey a lot of the time which didnt help its situation. Edit: 7 -> 8, Radiohead as a band has grown on me recently and so i decided to relisten and it seems this album has grown on me too. Very beautiful album with some real bangers, 'Decks Dark' especially."
     },
     {
         "name": "genre: bradboy",

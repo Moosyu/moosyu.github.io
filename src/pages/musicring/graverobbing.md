@@ -1,0 +1,39 @@
+---
+layout: "layout.njk"
+title: "Music-ring"
+---
+
+{% set prismCss %} {% include "../../css/prismTheme.css" %} {% endset %}
+<style>
+    {{ prismCss | cssmin | safe }}
+</style>
+
+<div class="background-div">
+    In honour of my goat Jon we will be robbing his grave and pillaging it for all it has with the music-ring v2. The little spinning disk thing was torn straight from the rotting carcass of the original.
+
+    Rules: be awesome and cool 😎
+
+    Joining:
+
+    Message memecompanies on Discord, jethro_croucher on Instagram, noahmacneils on Twitter or email moosyu@tuta.io (I don't check my emails or Twitter super often though).
+
+    Adding the embed:
+
+```html
+<div style="width:104px; display: inline-block;">
+    <a href="https://moosyu.github.io/pages/musicring/redirect/"><img style="image-rendering: pixelated;" src="/assets/music_disk.gif"></a>
+    <a href="https://moosyu.github.io/pages/musicring/redirect?to=prev&name=NAME">Prev</a>
+    <a href="https://moosyu.github.io/pages/musicring/redirect?to=next&name=NAME">Rand</a>
+    <a href="https://moosyu.github.io/pages/musicring/redirect?to=random&name=NAME">Next</a>
+</div>
+```
+
+    Example:
+
+<div style="width:104px; display: inline-block;">
+    <a href="https://moosyu.github.io/pages/musicring/redirect/"><img style="image-rendering: pixelated;" src="/assets/music_disk.gif"></a>
+    <a href="https://moosyu.github.io/pages/musicring/redirect?to=prev&name=moosyu">Prev</a>
+    <a href="https://moosyu.github.io/pages/musicring/redirect?to=next&name=moosyu">Rand</a>
+    <a href="https://moosyu.github.io/pages/musicring/redirect?to=random&name=moosyu">Next</a>
+</div>
+</div>
