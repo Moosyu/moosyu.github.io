@@ -28,11 +28,11 @@ body {
 
 .navbar {
     display: none;
-    background: linear-gradient(180deg,  
-        #313436e6 0%, 
+    background: linear-gradient(180deg,
+        #313436e6 0%,
         #2e3133e6 30%,
         #1d242ae6 50%,
-        #0d1013e6 100% 
+        #0d1013e6 100%
     );
     border: dotted white 1px;
     margin: 10px 10px 0 10px;
@@ -74,11 +74,11 @@ button:hover, a:hover {
 }
 
 .dropbtn:hover, .navbar a:hover {
-    background: linear-gradient(180deg,  
-        #2d3032e6 0%,  
-        #1e2123e6 30%,  
-        #12171be6 50%,  
-        #090c0fe6 100%  
+    background: linear-gradient(180deg,
+        #2d3032e6 0%,
+        #1e2123e6 30%,
+        #12171be6 50%,
+        #090c0fe6 100%
     );
 }
 
@@ -119,10 +119,10 @@ button:hover, a:hover {
 }
 
 .active-tab {
-    background: linear-gradient(0deg,  
-        #2ca2d1 0%,  
-        #00000000 30%  
-    ) !important; 
+    background: linear-gradient(0deg,
+        #2ca2d1 0%,
+        #00000000 30%
+    ) !important;
 }
 
 .dropdown:hover .dropdown-content {
@@ -134,11 +134,11 @@ button:hover, a:hover {
 }
 
 .background-div {
-    background: linear-gradient(180deg,  
-        #212526e6 0%, 
-        #1e2222e6 30%, 
-        #181f22e6 50%, 
-        #0d1013e6 100% 
+    background: linear-gradient(180deg,
+        #212526e6 0%,
+        #1e2222e6 30%,
+        #181f22e6 50%,
+        #0d1013e6 100%
     );
     padding: 10px;
     margin: 10px;
@@ -148,11 +148,11 @@ button:hover, a:hover {
 
 #searchInput {
     padding: 12px 20px;
-    background: linear-gradient(180deg,  
-        #212526e6 0%, 
-        #1e2222e6 30%, 
-        #181f22e6 50%, 
-        #0d1013e6 100% 
+    background: linear-gradient(180deg,
+        #212526e6 0%,
+        #1e2222e6 30%,
+        #181f22e6 50%,
+        #0d1013e6 100%
     );
     box-sizing: border-box;
     color: white;
@@ -162,11 +162,11 @@ button:hover, a:hover {
 }
 
 .description, #commit-div, #listening {
-    background: linear-gradient(180deg,  
-        #212526e6 0%, 
-        #1e2222e6 30%, 
-        #181f22e6 50%, 
-        #0d1013e6 100% 
+    background: linear-gradient(180deg,
+        #212526e6 0%,
+        #1e2222e6 30%,
+        #181f22e6 50%,
+        #0d1013e6 100%
     );
     padding: 10px;
     border: dotted white 1px;
@@ -385,6 +385,17 @@ animation: 2s bobleft ease-in-out infinite;
 .favourites-item img {
     width: 100%;
     height: auto;
+}
+
+.music-table {
+    border-collapse: collapse;
+    letter-spacing: 1px;
+    margin-top: 16px;
+}
+
+.music-table th, .music-table td {
+    border: 1px dotted #fff;
+    padding: 8px 10px;
 }
 
 @media screen and (min-width: 1200px) {

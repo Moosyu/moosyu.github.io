@@ -36,4 +36,67 @@ title: "Music-ring"
     <a href="https://moosyu.github.io/pages/musicring/redirect?to=next&name=moosyu">Rand</a>
     <a href="https://moosyu.github.io/pages/musicring/redirect?to=random&name=moosyu">Next</a>
 </div>
-</div>
+
+<div id="members"></div>
+
+<script>
+    const DATA_FOR_WEBRING = `/sitesMusicRing.json`;
+
+const list = document.getElementById("members");
+
+function convertHTML(str) {
+  var regexTable =  {
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    '\'': '&apos;'
+    };
+
+  let result = str;
+
+  var regexKeys = Object.keys(regexTable);
+
+  for (var i=0; i<regexKeys.length; i++) {
+
+    let regex = new RegExp(regexKeys[i], 'g');
+    result = result.replace(regex, regexTable[regexKeys[i]]);
+  }
+
+  return result;
+}
+
+fetch(DATA_FOR_WEBRING)
+  .then((response) => response.json())
+  .then((sites) => {
+    list.innerHTML = `
+    <table class="music-table">
+    <thead>
+        <tr>
+        <th scope="col">Member</th>
+        <th scope="col">URL</th>
+        <th scope="col">Favourite musician/band</th>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+    <tfoot>
+        <tr>
+        <th scope="row" colspan="2">Members</th>
+        <td>${sites.length}</td>
+        </tr>
+    </tfoot>
+    </table>
+    `;
+    for (var i = 0; i < sites.length; i++) {
+      let rowHTML = `
+        <tr>
+          <td>${convertHTML(sites[i].name)}</td>
+          <td><a href="${sites[i].url}">${sites[i].url}</a></td>
+          <td>${convertHTML(sites[i].musician)}</td>
+        </tr>
+      `;
+      list.querySelector('tbody').innerHTML += rowHTML;
+    }
+  });
+</script>

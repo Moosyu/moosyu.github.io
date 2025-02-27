@@ -1,21 +1,31 @@
+/**
+ * prism.js tomorrow night eighties for JavaScript, CoffeeScript, CSS and HTML
+ * Based on https://github.com/chriskempson/tomorrow-theme
+ * @author Rose Pritchard
+ */
+
 code[class*="language-"],
 pre[class*="language-"] {
-	color: #cdd6f4;
+	color: #ccc;
 	background: none;
-	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
 	text-align: left;
 	white-space: pre;
 	word-spacing: normal;
 	word-break: normal;
 	word-wrap: normal;
 	line-height: 1.5;
+
 	-moz-tab-size: 4;
 	-o-tab-size: 4;
 	tab-size: 4;
+
 	-webkit-hyphens: none;
 	-moz-hyphens: none;
 	-ms-hyphens: none;
 	hyphens: none;
+
 }
 
 /* Code blocks */
@@ -23,12 +33,11 @@ pre[class*="language-"] {
 	padding: 1em;
 	margin: .5em 0;
 	overflow: auto;
-	border-radius: 0.3em;
 }
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-	background: #181825;
+	background: #2d2d2d;
 }
 
 /* Inline code */
@@ -38,123 +47,63 @@ pre[class*="language-"] {
 	white-space: normal;
 }
 
-/* https://prismjs.com/tokens.html */
-
-.token.keyword {
-	color: #bb9af7;
-}
-
-.token.builtin {
-	color: #f7768e;
-}
-
-.token.class-name {
-	color: #ff9e64;
-}
-
-.token.function {
-	color: #7aa2f7;
-}
-
-.token.boolean,
-.token.number {
-	color: #ff9e64;
-}
-
-.token.string,
-.token.char {
-	color: #9ece6a;
-}
-
-.token.symbol {
-	color: #bb9af7;
-}
-
-.token.regex {
-	color: #b4f9f8;
-}
-
-.token.url {
-	color: #9ece6a;
-}
-
-.token.operator {
-	color: #89ddff;
-}
-
-.token.variable {
-	color: #c0caf5;
-}
-
-.token.constant {
-	color: #ff9e64;
-}
-
-.token.property {
-	color: #7aa2f7;
+.token.comment,
+.token.block-comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #999;
 }
 
 .token.punctuation {
-	color: #a9b1d6;
+	color: #ccc;
 }
 
-.token.important {
-	color: #bb9af7;
-}
-
-.token.comment {
-	color: #565f89;
-}
-
-.token.tag {
-	color: #7aa2f7;
-}
-
-.token.attr-name {
-	color: #e0af68;
-}
-
-.token.attr-value {
-	color: #9ece6a;
-}
-
-.token.namespace {
-	color: #bb9af7;
-}
-
-.token.prolog,
-.token.doctype {
-	color: #bb9af7;
-}
-
-.token.cdata {
-	color: #73daca;
-}
-
-.token.entity {
-	color: #f7768e;
-}
-
-.token.atrule {
-	color: #bb9af7;
-}
-
-.token.selector {
-	color: #7aa2f7;
-}
-
-/* Diff */
-
+.token.tag,
+.token.attr-name,
+.token.namespace,
 .token.deleted {
-	color: #f7768e;
+	color: #e2777a;
 }
 
-.token.inserted {
-	color: #9ece6a;
+.token.function-name {
+	color: #6196cc;
 }
 
+.token.boolean,
+.token.number,
+.token.function {
+	color: #f08d49;
+}
 
-/* Other */
+.token.property,
+.token.class-name,
+.token.constant,
+.token.symbol {
+	color: #f8c555;
+}
+
+.token.selector,
+.token.important,
+.token.atrule,
+.token.keyword,
+.token.builtin {
+	color: #cc99cd;
+}
+
+.token.string,
+.token.char,
+.token.attr-value,
+.token.regex,
+.token.variable {
+	color: #7ec699;
+}
+
+.token.operator,
+.token.entity,
+.token.url {
+	color: #67cdcc;
+}
 
 .token.important,
 .token.bold {
@@ -164,3 +113,10 @@ pre[class*="language-"] {
 	font-style: italic;
 }
 
+.token.entity {
+	cursor: help;
+}
+
+.token.inserted {
+	color: green;
+}

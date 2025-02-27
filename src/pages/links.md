@@ -83,12 +83,12 @@ title: "Links"
           <a class="navig" href="https://webring.bucketfish.me/redirect.html?to=next&name=moosyu">→</a>
       </p>
   </div>
-  <div style="width:104px; display: inline-block;">
-    <a href="https://peanits.lol/webrings/musicring/index.php"><img style="image-rendering: pixelated;" src="/assets/music_disk.gif"></a>
-    <a href="https://peanits.lol/webrings/musicring/prev.php?slug=moosyu">Prev</a>
-    <a href="https://peanits.lol/webrings/musicring/rand.php">Rand</a>
-    <a href="https://peanits.lol/webrings/musicring/next.php?slug=moosyu">Next</a>
-  </div>
+<div style="width:104px; display: inline-block;">
+    <a href="https://moosyu.github.io/pages/musicring/redirect/"><img style="image-rendering: pixelated;" src="/assets/music_disk.gif"></a>
+    <a href="https://moosyu.github.io/pages/musicring/redirect?to=prev&name=moosyu">Prev</a>
+    <a href="https://moosyu.github.io/pages/musicring/redirect?to=next&name=moosyu">Rand</a>
+    <a href="https://moosyu.github.io/pages/musicring/redirect?to=random&name=moosyu">Next</a>
+</div>
 
 
   # Inspirations, credits and cool sites:
