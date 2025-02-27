@@ -21,7 +21,7 @@ title: "Music-ring"
 
 ```html
 <div style="width:104px; display: inline-block;">
-    <a href="https://moosyu.github.io/pages/musicring/redirect/"><img style="image-rendering: pixelated;" src="/assets/music_disk.gif"></a>
+    <a href="https://moosyu.github.io/pages/musicring/graverobbing/"><img style="image-rendering: pixelated;" src="/assets/music_disk.gif"></a>
     <a href="https://moosyu.github.io/pages/musicring/redirect?to=prev&name=NAME">Prev</a>
     <a href="https://moosyu.github.io/pages/musicring/redirect?to=next&name=NAME">Rand</a>
     <a href="https://moosyu.github.io/pages/musicring/redirect?to=random&name=NAME">Next</a>
@@ -31,7 +31,7 @@ title: "Music-ring"
     Example:
 
 <div style="width:104px; display: inline-block;">
-    <a href="https://moosyu.github.io/pages/musicring/redirect/"><img style="image-rendering: pixelated;" src="/assets/music_disk.gif"></a>
+    <a href="https://moosyu.github.io/pages/musicring/graverobbing/"><img style="image-rendering: pixelated;" src="/assets/music_disk.gif"></a>
     <a href="https://moosyu.github.io/pages/musicring/redirect?to=prev&name=moosyu">Prev</a>
     <a href="https://moosyu.github.io/pages/musicring/redirect?to=next&name=moosyu">Rand</a>
     <a href="https://moosyu.github.io/pages/musicring/redirect?to=random&name=moosyu">Next</a>
