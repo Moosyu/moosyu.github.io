@@ -9,15 +9,17 @@ title: "Music-ring"
 </style>
 
 <div class="background-div">
-    In honour of my goat Jon we will be robbing his grave and pillaging it for all it has with the music-ring v2. The little spinning disk thing was torn straight from the rotting carcass of the original.
+In honour of my goat Jon we will be robbing his grave and pillaging it for all it has with the music-ring v2. The little spinning disk thing was torn straight from the rotting carcass of the original.
 
-    Rules: Your site has got to have at least a little content (a random page with just links to other sites won't do).
+## Rules:
 
-    Joining:
+Your site has got to have at least a little content (a random page with just links to other sites won't do).
 
-    Message memecompanies on Discord, jethro_croucher on Instagram, noahmacneils on Twitter or email moosyu@tuta.io (I don't check my emails or Twitter super often though). In your email have your site name, URL and your favourite musician/band.
+## Joining:
 
-    Adding the embed:
+  Message memecompanies on Discord, jethro_croucher on Instagram, noahmacneils on Twitter or email moosyu@tuta.io (I don't check my emails or Twitter super often though). In your email include the name you'd like for the slug, your site's url URL and your favourite musician/band.
+
+## Adding the widget:
 
 ```html
 <div style="width:104px; display: inline-block;">
@@ -28,7 +30,9 @@ title: "Music-ring"
 </div>
 ```
 
-    Example:
+(All you really need are the links so you're fine to customise the widget however you'd like.)
+
+## Example widget:
 
 <div style="width:104px; display: inline-block;">
     <a href="https://moosyu.github.io/pages/musicring/graverobbing/"><img style="image-rendering: pixelated;" src="/assets/music_disk.gif"></a>
@@ -36,6 +40,8 @@ title: "Music-ring"
     <a href="https://moosyu.github.io/pages/musicring/redirect?to=next&name=moosyu">Rand</a>
     <a href="https://moosyu.github.io/pages/musicring/redirect?to=random&name=moosyu">Next</a>
 </div>
+
+## Member list:
 
 <div id="members"></div>
 
