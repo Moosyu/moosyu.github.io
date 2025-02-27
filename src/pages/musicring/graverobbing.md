@@ -11,11 +11,11 @@ title: "Music-ring"
 <div class="background-div">
     In honour of my goat Jon we will be robbing his grave and pillaging it for all it has with the music-ring v2. The little spinning disk thing was torn straight from the rotting carcass of the original.
 
-    Rules: be awesome and cool 😎
+    Rules: Your site has got to have at least a little content (a random page with just links to other sites won't do).
 
     Joining:
 
-    Message memecompanies on Discord, jethro_croucher on Instagram, noahmacneils on Twitter or email moosyu@tuta.io (I don't check my emails or Twitter super often though).
+    Message memecompanies on Discord, jethro_croucher on Instagram, noahmacneils on Twitter or email moosyu@tuta.io (I don't check my emails or Twitter super often though). In your email have your site name, URL and your favourite musician/band.
 
     Adding the embed:
 

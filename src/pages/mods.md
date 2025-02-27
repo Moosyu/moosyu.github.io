@@ -5,6 +5,8 @@ header_img: "/assets/mod_list.avif"
 side_nav_img: "/assets/bug.webp"
 ---
 
+<div class="background-div">
+
 # 10 (or more) mods Moosyu cant live without.
 
 Mods I use on every playthrough, other mods may be added on top, the 🌟 means I straight up wouldnt play a game without them (I mean all the games are great but you just need some conveniences on modded runs or you'd go insane).
@@ -199,3 +201,5 @@ Last updated 14/11/24
 * [LOOT](https://loot.github.io/) 🌟
 
 * [Mod Organiser 2](https://www.nexusmods.com/skyrimspecialedition/mods/6194) 🌟
+
+</div>
