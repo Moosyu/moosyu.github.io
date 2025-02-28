@@ -23,7 +23,7 @@ Your site has got to have at least a little content (a random page with just lin
 
 ```html
 <div style="width:104px; display: inline-block;">
-    <a href="https://moosyu.github.io/pages/musicring/graverobbing/"><img style="image-rendering: pixelated;" src="/assets/music_disk.gif"></a>
+    <a href="https://moosyu.github.io/pages/musicring/graverobbing/"><img src="/assets/music_disk.gif"></a>
     <a href="https://moosyu.github.io/pages/musicring/redirect?to=prev&name=NAME">Prev</a>
     <a href="https://moosyu.github.io/pages/musicring/redirect?to=next&name=NAME">Rand</a>
     <a href="https://moosyu.github.io/pages/musicring/redirect?to=random&name=NAME">Next</a>
@@ -35,7 +35,7 @@ Your site has got to have at least a little content (a random page with just lin
 ## Example widget:
 
 <div style="width:104px; display: inline-block;">
-    <a href="https://moosyu.github.io/pages/musicring/graverobbing/"><img style="image-rendering: pixelated;" src="/assets/music_disk.gif"></a>
+    <a href="https://moosyu.github.io/pages/musicring/graverobbing/"><img src="/assets/music_disk.gif"></a>
     <a href="https://moosyu.github.io/pages/musicring/redirect?to=prev&name=moosyu">Prev</a>
     <a href="https://moosyu.github.io/pages/musicring/redirect?to=next&name=moosyu">Rand</a>
     <a href="https://moosyu.github.io/pages/musicring/redirect?to=random&name=moosyu">Next</a>
