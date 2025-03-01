@@ -97,11 +97,10 @@ const v_mainHtml = `
 `;
 const v_formHtml = `
     <h2 id="c_widgetTitle">${s_widgetTitle}</h2>
-    <p>If you're going to make a shitpost comment please at least try to be funny bc at the moment you guys are mad boring!!</p>
 
     <div class="non-message">
         <div id="c_nameWrapper" class="c-inputWrapper">
-            <input class="c-input c-nameInput" name="entry.${s_nameId}" id="entry.${s_nameId}" type="text" maxlength="${s_maxLengthName}" placeholder="name (required)" required>
+            <input class="c-input c-nameInput" name="entry.${s_nameId}" id="entry.${s_nameId}" type="text" maxlength="${s_maxLengthName}" placeholder="name" required>
         </div>
 
         <div id="c_websiteWrapper" class="c-inputWrapper">
@@ -132,9 +131,9 @@ const v_formHtml = `
     </div>
 
     <div id="maths">
-        <p>Solve this equation: ${num1} ${chosenSymbol} ${num2} is ${result}</p>
-        <input class="c-input type="text" maxlength="${s_maxLengthName}" placeholder="enter the answer here" required>
+        <input class="c-input" id="answer.${s_textId}" type="text" maxlength="${s_maxLengthName}" placeholder="what is ${num1}${chosenSymbol}${num2}?" required>
     </div>
+
     <input id="c_submitButton" name="c_submitButton" type="submit" value="${s_submitButtonLabel}" disabled>
 `;
 
@@ -221,6 +220,7 @@ function getComments() {
         document.getElementById(`entry.${s_nameId}`).value = '';
         document.getElementById(`entry.${s_websiteId}`).value = '';
         document.getElementById(`entry.${s_textId}`).value = '';
+        document.getElementById(`answer.${s_textId}`).value = '';
     }
 
     // Get the data
@@ -606,6 +606,19 @@ function emojiWindow() {
 document.getElementById('c_submitButton').addEventListener('click', function() {
     document.querySelector('.non-message').style.display = 'block';
     document.querySelector('.emoji-panel').style.display = 'none';
+    const ansBox = document.getElementById('answer.' + s_textId);
+    if (ansBox.value != result) {
+        c_submitButton.disabled = true;
+        setTimeout(function(){
+            c_submitButton.disabled = false;
+        }, 1000);
+        ansBox.value = "WRONG";
+    }
+    chosenSymbol = ["+", "-"][getRandomInt(2)];
+    num1 = getRandomInt(20);
+    num2 = getRandomInt(20);
+    result = operations[chosenSymbol](num1, num2);
+    ansBox.placeholder = "what is " + num1 + chosenSymbol + num2 + "?"
 });
 
 // stolen from https://adilene.net/ it was too much to stomach

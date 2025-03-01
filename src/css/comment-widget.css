@@ -92,7 +92,6 @@
 
 #c_widgetTitle {
     margin: -10px;
-    margin-bottom: 10px;
     padding: 5px;
     text-transform: uppercase;
     font-style: italic;
@@ -260,4 +259,8 @@
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+#maths {
+    margin-bottom: 10px;
 }
