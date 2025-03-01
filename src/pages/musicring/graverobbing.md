@@ -25,8 +25,8 @@ Your site has got to have at least a little content (a random page with just lin
 <div style="width:104px; display: inline-block;">
     <a href="https://moosyu.github.io/pages/musicring/graverobbing/"><img src="/assets/music_disk.gif"></a>
     <a href="https://moosyu.github.io/pages/musicring/redirect?to=prev&name=NAME">Prev</a>
-    <a href="https://moosyu.github.io/pages/musicring/redirect?to=next&name=NAME">Rand</a>
-    <a href="https://moosyu.github.io/pages/musicring/redirect?to=random&name=NAME">Next</a>
+    <a href="https://moosyu.github.io/pages/musicring/redirect?to=random&name=NAME">Rand</a>
+    <a href="https://moosyu.github.io/pages/musicring/redirect?to=next&name=NAME">Next</a>
 </div>
 ```
 
@@ -37,8 +37,8 @@ Your site has got to have at least a little content (a random page with just lin
 <div style="width:104px; display: inline-block;">
     <a href="https://moosyu.github.io/pages/musicring/graverobbing/"><img src="/assets/music_disk.gif"></a>
     <a href="https://moosyu.github.io/pages/musicring/redirect?to=prev&name=moosyu">Prev</a>
-    <a href="https://moosyu.github.io/pages/musicring/redirect?to=next&name=moosyu">Rand</a>
-    <a href="https://moosyu.github.io/pages/musicring/redirect?to=random&name=moosyu">Next</a>
+    <a href="https://moosyu.github.io/pages/musicring/redirect?to=random&name=moosyu">Rand</a>
+    <a href="https://moosyu.github.io/pages/musicring/redirect?to=next&name=moosyu">Next</a>
 </div>
 
 ## Member list:

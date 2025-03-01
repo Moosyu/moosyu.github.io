@@ -64,6 +64,14 @@ const s_expandRepliesText = 'show replies';
 const s_hideRepliesText = 'hide replies';
 const s_leftButtonText = '<<';
 const s_rightButtonText = '>>';
+let chosenSymbol = ["+", "-"][getRandomInt(2)];
+let num1 = getRandomInt(20);
+let num2 = getRandomInt(20);
+const operations = {
+    "+": (a, b) => a + b,
+    "-": (a, b) => a - b
+};
+let result = operations[chosenSymbol](num1, num2);
 
 /*
     DO NOT edit below this point unless you are confident you know what you're doing!
@@ -123,6 +131,10 @@ const v_formHtml = `
         <span class="emoji" onclick="emojiWindow()">😊</span>
     </div>
 
+    <div id="maths">
+        <p>Solve this equation: ${num1} ${chosenSymbol} ${num2} is ${result}</p>
+        <input class="c-input type="text" maxlength="${s_maxLengthName}" placeholder="enter the answer here" required>
+    </div>
     <input id="c_submitButton" name="c_submitButton" type="submit" value="${s_submitButtonLabel}" disabled>
 `;
 
@@ -138,6 +150,10 @@ let v_pageNum = 1;
 let v_amountOfPages = 1;
 let v_commentMax = 1;
 let v_commentMin = 1;
+
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+}
 
 // Set up the word filter if applicable
 let v_filteredWords;
