@@ -1,9 +1,63 @@
 [
     {
+        "name": "SAYA",
+        "artist": "Saya Gray",
+        "score": 7.5,
+        "description": "Super solid art pop album. Definitely had some weaker moments especially at the end and never really had a song as fun as the first but SAYA tries really hard. Really excited for what Ms Gray has next. I also enjoyed the more experiemental moments that I don't really expect from a pop album. Between this and The Weeknd's new album pop has really had a great few albums already this year."
+    },
+    {
+        "name": "They Left Me With A Gun",
+        "artist": "Paris Texas",
+        "score": 6.5,
+        "description": "Album cover goes hard. Another fun EP from Paris Texas just a week after their last. I think I mentioned I could've listened to another 20 minutes of the last EP and I think this one filled that need. Didn't have anything quite as good as 'El Camino' but 'Stripper Song' got pretty close."
+    },
+    {
+        "name": "Sinister Grift",
+        "artist": "Panda Bear",
+        "score": 5.5,
+        "description": "A more boring Pet Sounds. Praise was a good start but I lost interest in this project pretty quick. I know I can't just call every Psychedelic Pop album Pet Sounds but this really felt like it I can't tell you why."
+    },
+    {
+        "name": "Luminescent Creatures",
+        "artist": "青葉市子 [Ichiko Aoba]",
+        "score": 6,
+        "description": "It's alright but I feel like I got my fill of Aoba in Windswept Adan and while it's still a very pretty album a lot of it just felt like background music and I sometimes even forgot it was playing at all. Not sure how people are even comparing this to Windswept Adan, they aren't even close."
+    },
+    {
+        "name": "OK Computer OKNOTOK 1997 2017",
+        "artist": "Radiohead",
+        "score": 6.5,
+        "description": "Second half was pretty medicore but 'I Promise' followed up by 'Man of War' followed up by 'Lift'???? Holy fuck that's a crazy start. Those three are better than a fair few songs on the original especially 'Man Of War' which might be one of my favourite Radiohead songs, it's up there at least."
+    },
+    {
+        "name": "KID A MNESIA",
+        "artist": "Radiohead",
+        "score": 6,
+        "description": "Pretty fine bonus tracks. 'Pulk/Pull (True Love Waits Version)' is a lot better than the original, 'If You Say the Word' is pretty great too. The rest isn't much to write home about."
+    },
+    {
         "name": "Amnesiac",
         "artist": "Radiohead",
         "score": 7.5,
         "description": "I know people call this Kid B but aside from the absolutely awful 'Pulk / Pull Revolving Doors' which is Fitter Happier's dickhead older brother I actually think this might be better than Kid A. I prefer it being less ambient as something about Kid A's ambience doesn't sit right we me and while I've rated them the same due to Punk / Pull I think in general this was a more interested album to listen to."
+    },
+    {
+        "name": "An Obsession With Kit",
+        "artist": "Graham Kartna",
+        "score": 5.5,
+        "description": "Very internetcore album which usually isn't my thing and yet I've been vibing out to Browser History for years. Love it so much, there rest of this project is just kind of mid to me though and. Subtext is straight up bad."
+    },
+    {
+        "name": "The Low End Theory",
+        "artist": "A Tribe Called Quest",
+        "score": 4.5,
+        "description": "Not even gonna try to defend myself on this one. Guess I just don't have good taste or something because me not liking this or Illmatic must mean there's something wrong with me. I don't even know what to say, 90s rap just really bores me and this album put me to sleep. Did like some of the jazzier moments though."
+    },
+    {
+        "name": "Feed Me Jack",
+        "artist": "Ultra Ego",
+        "score": 5,
+        "description": "Really fun 20 minute EP (I think). To be honest I'm writing this review about a week after listening to the EP and I literally have no memory of any of it so I have to assume it can't be so great though I do remember it being fun."
     },
     {
         "name": "The Magic Whip",
@@ -36,9 +90,9 @@
         "description": "Kind of boring sorry. Unsure of why this is his most praised album when '賢者のプロペラ (Philosopher's Propeller)' is better in every aspect to me at least but despite a really great first song this loses steam quickly and then manages to run out by about track 7."
     },
     {
-        "name": "They Left Me with the Sound",
+        "name": "They Left Me with the Sword",
         "artist": "Paris Texas",
-        "score": 7,
+        "score": 6.5,
         "description": "Just a really fun EP, they clearly aren't taking themselves seriously and it's just a nice breath of fresh air. It being less than 20 minutes helps too even though I reckon I could listen to 40 minutes of this and still be entertained."
     },
     {
@@ -1536,7 +1590,7 @@
     {
         "name": "アダンの風 (Windswept Adan)",
         "artist": "青葉市子 [Ichiko Aoba]",
-        "score": 9,
+        "score": 8,
         "image": "https://i.imgur.com/SsDt7uM.png",
         "description": "Majestic, beautiful album. 'Parfum d'etoiles' is probably now one of my favourite songs of all time straight up it is that beautiful."
     },

@@ -9,6 +9,9 @@ title: "Music-ring"
 </style>
 
 <div class="background-div">
+
+# My goat Jon is back!! Join the real music ring [here](https://peanits.lol/webrings/musicring/index.php)
+
 In honour of my goat Jon we will be robbing his grave and pillaging it for all it has with the music-ring v2. The little spinning disk thing was torn straight from the rotting carcass of the original.
 
 ## Rules:
