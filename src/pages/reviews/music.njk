@@ -96,7 +96,7 @@ pagination:
                 </div>
                 {% endif %}
             </td>
-            <td>{{ item.description }}</td>
+            <td>{{ item.description | replace('\n', '<br><br>') | safe }}</td>
         </tr>
         {% endfor %}
     </tbody>

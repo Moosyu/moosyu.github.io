@@ -171,5 +171,6 @@ title: "Links"
     <a href="https://joo.sh/"><img src="https://files.joo.sh/img/buttons/jooshRice.gif"></a>
     <img src="/assets/hai.gif" alt="haiweb">
     <a href="https://eyeorb.net/"><img src="https://eyeorb.net/site_button.gif"></a>
+    <a href="https://electronica.nekoweb.org/"><img src="https://electronica.nekoweb.org/assets/electronicabutton2.gif"></a>
   </div>
 </div>
