@@ -58,38 +58,24 @@ title: "Links"
       <iframe style="border: none; width: 180px; height: 200px;" src="https://neocities.jeith.com/wii-webring.html?site=https://moosyu.nekoweb.org&variant=standard" title="wiiring iframe">
       </iframe>
   </div>
-  <div class="rainbow-border">
-      <p class="rainbowUnder">
-          <a href="https://webring.bucketfish.me/redirect.html?to=prev&name=moosyu">←</a>
-      </p>
-      <a class="rainbowUnder" href="https://webring.bucketfish.me" id="header">
-          <span style="--n:-10000ms;">b</span>
-          <span style="--n:-9900ms;">u</span>
-          <span style="--n:-9800ms;">c</span>
-          <span style="--n:-9700ms;">k</span>
-          <span style="--n:-9600ms;">e</span>
-          <span style="--n:-9500ms;">t</span>
-          <span style="--n:-9400ms;"> </span>
-          <br>
-          <span style="--n:-9300ms;">w</span>
-          <span style="--n:-9200ms;">e</span>
-          <span style="--n:-9100ms;">b</span>
-          <span style="--n:-9000ms;">r</span>
-          <span style="--n:-8900ms;">i</span>
-          <span style="--n:-8800ms;">n</span>
-          <span style="--n:-8700ms;">g</span>
-      </a>
-      <p class="rainbowUnder">
-          <a class="navig" href="https://webring.bucketfish.me/redirect.html?to=next&name=moosyu">→</a>
-      </p>
+  <div style="display: inline-block; margin-bottom: 13px;">
+      <a href="https://webring.bucketfish.me/redirect.html?to=prev&name=moosyu">←</a>
+        <a href="https://webring.bucketfish.me"> bucket webring</a>
+      <a href="https://webring.bucketfish.me/redirect.html?to=next&name=moosyu">→</a>
   </div>
-<div style="width:104px; display: inline-block;">
-    <a href="https://moosyu.github.io/pages/musicring/redirect/"><img style="image-rendering: pixelated;" src="/assets/music_disk.gif"></a>
-    <a href="https://moosyu.github.io/pages/musicring/redirect?to=prev&name=moosyu">Prev</a>
-    <a href="https://moosyu.github.io/pages/musicring/redirect?to=next&name=moosyu">Rand</a>
-    <a href="https://moosyu.github.io/pages/musicring/redirect?to=random&name=moosyu">Next</a>
-</div>
-
+  <br>
+  <div style="width:104px; display: inline-block;">
+      <a href="https://moosyu.github.io/pages/musicring/redirect/"><img style="image-rendering: pixelated;" src="/assets/music_disk.gif"></a>
+      <a href="https://moosyu.github.io/pages/musicring/redirect?to=prev&name=moosyu">Prev</a>
+      <a href="https://moosyu.github.io/pages/musicring/redirect?to=next&name=moosyu">Rand</a>
+      <a href="https://moosyu.github.io/pages/musicring/redirect?to=random&name=moosyu">Next</a>
+  </div>
+  <br>
+  <div style="display: inline-block; margin-top: 13px;">
+      <a href="https://jbcarreon123.nekoweb.org/webrings/ssgring/redirect?slug=moosyu&way=prev">←</a>
+      <a href="https://jbcarreon123.nekoweb.org/webrings/ssgring">ssg webring</a>
+      <a href="https://jbcarreon123.nekoweb.org/webrings/ssgring/redirect?slug=moosyu&way=next">→</a>
+  </div>
 
   # Inspirations, credits and cool sites:
 
