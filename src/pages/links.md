@@ -158,5 +158,6 @@ title: "Links"
     <img src="/assets/hai.gif" alt="haiweb">
     <a href="https://eyeorb.net/"><img src="https://eyeorb.net/site_button.gif"></a>
     <a href="https://electronica.nekoweb.org/"><img src="https://electronica.nekoweb.org/assets/electronicabutton2.gif"></a>
+    <a href="https://raccoonbutt.com"><img src="https://raccoonbutt.com/static/images/button.gif"></a>
   </div>
 </div>
