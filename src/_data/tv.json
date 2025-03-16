@@ -1,6 +1,18 @@
 [
       {
             "type": "Movie",
+            "name": "Gran Torino",
+            "score": 6,
+            "description": "Feels a little overrated. The story was pretty bittersweet and I'm fine with that but his relationship with his family seemed a little underdeveloped and him being so pissed at them seemed like a bit much and made him come off as more a dick than I think he needed to be. Also sometimes the acting just felt a little bad and the line deliveries, a little unnatural."
+      },
+      {
+            "type": "Movie",
+            "name": "The Town",
+            "score": 6.5,
+            "description": "Just another dumb fun action movie. I'd have liked to see more of Doug and Claire's relationship because it felt a little rushed though I guess it only had two and a half hours. I also couldn't stop thinking of Jeremy Renner as Hawkeye and that shit really took me out of it but that might just be a personal failing."
+      },
+      {
+            "type": "Movie",
             "name": "The Gentlemen",
             "score": 7,
             "description": "I don't really like the the way it's told, just kind of takes me out of it but the film does have its fun moments. I liked the guy whacking the British kids. Edit: 6.5 -> 7.5, slept on it and decided this was just a fun time. Perhaps I need to enjoy things more. The way it's filmed is pretty fun (you can certainly tell how high the budget is) and British guys hitting each other is entertaining."
