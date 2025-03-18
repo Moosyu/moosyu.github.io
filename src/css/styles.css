@@ -80,6 +80,7 @@ button:hover, a:hover {
         #12171be6 50%,
         #090c0fe6 100%
     );
+    transition: 0.1s linear;
 }
 
 .dropbtn {

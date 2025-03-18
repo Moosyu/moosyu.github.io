@@ -133,7 +133,7 @@ title: "Links"
   <div class="buttons-links">
     <a href="https://displayman.neocities.org/"><img src="/assets/Botón_página_Daniel.gif" alt="daniel"></a>
     <a href="https://incessantpain.neocities.org/"><img src="/assets/buttonincessant.gif" alt="pain"></a>
-    <a href="https://rice.place/" target="_blank"><img src="https://rice.nekoweb.org/button/riceplace.png"></a>
+    <a href="https://rice.place/"><img src="https://rice.nekoweb.org/button/riceplace.png"></a>
     <a href="https://trademarkhell.net/"><img src="https://eyeorb.net/images/tmsspecialhell.png" alt="trademarkization company of 2003"></a>
     <a href="https://sad.ovh/"> <img src="/assets/sadovh.png" alt="sad.ovh"></a>
     <a href="https://vegacollective.com/"> <img src="/assets/MeatleMania_2.gif" alt="vega collective"></a>
@@ -155,10 +155,11 @@ title: "Links"
     <a href="https://jonathn.peanits.lol/"><img src="/assets/jonathn.gif" alt="my goat jon"></a>
     <a href="https://poyoweb.poyo.study"><img src="https://raw.githubusercontent.com/mrdapoyo/poyoweb-node/refs/heads/main/public/buttons/carl-is-a-cunt.png" alt="poyoweb"></a>
     <a href="https://joo.sh/"><img src="https://files.joo.sh/img/buttons/jooshRice.gif"></a>
-    <img src="/assets/hai.gif" alt="haiweb">
+    <a href="https://rice.place/"><img src="/assets/hai.gif" alt="haiweb"></a>
     <a href="https://eyeorb.net/"><img src="https://eyeorb.net/site_button.gif"></a>
     <a href="https://electronica.nekoweb.org/"><img src="https://electronica.nekoweb.org/assets/electronicabutton2.gif"></a>
     <a href="https://raccoonbutt.com"><img src="https://raccoonbutt.com/static/images/button.gif"></a>
     <a href="https://jbcarreon123.nekoweb.org"><img src="https://jbcarreon123.nekoweb.org/sitebuttonv2.png" alt="jb's site" style="image-rendering: pixelated;"/></a>
+    <a href="https://puffinthefish.neocities.org/"><img src="/assets/pfnbutton.webp"></a>
   </div>
 </div>
