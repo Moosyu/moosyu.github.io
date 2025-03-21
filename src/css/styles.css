@@ -5,9 +5,10 @@ a {
 body {
     font-family: monospace;
     background: #171b1f url("/assets/wall.png");
-    height: 110vh;
     margin: 0 auto;
     max-width: 1400px;
+    overflow: -moz-scrollbars-vertical; 
+    overflow-y: scroll;
 }
 
 .content-main {
@@ -80,7 +81,6 @@ button:hover, a:hover {
         #12171be6 50%,
         #090c0fe6 100%
     );
-    transition: 0.1s linear;
 }
 
 .dropbtn {
@@ -206,7 +206,15 @@ to {
     justify-content: space-between;
     gap: 10px;
     padding: 10px;
-    background-color: #171b1f;
+    background: linear-gradient(180deg,
+        #212526e6 0%,
+        #1e2222e6 30%,
+        #181f22e6 50%,
+        #0d1013e6 100%
+    );
+    border: dotted #fff 1px;
+    border-radius: 4px;
+    margin-bottom: 10px;
 }
 
 .pagination-buttons {
@@ -240,6 +248,7 @@ to {
     width: 25%;
     background-color: #171b1f;
     border: dotted white 1px;
+    border-radius: 4px;
 }
 
 .buttons-links img {
