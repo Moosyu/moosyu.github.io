@@ -4,13 +4,6 @@ title: "Links"
 ---
 
 <div class="background-div">
-  Some of the pages on here arent linked anywhere else so its like a scavanger hunt or something idk.
-
-  # Every page:
-
-    {% for page in collections.allPages %}
-        <a href="{{ page.url }}">{{ page.url }}</a>
-    {% endfor %}
 
   # Webrings:
 
@@ -162,4 +155,11 @@ title: "Links"
     <a href="https://jbcarreon123.nekoweb.org"><img src="https://jbcarreon123.nekoweb.org/sitebuttonv2.png" alt="jb's site" style="image-rendering: pixelated;"/></a>
     <a href="https://puffinthefish.neocities.org/"><img src="/assets/pfnbutton.webp"></a>
   </div>
+
+  # Every page:
+
+  {% for page in collections.allPages %}
+      <a href="{{ page.url }}">{{ page.url }}</a>
+  {% endfor %}
+
 </div>

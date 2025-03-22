@@ -91,6 +91,7 @@ button:hover, a:hover {
     position: relative;
     display: flex;
     align-items: center;
+    overflow: visible;
 }
 
 .dropdown-content {
@@ -99,7 +100,7 @@ button:hover, a:hover {
     top: 100%;
     left: 0;
     min-width: 160px;
-    z-index: 1;
+    z-index: 999;
     background-color: #1a2024;
     border: dotted white;
     border-width: 0px 1px 1px 1px;
@@ -406,6 +407,23 @@ animation: 2s bobleft ease-in-out infinite;
 .music-table th, .music-table td {
     border: 1px dotted #fff;
     padding: 8px 10px;
+}
+
+.spoiler {
+    cursor: pointer;
+    filter: blur(15px);
+    overflow: hidden;
+}
+
+.panels-images {
+    padding: 25px;
+    text-align: center;
+}
+
+.panels-images img {
+    max-width: 50%;
+    margin: auto;
+    margin-bottom: 20px;
 }
 
 @media screen and (min-width: 1200px) {
