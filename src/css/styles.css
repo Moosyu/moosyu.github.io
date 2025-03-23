@@ -113,10 +113,14 @@ button:hover, a:hover {
     text-align: left;
 }
 
-.favourites-container img:hover, .review_table tbody tr td img:hover {
+.favourites-container img:hover {
     filter: brightness(90%);
     transform: scale(1.02);
     transition-duration: .15s;
+    cursor: pointer;
+}
+
+.review_table tbody tr td img:hover {
     cursor: pointer;
 }
 

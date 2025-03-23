@@ -70,57 +70,6 @@ title: "Links"
       <a href="https://jbcarreon123.nekoweb.org/webrings/ssgring/redirect?slug=moosyu&way=next">→</a>
   </div>
 
-  # Inspirations, credits and cool sites:
-
-  ## Credits:
-
-  [nekoweb {neocities but more viable for hosting an actual site because the restrictions on neocities are kind of crazy}](https://nekoweb.org/)
-
-  [github pages {the other site i host on, id put lexiqqq here too but they banned me!!}](https://pages.github.com/)
-
-  [fusejs {what i use to get the search bar in the reviews}](https://www.fusejs.io/)
-
-  [lastfm scrobble {tracks my last listened to song for my homepage}](https://www.last.fm/about/trackmymusic)
-
-  [unpoly {what i use for my page transitions}](https://unpoly.com/)
-
-  [ayanos comment widget {what i use for comments on my homepage}](https://virtualobserver.moe/ayano/comment-widget)
-
-  [onzecki {sent me a really well thought out and detailed email about making my site not run like shit which helped my situation quite a lot}](https://onz.ee/)
-
-  ## Inspirations:
-
-  [daniels virtual place {my goat and original inspiration for this site}](https://displayman.neocities.org/)
-
-  [incessantpain {this is probably my favourite site, its so dense and charming, i hope that my site will eventually end up this packed with just stuff}](https://incessantpain.neocities.org/)
-
-  [scump's house {i stole the factory reject flower thing from this guy i think. their site's really nice to look at and their homepage has always been a massive inspiration.}](https://scumpsmallbrain.neocities.org/)
-
-
-  ## Cool sites
-
-  [aoty {best music tracker by process of elimination because rym is a toxic hellhole and i like aoty's ui more}](https://www.albumoftheyear.org/)
-
-  [wiki.gg {crushes fandom, its not even a competiton, more like some kind of isis execution}](https://www.wiki.gg/)
-
-  [annas archive {they still trying to burn down the library of alexandria 2000 years later}](https://annas-archive.org/)
-
-  [devastatia {one of the only blogs i keep up with, im not gonna say that i agree with all of their opinions but at least they have actual opinions to share. sadly this blog died though.}](https://devastatia.com/)
-
-  [mozilla docs {probably best html resource?? a lot more detail and info then w3schools so you really know whats going on.}](https://developer.mozilla.org/en-US/)
-
-  [w3schools {really helpful when i was getting started}](https://www.w3schools.com/)
-
-  [stackoverflow {smart assholes}](https://stackoverflow.com/)
-
-  [neocities {my day one, my goat}](https://neocities.org/)
-
-  [melps {an cool looking and interesting site thats sadly slowly falling to pieces}](https://melps.neocities.org/)
-
-  [manu {the other blog i like to keep up with, i found him from an interview he did with devastatia in june and while not as off the rails as devastatia hes still a very interesting person and a his site often links other very interesting blogs leading to some sort of never ending rabbit hole}](https://manuelmoreale.com/)
-
-  [superpredator {mind bending images beyond human comprehension. thats all i can say, you have to see it for yourself.}](https://superpredator.zone/)
-
   My button collection:
 
   <div class="buttons-links">
@@ -154,7 +103,44 @@ title: "Links"
     <a href="https://raccoonbutt.com"><img src="https://raccoonbutt.com/static/images/button.gif"></a>
     <a href="https://jbcarreon123.nekoweb.org"><img src="https://jbcarreon123.nekoweb.org/sitebuttonv2.png" alt="jb's site" style="image-rendering: pixelated;"/></a>
     <a href="https://puffinthefish.neocities.org/"><img src="/assets/pfnbutton.webp"></a>
+    <a href="https://melps.neocities.org/"><img src="/assets/melps.jpeg"></a>
   </div>
+
+  # Inspirations and cool sites:
+
+  ## Credits:
+
+  [Nekoweb {Neocities but more viable for me as I don't like the restrictions on Neocities accounts.}](https://nekoweb.org/)
+
+  [Github Pages {Probably best free hosting you could possibly get. Incredible bang for your buck (your buck is $0).}](https://pages.github.com/)
+
+  [fusejs {What I use for the search bars on my pages}](https://www.fusejs.io/)
+
+  [LastFM Scrobble {Tracks my last listened to song for my homepage.}](https://www.last.fm/about/trackmymusic)
+
+  [Ayanos comment widget {I use a modified version of this for comments on my homepage}](https://virtualobserver.moe/ayano/comment-widget)
+
+  [Onzecki {Sent me a really well thought out and detailed email about making my site not run like shit which helped my situation quite a lot.}](https://onz.ee/)
+
+  ## Cool sites (that don't have button)
+
+  [AOTY {Best music tracker by process of elimination because RYM is a toxic hellhole and I like aoty's ui more anyway.}](https://www.albumoftheyear.org/)
+
+  [wiki.gg {Crushes fandom, its not even a competition, more like some kind of ISIS execution.}](https://www.wiki.gg/)
+
+  [Anna's Archive {They're still trying to burn down the library of Alexandria 2000 years later...}](https://annas-archive.org/)
+
+  [MDN Web Docs {Probably best HTML resource?? A lot more detail and info then W3Schools so you really know whats going on.}](https://developer.mozilla.org/en-US/)
+
+  [W3Schools {Really helpful when I was getting started out.}](https://www.w3schools.com/)
+
+  [Stack Overflow {Smart assholes.}](https://stackoverflow.com/)
+
+  [Neocities {My day one, my goat.}](https://neocities.org/)
+
+  [Manu {The only blog I keep up with these days, I found him from an interview he did with Devastatia in June and while not as off the rails as Devastatia he's still a very interesting person and a his site often links other very interesting blogs leading to some sort of never ending rabbit hole.}](https://manuelmoreale.com/)
+
+  [SUPERPREDATOR {Mind bending images beyond human comprehension. That's all I can say, you have to see it for yourself.}](https://superpredator.zone/)
 
   # Every page:
 
