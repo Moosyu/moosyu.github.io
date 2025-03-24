@@ -103,7 +103,7 @@ title: "Links"
     <a href="https://raccoonbutt.com"><img src="https://raccoonbutt.com/static/images/button.gif"></a>
     <a href="https://jbcarreon123.nekoweb.org"><img src="https://jbcarreon123.nekoweb.org/sitebuttonv2.png" alt="jb's site" style="image-rendering: pixelated;"/></a>
     <a href="https://puffinthefish.neocities.org/"><img src="/assets/pfnbutton.webp"></a>
-    <a href="https://melps.neocities.org/"><img src="/assets/melps.jpeg"></a>
+    <a href="https://melps.neocities.org/"><img src="/assets/melps.jpg"></a>
   </div>
 
   # Inspirations and cool sites:

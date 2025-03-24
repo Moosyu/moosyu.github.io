@@ -72,7 +72,8 @@
         "name": "Memories of Emanon",
         "panel1": "https://i.imgur.com/dInER8H.png",
         "panel2": "https://i.imgur.com/omx7761.png",
-        "panel3": "https://i.imgur.com/q2OAOxj.png"
+        "panel3": "https://i.imgur.com/q2OAOxj.png",
+        "spoiler2": true
     },
     {
         "name": "Ayeshah's Secret",
@@ -85,7 +86,8 @@
         "panel2": "https://i.imgur.com/hq4Nt47.png",
         "panel3": "https://i.imgur.com/LrLwgcx.jpeg",
         "panel4": "https://i.imgur.com/NO8MAWf.png",
-        "panel5": "https://i.imgur.com/xmjPPtt.png"
+        "panel5": "https://i.imgur.com/xmjPPtt.png",
+        "spoiler5": true
     },
     {
         "name": "Feng Shen Ji",
