@@ -1,4 +1,5 @@
-const s_stylePath='/css/comment-widget-min.css';const s_formId='1FAIpQLScfGWAve7dy54tUkVxhd8apXNcAxallNWV4K1yKCUMqJcBadQ';const s_nameId='1345813367';const s_websiteId='1029334929';const s_textId='1058530777';const s_pageId='1179760552';const s_replyId='802495416';const s_sheetId='1gdeW-A8Nhi-StMJb75n1QHQOQYKUBVXhfKnQF1Eo1Ts';const s_timezone=+12;const s_daylightSavings=!0;const s_dstStart=['September','Sunday',29,2];const s_dstEnd=['April','Sunday',2,3];const s_commentsPerPage=10;const s_maxLength=500;const s_maxLengthName=16;const s_commentsOpen=!0;const s_collapsedReplies=!0;const s_longTimestamp=!1;let s_includeUrlParameters=!1;const s_fixRarebitIndexPage=!1;const s_wordFilterOn=!0;const s_filterReplacement='****';const s_filteredWords=['nigger','faggot','nigga','rape','niggers','niggas','nigur','niiger','niigr','chink','niger','fag','n i gg e r']
+const s_stylePath='/css/comment-widget-min.css';const s_formId='1FAIpQLScfGWAve7dy54tUkVxhd8apXNcAxallNWV4K1yKCUMqJcBadQ';const s_nameId='1345813367';const s_websiteId='1029334929';const s_textId='1058530777';const s_pageId='1179760552';const s_replyId='802495416';const s_sheetId='1gdeW-A8Nhi-StMJb75n1QHQOQYKUBVXhfKnQF1Eo1Ts';const s_adminId='1501188383'
+const s_timezone=+12;const s_daylightSavings=!0;const s_dstStart=['September','Sunday',29,2];const s_dstEnd=['April','Sunday',2,3];const s_commentsPerPage=10;const s_maxLength=500;const s_maxLengthName=16;const s_commentsOpen=!0;const s_collapsedReplies=!0;const s_longTimestamp=!1;let s_includeUrlParameters=!1;const s_fixRarebitIndexPage=!1;const s_wordFilterOn=!0;const s_filterReplacement='****';const s_filteredWords=['nigger','faggot','nigga','rape','niggers','niggas','nigur','niiger','niigr','chink','niger','fag','n i gg e r']
 const s_widgetTitle='leave a comment!';const s_submitButtonLabel='submit';const s_loadingText='loading comments... (or its broken)';const s_noCommentsText='no comments yet!';const s_closedCommentsText='comments are closed temporarily!';const s_websiteText='website';const s_replyButtonText='reply';const s_mentionButton='@mention';const s_replyingText='replying to';const s_expandRepliesText='show replies';const s_hideRepliesText='hide replies';const s_leftButtonText='<<';const s_rightButtonText='>>';let chosenSymbol=["+","-"][getRandomInt(2)];let num1=getRandomInt(20);let num2=getRandomInt(20);const operations={"+":(a,b)=>a+b,"-":(a,b)=>a-b};let result=operations[chosenSymbol](num1,num2);if(s_fixRarebitIndexPage){s_includeUrlParameters=!0}
 const c_cssLink=document.createElement('link');c_cssLink.type='text/css';c_cssLink.rel='stylesheet';c_cssLink.href=s_stylePath;document.getElementsByTagName('head')[0].appendChild(c_cssLink);const v_mainHtml=`
     <div id="c_inputDiv">
@@ -8,13 +9,15 @@ const c_cssLink=document.createElement('link');c_cssLink.type='text/css';c_cssLi
 `;const v_formHtml=`
     <h2 id="c_widgetTitle">${s_widgetTitle}</h2>
 
+    <p style="padding-left: 5px;">Please try your best to be nice. Unless there is a <span class="admin-title">[REAL]</span> beside the name it's not me.</p>
+
     <div class="non-message">
         <div id="c_nameWrapper" class="c-inputWrapper">
-            <input class="c-input c-nameInput" name="entry.${s_nameId}" id="entry.${s_nameId}" type="text" maxlength="${s_maxLengthName}" placeholder="name" required>
+            <input class="c-input c-nameInput" name="entry.${s_nameId}" id="entry.${s_nameId}" type="text" maxlength="${s_maxLengthName}" placeholder="Name" required>
         </div>
 
         <div id="c_websiteWrapper" class="c-inputWrapper">
-            <input class="c-input c-websiteInput" name="entry.${s_websiteId}" id="entry.${s_websiteId}" placeholder="website (optional)" type="url" pattern="https://.*">
+            <input class="c-input c-websiteInput" name="entry.${s_websiteId}" id="entry.${s_websiteId}" placeholder="Site URL (optional)" type="url" pattern="https://.*">
         </div>
     </div>
 
@@ -35,13 +38,14 @@ const c_cssLink=document.createElement('link');c_cssLink.type='text/css';c_cssLi
     </div>
 
     <div id="c_textWrapper" class="c-inputWrapper">
-        <textarea class="c-input c-textInput" name="entry.${s_textId}" id="entry.${s_textId}" maxlength="${s_maxLength}" placeholder="enter a message (please be nice)" required>
+        <textarea class="c-input c-textInput" name="entry.${s_textId}" id="entry.${s_textId}" maxlength="${s_maxLength}" placeholder="Enter a message" required>
         </textarea>
+        <input name="entry.${s_adminId}" id="entry.${s_adminId}" type="hidden" readonly value="false">
         <span class="emoji" onclick="emojiWindow()">😊</span>
     </div>
 
     <div id="maths">
-        <input class="c-input" id="answer.${s_textId}" type="text" maxlength="${s_maxLengthName}" placeholder="what is ${num1}${chosenSymbol}${num2}?" required>
+        <input class="c-input" id="answer.${s_textId}" type="text" maxlength="${s_maxLengthName}" placeholder="What is ${num1}${chosenSymbol}${num2}?" required>
     </div>
 
     <input id="c_submitButton" name="c_submitButton" type="submit" value="${s_submitButtonLabel}" disabled>
@@ -75,7 +79,8 @@ leftButton.className='c-paginationButton';pagination.appendChild(leftButton);let
 rightButton.className='c-paginationButton';pagination.appendChild(rightButton);pagination.id='c_pagination';c_container.appendChild(pagination)}}
 function createComment(data){let comment=document.createElement('div');let timestamps=convertTimestamp(data.Timestamp);let timestamp;if(s_longTimestamp){timestamp=timestamps[0]}else{timestamp=timestamps[1]}
 const id=data.Name+'|--|'+data.Timestamp2;comment.id=id;let name=document.createElement('h3');let filteredName=data.Name;if(s_wordFilterOn){filteredName=filteredName.replace(v_filteredWords,s_filterReplacement)}
-name.innerText=filteredName;name.className='c-name';comment.appendChild(name);if(data.Website){let site=document.createElement('a');site.innerText=s_websiteText;site.href=data.Website;site.className='c-site';comment.appendChild(site)}
+name.innerText=filteredName;name.className='c-name';if(data.Admin==!0){name.insertAdjacentHTML('beforeend'," <span class='admin-title'> [REAL] </span> ")}
+comment.appendChild(name);if(data.Website){let site=document.createElement('a');site.innerText=s_websiteText;site.href=data.Website;site.className='c-site';comment.appendChild(site)}
 let time=document.createElement('span');time.innerText=timestamp;time.className='c-timestamp';comment.appendChild(time);let text=document.createElement('p');let filteredText=sanitizeInput(data.Text);if(s_wordFilterOn){filteredText=filteredText.replace(v_filteredWords,s_filterReplacement)}
 filteredText=filteredText.replace(/:(smile|annoyed|talk|pissed|nervous|cool|exclaim|sad|freak|grahh|sobbing|blunder):/g,function(match,p1){const emojiMap={'smile':'smile','annoyed':'annoyed','talk':'talk','pissed':'pissed','nervous':'nervous','cool':'cool','exclaim':'exclaim','sad':'sad','freak':'freak','grahh':'grahh','sobbing':'sobbing','blunder':'blunder'};const emojiName=emojiMap[p1];if(emojiName){return `<img src="/assets/emojis/${emojiName}.webp" class="c-emoji" alt="${p1}">`}else{return match}});text.innerHTML=filteredText;text.className='c-text';comment.appendChild(text);return comment}
 function sanitizeInput(input){const escapeHTML=(str)=>str.replace(/[&<>"']/g,(char)=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));return escapeHTML(input).replace(/(^|\s)@\[([^\]]+?)\]/g,'$1<span class="highlight-mention">@$2</span>')}

@@ -17,6 +17,7 @@
 */
 //https://docs.google.com/forms/d/e/1FAIpQLScfGWAve7dy54tUkVxhd8apXNcAxallNWV4K1yKCUMqJcBadQ/viewform?usp=pp_url&entry.1345813367=Name&entry.1029334929=Website&entry.1058530777=Text&entry.1179760552=Page&entry.802495416=Reply
 // The values in this section are REQUIRED for the widget to work! Keep them in quotes!
+
 const s_stylePath = '/css/comment-widget.css';
 const s_formId = '1FAIpQLScfGWAve7dy54tUkVxhd8apXNcAxallNWV4K1yKCUMqJcBadQ';
 const s_nameId = '1345813367';
@@ -25,6 +26,7 @@ const s_textId = '1058530777';
 const s_pageId = '1179760552';
 const s_replyId = '802495416';
 const s_sheetId = '1gdeW-A8Nhi-StMJb75n1QHQOQYKUBVXhfKnQF1Eo1Ts';
+const s_adminId = '1501188383'
 
 // The values below are necessary for accurate timestamps, I've filled it in with EST as an example
 const s_timezone = +12; // Your personal timezone (Example: UTC-5:00 is -5 here, UTC+10:30 would be 10.5)
@@ -98,13 +100,15 @@ const v_mainHtml = `
 const v_formHtml = `
     <h2 id="c_widgetTitle">${s_widgetTitle}</h2>
 
+    <p style="padding-left: 5px;">Please try your best to be nice. Unless there is a <span class="admin-title">[REAL]</span> beside the name it's not me.</p>
+
     <div class="non-message">
         <div id="c_nameWrapper" class="c-inputWrapper">
-            <input class="c-input c-nameInput" name="entry.${s_nameId}" id="entry.${s_nameId}" type="text" maxlength="${s_maxLengthName}" placeholder="name" required>
+            <input class="c-input c-nameInput" name="entry.${s_nameId}" id="entry.${s_nameId}" type="text" maxlength="${s_maxLengthName}" placeholder="Name" required>
         </div>
 
         <div id="c_websiteWrapper" class="c-inputWrapper">
-            <input class="c-input c-websiteInput" name="entry.${s_websiteId}" id="entry.${s_websiteId}" placeholder="website (optional)" type="url" pattern="https://.*">
+            <input class="c-input c-websiteInput" name="entry.${s_websiteId}" id="entry.${s_websiteId}" placeholder="Site URL (optional)" type="url" pattern="https://.*">
         </div>
     </div>
 
@@ -125,13 +129,14 @@ const v_formHtml = `
     </div>
 
     <div id="c_textWrapper" class="c-inputWrapper">
-        <textarea class="c-input c-textInput" name="entry.${s_textId}" id="entry.${s_textId}" maxlength="${s_maxLength}" placeholder="enter a message (please be nice)" required>
+        <textarea class="c-input c-textInput" name="entry.${s_textId}" id="entry.${s_textId}" maxlength="${s_maxLength}" placeholder="Enter a message" required>
         </textarea>
+        <input name="entry.${s_adminId}" id="entry.${s_adminId}" type="hidden" readonly value="false">
         <span class="emoji" onclick="emojiWindow()">😊</span>
     </div>
 
     <div id="maths">
-        <input class="c-input" id="answer.${s_textId}" type="text" maxlength="${s_maxLengthName}" placeholder="what is ${num1}${chosenSymbol}${num2}?" required>
+        <input class="c-input" id="answer.${s_textId}" type="text" maxlength="${s_maxLengthName}" placeholder="What is ${num1}${chosenSymbol}${num2}?" required>
     </div>
 
     <input id="c_submitButton" name="c_submitButton" type="submit" value="${s_submitButtonLabel}" disabled>
@@ -440,6 +445,9 @@ function createComment(data) {
     if (s_wordFilterOn) {filteredName = filteredName.replace(v_filteredWords, s_filterReplacement)}
     name.innerText = filteredName;
     name.className = 'c-name';
+    if(data.Admin == true) {
+        name.insertAdjacentHTML('beforeend', " <span class='admin-title'> [REAL] </span> ");
+    }
     comment.appendChild(name);
 
     // Website URL, if one was provided

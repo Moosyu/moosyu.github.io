@@ -1,5 +1,17 @@
 [
       {
+            "type": "Book",
+            "name": "The Lord of the Rings: The Fellowship of the Ring",
+            "score": 5,
+            "description": "Sorry guys but this book is so boring. I don't like how the author explains every detail of every rock and pebble, it just feels tedious and the old timey English isn't exactly a smooth read either. They're a queer breed seemingly? Okay Tolkien you can't trick me into reading your gay fanfictions I see what you're doing here."
+      },
+      {
+            "type": "Book",
+            "name": "On Bowie",
+            "score": 5,
+            "description": "Lots of interesting David Bowie info but holy fuck the glaze in this book is insane. Like I'm a big David Bowie fan, I'm reading a book about him after all but this guy is on another level. It feels like every page or two we get a little interjection from this guy talking about how hot and sexy Bowie is and how everyone nearby wanted to fuck him like cmon man 😭."
+      },
+      {
             "type": "Comic",
             "name": "Kill Six Billion Demons",
             "score": 9,
