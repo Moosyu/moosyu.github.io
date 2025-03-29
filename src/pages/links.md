@@ -75,7 +75,7 @@ title: "Links"
   <div class="buttons-links">
     <a href="https://displayman.neocities.org/"><img src="/assets/Botón_página_Daniel.gif" alt="daniel"></a>
     <a href="https://incessantpain.neocities.org/"><img src="/assets/buttonincessant.gif" alt="pain"></a>
-    <a href="https://rice.place/"><img src="https://rice.nekoweb.org/button/riceplace.png"></a>
+    <a href="https://rice.place/"><img src="/assets/riceplace.png"></a>
     <a href="https://trademarkhell.net/"><img src="https://eyeorb.net/images/tmsspecialhell.png" alt="trademarkization company of 2003"></a>
     <a href="https://sad.ovh/"> <img src="/assets/sadovh.png" alt="sad.ovh"></a>
     <a href="https://vegacollective.com/"> <img src="/assets/MeatleMania_2.gif" alt="vega collective"></a>
@@ -89,7 +89,7 @@ title: "Links"
     <a href="https://max.nekoweb.org/"> <img src="/assets/button.gif" alt="max"></a>
     <a href="https://riversons.art/"> <img src="/assets/rivblink.gif" alt="riverson"></a>
     <a href="https://nekoweb.org/"> <img src="/assets/button11.gif" alt="nekoweb"></a>
-    <a href="https://giikis2.neocities.org/"> <img src="https://giikis2.neocities.org/assets/badges/giikis2.png" width="88" height="31" alt="giiki"></a>
+    <a href="https://giikis2.nekoweb.org/"> <img src="https://giikis2.neocities.org/assets/badges/giikis2.png" width="88" height="31" alt="giiki"></a>
     <a href="https://dogspit.nekoweb.org/"><img src="https://i.imgur.com/0pnWFCL.png" alt="dogspit"></a>
     <a href="https://devastatia.com/"><img src="/assets/devastatia-88x31.png" alt="devastatia"></a>
     <a href="https://onz.ee/"><img src="/assets/onzecki.avif" alt="onzecki"></a>

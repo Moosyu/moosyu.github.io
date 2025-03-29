@@ -87,7 +87,7 @@ pagination:
                 {{ item.score }}/10
                 </span>
             </td>
-            <td>{{ item.description }}</td>
+            <td>{{ item.description | replace('\n', '<br><br>') | safe }}</td>
         </tr>
         {% endfor %}
     </tbody>

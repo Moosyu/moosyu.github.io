@@ -6,6 +6,15 @@ const markdownItKatex = require("@vscode/markdown-it-katex").default;
 const markdownIt = require("markdown-it");
 
 module.exports = function(eleventyConfig) {
+  eleventyConfig.addFilter("wordCount", (content) => {
+    return content.replace(/(<([^>]+)>)/gi, "").split(/\s+/).length;
+  });
+
+  eleventyConfig.addFilter("readTime", (content) => {
+    let wordCount = content ? content.replace(/(<([^>]+)>)/gi, "").split(/\s+/).length : 0;
+    return Math.ceil(wordCount / 200);
+  });
+
   eleventyConfig.addPassthroughCopy({
     "public/assets": "assets",
     "public/fonts": "fonts",

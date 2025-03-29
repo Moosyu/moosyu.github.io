@@ -7,9 +7,18 @@ title: "Blog"
     These arent really gonna be real blog posts because I'm lazy but more like a paragraph of schizo posting.
     <a href="/feed.xml">Click this to get the rss feed.</a>.
 </p>
+
 <p>Posts:</p>
-<ol>
+<ul class="blog-list">
   {% for blog in collections.blog | reverse %}
-    <li style="margin: 10px;"><a href="{{ blog.url }}">{{ blog.data.title }}</a> <span style="color: #c6a0f6">{{ blog.date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }).replace('.', '') }}</span></li>
+    {% set wordCount = blog.templateContent | wordCount %}
+    {% set readTime = blog.templateContent | readTime %}
+    <li style="margin: 10px;">
+      <a href="{{ blog.url }}">{{ blog.data.title }}</a> 
+      <span style="color: #c6a0f6">
+        {{ blog.date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }).replace('.', '') }}
+      </span> 
+      - {{ wordCount }} words ({{ readTime }} min read)
+    </li>
   {% endfor %}
-</ol>
+</ul>

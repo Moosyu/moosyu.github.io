@@ -1,5 +1,5 @@
 ---
-title: "I hate liking manga, its awesome"
+title: "I hate liking manga, it's awesome"
 date: 2024-09-19
 tags:
     - manga

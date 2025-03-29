@@ -18,30 +18,62 @@
 </select>
 
 <canvas id="ratingChart" width="400" height="200"></canvas>
-
+<h3>Data ordered by score, click the score header to change it to ascending.</h3>
+<div id="output"></div>
 <script src="/js/chart.js"></script>
 <script>
-const ranges = Array.from({ length: 11 }, () => 0); // initalising my empty array with 11 0s
+const ranges = Array.from({ length: 11 }, () => 0);
+let asc = false;
+let data = [];
+
 fetch("{{ jsonLocation }}")
   .then(response => response.json())
-  .then(data => {
-    data.forEach(item => {
-      const score = Math.floor(item.score); // round down
-      ranges[score]++;
-    });
+  .then(jsonData => {
+    data = jsonData;
+    data.forEach(item => ranges[Math.floor(item.score)]++);
+    renderTable();
     renderChart('bar');
   })
-.catch(error => console.error('json file is missing!', error));
+  .catch(error => console.error('json file is missing!', error));
 
-document.getElementById('chartTypeDropdown').addEventListener('change', (event) => {
-  const selectedType = event.target.value;
-  renderChart(selectedType);
+function renderTable() {
+  data.sort((a, b) => (asc ? a.score - b.score : b.score - a.score));
+
+  document.getElementById('output').innerHTML = `
+    <table>
+      <thead>
+        <tr>
+          <th style="text-align: start;">Name</th>
+          <th id="score-header" style="cursor: pointer;">Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        ${data.map(item => `
+          <tr>
+            <td style="padding-right: 20px;">${item.name}</td>
+            <td>${item.score}</td>
+          </tr>
+        `).join('')}
+      </tbody>
+    </table>
+  `;
+}
+
+document.addEventListener('click', event => {
+  if (event.target.id === 'score-header') {
+    asc = !asc;
+    renderTable();
+  }
 });
-let chart;
 
+document.getElementById('chartTypeDropdown').addEventListener('change', event => {
+  renderChart(event.target.value);
+});
+
+let chart;
 function renderChart(type) {
   const ctx = document.getElementById('ratingChart').getContext('2d');
-  if (chart) chart.destroy(); // trying to prevent duplicate charts
+  if (chart) chart.destroy();
   chart = new Chart(ctx, {
     type: type,
     data: {
@@ -54,16 +86,8 @@ function renderChart(type) {
       }]
     },
     options: {
-      plugins: {
-        legend: {
-            display: false
-        }
-      },
-      scales: {
-        y: {
-          beginAtZero: true
-        }
-      }
+      plugins: { legend: { display: false } },
+      scales: { y: { beginAtZero: true } }
     }
   });
 }

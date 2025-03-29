@@ -430,6 +430,12 @@ animation: 2s bobleft ease-in-out infinite;
     margin-bottom: 20px;
 }
 
+.blog-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
 @media screen and (min-width: 1200px) {
     .navbar {
         flex-direction: row;

@@ -19,3 +19,7 @@ If you've read this whole thing firstly I pity you, but if you're my age or olde
 💥💥💥💥💥💥💥💥💥💥
 
 Final note: if you want to vent about something without being judged by others don't do it in a public Discord cmon guys write in a journal or talk to irls or something 😭😭😭.
+
+### Edit/note 29.03.25
+
+I see I've now been banned from Nekoweb... it was a long time coming so I'm not upset about it. Spilled milk, wisdom to know the difference etc. It was fun while it lasted, a shame I won't get the change to speak with some of the more allusive people again but it is what it is. This won't have any impact on this site though, might even make me more active as my #1 hobby of arguing on the internet is gone now.

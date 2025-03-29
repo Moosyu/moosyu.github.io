@@ -55,4 +55,4 @@ For example here's what mine looks like:
 
 I was able to create this beautiful piece of art !!
 
-![epic elements.css](https://I.imgur.com/byTmRmZ.png)
+![epic elements.css](https://i.imgur.com/byTmRmZ.png)

@@ -90,7 +90,12 @@ pagination:
                 </span>
 
             {% if item.image %}
-                <img src="{{ item.image }}" alt="{{ item.name }}" onclick="toggleFullscreen(this)" loading="lazy">
+                {% if item.spoiler %}
+                    <img class="spoiler" src="{{ item.image }}" alt="{{ item.name }}" onclick="toggleFullscreen(this)" loading="lazy">
+                {% else %}
+                    <img src="{{ item.image }}" alt="{{ item.name }}" onclick="toggleFullscreen(this)" loading="lazy">
+                {% endif %}
+
             {% endif %}
             </td>
             <td>{{ item.description | replace('\n', '<br><br>') | safe }}</td>
