@@ -52,11 +52,13 @@ document.addEventListener('keydown', function (event) {
 
 {% if image_fullscreen %}
     function toggleFullscreen(img) {
-        if (!document.fullscreenElement && !img.classList.contains("spoiler")) {
+      if (!img.classList.contains("spoiler")) {
+        if (!document.fullscreenElement) {
             img.requestFullscreen();
         } else {
             document.exitFullscreen();
         }
+      }
     }
 {% endif %}
 
