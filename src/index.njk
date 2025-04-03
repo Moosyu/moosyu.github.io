@@ -5,9 +5,6 @@ title: "moosyus wix site, v3"
 {% extends "base.njk" %}
 
 {% block content %}
-<style>
-    {{ css | cssmin | safe }}
-</style>
 <div class="container-main">
     <div class="updates-container">
         <div id="commit-div"></div>
@@ -27,7 +24,7 @@ title: "moosyus wix site, v3"
             <button style="background-color: #171b1f; color: #fff; border: white 1px solid; font-family: monospace; text-decoration: none;" onclick="destroyQuestionnaire()">Yes</button>
             <button style="background-color: #171b1f; color: #fff; border: white 1px solid; font-family: monospace; text-decoration: none;" onclick="showComments()">No</button>
         </div>
-        <img id="explosion-gif" style="display: none;" src="/assets/explosion.gif">
+        <img id="explosion-gif" style="display: none;" src="/assets/explosion.gif" alt="super cool explosion gif">
         <div style="display: none;" id="c_widget"></div>
     </div>
 </div>

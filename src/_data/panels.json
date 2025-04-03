@@ -19,8 +19,12 @@
         "spoiler2": true
     },
     {
-        "name": "Fight Class 3",
-        "panel1": "https://i.imgur.com/YdlRE4p.png"
+        "name": "Legend Of The Northen Blade",
+        "panel1": "https://i.imgur.com/WRoK7fs.png",
+        "panel2": "https://i.imgur.com/nkkQiR3.png",
+        "panel3": "https://i.imgur.com/UIJbfjq.png",
+        "panel4": "https://i.imgur.com/qMvnhcX.png",
+        "panel5": "https://i.imgur.com/wf93Fau.jpeg"
     },
     {
         "name": "JoJo's Bizarre Adventure Part 7: Steel Ball Run",
@@ -45,6 +49,14 @@
         "panel2": "https://i.imgur.com/GujwgQX.png",
         "panel3": "https://i.imgur.com/25INk7X.png",
         "panel4": "https://i.imgur.com/74zRccX.jpeg"
+    },
+    {
+        "name": "Eleceed",
+        "panel1": "https://i.imgur.com/Mopb5dW.png",
+        "panel2": "https://i.imgur.com/QMbaigt.png",
+        "panel3": "https://i.imgur.com/zYF9hXI.png",
+        "panel4": "https://i.imgur.com/w0sD6mx.jpeg",
+        "panel5": "https://i.imgur.com/EYNOuTD.png"
     },
     {
         "name": "Something is Killing the Children",
@@ -173,14 +185,6 @@
         "panel4": "https://i.imgur.com/19G85LP.png",
         "panel5": "https://i.imgur.com/wJA090V.png",
         "spoiler5": true
-    },
-    {
-        "name": "Legend Of The Northen Blade",
-        "panel1": "https://i.imgur.com/WRoK7fs.png",
-        "panel2": "https://i.imgur.com/pCisT7q.png",
-        "panel3": "https://i.imgur.com/UIJbfjq.png",
-        "panel4": "https://i.imgur.com/E34S2mV.jpeg",
-        "panel5": "https://i.imgur.com/yVr6vXu.png"
     },
     {
         "name": "Berserk",
@@ -421,11 +425,7 @@
         "panel2": "https://i.imgur.com/uYUuKbp.png"
     },
     {
-        "name": "Eleceed",
-        "panel1": "https://i.imgur.com/Mopb5dW.png",
-        "panel2": "https://i.imgur.com/QMbaigt.png",
-        "panel3": "https://i.imgur.com/zYF9hXI.png",
-        "panel4": "https://i.imgur.com/w0sD6mx.jpeg",
-        "panel5": "https://i.imgur.com/EYNOuTD.png"
+        "name": "Fight Class 3",
+        "panel1": "https://i.imgur.com/YdlRE4p.png"
     }
 ]
