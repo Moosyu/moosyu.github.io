@@ -17,7 +17,6 @@
 */
 //https://docs.google.com/forms/d/e/1FAIpQLScfGWAve7dy54tUkVxhd8apXNcAxallNWV4K1yKCUMqJcBadQ/viewform?usp=pp_url&entry.1345813367=Name&entry.1029334929=Website&entry.1058530777=Text&entry.1179760552=Page&entry.802495416=Reply
 // The values in this section are REQUIRED for the widget to work! Keep them in quotes!
-
 const s_stylePath = '/css/comment-widget.css';
 const s_formId = '1FAIpQLScfGWAve7dy54tUkVxhd8apXNcAxallNWV4K1yKCUMqJcBadQ';
 const s_nameId = '1345813367';
@@ -26,7 +25,8 @@ const s_textId = '1058530777';
 const s_pageId = '1179760552';
 const s_replyId = '802495416';
 const s_sheetId = '1gdeW-A8Nhi-StMJb75n1QHQOQYKUBVXhfKnQF1Eo1Ts';
-const s_adminId = '1501188383'
+const s_adminId = '1501188383';
+const s_IPId = '1154755268';
 
 // The values below are necessary for accurate timestamps, I've filled it in with EST as an example
 const s_timezone = +12; // Your personal timezone (Example: UTC-5:00 is -5 here, UTC+10:30 would be 10.5)
@@ -66,14 +66,13 @@ const s_expandRepliesText = 'show replies';
 const s_hideRepliesText = 'hide replies';
 const s_leftButtonText = '<<';
 const s_rightButtonText = '>>';
-let chosenSymbol = ["+", "-"][getRandomInt(2)];
-let num1 = getRandomInt(20);
-let num2 = getRandomInt(20);
-const operations = {
-    "+": (a, b) => a + b,
-    "-": (a, b) => a - b
-};
-let result = operations[chosenSymbol](num1, num2);
+let userIP = null;
+
+fetch('https://api.ipify.org?format=json')
+    .then(res => res.json())
+    .then(data => {
+        userIP = data.ip;
+});
 
 /*
     DO NOT edit below this point unless you are confident you know what you're doing!
@@ -132,11 +131,8 @@ const v_formHtml = `
         <textarea class="c-input c-textInput" name="entry.${s_textId}" id="entry.${s_textId}" maxlength="${s_maxLength}" placeholder="Enter a message" required>
         </textarea>
         <input name="entry.${s_adminId}" id="entry.${s_adminId}" type="hidden" readonly value="false">
+        <input name="entry.${s_IPId}" id="entry.${s_IPId}" type="hidden">
         <span class="emoji" onclick="emojiWindow()">😊</span>
-    </div>
-
-    <div id="maths">
-        <input class="c-input" id="answer.${s_textId}" type="text" maxlength="${s_maxLengthName}" placeholder="What is ${num1}${chosenSymbol}${num2}?" required>
     </div>
 
     <input id="c_submitButton" name="c_submitButton" type="submit" value="${s_submitButtonLabel}" disabled>
@@ -225,7 +221,6 @@ function getComments() {
         document.getElementById(`entry.${s_nameId}`).value = '';
         document.getElementById(`entry.${s_websiteId}`).value = '';
         document.getElementById(`entry.${s_textId}`).value = '';
-        document.getElementById(`answer.${s_textId}`).value = '';
     }
 
     // Get the data
@@ -601,7 +596,6 @@ function openReply(id) {
     link.click(); // Jump to the space to type
 }
 
-
 function emojiWindow() {
     const targetDiv = document.querySelector('.non-message');
     const emojiDiv = document.querySelector('.emoji-panel');
@@ -614,19 +608,9 @@ function emojiWindow() {
 document.getElementById('c_submitButton').addEventListener('click', function() {
     document.querySelector('.non-message').style.display = 'block';
     document.querySelector('.emoji-panel').style.display = 'none';
-    const ansBox = document.getElementById('answer.' + s_textId);
-    if (ansBox.value != result) {
-        c_submitButton.disabled = true;
-        setTimeout(function(){
-            c_submitButton.disabled = false;
-        }, 1000);
-        ansBox.value = "WRONG";
+    if (userIP) {
+        document.getElementById(`entry.${s_IPId}`).value = userIP;
     }
-    chosenSymbol = ["+", "-"][getRandomInt(2)];
-    num1 = getRandomInt(20);
-    num2 = getRandomInt(20);
-    result = operations[chosenSymbol](num1, num2);
-    ansBox.placeholder = "what is " + num1 + chosenSymbol + num2 + "?"
 });
 
 // stolen from https://adilene.net/ it was too much to stomach
