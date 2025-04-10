@@ -13,7 +13,7 @@ permalink: feed.xml
         <title>{{ post.data.title }}</title>
         <description>{{ post.data.description }}</description>
         <content type="html">{{ post.content | renderTransforms(post.data.page, metadata.base) }}</content>
-        <link> {{ absolutePostUrl }} </link>
+        <link>https://moosyu.com{{ absolutePostUrl }}</link>
         <guid>{{ absolutePostUrl }}</guid>
         <pubDate>{{ post.date }}</pubDate>
         {% raw %}
