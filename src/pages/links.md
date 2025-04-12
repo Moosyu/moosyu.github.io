@@ -5,8 +5,45 @@ title: "Links"
 
 <div class="background-div">
 
-  # Webrings:
+  # My button collection:
 
+  <div class="buttons-links">
+    <a href="https://displayman.neocities.org/"><img src="/assets/Botón_página_Daniel.gif" alt="daniel"></a>
+    <a href="https://incessantpain.neocities.org/"><img src="/assets/buttonincessant.gif" alt="pain"></a>
+    <a href="https://rice.place/"><img src="/assets/riceplace.png"></a>
+    <a href="https://trademarkhell.net/"><img src="https://eyeorb.net/images/tmsspecialhell.png" alt="trademarkization company of 2003"></a>
+    <a href="https://sad.ovh/"> <img src="/assets/sadovh.png" alt="sad.ovh"></a>
+    <a href="https://vegacollective.com/"> <img src="/assets/MeatleMania_2.gif" alt="vega collective"></a>
+    <a href="https://housepen.nekoweb.org/"> <img src="/assets/housepen.avif" alt="housepen"></a>
+    <a href="https://zptr.cc/"><img src="/assets/@me.gif" alt="zeroptr"></a>
+    <a href="https://melankorin.net/"><img src="https://melankorin.net/assets/img/buttons/button-1.gif" alt="melan korin"></a>
+    <a href="https://obama.nekoweb.org/"><img src="https://obama.nekoweb.org/obbutton.png" alt="barack"></a>
+    <a href="https://scumpsmallbrain.neocities.org"> <img src="/assets/scumpshouse.gif" alt="scumps house"></a>
+    <a href="https://goblin-heart.net/sadgrl/"> <img src="/assets/sadgrl_online_learn.gif" alt="sadgrl"></a>
+    <a href="https://melonking.net/"> <img src="/assets/melonking.gif" alt="melonking"></a>
+    <a href="https://max.nekoweb.org/"> <img src="/assets/button.gif" alt="max"></a>
+    <a href="https://riversons.art/"> <img src="/assets/rivblink.gif" alt="riverson"></a>
+    <a href="https://nekoweb.org/"> <img src="/assets/button11.gif" alt="nekoweb"></a>
+    <a href="https://giikis2.nekoweb.org/"> <img src="https://giikis2.neocities.org/assets/badges/giikis2.png" width="88" height="31" alt="giiki"></a>
+    <a href="https://dogspit.nekoweb.org/"><img src="https://i.imgur.com/0pnWFCL.png" alt="dogspit"></a>
+    <a href="https://devastatia.com/"><img src="/assets/devastatia-88x31.png" alt="devastatia"></a>
+    <a href="https://onz.ee/"><img src="/assets/onzecki.avif" alt="onzecki"></a>
+    <a href="https://michiru.org/manga/join.php"><img src="/assets/manga88x31.avif" alt="manga fanlisting"></a>
+    <a href="https://jonathn.peanits.lol/"><img src="/assets/jonathn.gif" alt="my goat jon"></a>
+    <a href="https://poyoweb.poyo.study"><img src="https://raw.githubusercontent.com/mrdapoyo/poyoweb-node/refs/heads/main/public/buttons/carl-is-a-cunt.png" alt="poyoweb"></a>
+    <a href="https://joo.sh/"><img src="https://files.joo.sh/img/buttons/jooshRice.gif"></a>
+    <a href="https://rice.place/"><img src="/assets/hai.gif" alt="haiweb"></a>
+    <a href="https://eyeorb.net/"><img src="https://eyeorb.net/site_button.gif"></a>
+    <a href="https://electronica.nekoweb.org/"><img src="https://electronica.nekoweb.org/assets/electronicabutton2.gif"></a>
+    <a href="https://raccoonbutt.com"><img src="https://raccoonbutt.com/static/images/button.gif"></a>
+    <a href="https://puffinthefish.neocities.org/"><img src="/assets/pfnbutton.webp"></a>
+    <a href="https://melps.neocities.org/"><img src="/assets/melps.jpg"></a>
+  </div>
+
+  # Webrings:
+<div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center;">
+
+  <div><iframe style="border:none;width:180px;height:200px" src="https://neocities.jeith.com/wii-webring.html?site=https://moosyu.nekoweb.org&amp;variant=standard" title="wiiring iframe"></iframe></div>
   <div id="nekowebring">
     <table style="width: auto;">
       <tbody>
@@ -47,11 +84,7 @@ title: "Links"
           <a href="https://moosyu.github.io/jsonStorage/eggRing/redirect.html?to=random&name=moostyswixsite">Random</a>
       </div>
   </div>
-  <div style="display:block; margin: 15px auto;">
-      <iframe style="border: none; width: 180px; height: 200px;" src="https://neocities.jeith.com/wii-webring.html?site=https://moosyu.nekoweb.org&variant=standard" title="wiiring iframe">
-      </iframe>
-  </div>
-  <div style="display: inline-block; margin-bottom: 13px;">
+  <div style="display: inline-block;">
       <a href="https://webring.bucketfish.me/redirect.html?to=prev&name=moosyu">←</a>
         <a href="https://webring.bucketfish.me"> bucket webring</a>
       <a href="https://webring.bucketfish.me/redirect.html?to=next&name=moosyu">→</a>
@@ -64,46 +97,13 @@ title: "Links"
       <a href="https://moosyu.github.io/pages/musicring/redirect?to=random&name=moosyu">Next</a>
   </div>
   <br>
-  <div style="display: inline-block; margin-top: 13px;">
+  <div style="display: inline-block;">
       <a href="https://jbcarreon123.nekoweb.org/webrings/ssgring/redirect?slug=moosyu&way=prev">←</a>
       <a href="https://jbcarreon123.nekoweb.org/webrings/ssgring">ssg webring</a>
       <a href="https://jbcarreon123.nekoweb.org/webrings/ssgring/redirect?slug=moosyu&way=next">→</a>
   </div>
 
-  My button collection:
-
-  <div class="buttons-links">
-    <a href="https://displayman.neocities.org/"><img src="/assets/Botón_página_Daniel.gif" alt="daniel"></a>
-    <a href="https://incessantpain.neocities.org/"><img src="/assets/buttonincessant.gif" alt="pain"></a>
-    <a href="https://rice.place/"><img src="/assets/riceplace.png"></a>
-    <a href="https://trademarkhell.net/"><img src="https://eyeorb.net/images/tmsspecialhell.png" alt="trademarkization company of 2003"></a>
-    <a href="https://sad.ovh/"> <img src="/assets/sadovh.png" alt="sad.ovh"></a>
-    <a href="https://vegacollective.com/"> <img src="/assets/MeatleMania_2.gif" alt="vega collective"></a>
-    <a href="https://housepen.nekoweb.org/"> <img src="/assets/housepen.avif" alt="housepen"></a>
-    <a href="https://zptr.cc/"><img src="/assets/@me.gif" alt="zeroptr"></a>
-    <a href="https://melankorin.net/"><img src="https://melankorin.net/assets/img/buttons/button-1.gif" alt="melan korin"></a>
-    <a href="https://obama.nekoweb.org/"><img src="https://obama.nekoweb.org/obbutton.png" alt="barack"></a>
-    <a href="https://scumpsmallbrain.neocities.org"> <img src="/assets/scumpshouse.gif" alt="scumps house"></a>
-    <a href="https://goblin-heart.net/sadgrl/"> <img src="/assets/sadgrl_online_learn.gif" alt="sadgrl"></a>
-    <a href="https://melonking.net/"> <img src="/assets/melonking.gif" alt="melonking"></a>
-    <a href="https://max.nekoweb.org/"> <img src="/assets/button.gif" alt="max"></a>
-    <a href="https://riversons.art/"> <img src="/assets/rivblink.gif" alt="riverson"></a>
-    <a href="https://nekoweb.org/"> <img src="/assets/button11.gif" alt="nekoweb"></a>
-    <a href="https://giikis2.nekoweb.org/"> <img src="https://giikis2.neocities.org/assets/badges/giikis2.png" width="88" height="31" alt="giiki"></a>
-    <a href="https://dogspit.nekoweb.org/"><img src="https://i.imgur.com/0pnWFCL.png" alt="dogspit"></a>
-    <a href="https://devastatia.com/"><img src="/assets/devastatia-88x31.png" alt="devastatia"></a>
-    <a href="https://onz.ee/"><img src="/assets/onzecki.avif" alt="onzecki"></a>
-    <a href="https://michiru.org/manga/join.php"><img src="/assets/manga88x31.avif" alt="manga fanlisting"></a>
-    <a href="https://jonathn.peanits.lol/"><img src="/assets/jonathn.gif" alt="my goat jon"></a>
-    <a href="https://poyoweb.poyo.study"><img src="https://raw.githubusercontent.com/mrdapoyo/poyoweb-node/refs/heads/main/public/buttons/carl-is-a-cunt.png" alt="poyoweb"></a>
-    <a href="https://joo.sh/"><img src="https://files.joo.sh/img/buttons/jooshRice.gif"></a>
-    <a href="https://rice.place/"><img src="/assets/hai.gif" alt="haiweb"></a>
-    <a href="https://eyeorb.net/"><img src="https://eyeorb.net/site_button.gif"></a>
-    <a href="https://electronica.nekoweb.org/"><img src="https://electronica.nekoweb.org/assets/electronicabutton2.gif"></a>
-    <a href="https://raccoonbutt.com"><img src="https://raccoonbutt.com/static/images/button.gif"></a>
-    <a href="https://puffinthefish.neocities.org/"><img src="/assets/pfnbutton.webp"></a>
-    <a href="https://melps.neocities.org/"><img src="/assets/melps.jpg"></a>
-  </div>
+</div>
 
   # Inspirations and cool sites:
 
