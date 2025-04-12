@@ -84,6 +84,21 @@ button:hover, a:hover {
     );
 }
 
+.ramblings-container {
+    border-bottom: 1px hsla(0, 0%, 100%, .12) solid;
+    font-size: 16px;
+}
+
+.ramblings-container img {
+    cursor: pointer;
+    width: 20%;
+}
+
+.ramblings-container h2 {
+    color: #999;
+    font-size: 13px;
+}
+
 .dropbtn {
     background: none;
 }
@@ -141,12 +156,7 @@ button:hover, a:hover {
 }
 
 .background-div {
-    background: linear-gradient(180deg,
-        #212526e6 0%,
-        #1e2222e6 30%,
-        #181f22e6 50%,
-        #0d1013e6 100%
-    );
+    background-color: #111214;
     padding: 10px;
     margin: 10px;
     border: dotted white 1px;
@@ -169,15 +179,22 @@ button:hover, a:hover {
 }
 
 .description, #commit-div, #listening {
+    padding: 10px;
+    border: dotted white 1px;
+    border-radius: 4px;
+}
+
+#commit-div, #listening {
     background: linear-gradient(180deg,
         #212526e6 0%,
         #1e2222e6 30%,
         #181f22e6 50%,
         #0d1013e6 100%
     );
-    padding: 10px;
-    border: dotted white 1px;
-    border-radius: 4px;
+}
+
+.description {
+    background-color: #111214;
 }
 
 #commit-div, #listening {
@@ -252,7 +269,7 @@ to {
     overflow-wrap: break-word;
     font-size: 16px;
     width: 25%;
-    background-color: #171b1f;
+    background-color: #111214;
     border: dotted white 1px;
     border-radius: 4px;
 }

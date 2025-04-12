@@ -62,6 +62,39 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.setLibrary("md", md);
 	eleventyConfig.addPlugin(pluginRss);
 
+  function wrapRambingsPlugin(mdLib) {
+    mdLib.core.ruler.after('block', 'wrap-ramblings', state => {      
+      const open = () => {
+        const token = new state.Token("html_block", "", 0);
+        token.content = '<div class="ramblings-container">';
+        return token;
+      };
+      
+      const close = () => {
+        const token = new state.Token("html_block", "", 0);
+        token.content = '</div>';
+        return token;
+      };
+
+      let inside = false;
+      state.tokens = state.tokens.flatMap((token, i, tokens) => {
+        const isDateH2 = token.type === "heading_open" && token.tag === "h2" && tokens[i+1]?.type === "inline" && /^\d{2}\/\d{2}\/\d{2}$/.test(tokens[i+1].content);
+        const result = [];
+        if (isDateH2) {
+          if (inside) result.push(close());
+          result.push(open());
+          inside = true;
+        }
+        result.push(token);
+        return result;
+      });
+      
+      if (inside) state.tokens.push(close());
+    });
+  }
+  
+  md.use(wrapRambingsPlugin);
+
   return {
     dir: {
       input: "src",
