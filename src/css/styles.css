@@ -72,6 +72,7 @@ button:hover, a:hover {
     display: flex;
     align-items: center;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 .dropbtn:hover, .navbar a:hover {

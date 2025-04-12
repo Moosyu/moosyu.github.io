@@ -213,11 +213,12 @@
     {
         "name": "Dorohedoro",
         "panel1": "https://i.imgur.com/qA18Na0.jpeg",
-        "panel2": "https://i.imgur.com/0rkXKxw.jpeg",
-        "panel3": "https://i.imgur.com/hcBfo0b.png",
-        "panel4": "https://i.imgur.com/mk6SAgo.png",
-        "panel5": "https://i.imgur.com/afWqdGG.png",
-        "spoiler1": true
+        "panel2": "https://i.imgur.com/BRGpIoB.png",
+        "panel3": "https://i.imgur.com/dIW0DaL.png",
+        "panel4": "https://i.imgur.com/0YNcTP4.png",
+        "panel5": "https://i.imgur.com/KPsIPdb.png",
+        "spoiler1": true,
+        "spoiler2": true
     },
     {
         "name": "Insomniacs After School",
