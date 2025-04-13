@@ -182,14 +182,13 @@ button:hover, a:hover {
 }
 
 .description, #commit-div, #listening {
-    padding: 10px;
+    padding: 20px;
     border: dotted white 1px;
     border-radius: 4px;
     background-color: #111214;
 }
 
 #commit-div, #listening {
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -197,7 +196,7 @@ button:hover, a:hover {
 
 .updates-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     margin-bottom: 10px;
     gap: 10px;
@@ -423,5 +422,11 @@ to {
 
     .dropdown-content {
         border-width: 0px 1px 1px 1px;
+    }
+    .updates-container {
+        flex-direction: row;
+    }
+    #commit-div, #listening {
+        width: 100%;
     }
 }

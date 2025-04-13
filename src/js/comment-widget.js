@@ -82,13 +82,6 @@ fetch('https://api.ipify.org?format=json')
 // Fix the URL parameters setting for Rarebit just in case
 if (s_fixRarebitIndexPage) {s_includeUrlParameters = true}
 
-// Apply CSS
-const c_cssLink = document.createElement('link');
-c_cssLink.type = 'text/css';
-c_cssLink.rel = 'stylesheet';
-c_cssLink.href = s_stylePath;
-document.getElementsByTagName('head')[0].appendChild(c_cssLink);
-
 // HTML Form
 const v_mainHtml = `
     <div id="c_inputDiv">

@@ -66,11 +66,12 @@
     text-decoration: none;
 	text-align: center;
     text-transform: uppercase;
-    background-color: #171a1c;
+    background-color: #24282b;
     color: #e23a45;
     font-family: monospace;
-    border: solid white 1px;
+    border: none;
     margin-top: 5px;
+    border-radius: 10px
 }
 
 #c_widget button:hover, #c_widget input[type=submit]:hover {

@@ -1,5 +1,5 @@
 const htmlmin = require("html-minifier-terser");
-const CleanCSS = require("clean-css");
+const cleanCss = require("clean-css");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const markdownItKatex = require("@vscode/markdown-it-katex").default;
@@ -52,8 +52,9 @@ module.exports = function(eleventyConfig) {
   });
   // had to add a filter bc im dumb or something and couldnt figure out how to deal with files being passed through
   eleventyConfig.addFilter("cssmin", function (code) {
-    return new CleanCSS({}).minify(code).styles;
+    return new cleanCss({}).minify(code).styles;
   });
+
 	eleventyConfig.addPlugin(syntaxHighlight);
   const md = markdownIt({
     html: true,
@@ -63,13 +64,13 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPlugin(pluginRss);
 
   function wrapRambingsPlugin(mdLib) {
-    mdLib.core.ruler.after('block', 'wrap-ramblings', state => {      
+    mdLib.core.ruler.after('block', 'wrap-ramblings', state => {
       const open = () => {
         const token = new state.Token("html_block", "", 0);
         token.content = '<div class="ramblings-container">';
         return token;
       };
-      
+
       const close = () => {
         const token = new state.Token("html_block", "", 0);
         token.content = '</div>';
@@ -88,11 +89,11 @@ module.exports = function(eleventyConfig) {
         result.push(token);
         return result;
       });
-      
+
       if (inside) state.tokens.push(close());
     });
   }
-  
+
   md.use(wrapRambingsPlugin);
 
   return {
