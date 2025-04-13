@@ -8,17 +8,18 @@ title: "Blog"
     <a href="/feed.xml">Click this to get the rss feed.</a>.
 </p>
 
-<p>Posts:</p>
 <ul class="blog-list">
   {% for blog in collections.blog | reverse %}
     {% set wordCount = blog.templateContent | wordCount %}
     {% set readTime = blog.templateContent | readTime %}
-    <li style="margin: 10px;">
-      <a href="{{ blog.url }}">{{ blog.data.title }}</a> 
-      <span style="color: #c6a0f6">
-        {{ blog.date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }).replace('.', '') }}
-      </span> 
-      - {{ wordCount }} words ({{ readTime }} min read)
+    <li class="blog-post-item">
+      <a href="{{ blog.url }}" class="blog-post-link">
+        <h1 style="margin: 0;" class="blog-title">{{ blog.data.title }}</h1>
+        <span style="color: #c6a0f6; border-right: 1px white dotted;">
+          {{ blog.date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }).replace('.', '') }}
+        </span>
+        <span style="padding-left: 5px; color: white;">{{ wordCount }} words ({{ readTime }} min read)</span>
+      </a>
     </li>
   {% endfor %}
 </ul>
