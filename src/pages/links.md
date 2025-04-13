@@ -8,36 +8,36 @@ title: "Links"
   # My button collection:
 
   <div class="buttons-links">
-    <a href="https://displayman.neocities.org/"><img src="/assets/Botón_página_Daniel.gif" alt="daniel"></a>
-    <a href="https://incessantpain.neocities.org/"><img src="/assets/buttonincessant.gif" alt="pain"></a>
-    <a href="https://rice.place/"><img src="/assets/riceplace.png"></a>
-    <a href="https://trademarkhell.net/"><img src="https://eyeorb.net/images/tmsspecialhell.png" alt="trademarkization company of 2003"></a>
-    <a href="https://sad.ovh/"> <img src="/assets/sadovh.png" alt="sad.ovh"></a>
-    <a href="https://vegacollective.com/"> <img src="/assets/MeatleMania_2.gif" alt="vega collective"></a>
-    <a href="https://housepen.nekoweb.org/"> <img src="/assets/housepen.avif" alt="housepen"></a>
-    <a href="https://zptr.cc/"><img src="/assets/@me.gif" alt="zeroptr"></a>
-    <a href="https://melankorin.net/"><img src="https://melankorin.net/assets/img/buttons/button-1.gif" alt="melan korin"></a>
-    <a href="https://obama.nekoweb.org/"><img src="https://obama.nekoweb.org/obbutton.png" alt="barack"></a>
-    <a href="https://scumpsmallbrain.neocities.org"> <img src="/assets/scumpshouse.gif" alt="scumps house"></a>
-    <a href="https://goblin-heart.net/sadgrl/"> <img src="/assets/sadgrl_online_learn.gif" alt="sadgrl"></a>
-    <a href="https://melonking.net/"> <img src="/assets/melonking.gif" alt="melonking"></a>
-    <a href="https://max.nekoweb.org/"> <img src="/assets/button.gif" alt="max"></a>
-    <a href="https://riversons.art/"> <img src="/assets/rivblink.gif" alt="riverson"></a>
-    <a href="https://nekoweb.org/"> <img src="/assets/button11.gif" alt="nekoweb"></a>
-    <a href="https://giikis2.nekoweb.org/"> <img src="https://giikis2.neocities.org/assets/badges/giikis2.png" width="88" height="31" alt="giiki"></a>
-    <a href="https://dogspit.nekoweb.org/"><img src="https://i.imgur.com/0pnWFCL.png" alt="dogspit"></a>
-    <a href="https://devastatia.com/"><img src="/assets/devastatia-88x31.png" alt="devastatia"></a>
-    <a href="https://onz.ee/"><img src="/assets/onzecki.avif" alt="onzecki"></a>
-    <a href="https://michiru.org/manga/join.php"><img src="/assets/manga88x31.avif" alt="manga fanlisting"></a>
-    <a href="https://jonathn.peanits.lol/"><img src="/assets/jonathn.gif" alt="my goat jon"></a>
-    <a href="https://poyoweb.poyo.study"><img src="https://raw.githubusercontent.com/mrdapoyo/poyoweb-node/refs/heads/main/public/buttons/carl-is-a-cunt.png" alt="poyoweb"></a>
-    <a href="https://joo.sh/"><img src="https://files.joo.sh/img/buttons/jooshRice.gif"></a>
-    <a href="https://rice.place/"><img src="/assets/hai.gif" alt="haiweb"></a>
-    <a href="https://eyeorb.net/"><img src="https://eyeorb.net/site_button.gif"></a>
-    <a href="https://electronica.nekoweb.org/"><img src="https://electronica.nekoweb.org/assets/electronicabutton2.gif"></a>
-    <a href="https://raccoonbutt.com"><img src="https://raccoonbutt.com/static/images/button.gif"></a>
-    <a href="https://puffinthefish.neocities.org/"><img src="/assets/pfnbutton.webp"></a>
-    <a href="https://melps.neocities.org/"><img src="/assets/melps.jpg"></a>
+    <a target="_blank" href="https://displayman.neocities.org/"><img src="/assets/Botón_página_Daniel.gif" alt="daniel"></a>
+    <a target="_blank"href="https://incessantpain.neocities.org/"><img src="/assets/buttonincessant.gif" alt="pain"></a>
+    <a target="_blank"href="https://rice.place/"><img src="/assets/riceplace.png"></a>
+    <a target="_blank"href="https://trademarkhell.net/"><img src="https://eyeorb.net/images/tmsspecialhell.png" alt="trademarkization company of 2003"></a>
+    <a target="_blank"href="https://sad.ovh/"> <img src="/assets/sadovh.png" alt="sad.ovh"></a>
+    <a target="_blank"href="https://vegacollective.com/"> <img src="/assets/MeatleMania_2.gif" alt="vega collective"></a>
+    <a target="_blank"href="https://housepen.nekoweb.org/"> <img src="/assets/housepen.avif" alt="housepen"></a>
+    <a target="_blank"href="https://zptr.cc/"><img src="/assets/@me.gif" alt="zeroptr"></a>
+    <a target="_blank"href="https://melankorin.net/"><img src="https://melankorin.net/assets/img/buttons/button-1.gif" alt="melan korin"></a>
+    <a target="_blank"href="https://obama.nekoweb.org/"><img src="https://obama.nekoweb.org/obbutton.png" alt="barack"></a>
+    <a target="_blank"href="https://scumpsmallbrain.neocities.org"> <img src="/assets/scumpshouse.gif" alt="scumps house"></a>
+    <a target="_blank"href="https://goblin-heart.net/sadgrl/"> <img src="/assets/sadgrl_online_learn.gif" alt="sadgrl"></a>
+    <a target="_blank"href="https://melonking.net/"> <img src="/assets/melonking.gif" alt="melonking"></a>
+    <a target="_blank"href="https://max.nekoweb.org/"> <img src="/assets/button.gif" alt="max"></a>
+    <a target="_blank"href="https://riversons.art/"> <img src="/assets/rivblink.gif" alt="riverson"></a>
+    <a target="_blank"href="https://nekoweb.org/"> <img src="/assets/button11.gif" alt="nekoweb"></a>
+    <a target="_blank"href="https://giikis2.nekoweb.org/"> <img src="https://giikis2.neocities.org/assets/badges/giikis2.png" width="88" height="31" alt="giiki"></a>
+    <a target="_blank"href="https://dogspit.nekoweb.org/"><img src="https://i.imgur.com/0pnWFCL.png" alt="dogspit"></a>
+    <a target="_blank"href="https://devastatia.com/"><img src="/assets/devastatia-88x31.png" alt="devastatia"></a>
+    <a target="_blank"href="https://onz.ee/"><img src="/assets/onzecki.avif" alt="onzecki"></a>
+    <a target="_blank"href="https://michiru.org/manga/join.php"><img src="/assets/manga88x31.avif" alt="manga fanlisting"></a>
+    <a target="_blank"href="https://jonathn.peanits.lol/"><img src="/assets/jonathn.gif" alt="my goat jon"></a>
+    <a target="_blank"href="https://poyoweb.poyo.study"><img src="https://raw.githubusercontent.com/mrdapoyo/poyoweb-node/refs/heads/main/public/buttons/carl-is-a-cunt.png" alt="poyoweb"></a>
+    <a target="_blank"href="https://joo.sh/"><img src="https://files.joo.sh/img/buttons/jooshRice.gif"></a>
+    <a target="_blank"href="https://rice.place/"><img src="/assets/hai.gif" alt="haiweb"></a>
+    <a target="_blank"href="https://eyeorb.net/"><img src="https://eyeorb.net/site_button.gif"></a>
+    <a target="_blank"href="https://electronica.nekoweb.org/"><img src="https://electronica.nekoweb.org/assets/electronicabutton2.gif"></a>
+    <a target="_blank"href="https://raccoonbutt.com"><img src="https://raccoonbutt.com/static/images/button.gif"></a>
+    <a target="_blank"href="https://puffinthefish.neocities.org/"><img src="/assets/pfnbutton.webp"></a>
+    <a target="_blank"href="https://melps.neocities.org/"><img src="/assets/melps.jpg"></a>
   </div>
 
   # Webrings:
@@ -74,33 +74,33 @@ title: "Links"
     </table>
   </div>
   <div style="padding-top: 5px; color: #ff7598; font-family: ms gothic; background-color: #fff9ce; border: orange 1px solid; padding-bottom: 5px; text-align: center; width: 180px;">
-      <a href="https://eggring.neocities.org/"><img src="https://eggring.neocities.org/img/egg.gif" alt="eggring logo" style="image-rendering: pixelated;"></a>
+      <a target="_blank"href="https://eggring.neocities.org/"><img src="https://eggring.neocities.org/img/egg.gif" alt="eggring logo" style="image-rendering: pixelated;"></a>
       <br>
-      <a href="https://eggring.neocities.org/">The Eggring</a>
+      <a target="_blank"href="https://eggring.neocities.org/">The Eggring</a>
       <div style="padding-top: 2px;">
-          <a href="https://moosyu.github.io/jsonStorage/eggRing/redirect.html?to=prev&name=moostyswixsite">Prev</a> |
-          <a href="https://moosyu.github.io/jsonStorage/eggRing/redirect.html?to=next&name=moostyswixsite">Next</a>
+          <a target="_blank"href="https://moosyu.github.io/jsonStorage/eggRing/redirect.html?to=prev&name=moostyswixsite">Prev</a> |
+          <a target="_blank"href="https://moosyu.github.io/jsonStorage/eggRing/redirect.html?to=next&name=moostyswixsite">Next</a>
           <br>
-          <a href="https://moosyu.github.io/jsonStorage/eggRing/redirect.html?to=random&name=moostyswixsite">Random</a>
+          <a target="_blank"href="https://moosyu.github.io/jsonStorage/eggRing/redirect.html?to=random&name=moostyswixsite">Random</a>
       </div>
   </div>
   <div style="display: inline-block;">
-      <a href="https://webring.bucketfish.me/redirect.html?to=prev&name=moosyu">←</a>
-        <a href="https://webring.bucketfish.me"> bucket webring</a>
-      <a href="https://webring.bucketfish.me/redirect.html?to=next&name=moosyu">→</a>
+      <a target="_blank"href="https://webring.bucketfish.me/redirect.html?to=prev&name=moosyu">←</a>
+        <a target="_blank"href="https://webring.bucketfish.me"> bucket webring</a>
+      <a target="_blank"href="https://webring.bucketfish.me/redirect.html?to=next&name=moosyu">→</a>
   </div>
   <br>
   <div style="width:104px; display: inline-block;">
-      <a href="https://moosyu.github.io/pages/musicring/redirect/"><img style="image-rendering: pixelated;" src="/assets/music_disk.gif"></a>
-      <a href="https://moosyu.github.io/pages/musicring/redirect?to=prev&name=moosyu">Prev</a>
-      <a href="https://moosyu.github.io/pages/musicring/redirect?to=next&name=moosyu">Rand</a>
-      <a href="https://moosyu.github.io/pages/musicring/redirect?to=random&name=moosyu">Next</a>
+      <a target="_blank"href="https://moosyu.github.io/pages/musicring/redirect/"><img style="image-rendering: pixelated;" src="/assets/music_disk.gif"></a>
+      <a target="_blank"href="https://moosyu.github.io/pages/musicring/redirect?to=prev&name=moosyu">Prev</a>
+      <a target="_blank"href="https://moosyu.github.io/pages/musicring/redirect?to=next&name=moosyu">Rand</a>
+      <a target="_blank"href="https://moosyu.github.io/pages/musicring/redirect?to=random&name=moosyu">Next</a>
   </div>
   <br>
   <div style="display: inline-block;">
-      <a href="https://jbcarreon123.nekoweb.org/webrings/ssgring/redirect?slug=moosyu&way=prev">←</a>
-      <a href="https://jbcarreon123.nekoweb.org/webrings/ssgring">ssg webring</a>
-      <a href="https://jbcarreon123.nekoweb.org/webrings/ssgring/redirect?slug=moosyu&way=next">→</a>
+      <a target="_blank"href="https://jbcarreon123.nekoweb.org/webrings/ssgring/redirect?slug=moosyu&way=prev">←</a>
+      <a target="_blank"href="https://jbcarreon123.nekoweb.org/webrings/ssgring">ssg webring</a>
+      <a target="_blank"href="https://jbcarreon123.nekoweb.org/webrings/ssgring/redirect?slug=moosyu&way=next">→</a>
   </div>
 
 </div>

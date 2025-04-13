@@ -8,7 +8,7 @@
 
         document.getElementById("commit-div").innerHTML = `
         <div id="commitDiv">
-            <p>Latest commit: <a href="https://github.com/Moosyu/moosyu.github.io/commit/${sha}">${shortSha}</a> on ${authorDate.toLocaleDateString('en-GB', { day: '2-digit', month: '2-digit', year: '2-digit' })}</p>
+            <p>Latest commit: <a target="_blank" href="https://github.com/Moosyu/moosyu.github.io/commit/${sha}">${shortSha}</a> on ${authorDate.toLocaleDateString('en-GB', { day: '2-digit', month: '2-digit', year: '2-digit' })}</p>
         </div>`;
 
     } catch (error) {

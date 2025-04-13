@@ -8,13 +8,18 @@
     </div>
     <div class="description">
         <p><span style="font-size: 24px;">Hello!</span> Welcome to my super awesome and cool website. This is the terminally online equivalent to a diary so if you enjoy reading about strangers on the internet you'll love it here. If you got here trying to play Friday Night Funkin mods, skill issue.</p>
-        <p>I've worked on and off on this for like three years, originally it was me trying to copy <a href="https://displayman.neocities.org/">Daniel's Virtual Place</a> but now it's more like an imbred distant relative. At this point its more like an amalgam of sites I like, but aren't we all? Hopefully the longer it lasts the more distinct the style will become. All the code is <a href="https://github.com/Moosyu/moosyu.github.io">public</a> and you're free to use it though it probably wasn't even mine in the first place.</p>
+        <p>I've worked on and off on this for like three years, originally it was me trying to copy <a href="https://displayman.neocities.org/" target="_blank">Daniel's Virtual Place</a> but now it's more like an imbred distant relative. At this point its more like an amalgam of sites I like, but aren't we all? Hopefully the longer it lasts the more distinct the style will become. All the code is <a href="https://github.com/Moosyu/moosyu.github.io" target="_blank">public</a> and you're free to use it though it probably wasn't even mine in the first place.</p>
         <p>To travel around my webpage use the navigation bar on the right or click <a href="/pages/links/">links</a> to view every page!!</p>
         <p>Add my button to your site:</p>
-        <img src="/assets/button.png" style="width: 88px; height: 31px; image-rendering: pixelated;" alt="moosyu button">
-        <p>
-            <span style="color: #83a598;">&lt;a</span> <span style="color: #d3869b;">href</span>=<span style="color: #b8bb26;">"https://moosyu.nekoweb.org/"</span><span style="color: #83a598;">&gt;</span><span style="color: #83a598;">&lt;img</span> <span style="color: #d3869b;">src</span>=<span style="color: #b8bb26;">"https://moosyu.nekoweb.org/assets/button.png"</span> <span style="color: #d3869b;">alt</span>=<span style="color: #b8bb26;">"moosyus awesome button"</span><span style="color: #83a598;">&gt;&lt;/a&gt;</span>
-        </p>
+        <div class="tooltip">
+            <img id="frontpage-btn" onclick="copyButton()" onmouseout="mouseOut()" src="/assets/button.png" alt="moosyu button">
+            <span class="tooltip-text" id="tooltip-btn">Copy to clipboard</span>
+        </div>
+        <noscript>
+            <p>
+                <span style="color: #83a598;">&lt;a</span> <span style="color: #d3869b;">href</span>=<span style="color: #b8bb26;">"https://moosyu.nekoweb.org/"</span><span style="color: #83a598;">&gt;</span><span style="color: #83a598;">&lt;img</span> <span style="color: #d3869b;">src</span>=<span style="color: #b8bb26;">"https://moosyu.nekoweb.org/assets/button.png"</span> <span style="color: #d3869b;">alt</span>=<span style="color: #b8bb26;">"moosyus awesome button"</span><span style="color: #83a598;">&gt;&lt;/a&gt;</span>
+            </p>
+        </noscript>
         <div id="questionnaire">
             <p>Are you a dickhead?</p>
             <button style="background-color: #171b1f; color: #fff; border: white 1px solid; font-family: monospace; text-decoration: none; cursor: pointer;" onclick="destroyQuestionnaire()">Yes</button>
@@ -41,11 +46,67 @@
             gif.style.display = 'none';
         }, 900);
     }
+    function copyButton() {
+        navigator.clipboard.writeText('<a href="https://moosyu.nekoweb.org/"><img src="https://moosyu.nekoweb.org/assets/button.png" alt="moosyus awesome button"></a>');
+        var tooltip = document.getElementById("tooltip-btn");
+        tooltip.innerHTML = "Copied";
+    }
+    function mouseOut() {
+        var tooltip = document.getElementById("tooltip-btn");
+        tooltip.innerHTML = "Copy to clipboard";
+    }
 </script>
+<style>
+    .tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    }
+
+    .tooltip .tooltip-text {
+    visibility: hidden;
+    width: 140px;
+    background-color:rgb(35, 40, 46);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    }
+
+    .tooltip .tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(35, 40, 46) transparent transparent transparent;
+    }
+
+    .tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+    }
+</style>
+
 <noscript>
     <style>
         #questionnaire, #listening, #commit-div, #explosion-gif, #c_widget {
             display: none !important;
+        }
+        .tooltip {
+            cursor: auto;
+        }
+        .tooltip-text {
+            display: none;
         }
     </style>
 </noscript>

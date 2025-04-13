@@ -380,6 +380,12 @@ to {
     color: #e23a45;
 }
 
+#frontpage-btn {
+    width: 88px;
+    height: 31px;
+    image-rendering: pixelated;
+}
+
 @media screen and (min-width: 900px) {
     .navbar {
         flex-direction: row;

@@ -6,7 +6,7 @@
 
         document.getElementById("listening").innerHTML = `
         <div id="trackInfo">
-            <span>Last heard: <a href="${track.url}">${track.name}</a> by ${track.artist['#text']}</span>
+            <span>Last heard: <a target="_blank" href="${track.url}">${track.name}</a> by ${track.artist['#text']}</span>
         </div>`;
     
     } catch (error) {
