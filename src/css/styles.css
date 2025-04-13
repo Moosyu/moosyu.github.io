@@ -21,6 +21,7 @@ body {
 
 .hamburger svg {
     padding: 10px;
+    transition: transform 0.4s ease;
 }
 
 .hamburger.rotated svg {
@@ -359,6 +360,7 @@ to {
 
 .blog-post-item:hover {
     background-color: #111214;
+    transition: ease 0.1s;
 }
 
 .blog-post-item:hover .blog-title {
@@ -386,7 +388,67 @@ to {
     image-rendering: pixelated;
 }
 
-@media screen and (min-width: 900px) {
+.bookmarks-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.bookmark-item-link {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+
+.bookmark-item {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px dotted white;
+    padding: 20px;
+    border-radius: 4px;
+    transition: background-color 0.1s ease;
+    background-color: #1f1e1e;
+    box-sizing: border-box;
+}
+
+.bookmark-item:hover {
+    background-color: #111214;
+    color: white;
+}
+
+.version-subtitle {
+    text-align: center;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.bookmark-item h2 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+    color: #e23a45;
+}
+
+.bookmark-item:hover h2 {
+    color: #36a3cf;
+    text-decoration: underline;
+}
+
+
+@media (min-width: 949px) and (max-width: 1249px) {
+    .nav-emojis {
+        display: none;
+    }
+    .bookmarks-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 950px) {
     .navbar {
         flex-direction: row;
         display: flex;
@@ -428,5 +490,8 @@ to {
     }
     #commit-div, #listening {
         width: 100%;
+    }
+    .bookmarks-container {
+        grid-template-columns: repeat(4, 1fr);
     }
 }

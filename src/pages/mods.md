@@ -1,8 +1,6 @@
 ---
 layout: "layout.njk"
 title: "awesome guides"
-header_img: "/assets/mod_list.avif"
-side_nav_img: "/assets/bug.webp"
 ---
 
 <div class="background-div">

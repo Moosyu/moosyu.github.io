@@ -1,6 +1,6 @@
 ---
 layout: "layout.njk"
-title: "Links"
+title: "please save me donald trump please"
 ---
 
 <div class="background-div">
