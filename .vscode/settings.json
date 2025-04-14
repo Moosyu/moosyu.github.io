@@ -1,7 +1,7 @@
 {
     "cSpell.language": "en-GB",
     "editor.cursorSmoothCaretAnimation": "on",
-    "editor.wordWrap": "on",
+    "editor.wordWrap": "off",
     "cSpell.words": [
         "Anyways",
         "AOTY",
@@ -16,6 +16,7 @@
         "manhwa",
         "Nekoweb",
         "oneshot",
+        "playthrough",
         "Radiohead",
         "relisten",
         "relistened",

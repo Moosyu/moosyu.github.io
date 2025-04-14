@@ -390,7 +390,7 @@ to {
 
 .bookmarks-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 10px;
 }
 
@@ -438,16 +438,6 @@ to {
     text-decoration: underline;
 }
 
-
-@media (min-width: 949px) and (max-width: 1249px) {
-    .nav-emojis {
-        display: none;
-    }
-    .bookmarks-container {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
 @media screen and (min-width: 950px) {
     .navbar {
         flex-direction: row;
@@ -493,5 +483,14 @@ to {
     }
     .bookmarks-container {
         grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 949px) and (max-width: 1249px) {
+    .nav-emojis {
+        display: none;
+    }
+    .bookmarks-container {
+        grid-template-columns: repeat(3, 1fr);
     }
 }

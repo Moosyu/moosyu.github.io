@@ -9,6 +9,7 @@ title: "please save me donald trump please"
 
   <div class="buttons-links">
     <a target="_blank" href="https://displayman.neocities.org/"><img src="/assets/Botón_página_Daniel.gif" alt="daniel"></a>
+    <a target="_blank"href="https://onz.ee/"><img src="/assets/onzecki.avif" alt="onzecki"></a>
     <a target="_blank"href="https://incessantpain.neocities.org/"><img src="/assets/buttonincessant.gif" alt="pain"></a>
     <a target="_blank"href="https://rice.place/"><img src="/assets/riceplace.png"></a>
     <a target="_blank"href="https://trademarkhell.net/"><img src="https://eyeorb.net/images/tmsspecialhell.png" alt="trademarkization company of 2003"></a>
@@ -27,7 +28,6 @@ title: "please save me donald trump please"
     <a target="_blank"href="https://giikis2.nekoweb.org/"> <img src="https://giikis2.neocities.org/assets/badges/giikis2.png" width="88" height="31" alt="giiki"></a>
     <a target="_blank"href="https://dogspit.nekoweb.org/"><img src="https://i.imgur.com/0pnWFCL.png" alt="dogspit"></a>
     <a target="_blank"href="https://devastatia.com/"><img src="/assets/devastatia-88x31.png" alt="devastatia"></a>
-    <a target="_blank"href="https://onz.ee/"><img src="/assets/onzecki.avif" alt="onzecki"></a>
     <a target="_blank"href="https://michiru.org/manga/join.php"><img src="/assets/manga88x31.avif" alt="manga fanlisting"></a>
     <a target="_blank"href="https://jonathn.peanits.lol/"><img src="/assets/jonathn.gif" alt="my goat jon"></a>
     <a target="_blank"href="https://poyoweb.poyo.study"><img src="https://raw.githubusercontent.com/mrdapoyo/poyoweb-node/refs/heads/main/public/buttons/carl-is-a-cunt.png" alt="poyoweb"></a>
@@ -104,42 +104,6 @@ title: "please save me donald trump please"
   </div>
 
 </div>
-
-  # Inspirations and cool sites:
-
-  ## Credits:
-
-  [Nekoweb {Neocities but more viable for me as I don't like the restrictions on Neocities accounts.}](https://nekoweb.org/)
-
-  [Github Pages {Probably best free hosting you could possibly get. Incredible bang for your buck (your buck is $0).}](https://pages.github.com/)
-
-  [fusejs {What I use for the search bars on my pages}](https://www.fusejs.io/)
-
-  [LastFM Scrobble {Tracks my last listened to song for my homepage.}](https://www.last.fm/about/trackmymusic)
-
-  [Ayanos comment widget {I use a modified version of this for comments on my homepage}](https://virtualobserver.moe/ayano/comment-widget)
-
-  [Onzecki {Sent me a really well thought out and detailed email about making my site not run like shit which helped my situation quite a lot.}](https://onz.ee/)
-
-  ## Cool sites (that don't have button)
-
-  [AOTY {Best music tracker by process of elimination because RYM is a toxic hellhole and I like aoty's ui more anyway.}](https://www.albumoftheyear.org/)
-
-  [wiki.gg {Crushes fandom, its not even a competition, more like some kind of ISIS execution.}](https://www.wiki.gg/)
-
-  [Anna's Archive {They're still trying to burn down the library of Alexandria 2000 years later...}](https://annas-archive.org/)
-
-  [MDN Web Docs {Probably best HTML resource?? A lot more detail and info then W3Schools so you really know whats going on.}](https://developer.mozilla.org/en-US/)
-
-  [W3Schools {Really helpful when I was getting started out.}](https://www.w3schools.com/)
-
-  [Stack Overflow {Smart assholes.}](https://stackoverflow.com/)
-
-  [Neocities {My day one, my goat.}](https://neocities.org/)
-
-  [Manu {The only blog I keep up with these days, I found him from an interview he did with Devastatia in June and while not as off the rails as Devastatia he's still a very interesting person and a his site often links other very interesting blogs leading to some sort of never ending rabbit hole.}](https://manuelmoreale.com/)
-
-  [SUPERPREDATOR {Mind bending images beyond human comprehension. That's all I can say, you have to see it for yourself.}](https://superpredator.zone/)
 
   # Every page:
 
