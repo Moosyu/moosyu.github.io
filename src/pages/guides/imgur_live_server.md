@@ -1,5 +1,5 @@
 ---
-title: "making imgur images load on live server"
+title: "Making Imgur images load on live server"
 date: 2024-05-19
 ---
 

@@ -3,11 +3,6 @@ title: "Displaying the latest github commit with js"
 date: 2024-10-28
 ---
 
-{% set prismCss %} {% include "../../css/prismTheme.css" %} {% endset %}
-<style>
-    {{ prismCss | cssmin | safe }}
-</style>
-
 This is how you get one of these:
 
 ![](https://I.imgur.com/c1kAf6b.png)

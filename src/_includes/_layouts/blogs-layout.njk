@@ -4,48 +4,54 @@
   {{ title | default("moosyus crack emporium") }}
 {% endblock %}
 
+{% block head %}
+<style>
+    th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ffffff;
+    text-align: left;
+    }
+</style>
+{% endblock %}
+
 {% block content %}
 <div class="main-box background-div">
-{% if date %}
-Date created: {{ page.date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }).replace('.', '') }}
-{% endif %}
-{% for tag in tags %}
-{% if tag != "blog" %}
-  <a href="/tags/{{ tag }}">#{{ tag }}</a>
-{% endif %}
-{% endfor %}
+    Date created: {{ page.date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }).replace('.', '') }}
+    {% for tag in tags %}
+    {% if tag != "blog" %}
+    <a href="/tags/{{ tag }}">#{{ tag }}</a>
+    {% endif %}
+    {% endfor %}
 
-{{ content | safe }}
+    {{ content | safe }}
 
-{% set previousPost = collections.blog | getPreviousCollectionItem %}
-{% set nextPost = collections.blog | getNextCollectionItem %}
+    {% set previousPost = collections.blog | getPreviousCollectionItem %}
+    {% set nextPost = collections.blog | getNextCollectionItem %}
 
-{% if date %}
-<div class="pagination-container">
-    <div class="pagination-buttons left">
-        {% if previousPost %}
-        <a href="{{ previousPost.url }}">Previous</a>
-        {% else %}
-        <span>Previous</span>
-        {% endif %}
+    <div class="pagination-container">
+        <div class="pagination-buttons left">
+            {% if previousPost %}
+            <a href="{{ previousPost.url }}">Previous</a>
+            {% else %}
+            <span>Previous</span>
+            {% endif %}
+        </div>
+
+        <select id="pageDropdown" class="pageDropdownBlog" onchange="window.location.href=this.value;">
+            {% for post in collections.blog | reverse %}
+            <option value="{{ post.url }}" {% if page.url == post.url %} selected {% endif %}>
+                {{ post.data.title }}
+            </option>
+            {% endfor %}
+        </select>
+
+        <div class="pagination-buttons right">
+            {% if nextPost %}
+            <a href="{{ nextPost.url }}">Next</a>
+            {% else %}
+            <span>Next</span>
+            {% endif %}
+        </div>
     </div>
-
-    <select id="pageDropdown" class="pageDropdownBlog" onchange="window.location.href=this.value;">
-        {% for post in collections.blog | reverse %}
-        <option value="{{ post.url }}" {% if page.url == post.url %} selected {% endif %}>
-            {{ post.data.title }}
-        </option>
-        {% endfor %}
-    </select>
-
-    <div class="pagination-buttons right">
-        {% if nextPost %}
-        <a href="{{ nextPost.url }}">Next</a>
-        {% else %}
-        <span>Next</span>
-        {% endif %}
-    </div>
-</div>
-{% endif %}
 </div>
 {% endblock %}

@@ -3,11 +3,6 @@ title: "Latex markdown with 11ty using markdown-it-katex"
 date: 2024-09-24
 ---
 
-{% set prismCss %} {% include "../../css/prismTheme.css" %} {% endset %}
-<style>
-    {{ prismCss | cssmin | safe }}
-</style>
-
 If you're wondering why I don't just use some js library, it's because I don't like overusing js, next question. first off im using [@vscode/markdown-it-katex](https://www.npmjs.com/package/@vscode/markdown-it-katex). This is the most maintained version of it and doesn't have any vulnerabilities like the original version. you want to go into the folder of your 11ty project and run:
 
 ```bash

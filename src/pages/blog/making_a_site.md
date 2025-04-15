@@ -5,11 +5,6 @@ tags:
     - web
 ---
 
-{% set prismCss %} {% include "../../css/prismTheme.css" %} {% endset %}
-<style>
-    {{ prismCss | cssmin | safe }}
-</style>
-
 I'm an old man so I'd like to reminisce a bit about my favourite hobby. My site which was moosyu.github.io at the time (though it might be that again by the time you're reading this if I forget to renew my domain), started out as a way for me to play games that my school was blocking. This was about late 2020 when FNF was just starting to get big, as well as a certain virus which mysteriously gave me a lot of free time. Around that time I was one of the only people compiling FNF mods into HTML5 to play online so a lot of sites called FREEFNFMODSONLINE were embedding my site in theirs which was my main source of visitors for years. Regretfully I have no backup of that site (at least I think, it might be on some old hard drive somewhere) so right now it could be considered lost to time. Not much was lost though as I wouldn't exactly say it looked good, it was a weird yellowish orange shade with a pretty ugly font that I just grabbed off Google Fonts. If I manage to track down a screenshot I'll add it here.
 
 My webpage was left like that until near the end of 2022 when I go really into the old Geocities aesthetics. I believe this obsession was started by [this video by Aztrosist](https://www.youtube.com/watch?v=BGEft8rnSHY). In particular in that video I saw a flash of [Daniel's Virtual Place](https://displayman.neocities.org/), likely the biggest inspiration for my site (Daniel added my button to my site by the way which is pretty awesome). I was absolutely engrossed by Daniel's webpage, I probably searched through every page on his site, it's actually the reason I started learning Spanish. But because of this spark of inspiration I full deleted my old site (along with unfortunately the whole Github repo containing it) and replaced it with this beautiful creation that I made in an hour or two:

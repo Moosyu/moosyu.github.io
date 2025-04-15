@@ -3,11 +3,6 @@ title: "Lexiqqq + 11ty github workflow"
 date: 2024-10-03
 ---
 
-{% set prismCss %} {% include "../../css/prismTheme.css" %} {% endset %}
-<style>
-    {{ prismCss | cssmin | safe }}
-</style>
-
 ### Note: this still works but I don't use lexiqqq anymore so I won't be able to troubleshoot for you, sorry.
 
 We asked a security guy and he said this script is "alright", using sftp would be better but I go for 50% on every test so its fine for me.
@@ -30,7 +25,7 @@ project root/
 Inside the build.yml file copy and paste this:
 
 {% raw %}
-```html
+```yml
 name: Deploy to Lexiqqq
 
 on:

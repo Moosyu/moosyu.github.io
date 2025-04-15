@@ -5,14 +5,6 @@ tags:
     - web
 ---
 
-<style>
-th, td {
-  padding: 10px;
-  border-bottom: 1px solid #ffffff;
-  text-align: left;
-}
-</style>
-
 In about a day [cohost](https://cohost.org/) is going read only so I wanted to talk about sites, specifically social media websites that are destined to collapse and die off in a year. Contrary to the stereotype of the terminally online website making people loving to use these shitty knock off twitters and tumblrs, I actually kind of hate how all these social media sites keep getting made. I cant see how the solution to twitter doing shitty things like deleting accounts after they are become inactive, deleting billions of tweets is creating a new site that will just end up another black hole for content as it eventually gets shut down.
 
 The main reason these sites fail is due to not having enough money (shocker I know), but they don't make enough money because they somehow believe that a social media site without ads could sustain itself, that will never work. I will cut off a finger the day I see a social media sustain itself without selling their users data or showing them copious amounts of ads. The only way that will work is if in the distant future storage costs like a dollar per terabyte (which I'm pretty sure it does when you buy 1000 tons of cards at once like Google but regardless). For an example how how much it costs to run one of these social medias here is cohosts net profit from the past four months:

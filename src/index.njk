@@ -1,5 +1,6 @@
 {% extends "base.njk" %}
-{% block content %}
+
+{% block head %}
 {% set commentCSS %} {% include "./css/comment-widget.css" %} {% endset %}
 <style>
     {{ commentCSS | cssmin | safe }}
@@ -55,7 +56,9 @@
         }
     </style>
 </noscript>
+{% endblock %}
 
+{% block content %}
 <div class="container-main">
     <div class="updates-container">
         <div id="commit-div"></div>

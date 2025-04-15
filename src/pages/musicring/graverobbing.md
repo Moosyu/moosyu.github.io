@@ -3,11 +3,6 @@ layout: "layout.njk"
 title: "Music-ring"
 ---
 
-{% set prismCss %} {% include "../../css/prismTheme.css" %} {% endset %}
-<style>
-    {{ prismCss | cssmin | safe }}
-</style>
-
 <div class="background-div">
 
 # My goat Jon is back!! Join the real music ring [here](https://peanits.lol/webrings/musicring/index.php)

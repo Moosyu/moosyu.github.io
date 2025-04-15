@@ -5,14 +5,6 @@ tags:
     - web
 ---
 
-<style>
-th, td {
-  padding: 10px;
-  border-bottom: 1px solid #ffffff;
-  text-align: left;
-}
-</style>
-
 It came to my attention that I wrote a review of the Nekoweb Discord before the Nekoweb Nekoweb and since a one paragraph blog post frankly is not good enough I'm going to bloat this post out with ratings of every webhost I've used. Feel free the just skip straight to the scores and yell at me. Do keep in mind these are all based on the quality of the free tier as webbing is meant to be my cheap hobby.
 
 ## Neocities
