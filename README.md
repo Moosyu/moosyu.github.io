@@ -15,3 +15,9 @@ then run
 ```console
 npx @11ty/eleventy
 ```
+
+todo:
+
+~~pretty animations for the nav dropdowns extending~~
+
+fixing whatever's up with the rss
