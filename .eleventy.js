@@ -30,9 +30,48 @@ module.exports = function(eleventyConfig) {
     port: 5501,
   });
 
-  eleventyConfig.addCollection("allPages", function (collectionApi) {
-    return collectionApi.getAll();
+  // lots of comments bc the moment i look away from this shit i forget what is even going on anymore this took way too long...
+  eleventyConfig.addCollection("pageTree", function (collectionApi) {
+      /*
+      what tree look a bit like so i dont forget later:
+      /pages/ and /pages/blog/
+
+      {
+        pages: {
+          __data: { ... },
+          __children: {
+            blog: {
+              __data: { ... },
+              __children: {}
+            }
+        }
+      }
+    */
+    const pages = collectionApi.getAll();
+    const tree = {};
+
+    pages.forEach(page => {
+      const parts = page.url.split("/").filter(Boolean); // splits url into parts and gets rid of unusable empty strings caused by leading or trailing slashes. thanks mr michael uloth https://michaeluloth.com/javascript-filter-boolean/
+      let currentLevel = tree; // tree not true please read properly future me 😭
+
+      parts.forEach((part, index) => { // looping over each part of the url like the part pages index = 0
+        if (!currentLevel[part]) {
+          currentLevel[part] = {
+            __data: null, // theres a real folder called data and good reckons this is how the cool kids avoid names conflicting even if it looks straight hideous and reminds me of python
+            __children: {}
+          };
+        }
+
+        if (index === parts.length - 1) { // checks if at the last part of the url and attaches the page object to __data so we can access url and title later.
+          currentLevel[part].__data = page;
+        }
+        currentLevel = currentLevel[part].__children;
+      });
+    });
+
+    return tree;
   });
+
   eleventyConfig.addTransform("htmlmin", function (content) {
     if ((this.page.outputPath || "").endsWith(".html")) {
       if (this.page.inputPath.includes("src/pages/misc/")) {

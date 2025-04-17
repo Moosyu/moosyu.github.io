@@ -27,32 +27,32 @@
             <path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/>
         </svg>
     </div>
-<div class="navbar">
-    <div class="nav-left">
-        <a href="/" {% if page.url == '/' %}class="active-tab"{% endif %}><span class="nav-emojis">🏠</span>Home</a>
-        <div class="dropdown">
-            <button class="dropbtn {% if '/pages/reviews/comics' in page.url or '/pages/reviews/games' in page.url or '/pages/reviews/tv' in page.url or '/pages/reviews/music' in page.url %}active-tab{% endif %}"><span class="nav-emojis">⭐</span>Reviews</button>
-            <div class="dropdown-content">
-                <a href="/pages/reviews/comics/"><span class="nav-emojis">🗯️</span>Comics &amp; Books</a>
-                <a href="/pages/reviews/music/"><span class="nav-emojis">🎵</span>Music</a>
-                <a href="/pages/reviews/tv/"><span class="nav-emojis">📺</span>TV &amp; Movies</a>
-                <a href="/pages/reviews/games/"><span class="nav-emojis">🎮</span>Games</a>
+    <div class="navbar">
+        <div class="nav-left">
+            <a href="/" {% if page.url == '/' %}class="active-tab"{% endif %}><span class="nav-emojis">🏠</span>Home</a>
+            <div class="dropdown">
+                <button class="dropbtn {% if '/pages/reviews/comics' in page.url or '/pages/reviews/games' in page.url or '/pages/reviews/tv' in page.url or '/pages/reviews/music' in page.url %}active-tab{% endif %}"><span class="nav-emojis">⭐</span>Reviews</button>
+                <div class="dropdown-content">
+                    <a href="/pages/reviews/comics/"><span class="nav-emojis">🗯️</span>Comics &amp; Books</a>
+                    <a href="/pages/reviews/music/"><span class="nav-emojis">🎵</span>Music</a>
+                    <a href="/pages/reviews/tv/"><span class="nav-emojis">📺</span>TV &amp; Movies</a>
+                    <a href="/pages/reviews/games/"><span class="nav-emojis">🎮</span>Games</a>
+                </div>
             </div>
-        </div>
-        <div class="dropdown">
-            <button class="dropbtn {% if '/pages/ramblings/2025' in page.url or '/pages/ramblings/2024' in page.url %}active-tab{% endif %}"><span class="nav-emojis">💬</span>Ramblings</button>
-            <div class="dropdown-content">
-                <a href="/pages/ramblings/2025"><span class="nav-emojis">🎉</span>2025</a>
-                <a href="/pages/ramblings/2024"><span class="nav-emojis">🕐</span>2024</a>
+            <div class="dropdown">
+                <button class="dropbtn {% if '/pages/ramblings/2025' in page.url or '/pages/ramblings/2024' in page.url %}active-tab{% endif %}"><span class="nav-emojis">💬</span>Ramblings</button>
+                <div class="dropdown-content">
+                    <a href="/pages/ramblings/2025"><span class="nav-emojis">🎉</span>2025</a>
+                    <a href="/pages/ramblings/2024"><span class="nav-emojis">🕐</span>2024</a>
+                </div>
             </div>
+            <a href="/pages/blog" {% if '/pages/blog' in page.url %}class="active-tab"{% endif %}><span class="nav-emojis">📝</span>Blog</a>
+            <a href="/pages/guides" {% if '/pages/guides' in page.url %}class="active-tab"{% endif %}><span class="nav-emojis">📙</span>Guides</a>
+            <a href="/pages/panels" {% if '/pages/panels' in page.url %}class="active-tab"{% endif %}><span class="nav-emojis">🎨</span>Panels</a>
+            <a href="/pages/bookmarks" {% if '/pages/bookmarks' in page.url %}class="active-tab"{% endif %}><span class="nav-emojis">🔖</span>Bookmarks</a>
+            <a href="/pages/links" {% if '/pages/links' in page.url %}class="active-tab"{% endif %}><span class="nav-emojis">🔗</span>Links</a>
         </div>
-        <a href="/pages/blog" {% if '/pages/blog' in page.url %}class="active-tab"{% endif %}><span class="nav-emojis">📝</span>Blog</a>
-        <a href="/pages/guides" {% if '/pages/guides' in page.url %}class="active-tab"{% endif %}><span class="nav-emojis">📙</span>Guides</a>
-        <a href="/pages/panels" {% if '/pages/panels' in page.url %}class="active-tab"{% endif %}><span class="nav-emojis">🎨</span>Panels</a>
-        <a href="/pages/bookmarks" {% if '/pages/bookmarks' in page.url %}class="active-tab"{% endif %}><span class="nav-emojis">🔖</span>Bookmarks</a>
-        <a href="/pages/links" {% if '/pages/links' in page.url %}class="active-tab"{% endif %}><span class="nav-emojis">🔗</span>Links</a>
     </div>
-</div>
 
     <div class="content-main">
         {% block content %}{% endblock %}
