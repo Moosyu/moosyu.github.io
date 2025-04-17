@@ -38,6 +38,7 @@ title: "please save me donald trump please"
     <a target="_blank"href="https://raccoonbutt.com"><img src="https://raccoonbutt.com/static/images/button.gif"></a>
     <a target="_blank"href="https://puffinthefish.neocities.org/"><img src="/assets/pfnbutton.webp"></a>
     <a target="_blank"href="https://melps.neocities.org/"><img src="/assets/melps.jpg"></a>
+      <a target="_blank"href="https://amapy.cc/"><img src="https://amapy.cc/i/88x31_anim.gif"></a>
   </div>
 
   # Webrings:

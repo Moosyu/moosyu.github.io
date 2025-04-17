@@ -8,29 +8,27 @@ pagination:
     addAllPagesToCollections: true
 ---
 
-<div class="background-div">
-    <input autocomplete="off" type="text" id="searchInput" placeholder="Search...">
-    <div id="searchResults"></div>
+<input autocomplete="off" type="text" id="searchInput" placeholder="Search...">
+<div id="searchResults"></div>
 
+<div class="background-div">
     <p>Just some panels I think look cool. I won't be reusing any panels that I've used in my reviews page nor will I be using more than five panels per comic no matter how hard it is. Obvious spoiler warning, I'll try to blur any spoilers but I'll probably miss a few so watch out I guess. By the way what I consider a spoiler is an important character change (physically or mentally), story beat or a death.</p>
     <div class="panels-images">
     {% for item in items %}
-        <h1 id="{{ loop.index0 }}">{{ item.name }}</h1>
-
-        {% for i in range(1,6) %}
-            {% set panelKey = "panel" ~ i %}
-            {% set spoilerKey = "spoiler" ~ i %}
-
-            {% if item[panelKey] %}
-                {% if item[spoilerKey] %}
-                    <img class="spoiler" src="{{ item[panelKey] }}" alt="{{ item.name }}" loading="lazy">
-                    <br>
-                {% else %}
-                    <img src="{{ item[panelKey] }}" alt="{{ item.name }}" loading="lazy">
-                    <br>
-                {% endif %}
-            {% endif %}
-        {% endfor %}
+      <h1 id="{{ loop.index0 }}">{{ item.name }}</h1>
+      {% for i in range(1,6) %}
+        {% set panelKey = "panel" ~ i %}
+        {% set spoilerKey = "spoiler" ~ i %}
+        {% if item[panelKey] %}
+          {% if item[spoilerKey] %}
+              <img class="spoiler" src="{{ item[panelKey] }}" alt="{{ item.name }}" loading="lazy">
+              <br>
+          {% else %}
+              <img src="{{ item[panelKey] }}" alt="{{ item.name }}" loading="lazy">
+              <br>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
     {% endfor %}
     </div>
 </div>
