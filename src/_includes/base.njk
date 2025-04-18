@@ -29,28 +29,28 @@
     </div>
     <div class="navbar">
         <div class="nav-left">
-            <a href="/" {% if page.url == '/' %}class="active-tab"{% endif %}><span class="nav-emojis">🏠</span>Home</a>
+            <a href="/" {% if page.url == '/' %}class="active-tab"{% endif %}><span class="nav-emojis">{{ emojis.home | safe }}</span>Home</a>
             <div class="dropdown">
-                <button class="dropbtn {% if '/pages/reviews/comics' in page.url or '/pages/reviews/games' in page.url or '/pages/reviews/tv' in page.url or '/pages/reviews/music' in page.url %}active-tab{% endif %}"><span class="nav-emojis">⭐</span>Reviews</button>
+                <button class="dropbtn {% if '/pages/reviews/comics' in page.url or '/pages/reviews/games' in page.url or '/pages/reviews/tv' in page.url or '/pages/reviews/music' in page.url %}active-tab{% endif %}"><span class="nav-emojis">{{ emojis.reviews | safe }}</span>Reviews</button>
                 <div class="dropdown-content">
-                    <a href="/pages/reviews/comics/"><span class="nav-emojis">🗯️</span>Comics &amp; Books</a>
-                    <a href="/pages/reviews/music/"><span class="nav-emojis">🎵</span>Music</a>
-                    <a href="/pages/reviews/tv/"><span class="nav-emojis">📺</span>TV &amp; Movies</a>
-                    <a href="/pages/reviews/games/"><span class="nav-emojis">🎮</span>Games</a>
+                    <a href="/pages/reviews/comics/">Comics &amp; Books</a>
+                    <a href="/pages/reviews/music/">Music</a>
+                    <a href="/pages/reviews/tv/">TV &amp; Movies</a>
+                    <a href="/pages/reviews/games/">Games</a>
                 </div>
             </div>
             <div class="dropdown">
-                <button class="dropbtn {% if '/pages/ramblings/2025' in page.url or '/pages/ramblings/2024' in page.url %}active-tab{% endif %}"><span class="nav-emojis">💬</span>Ramblings</button>
+                <button class="dropbtn {% if '/pages/ramblings/2025' in page.url or '/pages/ramblings/2024' in page.url %}active-tab{% endif %}"><span class="nav-emojis">{{ emojis.ramble | safe }}</span>Ramblings</button>
                 <div class="dropdown-content">
-                    <a href="/pages/ramblings/2025"><span class="nav-emojis">🎉</span>2025</a>
-                    <a href="/pages/ramblings/2024"><span class="nav-emojis">🕐</span>2024</a>
+                    <a href="/pages/ramblings/2025">2025</a>
+                    <a href="/pages/ramblings/2024">2024</a>
                 </div>
             </div>
-            <a href="/pages/blog" {% if '/pages/blog' in page.url %}class="active-tab"{% endif %}><span class="nav-emojis">📝</span>Blog</a>
-            <a href="/pages/guides" {% if '/pages/guides' in page.url %}class="active-tab"{% endif %}><span class="nav-emojis">📙</span>Guides</a>
-            <a href="/pages/panels" {% if '/pages/panels' in page.url %}class="active-tab"{% endif %}><span class="nav-emojis">🎨</span>Panels</a>
-            <a href="/pages/bookmarks" {% if '/pages/bookmarks' in page.url %}class="active-tab"{% endif %}><span class="nav-emojis">🔖</span>Bookmarks</a>
-            <a href="/pages/links" {% if '/pages/links' in page.url %}class="active-tab"{% endif %}><span class="nav-emojis">🔗</span>Links</a>
+            <a href="/pages/blog" {% if '/pages/blog' in page.url %}class="active-tab"{% endif %}><span class="nav-emojis">{{ emojis.blog | safe }}</span>Blog</a>
+            <a href="/pages/guides" {% if '/pages/guides' in page.url %}class="active-tab"{% endif %}><span class="nav-emojis">{{ emojis.guides | safe }}</span>Guides</a>
+            <a href="/pages/panels" {% if '/pages/panels' in page.url %}class="active-tab"{% endif %}><span class="nav-emojis">{{ emojis.panels | safe }}</span>Panels</a>
+            <a href="/pages/bookmarks" {% if '/pages/bookmarks' in page.url %}class="active-tab"{% endif %}><span class="nav-emojis">{{ emojis.bookmarks | safe }}</span>Bookmarks</a>
+            <a href="/pages/links" {% if '/pages/links' in page.url %}class="active-tab"{% endif %}><span class="nav-emojis">{{ emojis.links | safe }}</span>Links</a>
         </div>
     </div>
 

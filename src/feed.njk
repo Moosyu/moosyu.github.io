@@ -1,25 +1,28 @@
 ---
 permalink: feed.xml
 ---
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>moosyus awesome blog</title>
-    <link>https://moosyu.github.io</link>
-    <description>moosyu is online</description>
-    <atom:link href="https://moosyu.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-
-    {%- for post in collections.blog | reverse %}
-    {%- set absolutePostUrl %}{{ post.url | htmlBaseUrl(metadata.base) }}{% endset %}
-    <item>
-      <title>{{ post.data.title }}</title>
-      <description><![CDATA[{{ post.data.description }}]]></description>
-      <content type="html">{{ post.content | renderTransforms(post.data.page, metadata.base) }}</content>
-      <link>https://moosyu.com{{ absolutePostUrl }}</link>
-      <guid isPermaLink="true">https://moosyu.com{{ absolutePostUrl }}</guid>
-      <pubDate>{{ post.date }}</pubDate>
-    </item>
-    {%- endfor %}
-
-  </channel>
+<rss version="2.0">
+    <channel>
+        <title>moosyus awesome blog</title>
+        <link>https://moosyu.github.io</link>
+        <description>moosyu is online</description>
+        <item>
+            <title>post 2</title>
+            <description>Description of post 2</description>
+            <link>https://example.org/post-2</link>
+            <guid>post-2</guid>
+            <pubDate>Wed 17 Apr 2024, 04:38:00 -0400</pubDate>
+        </item>
+        {%- for post in collections.blog | reverse %}
+        {%- set absolutePostUrl %}{{ post.url | htmlBaseUrl(metadata.base) }}{% endset %}
+        <item>
+          <title>{{ post.data.title }}</title>
+          <description>{{ post.data.description }}</description>
+          <link>https://moosyu.com{{ absolutePostUrl }}</link>
+          <guid>https://moosyu.com{{ absolutePostUrl }}</guid>
+          <content type="html">{{ post.content | renderTransforms(post.data.page, metadata.base) }}</content>
+          <pubDate>{{ post.date }}</pubDate>
+        </item>
+        {%- endfor %}
+    </channel>
 </rss>
