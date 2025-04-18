@@ -6,13 +6,6 @@ permalink: feed.xml
         <title>moosyus awesome blog</title>
         <link>https://moosyu.github.io</link>
         <description>moosyu is online</description>
-        <item>
-            <title>post 2</title>
-            <description>Description of post 2</description>
-            <link>https://example.org/post-2</link>
-            <guid>post-2</guid>
-            <pubDate>Wed 17 Apr 2024, 04:38:00 -0400</pubDate>
-        </item>
         {%- for post in collections.blog | reverse %}
         {%- set absolutePostUrl %}{{ post.url | htmlBaseUrl(metadata.base) }}{% endset %}
         <item>
