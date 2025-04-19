@@ -4,8 +4,23 @@
   {{ title | default("rating distributions") }}
 {% endblock %}
 
+{% block head %}
+<noscript>
+  <style>
+    .graphs {
+      display: none;
+    }
+  </style>
+</noscript>
+{% endblock %}
+
 {% block content %}
-<div class="main-box background-div">
+<noscript>
+    <div style="background-color: #a50100; color: white; text-align: center; margin: 15px; padding: 2px;">
+        <p style="margin: 0;">⚠︎ Sorry! This page is only visable with Javascript enabled!</p>
+    </div>
+</noscript>
+<div class="main-box background-div graphs">
 {{ content | safe }}
 
 <select id="chartTypeDropdown" style="margin-bottom: 20px; padding: 5px; background-color: #1e2030; border: 1px solid #89b4fa; border-radius: 5px; color: white;">

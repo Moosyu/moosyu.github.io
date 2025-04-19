@@ -59,9 +59,10 @@ pagination:
     <thead>
         <tr>
         <th>
-            <a href="/pages/graphs/game_dist/">
-                Current average score: {{ (scoreTotal / counter).toFixed(2) }}/10
-            </a>
+            <a href="/pages/graphs/game_dist/" class="score-link">Current average score: {{ (scoreTotal / counter).toFixed(2) }}/10</a>
+            <noscript>
+                <span>Current average score: {{ (scoreTotal / counter).toFixed(2) }}/10</span>
+            </noscript>
         </th>
         </tr>
             <th>Name, Score</th>

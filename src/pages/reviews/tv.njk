@@ -58,10 +58,12 @@ pagination:
     </colgroup>
     <thead>
         <tr>
-        <th>
-        <a href="/pages/graphs/tv_dist/">
-            Current average score: {{ (scoreTotal / counter).toFixed(2) }}/10
-        </th>
+            <th>
+                <a href="/pages/graphs/tv_dist/" class="score-link">Current average score: {{ (scoreTotal / counter).toFixed(2) }}/10</a>
+                <noscript>
+                    <span>Current average score: {{ (scoreTotal / counter).toFixed(2) }}/10</span>
+                </noscript>
+            </th>
         </tr>
         <tr>
             <th>Type, Name, score</th>

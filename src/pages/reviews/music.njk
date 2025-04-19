@@ -60,9 +60,10 @@ pagination:
     <thead>
         <tr>
         <th>
-            <a href="/pages/graphs/music_dist/">
-                Current average score: {{ (scoreTotal / counter).toFixed(2) }}/10
-            </a>
+            <a href="/pages/graphs/music_dist/" class="score-link">Current average score: {{ (scoreTotal / counter).toFixed(2) }}/10</a>
+            <noscript>
+                <span>Current average score: {{ (scoreTotal / counter).toFixed(2) }}/10</span>
+            </noscript>
         </th>
         </tr>
             <th>Artist, Name, Score, Cover</th>

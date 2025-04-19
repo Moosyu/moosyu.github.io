@@ -4,6 +4,16 @@
   {{ title | default("moosyus crack emporium") }}
 {% endblock %}
 
+{% block head %}
+<noscript>
+  <style>
+    .score-link {
+      display: none;
+    }
+  </style>
+</noscript>
+{% endblock %}
+
 {% block content %}
 <div class="main-box">
 <input autocomplete="off" type="text" id="searchInput" placeholder="Search...">
