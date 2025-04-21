@@ -1,4 +1,4 @@
-const s_stylePath='/css/comment-widget.css';const s_formId='1FAIpQLScfGWAve7dy54tUkVxhd8apXNcAxallNWV4K1yKCUMqJcBadQ';const s_nameId='1345813367';const s_websiteId='1029334929';const s_textId='1058530777';const s_pageId='1179760552';const s_replyId='802495416';const s_sheetId='1gdeW-A8Nhi-StMJb75n1QHQOQYKUBVXhfKnQF1Eo1Ts';const s_adminId='1501188383';const s_IPId='1154755268';const s_timezone=+12;const s_daylightSavings=!0;const s_dstStart=['September','Sunday',29,2];const s_dstEnd=['April','Sunday',2,3];const s_commentsPerPage=10;const s_maxLength=500;const s_maxLengthName=16;const s_commentsOpen=!0;const s_collapsedReplies=!0;const s_longTimestamp=!1;let s_includeUrlParameters=!1;const s_fixRarebitIndexPage=!1;const s_wordFilterOn=!0;const s_filterReplacement='****';const s_filteredWords=['nigger','faggot','nigga','rape','niggers','niggas','nigur','niiger','niigr','chink','niger','fag','n i gg e r']
+const s_stylePath='/css/comment-widget-min.css';const s_formId='1FAIpQLScfGWAve7dy54tUkVxhd8apXNcAxallNWV4K1yKCUMqJcBadQ';const s_nameId='1345813367';const s_websiteId='1029334929';const s_textId='1058530777';const s_pageId='1179760552';const s_replyId='802495416';const s_sheetId='1gdeW-A8Nhi-StMJb75n1QHQOQYKUBVXhfKnQF1Eo1Ts';const s_adminId='1501188383';const s_IPId='1154755268';const s_timezone=+12;const s_daylightSavings=!0;const s_dstStart=['September','Sunday',29,2];const s_dstEnd=['April','Sunday',2,3];const s_commentsPerPage=10;const s_maxLength=500;const s_maxLengthName=16;const s_commentsOpen=!0;const s_collapsedReplies=!0;const s_longTimestamp=!1;let s_includeUrlParameters=!1;const s_fixRarebitIndexPage=!1;const s_wordFilterOn=!0;const s_filterReplacement='****';const s_filteredWords=['nigger','faggot','nigga','rape','niggers','niggas','nigur','niiger','niigr','chink','niger','fag','n i gg e r']
 const s_widgetTitle='leave a comment!';const s_submitButtonLabel='submit';const s_loadingText='loading comments... (or its broken)';const s_noCommentsText='no comments yet!';const s_closedCommentsText='comments are closed temporarily!';const s_websiteText='website';const s_replyButtonText='reply';const s_mentionButton='@mention';const s_replyingText='replying to';const s_expandRepliesText='show replies';const s_hideRepliesText='hide replies';const s_leftButtonText='<<';const s_rightButtonText='>>';let userIP=null;fetch('https://api.ipify.org?format=json').then(res=>res.json()).then(data=>{userIP=data.ip});if(s_fixRarebitIndexPage){s_includeUrlParameters=!0}
 const v_mainHtml=`
     <div id="c_inputDiv">
@@ -7,9 +7,7 @@ const v_mainHtml=`
     <div id="c_container">${s_loadingText}</div>
 `;const v_formHtml=`
     <h2 id="c_widgetTitle">${s_widgetTitle}</h2>
-
     <p style="padding-left: 5px;">Please try your best to be nice. Unless there is a <span class="admin-title">[REAL]</span> beside the name it's not me.</p>
-
     <div class="non-message">
         <div id="c_nameWrapper" class="c-inputWrapper">
             <input class="c-input c-nameInput" name="entry.${s_nameId}" id="entry.${s_nameId}" type="text" maxlength="${s_maxLengthName}" placeholder="Name" required>
@@ -19,7 +17,6 @@ const v_mainHtml=`
             <input class="c-input c-websiteInput" name="entry.${s_websiteId}" id="entry.${s_websiteId}" placeholder="Site URL (optional)" type="url" pattern="https://.*">
         </div>
     </div>
-
     <div class="emoji-panel">
         <img class="emoji-listed" src="/assets/emojis/smile.webp" alt=":smile:" onclick="addEmoji('emoji1')">
         <img class="emoji-listed" src="/assets/emojis/annoyed.webp" alt=":annoyed:" onclick="addEmoji('emoji2')">
@@ -33,9 +30,7 @@ const v_mainHtml=`
         <img class="emoji-listed" src="/assets/emojis/grahh.webp" alt=":grahh:" onclick="addEmoji('emoji10')">
         <img class="emoji-listed" src="/assets/emojis/sobbing.webp" alt=":sobbing:" onclick="addEmoji('emoji11')">
         <img class="emoji-listed" src="/assets/emojis/blunder.webp" alt=":blunder:" onclick="addEmoji('emoji12')">
-
     </div>
-
     <div id="c_textWrapper" class="c-inputWrapper">
         <textarea class="c-input c-textInput" name="entry.${s_textId}" id="entry.${s_textId}" maxlength="${s_maxLength}" placeholder="Enter a message" required>
         </textarea>
@@ -43,7 +38,6 @@ const v_mainHtml=`
         <input name="entry.${s_IPId}" id="entry.${s_IPId}" type="hidden">
         <span class="emoji" onclick="emojiWindow()">😊</span>
     </div>
-
     <input id="c_submitButton" name="c_submitButton" type="submit" value="${s_submitButtonLabel}" disabled>
 `;document.getElementById('c_widget').innerHTML=v_mainHtml;const c_form=document.getElementById('c_form');if(s_commentsOpen){c_form.innerHTML=v_formHtml}else{c_form.innerHTML=s_closedCommentsText}
 const c_container=document.getElementById('c_container');let v_pageNum=1;let v_amountOfPages=1;let v_commentMax=1;let v_commentMin=1;function getRandomInt(max){return Math.floor(Math.random()*max)}

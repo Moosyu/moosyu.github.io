@@ -91,9 +91,7 @@ const v_mainHtml = `
 `;
 const v_formHtml = `
     <h2 id="c_widgetTitle">${s_widgetTitle}</h2>
-
     <p style="padding-left: 5px;">Please try your best to be nice. Unless there is a <span class="admin-title">[REAL]</span> beside the name it's not me.</p>
-
     <div class="non-message">
         <div id="c_nameWrapper" class="c-inputWrapper">
             <input class="c-input c-nameInput" name="entry.${s_nameId}" id="entry.${s_nameId}" type="text" maxlength="${s_maxLengthName}" placeholder="Name" required>
@@ -103,7 +101,6 @@ const v_formHtml = `
             <input class="c-input c-websiteInput" name="entry.${s_websiteId}" id="entry.${s_websiteId}" placeholder="Site URL (optional)" type="url" pattern="https://.*">
         </div>
     </div>
-
     <div class="emoji-panel">
         <img class="emoji-listed" src="/assets/emojis/smile.webp" alt=":smile:" onclick="addEmoji('emoji1')">
         <img class="emoji-listed" src="/assets/emojis/annoyed.webp" alt=":annoyed:" onclick="addEmoji('emoji2')">
@@ -117,9 +114,7 @@ const v_formHtml = `
         <img class="emoji-listed" src="/assets/emojis/grahh.webp" alt=":grahh:" onclick="addEmoji('emoji10')">
         <img class="emoji-listed" src="/assets/emojis/sobbing.webp" alt=":sobbing:" onclick="addEmoji('emoji11')">
         <img class="emoji-listed" src="/assets/emojis/blunder.webp" alt=":blunder:" onclick="addEmoji('emoji12')">
-
     </div>
-
     <div id="c_textWrapper" class="c-inputWrapper">
         <textarea class="c-input c-textInput" name="entry.${s_textId}" id="entry.${s_textId}" maxlength="${s_maxLength}" placeholder="Enter a message" required>
         </textarea>
@@ -127,7 +122,6 @@ const v_formHtml = `
         <input name="entry.${s_IPId}" id="entry.${s_IPId}" type="hidden">
         <span class="emoji" onclick="emojiWindow()">😊</span>
     </div>
-
     <input id="c_submitButton" name="c_submitButton" type="submit" value="${s_submitButtonLabel}" disabled>
 `;
 
@@ -355,7 +349,7 @@ function displayComments(comments) {
             const textarea = document.getElementById('entry.' + s_textId);
             textarea.focus();
             openReply(this.closest('.c-comment').id);
-            
+
             textarea.value = "@[" + `${this.parentElement.id.split('|--|')[0]}` + "] ";
         });
     }
@@ -375,8 +369,6 @@ function displayComments(comments) {
             parentDiv.insertBefore(button, parentDiv.lastChild);
         }
     }
-
-
 
     // Handle pagination if there's more than one page
     if (v_amountOfPages > 1) {
@@ -491,7 +483,7 @@ function createComment(data) {
 // god bless stack overflow i was doing some (more) crazy shit with regex prior. was told this is faster than doing that document.createElement('div') shit and converting it to innertext, idk if thats true but ill trust.
 function sanitizeInput(input) {
     const escapeHTML = (str) =>
-        str.replace(/[&<>"']/g, (char) => 
+        str.replace(/[&<>"']/g, (char) =>
             ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char])
         );
     return escapeHTML(input).replace(/(^|\s)@\[([^\]]+?)\]/g, '$1<span class="highlight-mention">@$2</span>');
@@ -650,8 +642,6 @@ function expandReplies(id) {
         button.innerHTML = s_expandRepliesText + ` (${numReplies})`;
     }
 }
-
-
 
 function changePage(dir) {
     const leftButton = document.getElementById('c_leftButton');
