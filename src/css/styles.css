@@ -338,6 +338,7 @@ to {
 .panels-images img {
     max-width: 50%;
     margin: auto;
+    cursor: pointer;
 }
 
 .blog-list {

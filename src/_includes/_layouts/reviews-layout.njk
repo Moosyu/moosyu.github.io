@@ -61,15 +61,15 @@ document.addEventListener('keydown', function (event) {
 });
 
 {% if image_fullscreen %}
-    function toggleFullscreen(img) {
-      if (!img.classList.contains("spoiler")) {
-        if (!document.fullscreenElement) {
-            img.requestFullscreen();
-        } else {
-            document.exitFullscreen();
-        }
-      }
+function toggleFullscreen(img) {
+  if (!img.classList.contains("spoiler")) {
+    if (!document.fullscreenElement) {
+        img.requestFullscreen();
+    } else {
+        document.exitFullscreen();
     }
+  }
+}
 {% endif %}
 
 document.querySelectorAll(".spoiler").forEach(spoiler => {
