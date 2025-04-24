@@ -325,20 +325,42 @@ to {
     padding: 8px 10px;
 }
 
-.spoiler {
-    cursor: pointer;
-    filter: blur(15px);
-    overflow: hidden;
-}
-
 .panels-images {
     text-align: center;
 }
 
 .panels-images img {
     max-width: 50%;
-    margin: auto;
+    margin: 8px auto;
     cursor: pointer;
+    display: block;
+}
+
+.spoiler-container {
+    position: relative;
+}
+
+.spoiler-container img {
+    transition: ease 0.3s;
+}
+
+.spoiler {
+    cursor: pointer;
+    filter: blur(15px);
+}
+
+.spoiler-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    pointer-events: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px;
+    border-radius: 4px;
 }
 
 .blog-list {

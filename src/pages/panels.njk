@@ -4,7 +4,7 @@ title: "do you lurk as good as you love?"
 pagination:
     data: panels
     size: 5
-    alias: items
+    alias: panels
     addAllPagesToCollections: true
 ---
 
@@ -12,28 +12,29 @@ pagination:
 <div id="searchResults"></div>
 
 <div class="background-div">
-  <p>Just some panels I think look cool. I won't be reusing any panels that I've used in my reviews page nor will I be using more than five panels per comic no matter how hard it is. Obvious spoiler warning, I'll try to blur any spoilers but I'll probably miss a few so watch out I guess. By the way what I consider a spoiler is an important character change (physically or mentally), story beat or a death. Click images to fullscreen them!</p>
+  <p>Just some panels I think look cool. I won't be reusing any panels that I've used in my reviews page nor will I be using more than five panels per comic no matter how hard it is. Obvious spoiler warning, I'll try to blur any spoilers but I'll probably miss a few so watch out I guess. By the way what I consider a spoiler is an important character change (physically or mentally), story beat or a death. If you click unspoilered images they'll go fullscreen. Clicking spoilered images removes the blur.</p>
 </div>
-    <div class="panels-images">
-      {% for item in items %}
-        <div class="background-div">
-          <h1 id="{{ loop.index0 }}">{{ item.name }}</h1>
-            {% for i in range(1,6) %}
-              {% set panelKey = "panel" ~ i %}
-              {% set spoilerKey = "spoiler" ~ i %}
-              {% if item[panelKey] %}
-                {% if item[spoilerKey] %}
-                    <img class="spoiler" src="{{ item[panelKey] }}" alt="{{ item.name }}" onclick="toggleFullscreen(this)" loading="lazy">
-                    <br>
-                {% else %}
-                    <img src="{{ item[panelKey] }}" alt="{{ item.name }}" onclick="toggleFullscreen(this)" loading="lazy">
-                    <br>
-                {% endif %}
-              {% endif %}
-            {% endfor %}
-          </div>
-      {% endfor %}
-    </div>
+
+<div class="panels-images">
+  {% for panel in panels %}
+    <div class="background-div">
+      <h1 id="{{ loop.index0 }}">{{ panel.name }}</h1>
+        {% for i in range(1,6) %}
+          {% set panelKey = "panel" ~ i %}
+          {% set spoilerKey = "spoiler" ~ i %}
+          {% if panel[panelKey] %}
+            {% if panel[spoilerKey] %}
+              <div class="spoiler-container">
+                  <img class="spoiler" src="{{ panel[panelKey] }}" alt="{{ panel.name }}" loading="lazy" onclick="toggleFullscreen(this)">
+                  <span class="spoiler-text">Spoiler</span>
+              </div>
+            {% else %}
+              <img class="non-spoiler" src="{{ panel[panelKey] }}" alt="{{ panel.name }}" onclick="toggleFullscreen(this)" loading="lazy">
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      </div>
+  {% endfor %}
 </div>
 
 <div class="pagination-container">
@@ -66,6 +67,7 @@ pagination:
 document.querySelectorAll(".spoiler").forEach(spoiler => {
     spoiler.addEventListener("click", () => {
         spoiler.classList.remove("spoiler");
+        spoiler.closest(".spoiler-container").querySelector(".spoiler-text").style.display = "none";
     });
 });
 
