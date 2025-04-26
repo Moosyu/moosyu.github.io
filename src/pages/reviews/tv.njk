@@ -1,6 +1,4 @@
 ---
-title: "snakes with human traits"
-jsonLocation: "/_data/tv.json"
 pagination:
     data: tv
     size: 100
@@ -8,89 +6,28 @@ pagination:
     addAllPagesToCollections: true
 ---
 
-{% set counter = 0 %}
-{% set scoreTotal = 0 %}
-{% for score in tv %}
-    {% set counter = counter + 1 %}
-    {% set scoreTotal = scoreTotal + score.score %}
-{% endfor %}
+{% extends "base.njk" %}
 
+{% block head %}
+    {% if pagination.pageNumber > 0 %}
+        <meta http-equiv="refresh" content="0; url=/pages/media/tv/{{ pagination.pageNumber }}/"/>
+    {% else %}
+        <meta http-equiv="refresh" content="0; url=/pages/media/tv/"/>
+    {% endif %}
+{% endblock %}
+
+{% block content %}
 <div class="background-div">
-    <h2 style="text-align: center;">Favourites:</h2>
-    <div class="favourites-container">
-        <div class="favourites-item">
-            <a target="_blank" href="https://tv.apple.com/nz/movie/pulp-fiction">
-                <img src="/assets/pulpf.jpg">
-            </a>
-            <p>Pulp Fiction</p>
-        </div>
-        <div class="favourites-item">
-            <a target="_blank" href="https://www.primevideo.com/detail/0PUNMGZEWOMYFKR1XIGOLTL2YM">
-                <img src="/assets/interstellar.jpg">
-            </a>
-            <p>Interstellar</p>
-        </div>
-        <div class="favourites-item">
-            <a target="_blank" href="https://www.imdb.com/title/tt1305826/">
-                <img src="/assets/adventuret.jpg">
-            </a>
-            <p>Adventure Time</p>
-        </div>
-        <div class="favourites-item">
-            <a target="_blank" href="https://www.netflix.com/nz/title/81054853">
-                <img src="/assets/cyberpunk.jpg">
-            </a>
-            <p>Cyberpunk Edgerunners</p>
-        </div>
-        <div class="favourites-item">
-            <a target="_blank" href="https://www.imdb.com/title/tt2244495/">
-                <img src="/assets/ericandre.jpg">
-            </a>
-            <p>The Eric Andre Show</p>
-        </div>
+    <div style="display:flex; justify-content:center; gap:8px; margin-bottom: 10px;">
+        {{ emojis.cone | safe }} <span style="font-size:large;">Uh oh! This is an old page! If you aren't being redirected right now click here: <a href="{% if pagination.pageNumber > 0 %}/pages/media/tv/{{ pagination.pageNumber }}{% else %}/pages/media/tv/{% endif %}">Click here</a></span>
     </div>
 </div>
-
-<table class="review_table">
-    <colgroup>
-        <col style="width: 25%;">
-        <col style="width: 70%;">
-    </colgroup>
-    <thead>
-        <tr>
-            <th>
-                <a href="/pages/graphs/tv_dist/" class="score-link">Current average score: {{ (scoreTotal / counter).toFixed(2) }}/10</a>
-                <noscript>
-                    <span>Current average score: {{ (scoreTotal / counter).toFixed(2) }}/10</span>
-                </noscript>
-            </th>
-        </tr>
-        <tr>
-            <th>Type, Name, score</th>
-            <th>Comment</th>
-        </tr>
-    </thead>
-    <tbody>
-        {% for item in items %}
-        <tr id="{{ loop.index0 }}">
-            <td style="text-align: center;">
-                [{{ item.type }}]
-                <br>
-                ({{ item.name }})
-                <br>
-                <span style="{% if item.score < 1 %} color: #5e5e5e;
-                      {% elif item.score < 3 %} color: #ff4c4c;
-                      {% elif item.score < 5 %} color: #ff8888;
-                      {% elif item.score < 7 %} color: #f0e68c;
-                      {% elif item.score < 8 %} color: #7bc96f;
-                      {% elif item.score < 10 %} color: #00cc66;
-                      {% else %} color: #9d63d0;
-                      {% endif %}">
-                {{ item.score }}/10
-                </span>
-            </td>
-            <td>{{ item.description | replace('\n', '<br><br>') | safe }}</td>
-        </tr>
-        {% endfor %}
-    </tbody>
-</table>
+<script>
+    const currentPage = {{ pagination.pageNumber }};
+    if (currentPage > 0) {
+        window.location.href = "/pages/media/tv/" + (currentPage);
+    } else {
+        window.location.href = "/pages/media/tv/";
+    }
+</script>
+{% endblock %}

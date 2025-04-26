@@ -31,12 +31,12 @@
         <div class="nav-left">
             <a href="/" {% if page.url == '/' %}class="active-tab"{% endif %}><span class="nav-emojis">{{ emojis.home | safe }}</span>Home</a>
             <div class="dropdown">
-                <button class="dropbtn {% if '/pages/reviews/comics' in page.url or '/pages/reviews/games' in page.url or '/pages/reviews/tv' in page.url or '/pages/reviews/music' in page.url %}active-tab{% endif %}"><span class="nav-emojis">{{ emojis.reviews | safe }}</span>Reviews</button>
+                <button class="dropbtn {% if '/pages/media/comics' in page.url or '/pages/media/games' in page.url or '/pages/media/tv' in page.url or '/pages/media/music' in page.url %}active-tab{% endif %}"><span class="nav-emojis">{{ emojis.reviews | safe }}</span>Media</button>
                 <div class="dropdown-content">
-                    <a href="/pages/reviews/comics/">Comics &amp; Books</a>
-                    <a href="/pages/reviews/music/">Music</a>
-                    <a href="/pages/reviews/tv/">TV &amp; Movies</a>
-                    <a href="/pages/reviews/games/">Games</a>
+                    <a href="/pages/media/comics/">Comics &amp; Books</a>
+                    <a href="/pages/media/music/">Music</a>
+                    <a href="/pages/media/tv/">TV &amp; Movies</a>
+                    <a href="/pages/media/games/">Games</a>
                 </div>
             </div>
             <div class="dropdown">
