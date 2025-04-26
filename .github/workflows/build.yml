@@ -30,7 +30,15 @@ jobs:
       - name: Build the site with Eleventy
         run: npx @11ty/eleventy
 
-      - name: upload static site content
+      - name: Create a ZIP archive of the site
+        run: |
+          cd _site
+          zip -r ../site.zip .
+
+      - name: Copy ZIP into _site for download
+        run: cp site.zip _site/site.zip
+
+      - name: Upload static site content
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./_site
@@ -43,13 +51,8 @@ jobs:
           nekoweb-folder: './_site'
           directory: './_site'
 
-  deploy_github_pages:
-    runs-on: ubuntu-latest
-    needs: build
-    environment:
-      name: github-pages
-      url: https://moosyu.github.io/
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Upload ZIP as Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-zip
+          path: site.zip
