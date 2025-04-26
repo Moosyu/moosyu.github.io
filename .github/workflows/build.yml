@@ -37,6 +37,18 @@ jobs:
       - name: Copy ZIP into _site for download
         run: cp site.zip _site/site.zip
 
+      - name: List contents of _site
+        run: ls -lh _site
+
+      - name: Check for site.zip
+        run: |
+          if [ ! -f "_site/site.zip" ]; then
+            echo "Not found"
+            exit 1
+          else
+            echo "Found."
+          fi
+
       - name: Upload static site content
         uses: actions/upload-pages-artifact@v3
         with:
