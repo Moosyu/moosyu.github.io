@@ -1,4 +1,3 @@
 {
-    "layout": "_layouts/dist-layout.njk",
-    "header_img": "/assets/ratingdistributions.avif"
+    "layout": "_layouts/dist-layout.njk"
 }
