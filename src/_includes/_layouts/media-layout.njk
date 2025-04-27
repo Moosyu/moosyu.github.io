@@ -103,10 +103,10 @@ fetch('{{ jsonLocation }}')
         const pageLink = pageNumber === 0 ? `/pages/media/${pageName}/#${itemAnchor}` : `/pages/media/${pageName}/${pageNumber}#${itemAnchor}`;
 
         return `
-          <div>
+          <div class="background-div">
             <h1><a href="${pageLink}">${result.item.name}</a></h1>
             ${pageName == "favourites" ? "" : `<p>score: ${result.item.score}/10</p>`}
-            <p>${result.item.description}</p>
+            <p>${result.item.description.replace(/\n/g, '<br><br>')}</p>
           </div>
         `;
       }).join('');

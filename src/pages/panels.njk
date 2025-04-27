@@ -123,7 +123,7 @@ fetch('/_data/panels.json')
         const pageLink = pageNumber === 0 ? `/pages/${pageName}/#${itemAnchor}` : `/pages/${pageName}/${pageNumber}#${itemAnchor}`;
 
         return `
-          <div>
+          <div class="background-div">
             <h1><a href="${pageLink}">${result.item.name}</a></h1>
           </div>
         `;
