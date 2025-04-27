@@ -100,7 +100,7 @@ fetch('{{ jsonLocation }}')
         // dividing it by 100 then rounding down to find page number
         const pageNumber = Math.floor(itemIndex / 100);
         const itemAnchor = (itemIndex % 100);
-        const pageLink = pageNumber === 0 ? `/pages/reviews/${pageName}/#${itemAnchor}` : `/pages/reviews/${pageName}/${pageNumber}#${itemAnchor}`;
+        const pageLink = pageNumber === 0 ? `/pages/media/${pageName}/#${itemAnchor}` : `/pages/media/${pageName}/${pageNumber}#${itemAnchor}`;
 
         return `
           <div>
