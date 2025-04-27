@@ -1,6 +1,5 @@
 ---
 title: "do you lurk as good as you love?"
-"layout": "layout.njk"
 pagination:
     data: panels
     size: 5
@@ -8,11 +7,46 @@ pagination:
     addAllPagesToCollections: true
 ---
 
+{% extends "base.njk" %}
+
+{% block headStyle %}
+  .panels-images {
+    text-align: center;
+  }
+
+  .panels-images img {
+    margin: 8px auto;
+    cursor: pointer;
+    display: block;
+  }
+{% endblock %}
+
+{% block head %}
+<noscript>
+  <style>
+    .panels-images img {
+      cursor: default;
+    }
+    .spoiler {
+      filter: blur(0);
+    }
+    .spoiler-text {
+      display: none;
+    }
+    .JS-desc {
+      display: none;
+    }
+  </style>
+</noscript>
+{% endblock %}
+
+
+{% block content %}
 <input autocomplete="off" type="text" id="searchInput" placeholder="Search...">
 <div id="searchResults"></div>
 
 <div class="background-div">
-  <p>Just some panels I think look cool. I won't be reusing any panels that I've used in my reviews page nor will I be using more than five panels per comic no matter how hard it is. Obvious spoiler warning, I'll try to blur any spoilers but I'll probably miss a few so watch out I guess. By the way what I consider a spoiler is an important character change (physically or mentally), story beat or a death. If you click unspoilered images they'll go fullscreen. Clicking spoilered images removes the blur.</p>
+  <p>Just some panels I think look cool. I won't be reusing any panels that I've used in my reviews page nor will I be using more than five panels per comic no matter how hard it is. Obvious spoiler warning<span class="JS-desc">, I'll try to blur any spoilers but I'll probably miss a few so watch out I guess</span>. By the way what I consider a spoiler is an important character change (physically or mentally) or story beat. <span class="JS-desc">If you click unspoilered images they'll go fullscreen. Clicking spoilered images removes the blur.</span></p>
 </div>
 
 <div class="panels-images">
@@ -135,3 +169,4 @@ fetch('/_data/panels.json')
     to solve this issue (technology will probably be so good by then that it wont matter anyways). life hack.*/
 </script>
 </div>
+{% endblock %}

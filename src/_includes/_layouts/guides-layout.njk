@@ -5,10 +5,10 @@
 {% endblock %}
 
 {% block content %}
-<div class="main-box background-div">
-{% if date %}
-Date created: {{ page.date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }).replace('.', '') }}
-{% endif %}
+  <div class="background-div">
+  {% if date %}
+      Date created: {{ page.date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }).replace('.', '') }}
+  {% endif %}
   {{ content | safe }}
-</div>
+  </div>
 {% endblock %}

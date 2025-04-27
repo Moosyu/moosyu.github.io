@@ -4,7 +4,7 @@
         const data = await response.json();
         const track = data.recenttracks.track[0];
 
-        document.getElementById("listening").innerHTML = `
+        document.getElementById("lastheard-container").innerHTML = `
         <div id="trackInfo">
             <span>Last heard: <a target="_blank" href="${track.url}">${track.name}</a> by ${track.artist['#text']}</span>
         </div>`;

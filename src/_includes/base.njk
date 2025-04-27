@@ -13,8 +13,15 @@
     {% set css %} {% include "../css/styles.css" %} {% endset %}
     {% set prismCss %} {% include "../css/prismTheme.css" %} {% endset %}
     <style>
+        {% block headStyle %}{% endblock %}
         {{ css | cssmin | safe }}
         {{ prismCss | cssmin | safe }}
+        .active-tab {
+            background: linear-gradient(0deg,
+                #2ca2d1 0%,
+                #00000000 30%
+            ) !important;
+        }
     </style>
     {% block head %}{% endblock %}
 </head>
@@ -28,34 +35,30 @@
         </svg>
     </div>
     <div class="navbar">
-        <div class="nav-left">
-            <a href="/" {% if page.url == '/' %}class="active-tab"{% endif %}><span class="nav-emojis">{{ emojis.home | safe }}</span>Home</a>
-            <div class="dropdown">
-                <button class="dropbtn {% if '/pages/media/comics' in page.url or '/pages/media/games' in page.url or '/pages/media/tv' in page.url or '/pages/media/music' in page.url %}active-tab{% endif %}"><span class="nav-emojis">{{ emojis.reviews | safe }}</span>Media</button>
-                <div class="dropdown-content">
-                    <a href="/pages/media/comics/">Comics &amp; Books</a>
-                    <a href="/pages/media/music/">Music</a>
-                    <a href="/pages/media/tv/">TV &amp; Movies</a>
-                    <a href="/pages/media/games/">Games</a>
-                </div>
+        <a href="/" {% if page.url == '/' %}class="active-tab"{% endif %}><span class="nav-emojis">{{ emojis.home | safe }}</span>Home</a>
+        <div class="dropdown">
+            <button class="dropbtn {% if '/pages/media/comics' in page.url or '/pages/media/games' in page.url or '/pages/media/tv' in page.url or '/pages/media/music' in page.url %}active-tab{% endif %}"><span class="nav-emojis">{{ emojis.reviews | safe }}</span>Media</button>
+            <div class="dropdown-content">
+                <a href="/pages/media/comics/">Comics &amp; Books</a>
+                <a href="/pages/media/music/">Music</a>
+                <a href="/pages/media/tv/">TV &amp; Movies</a>
+                <a href="/pages/media/games/">Games</a>
             </div>
-            <div class="dropdown">
-                <button class="dropbtn {% if '/pages/ramblings/2025' in page.url or '/pages/ramblings/2024' in page.url %}active-tab{% endif %}"><span class="nav-emojis">{{ emojis.ramble | safe }}</span>Ramblings</button>
-                <div class="dropdown-content">
-                    <a href="/pages/ramblings/2025">2025</a>
-                    <a href="/pages/ramblings/2024">2024</a>
-                </div>
-            </div>
-            <a href="/pages/blog" {% if '/pages/blog' in page.url %}class="active-tab"{% endif %}><span class="nav-emojis">{{ emojis.blog | safe }}</span>Blog</a>
-            <a href="/pages/guides" {% if '/pages/guides' in page.url %}class="active-tab"{% endif %}><span class="nav-emojis">{{ emojis.guides | safe }}</span>Guides</a>
-            <a href="/pages/panels" {% if '/pages/panels' in page.url %}class="active-tab"{% endif %}><span class="nav-emojis">{{ emojis.panels | safe }}</span>Panels</a>
-            <a href="/pages/bookmarks" {% if '/pages/bookmarks' in page.url %}class="active-tab"{% endif %}><span class="nav-emojis">{{ emojis.bookmarks | safe }}</span>Bookmarks</a>
-            <a href="/pages/links" {% if '/pages/links' in page.url %}class="active-tab"{% endif %}><span class="nav-emojis">{{ emojis.links | safe }}</span>Links</a>
         </div>
+        <div class="dropdown">
+            <button class="dropbtn {% if '/pages/ramblings/2025' in page.url or '/pages/ramblings/2024' in page.url %}active-tab{% endif %}"><span class="nav-emojis">{{ emojis.ramble | safe }}</span>Ramblings</button>
+            <div class="dropdown-content">
+                <a href="/pages/ramblings/2025">2025</a>
+                <a href="/pages/ramblings/2024">2024</a>
+            </div>
+        </div>
+        <a href="/pages/blog" {% if '/pages/blog' in page.url %}class="active-tab"{% endif %}><span class="nav-emojis">{{ emojis.blog | safe }}</span>Blog</a>
+        <a href="/pages/guides" {% if '/pages/guides' in page.url %}class="active-tab"{% endif %}><span class="nav-emojis">{{ emojis.guides | safe }}</span>Guides</a>
+        <a href="/pages/panels" {% if '/pages/panels' in page.url %}class="active-tab"{% endif %}><span class="nav-emojis">{{ emojis.panels | safe }}</span>Panels</a>
+        <a href="/pages/bookmarks" {% if '/pages/bookmarks' in page.url %}class="active-tab"{% endif %}><span class="nav-emojis">{{ emojis.bookmarks | safe }}</span>Bookmarks</a>
+        <a href="/pages/links" {% if '/pages/links' in page.url %}class="active-tab"{% endif %}><span class="nav-emojis">{{ emojis.links | safe }}</span>Links</a>
     </div>
 
-    <div class="content-main">
-        {% block content %}{% endblock %}
-    </div>
+    {% block content %}{% endblock %}
 </body>
 </html>

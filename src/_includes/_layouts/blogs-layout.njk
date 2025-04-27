@@ -4,18 +4,16 @@
   {{ title | default("moosyus crack emporium") }}
 {% endblock %}
 
-{% block head %}
-<style>
+{% block headStyle %}
     th, td {
     padding: 10px;
     border-bottom: 1px solid #ffffff;
     text-align: left;
     }
-</style>
 {% endblock %}
 
 {% block content %}
-<div class="main-box background-div">
+<div class="background-div">
     Date created: {{ page.date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }).replace('.', '') }}
     {% for tag in tags %}
     {% if tag != "blog" %}

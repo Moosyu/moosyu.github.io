@@ -20,7 +20,7 @@ pagination:
 <div class="background-div">
     <div style="display:flex; justify-content:center; gap:8px; margin-bottom: 10px;">
         {{ emojis.cone | safe }} <span style="font-size:large;">Uh oh! This is an old page! If you aren't being redirected right now click here: <a href="{% if pagination.pageNumber > 0 %}/pages/media/comics/{{ pagination.pageNumber }}{% else %}/pages/media/comics/{% endif %}">Click here</a></span>
-    </div>    
+    </div>
 </div>
 <script>
     const currentPage = {{ pagination.pageNumber }};

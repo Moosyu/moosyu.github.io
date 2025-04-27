@@ -1,12 +1,58 @@
 ---
-layout: "layout.njk"
 title: "i invented swag"
 ---
 
+{% extends "base.njk" %}
+
+{% block headStyle %}
+    .bookmark-item-link {
+        display: block;
+        height: 100%;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .bookmark-item {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        border: 1px dotted white;
+        padding: 20px;
+        border-radius: 4px;
+        transition: background-color 0.1s ease;
+        background-color: #1f1e1e;
+        box-sizing: border-box;
+    }
+
+    .bookmark-item:hover {
+        background-color: #111214;
+        color: #FFF;
+    }
+
+    .version-subtitle {
+        text-align: center;
+        color: #999;
+        margin-bottom: 10px;
+    }
+
+    .bookmark-item h2 {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        justify-content: center;
+        color: #e23a45;
+    }
+
+    .bookmark-item:hover h2 {
+        color: #36a3cf;
+        text-decoration: underline;
+    }
+{% endblock %}
+
+{% block content %}
 <div class="background-div">
-
     <p>Big unorganised collection of software, mods, websites and anything else that I'd have saved in my bookmarks bar.</p>
-
     <div class="bookmarks-container">
         <a href="https://www.svgrepo.com/" target="_blank" class="bookmark-item-link">
             <div class="bookmark-item">
@@ -630,3 +676,4 @@ title: "i invented swag"
         </a>
     </div>
 </div>
+{% endblock %}

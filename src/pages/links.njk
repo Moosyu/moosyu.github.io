@@ -4,21 +4,46 @@ title: "please save me donald trump please"
 
 {% extends "base.njk" %}
 
-{% block head %}
-    <style>
-      ul li::before {
-      content: "•";
-      margin-right: 6px;
-      }
+{% block headStyle %}
+  ul li::before {
+  content: "•";
+  margin-right: 6px;
+  }
 
-      ul ul li::before {
-      content: "➤";
-      }
+  ul ul li::before {
+  content: "➤";
+  }
 
-      ul ul ul li::before {
-      content: "↳";
-      }
-    </style>
+  ul ul ul li::before {
+  content: "↳";
+  }
+
+  .buttons-links img {
+    width: 88px;
+    height: 31px;
+  }
+
+  #nekowebring table {
+    background: linear-gradient(#363a4f, #24273a, #1e2030);
+    border: #181926 2px solid;
+    padding: 7px;
+    image-rendering: pixelated;
+  }
+
+  #nekowebring .webring-info {
+      text-align: center;
+  }
+
+  #nekowebring .webring-prev,
+  #nekowebring .webring-next {
+      text-align: center;
+      vertical-align: middle;
+  }
+
+  #nekowebring .webring-links {
+      font-size: small;
+      text-align: center;
+  }
 {% endblock %}
 
 {% block content %}

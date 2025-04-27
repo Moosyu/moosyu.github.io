@@ -92,7 +92,10 @@ pagination:
 
             {% if item.image %}
                 {% if item.spoiler %}
-                    <img class="spoiler" src="{{ item.image }}" alt="{{ item.name }}" onclick="toggleFullscreen(this)" loading="lazy">
+                    <div class="spoiler-container">
+                        <img class="spoiler" src="{{ item.image }}" alt="{{ item.name }}" onclick="toggleFullscreen(this)" loading="lazy">
+                        <span class="spoiler-text">Spoiler</span>
+                    </div>
                 {% else %}
                     <img src="{{ item.image }}" alt="{{ item.name }}" onclick="toggleFullscreen(this)" loading="lazy">
                 {% endif %}
