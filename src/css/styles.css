@@ -8,6 +8,11 @@ body {
     color: #FFF;
 }
 
+@font-face {
+    font-family: YellowBalloon;
+    src: url("/fonts/Yellow_Balloon.ttf");
+}
+
 a {
     color: #e23a45;
 }
@@ -17,7 +22,7 @@ button:hover, a:hover {
     color: #36a3cf;
 }
 
-.background-div {
+.background-div, .search-items-container {
     background-color: #111214;
     padding: 10px;
     margin: 10px;
@@ -29,17 +34,15 @@ button:hover, a:hover {
     max-width: 100%;
 }
 
-.hamburger svg {
-    padding: 10px;
-    transition: transform 0.4s ease;
-}
+.search-items-container h1 {
+    font-family: YellowBalloon;
+    filter: drop-shadow(1px 1px 0 #FFF) drop-shadow(-1px 1px 0 #FFF) drop-shadow(0 -1px 0 #FFF) drop-shadow(1px 0 #FFF);}
 
-.hamburger.rotated svg {
-    transform: rotate(90deg);
+.search-items-container h1 a {
+    text-decoration: none;
 }
 
 .navbar {
-    display: none;
     background: linear-gradient(180deg,
         #313436e6 0%,
         #2e3133e6 30%,
@@ -51,12 +54,49 @@ button:hover, a:hover {
     border-radius: 4px;
     flex-direction: column;
     max-width: 100%;
+    width: 52px;
+    overflow: hidden;
+    transition: width 0.2s ease 0.2s;
 }
 
-.navbar.active {
+.navbar a, .dropdown .dropbtn {
+    font-size: 24px;
+    padding: 14px;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.navbar-expander {
+    font-size: 24px;
+    padding: 14px;
+    display: flex;
+}
+
+.navbar-content {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease, opacity 0.2s ease;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+}
+
+.navbar.expanded {
+    width: auto;
+    transition: width 0.2s ease;
+}
+
+.navbar.expanded .navbar-content {
+    max-height: 550px;
+    opacity: 1;
+    transition: max-height 0.2s ease 0.2s, opacity 0.2s ease 0.2s;
 }
 
 .navbar a, button {
@@ -73,19 +113,6 @@ button:hover, a:hover {
 .dropbtn {
     background: none;
     width: 100%;
-}
-
-.navbar a, .dropdown .dropbtn {
-    font-size: 24px;
-    padding: 14px;
-    border: none;
-    outline: none;
-    font-family: inherit;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    box-sizing: border-box;
-    text-decoration: none;
 }
 
 .dropbtn:hover, .navbar a:hover {
@@ -287,14 +314,27 @@ button:hover, a:hover {
     margin-right: 5px;
 }
 
-@media screen and (min-width: 950px) {
+@media screen and (min-width: 1000px) {
     .navbar {
         flex-direction: row;
         display: flex;
+        width: auto;
+        overflow: visible;
     }
 
-    .hamburger {
+    .navbar-expander {
         display: none;
+    }
+
+    .navbar-content {
+        max-height: 100%;
+        opacity: 1;
+        flex-direction: row;
+        overflow: visible;
+    }
+
+    .dropdown .dropbtn, .navbar a {
+        white-space: normal;
     }
 
     .favourites-container {
@@ -333,9 +373,6 @@ button:hover, a:hover {
 }
 
 @media (min-width: 949px) and (max-width: 1149px) {
-    .nav-emojis {
-        display: none;
-    }
     .bookmarks-container {
         grid-template-columns: repeat(3, 1fr);
     }

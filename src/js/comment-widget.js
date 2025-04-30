@@ -116,8 +116,7 @@ const v_formHtml = `
         <img class="emoji-listed" src="/assets/emojis/blunder.webp" alt=":blunder:" onclick="addEmoji('emoji12')">
     </div>
     <div id="c_textWrapper" class="c-inputWrapper">
-        <textarea class="c-input c-textInput" name="entry.${s_textId}" id="entry.${s_textId}" maxlength="${s_maxLength}" placeholder="Enter a message" required>
-        </textarea>
+        <textarea class="c-input c-textInput" name="entry.${s_textId}" id="entry.${s_textId}" maxlength="${s_maxLength}" placeholder="Enter a message" required></textarea>
         <input name="entry.${s_adminId}" id="entry.${s_adminId}" type="hidden" readonly value="false">
         <input name="entry.${s_IPId}" id="entry.${s_IPId}" type="hidden">
         <span class="emoji" onclick="emojiWindow()">😊</span>
