@@ -54,9 +54,7 @@ button:hover, a:hover {
     border-radius: 4px;
     flex-direction: column;
     max-width: 100%;
-    width: 52px;
     overflow: hidden;
-    transition: width 0.2s ease 0.2s;
 }
 
 .navbar a, .dropdown .dropbtn {
@@ -77,6 +75,11 @@ button:hover, a:hover {
     font-size: 24px;
     padding: 14px;
     display: flex;
+    justify-content: center;
+}
+
+.navbar-expander svg:hover {
+    cursor: pointer;
 }
 
 .navbar-content {
@@ -88,19 +91,21 @@ button:hover, a:hover {
     flex-direction: column;
 }
 
-.navbar.expanded {
-    width: auto;
-    transition: width 0.2s ease;
-}
-
 .navbar.expanded .navbar-content {
     max-height: 550px;
     opacity: 1;
-    transition: max-height 0.2s ease 0.2s, opacity 0.2s ease 0.2s;
 }
 
 .navbar a, button {
     color: #e23a45;
+}
+
+.navbar-expander svg {
+    transition: transform 0.2s ease;
+}
+
+.navbar.expanded .navbar-expander svg {
+    transform: rotate(180deg);
 }
 
 .dropdown {
