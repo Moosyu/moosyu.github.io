@@ -28,6 +28,7 @@ button:hover, a:hover {
     margin: 10px;
     border: dotted white 1px;
     border-radius: 4px;
+    box-shadow: inset 0 55px 25px -25px #292b2d;
 }
 
 .background-div img, .background-div video, .review_table img {
@@ -44,10 +45,10 @@ button:hover, a:hover {
 
 .navbar {
     background: linear-gradient(180deg,
-        #313436e6 0%,
-        #2e3133e6 30%,
-        #1d242ae6 50%,
-        #0d1013e6 100%
+        #313436 0%,
+        #2e3133 30%,
+        #1d242a 50%,
+        #0d1013 100%
     );
     border: dotted white 1px;
     margin: 10px;
@@ -86,7 +87,6 @@ button:hover, a:hover {
     max-height: 0;
     opacity: 0;
     overflow: hidden;
-    transition: max-height 0.2s linear, opacity 0.2s linear;
     display: flex;
     flex-direction: column;
 }
@@ -141,7 +141,6 @@ button:hover, a:hover {
     max-height: 0;
     overflow: hidden;
     opacity: 0;
-    transition: max-height 0.4s linear, opacity 0.2s linear;
 }
 
 .dropdown:hover .dropdown-content {
@@ -366,14 +365,21 @@ button:hover, a:hover {
         border-width: 0px 1px 1px 1px;
         min-width: 100%;
     }
+
     .updates-container {
         flex-direction: row;
     }
+
     #commits-container, #lastheard-container {
         width: 100%;
     }
+
     .bookmarks-container {
         grid-template-columns: repeat(4, 1fr);
+    }
+
+    .dropdown-content {
+        transition: max-height 0.4s linear;
     }
 }
 
