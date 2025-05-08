@@ -370,14 +370,6 @@
         "panel2": "https://i.imgur.com/iOdePFT.png"
     },
     {
-        "name": "PIGPEN",
-        "panel1": "https://i.imgur.com/KBaa6Z5.png"
-    },
-    {
-        "name": "The Breaker",
-        "panel1": "https://i.imgur.com/5GZr0q7.png"
-    },
-    {
         "name": "Spy X Family",
         "panel1": "https://i.imgur.com/RDhwgwr.png",
         "panel2": "https://i.imgur.com/IBVkusJ.png",
@@ -402,6 +394,19 @@
         "panel5": "https://i.imgur.com/y4L6Sl7.png"
     },
     {
+        "name": "Hellper",
+        "panel1": "https://i.imgur.com/Z0zbLzJ.png",
+        "panel2": "https://i.imgur.com/JizVCjf.png",
+        "panel3": "https://i.imgur.com/wbTWqL9.png",
+        "panel4": "https://i.imgur.com/x5LywuY.png",
+        "panel5": "https://i.imgur.com/ZXB0Csg.png"
+    },
+    {
+        "name": "Vampire Family",
+        "panel1": "https://i.imgur.com/v1X2kMa.png",
+        "panel2": "https://i.imgur.com/8iho4XA.png"
+    },
+    {
         "name": "Study Group",
         "panel1": "https://i.imgur.com/axPvaPi.png",
         "panel2": "https://i.imgur.com/U9N56b7.png"
@@ -410,10 +415,6 @@
         "name": "The Return of the Disaster-Class Hero",
         "panel1": "https://i.imgur.com/zC1MmiY.png",
         "panel2": "https://i.imgur.com/HwQMllE.png"
-    },
-    {
-        "name": "Return of the Mount Hua Sect",
-        "panel1": "https://i.imgur.com/DQvz5WE.png"
     },
     {
         "name": "The Skeleton Soldier Failed to Defend the Dungeon",
@@ -428,5 +429,17 @@
     {
         "name": "Fight Class 3",
         "panel1": "https://i.imgur.com/YdlRE4p.png"
+    },
+    {
+        "name": "Return of the Mount Hua Sect",
+        "panel1": "https://i.imgur.com/DQvz5WE.png"
+    },
+    {
+        "name": "PIGPEN",
+        "panel1": "https://i.imgur.com/KBaa6Z5.png"
+    },
+    {
+        "name": "The Breaker",
+        "panel1": "https://i.imgur.com/5GZr0q7.png"
     }
 ]
