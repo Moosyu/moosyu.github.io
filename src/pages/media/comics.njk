@@ -74,9 +74,9 @@ pagination:
         {% for item in items %}
         <tr id="{{ loop.index0 }}">
             <td style="text-align: center;">
-                [{{ item.type }}]
+                <span>[{{ item.type }}]</span>
                 <br>
-                ({{ item.name }})
+                <span>({{ item.name }})</span>
                 <br>
                 <span style="{% if item.score < 1 %} color: #5e5e5e;
                       {% elif item.score < 3 %} color: #ff4c4c;
@@ -89,15 +89,20 @@ pagination:
                 {{ item.score }}/10
                 <br>
                 </span>
-
             {% if item.image %}
                 {% if item.spoiler %}
                     <div class="spoiler-container">
                         <img class="spoiler" src="{{ item.image }}" alt="{{ item.name }}" onclick="toggleFullscreen(this)" loading="lazy">
                         <span class="spoiler-text">Spoiler</span>
+                        <a target="_blank" href="{{ item.image }}">
+                            <p class="media-attachments">{{ item.image }}</p>
+                        </a>
                     </div>
                 {% else %}
                     <img src="{{ item.image }}" alt="{{ item.name }}" onclick="toggleFullscreen(this)" loading="lazy">
+                    <a target="_blank" href="{{ item.image }}">
+                        <p class="media-attachments">{{ item.image }}</p>
+                    </a>
                 {% endif %}
 
             {% endif %}
