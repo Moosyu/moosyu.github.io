@@ -87,24 +87,23 @@ pagination:
                       {% else %} color: #9d63d0;
                       {% endif %}">
                 {{ item.score }}/10
-                <br>
                 </span>
-            {% if item.image %}
-                {% if item.spoiler %}
-                    <div class="spoiler-container">
-                        <img class="spoiler" src="{{ item.image }}" alt="{{ item.name }}" onclick="toggleFullscreen(this)" loading="lazy">
-                        <span class="spoiler-text">Spoiler</span>
+                <br>
+                {% if item.image %}
+                    {% if item.spoiler %}
+                        <div class="spoiler-container">
+                            <img class="spoiler" src="{{ item.image }}" alt="{{ item.name }}" onclick="toggleFullscreen(this)" loading="lazy">
+                            <span class="spoiler-text">Spoiler</span>
+                            <a target="_blank" href="{{ item.image }}">
+                                <p class="media-attachments">{{ item.image }}</p>
+                            </a>
+                        </div>
+                    {% else %}
+                        <img src="{{ item.image }}" alt="{{ item.name }}" onclick="toggleFullscreen(this)" loading="lazy">
                         <a target="_blank" href="{{ item.image }}">
                             <p class="media-attachments">{{ item.image }}</p>
                         </a>
-                    </div>
-                {% else %}
-                    <img src="{{ item.image }}" alt="{{ item.name }}" onclick="toggleFullscreen(this)" loading="lazy">
-                    <a target="_blank" href="{{ item.image }}">
-                        <p class="media-attachments">{{ item.image }}</p>
-                    </a>
                 {% endif %}
-
             {% endif %}
             </td>
             <td>{{ item.description | replace('\n', '<br><br>') | safe }}</td>
