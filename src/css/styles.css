@@ -198,7 +198,7 @@ button:hover, a:hover {
     );
     border: dotted #fff 1px;
     border-radius: 4px;
-    margin-bottom: 10px;
+    margin: 10px;
 }
 
 .pagination-buttons {
@@ -250,6 +250,8 @@ button:hover, a:hover {
 
 .spoiler-container {
     position: relative;
+    overflow: hidden;
+    border-radius: 4px 4px 0px 0px;
 }
 
 .spoiler-container img {
@@ -258,7 +260,7 @@ button:hover, a:hover {
 
 .spoiler {
     cursor: pointer;
-    filter: blur(15px);
+    filter: blur(35px);
 }
 
 .spoiler-text {

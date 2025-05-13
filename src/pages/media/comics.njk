@@ -94,10 +94,10 @@ pagination:
                         <div class="spoiler-container">
                             <img class="spoiler" src="{{ item.image }}" alt="{{ item.name }}" onclick="toggleFullscreen(this)" loading="lazy">
                             <span class="spoiler-text">Spoiler</span>
-                            <a target="_blank" href="{{ item.image }}">
-                                <p class="media-attachments">{{ item.image }}</p>
-                            </a>
                         </div>
+                        <a target="_blank" href="{{ item.image }}">
+                            <p class="media-attachments">{{ item.image }}</p>
+                        </a>
                     {% else %}
                         <img src="{{ item.image }}" alt="{{ item.name }}" onclick="toggleFullscreen(this)" loading="lazy">
                         <a target="_blank" href="{{ item.image }}">
